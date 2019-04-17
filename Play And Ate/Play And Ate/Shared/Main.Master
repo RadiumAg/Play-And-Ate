@@ -21,27 +21,29 @@
     <!--地址栏和标签上显示图标-->
     <link rel="Bookmark" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
     <!--收藏夹显示图标-->
-    <link href="../Content/Shared/weebox.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="../Content/Home/style.css" />
+    <script src="../Plugin/jquery-1.8.3.min.js"></script>
     <script src="../Scripts/Shared/main_store.js"></script>
-    <script src="../Scripts/Shared/citylist.js"></script>
-    <link href="../Content/Shared/main_huandeng.css" rel="stylesheet" />
-    <link href="../Content/Shared/style.css" rel="stylesheet" />
-    <link href="../Content/Shared/new_main.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="../Content/Home/cityquery.css" />
-    <link href="../Content/Shared/cityquery.css" rel="stylesheet" />
     <script src="../Plugin/jquery.dotdotdot.js"></script>
+    <script src="../Scripts/Shared/querycity.js"></script>
+    <script src="../Scripts/Shared/citylist.js"></script>
     <script src="../Scripts/Shared/lanrenzhijia.js"></script>
     <script src="../Scripts/Shared/scripts.js"></script>
     <script src="../Scripts/Shared/script.js"></script>
-    <script src="../Plugin/jquery-1.8.3.min.js"></script>
+    <script src="../Plugin/jquery.lazyload.js"></script>
     <link href="../Content/Shared/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/Shared/main_huandeng.css" rel="stylesheet" />
+    <link href="../Content/Shared/style.css" rel="stylesheet" />
+    <link href="../Content/Shared/new_main.css" rel="stylesheet" />
+    <link href="../Content/Shared/cityquery.css" rel="stylesheet" />
+    <link href="../Content/Shared/weebox.css" rel="stylesheet" />
+    <link href="../Content/Shared/style.css" rel="stylesheet" />
+    <script src="../Scripts/Home/WdatePicker.js"></script>
+    <link href="../Content/Shared/WdatePicker.css" rel="stylesheet" />
     <style type="text/css">
         .none {
             display: none;
         }
     </style>
-    <link href="../Content/Home/WdatePicker.css" rel="stylesheet" type="text/css" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -232,7 +234,6 @@
                             <li onclick="nav(6)" id="n6" class="soso ">
                                 <a href="http://www.01nz.com.cn/fishing" target="">垂钓场</a>
                             </li>
-
                             <li class="zhuanti_dh" style="float: right;"><a href="http://www.01nz.com.cn/discover" target="_blank">专题</a></li>
                         </ul>
                     </div>
@@ -244,7 +245,6 @@
                     $("#n" + id).addClass('nva_hover');
                 }
             </script>
-            <script type="text/javascript" src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/lang.js.下载"></script>
             <asp:ContentPlaceHolder ID="Content" runat="server">
             </asp:ContentPlaceHolder>
             <!-- 专题友情链接 -->

@@ -96,12 +96,17 @@
     <Content Include="Images\Shared\cs_dw.png" />
     <Content Include="Images\Shared\loge.gif" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
+    <None Include="Plugin\jquery-3.3.1.intellisense.js" />
+    <Content Include="Plugin\jquery-3.3.1.js" />
+    <Content Include="Plugin\jquery-3.3.1.min.js" />
+    <Content Include="Plugin\jquery-3.3.1.slim.js" />
+    <Content Include="Plugin\jquery-3.3.1.slim.min.js" />
     <Content Include="Scripts\Show\FarmDetails\getscript.js" />
     <Content Include="Scripts\Show\FarmDetails\list.js" />
     <Content Include="Scripts\Show\FarmDetails\seller.js" />
     <Content Include="Scripts\vue.js" />
     <Content Include="Scripts\vue.min.js" />
-    <Content Include="Show\FarmDetails.html" />
+    <Content Include="Show\FarmDetails.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +125,13 @@
     <Compile Include="Shared\Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
     </Compile>
+    <Compile Include="Show\FarmDetails.aspx.cs">
+      <DependentUpon>FarmDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Show\FarmDetails.aspx.designer.cs">
+      <DependentUpon>FarmDetails.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\Shared\citylist.js" />
@@ -136,6 +148,8 @@
     <Content Include="Scripts\Show\FarmDetails\api.js" />
     <None Include="packages.config" />
     <Content Include="Shared\Main.Master" />
+    <Content Include="Plugin\jquery-3.3.1.slim.min.map" />
+    <Content Include="Plugin\jquery-3.3.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

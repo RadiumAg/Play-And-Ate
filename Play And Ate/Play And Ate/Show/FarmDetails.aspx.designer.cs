@@ -7,9 +7,9 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace Play_And_Ate.Home {
+namespace Play_And_Ate.Show {
     
     
-    public partial class Home {
+    public partial class FarmDetails {
     }
 }
