@@ -13,13 +13,13 @@ namespace Play_And_Ate.Shared {
     public partial class Header {
         
         /// <summary>
-        /// head 控件。
+        /// Style 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Style;
         
         /// <summary>
         /// form1 控件。
@@ -38,5 +38,14 @@ namespace Play_And_Ate.Shared {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder Content;
+        
+        /// <summary>
+        /// Footer 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Footer;
     }
 }

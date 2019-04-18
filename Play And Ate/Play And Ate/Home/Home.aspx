@@ -1,16 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Play_And_Ate.Home.Home" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <script src="../Scripts/Home/lang.js"></script>
-
+<asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-    <script>
-			function nav(id) {
-				$(".soso").removeClass('nva_hover');
-				$("#n" + id).addClass('nva_hover');
-			}
-		</script>
 		<script type="text/javascript">
 			var APP_ROOT = '';
 			var CART_URL = '/cart';

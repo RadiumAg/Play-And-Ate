@@ -84,6 +84,11 @@
     <Content Include="Content\Show\FarmDetails\review_form.css" />
     <Content Include="Content\Show\FarmDetails\style.css" />
     <Content Include="Content\Show\FarmDetails\weebox.css" />
+    <Content Include="Content\Show\FarmRow\a_line.css" />
+    <Content Include="Content\Show\FarmRow\a_rili.css" />
+    <Content Include="Content\Show\FarmRow\bdsstyle.css" />
+    <Content Include="Content\Show\FarmRow\dianping.css" />
+    <Content Include="Content\Show\FarmRow\style.css" />
     <Content Include="Home\Home.aspx" />
     <Content Include="Home\Home.html" />
     <Content Include="Images\Shared\35.gif" />
@@ -107,6 +112,7 @@
     <Content Include="Scripts\vue.js" />
     <Content Include="Scripts\vue.min.js" />
     <Content Include="Show\FarmDetails.aspx" />
+    <Content Include="Show\FarmRow.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -132,24 +138,46 @@
     <Compile Include="Show\FarmDetails.aspx.designer.cs">
       <DependentUpon>FarmDetails.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Show\FarmRow.aspx.cs">
+      <DependentUpon>FarmRow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Show\FarmRow.aspx.designer.cs">
+      <DependentUpon>FarmRow.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\Shared\citylist.js" />
     <Content Include="Plugin\jquery-1.8.3.min.js" />
     <Content Include="Plugin\jquery.dotdotdot.js" />
     <Content Include="Plugin\jquery.lazyload.js" />
-    <Content Include="Scripts\Home\lang.js" />
+    <Content Include="Scripts\Shared\lang.js" />
     <Content Include="Scripts\Shared\lanrenzhijia.js" />
     <Content Include="Scripts\Shared\main_store.js" />
     <Content Include="Scripts\Shared\querycity.js" />
     <Content Include="Scripts\Shared\script.js" />
     <Content Include="Scripts\Shared\scripts.js" />
-    <Content Include="Scripts\Home\WdatePicker.js" />
+    <Content Include="Scripts\Shared\WdatePicker.js" />
     <Content Include="Scripts\Show\FarmDetails\api.js" />
     <None Include="packages.config" />
     <Content Include="Shared\Main.Master" />
     <Content Include="Plugin\jquery-3.3.1.slim.min.map" />
     <Content Include="Plugin\jquery-3.3.1.min.map" />
+    <Content Include="Scripts\Show\FarmRow\188date.js" />
+    <Content Include="Scripts\Show\FarmRow\ajax188.js" />
+    <Content Include="Scripts\Show\FarmRow\a_hd.js" />
+    <Content Include="Scripts\Show\FarmRow\a_hotel.js" />
+    <Content Include="Scripts\Show\FarmRow\a_line.js" />
+    <Content Include="Scripts\Show\FarmRow\a_rili.js" />
+    <Content Include="Scripts\Show\FarmRow\a_select.js" />
+    <Content Include="Scripts\Show\FarmRow\bds_s_v2.js" />
+    <Content Include="Scripts\Show\FarmRow\GetCNDate-12.15.js" />
+    <Content Include="Scripts\Show\FarmRow\global.js" />
+    <Content Include="Scripts\Show\FarmRow\index_header.js" />
+    <Content Include="Plugin\jquery.bgiframe.min.js" />
+    <Content Include="Scripts\Show\FarmRow\logger.js" />
+    <Content Include="Scripts\Show\FarmRow\order20121228.js" />
+    <Content Include="Scripts\Show\FarmRow\sousuo.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -174,6 +202,7 @@
     <Folder Include="Products\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Commond\" />
+    <Folder Include="Scripts\Home\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

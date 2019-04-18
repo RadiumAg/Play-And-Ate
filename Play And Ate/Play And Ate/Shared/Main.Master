@@ -37,15 +37,16 @@
     <link href="../Content/Shared/cityquery.css" rel="stylesheet" />
     <link href="../Content/Shared/weebox.css" rel="stylesheet" />
     <link href="../Content/Shared/style.css" rel="stylesheet" />
-    <script src="../Scripts/Home/WdatePicker.js"></script>
     <link href="../Content/Shared/WdatePicker.css" rel="stylesheet" />
+    <script src="../Scripts/Shared/WdatePicker.js"></script>
+    <script src="../Scripts/Shared/lang.js"></script>
+   
     <style type="text/css">
         .none {
             display: none;
         }
     </style>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="Style" runat="server"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -245,10 +246,10 @@
                     $("#n" + id).addClass('nva_hover');
                 }
             </script>
-            <asp:ContentPlaceHolder ID="Content" runat="server">
-            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="Content" runat="server"/>
             <!-- 专题友情链接 -->
             <div class="blank"></div>
+            <asp:ContentPlaceHolder ID="Footer" runat="server"/>
         </div>
     </form>
 </body>
