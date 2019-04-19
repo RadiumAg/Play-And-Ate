@@ -19,6 +19,7 @@ namespace FTZ.PlayAndAte.Models
         public Nullable<int> ImageId { get; set; }
         public Nullable<int> PTTId { get; set; }
         public Nullable<int> AreaId { get; set; }
+        public Nullable<decimal> ProductPrice { get; set; }
     
         public virtual Area Area { get; set; }
         public virtual Image Image { get; set; }

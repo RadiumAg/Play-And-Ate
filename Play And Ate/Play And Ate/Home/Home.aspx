@@ -694,21 +694,23 @@
                         </div>
                         <div class="mzt_img" id="termini_html">
                             <ul>
-                                <%--主题分类--%>
+                              <asp:Repeater runat="server" ID="ReProduct">
+                                  <ItemTemplate>
                                 <li>
-                                    <a href="http://sh.01nz.com.cn/farm/18970.html" onmouseout="shadowout(11)"
-                                        onmouseover="shadow(11)" target="_blank">
-                                        <img src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/56b45111dc613.jpg"
+                                    <a href="http://sh.01nz.com.cn/farm/18970.html" onmouseout="shadowout(<%# Eval("ProductID") %>)"
+                                        onmouseover="shadow(<%# Eval("ProductID") %>)" target="_blank">
+                                        <img src='../Images/Home/<%# Eval("Image.ImageName")%>' 
                                             original="../Images/Home/56b45111dc613.jpg"
-                                             alt="崇明金沈泽农家乐 " class="f_l"
-                                            style="display: block;width:100%;height:100%;">
-                                        <div class="shadow none" id="shadow_11">
-                                            <span class="shadow_name">崇明金沈泽农家乐 </span>
-                                            <span class="shadow_price"><span class="qi">￥</span>159.0<span
-                                                class="qi">起</span></span>
+                                             alt="<%# Eval("ProductName") %>" " class="f_l"
+                                            style="display: block;width:100%;height:100%;"/>
+                                        <div class="shadow none" id='shadow_<%# Eval("ProductID") %>'>
+                                            <span class="shadow_name"><%# Eval("ProductName") %> 
+                                            <span class="shadow_price"><span class="qi">￥</span><%# Eval("ProductPrice") %><span>class="qi">起</span></span>
                                         </div>
                                     </a>
                                 </li>
+                                      </ItemTemplate>
+                              </asp:Repeater>
                                 <%--主题分类--%>
                             </ul>
                         </div>
@@ -963,93 +965,6 @@
                                 class="stitlear stitlear_hover">诚信商家</a>
                             <a href="javascript:;" id="farmhouse2" onclick="farmhouse(2)" class="stitlear">精品线路</a>
                         </div>
-
-                        <div class="mtext_c_l" id="farmhouse_html">
-                            <!-- 热门产品  -->
-                            <!-- <ul>
-													<li>
-							<div class="chanpin">
-								<a href="http://www.01nz.com.cn/goods/213.html" target="_blank" title="仅售138元的价值439元的农家乐自由行二日游住宿餐饮娱乐套餐"><img src="http://www.01nz.com.cn/public/attachment/201504/28/13/553f1f65b4731.jpg" alt="仅售138元的价值439元的农家乐自由行二日游住宿餐饮娱乐套餐"></a>
-								<a href="http://www.01nz.com.cn/goods/213.html" target="_blank" title="仅售138元的价值439元的农家乐自由行二日游住宿餐饮娱乐套餐" ><div class="m_img_text" >仅售138元的价值439元的农家乐自由行二日游住宿餐饮娱乐套餐</div></a>
-								<div class="m_img_jiage" >
-								<span class="shichang">市场价:￥439</span>
-								<span class="agio">3.1 折</span><span class="current_price">￥138</span>
-								</div>
-							</div>
-							</li>
-													<li>
-							<div class="chanpin">
-								<a href="http://www.01nz.com.cn/goods/416.html" target="_blank" title="崇明老白酒礼盒套装，崇明农家特产"><img src="http://www.01nz.com.cn/public/attachment/201504/28/14/553f2254889e8.jpg" alt="崇明老白酒礼盒套装，崇明农家特产"></a>
-								<a href="http://www.01nz.com.cn/goods/416.html" target="_blank" title="崇明老白酒礼盒套装，崇明农家特产" ><div class="m_img_text" >崇明老白酒礼盒套装，崇明农家特产</div></a>
-								<div class="m_img_jiage" >
-								<span class="shichang">市场价:￥288</span>
-								<span class="agio">5.8 折</span><span class="current_price">￥168</span>
-								</div>
-							</div>
-							</li>
-													<li>
-							<div class="chanpin">
-								<a href="http://www.01nz.com.cn/goods/244.html" target="_blank" title="仅售25元的价值30元的上海都市菜园儿童票一张"><img src="http://www.01nz.com.cn/public/attachment/201504/28/14/553f22e9b2b8d.jpg" alt="仅售25元的价值30元的上海都市菜园儿童票一张"></a>
-								<a href="http://www.01nz.com.cn/goods/244.html" target="_blank" title="仅售25元的价值30元的上海都市菜园儿童票一张" ><div class="m_img_text" >仅售25元的价值30元的上海都市菜园儿童票一张</div></a>
-								<div class="m_img_jiage" >
-								<span class="shichang">市场价:￥30</span>
-								<span class="agio">8.3 折</span><span class="current_price">￥25</span>
-								</div>
-							</div>
-							</li>
-													<li>
-							<div class="chanpin">
-								<a href="http://www.01nz.com.cn/goods/419.html" target="_blank" title="崇明特产 甜包瓜 咸瓜 即食小炒均可 佐粥美味 清脆微甜380-400克"><img src="http://www.01nz.com.cn/public/attachment/201504/28/14/553f23cc7cefd.jpg" alt="崇明特产 甜包瓜 咸瓜 即食小炒均可 佐粥美味 清脆微甜380-400克"></a>
-								<a href="http://www.01nz.com.cn/goods/419.html" target="_blank" title="崇明特产 甜包瓜 咸瓜 即食小炒均可 佐粥美味 清脆微甜380-400克" ><div class="m_img_text" >崇明特产 甜包瓜 咸瓜 即食小炒均可 佐粥美味 清脆微甜380-400克</div></a>
-								<div class="m_img_jiage" >
-								<span class="shichang">市场价:￥28</span>
-								<span class="agio">3.8 折</span><span class="current_price">￥10</span>
-								</div>
-							</div>
-							</li>
-													<li>
-							<div class="chanpin">
-								<a href="http://www.01nz.com.cn/goods/421.html" target="_blank" title="七宝方糕 七宝老街特产 豆沙馅 传统糕点 "><img src="http://www.01nz.com.cn/public/attachment/201504/28/14/553f2551de2d2.jpg" alt="七宝方糕 七宝老街特产 豆沙馅 传统糕点 "></a>
-								<a href="http://www.01nz.com.cn/goods/421.html" target="_blank" title="七宝方糕 七宝老街特产 豆沙馅 传统糕点 " ><div class="m_img_text" >七宝方糕 七宝老街特产 豆沙馅 传统糕点 </div></a>
-								<div class="m_img_jiage" >
-								<span class="shichang">市场价:￥25</span>
-								<span class="agio">8.0 折</span><span class="current_price">￥20</span>
-								</div>
-							</div>
-							</li>
-													<li>
-							<div class="chanpin">
-								<a href="http://www.01nz.com.cn/goods/422.html" target="_blank" title="包邮 上海特产食品糕点零食 老香斋海苔咸味苔条饼干千层酥500克"><img src="http://www.01nz.com.cn/public/attachment/201504/28/14/553f262c625e3.jpg" alt="包邮 上海特产食品糕点零食 老香斋海苔咸味苔条饼干千层酥500克"></a>
-								<a href="http://www.01nz.com.cn/goods/422.html" target="_blank" title="包邮 上海特产食品糕点零食 老香斋海苔咸味苔条饼干千层酥500克" ><div class="m_img_text" >包邮 上海特产食品糕点零食 老香斋海苔咸味苔条饼干千层酥500克</div></a>
-								<div class="m_img_jiage" >
-								<span class="shichang">市场价:￥35</span>
-								<span class="agio">7.7 折</span><span class="current_price">￥26</span>
-								</div>
-							</div>
-							</li>
-													<li>
-							<div class="chanpin">
-								<a href="http://www.01nz.com.cn/goods/428.html" target="_blank" title="崇明 农家纯天然手工自榨芝麻油 香油 美食大王牌推荐虞师傅家"><img src="http://www.01nz.com.cn/public/attachment/201504/28/14/553f2aa6032a8.jpg" alt="崇明 农家纯天然手工自榨芝麻油 香油 美食大王牌推荐虞师傅家"></a>
-								<a href="http://www.01nz.com.cn/goods/428.html" target="_blank" title="崇明 农家纯天然手工自榨芝麻油 香油 美食大王牌推荐虞师傅家" ><div class="m_img_text" >崇明 农家纯天然手工自榨芝麻油 香油 美食大王牌推荐虞师傅家</div></a>
-								<div class="m_img_jiage" >
-								<span class="shichang">市场价:￥51</span>
-								<span class="agio">6.1 折</span><span class="current_price">￥31</span>
-								</div>
-							</div>
-							</li>
-													<li>
-							<div class="chanpin">
-								<a href="http://www.01nz.com.cn/goods/444.html" target="_blank" title="农家自养散养鸡，虫草土鸡蛋礼盒"><img src="http://www.01nz.com.cn/public/attachment/201504/28/14/553f2eac47478.jpg" alt="农家自养散养鸡，虫草土鸡蛋礼盒"></a>
-								<a href="http://www.01nz.com.cn/goods/444.html" target="_blank" title="农家自养散养鸡，虫草土鸡蛋礼盒" ><div class="m_img_text" >农家自养散养鸡，虫草土鸡蛋礼盒</div></a>
-								<div class="m_img_jiage" >
-								<span class="shichang">市场价:￥55</span>
-								<span class="agio">6.9 折</span><span class="current_price">￥38</span>
-								</div>
-							</div>
-							</li>
-												</ul>	 -->
-                            <!-- END热门产品  -->
-                            <!-- 诚信商家 -->
                             <ul>
                                 <li>
                                     <a href="http://sh.01nz.com.cn/farm/3.html" target="_blank">
@@ -1801,4 +1716,5 @@
             </div>
             <div class="blank1"></div>
         </div>
+    </div>
 </asp:Content>

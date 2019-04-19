@@ -13,15 +13,16 @@ namespace FTZ.PlayAndAte.DAL
     public class ProductServices
     {
 
-        /// <summary>
-        /// 展示所有商品信息
-        /// </summary>
+      /// <summary>
+      /// 展示所有商品信息
+      /// </summary>
+      /// <returns>商品信息集合</returns>
         public static List<Product> ShowProduct()
         {
             using (PlayAndAteEntities entities = new PlayAndAteEntities())
             {
-                var result = from g in entities.Product select g;
-                return result.ToList<Product>();
+                List<Product> result = entities.Product.Include("Image").ToList<Product>();
+                return result;
             }
         }
 

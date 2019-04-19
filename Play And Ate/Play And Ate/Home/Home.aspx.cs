@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using FTZ.PlayAndAte.Models;
+using FTZ.PlayAndAte.BLL;
 
 namespace Play_And_Ate.Home
 {
@@ -11,7 +13,10 @@ namespace Play_And_Ate.Home
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack) {
+                this.ReProduct.DataSource = ProductManager.ShowProductData().Take(6);
+                this.ReProduct.DataBind();
+            }
         }
     }
 }

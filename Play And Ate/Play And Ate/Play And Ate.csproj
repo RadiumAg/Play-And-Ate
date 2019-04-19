@@ -40,6 +40,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -60,11 +66,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\LoginAndRegister\Login\base.v606141511.css" />
@@ -137,6 +138,16 @@
     <Content Include="Scripts\LoginAndRegister\Register\lang.js" />
     <Content Include="Scripts\LoginAndRegister\Register\mt3.v1014201036.js" />
     <Content Include="Scripts\LoginAndRegister\Register\sousuo.js" />
+    <Content Include="Scripts\Products\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="Scripts\Products\baidumap.js" />
+    <Content Include="Scripts\Products\c.js" />
+    <Content Include="Scripts\Products\ca3e4166f3f1cd8619807edc574f075c.js" />
+    <Content Include="Scripts\Products\fgcomm.v620152248.js" />
+    <Content Include="Scripts\Products\header.js" />
+    <Content Include="Scripts\Products\index_header.js" />
+    <Content Include="Scripts\Products\lang.js" />
+    <Content Include="Scripts\Products\mt3.v1014201036.js" />
+    <Content Include="Scripts\Products\sousuo.js" />
     <Content Include="Scripts\Show\FarmDetails\getscript.js" />
     <Content Include="Scripts\Show\FarmDetails\list.js" />
     <Content Include="Scripts\Show\FarmDetails\seller.js" />
