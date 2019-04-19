@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FTZ.PlayAndAte.DAL
+namespace FTZ.PlayAndAte.Models
 {
     using System;
     using System.Collections.Generic;

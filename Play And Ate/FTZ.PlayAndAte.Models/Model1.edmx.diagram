@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="07d4a3de6da5480aaa428288dc26524b" Name="Diagram1">
+        <EntityTypeShape EntityType="PlayAndAteModel.Area" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlayAndAteModel.CardType" Width="1.5" PointX="10.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlayAndAteModel.Customers" Width="1.5" PointX="12.5" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlayAndAteModel.Image" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlayAndAteModel.Order" Width="1.5" PointX="10.25" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlayAndAteModel.PPointsType" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlayAndAteModel.Product" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlayAndAteModel.PTotalType" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlayAndAteModel.Role_UserInfo" Width="1.5" PointX="5.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlayAndAteModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PlayAndAteModel.UserInfo_Role" Width="1.5" PointX="8" PointY="2.375" IsExpanded="true" />
+        <AssociationConnector Association="PlayAndAteModel.FK_Product_Area" ManuallyRouted="false" />
+        <AssociationConnector Association="PlayAndAteModel.FK_Customers_CardType" ManuallyRouted="false" />
+        <AssociationConnector Association="PlayAndAteModel.FK_Customers_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="PlayAndAteModel.FK_Product_Image" ManuallyRouted="false" />
+        <AssociationConnector Association="PlayAndAteModel.FK_Order_UserInfo_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="PlayAndAteModel.FK_PPointsType_PTotalType" ManuallyRouted="false" />
+        <AssociationConnector Association="PlayAndAteModel.FK_Product_PTotalType" ManuallyRouted="false" />
+        <AssociationConnector Association="PlayAndAteModel.FK_UserInfo_Role_Role_UserInfo" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

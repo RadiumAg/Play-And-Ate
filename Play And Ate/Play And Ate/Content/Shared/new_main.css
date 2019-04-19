@@ -723,7 +723,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr
 .none{ display:none}
 .qi{ font-size:12px;}
 .shadow_price{ color:#F60; font-size:16px; margin-left:68px;}
-.shadow{background-image: url("../images/main/shadow.png"); z-index:10; width:194px; height:135px; position: absolute; top:0px; left:0px; }
+.shadow{background-image: url("../../Images/Shared/shadow.png"); z-index:10; width:194px; height:135px; position: absolute; top:0px; left:0px; }
 .shadow_name{ margin-top:58px; margin-left:68px; display:block; width:75px; height:20px; font-size:14px; font-weight:bold; text-align:center; overflow:hidden}
 .mzt_right_text{ width:100%; float:left; overflow:hidden; color:#666; height:40px; font-size:12px; line-height:25px; }
 .mzt_right_t li{ width:100%; height:auto; float:left;}

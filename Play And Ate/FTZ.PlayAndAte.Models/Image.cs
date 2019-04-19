@@ -7,30 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FTZ.PlayAndAte.DAL
+namespace FTZ.PlayAndAte.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Order
+    public partial class Image
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Order()
+        public Image()
         {
-            this.Customers = new HashSet<Customers>();
+            this.Product = new HashSet<Product>();
         }
     
-        public int Id { get; set; }
-        public string OrderId { get; set; }
-        public string OrderName { get; set; }
-        public int CustomerNum { get; set; }
-        public decimal OrderPrice { get; set; }
+        public int ImageId { get; set; }
+        public string ImageUrl { get; set; }
         public int ProductId { get; set; }
-        public int UserId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Customers> Customers { get; set; }
-        public virtual Product Product { get; set; }
-        public virtual UserInfo_Role UserInfo_Role { get; set; }
+        public virtual ICollection<Product> Product { get; set; }
     }
 }

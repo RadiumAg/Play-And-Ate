@@ -7,8 +7,8 @@
         var APP_ROOT = '';
         var CART_URL = '/cart';
         var CART_CHECK_URL = '/cart-check';
-        var LOADER_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/lazy_loading.gif';
-        var ERROR_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
+        var LOADER_IMG = '../Images/Home/lazy_loading.gif';
+        var ERROR_IMG = '../Images/Home/image_err.gif';
     </script>
     <script type="text/javascript">
         jQuery(document).ready(
@@ -44,7 +44,7 @@
         }
         jQuery(document).ready(function ($) {
             $("img").lazyload({
-                placeholder: "http://www.01nz.com.cn/app/Tpl/fanwe/js/grey.gif",
+                placeholder: "../Images/Home/grey.gif",
                 effect: showeffect,
                 failurelimit: 10
             })
@@ -694,13 +694,14 @@
                         </div>
                         <div class="mzt_img" id="termini_html">
                             <ul>
+                                <%--主题分类--%>
                                 <li>
                                     <a href="http://sh.01nz.com.cn/farm/18970.html" onmouseout="shadowout(11)"
                                         onmouseover="shadow(11)" target="_blank">
                                         <img src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/56b45111dc613.jpg"
-                                            original="http://www.01nz.com.cn/public/attachment/201602/05/15/56b45111dc613.jpg"
-                                            width="100%" height="100%" alt="崇明金沈泽农家乐 " class="f_l"
-                                            style="display: block;">
+                                            original="../Images/Home/56b45111dc613.jpg"
+                                             alt="崇明金沈泽农家乐 " class="f_l"
+                                            style="display: block;width:100%;height:100%;">
                                         <div class="shadow none" id="shadow_11">
                                             <span class="shadow_name">崇明金沈泽农家乐 </span>
                                             <span class="shadow_price"><span class="qi">￥</span>159.0<span
@@ -708,72 +709,7 @@
                                         </div>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="http://sh.01nz.com.cn/farm/24644.html" onmouseout="shadowout(12)"
-                                        onmouseover="shadow(12)" target="_blank">
-                                        <img src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/553dde4f96103.jpg"
-                                            original="http://www.01nz.com.cn/public/attachment/201504/27/14/553dde4f96103.jpg"
-                                            width="100%" height="100%" alt="半日闲农家乐" class="f_l"
-                                            style="display: block;">
-                                        <div class="shadow none" id="shadow_12">
-                                            <span class="shadow_name">半日闲农家乐</span>
-                                            <span class="shadow_price"><span class="qi">￥</span>108.0<span
-                                                class="qi">起</span></span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://sh.01nz.com.cn/farm/59.html" onmouseout="shadowout(13)"
-                                        onmouseover="shadow(13)" target="_blank">
-                                        <img src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/grey.gif"
-                                            original="http://www.01nz.com.cn/public/attachment/201504/27/15/553de03e13eb5.jpg"
-                                            width="100%" height="100%" alt="葵园生态农庄" class="f_l">
-                                        <div class="shadow none" id="shadow_13">
-                                            <span class="shadow_name">葵园生态农庄</span>
-                                            <span class="shadow_price"><span class="qi">￥</span>128.0<span
-                                                class="qi">起</span></span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://sh.01nz.com.cn/farm/1063.html" onmouseout="shadowout(14)"
-                                        onmouseover="shadow(14)" target="_blank">
-                                        <img original="http://www.01nz.com.cn/public/attachment/201504/27/15/553de12dca886.jpg"
-                                            width="100%" height="100%" alt="上海若田农庄" class="f_l"
-                                            src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/grey.gif">
-                                        <div class="shadow none" id="shadow_14">
-                                            <span class="shadow_name">上海若田农庄</span>
-                                            <span class="shadow_price"><span class="qi">￥</span>108.0<span
-                                                class="qi">起</span></span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://sh.01nz.com.cn/farm/92.html" onmouseout="shadowout(15)"
-                                        onmouseover="shadow(15)" target="_blank">
-                                        <img original="http://www.01nz.com.cn/public/attachment/201504/27/15/553de2d81c8a2.jpg"
-                                            width="100%" height="100%" alt="瑞华果园" class="f_l"
-                                            src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/grey.gif">
-                                        <div class="shadow none" id="shadow_15">
-                                            <span class="shadow_name">瑞华果园</span>
-                                            <span class="shadow_price"><span class="qi">￥</span>98.0<span
-                                                class="qi">起</span></span>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://sh.01nz.com.cn/farm/114.html" onmouseout="shadowout(16)"
-                                        onmouseover="shadow(16)" target="_blank">
-                                        <img original="http://www.01nz.com.cn/public/attachment/201504/27/15/553de47d8e8e4.jpg"
-                                            width="100%" height="100%" alt="浦江源温泉度假村" class="f_l"
-                                            src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/grey.gif">
-                                        <div class="shadow none" id="shadow_16">
-                                            <span class="shadow_name">浦江源温泉度假村</span>
-                                            <span class="shadow_price"><span class="qi">￥</span>258.0<span
-                                                class="qi">起</span></span>
-                                        </div>
-                                    </a>
-                                </li>
+                                <%--主题分类--%>
                             </ul>
                         </div>
                     </div>

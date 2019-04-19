@@ -7,30 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FTZ.PlayAndAte.DAL
+namespace FTZ.PlayAndAte.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class UserInfo_Role
+    public partial class CardType
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public UserInfo_Role()
+        public CardType()
         {
-            this.Order = new HashSet<Order>();
+            this.Customers = new HashSet<Customers>();
         }
     
-        public int Id { get; set; }
-        public string UserName { get; set; }
-        public string Address { get; set; }
-        public string Email { get; set; }
-        public string QQ { get; set; }
-        public string Phone { get; set; }
-        public int RoleId { get; set; }
-        public string Pwd { get; set; }
+        public int TypeId { get; set; }
+        public string TypeName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Order> Order { get; set; }
-        public virtual Role_UserInfo Role_UserInfo { get; set; }
+        public virtual ICollection<Customers> Customers { get; set; }
     }
 }

@@ -7,17 +7,21 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FTZ.PlayAndAte.DAL
+namespace FTZ.PlayAndAte.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class PPointsType
+    public partial class Product
     {
-        public int Id { get; set; }
-        public string PPointsType1 { get; set; }
-        public Nullable<int> Pid { get; set; }
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+        public Nullable<int> ImageId { get; set; }
+        public Nullable<int> PTTId { get; set; }
+        public Nullable<int> AreaId { get; set; }
     
+        public virtual Area Area { get; set; }
+        public virtual Image Image { get; set; }
         public virtual PTotalType PTotalType { get; set; }
     }
 }

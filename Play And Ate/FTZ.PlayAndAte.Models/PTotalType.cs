@@ -7,31 +7,26 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FTZ.PlayAndAte.DAL
+namespace FTZ.PlayAndAte.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Product
+    public partial class PTotalType
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Product()
+        public PTotalType()
         {
-            this.Image = new HashSet<Image>();
-            this.Order = new HashSet<Order>();
+            this.PPointsType = new HashSet<PPointsType>();
+            this.Product = new HashSet<Product>();
         }
     
-        public int ProductId { get; set; }
-        public string ProductName { get; set; }
-        public Nullable<int> ImageId { get; set; }
-        public Nullable<int> PTTId { get; set; }
-        public Nullable<int> AreaId { get; set; }
+        public int PId { get; set; }
+        public string PTotalType1 { get; set; }
     
-        public virtual Area Area { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Image> Image { get; set; }
+        public virtual ICollection<PPointsType> PPointsType { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Order> Order { get; set; }
-        public virtual PTotalType PTotalType { get; set; }
+        public virtual ICollection<Product> Product { get; set; }
     }
 }

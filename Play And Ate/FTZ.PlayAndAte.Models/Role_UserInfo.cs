@@ -7,23 +7,23 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FTZ.PlayAndAte.DAL
+namespace FTZ.PlayAndAte.Models
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Area
+    public partial class Role_UserInfo
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Area()
+        public Role_UserInfo()
         {
-            this.Product = new HashSet<Product>();
+            this.UserInfo_Role = new HashSet<UserInfo_Role>();
         }
     
-        public int AreaId { get; set; }
-        public string AreaName { get; set; }
+        public int Id { get; set; }
+        public string RoleName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Product> Product { get; set; }
+        public virtual ICollection<UserInfo_Role> UserInfo_Role { get; set; }
     }
 }
