@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\LoginAndRegister\Login\base.v606141511.css" />
+    <Content Include="Content\LoginAndRegister\Login\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
+    <Content Include="Content\LoginAndRegister\Register\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Shared\cityquery.css" />
     <Content Include="Content\Shared\font-awesome.min.css" />
     <Content Include="Content\Shared\main_huandeng.css" />
@@ -89,113 +93,11 @@
     <Content Include="Content\Show\FarmRow\bdsstyle.css" />
     <Content Include="Content\Show\FarmRow\dianping.css" />
     <Content Include="Content\Show\FarmRow\style.css" />
+    <Content Include="Content\Special topic\7da3944f35f4e8b851f1c5f9da53174f.css" />
+    <Content Include="Content\Special topic\base.v606141511.css" />
+    <Content Include="Content\Special topic\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Home\Home.aspx" />
     <Content Include="Home\Home.html" />
-    <Content Include="Images\Products\2.gif" />
-    <Content Include="Images\Products\5279e04b1fb2b_180x137.jpg" />
-    <Content Include="Images\Products\527a049a434ac_154x110.jpg" />
-    <Content Include="Images\Products\527a049a434ac_367x254.jpg" />
-    <Content Include="Images\Products\527aea9ed4140_180x137.jpg" />
-    <Content Include="Images\Products\527b5e69d7a65_154x110.jpg" />
-    <Content Include="Images\Products\527b5e69d7a65_367x254.jpg" />
-    <Content Include="Images\Products\527c79aaa9acf_180x110.jpg" />
-    <Content Include="Images\Products\527c79aaa9acf_180x137.jpg" />
-    <Content Include="Images\Products\52807b105cb1b_154x110.jpg" />
-    <Content Include="Images\Products\52807b105cb1b_367x254.jpg" />
-    <Content Include="Images\Products\528081565ab4c_154x110.jpg" />
-    <Content Include="Images\Products\52808f7530691_154x110.jpg" />
-    <Content Include="Images\Products\52808f7530691_367x254.jpg" />
-    <Content Include="Images\Products\5282e9733ca7c_180x110.jpg" />
-    <Content Include="Images\Products\5283442de3c46_154x110.jpg" />
-    <Content Include="Images\Products\5283442de3c46_367x254.jpg" />
-    <Content Include="Images\Products\528479d9a2d1e_367x254.jpg" />
-    <Content Include="Images\Products\5285962e0dcb7_180x137.jpg" />
-    <Content Include="Images\Products\52c4cac186016_180x137.jpg" />
-    <Content Include="Images\Products\52d3793a2d538_180x110.jpg" />
-    <Content Include="Images\Products\52d3793a2d538_180x137.jpg" />
-    <Content Include="Images\Products\52de3a723f8cf_180x137.jpg" />
-    <Content Include="Images\Products\532f8c883ccb9_154x110.jpg" />
-    <Content Include="Images\Products\532f8c883ccb9_367x254.jpg" />
-    <Content Include="Images\Products\53339727b2398_154x110.jpg" />
-    <Content Include="Images\Products\535dbd02541db_180x137.jpg" />
-    <Content Include="Images\Products\5360a3a69bfd1_154x110.jpg" />
-    <Content Include="Images\Products\5360a3a69bfd1_367x254.jpg" />
-    <Content Include="Images\Products\53698c918d245_180x137.jpg" />
-    <Content Include="Images\Products\5369c48d309a7_180x110.jpg" />
-    <Content Include="Images\Products\5369c48d309a7_367x254.jpg" />
-    <Content Include="Images\Products\5369ca29c8f4a_154x110.jpg" />
-    <Content Include="Images\Products\5373031b06d21.jpg" />
-    <Content Include="Images\Products\5373040ac02d7.jpg" />
-    <Content Include="Images\Products\537304a8395ef.jpg" />
-    <Content Include="Images\Products\537305412576c.jpg" />
-    <Content Include="Images\Products\53730553ce7f6.jpg" />
-    <Content Include="Images\Products\53733e39b0df8_180x110.jpg" />
-    <Content Include="Images\Products\53742882ba3a6_180x110.jpg" />
-    <Content Include="Images\Products\537450e23d8ff_180x110.jpg" />
-    <Content Include="Images\Products\53745d6d50625.jpg" />
-    <Content Include="Images\Products\53745ee60b87c.jpg" />
-    <Content Include="Images\Products\5374600616246.jpg" />
-    <Content Include="Images\Products\5374641e5dcc5.jpg" />
-    <Content Include="Images\Products\5374661217295.jpg" />
-    <Content Include="Images\Products\53757cf7d48c0_367x254.jpg" />
-    <Content Include="Images\Products\5375bb6c9f36e.jpg" />
-    <Content Include="Images\Products\5375bc10b7da9.jpg" />
-    <Content Include="Images\Products\538435e12f69b_180x137.jpg" />
-    <Content Include="Images\Products\53843c975ad39_180x137.jpg" />
-    <Content Include="Images\Products\5384479d97192_180x137.jpg" />
-    <Content Include="Images\Products\53868e3bcab42_180x137.jpg" />
-    <Content Include="Images\Products\5386a12edadec_180x137.jpg" />
-    <Content Include="Images\Products\5386c9359ba55_180x137.jpg" />
-    <Content Include="Images\Products\5386dc039d2cc_180x137.jpg" />
-    <Content Include="Images\Products\5386e55eb067d_180x137.jpg" />
-    <Content Include="Images\Products\538801c210753_154x110.jpg" />
-    <Content Include="Images\Products\53882e60e81a8.jpg" />
-    <Content Include="Images\Products\538830f9e3dfd.jpg" />
-    <Content Include="Images\Products\538836ab70c0f.jpg" />
-    <Content Include="Images\Products\5388375bd90ed.jpg" />
-    <Content Include="Images\Products\53883ab38a6d7_180x110.jpg" />
-    <Content Include="Images\Products\53883d1073fd3_180x110.jpg" />
-    <Content Include="Images\Products\5388418a5541c_180x110.jpg" />
-    <Content Include="Images\Products\53884425cea9a_180x110.jpg" />
-    <Content Include="Images\Products\53a78a1a3bb97.jpg" />
-    <Content Include="Images\Products\53a78b0d7abed.jpg" />
-    <Content Include="Images\Products\53a78c2c08c46.jpg" />
-    <Content Include="Images\Products\53a78c76ce2de.jpg" />
-    <Content Include="Images\Products\53ad39116cd3d_180x137.jpg" />
-    <Content Include="Images\Products\53ad3bc35e206_180x137.jpg" />
-    <Content Include="Images\Products\53b21abd4c7e4_270x165.jpg" />
-    <Content Include="Images\Products\53b223dfb1dee_270x165.jpg" />
-    <Content Include="Images\Products\53b256b569be5_270x165.jpg" />
-    <Content Include="Images\Products\53b2627c351dc.jpg" />
-    <Content Include="Images\Products\53b26301f41be.jpg" />
-    <Content Include="Images\Products\53b2646fc3b99.jpg" />
-    <Content Include="Images\Products\53b264f2be468.jpg" />
-    <Content Include="Images\Products\53b39ef17aab8_180x137.jpg" />
-    <Content Include="Images\Products\53ba3cf26ea68_270x165.jpg" />
-    <Content Include="Images\Products\53ba42aca04ee_270x165.jpg" />
-    <Content Include="Images\Products\53e98d9722393_180x110.jpg" />
-    <Content Include="Images\Products\53eb2c9cea0ab_180x110.jpg" />
-    <Content Include="Images\Products\53eb2dd6bbb71_180x110.jpg" />
-    <Content Include="Images\Products\53fff603557ba_180x110.jpg" />
-    <Content Include="Images\Products\543771c0bcc17_180x110.jpg" />
-    <Content Include="Images\Products\5440d06e740cf_180x110.jpg" />
-    <Content Include="Images\Products\547fbcfd562ca_180x110.jpg" />
-    <Content Include="Images\Products\551a779b45e14_180x110.jpg" />
-    <Content Include="Images\Products\553e30da866a7_154x110.jpg" />
-    <Content Include="Images\Products\cs_dw.png" />
-    <Content Include="Images\Products\end_2.gif" />
-    <Content Include="Images\Products\end_3.gif" />
-    <Content Include="Images\Products\icon.gif" />
-    <Content Include="Images\Products\image_err.gif" />
-    <Content Include="Images\Products\index_header.js" />
-    <Content Include="Images\Products\jubao.gif" />
-    <Content Include="Images\Products\lang.js" />
-    <Content Include="Images\Products\loge.gif" />
-    <Content Include="Images\Products\stycaizhai.png" />
-    <Content Include="Images\Products\styguanguang.png" />
-    <Content Include="Images\Products\styyangzhi.png" />
-    <Content Include="Images\Products\wg.png" />
-    <Content Include="Images\Products\xian.jpg" />
     <Content Include="Images\Shared\35.gif" />
     <Content Include="Images\Home\553dde4f96103.jpg" />
     <Content Include="Images\Home\56ab04ed628d5.jpg" />
@@ -205,23 +107,51 @@
     <Content Include="Images\Home\grey.gif" />
     <Content Include="Images\Shared\cs_dw.png" />
     <Content Include="Images\Shared\loge.gif" />
+    <Content Include="LoginAndRegister\Login.aspx" />
+    <Content Include="LoginAndRegister\Register.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
     <Content Include="Plugin\jquery-3.3.1.js" />
     <Content Include="Plugin\jquery-3.3.1.min.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.min.js" />
-    <Content Include="Products\Ecological.html" />
-    <Content Include="Products\Farm.html" />
-    <Content Include="Products\Fishing.html" />
-    <Content Include="Products\Generated.html" />
+    <Content Include="Scripts\LoginAndRegister\Login\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\baidumap.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\c.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\fgcomm.v620152248.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\header.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\index_header.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\lang.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\mt3.v1014201036.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\sousuo.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\baidumap.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\c.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\fgcomm.v620152248.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\header.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\index_header.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\lang.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\mt3.v1014201036.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\sousuo.js" />
     <Content Include="Scripts\Show\FarmDetails\getscript.js" />
     <Content Include="Scripts\Show\FarmDetails\list.js" />
     <Content Include="Scripts\Show\FarmDetails\seller.js" />
+    <Content Include="Scripts\Special topic\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="Scripts\Special topic\baidumap.js" />
+    <Content Include="Scripts\Special topic\bd6e300324d7f46f29a99dadbb826379.js" />
+    <Content Include="Scripts\Special topic\c.js" />
+    <Content Include="Scripts\Special topic\fgcomm.v620152248.js" />
+    <Content Include="Scripts\Special topic\header.js" />
+    <Content Include="Scripts\Special topic\index_header.js" />
+    <Content Include="Scripts\Special topic\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\Special topic\lang.js" />
+    <Content Include="Scripts\Special topic\mt3.v1014201036.js" />
+    <Content Include="Scripts\Special topic\sousuo.js" />
     <Content Include="Scripts\vue.js" />
     <Content Include="Scripts\vue.min.js" />
     <Content Include="Show\FarmDetails.aspx" />
     <Content Include="Show\FarmRow.aspx" />
+    <Content Include="Special topic\Special topic.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +161,20 @@
     </Compile>
     <Compile Include="Home\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAndRegister\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginAndRegister\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAndRegister\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginAndRegister\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shared\Main.Master.cs">
@@ -253,6 +197,13 @@
     </Compile>
     <Compile Include="Show\FarmRow.aspx.designer.cs">
       <DependentUpon>FarmRow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Special topic\Special topic.aspx.cs">
+      <DependentUpon>Special topic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Special topic\Special topic.aspx.designer.cs">
+      <DependentUpon>Special topic.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -307,7 +258,7 @@
   <ItemGroup>
     <Folder Include="Content\Commond\" />
     <Folder Include="Content\Home\" />
-    <Folder Include="LoginAndRegister\" />
+    <Folder Include="Products\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Commond\" />
     <Folder Include="Scripts\Home\" />
