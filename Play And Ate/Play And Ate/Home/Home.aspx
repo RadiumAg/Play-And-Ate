@@ -3,53 +3,53 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-		<script type="text/javascript">
-			var APP_ROOT = '';
-			var CART_URL = '/cart';
-			var CART_CHECK_URL = '/cart-check';
-			var LOADER_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/lazy_loading.gif';
-			var ERROR_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
-		</script>
-		<script type="text/javascript">
-			jQuery(document).ready(
-				function ($) {
-					$("img").lazyload({
-						effect: "fadeIn",
-						threshold: "200",
-						failurelimit: "10"
-					});
-				});
-		</script>
-		<script type="text/javascript">
-			//首先用JQ判断浏览器类型及版本，如果是IE8以下的浏览器就用effect=show，否则就用effect=fadeIn，判断浏览器版本函数如下
-			function checkbrowse() {
-				var ua = navigator.userAgent.toLowerCase();
-				var is = (ua.match(/\b(chrome|opera|safari|msie|firefox)\b/) || ['', 'mozilla'])[1];
-				var r = '(?:' + is + '|version)[\\/: ]([\\d.]+)';
-				var v = (ua.match(new RegExp(r)) || [])[1];
-				jQuery.browser.is = is;
-				jQuery.browser.ver = v;
-				return {
-					'is': jQuery.browser.is,
-					'ver': jQuery.browser.ver
-				}
-			}
-			//改造Jquery.LazyLoad.js函数，根据浏览器版本来显示不同的滤镜效果
-			var public = checkbrowse();
-			var showeffect = "";
-			if ((public['is'] == 'msie' && public['ver'] < 8.0)) {
-				showeffect = "show"
-			} else {
-				showeffect = "fadeIn"
-			}
-			jQuery(document).ready(function ($) {
-				$("img").lazyload({
-					placeholder: "http://www.01nz.com.cn/app/Tpl/fanwe/js/grey.gif",
-					effect: showeffect,
-					failurelimit: 10
-				})
-			});
-		</script>
+    <script type="text/javascript">
+        var APP_ROOT = '';
+        var CART_URL = '/cart';
+        var CART_CHECK_URL = '/cart-check';
+        var LOADER_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/lazy_loading.gif';
+        var ERROR_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
+    </script>
+    <script type="text/javascript">
+        jQuery(document).ready(
+            function ($) {
+                $("img").lazyload({
+                    effect: "fadeIn",
+                    threshold: "200",
+                    failurelimit: "10"
+                });
+            });
+    </script>
+    <script type="text/javascript">
+        //首先用JQ判断浏览器类型及版本，如果是IE8以下的浏览器就用effect=show，否则就用effect=fadeIn，判断浏览器版本函数如下
+        function checkbrowse() {
+            var ua = navigator.userAgent.toLowerCase();
+            var is = (ua.match(/\b(chrome|opera|safari|msie|firefox)\b/) || ['', 'mozilla'])[1];
+            var r = '(?:' + is + '|version)[\\/: ]([\\d.]+)';
+            var v = (ua.match(new RegExp(r)) || [])[1];
+            jQuery.browser.is = is;
+            jQuery.browser.ver = v;
+            return {
+                'is': jQuery.browser.is,
+                'ver': jQuery.browser.ver
+            }
+        }
+        //改造Jquery.LazyLoad.js函数，根据浏览器版本来显示不同的滤镜效果
+        var public = checkbrowse();
+        var showeffect = "";
+        if ((public['is'] == 'msie' && public['ver'] < 8.0)) {
+            showeffect = "show"
+        } else {
+            showeffect = "fadeIn"
+        }
+        jQuery(document).ready(function ($) {
+            $("img").lazyload({
+                placeholder: "http://www.01nz.com.cn/app/Tpl/fanwe/js/grey.gif",
+                effect: showeffect,
+                failurelimit: 10
+            })
+        });
+    </script>
     <div id="bn" class="w-100">
         <!-- 热搜直通车 -->
         <div class="train">
@@ -1215,7 +1215,8 @@
                                             target="_blank">[上海雪浪湖温泉度假村]包含项目射箭、骑马、卡拉ok、拓展等等</a>
                                     </div>
                                     <div class="mrm_price f_r">
-                                        <label class="yellow f-20">668</label>元起</div>
+                                        <label class="yellow f-20">668</label>元起
+                                    </div>
                                 </li>
                                 <li>
                                     <a href="http://suzhou.01nz.com.cn/farm/200.html" target="_blank">
@@ -1229,7 +1230,8 @@
                                             target="_blank">[金谷农庄]包含项目射箭、骑马、卡拉ok、拓展等等</a>
                                     </div>
                                     <div class="mrm_price f_r">
-                                        <label class="yellow f-20">238</label>元起</div>
+                                        <label class="yellow f-20">238</label>元起
+                                    </div>
                                 </li>
                                 <li>
                                     <a href="http://sh.01nz.com.cn/farm/65.html" target="_blank">
@@ -1242,7 +1244,8 @@
                                             target="_blank">[漕泾休闲水庄温泉岛]包含项目射箭、骑马、卡拉ok、拓展等等</a>
                                     </div>
                                     <div class="mrm_price f_r">
-                                        <label class="yellow f-20">338</label>元起</div>
+                                        <label class="yellow f-20">338</label>元起
+                                    </div>
                                 </li>
                                 <li>
                                     <a href="http://sz.01nz.com.cn/farm/540.html" target="_blank">
@@ -1255,7 +1258,8 @@
                                             target="_blank">[五指耙农家乐]包含项目射箭、骑马、卡拉ok、拓展等等</a>
                                     </div>
                                     <div class="mrm_price f_r">
-                                        <label class="yellow f-20">88</label>元起</div>
+                                        <label class="yellow f-20">88</label>元起
+                                    </div>
                                 </li>
                                 <li>
                                     <a href="http://sh.01nz.com.cn/farm/59.html" target="_blank">
@@ -1268,7 +1272,8 @@
                                             target="_blank">[葵园生态农庄]包含项目射箭、骑马、卡拉ok、拓展等等</a>
                                     </div>
                                     <div class="mrm_price f_r">
-                                        <label class="yellow f-20">328</label>元起</div>
+                                        <label class="yellow f-20">328</label>元起
+                                    </div>
                                 </li>
                                 <li>
                                     <a href="http://sh.01nz.com.cn/farm/18913.html" target="_blank">
@@ -1281,7 +1286,8 @@
                                             target="_blank">[赵家土菜馆]包含项目射箭、骑马、卡拉ok、拓展等等</a>
                                     </div>
                                     <div class="mrm_price f_r">
-                                        <label class="yellow f-20">188</label>元起</div>
+                                        <label class="yellow f-20">188</label>元起
+                                    </div>
                                 </li>
                                 <li>
                                     <a href="http://sh.01nz.com.cn/farm/18970.html" target="_blank">
@@ -1294,7 +1300,8 @@
                                             target="_blank">[金沈泽农家乐]包含项目射箭、骑马、卡拉ok、拓展等等</a>
                                     </div>
                                     <div class="mrm_price f_r">
-                                        <label class="yellow f-20">180</label>元起</div>
+                                        <label class="yellow f-20">180</label>元起
+                                    </div>
                                 </li>
 
                             </ul>
