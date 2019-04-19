@@ -5,7 +5,6 @@
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta property="qc:admins" content="1044064167601626375636" />
     <meta property="wb:webmaster" content="efeb2f94a95bd5fd" />
@@ -22,28 +21,32 @@
     <!--地址栏和标签上显示图标-->
     <link rel="Bookmark" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
     <!--收藏夹显示图标-->
+    <script src="../Plugin/jquery-1.8.3.min.js"></script>
+    <script src="../Scripts/Shared/main_store.js"></script>
+    <script src="../Plugin/jquery.dotdotdot.js"></script>
+    <script src="../Scripts/Shared/querycity.js"></script>
+    <script src="../Scripts/Shared/citylist.js"></script>
+    <script src="../Scripts/Shared/lanrenzhijia.js"></script>
+    <script src="../Scripts/Shared/scripts.js"></script>
+    <script src="../Scripts/Shared/script.js"></script>
+    <script src="../Plugin/jquery.lazyload.js"></script>
+    <link href="../Content/Shared/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/Shared/main_huandeng.css" rel="stylesheet" />
+    <link href="../Content/Shared/style.css" rel="stylesheet" />
+    <link href="../Content/Shared/new_main.css" rel="stylesheet" />
+    <link href="../Content/Shared/cityquery.css" rel="stylesheet" />
     <link href="../Content/Shared/weebox.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="../Content/Home/style.css" />
-
-    <script type="text/javascript" src="../Content/Home/main_store.js"></script>
-    <script type="text/javascript" src="../Content/Home/citylist.js"></script>
-    <script type="text/javascript" src="../Content/Home/querycity.js"></script>
-    <link href="../Content/Home/main_huandeng.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../Content/Home/cityquery.css" />
-    <script type="text/javascript" src="../Scripts/Home/jquery.dotdotdot.js"></script>
-    <script type="text/javascript" src="../Scripts/Home/lanrenzhijia.js"></script>
-    <script type="text/javascript" src="../Scripts/Home/scripts.js"></script>
-    <script type="text/javascript" src="../Scripts/Home/script.js"></script>
-    <script type="text/javascript" src="../Scripts/Home/jquery-1.8.3.min.js"></script>
-    <link href="../Content/Home/font-awesome.min.css" rel="stylesheet" />
+    <link href="../Content/Shared/style.css" rel="stylesheet" />
+    <link href="../Content/Shared/WdatePicker.css" rel="stylesheet" />
+    <script src="../Scripts/Shared/WdatePicker.js"></script>
+    <script src="../Scripts/Shared/lang.js"></script>
+   
     <style type="text/css">
         .none {
             display: none;
         }
     </style>
-    <link href="../Content/Home/WdatePicker.css" rel="stylesheet" type="text/css" />
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="Style" runat="server"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -68,12 +71,12 @@
                 <div class="headerss">
                     <div class="LOGE">
                         <a href="http://www.01nz.com.cn/">
-                            <img alt="第一农庄网" class="f_l" src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/loge.gif">
+                            <img alt="第一农庄" class="f_1" src="../Images/Shared/loge.gif" />
                         </a>
                     </div>
                     <div id="city">
                         <dl id="warpper">
-                            <dt onclick="changeMenu(this,0);"><font><b class="chengshi">城市</b></font><font color="#C80063"><b><img src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/cs_dw.png" alt="城市"></b></font></dt>
+                            <dt onclick="changeMenu(this,0);"><font><b class="chengshi">城市</b></font><font color="#C80063"><b><img src="../Images/Shared/cs_dw.png" alt="城市" /></b></font></dt>
                             <script language="javascript">
                                 $(document).ready(function () {
                                     var sousuo_btn = document.getElementById("sousuo_btn");
@@ -201,7 +204,7 @@
                         <div class="blank1"></div>
                     </div>
                     <div class="f_r busy_yh">
-                        <img src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/35.gif">
+                        <img src="../Images/Shared/35.gif" />
                     </div>
 
                 </div>
@@ -232,7 +235,6 @@
                             <li onclick="nav(6)" id="n6" class="soso ">
                                 <a href="http://www.01nz.com.cn/fishing" target="">垂钓场</a>
                             </li>
-
                             <li class="zhuanti_dh" style="float: right;"><a href="http://www.01nz.com.cn/discover" target="_blank">专题</a></li>
                         </ul>
                     </div>
@@ -244,11 +246,10 @@
                     $("#n" + id).addClass('nva_hover');
                 }
             </script>
-            <script type="text/javascript" src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/lang.js.下载"></script>
-            <asp:ContentPlaceHolder ID="Content" runat="server">
-            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="Content" runat="server"/>
             <!-- 专题友情链接 -->
             <div class="blank"></div>
+            <asp:ContentPlaceHolder ID="Footer" runat="server"/>
         </div>
     </form>
 </body>

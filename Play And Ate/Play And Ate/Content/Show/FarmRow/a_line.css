@@ -1,0 +1,641 @@
+@charset "utf-8";
+h3{ margin:0px; padding:0px;}
+.a_body{ float:left; width:978px; border:1px solid  #cccccc; overflow:hidden; padding:20px 0px 20px 20px; }
+ .a_title{ float:left; width:100%;}
+ .a_title h1{font-family:"Microsoft Yahei"; color: #333333; font-size:18px;}
+ .a_title h1{ float:left; margin-right:10px;}
+ .a_title img{ float:left; margin-left:0px; margin-top:10px;}
+ .a_title p{ float:left; width:100%; color:#666;}
+ .a_title p font{ font-size:14px; color: #FF6600}
+ 
+ .a_info{ float:left; width:100%;}
+  .a_info_left{ float:left; width:402px;}
+   .divimagebanner img{ border:1px solid #ccc;}
+   .divbanner li{ float:left}
+   .divbanner li a{ cursor:pointer; float:left; border:1px solid #ccc;}
+   .divbanner li a:hover{ border:1px solid  #d93d4d;}
+.weizhi{float:left; color:#CCC}
+  .a_info_right{ float:left; margin-left:20px;width:520px;color:#333;background-color: #F9F9F9; padding-left:20px; padding-top:20px;  }
+  .a_info_right span{  }
+  .a_info_right li font{ font-family:"黑体";}
+  .a_info_right li{ float:left; height:25px; line-height:25px; width:520px;}
+  .a_info_right li i {
+	font-size: 14px; font-style: normal; font-weight: bold;color:#FF6600
+   }
+   .a_info_right li b {
+	 font-size: 26px; font-weight: bold; color:#FF6600; font-family:Geneva, Arial, Helvetica, sans-serif
+  }
+  .a_info_right li a{ color:#ff6600; margin-left:10px;}
+  .a_info_right li .u1{ font-size:16px}
+  .a_info_right  li input {
+	border: 1px solid rgb(204, 204, 204); width: 40px; height: 18px;
+    }
+	
+	/* 预订下拉菜单 ×××××××××××××××××××××××××××××××*/
+	
+	.a_info_right .p10 .s10 {
+	width: 411px; height: 34px; line-height: 34px;
+     }
+    .a_info_right .p10 .s10 .s1 {
+	background: url("../images/p38.gif") no-repeat 0px 0px; width: 100%; height: 4px; overflow: hidden; clear: both; float: left;
+}
+    .a_info_right .p10 .s10 .s2 {
+	background: url("../images/p54.gif") repeat-y 0px 0px; width: 100%; height: 23px; overflow: hidden; clear: both; text-decoration: none; border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: 0px; border-bottom-width: 0px; border-top-style: none; border-bottom-style: none; float: left;
+}
+    .a_info_right .p10 .s10 .s3 {
+	background: url("../images/p39.gif") no-repeat 0px 0px; width: 100%; height: 5px; overflow: hidden; clear: both; float: left;
+}
+   .a_info_right .p10 .s10 input {
+	margin: 2px 0px 0px 6px; border: 1px solid rgb(102, 102, 102); width: 395px; height: 16px; color: rgb(153, 153, 153); line-height: 16px; overflow: hidden; padding-left: 2px; float: left;
+}
+   .a_info_right .s10Trim1 {
+	top: 26px; width: 411px; right: 1px; clear: both; float: right; position: absolute;
+}
+   .a_info_right .p10 .cArrow {
+	width: 47px; height: 15px; right: 5px; bottom: -20px; float: right; position: absolute; cursor: pointer; 
+}
+   .a_info_right .p10 .cdown {
+	background: url("../images/p5.gif") no-repeat 0px 0px; bottom: -20px;
+}
+    .a_info_right .p10 .cup {
+	background: url("../images/p50.gif") no-repeat 0px 0px; bottom: -14px;
+}
+    .a_info_right .p10 .calenderPart {
+	background: url("../images/p54.gif") repeat-y 0px 0px; width: 411px; overflow: hidden; clear: both; border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: 0px; border-bottom-width: 0px; border-top-style: none; border-bottom-style: none; float: right; display: none;
+}
+   .a_info_right .p10 .calenderPartM {
+	background: rgb(244, 242, 242); margin: 5px 0px 0px 6px; width: 399px; overflow: hidden; clear: both; border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: 0px; border-bottom-width: 0px; border-top-style: none; border-bottom-style: none; float: left; display: inline;
+}
+   .a_info_right .p10 .calenderPartM ul {
+	background: rgb(255, 255, 255); border: 1px solid rgb(102, 102, 102); width: 397px; height:150px; overflow: auto; clear: both; float: left;
+}
+   .a_info_right .p10 .calenderPartM li {
+	width: 100%; height: 25px; color: rgb(51, 51, 51); line-height: 25px; text-indent: 10px; overflow: hidden; clear: both; font-size: 14px; border-bottom-color: rgb(237, 237, 237); border-bottom-width: 1px; border-bottom-style: solid; float: left; display: block; cursor: pointer;
+}
+   .a_info_right .p10 .calenderPartM li:hover {
+	background: rgb(238, 238, 238);
+}
+   .a_info_right .p10 .calenderPartM li b {
+	color: rgb(255, 102, 0); font-weight: bold; font-size:14px
+}
+   .a_info_right .p10 .calenderPartF {
+  	background: url("../images/p39.gif") no-repeat 0px 0px; width: 411px; height: 5px; overflow: hidden; clear: both; float: left;
+}
+    .p10{ float:left; margin-top:15px; position: relative;}
+	.p10 span{ float:left; line-height:30px;}
+	
+	.a_info_right #submit_a{background: url("../images/btn.gif") no-repeat 0px 0px; width:142px; height:37px; border:0px; margin-top:0px; margin-left:60px; cursor:pointer; float:left}
+	
+	.a_info_right #save{background: url("../images/save.gif") no-repeat 0px 0px; width:127px; height:36px; border:0px; margin-top:0px; margin-left:20px; cursor:pointer}
+	
+	
+	.a_ts{ float:left; border:2px solid #FF9900; width:950px; overflow:hidden}
+	.a_ts div{ height:25px; width:948px; background-color:#FEFAED; float:left; line-height:25px; text-indent:10px; color:#FF6600; font-weight:bold}
+	.a_ts p{ margin:10px; line-height:20px; color:#333;}
+	
+
+
+
+.a_xc{ float:left; width:950px;}
+.a_xc span{ float:left;background: url("../images/line_07.gif"); height:31px; width:950px; font-size:14px; color:#FFFFFF; line-height:31px; font-weight:bold; overflow:hidden}
+.a_xc span div{ width:115px; text-align:center; line-height:35px; float:left; color:#FFFFFF;}
+.a_xc span font{ font-size:12px; text-indent:10px; font-weight:normal; float:right; color:#FF6600}
+
+
+.tl_l_titlec{ float:left; width:940px; border-bottom:1px dashed #ccc; padding-bottom:10px; margin-left:10px;}
+.tl_l_titlec_left{ float:left; background-color:#009900; width:50px; height:28px; text-align:center; line-height:28px; color:#fff; font-size:14px; font-weight:bold}
+.tl_l_titlec_right { float:left; width:840px; margin-left:20px;}
+
+.a_atitle{ float:left; color:#009900; font-size:14px; font-weight:bold; width:100%}
+#tl_l_content{ float:left; line-height:22px; margin-top:10px; color:#666}
+.tl_l_contents{margin-top:10px; float:left; width:100% }
+.tl_l_contents span{ font-weight:bold; }
+#tl_l_content img{ border:1px solid #ccc; padding:2px; width:200px;}
+.a_t{ margin-top:10px;}
+.a_t p{ line-height:22px; color:#666;}
+
+.a_t .civ{ margin-top:10px; float:left; margin-left:10px; margin-bottom:10px; line-height:20px; color:#333;}
+
+.a_xg{ float:left; border:2px solid #FF6600; width:946px; overflow:hidden; padding-bottom:10px;}
+.a_xg span{ float:left; width:946px; height:30px; line-height:30px; text-indent:10px; background-color:#FFEEDD; font-size:14px; color:#FF0000; font-weight:bold; overflow:hidden}
+
+.a_xg ul li{ float:left; margin:10px; width:420px;background: url(../images/p29.gif) no-repeat 0px 4px; text-indent:12px;}
+.a_xg ul li a{ font-size:14px; font-weight:bold; float:left}
+.a_xg ul li i{ float:right; font-style:normal; color:#FF6600}
+.a_xg ul li i font{ font-size:16px; font-weight:bold}
+
+
+.fastCalender1 {
+	padding: 10px;  width:480px; margin-bottom: 15px;
+}
+.fastCalender1 .input1 {
+	border: 1px solid rgb(204, 204, 204); width: 40px; height: 18px;
+}
+.fastCalender1 .p9 {
+	width: 270px; float: left;
+}
+.fastCalender1 .p10 {
+	width: 485px; float: left;
+}
+.fastCalender1 .p9 {
+	margin-top: 4px;
+}
+.fastCalender1 .p9 input {
+	border: 1px solid rgb(204, 204, 204); width: 40px; height: 18px;
+}
+.fastCalender1 .p11 {
+	margin-left: 15px; float: left; display: inline;
+}
+.fastCalender1 .p11 input {
+	background: url("../images/p27.gif") no-repeat 0px 0px; border: 0px currentColor; width: 127px; height: 36px; cursor: pointer;
+}
+.fastCalender1 .p9 i {
+	color: rgb(153, 153, 153); font-style: normal;
+}
+.fastCalender1 .p10 {
+	margin-bottom: 15px; position: relative;
+}
+.fastCalender1 .p10 label {
+	width: 60px; margin-top: 7px; float: left;
+}
+.fastCalender1 .p10 .s10 {
+	width: 411px; height: 34px; line-height: 34px; float: left;
+}
+.fastCalender1 .p10 .s10 .s1 {
+	background: url("../images/p38.gif") no-repeat 0px 0px; width: 411px; height: 3px; overflow: hidden; clear: both; float: left;
+}
+.fastCalender1 .p10 .s10 .s2 {
+	background: url("../images/p54.gif") repeat-y 0px 0px; width: 411px; height: 24px; overflow: hidden; clear: both; text-decoration: none; border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: 0px; border-bottom-width: 0px; border-top-style: none; border-bottom-style: none; float: left;
+}
+.fastCalender1 .p10 .s10 .s3 {
+	background: url("../images/p39.gif") no-repeat 0px 0px; width: 411px; height: 5px; overflow: hidden; clear: both; float: left;
+}
+.fastCalender1 .p10 .s10 input {
+	margin: 3px 0px 0px 6px; border: 1px solid rgb(102, 102, 102); width: 395px; height: 16px; color: rgb(153, 153, 153); overflow: hidden; padding-left: 2px; float: left;
+}
+.fastCalender1 .s10Trim1 {
+	top: 26px; width: 411px; right: 14px; clear: both; float: right; position: absolute; _right: 13px;
+}
+.fastCalender1 .p10 .cArrow {
+	width: 47px; height: 15px; right: 10px; float: right; position: absolute; cursor: pointer;
+}
+.fastCalender1 .p10 .cdown {
+	background: url("../images/p5.gif") no-repeat 0px 0px; bottom: -20px;
+}
+.fastCalender1 .p10 .cup {
+	background: url("../images/p50.gif") no-repeat 0px 0px; bottom: -14px;
+}
+.fastCalender1 .calenderPart {
+	background: url("../images/p54.gif") repeat-y 0px 0px; width: 411px; overflow: hidden; clear: both; border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: 0px; border-bottom-width: 0px; border-top-style: none; border-bottom-style: none; float: right; display: none;
+}
+.fastCalender1 .calenderPartM {
+	margin: 5px 0px 0px 6px; width: 405px; clear: both; border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: 0px; border-bottom-width: 0px; border-top-style: none; border-bottom-style: none; float: left; display: inline;
+}
+.fastCalender1 .calenderPartM ul {
+	background: rgb(255, 255, 255); border: 1px solid rgb(102, 102, 102); width: 397px; height: 205px; overflow: auto;
+}
+.fastCalender1 .calenderPartM li {
+	height: 33px; color: rgb(51, 51, 51); line-height: 33px; text-indent: 5px; font-size: 14px; border-bottom-color: rgb(237, 237, 237); border-bottom-width: 1px; border-bottom-style: solid; cursor: pointer;
+}
+.fastCalender1 .calenderPartM li:hover {
+	background: rgb(238, 238, 238);
+}
+.fastCalender1 .calenderPartM li b {
+	color: rgb(255, 102, 0); font-weight: bold;
+}
+.fastCalender1 .calenderPartF {
+	background: url("../images/p39.gif") no-repeat 0px 0px; width: 411px; height: 5px; overflow: hidden; clear: both; float: left;
+}
+
+.fastCalender2 {
+	 width: 472px; margin-bottom: 15px; margin-top:10px; display:inline
+	
+}
+
+.fastCalender2 .input1 {
+	border: 1px solid rgb(204, 204, 204); width: 40px; height: 18px;
+}
+.fastCalender2 .p9 {
+	width: 375px; margin-bottom: 5px; float: left;
+}
+.fastCalender2 .p10 {
+	width: 500px; float: left;
+}
+.fastCalender2 .p9 {
+	margin-top: 4px;
+}
+.fastCalender2 .p9 input {
+	border: 1px solid rgb(204, 204, 204); width: 40px; height: 18px;
+}
+.fastCalender2 .p11 {
+	margin-left: 15px; float: left; display: inline;
+}
+.fastCalender2 .p11 input {
+	background: url("../images/p27.gif") no-repeat 0px 0px; border: 0px currentColor; width: 127px; height: 36px; cursor: pointer;
+}
+.fastCalender2 .p9 i {
+	color: rgb(153, 153, 153); font-style: normal;
+}
+.fastCalender2 .p10 {
+	margin-bottom: 15px; position: relative;
+}
+.fastCalender2 .p10 label {
+	width: 60px; margin-top: 7px; float: left;
+}
+.fastCalender2 .p10 .s10 {
+	width: 411px; height: 34px; line-height: 34px; float: left;
+}
+.fastCalender2 .p10 .s10 .s1 {
+	background: url("../images/p38.gif") no-repeat 0px 0px; width: 411px; height: 3px; overflow: hidden; clear: both; float: left;
+}
+.fastCalender2 .p10 .s10 .s2 {
+	background: url("../images/p54.gif") repeat-y 0px 0px; width: 411px; height: 24px; overflow: hidden; clear: both; text-decoration: none; border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: 0px; border-bottom-width: 0px; border-top-style: none; border-bottom-style: none; float: left;
+}
+.fastCalender2 .p10 .s10 .s3 {
+	background: url("../images/p39.gif") no-repeat 0px 0px; width: 411px; height: 5px; overflow: hidden; clear: both; float: left;
+}
+.fastCalender2 .p10 .s10 input {
+	margin: 3px 0px 0px 6px; border: 1px solid rgb(102, 102, 102); width: 395px; height: 16px; color: rgb(153, 153, 153); overflow: hidden; padding-left: 2px; float: left;
+}
+.fastCalender2 .s10Trim1 {
+	top: 26px; width: 411px; right: 29px; clear: both; float: right; position: absolute;
+}
+.fastCalender2 .p10 .cArrow {
+	width: 47px; height: 15px; right: 5px; float: right; position: absolute; cursor: pointer;
+}
+.fastCalender2 .p10 .cdown {
+	background: url("../images/p5.gif") no-repeat 0px 0px; bottom: -20px;
+}
+.fastCalender2 .p10 .cup {
+	background: url("../images/p50.gif") no-repeat 0px 0px; bottom: -14px;
+}
+.fastCalender2 .p11 {
+	margin-left: 0px;
+}
+.fastCalender2 .p11 label {
+	width: 60px; margin-top: 7px; float: left;
+}
+.fastCalender2 .p11 .s11 {
+	width: 315px; height: 32px; line-height: 32px; float: left;
+}
+.fastCalender2 .calenderPart {
+	background: url("../images/p54.gif") repeat-y 0px 0px; width: 411px; overflow: hidden; clear: both; border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: 0px; border-bottom-width: 0px; border-top-style: none; border-bottom-style: none; float: right; display: none; overflow:hidden;
+}
+.fastCalender2 .calenderPartM {
+	margin: 5px 0px 0px 6px; width: 405px; clear: both; border-top-color: currentColor; border-bottom-color: currentColor; border-top-width: 0px; border-bottom-width: 0px; border-top-style: none; border-bottom-style: none; float: left; display: inline;
+}
+.fastCalender2 .calenderPartM ul {
+  border: 1px solid rgb(102, 102, 102); width: 397px; height: 205px; overflow: auto; background-color:#FFFFFF
+}
+.fastCalender2 .calenderPartM li {
+	height: 33px; color: rgb(51, 51, 51); line-height: 33px; text-indent: 5px; font-size: 14px; border-bottom-color: rgb(237, 237, 237); border-bottom-width: 1px; border-bottom-style: solid; cursor: pointer;
+}
+.fastCalender2 .calenderPartM li:hover {
+	background: rgb(238, 238, 238);
+}
+.fastCalender2 .calenderPartM li b {
+	color: rgb(255, 102, 0); font-weight: bold;
+}
+.fastCalender2 .calenderPartF {
+	background: url("../images/p39.gif") no-repeat 0px 0px; width: 411px; height: 5px; overflow: hidden; clear: both; float: left;
+}
+.a_info_right li font{ font-size:12px; font-family:"宋体"}
+
+.dee{ float:right; width:240px;margin-top:8px;}
+.dee a{ font-size:12px; float:left}
+.bdshare_t{ }
+.bdshare_t span{margin-top:-5px;}
+.bdshare_t a{ margin-top:-5px;}
+
+.pkg-detail-wrap {
+	height: 30px; position: relative; z-index: 4;
+}
+.pkg-detail-tab {
+	background: rgb(255, 255, 255); width: 952px; height: 30px; border-bottom-color: rgb(216, 216, 216); border-bottom-width: 1px; border-bottom-style: solid; position: absolute;
+}
+.pkg-detail-tab-bd {
+	top: 0px; width: 100%; height: 31px; position: absolute;
+}
+.pkg-detail-tab-bd a {
+	border-width: 1px 1px 0px; border-style: solid solid none; border-color:#d93d4d; margin: 0px 3px 0px 0px; padding: 0px 12px; border-radius: 4px 4px 0px 0px; height: 29px; color:#666666; line-height: 29px; font-size: 14px; float: left; background-color: #fee7ea;
+}
+.pkg-detail-tab-bd a.current {
+	background: rgb(255, 255, 255); border-width: 3px 1px 0px; border-style: solid solid none; border-color: #d93d4d rgb(216, 216, 216) rgb(216, 216, 216); color: #666666; font-weight: 700;
+}
+
+
+.clearfix {
+	zoom: 1;
+}
+.clearfix::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: ".";
+}
+.rilibj{ float:left; margin-top:20px;}
+.rilibj h3{ font-size:12px; font-weight:normal; color:#666}
+
+.pkg-detail-box {
+	border: 1px solid rgb(234, 234, 234); overflow: hidden;
+}
+/*  特色  */
+.manager_rec {
+	width: 950px;
+}
+.manager_rec .mRec_wrap {
+	
+}
+.manager_rec .mRec_title {
+	background-position: 10px -1832px; padding: 8px 0px 0px 10px; height: 30px; line-height: 30px; font-size: 14px; font-weight: 700;
+}
+.manager_rec .mRec_con {
+	margin: 0px 10px; padding: 10px; border: 1px solid rgb(221, 221, 221); color: rgb(102, 102, 102); line-height: 1.7; background-color: rgb(248, 248, 248);
+}
+.manager_rec .mRec_con a {
+	color: rgb(0, 0, 255); text-decoration: underline;
+}
+
+
+
+/*  行程  */
+.tourSection_niuren {
+	font: 12px/1.5 Tahoma, arial, 宋体, sans-serif; margin: 0px auto; width: 100%; text-align: left; color: rgb(64, 64, 64); overflow: hidden; font-size-adjust: none; font-stretch: normal; padding-left:10px; padding-top:20px;
+}
+.tourSection_niuren .tourContent_new {
+	border: 1px solid rgb(255, 255, 255);
+}
+.tourSection_niuren .day_title_new {
+	color: rgb(255, 102, 0); font-size: 12px;
+}
+.tourSection_niuren .day_title_new h3 {
+	margin: 0px 0px 10px; padding: 0px !important; width: 100% !important; color: rgb(255, 102, 0) !important; font-size: 100%; font-weight: 700; float: none; zoom: 1;
+}
+.tourSection_niuren .day_title_new h3::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: ".";
+}
+.tourSection_niuren .day_title_new h3 em {
+	background: url("../images/diNtian.png") no-repeat 0px 4px; padding-left: 10px; font-size: 14px; font-style: normal; font-weight: 700; margin-right: 10px; float: left;
+}
+.tourSection_niuren .day_title_new h3 div {
+	width: auto; height: auto; padding-left: 20px; font-size: 14px; font-weight: normal; float: left; display: block; word-break: break-all; word-wrap: break-word;
+}
+.tourSection_niuren .day_title_new h3 div img {
+	margin: 0px 5px;
+}
+.tourSection_niuren .day_title_new div.tour_line {
+	margin: 0px; padding: 0px 0px 10px 80px; border: 1px solid rgb(255, 255, 255); color: rgb(64, 64, 64); line-height: 190%; word-break: break-all; word-wrap: break-word;
+}
+.tourSection_niuren .time_box_inner {
+	padding: 5px 0px 0px; border: 1px dashed rgb(255, 255, 255); font-size: 12px;
+}
+.tourSection_niuren .time_box_inner .time_num {
+	width: 60px; padding-right: 5px; float: left;
+}
+.tourSection_niuren .time_box_inner .time_num p {
+	margin: 0px; padding: 0px; word-break: break-all; word-wrap: break-word;
+}
+.tourSection_niuren .time_box_inner .time_num .tour_con {
+	margin: 0px; padding: 0px;
+}
+.tourSection_niuren .time_box_inner .time_do_new {
+	width: 920px; float: left;
+}
+.tourSection_niuren .time_box_inner .time_do_new .tour_description {
+	margin: 0px 0px 10px; padding: 0px 0px 0px 10px; border: 1px solid rgb(255, 255, 255); line-height: 1.6; font-size: 100%; word-break: break-all; word-wrap: break-word;
+}
+.tourSection_niuren .time_box_inner .time_do_new .tour_con_h4 {
+	background: rgb(240, 253, 233); padding: 10px; width: 680px; color: rgb(255, 102, 0); font-size: 100%; font-weight: 700; word-break: break-all; word-wrap: break-word;
+}
+.tourSection_niuren .tour_food {
+	background: rgb(249, 249, 249); margin:0px 0px 10px 0px; padding: 10px 10px 8px; border: 1px solid rgb(234, 234, 234); line-height: 190%; font-size: 12px; width:898px; height:30px;
+}
+.tourSection_niuren .tour_food .tour_item {
+	border: 1px solid rgb(249, 249, 249); zoom: 1;
+}
+.tourSection_niuren .tour_food .tour_item::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: ".";
+}
+.tourSection_niuren .tour_food .tour_item em {
+	font-style: normal; font-weight: 700; margin-right: 15px; float: left;
+}
+.tourSection_niuren .tour_food .tour_item div {
+	width: auto; height: auto; font-weight: normal; float: left; display: block; word-break: break-all; word-wrap: break-word;
+}
+.tourSection_niuren .time_box_inner .time_img_photo {
+	background: rgb(249, 254, 246); margin: 0px 0px 10px; padding: 20px 0px 0px; width: 700px;
+}
+.tourSection_niuren .time_box_inner .time_img_photo li {
+	margin: 0px 13px 10px; width: 324px; overflow: hidden; float: left; display: inline;
+}
+.tourSection_niuren .time_box_inner .time_img_photo li img {
+	
+}
+.tourSection_niuren .time_box_inner .time_img_photo li div {
+	text-align: center; overflow: hidden; padding-top: 5px; display: block;
+}
+.tourSection_niuren .w160 {
+	width: 160px;
+}
+.tourSection_niuren .w200 {
+	width: 200px;
+}
+.tourSection_niuren .tour_shop {
+	border: 1px solid rgb(255, 255, 255); width: 722px; margin-left: 70px;
+}
+.tourSection_niuren .tour_shop p {
+	margin: 0px !important;
+}
+.tourSection_niuren .tour_shop table {
+	background: rgb(255, 255, 255); width: 720px; font-size: 12px; margin-bottom: 10px; border-collapse: collapse; border-spacing: 0;
+}
+.tourSection_niuren .tour_shop table th {
+	background: rgb(248, 248, 248); padding: 5px 0px; border: 1px solid rgb(234, 234, 234); text-align: center; font-weight: 700;
+}
+.tourSection_niuren .tour_shop table td {
+	padding: 7px; border: 1px solid rgb(234, 234, 234); word-break: break-all;
+}
+.tourSection_niuren .tour_con {
+	background: rgb(249, 254, 246); padding: 3px 10px; border: 1px solid rgb(255, 255, 255); width: auto; word-break: break-all; word-wrap: break-word;
+}
+
+.pkg-detail-infor {
+	padding: 0px 0px; margin-top:0px;width:98%;
+}
+.pkg-detail-infor .detail_h2 {
+	padding: 0px 0px 0px 10px; height: 30px; line-height: 30px; font-size: 14px; font-weight: 700; background-color:#fee7ea; 
+}
+.pkg-detail-infor .detail_h2 span {
+	margin: 0px 0px -1px; height: 30px; float: left;
+}
+.pkg-detail-infor a {
+	text-decoration: underline;
+}
+.detail_infor { margin:10px;
+}
+.detail_infor p {
+	margin: 8px 0px;
+}
+
+.also_view {
+	border: 1px solid rgb(234, 234, 234); width: 1000px; margin-top:10px;
+}
+.also_view .thead_pro {
+	width: 1000px;
+}
+.also_view .slt_rout li {
+	padding: 10px 12px; width: 170px; float: left;
+}
+.thead_pro {
+	 height: 28px; color: rgb(64, 64, 64); line-height: 28px; text-indent: 10px; overflow: hidden; font-size: 14px; font-weight: 700; border-bottom-color: rgb(234, 234, 234); border-bottom-width: 1px; border-bottom-style: solid; white-space: nowrap; text-overflow: ellipsis;
+}
+.thead_pro h3 {
+	color: rgb(64, 64, 64); text-indent: 10px; font-size: 14px; font-weight: 700; weight:700px;
+}
+
+.slt_rout {
+	margin: 0px 9px 10px;
+}
+.slt_rout li .rout_wrap {
+	width: 160px; height: 90px; overflow: hidden; position: relative;
+}
+.slt_rout li .rout_wrap img {
+	width: 160px; margin-top: -15px;
+}
+.slt_rout li .rout_title {
+	padding: 10px 0px 0px;
+}
+.slt_rout li .rout_title a {
+	height: 35px; color: rgb(68, 68, 68); overflow: hidden; font-size: 12px; display: block;
+}
+.slt_rout li .rout_title a:hover {
+	color: rgb(255, 102, 0);
+}
+.slt_rout li .rout_price {
+	height: 24px; text-align: center; color: rgb(255, 102, 0); line-height: 24px; font-family: "微软雅黑"; font-size: 14px; margin-top: 10px;
+}
+
+
+.J_ScrollTop {
+	background: rgb(175, 175, 175); border: 1px solid rgb(222, 222, 222); top: 50%; width: 27px; height: 82px; right: 50%; margin-top: 140px; margin-right: -535px; display: none; position: fixed; z-index: 1001; _position: absolute;
+}
+.J_ScrollTop a {
+	background: url("../images/re.jpg") no-repeat; margin: 5px 0px 0px 5px; width: 16px; text-align: center; color: rgb(255, 255, 255); line-height: 1.3; padding-top: 12px; display: block; z-index: 9999;
+}
+.J_ScrollTopCur a:hover {
+	color: rgb(255, 255, 255);
+}
+.J_ScrollTopCur {
+	background: rgb(135, 135, 135);
+}
+.J_ScrollTopCur a {
+	background: url("../images/re1.jpg") no-repeat; color: rgb(255, 255, 255);
+}
+
+
+
+.fn-browse {
+	top: 55%; height: 100px; right: 50%; color: rgb(102, 102, 102);  margin-right: -535px; position: fixed; z-index: 9997; _position: absolute;
+}
+.fn-browseTitle li {
+	border: 1px solid rgb(222, 222, 222); width: 27px; height: 82px; line-height: 1.3; cursor: pointer;
+}
+.fn-browseTitle li {
+	background: url("../images/recently-icon.jpg") no-repeat;
+}
+.fn-browseTitle li span {
+	margin: 11px 0px 0px 6px; width: 16px; color: rgb(102, 102, 102); display: block;
+}
+.fn-browseTitle li span:hover {
+	color: rgb(255, 153, 0);
+}
+
+
+.fn-browseBox {
+	top: 0px; right: 28px; position: absolute;
+}
+.fn-browseOne {
+	background: rgb(255, 255, 255); border: 1px solid rgb(56, 155, 6); top: 0px; width: 420px; height: 310px; display: none; position: relative;
+}
+.fn-browseOne1 {
+	height: auto; padding-bottom: 20px;
+}
+
+.fn-browseTop {
+	background: rgb(224, 246, 197); height: 36px; line-height: 36px;
+}
+.fn-browseTop a {
+	background-position: -38px 0px; margin: 7px 3px 0px 0px; width: 21px; height: 23px; float: right; display: inline;
+}
+.fn-browseTop span {
+	color: rgb(51, 153, 0); font-size: 14px; font-weight: bold; margin-left: 15px;
+}
+
+.fn-browseTop a {
+	background: url("../images/recently-icon.jpg") no-repeat;
+}
+.hosturlo li{ float:left; margin-left:5px; margin-top:10px; border-bottom:1px dashed #ccc; padding-bottom:2px; width:400px;background: url("../images/order13.gif") no-repeat; text-indent:10px; overflow:hidden}
+
+#line_lx{ float:left; width:380px; margin-top:30px; border:1px solid #ccc; padding:10px; padding-top:0px;}
+.line_lx li{ float:left; width:380px; margin-top:10px;}
+.liucheng{width:400px; height:204px; background:url("../images/lcd.jpg") no-repeat 0px 0px;}
+.routexianx h3{ margin:0px; padding:0px;}
+.routexianx {
+	PADDING-BOTTOM: 13px; LINE-HEIGHT: 17px;  WIDTH: 950px; PADDING-RIGHT: 13px; HEIGHT: auto; FONT-SIZE: 14px; OVERFLOW: hidden; PADDING-TOP: 13px
+}
+
+.routexianx UL LI {
+	DISPLAY: inline; MARGIN-BOTTOM: 2px; FLOAT: left; margin-left:15px;
+}
+.routexianx UL LI A {
+	PADDING-LEFT: 10px; WHITE-SPACE: nowrap; BACKGROUND: url(../images/newszhongx.gif) no-repeat left center; FONT-SIZE: 14px
+}
+
+
+
+.routeli {
+	BORDER-BOTTOM: #cecece 1px dotted; WIDTH: 920px; ZOOM: 100%; MARGIN-LEFT: 0px; FONT-SIZE: 0px; OVERFLOW: hidden
+}
+.routeli DL IMG {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; WIDTH: 396px; PADDING-RIGHT: 2px; DISPLAY: block; HEIGHT: 261px; FONT-SIZE: 12px; BORDER-TOP: #ccc 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 2px
+}
+.routeli DL {
+	PADDING-BOTTOM: 6px; MARGIN: 0px 20px; DISPLAY: inline; FLOAT: left
+}
+.routeli DL DD {
+	TEXT-ALIGN: center; MARGIN-TOP: 5px; WIDTH: 396px; HEIGHT: 20px; FONT-SIZE: 12px
+}
+
+
+.subyd{  float:left}
+.liucheng{width:400px; height:204px; clear:both; background-image:url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/lcd.png) }
+.lc_1{width:130px; height:72px; float:left;  }
+.lc_1:hover{ background:url("http://xianlu.01nz.com.cn/ORG7188_templets/default/images/lc.jpg") no-repeat 0px 0px;}
+.lc_2{width:135px; height:72px; float:left;   }
+.lc_2:hover{background:url("http://xianlu.01nz.com.cn/ORG7188_templets/default/images/lc.jpg") no-repeat -130px 0px;}
+.lc_3{width:135px; height:72px; float:left;   }
+.lc_3:hover{background:url("http://xianlu.01nz.com.cn/ORG7188_templets/default/images/lc.jpg") no-repeat -265px 0px;}
+.lc_4{width:130px; height:63px;  float:left;   }
+.lc_4:hover{background:url("http://xianlu.01nz.com.cn/ORG7188_templets/default/images/lc.jpg") no-repeat 0px -72px;}
+.lc_5{width:135px; height:63px; float:left;  }
+.lc_5:hover{background:url("http://xianlu.01nz.com.cn/ORG7188_templets/default/images/lc.jpg") no-repeat -130px -72px; }
+.lc_6{width:135px; height:63px; float:left;   }
+.lc_6:hover{background:url("http://xianlu.01nz.com.cn/ORG7188_templets/default/images/lc.jpg") no-repeat -265px -72px;}
+.lc_7{width:130px; height:71px; float:left;  }
+.lc_7:hover{ background:url("http://xianlu.01nz.com.cn/ORG7188_templets/default/images/lc.jpg") no-repeat 0px -135px;}
+.lc_8{width:135px; height:71px; float:left; }
+.lc_8:hover{ background:url("http://xianlu.01nz.com.cn/ORG7188_templets/default/images/lc.jpg") no-repeat -130px -135px; }
+.lc_9{width:135px; height:71px; float:left;   }
+.lc_9:hover{background:url("http://xianlu.01nz.com.cn/ORG7188_templets/default/images/lc.jpg") no-repeat -265px -135px;}
+.zhuanti{margin-top:10px; }
+.zhuanti a{ margin-left:2px;}
+.jin_di{background-color:#f90; border:1px solid #f90; margin-top:5px; border-radius:4px; color:#f60; display:block; float:left; font-size:12px; height:14px; line-height:14px; overflow:hidden}
+.jin_di label{color:#fff; display:block; float:left; height:12px; line-height:12px; padding:1px 3px 1px 8px}
+.jin_di em{background-color:#fff; display:block; float:left; font-family:"microsoft yahei"; height:12px; line-height:12px; overflow:hidden; padding:1px 5px}
+.fastCalender2 li{color:#9c9c9c; display:inline; float:left; }
+.m_l5{margin-left:5px;}
+.f_l{float:left;}
+.f_r{float:right}
+.tujie{background:url("http://xianlu.01nz.com.cn/ORG7188_templets/default/images/zxyh.png") no-repeat 0px 0px;
+		}
+.tujie_1{background-color:#000; opacity:0.5; filter:alpha(opacity=50); width:287px; height:60px; float:right;}
+.tujie_1 p{height:20px; line-height:20px; text-align:left; margin-left:5px;}
+.biaozhi{float:left; border:1px #FF6600 solid; width:50px; height:20px; display:block; text-align:center; line-height:20px; border-radius:3px; color:#F60; font-size:12px; margin-right:10px; margin-top:2px;}
+.biaozhi1{float:left; border:1px #FF6600 solid; width:50px; height:20px; display:block; text-align:center; line-height:20px; border-radius:3px; color:#F60; font-size:12px; margin-right:10px; margin-top:5px;}
