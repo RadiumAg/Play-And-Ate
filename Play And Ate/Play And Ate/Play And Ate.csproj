@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\LoginAndRegister\Login\base.v606141511.css" />
+    <Content Include="Content\LoginAndRegister\Login\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
+    <Content Include="Content\LoginAndRegister\Register\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Shared\cityquery.css" />
     <Content Include="Content\Shared\font-awesome.min.css" />
     <Content Include="Content\Shared\main_huandeng.css" />
@@ -89,6 +93,9 @@
     <Content Include="Content\Show\FarmRow\bdsstyle.css" />
     <Content Include="Content\Show\FarmRow\dianping.css" />
     <Content Include="Content\Show\FarmRow\style.css" />
+    <Content Include="Content\Special topic\7da3944f35f4e8b851f1c5f9da53174f.css" />
+    <Content Include="Content\Special topic\base.v606141511.css" />
+    <Content Include="Content\Special topic\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Home\Home.aspx" />
     <Content Include="Home\Home.html" />
     <Content Include="Images\Shared\35.gif" />
@@ -100,19 +107,51 @@
     <Content Include="Images\Home\grey.gif" />
     <Content Include="Images\Shared\cs_dw.png" />
     <Content Include="Images\Shared\loge.gif" />
+    <Content Include="LoginAndRegister\Login.aspx" />
+    <Content Include="LoginAndRegister\Register.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
     <Content Include="Plugin\jquery-3.3.1.js" />
     <Content Include="Plugin\jquery-3.3.1.min.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\baidumap.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\c.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\fgcomm.v620152248.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\header.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\index_header.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\lang.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\mt3.v1014201036.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\sousuo.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\baidumap.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\c.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\fgcomm.v620152248.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\header.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\index_header.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\lang.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\mt3.v1014201036.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\sousuo.js" />
     <Content Include="Scripts\Show\FarmDetails\getscript.js" />
     <Content Include="Scripts\Show\FarmDetails\list.js" />
     <Content Include="Scripts\Show\FarmDetails\seller.js" />
+    <Content Include="Scripts\Special topic\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="Scripts\Special topic\baidumap.js" />
+    <Content Include="Scripts\Special topic\bd6e300324d7f46f29a99dadbb826379.js" />
+    <Content Include="Scripts\Special topic\c.js" />
+    <Content Include="Scripts\Special topic\fgcomm.v620152248.js" />
+    <Content Include="Scripts\Special topic\header.js" />
+    <Content Include="Scripts\Special topic\index_header.js" />
+    <Content Include="Scripts\Special topic\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\Special topic\lang.js" />
+    <Content Include="Scripts\Special topic\mt3.v1014201036.js" />
+    <Content Include="Scripts\Special topic\sousuo.js" />
     <Content Include="Scripts\vue.js" />
     <Content Include="Scripts\vue.min.js" />
     <Content Include="Show\FarmDetails.aspx" />
     <Content Include="Show\FarmRow.aspx" />
+    <Content Include="Special topic\Special topic.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +161,20 @@
     </Compile>
     <Compile Include="Home\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAndRegister\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginAndRegister\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginAndRegister\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginAndRegister\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shared\Main.Master.cs">
@@ -144,6 +197,13 @@
     </Compile>
     <Compile Include="Show\FarmRow.aspx.designer.cs">
       <DependentUpon>FarmRow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Special topic\Special topic.aspx.cs">
+      <DependentUpon>Special topic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Special topic\Special topic.aspx.designer.cs">
+      <DependentUpon>Special topic.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -198,7 +258,6 @@
   <ItemGroup>
     <Folder Include="Content\Commond\" />
     <Folder Include="Content\Home\" />
-    <Folder Include="LoginAndRegister\" />
     <Folder Include="Products\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Commond\" />
