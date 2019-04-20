@@ -10,10 +10,13 @@
 namespace FTZ.PlayAndAte.Models
 {
     using System;
+    using System.Collections.Generic;
     
-    public partial class sp_helpdiagramdefinition_Result
+    public partial class Sincerity
     {
-        public Nullable<int> version { get; set; }
-        public byte[] definition { get; set; }
+        public int UserId { get; set; }
+        public decimal SincerityNumber { get; set; }
+    
+        public virtual UserInfo_Role UserInfo_Role { get; set; }
     }
 }

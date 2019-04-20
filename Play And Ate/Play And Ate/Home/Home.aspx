@@ -1,8 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Play_And_Ate.Home.Home" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
+    <link href="../Content/Shared/style.css" rel="stylesheet" />
+    <link href="../Content/Home/new_main.css" rel="stylesheet" />
+    <script src="../Scripts/Home/main_store.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+    <asp:ScriptManagerProxy runat="server" ID="spHome">
+    </asp:ScriptManagerProxy>
     <script type="text/javascript">
         var APP_ROOT = '';
         var CART_URL = '/cart';
@@ -307,14 +312,14 @@
             <!-- 幻灯片 -->
             <div class="ppt-container">
                 <ul class="image-list">
-
                     <li data-index="0" style="display: none;">
                         <a href="http://www.01nz.com.cn/targeting" target="_blank">
                             <p>
                                 <img alt=""
-                                    src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/57bd13bc56362.jpg"
+                                    src="../Images/Home/57bd13bc56362.jpg"
                                     border="0"
-                                    original="http://www.01nz.com.cn/public/attachment/201608/24/11/57bd13bc56362.jpg">
+                                    original="../Images/Home/57bd13bc56362.jpg">
+
                             </p>
                         </a>
                     </li>
@@ -322,9 +327,9 @@
                         <a href="http://www.01nz.com.cn/sign" target="_blank">
                             <div>
                                 <img alt=""
-                                    src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/57e103de2ce7e.jpg"
+                                    src="../Images/Home/57e103de2ce7e.jpg"
                                     border="0"
-                                    original="http://www.01nz.com.cn/public/attachment/201609/20/17/57e103de2ce7e.jpg">
+                                    original="../Images/Home/57e103de2ce7e.jpg">
                             </div>
                         </a>
                     </li>
@@ -332,8 +337,8 @@
                         <a href="http://www.01nz.com.cn/targeting" target="_blank">
                             <p>
                                 <img border="0" alt=""
-                                    src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/56ab04ed628d5.jpg"
-                                    original="http://www.01nz.com.cn/public/attachment/201601/29/14/56ab04ed628d5.jpg">
+                                    src="../Images/Home/56ab04ed628d5.jpg"
+                                    original="../Images/Home/56ab04ed628d5.jpg">
                             </p>
                         </a>
                     </li>
@@ -684,36 +689,52 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="mzt_title">
-                            <span class="biaoti_tit">热门农家目的地：</span>
-                            <a href="javascript:;" class="beiji" onclick="termini(7)" id="ter_7">上海周边农家乐</a>
-                            <a href="javascript:;" class="" onclick="termini(8)" id="ter_8">仙华山农家乐</a>
-                            <a href="javascript:;" class="" onclick="termini(9)" id="ter_9">三山岛农家乐</a>
-                            <a href="javascript:;" class="" onclick="termini(10)" id="ter_10">千岛湖农家乐</a>
-                            <a href="javascript:;" class="" onclick="termini(11)" id="ter_11">临安农家乐</a>
-                        </div>
-                        <div class="mzt_img" id="termini_html">
-                            <ul>
-                              <asp:Repeater runat="server" ID="ReProduct">
-                                  <ItemTemplate>
-                                <li>
-                                    <a href="http://sh.01nz.com.cn/farm/18970.html" onmouseout="shadowout(<%# Eval("ProductID") %>)"
-                                        onmouseover="shadow(<%# Eval("ProductID") %>)" target="_blank">
-                                        <img src='../Images/Home/<%# Eval("Image.ImageName")%>' 
-                                            original="../Images/Home/56b45111dc613.jpg"
-                                             alt="<%# Eval("ProductName") %>" " class="f_l"
-                                            style="display: block;width:100%;height:100%;"/>
-                                        <div class="shadow none" id='shadow_<%# Eval("ProductID") %>'>
-                                            <span class="shadow_name"><%# Eval("ProductName") %> 
-                                            <span class="shadow_price"><span class="qi">￥</span><%# Eval("ProductPrice") %><span>class="qi">起</span></span>
+                        <asp:UpdatePanel runat="server" ID="upBtn" UpdateMode="Conditional" ChildrenAsTriggers="False">
+                            <ContentTemplate>
+                                <div class="mzt_title">
+                                    <span class="biaoti_tit">热门农家目的地：</span>
+                                    <asp:LinkButton runat="server" Text="上海周边农家乐" CssClass="beiji" OnClick="ChangeFarm" CommandArgument="1" ID="ter_6"></asp:LinkButton>
+                                    <asp:LinkButton runat="server" Text="仙华山农家乐" OnClick="ChangeFarm" CommandArgument="2" ID="ter_7"></asp:LinkButton>
+                                    <asp:LinkButton runat="server" Text="三山岛农家乐" OnClick="ChangeFarm" CommandArgument="3" ID="ter_8"></asp:LinkButton>
+                                    <asp:LinkButton runat="server" Text="千岛湖农家乐" OnClick="ChangeFarm" CommandArgument="4" ID="ter_9"></asp:LinkButton>
+                                    <asp:LinkButton runat="server" Text="临安农家乐" OnClick="ChangeFarm" CommandArgument="5" ID="ter_10"></asp:LinkButton>
+                                </div>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                         <asp:UpdatePanel runat="server" ID="upFarm" UpdateMode="Conditional">
+                             <ContentTemplate>
+                                        <div class="mzt_img" id="termini_html">
+                                            <ul>
+                                                <!--主题分类-->
+                                                <asp:Repeater runat="server" ID="ReProduct">
+                                                    <ItemTemplate>
+                                                        <li>
+                                                            <a href="http://sh.01nz.com.cn/farm/18970.html" onmouseout="shadowout(<%# Eval("ProductID") %>)"
+                                                                onmouseover="shadow(<%# Eval("ProductID") %>)" target="_blank">
+                                                                <img src='../Images/Home/<%# Eval("Image.ImageName")%>'
+                                                                     original="../Images/Home/56b45111dc613.jpg"
+                                                                     alt="<%# Eval("ProductName") %>" " class="f_l"
+                                                                    style="display: block; width: 100%; height: 100%;" />
+                                                                <div class="shadow none" id='shadow_<%# Eval("ProductID") %>'>
+                                                                    <span class="shadow_name"><%# Eval("ProductName") %></span>
+                                                                    <span class="shadow_price"><span class="qi">￥</span><%# string.Format("{0:F2}",Eval("ProductPrice")) %><span class="qi">起</span></span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ItemTemplate>
+                                                </asp:Repeater>
+                                            </ul>
                                         </div>
-                                    </a>
-                                </li>
-                                      </ItemTemplate>
-                              </asp:Repeater>
-                                <%--主题分类--%>
-                            </ul>
-                        </div>
+                            </ContentTemplate>
+                             <Triggers>
+                                 <asp:AsyncPostBackTrigger  ControlID="ter_8" EventName="Click"/>
+                                 <asp:AsyncPostBackTrigger ControlID="ter_9" EventName="Click" />
+                                 <asp:AsyncPostBackTrigger ControlID="ter_6" EventName="Click" />
+                                 <asp:AsyncPostBackTrigger ControlID="ter_7" EventName="Click" />
+                                 <asp:AsyncPostBackTrigger ControlID="ter_10" EventName="Click" />
+                             </Triggers>
+                         </asp:UpdatePanel>
+                              <!--主题分类-->
                     </div>
 
                     <div class="mtext_b_r f_l">
@@ -957,90 +978,44 @@
                     </div>
                 </div>
                 <div class="mtext_c">
-
                     <div class="mtext_b_l f_l">
                         <div class="mtext_b_l_title yellow">
                             <div class="mtext_title_l f_l">优选农家</div>
-                            <a href="javascript:;" id="farmhouse1" onclick="farmhouse(1)"
-                                class="stitlear stitlear_hover">诚信商家</a>
-                            <a href="javascript:;" id="farmhouse2" onclick="farmhouse(2)" class="stitlear">精品线路</a>
+                            <asp:UpdatePanel runat="server" ID="UpBetterSelect" UpdateMode="Conditional" ChildrenAsTriggers="False">
+                                <ContentTemplate>
+                                    <asp:LinkButton  OnClick="ChangeFarm" CssClass="stitlear stitlear_hover" Text="诚信商家" runat="server" ID="farmhouse1" ></asp:LinkButton>
+                                    <asp:LinkButton  OnClick="ChangeFarm" CssClass="stitlear" Text="精品线路" runat="server" ID="farmhouse2" ></asp:LinkButton>
+                                </ContentTemplate>
+                            </asp:UpdatePanel>
                         </div>
+                        <div id="farmhouse_html" class="mtext_c_l">
                             <ul>
-                                <li>
-                                    <a href="http://sh.01nz.com.cn/farm/3.html" target="_blank">
-                                        <img original="http://www.01nz.com.cn/public/attachment/201310/30/15/5270b12bd8b1d.jpg"
-                                            width="100%" height="100%" alt="梦微草堂"
-                                            src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/grey.gif">
-                                        <div class="m_title_s">梦微草堂</div>
-                                        <div class="m_title_c">上海市嘉定区高石公路1988号</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://hs.01nz.com.cn/farm/1047.html" target="_blank">
-                                        <img original="http://www.01nz.com.cn/public/attachment/201405/08/13/536b1ae130bc6.jpg"
-                                            width="100%" height="100%" alt="黄山歙县深渡毛豆腐农家乐"
-                                            src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/grey.gif">
-                                        <div class="m_title_s">黄山歙县深渡毛豆腐农家乐</div>
-                                        <div class="m_title_c">黄山歙县深渡镇复建路</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://sh.01nz.com.cn/farm/131.html" target="_blank">
-                                        <img original="http://www.01nz.com.cn/public/attachment/201311/11/14/52807b105cb1b.jpg"
-                                            width="100%" height="100%" alt="前卫村叔季嘉苑"
-                                            src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/grey.gif">
-                                        <div class="m_title_s">前卫村叔季嘉苑</div>
-                                        <div class="m_title_c">上海市崇明县前卫村农家乐212-3号</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://sh.01nz.com.cn/farm/141.html" target="_blank">
-                                        <img original="http://www.01nz.com.cn/public/attachment/201504/27/20/553e30da866a7.jpg"
-                                            width="100%" height="100%" alt="上海崇明笙平农家乐"
-                                            src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/grey.gif">
-                                        <div class="m_title_s">上海崇明笙平农家乐</div>
-                                        <div class="m_title_c">上海市崇明县中兴镇北兴村兴西125号(近陈家镇长江大桥车站)</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://sh.01nz.com.cn/farm/184.html" target="_blank">
-                                        <img original="http://www.01nz.com.cn/public/attachment/201311/15/11/5285962e0dcb7.jpg"
-                                            width="100%" height="100%" alt="孙桥卉绿有机农庄"
-                                            src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/grey.gif">
-                                        <div class="m_title_s">孙桥卉绿有机农庄</div>
-                                        <div class="m_title_c">上海市浦东新区孙桥科农路1399号(近孙环路)</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://cs.01nz.com.cn/farm/587.html" target="_blank">
-                                        <img original="http://www.01nz.com.cn/public/attachment/201403/10/15/531d696e4abfe.jpg"
-                                            width="100%" height="100%" alt="长沙滴翠山庄"
-                                            src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/grey.gif">
-                                        <div class="m_title_s">长沙滴翠山庄</div>
-                                        <div class="m_title_c">湖南省长沙市雷锋镇真人桥村</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://wx.01nz.com.cn/farm/594.html" target="_blank">
-                                        <img original="http://www.01nz.com.cn/public/attachment/201403/12/15/53200a00bd60b.jpg"
-                                            width="100%" height="100%" alt="新素湖鲜馆"
-                                            src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/grey.gif">
-                                        <div class="m_title_s">新素湖鲜馆</div>
-                                        <div class="m_title_c">江苏省无锡市滨湖区唐城山水西路20号</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="http://sr.01nz.com.cn/farm/611.html" target="_blank">
-                                        <img original="http://www.01nz.com.cn/public/attachment/201403/17/15/5326a2c7a1113.jpg"
-                                            width="100%" height="100%" alt="婺源官厅人家"
-                                            src="./第一农庄网_农家旅行的倾心之选;全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台_files/grey.gif">
-                                        <div class="m_title_s">婺源官厅人家</div>
-                                        <div class="m_title_c">婺源县 段莘乡庆源村92号(庆源古村落公共停车场旁)</div>
-                                    </a>
-                                </li>
+                                <asp:UpdatePanel runat="server" ID="UpBetter" UpdateMode="Conditional">
+                                    <ContentTemplate>
+                                        <asp:Repeater runat="server" ID="ReSincerityPro">
+                                            <ItemTemplate>
+                                                <li>
+                                                    <a href="http://sh.01nz.com.cn/farm/3.html" target="_blank">
+                                                        <img original='../Images/Home/grey.gif'
+                                                            style="width: 100%; height:132px;" alt="<%# Eval("Image.ImageName") %>"
+                                                            src='../Images/Home/<%# Eval("Image.ImageName") %>' />
+                                                        <div class="m_title_s"><%# Eval("ProductName") %></div>
+                                                        <div class="m_title_c"><%# Eval("UserInfo_Role.Address") %></div>
+                                                    </a>
+                                                </li>
+                                            </ItemTemplate>
+                                        </asp:Repeater>
+                                    </ContentTemplate>
+                                    <Triggers>
+                                        <asp:AsyncPostBackTrigger  ControlID="farmhouse1" EventName="Click"/>
+                                        <asp:AsyncPostBackTrigger  ControlID="farmhouse2" EventName="Click"/>
+                                    </Triggers>
+                                </asp:UpdatePanel>
                             </ul>
                         </div>
                     </div>
+                </div>
+
                     <div class="mtext_b_r f_l">
                         <div class="mtext_b_l_title yellow">
 

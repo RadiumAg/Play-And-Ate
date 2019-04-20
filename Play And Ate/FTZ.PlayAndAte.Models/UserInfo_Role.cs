@@ -18,9 +18,10 @@ namespace FTZ.PlayAndAte.Models
         public UserInfo_Role()
         {
             this.Order = new HashSet<Order>();
+            this.Product = new HashSet<Product>();
         }
     
-        public int Id { get; set; }
+        public int UserId { get; set; }
         public string UserName { get; set; }
         public string Address { get; set; }
         public string Email { get; set; }
@@ -31,6 +32,9 @@ namespace FTZ.PlayAndAte.Models
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Order { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Product> Product { get; set; }
         public virtual Role_UserInfo Role_UserInfo { get; set; }
+        public virtual Sincerity Sincerity { get; set; }
     }
 }

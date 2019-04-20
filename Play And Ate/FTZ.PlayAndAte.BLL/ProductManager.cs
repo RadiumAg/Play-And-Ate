@@ -11,13 +11,24 @@ namespace FTZ.PlayAndAte.BLL
     public class ProductManager
     {
 
+
         /// <summary>
-        /// 展示所有商品信息
+        /// 根据地区编号展示商品信息
         /// </summary>
-        /// <returns>商品实体集合</returns>
-        public static List<Product> ShowProductData()
+        /// <returns>商品信息</returns>
+        public static List<Product> ShowProducts(int areaId)
         {
-            return ProductServices.ShowProduct();
+            return ProductServices.ShowProductsData(areaId);
+        }
+
+        /// <summary>
+        /// 返回指定的前几位商家排名
+        /// </summary>
+        /// <param name="rankNum">指定的位数</param>
+        /// <returns></returns>
+        public static List<Product> ShowProductByRankNum(int rankNum)
+        {
+            return ProductServices.ShowProductDataBySinserity(rankNum);
         }
 
 

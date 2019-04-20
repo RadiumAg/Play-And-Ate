@@ -21,8 +21,8 @@ namespace FTZ.PlayAndAte.Models
         }
     
         public int ImageId { get; set; }
-        public int ProductId { get; set; }
         public string ImageName { get; set; }
+        public int ProductId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Product> Product { get; set; }

@@ -15,6 +15,7 @@ namespace FTZ.PlayAndAte.Models
     public partial class Product
     {
         public int ProductId { get; set; }
+        public int UserId { get; set; }
         public string ProductName { get; set; }
         public Nullable<int> ImageId { get; set; }
         public Nullable<int> PTTId { get; set; }
@@ -24,5 +25,6 @@ namespace FTZ.PlayAndAte.Models
         public virtual Area Area { get; set; }
         public virtual Image Image { get; set; }
         public virtual PTotalType PTotalType { get; set; }
+        public virtual UserInfo_Role UserInfo_Role { get; set; }
     }
 }
