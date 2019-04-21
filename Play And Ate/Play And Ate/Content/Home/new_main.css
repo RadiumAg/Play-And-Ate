@@ -141,7 +141,7 @@ body, p, dl, dd, form {
    }	
 .fabu_an{ float:left; width:120px; margin-top:7px; border:2px solid #F60;  height:40px; border-radius:3px; margin-top:5px; text-align:center; line-height:40px; font-size:16px; background:#ffe2b3; color:#f60; cursor:pointer }
 .fabu_leb_an{ float:left; width:120px;  border:2px solid #F60;  height:30px; border-radius:3px; margin-top:5px; text-align:center; line-height:30px; font-size:16px; background:#ffe2b3; color:#f60; margin-right:10px; margin-top:8px; }
-.menu_box{background-color:RGB(218, 61, 78); position: relative; z-index: 2; }
+
 .lvsesz{ color:#F60}
 .menu{ 
 	height: 36px; 
@@ -847,7 +847,7 @@ font-family: "微软雅黑";
 .m_sse{ background-position: 0px -175px;}
 .m_ssr{ background-position: 0px -249px;}
 .m_sst{ background-position: 0px -330px;}
-.m_youwan{ width:140px; height:60px; background-image:url(../images/main/label.png); margin-top:16px;}  
+.m_youwan{ width:140px; height:60px; background-image:url(../../Images/Home/label.png); margin-top:16px;}  
 .m_ywq{background-position: -180px -5px;}
 .m_yww{background-position: -180px -60px;}
 .m_ywe{background-position: -180px -115px;}

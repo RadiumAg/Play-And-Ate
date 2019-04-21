@@ -28,7 +28,7 @@
     <script src="../Scripts/Shared/lanrenzhijia.js"></script>
     <script src="../Scripts/Shared/scripts.js"></script>
     <script src="../Scripts/Shared/script.js"></script>
-    <script src="../Plugin/jquery.lazyload.js"></script>
+    <%--<script src="../Plugin/jquery.lazyload.js"></script>--%>
     <link href="../Content/Shared/font-awesome.min.css" rel="stylesheet" />
     <link href="../Content/Shared/main_huandeng.css" rel="stylesheet" />
     <link href="../Content/Shared/style.css" rel="stylesheet" />
@@ -42,6 +42,11 @@
     <style type="text/css">
         .none {
             display: none;
+        }
+        .menu_box {
+            background-color: #FDC600;
+            position: relative;
+            z-index: 2;
         }
     </style>
     <asp:ContentPlaceHolder ID="Style" runat="server"/>
