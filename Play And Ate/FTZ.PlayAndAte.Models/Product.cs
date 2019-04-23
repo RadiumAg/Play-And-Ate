@@ -14,17 +14,23 @@ namespace FTZ.PlayAndAte.Models
     
     public partial class Product
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Product()
+        {
+            this.Image = new HashSet<Image>();
+        }
+    
         public int ProductId { get; set; }
         public int UserId { get; set; }
         public string ProductName { get; set; }
-        public Nullable<int> ImageId { get; set; }
-        public Nullable<int> PTTId { get; set; }
+        public Nullable<int> PPTId { get; set; }
         public Nullable<int> AreaId { get; set; }
         public Nullable<decimal> ProductPrice { get; set; }
     
         public virtual Area Area { get; set; }
-        public virtual Image Image { get; set; }
-        public virtual PTotalType PTotalType { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Image> Image { get; set; }
+        public virtual PPointsType PPointsType { get; set; }
         public virtual UserInfo_Role UserInfo_Role { get; set; }
     }
 }

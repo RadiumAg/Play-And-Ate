@@ -21,25 +21,61 @@ namespace FTZ.PlayAndAte.DAL
         /// <returns>农庄实体信息集</returns>
         public static List<Product> ShowProductsData(int areaId)
         {
-            using (PlayAndAteEntities entities = new PlayAndAteEntities())
+            try
             {
-                List<Product> result = entities.Product.Include("Image").Include("Area").Where(m => m.AreaId == areaId).ToList<Product>();
-                return result;
+                using (PlayAndAteEntities entities = new PlayAndAteEntities())
+                {
+                    List<Product> result = entities.Product.Include("Image").Include("Area").Where(m => m.AreaId == areaId).ToList<Product>();
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
             }
         }
 
-       /// <summary>
-       /// 返回指定信誉商家排名
-       /// </summary>
-       /// <param name="rankNum">指定商家排名</param>
-       /// <returns></returns>
+        /// <summary>
+        /// 返回指定信誉商家排名
+        /// </summary>
+        /// <param name="rankNum">指定商家排名</param>
+        /// <returns></returns>
         public static List<Product> ShowProductDataBySinserity(int rankNum)
         {
-            using (PlayAndAteEntities entities = new PlayAndAteEntities())
+            try
             {
-                List<Product> result = entities.Product.Include("UserInfo_Role").Include("Image").OrderBy(m=>m.UserInfo_Role.Sincerity.SincerityNumber).Take(rankNum).ToList<Product>();
-                return result.ToList<Product>();
+                using (PlayAndAteEntities entities = new PlayAndAteEntities())
+                {
+                    List<Product> result = entities.Product.Include("UserInfo_Role").Include("Image").OrderBy(m => m.UserInfo_Role.Sincerity.SincerityNumber).Take(rankNum).ToList<Product>();
+                    return result.ToList<Product>();
 
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// 根据产品编号查询产品
+        /// </summary>
+        /// <param name="productId">产品编号</param>
+        /// <returns>产品实体集合</returns>
+        public static Product ShowProductsData(string productId)
+        {
+            try
+            {
+                using (PlayAndAteEntities entities = new PlayAndAteEntities())
+                {
+                    int id = Convert.ToInt32(productId);
+                    Product result = entities.Product.Include("Area").Include("Image").Where(d=>d.ProductId==id).FirstOrDefault();
+                    return result;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
             }
         }
 

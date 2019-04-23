@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
     <link href="../Content/Shared/style.css" rel="stylesheet" />
-    <link href="../Content/Home/new_main.css" rel="stylesheet" />
     <script src="../Scripts/Home/main_store.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
@@ -26,19 +25,19 @@
             //});
     </script>
     <script type="text/javascript">
-        //首先用JQ判断浏览器类型及版本，如果是IE8以下的浏览器就用effect=show，否则就用effect=fadeIn，判断浏览器版本函数如下
-        function checkbrowse() {
-            var ua = navigator.userAgent.toLowerCase();
-            var is = (ua.match(/\b(chrome|opera|safari|msie|firefox)\b/) || ['', 'mozilla'])[1];
-            var r = '(?:' + is + '|version)[\\/: ]([\\d.]+)';
-            var v = (ua.match(new RegExp(r)) || [])[1];
-            jQuery.browser.is = is;
-            jQuery.browser.ver = v;
-            return {
-                'is': jQuery.browser.is,
-                'ver': jQuery.browser.ver
+            //首先用JQ判断浏览器类型及版本，如果是IE8以下的浏览器就用effect=show，否则就用effect=fadeIn，判断浏览器版本函数如下
+            function checkbrowse() {
+                var ua = navigator.userAgent.toLowerCase();
+                var is = (ua.match(/\b(chrome|opera|safari|msie|firefox)\b/) || ['', 'mozilla'])[1];
+                var r = '(?:' + is + '|version)[\\/: ]([\\d.]+)';
+                var v = (ua.match(new RegExp(r)) || [])[1];
+                jQuery.browser.is = is;
+                jQuery.browser.ver = v;
+                return {
+                    'is': jQuery.browser.is,
+                    'ver': jQuery.browser.ver
+                }
             }
-        }
         //改造Jquery.LazyLoad.js函数，根据浏览器版本来显示不同的滤镜效果
         var public = checkbrowse();
         var showeffect = "";
@@ -705,18 +704,17 @@
                                         <asp:Repeater runat="server" ID="ReProduct">
                                             <ItemTemplate>
                                                 <li>
-                                                    <a href="http://sh.01nz.com.cn/farm/18970.html" onmouseout="shadowout(<%# Eval("ProductID") %>)"
-                                                        onmouseover="shadow(<%# Eval("ProductID") %>)" target="_blank">
+                                                    <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>' onmouseout="shadowout(<%# Eval("ProductID") %>)"
+                                                        onmouseover="shadow(<%# Eval("ProductID") %>)" target="_blank" />
+                                                    <img src='../Images/Home/<%# Eval("Image[0].ImageName")%>'
+                                                        alt='<%# Eval("ProductName") %>' class="f_l"
+                                                        style="display: block; width: 100%; height: 100%;" />
 
-                                                        <img src='../Images/Home/<%# Eval("Image.ImageName")%>'
-                                                            alt='<%# Eval("ProductName") %>' class="f_l"
-                                                            style="display: block; width: 100%; height: 100%;" />
+                                                    <div class="shadow none" id='shadow_<%# Eval("ProductID") %>'>
+                                                        <span class="shadow_name"><%# Eval("ProductName") %></span>
+                                                        <span class="shadow_price"><span class="qi">￥</span><%# string.Format("{0:F2}",Eval("ProductPrice")) %><span class="qi">起</span></span>
 
-                                                        <div class="shadow none" id='shadow_<%# Eval("ProductID") %>'>
-                                                            <span class="shadow_name"><%# Eval("ProductName") %></span>
-                                                            <span class="shadow_price"><span class="qi">￥</span><%# string.Format("{0:F2}",Eval("ProductPrice")) %><span class="qi">起</span></span>
-
-                                                        </div>
+                                                    </div>
                                                     </a>
                                                 </li>
                                             </ItemTemplate>
@@ -995,7 +993,7 @@
                                                 <li>
                                                     <a href="http://sh.01nz.com.cn/farm/3.html" target="_blank">
                                                         <img style="width: 100%; height: 132px;" alt="<%# Eval("Image.ImageName") %>"
-                                                            src='../Images/Home/<%# Eval("Image.ImageName") %>' />
+                                                            src='../Images/Home/<%# Eval("Image[0].ImageName") %>' />
                                                         <div class="m_title_s"><%# Eval("ProductName") %></div>
                                                         <div class="m_title_c"><%# Eval("UserInfo_Role.Address") %></div>
                                                     </a>

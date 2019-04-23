@@ -65,8 +65,7 @@
           <Property Name="ProductId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="UserId" Type="int" Nullable="false" />
           <Property Name="ProductName" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="ImageId" Type="int" />
-          <Property Name="PTTId" Type="int" />
+          <Property Name="PPTId" Type="int" />
           <Property Name="AreaId" Type="int" />
           <Property Name="ProductPrice" Type="money" />
         </EntityType>
@@ -138,6 +137,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Image_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Image" Type="Self.Image" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="Image">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Order_UserInfo_Role">
           <End Role="UserInfo_Role" Type="Self.UserInfo_Role" Multiplicity="1" />
           <End Role="Order" Type="Self.Order" Multiplicity="*" />
@@ -174,27 +185,15 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Product_Image">
-          <End Role="Image" Type="Self.Image" Multiplicity="0..1" />
+        <Association Name="FK_Product_PPointsType">
+          <End Role="PPointsType" Type="Self.PPointsType" Multiplicity="0..1" />
           <End Role="Product" Type="Self.Product" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Image">
-              <PropertyRef Name="ImageId" />
+            <Principal Role="PPointsType">
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Product">
-              <PropertyRef Name="ImageId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_Product_PTotalType">
-          <End Role="PTotalType" Type="Self.PTotalType" Multiplicity="0..1" />
-          <End Role="Product" Type="Self.Product" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="PTotalType">
-              <PropertyRef Name="PId" />
-            </Principal>
-            <Dependent Role="Product">
-              <PropertyRef Name="PTTId" />
+              <PropertyRef Name="PPTId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -255,6 +254,10 @@
             <End Role="Order" EntitySet="Order" />
             <End Role="Customers" EntitySet="Customers" />
           </AssociationSet>
+          <AssociationSet Name="FK_Image_Product" Association="Self.FK_Image_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Image" EntitySet="Image" />
+          </AssociationSet>
           <AssociationSet Name="FK_Order_UserInfo_Role" Association="Self.FK_Order_UserInfo_Role">
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
             <End Role="Order" EntitySet="Order" />
@@ -267,12 +270,8 @@
             <End Role="Area" EntitySet="Area" />
             <End Role="Product" EntitySet="Product" />
           </AssociationSet>
-          <AssociationSet Name="FK_Product_Image" Association="Self.FK_Product_Image">
-            <End Role="Image" EntitySet="Image" />
-            <End Role="Product" EntitySet="Product" />
-          </AssociationSet>
-          <AssociationSet Name="FK_Product_PTotalType" Association="Self.FK_Product_PTotalType">
-            <End Role="PTotalType" EntitySet="PTotalType" />
+          <AssociationSet Name="FK_Product_PPointsType" Association="Self.FK_Product_PPointsType">
+            <End Role="PPointsType" EntitySet="PPointsType" />
             <End Role="Product" EntitySet="Product" />
           </AssociationSet>
           <AssociationSet Name="FK_Product_UserInfo_Role" Association="Self.FK_Product_UserInfo_Role">
@@ -329,7 +328,7 @@
           <Property Name="ImageId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ImageName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="ProductId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Product" Relationship="Self.FK_Product_Image" FromRole="Image" ToRole="Product" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Image_Product" FromRole="Image" ToRole="Product" />
         </EntityType>
         <EntityType Name="Order">
           <Key>
@@ -353,6 +352,7 @@
           <Property Name="PPointsType1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
           <Property Name="Pid" Type="Int32" />
           <NavigationProperty Name="PTotalType" Relationship="Self.FK_PPointsType_PTotalType" FromRole="PPointsType" ToRole="PTotalType" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Product_PPointsType" FromRole="PPointsType" ToRole="Product" />
         </EntityType>
         <EntityType Name="Product">
           <Key>
@@ -361,13 +361,12 @@
           <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="UserId" Type="Int32" Nullable="false" />
           <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="ImageId" Type="Int32" />
-          <Property Name="PTTId" Type="Int32" />
+          <Property Name="PPTId" Type="Int32" />
           <Property Name="AreaId" Type="Int32" />
           <Property Name="ProductPrice" Type="Decimal" Precision="19" Scale="4" />
           <NavigationProperty Name="Area" Relationship="Self.FK_Product_Area" FromRole="Product" ToRole="Area" />
-          <NavigationProperty Name="Image" Relationship="Self.FK_Product_Image" FromRole="Product" ToRole="Image" />
-          <NavigationProperty Name="PTotalType" Relationship="Self.FK_Product_PTotalType" FromRole="Product" ToRole="PTotalType" />
+          <NavigationProperty Name="Image" Relationship="Self.FK_Image_Product" FromRole="Product" ToRole="Image" />
+          <NavigationProperty Name="PPointsType" Relationship="Self.FK_Product_PPointsType" FromRole="Product" ToRole="PPointsType" />
           <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Product_UserInfo_Role" FromRole="Product" ToRole="UserInfo_Role" />
         </EntityType>
         <EntityType Name="PTotalType">
@@ -377,7 +376,6 @@
           <Property Name="PId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="PTotalType1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="PPointsType" Relationship="Self.FK_PPointsType_PTotalType" FromRole="PTotalType" ToRole="PPointsType" />
-          <NavigationProperty Name="Product" Relationship="Self.FK_Product_PTotalType" FromRole="PTotalType" ToRole="Product" />
         </EntityType>
         <EntityType Name="Role_UserInfo">
           <Key>
@@ -458,15 +456,15 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Product_Image">
-          <End Role="Image" Type="Self.Image" Multiplicity="0..1" />
-          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+        <Association Name="FK_Image_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Image" Type="Self.Image" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Image">
-              <PropertyRef Name="ImageId" />
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
             </Principal>
-            <Dependent Role="Product">
-              <PropertyRef Name="ImageId" />
+            <Dependent Role="Image">
+              <PropertyRef Name="ProductId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -494,15 +492,15 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Product_PTotalType">
-          <End Role="PTotalType" Type="Self.PTotalType" Multiplicity="0..1" />
+        <Association Name="FK_Product_PPointsType">
+          <End Role="PPointsType" Type="Self.PPointsType" Multiplicity="0..1" />
           <End Role="Product" Type="Self.Product" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="PTotalType">
-              <PropertyRef Name="PId" />
+            <Principal Role="PPointsType">
+              <PropertyRef Name="Id" />
             </Principal>
             <Dependent Role="Product">
-              <PropertyRef Name="PTTId" />
+              <PropertyRef Name="PPTId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -567,9 +565,9 @@
             <End Role="Order" EntitySet="Order" />
             <End Role="Customers" EntitySet="Customers" />
           </AssociationSet>
-          <AssociationSet Name="FK_Product_Image" Association="Self.FK_Product_Image">
-            <End Role="Image" EntitySet="Image" />
+          <AssociationSet Name="FK_Image_Product" Association="Self.FK_Image_Product">
             <End Role="Product" EntitySet="Product" />
+            <End Role="Image" EntitySet="Image" />
           </AssociationSet>
           <AssociationSet Name="FK_Order_UserInfo_Role" Association="Self.FK_Order_UserInfo_Role">
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
@@ -579,8 +577,8 @@
             <End Role="PTotalType" EntitySet="PTotalType" />
             <End Role="PPointsType" EntitySet="PPointsType" />
           </AssociationSet>
-          <AssociationSet Name="FK_Product_PTotalType" Association="Self.FK_Product_PTotalType">
-            <End Role="PTotalType" EntitySet="PTotalType" />
+          <AssociationSet Name="FK_Product_PPointsType" Association="Self.FK_Product_PPointsType">
+            <End Role="PPointsType" EntitySet="PPointsType" />
             <End Role="Product" EntitySet="Product" />
           </AssociationSet>
           <AssociationSet Name="FK_Product_UserInfo_Role" Association="Self.FK_Product_UserInfo_Role">
@@ -667,8 +665,7 @@
                 <ScalarProperty Name="ProductId" ColumnName="ProductId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="ProductName" ColumnName="ProductName" />
-                <ScalarProperty Name="ImageId" ColumnName="ImageId" />
-                <ScalarProperty Name="PTTId" ColumnName="PTTId" />
+                <ScalarProperty Name="PPTId" ColumnName="PPTId" />
                 <ScalarProperty Name="AreaId" ColumnName="AreaId" />
                 <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
               </MappingFragment>
