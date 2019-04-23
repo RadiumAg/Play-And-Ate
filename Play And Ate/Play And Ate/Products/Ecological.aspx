@@ -1,136 +1,102 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0030)http://www.01nz.com.cn/biotope -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta property="qc:admins" content="1044064167601626375636">
-<meta name="Generator">
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
-<meta name="baidu-site-verification" content="rW5VmpPj0J">
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ecological.aspx.cs" Inherits="Play_And_Ate.Products.Ecological" %>
 
-<title>Play-And-Ate </title>
-<meta name="baidu-site-verification" content="rW5VmpPj0J">
-<meta name="keywords" content="生态园,采摘园,养殖园,观光园,垂钓场,农庄,农家乐,农家乐旅游,生态园哪里好,采摘园哪里好,养殖园哪里好,观光园哪里好">
-<meta name="description" content="热爱运动/休闲/养生/体验农家生活,周末去采摘和自驾游的农家旅行爱好者,要知道生态园/地址/电话/地图,那就去第一农庄网了解吧;可以在线预定生态园/农庄/农家乐/垂钓场以及农家乐旅游,约上三五好友去吃农家菜,享受下农耕乐趣,放松下心情不错哦~">
-<meta name="360-site-verification" content="634348f4891eef9d2811d878f8674511">
-<meta name="sogou_site_verification" content="6FPuHtGqQA">
-<meta name="pinggu-site-verification" content="e893348b007fdd112b2efae755d0b7e7">
+<!DOCTYPE html>
 
-<link rel="Shortcut Icon" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico"><!--地址栏和标签上显示图标-->
-<link rel="Bookmark" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico"><!--收藏夹显示图标-->
-<link rel="stylesheet" type="text/css" href="../Content/Products/cf62177493ce4db40c22962f60d846f8.css">
-<script type="text/javascript" src="../Scripts/Products/908ca0ab9e4d27144b60bc878b237327.js" charset="utf-8"></script>
-<script type="text/javascript" src="../Scripts/Products/baidumap.js"></script>
-<link href="../Content/Products/base.v606141511.css" rel="stylesheet" type="text/css" media="all">
-<script type="text/javascript" src="../Scripts/Products/header.js" charset="utf-8"></script>
-<script type="text/javascript" src="../Scripts/Products/mt3.v1014201036.js" charset="utf-8"></script>
-<script type="text/javascript" src="../Scripts/Products/fgcomm.v620152248.js" charset="utf-8"></script>
-<script type="text/javascript" src="../Scripts/Products/sousuo.js" charset="utf-8"></script> 
-<script type="text/javascript" src="../Scripts/Products/index_header.js" charset="utf-8"></script>
-
-
-<!--<script>-->
-<!--var _hmt = _hmt || [];-->
-<!--(function() {-->
-  <!--var hm = document.createElement("script");-->
-  <!--hm.src = "//hm.baidu.com/hm.js?8e539f2c9b5ea1c23be29aec34355f06";-->
-  <!--var s = document.getElementsByTagName("script")[0]; -->
-  <!--s.parentNode.insertBefore(hm, s);-->
-<!--})();-->
-<!--</script>-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Play-And-Ate </title>
+    <link rel="Shortcut Icon" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" /><!--地址栏和标签上显示图标-->
+    <link rel="Bookmark" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" /><!--收藏夹显示图标-->
+    <link rel="stylesheet" type="text/css" href="../Content/Products/cf62177493ce4db40c22962f60d846f8.css" />
+    <script type="text/javascript" src="../Scripts/Products/908ca0ab9e4d27144b60bc878b237327.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../Scripts/Products/baidumap.js"></script>
+    <link href="../Content/Products/base.v606141511.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="../Scripts/Products/header.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../Scripts/Products/mt3.v1014201036.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../Scripts/Products/fgcomm.v620152248.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../Scripts/Products/sousuo.js" charset="utf-8"></script> 
+    <script type="text/javascript" src="../Scripts/Products/index_header.js" charset="utf-8"></script>
 </head>
-
 <body>
-	
-<div id="dropdown">	
-	<!--<a href="javascript:void(0);" ctl="farmlist" act="index" action="/store.php" id="search_farmlist">搜农庄</a>
-	<a href="javascript:void(0);" ctl="houselb" act="index" action="/store.php" id="search_houselb">农家乐</a>
-	<a href="javascript:void(0);" ctl="fish" act="index" action="/store.php" id="search_fish">搜钓场</a>
-	 <a href="javascript:void(0);" ctl="farmlist" act="index" action="/store.php" id="search_store">采摘园</a>
-    <a href="javascript:void(0);" ctl="ycate" act="index" action="/store.php" id="search_ycate">现金券</a>
-	<a href="javascript:void(0);" ctl="event" act="index" action="/store.php" id="search_event">搜活动</a> -->
-</div>	
-
-<div class="header" id="header">
-	<div class="top_nav">
-		<div class="wrap">
-			<div>
-				<span id="user_head_tip" class="f_l">
-					你好，欢迎光临第一农庄网！
-	<a href="javascript:void(0);" onclick="ajax_login();">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-	<a href="http://www.01nz.com.cn/user-register">注册</a>
-				</span>
-				<span class="cart_ico"><a href="http://www.01nz.com.cn/cart" targer="_blank">购物车<span class="cart_count" id="cart_count">0</span> 件</a></span>
-								<span class="v_line">&nbsp;|&nbsp;</span>
-				<a href="javascript:void(0)" onclick="submit_sms();">短信订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
-				<a href="javascript:void(0)" onclick="unsubmit_sms();">短信退订</a><span class="v_line">&nbsp;|&nbsp;</span>
-												<a href="http://www.01nz.com.cn/tuan/subscribe-mail">邮件订阅</a><span class="v_line">&nbsp;|&nbsp;</span>					
-							</div>
-		</div>
-	</div><!--end top_nav-->
-		<div class="header_box">
-				<div class="headers">
+    <div class="header" id="header">
+	    <div class="top_nav">
+		    <div class="wrap">
+			    <div>
+				    <span id="user_head_tip" class="f_l">
+					    你好，欢迎光临Play-And-Ate！
+	                    <a href="javascript:void(0);" onclick="ajax_login();">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+	                    <a href="http://www.01nz.com.cn/user-register">注册</a>
+				    </span>
+				    <span class="cart_ico"><a href="http://www.01nz.com.cn/cart" targer="_blank">购物车<span class="cart_count" id="cart_count">0</span> 件</a></span>
+			        <span class="v_line">&nbsp;|&nbsp;</span>
+				    <a href="javascript:void(0)" onclick="submit_sms();">短信订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
+				    <a href="javascript:void(0)" onclick="unsubmit_sms();">短信退订</a><span class="v_line">&nbsp;|&nbsp;</span>
+			        <a href="http://www.01nz.com.cn/tuan/subscribe-mail">邮件订阅</a><span class="v_line">&nbsp;|&nbsp;</span>					
+			    </div>
+		    </div>
+	    </div>
+        <div class="header_box">
+		    <div class="headers">
 				<div class="LOGE">
-				<a href="http://www.01nz.com.cn/">
-					<img alt="第一农庄网" class="f_l" src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/loge.gif">
-				</a>
+				    <a href="http://www.01nz.com.cn/">
+					    <img alt="第一农庄网" class="f_l" src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/loge.gif">
+				    </a>
 				</div>
 				<div id="city">
-				<dl id="warpper"><dt><font><b class="chengshi">上海</b></font><font color="#C80063"><b><img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/cs_dw.png" alt="城市"></b></font></dt></dl>
+				    <dl id="warpper"><dt><font><b class="chengshi">上海</b></font><font color="#C80063"><b><img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/cs_dw.png" alt="城市"></b></font></dt></dl>
 				</div>
-					<div class="search_box_main search_boxs f_l">					
-						<div class="search_input_main f_l">													
-							<input type="text" class="search_txt_main" name="keyword" id="header_kw" value="请输入您要搜索的关键词" x-webkit-speech="" x-webkit-grammar="builtin:translate" style="color: rgb(187, 187, 187);">
-							<a id="sousuo_btn" class="search_btn_ss">搜索</a>
-						</div>
-						<div class="blank1"></div>
+				<div class="search_box_main search_boxs f_l">					
+					<div class="search_input_main f_l">													
+						<input type="text" class="search_txt_main" name="keyword" id="header_kw" value="请输入您要搜索的关键词" x-webkit-speech="" x-webkit-grammar="builtin:translate" style="color: rgb(187, 187, 187);">
+						<a id="sousuo_btn" class="search_btn_ss">搜索</a>
 					</div>
-					<div class="f_r busy_yh">
-			  			<img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/35.gif">
-			  		</div>	
-				
-			  		
+					<div class="blank1"></div>
 				</div>
-		</div>
-	</div>
-	
-<div class="blank1"></div>
-  <div class="dh_fd">
-  <ul class="scrollnews">
-	</ul>
-	<div class="menu_box">
-		<div class="menu">
-			<div class="menu white">
-				<ul>
-				<li><span class="LOGE_text">去农庄,就上第一农庄网</span></li>
-												<li onclick="nav(0)" id="n0" class="soso ">
-					<a href="http://www.01nz.com.cn/" target="">首页</a>
-				</li>
-												<li onclick="nav(1)" id="n1" class="soso ">
-					<a href="http://www.01nz.com.cn/targeting" target="">农家推荐</a>
-				</li>
-												<li onclick="nav(2)" id="n2" class="soso ">
-					<a href="http://xianlu.01nz.com.cn/" target="">农家行</a>
-				</li>
-												<li onclick="nav(3)" id="n3" class="soso ">
-					<a href="http://www.01nz.com.cn/farm" target="">农庄</a>
-				</li>
-												<li onclick="nav(4)" id="n4" class="soso ">
-					<a href="http://www.01nz.com.cn/farmhouse" target="">农家乐</a>
-				</li>
-												<li onclick="nav(5)" id="n5" class="soso ">
-					<a href="http://www.01nz.com.cn/biotope" target="">生态园</a>
-				</li>
-												<li onclick="nav(6)" id="n6" class="soso ">
-					<a href="http://www.01nz.com.cn/fishing" target="">垂钓场</a>
-				</li>
-								 
-				 <li class="zhuanti_dh" style="float:right;"><a href="http://www.01nz.com.cn/discover" target="_blank">专题</a></li>
-				</ul>
+				<div class="f_r busy_yh">
+			  		<img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/35.gif">
+			  	</div>	
 			</div>
 		</div>
-	</div><!--end 导航-->
-  </div>
-	
-	<div class="wraps">
+    </div>
+    <div class="blank1"></div>
+    <div class="dh_fd">
+        <ul class="scrollnews"></ul>
+	    <div class="menu_box">
+		    <div class="menu">
+			    <div class="menu white">
+				    <ul>
+				        <li><span class="LOGE_text">去农庄,就上第一农庄网</span></li>
+					    <li onclick="nav(0)" id="n0" class="soso ">
+					        <a href="http://www.01nz.com.cn/" target="">首页</a>
+				        </li>
+					    <li onclick="nav(1)" id="n1" class="soso ">
+					        <a href="http://www.01nz.com.cn/targeting" target="">农家推荐</a>
+				        </li>
+					    <li onclick="nav(2)" id="n2" class="soso ">
+					        <a href="http://xianlu.01nz.com.cn/" target="">农家行</a>
+				        </li>
+					    <li onclick="nav(3)" id="n3" class="soso ">
+					        <a href="http://www.01nz.com.cn/farm" target="">农庄</a>
+				        </li>
+					    <li onclick="nav(4)" id="n4" class="soso ">
+					        <a href="http://www.01nz.com.cn/farmhouse" target="">农家乐</a>
+				        </li>
+				        <li onclick="nav(5)" id="n5" class="soso ">
+					        <a href="http://www.01nz.com.cn/biotope" target="">生态园</a>
+				        </li>
+					    <li onclick="nav(6)" id="n6" class="soso ">
+					        <a href="http://www.01nz.com.cn/fishing" target="">垂钓场</a>
+				        </li>
+				        <li class="zhuanti_dh" style="float:right;">
+                            <a href="http://www.01nz.com.cn/discover" target="_blank">专题</a>
+				        </li>
+				    </ul>
+			    </div>
+            </div>
+	    </div><!--end 导航-->
+    </div>
+    <div class="wraps">
 		<div style=" display:none">
 		<div class="blank"></div>
 		<div class="site_nav clearfix wraps">
@@ -605,6 +571,6 @@ var ERROR_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 		  <!--s.parentNode.insertBefore(hm, s);-->
 		<!--})();-->
 <!--</script>-->
-
-
-</div></body></html>
+    </div>
+</body>
+</html>
