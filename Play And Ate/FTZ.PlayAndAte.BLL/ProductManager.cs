@@ -1,11 +1,6 @@
 ﻿using FTZ.PlayAndAte.DAL;
 using FTZ.PlayAndAte.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace FTZ.PlayAndAte.BLL
 {
     public class ProductManager

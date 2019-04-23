@@ -483,7 +483,7 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 		<div id="ajax_farm_zhuti">
 		<div class="wqtore_vip f_l">
 						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/farm/1035.html" target="_blank"><img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/5369c48d309a7_367x254.jpg" alt="黄金海滨度假村"></a>
+				<a href="http://sh.01nz.com.cn/farm/1035.html" target="_blank"><img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/5369c48d309a7_367x254.jpg" alt="黄金海滨度假村" /></a>
 				<p class="store_name"><a href="http://sh.01nz.com.cn/farm/1035.html" target="_blank" class="f_l">黄金海滨度假村</a><span class="people f_r">￥<span class="peoda">235</span><span class="peohui">起</span></span></p>
 			</div>
 						<div class="clear"></div>

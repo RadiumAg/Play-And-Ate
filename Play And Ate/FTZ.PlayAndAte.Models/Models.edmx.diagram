@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d2cb685da5264ab4bb4952aa7da9868f" Name="Diagram1">
+      <Diagram DiagramId="5051522b584a4ffba063651e62ff727c" Name="Diagram1" ZoomLevel="85">
         <EntityTypeShape EntityType="PlayAndAteModel.Area" Width="1.5" PointX="6" PointY="7.625" IsExpanded="true" />
         <EntityTypeShape EntityType="PlayAndAteModel.CardType" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="PlayAndAteModel.Customers" Width="1.5" PointX="7.5" PointY="3.25" IsExpanded="true" />

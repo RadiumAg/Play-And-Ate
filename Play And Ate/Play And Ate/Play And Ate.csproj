@@ -40,13 +40,22 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework">
+      <HintPath>..\FTZ.PlayAndAte.DAL\bin\Debug\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\FTZ.PlayAndAte.DAL\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter">
+      <HintPath>..\..\..\Lib\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5">
+      <HintPath>..\..\..\Lib\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\..\Lib\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -68,6 +77,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\FTZ.PlayAndAte.Models.dll" />
+    <Content Include="bin\Microsoft.QualityTools.Testing.Fakes.dll" />
+    <Content Include="bin\Play And Ate.dll" />
+    <Content Include="bin\Play And Ate.pdb" />
+    <Content Include="bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll" />
     <Content Include="Content\LoginAndRegister\Login\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Login\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
@@ -179,6 +193,9 @@
     <Content Include="Images\Show\FarmDetails\sd_icon.png" />
     <Content Include="Images\Show\FarmDetails\sd_news.png" />
     <Content Include="Images\Show\FarmDetails\xian.jpg" />
+    <Content Include="Line\Line.aspx" />
+    <Content Include="Line\Line.html" />
+    <Content Include="Line\LineDetail.aspx" />
     <Content Include="LoginAndRegister\Login.aspx" />
     <Content Include="LoginAndRegister\Register.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
@@ -187,6 +204,29 @@
     <Content Include="Plugin\jquery-3.3.1.min.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.min.js" />
+    <Content Include="Products\Ecological.aspx" />
+    <Content Include="Products\Ecological.html" />
+    <Content Include="Products\Farm.aspx" />
+    <Content Include="Products\Farm.html" />
+    <Content Include="Products\Fishing.aspx" />
+    <Content Include="Products\Fishing.html" />
+    <Content Include="Products\Generated.aspx" />
+    <Content Include="Products\Generated.html" />
+    <Content Include="Scripts\Line\ajax188.js" />
+    <Content Include="Scripts\Line\global.js" />
+    <Content Include="Scripts\Line\index.js" />
+    <Content Include="Scripts\Line\LineDetail\188date.js" />
+    <Content Include="Scripts\Line\LineDetail\a_list.js" />
+    <Content Include="Scripts\Line\LineDetail\city_dcdr.js" />
+    <Content Include="Scripts\Line\LineDetail\GetCNDate-12.15.js" />
+    <Content Include="Scripts\Line\LineDetail\index_header.js" />
+    <Content Include="Scripts\Line\LineDetail\jquery-1.7.js" />
+    <Content Include="Scripts\Line\LineDetail\script.js" />
+    <Content Include="Scripts\Line\sousuo.js" />
+    <Content Include="Scripts\Line\TN_city_pos.js" />
+    <Content Include="Scripts\Line\TN_city_suggest2-min.js" />
+    <Content Include="Scripts\Line\TN_date-min.js" />
+    <Content Include="Scripts\Line\TN_hotel-min.js" />
     <Content Include="Scripts\LoginAndRegister\Login\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\LoginAndRegister\Login\baidumap.js" />
     <Content Include="Scripts\LoginAndRegister\Login\c.js" />
@@ -242,6 +282,20 @@
     <Compile Include="Home\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Line\Line.aspx.cs">
+      <DependentUpon>Line.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Line\Line.aspx.designer.cs">
+      <DependentUpon>Line.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Line\LineDetail.aspx.cs">
+      <DependentUpon>LineDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Line\LineDetail.aspx.designer.cs">
+      <DependentUpon>LineDetail.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LoginAndRegister\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -255,6 +309,34 @@
     </Compile>
     <Compile Include="LoginAndRegister\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Ecological.aspx.cs">
+      <DependentUpon>Ecological.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Ecological.aspx.designer.cs">
+      <DependentUpon>Ecological.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Farm.aspx.cs">
+      <DependentUpon>Farm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Farm.aspx.designer.cs">
+      <DependentUpon>Farm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Fishing.aspx.cs">
+      <DependentUpon>Fishing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Fishing.aspx.designer.cs">
+      <DependentUpon>Fishing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Generated.aspx.cs">
+      <DependentUpon>Generated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Generated.aspx.designer.cs">
+      <DependentUpon>Generated.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shared\Main.Master.cs">
@@ -326,6 +408,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\Home\" />
+    <Folder Include="Propaganda\" />
+    <Folder Include="Scripts\Commond\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\FTZ.PlayAndAte.BLL\FTZ.PlayAndAte.BLL.csproj">
       <Project>{66603945-f973-4954-8232-30364b2c866b}</Project>
       <Name>FTZ.PlayAndAte.BLL</Name>
@@ -334,13 +422,6 @@
       <Project>{7384c779-1c2a-4d18-88b0-52911e368678}</Project>
       <Name>FTZ.PlayAndAte.Models</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\Home\" />
-    <Folder Include="Products\" />
-    <Folder Include="Propaganda\" />
-    <Folder Include="Scripts\Commond\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
