@@ -40,6 +40,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -62,20 +68,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Content\Line\index.css" />
-    <Content Include="Content\Line\LineDetial\a_rili.css" />
-    <Content Include="Content\Line\LineDetial\index.css" />
-    <Content Include="Content\Line\LineDetial\list_line.css" />
-    <Content Include="Content\Line\LineDetial\search.css" />
-    <Content Include="Content\Line\LineDetial\style.css" />
-    <Content Include="Content\Line\search.css" />
-    <Content Include="Content\Line\style%281%29.css" />
-    <Content Include="Content\Line\style.css" />
     <Content Include="Content\LoginAndRegister\Login\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Login\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
@@ -86,7 +78,7 @@
     <Content Include="Content\Shared\cityquery.css" />
     <Content Include="Content\Shared\font-awesome.min.css" />
     <Content Include="Content\Shared\main_huandeng.css" />
-    <Content Include="Content\Shared\new_main.css" />
+    <Content Include="Content\Home\new_main.css" />
     <Content Include="Content\Shared\style.css" />
     <Content Include="Content\Shared\WdatePicker.css" />
     <Content Include="Content\Shared\weebox.css" />
@@ -110,172 +102,47 @@
     <Content Include="Content\Special topic\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Home\Home.aspx" />
     <Content Include="Home\Home.html" />
-    <Content Include="Images\Line\1409110H249.jpg" />
-    <Content Include="Images\Line\14091F52K0.jpg" />
-    <Content Include="Images\Line\140921054956.jpg" />
-    <Content Include="Images\Line\1409220AI1.jpg" />
-    <Content Include="Images\Line\1409230RP5.jpg" />
-    <Content Include="Images\Line\140I00P629.jpg" />
-    <Content Include="Images\Line\140I00S339.jpg" />
-    <Content Include="Images\Line\140QPS245.jpg" />
-    <Content Include="Images\Line\140QZ32I8.jpg" />
-    <Content Include="Images\Line\140QZ54352.jpg" />
-    <Content Include="Images\Line\140R1023042.jpg" />
-    <Content Include="Images\Line\140R2053516.jpg" />
-    <Content Include="Images\Line\140Z2015921.jpg" />
-    <Content Include="Images\Line\140Z5020S8.jpg" />
-    <Content Include="Images\Line\140ZZ55131.jpg" />
-    <Content Include="Images\Line\141014062231.jpg" />
-    <Content Include="Images\Line\1410160S350.jpg" />
-    <Content Include="Images\Line\14101F33K8.jpg" />
-    <Content Include="Images\Line\141021033247.jpg" />
-    <Content Include="Images\Line\141021060S5.jpg" />
-    <Content Include="Images\Line\141022054043.jpg" />
-    <Content Include="Images\Line\1411040G321.jpg" />
-    <Content Include="Images\Line\14110F14532.jpg" />
-    <Content Include="Images\Line\14110ZUQ7.jpg" />
-    <Content Include="Images\Line\141110062509.jpg" />
-    <Content Include="Images\Line\141120013920.jpg" />
-    <Content Include="Images\Line\1411230K024.jpg" />
-    <Content Include="Images\Line\14112F25154.jpg" />
-    <Content Include="Images\Line\141201034443.jpg" />
-    <Content Include="Images\Line\141204025959.jpg" />
-    <Content Include="Images\Line\15011Z60T8.jpg" />
-    <Content Include="Images\Line\150120034141.jpg" />
-    <Content Include="Images\Line\1501200G626.jpg" />
-    <Content Include="Images\Line\1501200KS3.jpg" />
-    <Content Include="Images\Line\150122093116.jpg" />
-    <Content Include="Images\Line\150122095S8.jpg" />
-    <Content Include="Images\Line\150123020547.jpg" />
-    <Content Include="Images\Line\150205031I2.jpg" />
-    <Content Include="Images\Line\150210093504.jpg" />
-    <Content Include="Images\Line\150212091136.jpg" />
-    <Content Include="Images\Line\15022F54G9.jpg" />
-    <Content Include="Images\Line\15022P20R1.jpg" />
-    <Content Include="Images\Line\LineDetial\jubao.gif" />
-    <Content Include="Images\Line\LineDetial\logo.gif" />
-    <Content Include="Images\Line\LineDetial\nopic.jpg" />
-    <Content Include="Images\Line\LineDetial\remai.gif" />
-    <Content Include="Images\Line\LineDetial\tuijian.gif" />
-    <Content Include="Images\Line\LineDetial\xian.jpg" />
-    <Content Include="Images\Line\xian.jpg" />
-    <Content Include="Images\Products\2.gif" />
-    <Content Include="Images\Products\5279e04b1fb2b_180x137.jpg" />
-    <Content Include="Images\Products\527a049a434ac_154x110.jpg" />
-    <Content Include="Images\Products\527a049a434ac_367x254.jpg" />
-    <Content Include="Images\Products\527aea9ed4140_180x137.jpg" />
-    <Content Include="Images\Products\527b5e69d7a65_154x110.jpg" />
-    <Content Include="Images\Products\527b5e69d7a65_367x254.jpg" />
-    <Content Include="Images\Products\527c79aaa9acf_180x110.jpg" />
-    <Content Include="Images\Products\527c79aaa9acf_180x137.jpg" />
-    <Content Include="Images\Products\52807b105cb1b_154x110.jpg" />
-    <Content Include="Images\Products\52807b105cb1b_367x254.jpg" />
-    <Content Include="Images\Products\528081565ab4c_154x110.jpg" />
-    <Content Include="Images\Products\52808f7530691_154x110.jpg" />
-    <Content Include="Images\Products\52808f7530691_367x254.jpg" />
-    <Content Include="Images\Products\5282e9733ca7c_180x110.jpg" />
-    <Content Include="Images\Products\5283442de3c46_154x110.jpg" />
-    <Content Include="Images\Products\5283442de3c46_367x254.jpg" />
-    <Content Include="Images\Products\528479d9a2d1e_367x254.jpg" />
-    <Content Include="Images\Products\5285962e0dcb7_180x137.jpg" />
-    <Content Include="Images\Products\52c4cac186016_180x137.jpg" />
-    <Content Include="Images\Products\52d3793a2d538_180x110.jpg" />
-    <Content Include="Images\Products\52d3793a2d538_180x137.jpg" />
-    <Content Include="Images\Products\52de3a723f8cf_180x137.jpg" />
-    <Content Include="Images\Products\532f8c883ccb9_154x110.jpg" />
-    <Content Include="Images\Products\532f8c883ccb9_367x254.jpg" />
-    <Content Include="Images\Products\53339727b2398_154x110.jpg" />
-    <Content Include="Images\Products\535dbd02541db_180x137.jpg" />
-    <Content Include="Images\Products\5360a3a69bfd1_154x110.jpg" />
-    <Content Include="Images\Products\5360a3a69bfd1_367x254.jpg" />
-    <Content Include="Images\Products\53698c918d245_180x137.jpg" />
-    <Content Include="Images\Products\5369c48d309a7_180x110.jpg" />
-    <Content Include="Images\Products\5369c48d309a7_367x254.jpg" />
-    <Content Include="Images\Products\5369ca29c8f4a_154x110.jpg" />
-    <Content Include="Images\Products\5373031b06d21.jpg" />
-    <Content Include="Images\Products\5373040ac02d7.jpg" />
-    <Content Include="Images\Products\537304a8395ef.jpg" />
-    <Content Include="Images\Products\537305412576c.jpg" />
-    <Content Include="Images\Products\53730553ce7f6.jpg" />
-    <Content Include="Images\Products\53733e39b0df8_180x110.jpg" />
-    <Content Include="Images\Products\53742882ba3a6_180x110.jpg" />
-    <Content Include="Images\Products\537450e23d8ff_180x110.jpg" />
-    <Content Include="Images\Products\53745d6d50625.jpg" />
-    <Content Include="Images\Products\53745ee60b87c.jpg" />
-    <Content Include="Images\Products\5374600616246.jpg" />
-    <Content Include="Images\Products\5374641e5dcc5.jpg" />
-    <Content Include="Images\Products\5374661217295.jpg" />
-    <Content Include="Images\Products\53757cf7d48c0_367x254.jpg" />
-    <Content Include="Images\Products\5375bb6c9f36e.jpg" />
-    <Content Include="Images\Products\5375bc10b7da9.jpg" />
-    <Content Include="Images\Products\538435e12f69b_180x137.jpg" />
-    <Content Include="Images\Products\53843c975ad39_180x137.jpg" />
-    <Content Include="Images\Products\5384479d97192_180x137.jpg" />
-    <Content Include="Images\Products\53868e3bcab42_180x137.jpg" />
-    <Content Include="Images\Products\5386a12edadec_180x137.jpg" />
-    <Content Include="Images\Products\5386c9359ba55_180x137.jpg" />
-    <Content Include="Images\Products\5386dc039d2cc_180x137.jpg" />
-    <Content Include="Images\Products\5386e55eb067d_180x137.jpg" />
-    <Content Include="Images\Products\538801c210753_154x110.jpg" />
-    <Content Include="Images\Products\53882e60e81a8.jpg" />
-    <Content Include="Images\Products\538830f9e3dfd.jpg" />
-    <Content Include="Images\Products\538836ab70c0f.jpg" />
-    <Content Include="Images\Products\5388375bd90ed.jpg" />
-    <Content Include="Images\Products\53883ab38a6d7_180x110.jpg" />
-    <Content Include="Images\Products\53883d1073fd3_180x110.jpg" />
-    <Content Include="Images\Products\5388418a5541c_180x110.jpg" />
-    <Content Include="Images\Products\53884425cea9a_180x110.jpg" />
-    <Content Include="Images\Products\53a78a1a3bb97.jpg" />
-    <Content Include="Images\Products\53a78b0d7abed.jpg" />
-    <Content Include="Images\Products\53a78c2c08c46.jpg" />
-    <Content Include="Images\Products\53a78c76ce2de.jpg" />
-    <Content Include="Images\Products\53ad39116cd3d_180x137.jpg" />
-    <Content Include="Images\Products\53ad3bc35e206_180x137.jpg" />
-    <Content Include="Images\Products\53b21abd4c7e4_270x165.jpg" />
-    <Content Include="Images\Products\53b223dfb1dee_270x165.jpg" />
-    <Content Include="Images\Products\53b256b569be5_270x165.jpg" />
-    <Content Include="Images\Products\53b2627c351dc.jpg" />
-    <Content Include="Images\Products\53b26301f41be.jpg" />
-    <Content Include="Images\Products\53b2646fc3b99.jpg" />
-    <Content Include="Images\Products\53b264f2be468.jpg" />
-    <Content Include="Images\Products\53b39ef17aab8_180x137.jpg" />
-    <Content Include="Images\Products\53ba3cf26ea68_270x165.jpg" />
-    <Content Include="Images\Products\53ba42aca04ee_270x165.jpg" />
-    <Content Include="Images\Products\53e98d9722393_180x110.jpg" />
-    <Content Include="Images\Products\53eb2c9cea0ab_180x110.jpg" />
-    <Content Include="Images\Products\53eb2dd6bbb71_180x110.jpg" />
-    <Content Include="Images\Products\53fff603557ba_180x110.jpg" />
-    <Content Include="Images\Products\543771c0bcc17_180x110.jpg" />
-    <Content Include="Images\Products\5440d06e740cf_180x110.jpg" />
-    <Content Include="Images\Products\547fbcfd562ca_180x110.jpg" />
-    <Content Include="Images\Products\551a779b45e14_180x110.jpg" />
-    <Content Include="Images\Products\553e30da866a7_154x110.jpg" />
-    <Content Include="Images\Products\cs_dw.png" />
-    <Content Include="Images\Products\end_2.gif" />
-    <Content Include="Images\Products\end_3.gif" />
-    <Content Include="Images\Products\icon.gif" />
-    <Content Include="Images\Products\image_err.gif" />
-    <Content Include="Images\Products\index_header.js" />
-    <Content Include="Images\Products\jubao.gif" />
-    <Content Include="Images\Products\lang.js" />
-    <Content Include="Images\Products\loge.gif" />
-    <Content Include="Images\Products\stycaizhai.png" />
-    <Content Include="Images\Products\styguanguang.png" />
-    <Content Include="Images\Products\styyangzhi.png" />
-    <Content Include="Images\Products\wg.png" />
-    <Content Include="Images\Products\xian.jpg" />
-    <Content Include="Images\Shared\35.gif" />
-    <Content Include="Images\Home\553dde4f96103.jpg" />
+    <Content Include="Home\PartialView\Company.html" />
+    <Content Include="Home\PartialView\Hot.html" />
+    <Content Include="Images\Home\5270b12bd8b1d.jpg" />
+    <Content Include="Images\Home\52807b105cb1b.jpg" />
+    <Content Include="Images\Home\5282e9733ca7c_70x50.jpg" />
+    <Content Include="Images\Home\5285962e0dcb7.jpg" />
+    <Content Include="Images\Home\528acb6ab3d41_70x50.jpg" />
+    <Content Include="Images\Home\52c4c840630af_70x50.jpg" />
+    <Content Include="Images\Home\530ef673b2355_70x50.jpg" />
+    <Content Include="Images\Home\531d696e4abfe.jpg" />
+    <Content Include="Images\Home\53200a00bd60b.jpg" />
+    <Content Include="Images\Home\5326a2c7a1113.jpg" />
+    <Content Include="Images\Home\536b1ae130bc6.jpg" />
+    <Content Include="Images\Home\5374721fb9390_70x50.jpg" />
+    <Content Include="Images\Home\546ed47f516e5_70x50.jpg" />
+    <Content Include="Images\Home\553e30da866a7.jpg" />
+    <Content Include="Images\Home\5549b5a4cabbf.jpg" />
+    <Content Include="Images\Home\555954e529637.jpg" />
+    <Content Include="Images\Home\555954ef1316e.jpg" />
+    <Content Include="Images\Home\5565534cdda31.jpg" />
     <Content Include="Images\Home\56ab04ed628d5.jpg" />
     <Content Include="Images\Home\56b45111dc613.jpg" />
     <Content Include="Images\Home\57bd13bc56362.jpg" />
     <Content Include="Images\Home\57e103de2ce7e.jpg" />
+    <Content Include="Images\Home\57e105a3d7f31.jpg" />
+    <Content Include="Images\Home\57e1080ee0356.png" />
+    <Content Include="Images\Home\5ad7060c01cf0_70x50.jpg" />
+    <Content Include="Images\Home\image_err.gif" />
+    <Content Include="Images\Home\label.png" />
+    <Content Include="Images\Home\lazy_loading.gif" />
+    <Content Include="Images\Home\nongjiafb.png" />
+    <Content Include="Images\Shared\shadow.png" />
+    <Content Include="Images\Shared\35.gif" />
+    <Content Include="Images\Home\1.jpg" />
+    <Content Include="Images\Home\2.jpg" />
+    <Content Include="Images\Home\3.jpg" />
+    <Content Include="Images\Home\4.jpg" />
+    <Content Include="Images\Home\5.jpg" />
     <Content Include="Images\Home\grey.gif" />
     <Content Include="Images\Shared\cs_dw.png" />
     <Content Include="Images\Shared\loge.gif" />
-    <Content Include="Line\Line.aspx" />
-    <Content Include="Line\Line.html" />
-    <Content Include="Line\LineDetail.aspx" />
     <Content Include="LoginAndRegister\Login.aspx" />
     <Content Include="LoginAndRegister\Register.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
@@ -284,21 +151,6 @@
     <Content Include="Plugin\jquery-3.3.1.min.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.min.js" />
-    <Content Include="Scripts\Line\LineDetail\188date.js" />
-    <Content Include="Scripts\Line\ajax188.js" />
-    <Content Include="Scripts\Line\LineDetail\a_list.js" />
-    <Content Include="Scripts\Line\global.js" />
-    <Content Include="Scripts\Line\index.js" />
-    <Content Include="Scripts\Line\LineDetail\city_dcdr.js" />
-    <Content Include="Scripts\Line\LineDetail\GetCNDate-12.15.js" />
-    <Content Include="Scripts\Line\LineDetail\index_header.js" />
-    <Content Include="Scripts\Line\LineDetail\jquery-1.7.js" />
-    <Content Include="Scripts\Line\LineDetail\script.js" />
-    <Content Include="Scripts\Line\sousuo.js" />
-    <Content Include="Scripts\Line\TN_city_pos.js" />
-    <Content Include="Scripts\Line\TN_city_suggest2-min.js" />
-    <Content Include="Scripts\Line\TN_date-min.js" />
-    <Content Include="Scripts\Line\TN_hotel-min.js" />
     <Content Include="Scripts\LoginAndRegister\Login\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\LoginAndRegister\Login\baidumap.js" />
     <Content Include="Scripts\LoginAndRegister\Login\c.js" />
@@ -341,8 +193,6 @@
     <Content Include="Scripts\Special topic\lang.js" />
     <Content Include="Scripts\Special topic\mt3.v1014201036.js" />
     <Content Include="Scripts\Special topic\sousuo.js" />
-    <Content Include="Scripts\vue.js" />
-    <Content Include="Scripts\vue.min.js" />
     <Content Include="Show\FarmDetails.aspx" />
     <Content Include="Show\FarmRow.aspx" />
     <Content Include="Special topic\Special topic.aspx" />
@@ -355,20 +205,6 @@
     </Compile>
     <Compile Include="Home\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Line\Line.aspx.cs">
-      <DependentUpon>Line.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Line\Line.aspx.designer.cs">
-      <DependentUpon>Line.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Line\LineDetail.aspx.cs">
-      <DependentUpon>LineDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Line\LineDetail.aspx.designer.cs">
-      <DependentUpon>LineDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginAndRegister\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -421,7 +257,7 @@
     <Content Include="Plugin\jquery.lazyload.js" />
     <Content Include="Scripts\Shared\lang.js" />
     <Content Include="Scripts\Shared\lanrenzhijia.js" />
-    <Content Include="Scripts\Shared\main_store.js" />
+    <Content Include="Scripts\Home\main_store.js" />
     <Content Include="Scripts\Shared\querycity.js" />
     <Content Include="Scripts\Shared\script.js" />
     <Content Include="Scripts\Shared\scripts.js" />
@@ -465,11 +301,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Commond\" />
-    <Folder Include="Content\Home\" />
     <Folder Include="Products\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Commond\" />
-    <Folder Include="Scripts\Home\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
