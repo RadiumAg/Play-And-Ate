@@ -20,14 +20,15 @@ namespace Play_And_Ate.Home
                 ShowFarmData();
             }
         }
-        
+
         /// <summary>
         ///  
         /// </summary>
         /// <param name="areaId"></param>
-        private void ShowFarmData(int areaId=1)
+        private void ShowFarmData(int areaId = 1)
         {
-            this.ReProduct.DataSource = ProductManager.ShowProducts(areaId).Take(6);
+             var result = ProductManager.ShowProducts(areaId).Take(6).Select(s=>new { s.ProductName,s.ProductPrice,s.ProductId,s.Image.FirstOrDefault().ImageName }) ;
+            this.ReProduct.DataSource = result;
             this.ReProduct.DataBind();
 
             this.ReSincerityPro.DataSource = ProductManager.ShowProductByRankNum(8);
