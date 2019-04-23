@@ -31,6 +31,15 @@ namespace FTZ.PlayAndAte.BLL
             return ProductServices.ShowProductDataBySinserity(rankNum);
         }
 
+        /// <summary>
+        /// 根据商品编号返回商品实体
+        /// </summary>
+        /// <param name="productId">商品编号</param>
+        /// <returns>商品实体</returns>
+        public static Product ShowProducts(string productId) {
+            return ProductServices.ShowProductsData(productId);
+        }
+
 
     }
 }

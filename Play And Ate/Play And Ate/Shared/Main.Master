@@ -31,25 +31,19 @@
     <%--<script src="../Plugin/jquery.lazyload.js"></script>--%>
     <link href="../Content/Shared/font-awesome.min.css" rel="stylesheet" />
     <link href="../Content/Shared/main_huandeng.css" rel="stylesheet" />
-    <link href="../Content/Shared/style.css" rel="stylesheet" />
+    <link href="../Content/Commond/new_main.css" rel="stylesheet" />
     <link href="../Content/Shared/cityquery.css" rel="stylesheet" />
     <link href="../Content/Shared/weebox.css" rel="stylesheet" />
     <link href="../Content/Shared/style.css" rel="stylesheet" />
     <link href="../Content/Shared/WdatePicker.css" rel="stylesheet" />
     <script src="../Scripts/Shared/WdatePicker.js"></script>
     <script src="../Scripts/Shared/lang.js"></script>
-   
     <style type="text/css">
         .none {
             display: none;
         }
-        .menu_box {
-            background-color: #FDC600;
-            position: relative;
-            z-index: 2;
-        }
     </style>
-    <asp:ContentPlaceHolder ID="Style" runat="server"/>
+    <asp:ContentPlaceHolder ID="Style" runat="server" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -81,7 +75,7 @@
                     <div id="city">
                         <dl id="warpper">
                             <dt onclick="changeMenu(this,0);"><font><b class="chengshi">城市</b></font><font color="#C80063"><b><img src="../Images/Shared/cs_dw.png" alt="城市" /></b></font></dt>
-                            <script language="javascript">
+                            <script>
                                 $(document).ready(function () {
                                     var sousuo_btn = document.getElementById("sousuo_btn");
                                     var input = document.getElementById("header_kw");
@@ -100,7 +94,7 @@
                                     }
                                 });
                             </script>
-                            <script language="javascript">
+                            <script>
 
                                 function s(str) { return document.getElementById(str); }
                                 function ss(str) { return document.getElementsByTagName(str); }
@@ -250,10 +244,10 @@
                     $("#n" + id).addClass('nva_hover');
                 }
             </script>
-            <asp:ContentPlaceHolder ID="Content" runat="server"/>
+            <asp:ContentPlaceHolder ID="Content" runat="server" />
             <!-- 专题友情链接 -->
             <div class="blank"></div>
-            <asp:ContentPlaceHolder ID="Footer" runat="server"/>
+            <asp:ContentPlaceHolder ID="Footer" runat="server" />
         </div>
     </form>
 </body>

@@ -1,0 +1,746 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PlayAndAteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="AreaId" />
+          </Key>
+          <Property Name="AreaId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AreaName" Type="nvarchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="CardType">
+          <Key>
+            <PropertyRef Name="TypeId" />
+          </Key>
+          <Property Name="TypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Customers">
+          <Key>
+            <PropertyRef Name="CustomerId" />
+          </Key>
+          <Property Name="CustomerId" Type="int" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Id_Number" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CardTypeId" Type="int" Nullable="false" />
+          <Property Name="OrderID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Image">
+          <Key>
+            <PropertyRef Name="ImageId" />
+          </Key>
+          <Property Name="ImageId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ImageName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrderId" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="OrderName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CustomerNum" Type="int" Nullable="false" />
+          <Property Name="OrderPrice" Type="money" Nullable="false" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PPointsType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PPointsType" Type="nvarchar" MaxLength="10" />
+          <Property Name="Pid" Type="int" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="ProductId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="ProductName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PPTId" Type="int" />
+          <Property Name="AreaId" Type="int" />
+          <Property Name="ProductPrice" Type="money" />
+        </EntityType>
+        <EntityType Name="PTotalType">
+          <Key>
+            <PropertyRef Name="PId" />
+          </Key>
+          <Property Name="PId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PTotalType" Type="nvarchar" MaxLength="10" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Role_UserInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RoleName" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Sincerity">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="SincerityNumber" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="UserInfo_Role">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+          <Property Name="QQ" Type="nvarchar" MaxLength="100" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="RoleId" Type="int" Nullable="false" />
+          <Property Name="Pwd" Type="nvarchar" MaxLength="100" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Customers_CardType">
+          <End Role="CardType" Type="Self.CardType" Multiplicity="1" />
+          <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CardType">
+              <PropertyRef Name="TypeId" />
+            </Principal>
+            <Dependent Role="Customers">
+              <PropertyRef Name="CardTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Customers_Order">
+          <End Role="Order" Type="Self.Order" Multiplicity="1" />
+          <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Customers">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Image_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Image" Type="Self.Image" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="Image">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_UserInfo_Role">
+          <End Role="UserInfo_Role" Type="Self.UserInfo_Role" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo_Role">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PPointsType_PTotalType">
+          <End Role="PTotalType" Type="Self.PTotalType" Multiplicity="0..1" />
+          <End Role="PPointsType" Type="Self.PPointsType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PTotalType">
+              <PropertyRef Name="PId" />
+            </Principal>
+            <Dependent Role="PPointsType">
+              <PropertyRef Name="Pid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_Area">
+          <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Area">
+              <PropertyRef Name="AreaId" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="AreaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_PPointsType">
+          <End Role="PPointsType" Type="Self.PPointsType" Multiplicity="0..1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PPointsType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="PPTId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_UserInfo_Role">
+          <End Role="UserInfo_Role" Type="Self.UserInfo_Role" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo_Role">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sincerity_UserInfo_Role">
+          <End Role="UserInfo_Role" Type="Self.UserInfo_Role" Multiplicity="1" />
+          <End Role="Sincerity" Type="Self.Sincerity" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo_Role">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Sincerity">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfo_Role_Role_UserInfo">
+          <End Role="Role_UserInfo" Type="Self.Role_UserInfo" Multiplicity="1" />
+          <End Role="UserInfo_Role" Type="Self.UserInfo_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role_UserInfo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserInfo_Role">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PlayAndAteModelStoreContainer">
+          <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CardType" EntityType="Self.CardType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Image" EntityType="Self.Image" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PPointsType" EntityType="Self.PPointsType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PTotalType" EntityType="Self.PTotalType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Role_UserInfo" EntityType="Self.Role_UserInfo" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sincerity" EntityType="Self.Sincerity" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserInfo_Role" EntityType="Self.UserInfo_Role" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Customers_CardType" Association="Self.FK_Customers_CardType">
+            <End Role="CardType" EntitySet="CardType" />
+            <End Role="Customers" EntitySet="Customers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Customers_Order" Association="Self.FK_Customers_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="Customers" EntitySet="Customers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Image_Product" Association="Self.FK_Image_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Image" EntitySet="Image" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_UserInfo_Role" Association="Self.FK_Order_UserInfo_Role">
+            <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PPointsType_PTotalType" Association="Self.FK_PPointsType_PTotalType">
+            <End Role="PTotalType" EntitySet="PTotalType" />
+            <End Role="PPointsType" EntitySet="PPointsType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_Area" Association="Self.FK_Product_Area">
+            <End Role="Area" EntitySet="Area" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_PPointsType" Association="Self.FK_Product_PPointsType">
+            <End Role="PPointsType" EntitySet="PPointsType" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_UserInfo_Role" Association="Self.FK_Product_UserInfo_Role">
+            <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sincerity_UserInfo_Role" Association="Self.FK_Sincerity_UserInfo_Role">
+            <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
+            <End Role="Sincerity" EntitySet="Sincerity" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfo_Role_Role_UserInfo" Association="Self.FK_UserInfo_Role_Role_UserInfo">
+            <End Role="Role_UserInfo" EntitySet="Role_UserInfo" />
+            <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PlayAndAteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Area">
+          <Key>
+            <PropertyRef Name="AreaId" />
+          </Key>
+          <Property Name="AreaId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AreaName" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Product_Area" FromRole="Area" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="CardType">
+          <Key>
+            <PropertyRef Name="TypeId" />
+          </Key>
+          <Property Name="TypeId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Customers" Relationship="Self.FK_Customers_CardType" FromRole="CardType" ToRole="Customers" />
+        </EntityType>
+        <EntityType Name="Customers">
+          <Key>
+            <PropertyRef Name="CustomerId" />
+          </Key>
+          <Property Name="CustomerId" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Id_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CardTypeId" Type="Int32" Nullable="false" />
+          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="CardType" Relationship="Self.FK_Customers_CardType" FromRole="Customers" ToRole="CardType" />
+          <NavigationProperty Name="Order" Relationship="Self.FK_Customers_Order" FromRole="Customers" ToRole="Order" />
+        </EntityType>
+        <EntityType Name="Image">
+          <Key>
+            <PropertyRef Name="ImageId" />
+          </Key>
+          <Property Name="ImageId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ImageName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Image_Product" FromRole="Image" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OrderName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CustomerNum" Type="Int32" Nullable="false" />
+          <Property Name="OrderPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Customers" Relationship="Self.FK_Customers_Order" FromRole="Order" ToRole="Customers" />
+          <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Order_UserInfo_Role" FromRole="Order" ToRole="UserInfo_Role" />
+        </EntityType>
+        <EntityType Name="PPointsType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PPointsType1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Pid" Type="Int32" />
+          <NavigationProperty Name="PTotalType" Relationship="Self.FK_PPointsType_PTotalType" FromRole="PPointsType" ToRole="PTotalType" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Product_PPointsType" FromRole="PPointsType" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="Product">
+          <Key>
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="ProductId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="ProductName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PPTId" Type="Int32" />
+          <Property Name="AreaId" Type="Int32" />
+          <Property Name="ProductPrice" Type="Decimal" Precision="19" Scale="4" />
+          <NavigationProperty Name="Area" Relationship="Self.FK_Product_Area" FromRole="Product" ToRole="Area" />
+          <NavigationProperty Name="Image" Relationship="Self.FK_Image_Product" FromRole="Product" ToRole="Image" />
+          <NavigationProperty Name="PPointsType" Relationship="Self.FK_Product_PPointsType" FromRole="Product" ToRole="PPointsType" />
+          <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Product_UserInfo_Role" FromRole="Product" ToRole="UserInfo_Role" />
+        </EntityType>
+        <EntityType Name="PTotalType">
+          <Key>
+            <PropertyRef Name="PId" />
+          </Key>
+          <Property Name="PId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PTotalType1" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="PPointsType" Relationship="Self.FK_PPointsType_PTotalType" FromRole="PTotalType" ToRole="PPointsType" />
+        </EntityType>
+        <EntityType Name="Role_UserInfo">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RoleName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_UserInfo_Role_Role_UserInfo" FromRole="Role_UserInfo" ToRole="UserInfo_Role" />
+        </EntityType>
+        <EntityType Name="Sincerity">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="SincerityNumber" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Sincerity_UserInfo_Role" FromRole="Sincerity" ToRole="UserInfo_Role" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="UserInfo_Role">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="QQ" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Phone" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="RoleId" Type="Int32" Nullable="false" />
+          <Property Name="Pwd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Order" Relationship="Self.FK_Order_UserInfo_Role" FromRole="UserInfo_Role" ToRole="Order" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Product_UserInfo_Role" FromRole="UserInfo_Role" ToRole="Product" />
+          <NavigationProperty Name="Role_UserInfo" Relationship="Self.FK_UserInfo_Role_Role_UserInfo" FromRole="UserInfo_Role" ToRole="Role_UserInfo" />
+          <NavigationProperty Name="Sincerity" Relationship="Self.FK_Sincerity_UserInfo_Role" FromRole="UserInfo_Role" ToRole="Sincerity" />
+        </EntityType>
+        <Association Name="FK_Product_Area">
+          <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Area">
+              <PropertyRef Name="AreaId" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="AreaId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Customers_CardType">
+          <End Role="CardType" Type="Self.CardType" Multiplicity="1" />
+          <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CardType">
+              <PropertyRef Name="TypeId" />
+            </Principal>
+            <Dependent Role="Customers">
+              <PropertyRef Name="CardTypeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Customers_Order">
+          <End Role="Order" Type="Self.Order" Multiplicity="1" />
+          <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Customers">
+              <PropertyRef Name="OrderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Image_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Image" Type="Self.Image" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="Image">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_UserInfo_Role">
+          <End Role="UserInfo_Role" Type="Self.UserInfo_Role" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo_Role">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PPointsType_PTotalType">
+          <End Role="PTotalType" Type="Self.PTotalType" Multiplicity="0..1" />
+          <End Role="PPointsType" Type="Self.PPointsType" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PTotalType">
+              <PropertyRef Name="PId" />
+            </Principal>
+            <Dependent Role="PPointsType">
+              <PropertyRef Name="Pid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_PPointsType">
+          <End Role="PPointsType" Type="Self.PPointsType" Multiplicity="0..1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PPointsType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="PPTId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Product_UserInfo_Role">
+          <End Role="UserInfo_Role" Type="Self.UserInfo_Role" Multiplicity="1" />
+          <End Role="Product" Type="Self.Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo_Role">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Product">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserInfo_Role_Role_UserInfo">
+          <End Role="Role_UserInfo" Type="Self.Role_UserInfo" Multiplicity="1" />
+          <End Role="UserInfo_Role" Type="Self.UserInfo_Role" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Role_UserInfo">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserInfo_Role">
+              <PropertyRef Name="RoleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Sincerity_UserInfo_Role">
+          <End Role="UserInfo_Role" Type="Self.UserInfo_Role" Multiplicity="1" />
+          <End Role="Sincerity" Type="Self.Sincerity" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="UserInfo_Role">
+              <PropertyRef Name="UserId" />
+            </Principal>
+            <Dependent Role="Sincerity">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PlayAndAteEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Area" EntityType="Self.Area" />
+          <EntitySet Name="CardType" EntityType="Self.CardType" />
+          <EntitySet Name="Customers" EntityType="Self.Customers" />
+          <EntitySet Name="Image" EntityType="Self.Image" />
+          <EntitySet Name="Order" EntityType="Self.Order" />
+          <EntitySet Name="PPointsType" EntityType="Self.PPointsType" />
+          <EntitySet Name="Product" EntityType="Self.Product" />
+          <EntitySet Name="PTotalType" EntityType="Self.PTotalType" />
+          <EntitySet Name="Role_UserInfo" EntityType="Self.Role_UserInfo" />
+          <EntitySet Name="Sincerity" EntityType="Self.Sincerity" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="UserInfo_Role" EntityType="Self.UserInfo_Role" />
+          <AssociationSet Name="FK_Product_Area" Association="Self.FK_Product_Area">
+            <End Role="Area" EntitySet="Area" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Customers_CardType" Association="Self.FK_Customers_CardType">
+            <End Role="CardType" EntitySet="CardType" />
+            <End Role="Customers" EntitySet="Customers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Customers_Order" Association="Self.FK_Customers_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="Customers" EntitySet="Customers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Image_Product" Association="Self.FK_Image_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Image" EntitySet="Image" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_UserInfo_Role" Association="Self.FK_Order_UserInfo_Role">
+            <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PPointsType_PTotalType" Association="Self.FK_PPointsType_PTotalType">
+            <End Role="PTotalType" EntitySet="PTotalType" />
+            <End Role="PPointsType" EntitySet="PPointsType" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_PPointsType" Association="Self.FK_Product_PPointsType">
+            <End Role="PPointsType" EntitySet="PPointsType" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Product_UserInfo_Role" Association="Self.FK_Product_UserInfo_Role">
+            <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
+            <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserInfo_Role_Role_UserInfo" Association="Self.FK_UserInfo_Role_Role_UserInfo">
+            <End Role="Role_UserInfo" EntitySet="Role_UserInfo" />
+            <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Sincerity_UserInfo_Role" Association="Self.FK_Sincerity_UserInfo_Role">
+            <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
+            <End Role="Sincerity" EntitySet="Sincerity" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PlayAndAteModelStoreContainer" CdmEntityContainer="PlayAndAteEntities">
+          <EntitySetMapping Name="Area">
+            <EntityTypeMapping TypeName="PlayAndAteModel.Area">
+              <MappingFragment StoreEntitySet="Area">
+                <ScalarProperty Name="AreaId" ColumnName="AreaId" />
+                <ScalarProperty Name="AreaName" ColumnName="AreaName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CardType">
+            <EntityTypeMapping TypeName="PlayAndAteModel.CardType">
+              <MappingFragment StoreEntitySet="CardType">
+                <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+                <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Customers">
+            <EntityTypeMapping TypeName="PlayAndAteModel.Customers">
+              <MappingFragment StoreEntitySet="Customers">
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Id_Number" ColumnName="Id_Number" />
+                <ScalarProperty Name="CardTypeId" ColumnName="CardTypeId" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Image">
+            <EntityTypeMapping TypeName="PlayAndAteModel.Image">
+              <MappingFragment StoreEntitySet="Image">
+                <ScalarProperty Name="ImageId" ColumnName="ImageId" />
+                <ScalarProperty Name="ImageName" ColumnName="ImageName" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Order">
+            <EntityTypeMapping TypeName="PlayAndAteModel.Order">
+              <MappingFragment StoreEntitySet="Order">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+                <ScalarProperty Name="OrderName" ColumnName="OrderName" />
+                <ScalarProperty Name="CustomerNum" ColumnName="CustomerNum" />
+                <ScalarProperty Name="OrderPrice" ColumnName="OrderPrice" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PPointsType">
+            <EntityTypeMapping TypeName="PlayAndAteModel.PPointsType">
+              <MappingFragment StoreEntitySet="PPointsType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="PPointsType1" ColumnName="PPointsType" />
+                <ScalarProperty Name="Pid" ColumnName="Pid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Product">
+            <EntityTypeMapping TypeName="PlayAndAteModel.Product">
+              <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+                <ScalarProperty Name="PPTId" ColumnName="PPTId" />
+                <ScalarProperty Name="AreaId" ColumnName="AreaId" />
+                <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PTotalType">
+            <EntityTypeMapping TypeName="PlayAndAteModel.PTotalType">
+              <MappingFragment StoreEntitySet="PTotalType">
+                <ScalarProperty Name="PId" ColumnName="PId" />
+                <ScalarProperty Name="PTotalType1" ColumnName="PTotalType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Role_UserInfo">
+            <EntityTypeMapping TypeName="PlayAndAteModel.Role_UserInfo">
+              <MappingFragment StoreEntitySet="Role_UserInfo">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sincerity">
+            <EntityTypeMapping TypeName="PlayAndAteModel.Sincerity">
+              <MappingFragment StoreEntitySet="Sincerity">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="SincerityNumber" ColumnName="SincerityNumber" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="PlayAndAteModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserInfo_Role">
+            <EntityTypeMapping TypeName="PlayAndAteModel.UserInfo_Role">
+              <MappingFragment StoreEntitySet="UserInfo_Role">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="QQ" ColumnName="QQ" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+                <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
