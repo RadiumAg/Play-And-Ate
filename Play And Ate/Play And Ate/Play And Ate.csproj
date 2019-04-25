@@ -183,7 +183,36 @@
     <Content Include="Images\Show\FarmDetails\marker_red_sprite.png" />
     <Content Include="Images\Show\FarmDetails\sd_icon.png" />
     <Content Include="Images\Show\FarmDetails\sd_news.png" />
+    <Content Include="Images\Show\FarmRow\busy_yh.gif" />
+    <Content Include="Images\Show\FarmRow\end_2.gif" />
+    <Content Include="Images\Show\FarmRow\end_3.gif" />
+    <Content Include="Images\Show\FarmRow\end_4.gif" />
+    <Content Include="Images\Show\FarmRow\jubao.gif" />
+    <Content Include="Images\Show\FarmRow\lc.jpg" />
+    <Content Include="Images\Show\FarmRow\lcd.png" />
+    <Content Include="Images\Show\FarmRow\logo.gif" />
+    <Content Include="Images\Show\FarmRow\p32.gif" />
+    <Content Include="Images\Show\FarmRow\p38.gif" />
+    <Content Include="Images\Show\FarmRow\p39.gif" />
+    <Content Include="Images\Show\FarmRow\p5.gif" />
+    <Content Include="Images\Show\FarmRow\p54.gif" />
+    <Content Include="Images\Show\FarmRow\pbtnReview.gif" />
+    <Content Include="Images\Show\FarmRow\share.gif" />
+    <Content Include="Images\Show\FarmRow\tejia.gif" />
+    <Content Include="Images\Show\FarmRow\word.gif" />
     <Content Include="Images\Show\FarmDetails\xian.jpg" />
+    <Content Include="Images\Show\FarmRow\1411040G321.jpg" />
+    <Content Include="Images\Show\FarmRow\1411040G322.jpg" />
+    <Content Include="Images\Show\FarmRow\1411040G325.jpg" />
+    <Content Include="Images\Show\FarmRow\1411040G326.jpg" />
+    <Content Include="Images\Show\FarmRow\150120034141.jpg" />
+    <Content Include="Images\Show\FarmRow\1501200G626.jpg" />
+    <Content Include="Images\Show\FarmRow\150122095S8.jpg" />
+    <Content Include="Images\Show\FarmRow\150212091136.jpg" />
+    <Content Include="Images\Show\FarmRow\dlct.png" />
+    <Content Include="Images\Show\FarmRow\nopic.jpg" />
+    <Content Include="Images\Show\FarmRow\xian.jpg" />
+    <Content Include="Index.aspx" />
     <Content Include="LoginAndRegister\Login.aspx" />
     <Content Include="LoginAndRegister\Register.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
@@ -192,6 +221,14 @@
     <Content Include="Plugin\jquery-3.3.1.min.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.min.js" />
+    <Content Include="Products\Ecological.aspx" />
+    <Content Include="Products\Ecological.html" />
+    <Content Include="Products\Farm.aspx" />
+    <Content Include="Products\Farm.html" />
+    <Content Include="Products\Fishing.aspx" />
+    <Content Include="Products\Fishing.html" />
+    <Content Include="Products\Generated.aspx" />
+    <Content Include="Products\Generated.html" />
     <Content Include="Scripts\LoginAndRegister\Login\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\LoginAndRegister\Login\baidumap.js" />
     <Content Include="Scripts\LoginAndRegister\Login\c.js" />
@@ -247,6 +284,13 @@
     <Compile Include="Home\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="LoginAndRegister\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -260,6 +304,34 @@
     </Compile>
     <Compile Include="LoginAndRegister\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Ecological.aspx.cs">
+      <DependentUpon>Ecological.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Ecological.aspx.designer.cs">
+      <DependentUpon>Ecological.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Farm.aspx.cs">
+      <DependentUpon>Farm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Farm.aspx.designer.cs">
+      <DependentUpon>Farm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Fishing.aspx.cs">
+      <DependentUpon>Fishing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Fishing.aspx.designer.cs">
+      <DependentUpon>Fishing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Products\Generated.aspx.cs">
+      <DependentUpon>Generated.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Products\Generated.aspx.designer.cs">
+      <DependentUpon>Generated.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shared\Main.Master.cs">
@@ -331,6 +403,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\Home\" />
+    <Folder Include="Propaganda\" />
+    <Folder Include="Scripts\Commond\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\FTZ.PlayAndAte.BLL\FTZ.PlayAndAte.BLL.csproj">
       <Project>{66603945-f973-4954-8232-30364b2c866b}</Project>
       <Name>FTZ.PlayAndAte.BLL</Name>
@@ -339,13 +417,6 @@
       <Project>{7384c779-1c2a-4d18-88b0-52911e368678}</Project>
       <Name>FTZ.PlayAndAte.Models</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\Home\" />
-    <Folder Include="Products\" />
-    <Folder Include="Propaganda\" />
-    <Folder Include="Scripts\Commond\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

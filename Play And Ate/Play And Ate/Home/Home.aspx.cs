@@ -31,6 +31,7 @@ namespace Play_And_Ate.Home
             this.ReProduct.DataSource = result;
             this.ReProduct.DataBind();
 
+            
             this.ReSincerityPro.DataSource = ProductManager.ShowProductByRankNum(8).Select(s=> new { s.ProductName, s.ProductPrice, s.ProductId, Image = s.Image.FirstOrDefault(), UserInfo_Role=s.UserInfo_Role });
             this.ReSincerityPro.DataBind();
         }

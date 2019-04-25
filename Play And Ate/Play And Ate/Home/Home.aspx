@@ -312,7 +312,7 @@
             <div class="ppt-container">
                 <ul class="image-list">
                     <li data-index="0" style="display: none;">
-                        <a href="http://www.01nz.com.cn/targeting" target="_blank">
+                        <a href="#" target="_blank">
                             <p>
                                 <img alt=""
                                     src="../Images/Home/57bd13bc56362.jpg"
@@ -321,7 +321,7 @@
                         </a>
                     </li>
                     <li data-index="1" style="display: none;">
-                        <a href="http://www.01nz.com.cn/sign" target="_blank">
+                        <a href="#" target="_blank">
                             <div>
                                 <img alt=""
                                     src="../Images/Home/57e103de2ce7e.jpg"
@@ -330,7 +330,7 @@
                         </a>
                     </li>
                     <li data-index="2" style="">
-                        <a href="http://www.01nz.com.cn/targeting" target="_blank">
+                        <a href="#" target="_blank">
                             <p>
                                 <img border="0" alt=""
                                     src="../Images/Home/56ab04ed628d5.jpg" />
@@ -386,22 +386,22 @@
                 <div id="s1" class="mtext_z_b ">
                     <div class="mtext_z_b_t">
                         <ul>
-                            <a href="http://www.01nz.com.cn/circle/1.html" target="_blank">
+                            <a href="#" target="_blank">
                                 <li>企业会务</li>
                             </a>
-                            <a href="http://www.01nz.com.cn/circle/2.html" target="_blank">
+                            <a href="#l" target="_blank">
                                 <li>朋友圈活动</li>
                             </a>
-                            <a href="http://www.01nz.com.cn/circle/3.html" target="_blank">
+                            <a href="#" target="_blank">
                                 <li>老年养生</li>
                             </a>
-                            <a href="http://www.01nz.com.cn/circle/4.html" target="_blank">
+                            <a href="#" target="_blank">
                                 <li>亲子游玩</li>
                             </a>
-                            <a href="http://www.01nz.com.cn/circle/5.html" target="_blank">
+                            <a href="#" target="_blank">
                                 <li>家庭聚会</li>
                             </a>
-                            <a href="http://www.01nz.com.cn/circle/8.html" target="_blank">
+                            <a href="#" target="_blank">
                                 <li>学生活动</li>
                             </a>
                         </ul>
@@ -410,46 +410,46 @@
 
                 <div id="s2" class="mtext_z_b h">
                     <div class="mtext_z_b_t" id="xiangmu_html">
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-122" target="_blank">
+                        <a href="#" target="_blank">
                             <li>拓展</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-87" target="_blank">
+                        <a href="#" target="_blank">
                             <li>骑马</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-89" target="_blank">
+                        <a href="#" target="_blank">
                             <li>漂流</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-90" target="_blank">
+                        <a href="#" target="_blank">
                             <li>攀岩</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-91" target="_blank">
+                        <a href="#" target="_blank">
                             <li>真人CS</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-100" target="_blank">
+                        <a href="#" target="_blank">
                             <li>游泳</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-101" target="_blank">
+                        <a href="3" target="_blank">
                             <li>健身房</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-109" target="_blank">
+                        <a href="#" target="_blank">
                             <li>篝火</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-110" target="_blank">
+                        <a href="#" target="_blank">
                             <li>卡拉OK</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-112" target="_blank">
+                        <a href="#" target="_blank">
                             <li>棋牌</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-113" target="_blank">
+                        <a href="#" target="_blank">
                             <li>DIY</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-114" target="_blank">
+                        <a href="#" target="_blank">
                             <li>烧烤</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-115" target="_blank">
+                        <a href="#" target="_blank">
                             <li>采摘</li>
                         </a>
-                        <a href="http://sh.01nz.com.cn/farmlist/cid-49-tid-116" target="_blank">
+                        <a href="#" target="_blank">
                             <li>垂钓</li>
                         </a>
                     </div>
@@ -458,147 +458,147 @@
                     <div class="mtext_z_b_t" id="hot_citys_html">
                         <ul>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-101-qid-134"
+                                <a href="#"
                                     target="_blank">佘山</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-100-qid-135"
+                                <a href="#"
                                     target="_blank">淀山湖</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-99-qid-136"
+                                <a href=#"
                                     target="_blank">野生动物园</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-101-qid-138"
+                                <a href="#"
                                     target="_blank">西佘山园</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-101-qid-139"
+                                <a href="#"
                                     target="_blank">欢乐谷</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-97-qid-140"
+                                <a href=#"
                                     target="_blank">前卫生态村</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-100-qid-141"
+                                <a href="#"
                                     target="_blank">朱家角</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-100-qid-142"
+                                <a href="#"
                                     target="_blank">大观园</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-103-qid-143"
+                                <a href="#"
                                     target="_blank">滴水湖</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-100-qid-144"
+                                <a href="#"
                                     target="_blank">东方绿舟</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-103-qid-145"
+                                <a href="#"
                                     target="_blank">滨江森林公园</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-97-qid-146"
+                                <a href=#"
                                     target="_blank">长兴岛</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-105-qid-147"
+                                <a href="#"
                                     target="_blank">顾村公园</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-105-qid-148"
+                                <a href="#"
                                     target="_blank">美兰湖</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-97-qid-149"
+                                <a href=#"
                                     target="_blank">东平国家森林公园</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-102-qid-150"
+                                <a href="#"
                                     target="_blank">城市沙滩</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-102-qid-151"
+                                <a href="#"
                                     target="_blank">枫泾</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-103-qid-152"
+                                <a href="#"
                                     target="_blank">三甲港海滨乐园</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-99-qid-153"
+                                <a href="#"
                                     target="_blank">新场古镇</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-103-qid-154"
+                                <a href="h#"
                                     target="_blank">洋山深水港</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-99-qid-155"
+                                <a href="#"
                                     target="_blank">鲜花港</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-99-qid-156"
+                                <a href="#"
                                     target="_blank">芦潮港</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-97-qid-157"
+                                <a href="#"
                                     target="_blank">横沙岛</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-104-qid-158"
+                                <a href="h#"
                                     target="_blank">古猗园</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-98-qid-159"
+                                <a href="#"
                                     target="_blank">碧海金沙</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-98-qid-160"
+                                <a href="#"
                                     target="_blank">海湾国家森林公园</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-97-qid-161"
+                                <a href="#"
                                     target="_blank">西沙湿地</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-99-qid-162"
+                                <a href="#"
                                     target="_blank">地质科普馆</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-100-qid-163"
+                                <a href="h#"
                                     target="_blank">练塘</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-97-qid-164"
+                                <a href="#"
                                     target="_blank">东滩湿地公园</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-104-qid-165"
+                                <a href="h#"
                                     target="_blank">安亭老街</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-97-qid-166"
+                                <a href="#"
                                     target="_blank">东滩</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-100-qid-167"
+                                <a href="h#"
                                     target="_blank">车墩影视乐园</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-98-qid-168"
+                                <a href="#"
                                     target="_blank">三甲港海滨</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-101-qid-169"
+                                <a href="h#"
                                     target="_blank">瀛东村</a>
                             </li>
                             <li>
-                                <a href="http://sh.01nz.com.cn/farmlist/cid-49-aid-98-qid-170"
+                                <a href="#"
                                     target="_blank">奉新海滩</a>
                             </li>
                         </ul>
@@ -607,21 +607,21 @@
                 <div id="s4" class="mtext_z_b h">
                     <div class="mtext_z_b_t" id="purpose_html">
                         <ul>
-                            <li><a href="http://www.01nz.com.cn/peasantlist?zth=&amp;city_id=&amp;near=&amp;area=&amp;circle=&amp;item=&amp;level=1"
+                            <li><a href="#"
                                 target="_blank" title="3A">3A农庄</a> </li>
-                            <li><a href="http://www.01nz.com.cn/peasantlist?zth=&amp;city_id=&amp;near=&amp;area=&amp;circle=&amp;item=&amp;level=2"
+                            <li><a href="#"
                                 target="_blank" title="4A">4A农庄</a> </li>
-                            <li><a href="http://www.01nz.com.cn/peasantlist?zth=&amp;city_id=&amp;near=&amp;area=&amp;circle=&amp;item=&amp;level=3"
+                            <li><a href="#"
                                 target="_blank" title="5A">5A农庄</a> </li>
-                            <li><a href="http://www.01nz.com.cn/peasantlist?zth=&amp;city_id=&amp;near=&amp;area=&amp;circle=&amp;item=&amp;level=4"
+                            <li><a href="#"
                                 target="_blank" title="二星">二星农家乐</a> </li>
-                            <li><a href="http://www.01nz.com.cn/peasantlist?zth=&amp;city_id=&amp;near=&amp;area=&amp;circle=&amp;item=&amp;level=5"
+                            <li><a href="#"
                                 target="_blank" title="三星">三星农家乐</a> </li>
-                            <li><a href="http://www.01nz.com.cn/peasantlist?zth=&amp;city_id=&amp;near=&amp;area=&amp;circle=&amp;item=&amp;level=6"
+                            <li><a href="#"
                                 target="_blank" title="四星">四星农家乐</a> </li>
-                            <li><a href="http://www.01nz.com.cn/peasantlist?zth=&amp;city_id=&amp;near=&amp;area=&amp;circle=&amp;item=&amp;level=7"
+                            <li><a href="#"
                                 target="_blank" title="五星">五星农家乐</a> </li>
-                            <li><a href="http://www.01nz.com.cn/peasantlist?zth=&amp;city_id=&amp;near=&amp;area=&amp;circle=&amp;item=&amp;level=8"
+                            <li><a href="#"
                                 target="_blank" title="无">无</a> </li>
                         </ul>
                     </div>
@@ -636,50 +636,50 @@
                             <div class="theme">
                                 <div class="mzt_left_title"><span class="main_iocn zt_nz"></span>主题农庄</div>
                                 <ul>
-                                    <li><a href="http://sh.01nz.com.cn/farmlist/zht-xiuxian"
+                                    <li><a href="#"
                                         target="_blank">休闲观光</a> </li>
-                                    <li><a href="http://sh.01nz.com.cn/farmlist/zht-dujiacun"
+                                    <li><a href="#"
                                         target="_blank">度假村</a> </li>
-                                    <li><a href="http://sh.01nz.com.cn/farmlist/zht-wenquan"
+                                    <li><a href="#"
                                         target="_blank">温泉农庄</a> </li>
-                                    <li><a href="http://sh.01nz.com.cn/farmlist/zht-kepu" target="_blank">科普基地</a>
+                                    <li><a href="http://sh.01nz.#" target="_blank">科普基地</a>
                                     </li>
-                                    <li><a href="http://sh.01nz.com.cn/farmlist/zht-tuozhan"
+                                    <li><a href="#"
                                         target="_blank">拓展培训</a> </li>
-                                    <li><a href="http://sh.01nz.com.cn/farmlist/zht-shengtai"
+                                    <li><a href="#"
                                         target="_blank">生态农庄</a> </li>
                                 </ul>
                             </div>
                             <div class="theme">
                                 <div class="mzt_left_title"><span class="njl main_iocn"></span>农家乐</div>
                                 <ul>
-                                    <li><a href="http://www.01nz.com.cn/#">乡村农家</a> </li>
-                                    <li><a href="http://www.01nz.com.cn/#">农家土菜</a> </li>
-                                    <li><a href="http://www.01nz.com.cn/#">民俗风情</a> </li>
+                                    <li><a href="#">乡村农家</a> </li>
+                                    <li><a href="#">农家土菜</a> </li>
+                                    <li><a href="#">民俗风情</a> </li>
                                 </ul>
                             </div>
                             <div class="theme">
                                 <div class="mzt_left_title"><span class="sty main_iocn"></span>生态园</div>
                                 <ul>
-                                    <li><a href="http://www.01nz.com.cn/biotopeing/zht-yangzhi"
+                                    <li><a href="#"
                                         target="_blank">养殖园</a> </li>
-                                    <li><a href="http://www.01nz.com.cn/biotopeing/zht-caizhai"
+                                    <li><a href="#"
                                         target="_blank">采摘园</a> </li>
-                                    <li><a href="http://www.01nz.com.cn/biotopeing/zht-guanguang"
+                                    <li><a href="#"
                                         target="_blank">观光园</a> </li>
                                 </ul>
                             </div>
                             <div class="theme">
                                 <div class="mzt_left_title"><span class="cdc main_iocn"></span>垂钓场</div>
                                 <ul>
-                                    <li><a href="http://www.01nz.com.cn/fish/un-chitang" target="_blank">池塘 </a>
+                                    <li><a href="#" target="_blank">池塘 </a>
                                     </li>
-                                    <li><a href="http://www.01nz.com.cn/fish/un-nongjia" target="_blank">农家 </a>
+                                    <li><a href="#" target="_blank">农家 </a>
                                     </li>
-                                    <li><a href="http://www.01nz.com.cn/fish/un-huku" target="_blank">湖库 </a></li>
-                                    <li><a href="http://www.01nz.com.cn/fish/un-yesheng" target="_blank">野生 </a>
+                                    <li><a href="#" target="_blank">湖库 </a></li>
+                                    <li><a href="#" target="_blank">野生 </a>
                                     </li>
-                                    <li><a href="http://www.01nz.com.cn/fish/un-fangyang" target="_blank">放养 </a>
+                                    <li><a href="#" target="_blank">放养 </a>
                                     </li>
                                 </ul>
                             </div>
@@ -991,7 +991,7 @@
                                         <asp:Repeater runat="server" ID="ReSincerityPro">
                                             <ItemTemplate>
                                                 <li>
-                                                    <a href="http://sh.01nz.com.cn/farm/3.html" target="_blank">
+                                                    <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>' target="_blank">
                                                         <img style="width: 100%; height: 132px;" alt="<%# Eval("Image.ImageName") %>"
                                                             src='../Images/Home/<%# Eval("Image.ImageName") %>' />
                                                         <div class="m_title_s"><%# Eval("ProductName") %></div>
@@ -1043,7 +1043,7 @@
             </div>
             <div class="mtext_jx">
                 <div class="mtext_gg_img f_l">
-                    <a href="http://www.01nz.com.cn/generalize" class="guanggaotonglan" target="_blank">
+                    <a href="#" class="guanggaotonglan" target="_blank">
                         <div>
                             <font style="background-color: #ffffff;"><img alt="" border="0"
 											src="../Images/Home/57e105a3d7f31.jpg">
@@ -1052,7 +1052,7 @@
                     </a>
                 </div>
                 <div class="mtext_b_r f_l">
-                    <a href="http://www.01nz.com.cn/circle/4.html" target="_blank">
+                    <a href="#" target="_blank">
                         <div>
                             <img alt="" border="0"
                                 src="../Images/Home/57e1080ee0356.png" />
@@ -1065,7 +1065,7 @@
                         <a href="javascript:;" id="company1" onclick="company(1)"
                             class="stitlea stitlea_hover">拓展基地</a>
                         <a href="javascript:;" id="company2" onclick="company(2)" class="stitlea">会议活动</a>
-                        <a href="http://www.01nz.com.cn/#" title="" class="myy_yd f_r">更多 &gt;&gt;</a>
+                        <a href="#" title="" class="myy_yd f_r">更多 &gt;&gt;</a>
                     </div>
                     <div class="mtext_c_l" id="company_html">
                         <!--异步获取内容-->
@@ -1100,28 +1100,28 @@
                             <ul>
                                 <li>
                                     <label class="f_l">
-                                        <a href="http://sh.01nz.com.cn/farm/23590.html"
+                                        <a href="#"
                                             target="_blank">[上海半日闲采摘园]奶油草莓</a></label>
                                     <label class="f_r">
                                         ￥<b
                                             class="red f-16">25</b>元/斤</label></li>
                                 <li>
                                     <label class="f_l">
-                                        <a href="http://sh.01nz.com.cn/farm/18970.html"
+                                        <a href="#"
                                             target="_blank">[金沈泽农家乐]草莓采摘</a></label>
                                     <label class="f_r">
                                         ￥<b
                                             class="red f-16">25</b>元/斤</label></li>
                                 <li>
                                     <label class="f_l">
-                                        <a href="http://sh.01nz.com.cn/farm/6316.html"
+                                        <a href="#"
                                             target="_blank">[赵屯草莓基地NO37]草莓采摘</a></label>
                                     <label class="f_r">
                                         ￥<b
                                             class="red f-16">28</b>元/斤</label></li>
                                 <li>
                                     <label class="f_l">
-                                        <a href="http://sh.01nz.com.cn/farm/83.html"
+                                        <a href="#"
                                             target="_blank">[宋先生草莓园]当季草莓采摘</a></label>
                                     <label class="f_r">
                                         ￥<b
@@ -1133,28 +1133,28 @@
                             <ul>
                                 <li>
                                     <label class="f_l">
-                                        <a href="http://sh.01nz.com.cn/farm/184.html"
+                                        <a href="#"
                                             target="_blank">[孙桥卉绿有机农场]有机蔬菜</a></label>
                                     <label class="f_r">
                                         ￥<b
                                             class="red f-16">15</b>元/斤</label></li>
                                 <li>
                                     <label class="f_l">
-                                        <a href="http://sh.01nz.com.cn/farm/68.html"
+                                        <a href="#"
                                             target="_blank">[多利农庄]有机蔬菜尝鲜</a></label>
                                     <label class="f_r">
                                         ￥<b
                                             class="red f-16">10</b>元/斤</label></li>
                                 <li>
                                     <label class="f_l">
-                                        <a href="http://sh.01nz.com.cn/farm/1078.html"
+                                        <a href="#"
                                             target="_blank">[归园田居有机农庄]有机蔬菜</a></label>
                                     <label class="f_r">
                                         ￥<b
                                             class="red f-16">15</b>元/斤</label></li>
                                 <li>
                                     <label class="f_l">
-                                        <a href="http://sh.01nz.com.cn/farm/94.html"
+                                        <a href="#"
                                             target="_blank">[上海都市菜园]有机蔬菜特惠</a></label>
                                     <label class="f_r">
                                         ￥<b
@@ -1188,9 +1188,9 @@
                             <div class="mzt_l_top">
                                 <div class="mzt_l_title lvse">农家专题</div>
                                 <span class="zhuanti_nr">
-                                    <a href="http://www.01nz.com.cn/discover/cid-7" target="_blank">农家美食</a>
-                                    <a href="http://www.01nz.com.cn/discover/cid-6" target="_blank">当季指南</a>
-                                    <a href="http://www.01nz.com.cn/discover/cid-5" target="_blank">生态民宿</a>
+                                    <a href="#" target="_blank">农家美食</a>
+                                    <a href="#" target="_blank">当季指南</a>
+                                    <a href="#" target="_blank">生态民宿</a>
                                 </span>
                             </div>
                             <div class="homeimg">
@@ -1201,11 +1201,11 @@
                                 <div class="mzt_l_top">
                                     <div class="mzt_l_title lvse">垂钓专题</div>
                                     <span class="zhuanti_nr">
-                                        <a href="http://www.01nz.com.cn/fishspecial/11.html"
+                                        <a href="#"
                                             target="_blank">饵料配方</a>
-                                        <a href="http://www.01nz.com.cn/fishspecial/10.html"
+                                        <a href="#"
                                             target="_blank">技巧学习</a>
-                                        <a href="http://www.01nz.com.cn/fishspecial/9.html"
+                                        <a href="#"
                                             target="_blank">钓场渔获</a>
                                     </span>
                                 </div>
@@ -1215,7 +1215,7 @@
                     <div id="ajax_special_store">
                         <div class="mzt_r f_l">
                             <div class="jpzt_nr">
-                                <a href="http://www.01nz.com.cn/notice/311.html" target="_blank">武汉藏着26个古色古香的名村，周末自驾游…</a>
+                                <a href="#" target="_blank">武汉藏着26个古色古香的名村，周末自驾游…</a>
                                 <p>秋天是个非常适合远足的季节，少了夏日的酷暑，凉风习习。寻一个古镇或者村落，遍地都是初秋最美的颜色~这样的天气这样的季节，…</p>
                                 <div class="llxh f_r">
                                     <label class="qlan">浏览(53373)</label>
@@ -1224,7 +1224,7 @@
                                 </div>
                             </div>
                             <div class="jpzt_nr">
-                                <a href="http://www.01nz.com.cn/notice/310.html" target="_blank">武汉藏着26个古色古香的名村，周末自驾游…</a>
+                                <a href="#" target="_blank">武汉藏着26个古色古香的名村，周末自驾游…</a>
                                 <p>秋天是个非常适合远足的季节，少了夏日的酷暑，凉风习习。寻一个古镇或者村落，遍地都是初秋最美的颜色~这样的天气这样的季节，…</p>
                                 <div class="llxh f_r">
                                     <label class="qlan">浏览(53369)</label>
@@ -1233,7 +1233,7 @@
                                 </div>
                             </div>
                             <div class="jpzt_nr">
-                                <a href="http://www.01nz.com.cn/notice/296.html" target="_blank">阳澄湖农家乐一日游</a>
+                                <a href="#" target="_blank">阳澄湖农家乐一日游</a>
                                 <p>秋天真是一个去农庄好季节，真是吃阳澄湖大闸蟹的时候，肥美鲜淳，一蟹在手，一切成空，馋了一年的美味的，终于等待大快朵颐的时…</p>
                                 <div class="llxh f_r">
                                     <label class="qlan">浏览(50130)</label>
@@ -1242,7 +1242,7 @@
                                 </div>
                             </div>
                             <div class="jpzt_nr">
-                                <a href="http://www.01nz.com.cn/notice/211.html" target="_blank">不会令你失望的河南农家旅游</a>
+                                <a href="#" target="_blank">不会令你失望的河南农家旅游</a>
                                 <p>来河南还去云台山、小桃园、城隍庙？当代旅游人已经不去这些被“踏遍”的景点了，当下时兴农家旅游。作为资深旅游达人的我，为大…</p>
                                 <div class="llxh f_r">
                                     <label class="qlan">浏览(89890)</label>
@@ -1251,7 +1251,7 @@
                                 </div>
                             </div>
                             <div class="jpzt_nr">
-                                <a href="http://www.01nz.com.cn/notice/208.html" target="_blank">2015安徽4大最美乡村
+                                <a href="#" target="_blank">2015安徽4大最美乡村
                                 </a>
                                 <p>一直听朋友说安徽的美需要你去发现，这不我就利用假期的时间去体会安徽的4大最美乡村。带上你的相机和我一起走吧，一起走在最美…</p>
                                 <div class="llxh f_r">
@@ -1261,7 +1261,7 @@
                                 </div>
                             </div>
                             <div class="jpzt_nr">
-                                <a href="http://www.01nz.com.cn/notice/207.html" target="_blank">盘点那些2015年最美丽的古镇景点</a>
+                                <a href="#" target="_blank">盘点那些2015年最美丽的古镇景点</a>
                                 <p>如果你也是一个喜欢古镇旅游的人，如果你也对国内的很多旅游景点有一些不一样的情感，那么2015年，相信一定是你选择古镇旅游…</p>
                                 <div class="llxh f_r">
                                     <label class="qlan">浏览(88472)</label>
@@ -1283,69 +1283,69 @@
                     <div class="mtext_zt_text" id="need_html">
                         <ul>
                             <li>
-                                <a href="http://www.01nz.com.cn/need/34.html" target="_blank">
+                                <a href="#" target="_blank">
                                     <label class="pink f-14 f_b">【转让】</label>
                                     松江大港生态农家乐出售 </a>
                             </li>
                             <li>
-                                <a href="http://www.01nz.com.cn/need/33.html" target="_blank">
+                                <a href="#" target="_blank">
                                     <label class="pink f-14 f_b">【转让】</label>
                                     垂钓鱼塘农家乐转让 </a>
                             </li>
                             <li>
-                                <a href="http://www.01nz.com.cn/need/32.html" target="_blank">
+                                <a href="#" target="_blank">
                                     <label class="pink f-14 f_b">【转让】</label>
                                     度假村、农家乐合作或转让 </a>
                             </li>
                             <li>
-                                <a href="http://www.01nz.com.cn/need/31.html" target="_blank">
+                                <a href="#" target="_blank">
                                     <label class="pink f-14 f_b">【转让】</label>
                                     （出租）出租或出售位于浙江省湖州市德清县大树林农庄 </a>
                             </li>
                             <li>
-                                <a href="http://www.01nz.com.cn/need/29.html" target="_blank">
+                                <a href="#" target="_blank">
                                     <label class="pink f-14 f_b">【转让】</label>
                                     230亩度假村农庄整体转让 </a>
                             </li>
                             <li>
-                                <a href="http://www.01nz.com.cn/need/28.html" target="_blank">
+                                <a href="#" target="_blank">
                                     <label class="pink f-14 f_b">【转让】</label>
                                     农庄出租出售 </a>
                             </li>
                             <li>
-                                <a href="http://www.01nz.com.cn/need/25.html" target="_blank">
+                                <a href="#" target="_blank">
                                     <label class="pink f-14 f_b">【转让】</label>
                                     （转让） 西夏墅地理位置最优的鱼塘转让 </a>
                             </li>
                             <li>
-                                <a href="http://www.01nz.com.cn/need/24.html" target="_blank">
+                                <a href="#" target="_blank">
                                     <label class="pink f-14 f_b">【转让】</label>
                                     （出租）新建农庄出租 </a>
                             </li>
                             <li>
-                                <a href="http://www.01nz.com.cn/need/23.html" target="_blank">
+                                <a href="#" target="_blank">
                                     <label class="pink f-14 f_b">【转让】</label>
                                     （转让）常州一农庄出售 </a>
                             </li>
                             <li>
-                                <a href="http://www.01nz.com.cn/need/22.html" target="_blank">
+                                <a href="#" target="_blank">
                                     <label class="pink f-14 f_b">【转让】</label>
                                     （转让） 农庄转让,八间房,六个包间,全部全新,装修 </a>
                             </li>
                             <li>
-                                <a href="http://www.01nz.com.cn/need/21.html" target="_blank">
+                                <a href="#" target="_blank">
                                     <label class="pink f-14 f_b">【转让】</label>
                                     （转让） 天香农庄出租,特色农庄,设备齐全。 </a>
                             </li>
                             <li>
-                                <a href="http://www.01nz.com.cn/need/20.html" target="_blank">
+                                <a href="#" target="_blank">
                                     <label class="pink f-14 f_b">【转让】</label>
                                     （出租）阳山桃园出售42亩桃园农庄(有图) </a>
                             </li>
                         </ul>
                     </div>
                     <div class="nongjiafabu">
-                        <a href="http://www.01nz.com.cn/demand-publish" target="_blank">
+                        <a href="#" target="_blank">
                             <img alt="农家发布" class="f_l"
                                 src="../Images/Home/nongjiafb.png">
                         </a>

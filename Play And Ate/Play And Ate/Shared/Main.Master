@@ -68,7 +68,7 @@
             <div class="header_box">
                 <div class="headerss">
                     <div class="LOGE">
-                        <a href="http://www.01nz.com.cn/">
+                        <a href="#">
                             <img alt="第一农庄" class="f_1" src="../Images/Shared/loge.gif" />
                         </a>
                     </div>
@@ -85,7 +85,7 @@
                                     input.onblur = function () {
                                         input.value = input.value;
                                     }
-                                    var url = "http://www.01nz.com.cn/store/index/keyword-";
+                                    var url = "#";
                                     sousuo_btn.onclick = function () {
                                         if (input.value == '请输入您要搜索的关键词') {
                                             input.value = '';
@@ -124,71 +124,71 @@
                                         <font color="#DE751E"><b>&nbsp;华北</b></font>
                                     </li>
                                     <li>
-                                        <a href="http://bj.01nz.com.cn/">北京</a>
-                                        <a href="http://tj.01nz.com.cn/">天津</a>
+                                        <a href="#">北京</a>
+                                        <a href="#">天津</a>
                                     </li>
                                     <li>
                                         <font color="#DE751E"><b>&nbsp;东北</b></font>
                                     </li>
                                     <li>
-                                        <a href="http://sy.01nz.com.cn/">沈阳</a>
-                                        <a href="http://dl.01nz.com.cn/">大连</a>
+                                        <a href="#">沈阳</a>
+                                        <a href="#">大连</a>
                                     </li>
                                     <li>
                                         <font color="#DE751E"><b>&nbsp;华东</b></font>
                                     </li>
                                     <li>
-                                        <a href="http://sh.01nz.com.cn/">上海</a>
-                                        <a href="http://nj.01nz.com.cn/">南京</a>
-                                        <a href="http://hz.01nz.com.cn/">杭州</a>
-                                        <a href="http://qingdao.01nz.com.cn/">青岛</a>
-                                        <a href="http://nb.01nz.com.cn/">宁波</a>
-                                        <a href="http://jn.01nz.com.cn/">济南</a>
-                                        <a href="http://suzhou.01nz.com.cn/">苏州</a>
-                                        <a href="http://wx.01nz.com.cn/">无锡</a>
-                                        <a href="http://hf.01nz.com.cn/">合肥</a>
-                                        <a href="http://wf.01nz.com.cn/">潍坊</a>
-                                        <a href="http://shaoxing.01nz.com.cn/">绍兴</a>
-                                        <a href="http://huzhou.01nz.com.cn/">湖州</a>
-                                        <a href="http://jx.01nz.com.cn/">嘉兴</a>
-                                        <a href="http://jh.01nz.com.cn/">金华</a>
-                                        <a href="http://zhenjiang.01nz.com.cn/">镇江</a>
-                                        <a href="http://yangzhou.01nz.com.cn/">扬州</a>
-                                        <a href="http://rz.01nz.com.cn/">日照</a>
-                                        <a href="http://lishui.01nz.com.cn/">丽水</a>
-                                        <a href="http://quzhou.01nz.com.cn/">衢州</a>
-                                        <a href="http://xuancheng.01nz.com.cn/">宣城</a>
-                                        <a href="http://hs.01nz.com.cn/">黄山</a>
-                                        <a href="http://sr.01nz.com.cn/">上饶</a>
-                                        <a href="http://zhoushan.01nz.com.cn/">舟山</a>
+                                        <a href="#">上海</a>
+                                        <a href="#">南京</a>
+                                        <a href="#">杭州</a>
+                                        <a href="#">青岛</a>
+                                        <a href="#">宁波</a>
+                                        <a href="#">济南</a>
+                                        <a href="#">苏州</a>
+                                        <a href="#">无锡</a>
+                                        <a href="#">合肥</a>
+                                        <a href="#">潍坊</a>
+                                        <a href="#">绍兴</a>
+                                        <a href="#">湖州</a>
+                                        <a href="#">嘉兴</a>
+                                        <a href="#">金华</a>
+                                        <a href="#">镇江</a>
+                                        <a href="#">扬州</a>
+                                        <a href="#">日照</a>
+                                        <a href="#">丽水</a>
+                                        <a href="#">衢州</a>
+                                        <a href="#">宣城</a>
+                                        <a href="#">黄山</a>
+                                        <a href="#">上饶</a>
+                                        <a href="#">舟山</a>
                                     </li>
                                     <li>
                                         <font color="#DE751E"><b>&nbsp;中南</b></font>
                                     </li>
                                     <li>
-                                        <a href="http://gz.01nz.com.cn/">广州</a>
-                                        <a href="http://sz.01nz.com.cn/">深圳</a>
-                                        <a href="http://wh.01nz.com.cn/">武汉</a>
-                                        <a href="http://cs.01nz.com.cn/">长沙</a>
-                                        <a href="http://nn.01nz.com.cn/">南宁</a>
-                                        <a href="http://sanya.01nz.com.cn/">三亚</a>
+                                        <a href="#">广州</a>
+                                        <a href="#">深圳</a>
+                                        <a href="#">武汉</a>
+                                        <a href="#">长沙</a>
+                                        <a href="#">南宁</a>
+                                        <a href="#">三亚</a>
                                     </li>
                                     <li>
                                         <font color="#DE751E"><b>&nbsp;西南</b></font>
                                     </li>
                                     <li>
-                                        <a href="http://cd.01nz.com.cn/">成都</a>
-                                        <a href="http://cq.01nz.com.cn/">重庆</a>
-                                        <a href="http://km.01nz.com.cn/">昆明</a>
-                                        <a href="http://zy.01nz.com.cn/">遵义</a>
+                                        <a href="#">成都</a>
+                                        <a href="#">重庆</a>
+                                        <a href="#">昆明</a>
+                                        <a href="#">遵义</a>
                                     </li>
                                     <li>
                                         <font color="#DE751E"><b>&nbsp;西北</b></font>
                                     </li>
                                     <li>
-                                        <a href="http://xa.01nz.com.cn/">西安</a>
+                                        <a href="#">西安</a>
                                     </li>
-                                    <div id="citys_gd"><a href="http://sh.01nz.com.cn/city">更多</a></div>
+                                    <div id="citys_gd"><a href="#">更多</a></div>
                                 </ul>
                             </dd>
                         </dl>
@@ -213,27 +213,27 @@
                         <ul>
                             <li><span class="LOGE_text">去农庄,就上第一农庄网</span></li>
                             <li onclick="nav(0)" id="n0" class="soso ">
-                                <a href="http://www.01nz.com.cn/" target="">首页</a>
+                                <a href="../Home/Home.aspx" target="">首页</a>
                             </li>
                             <li onclick="nav(1)" id="n1" class="soso ">
-                                <a href="http://www.01nz.com.cn/targeting" target="">农家推荐</a>
+                                <a href="#" target="">农家推荐</a>
                             </li>
                             <li onclick="nav(2)" id="n2" class="soso ">
-                                <a href="http://xianlu.01nz.com.cn/" target="">农家行</a>
+                                <a href="#" target="">农家行</a>
                             </li>
                             <li onclick="nav(3)" id="n3" class="soso ">
-                                <a href="http://www.01nz.com.cn/farm" target="">农庄</a>
+                                <a href="#" target="">农庄</a>
                             </li>
                             <li onclick="nav(4)" id="n4" class="soso ">
-                                <a href="http://www.01nz.com.cn/farmhouse" target="">农家乐</a>
+                                <a href="#" target="">农家乐</a>
                             </li>
                             <li onclick="nav(5)" id="n5" class="soso ">
-                                <a href="http://www.01nz.com.cn/biotope" target="">生态园</a>
+                                <a href="#" target="">生态园</a>
                             </li>
                             <li onclick="nav(6)" id="n6" class="soso ">
-                                <a href="http://www.01nz.com.cn/fishing" target="">垂钓场</a>
+                                <a href="#" target="">垂钓场</a>
                             </li>
-                            <li class="zhuanti_dh" style="float: right;"><a href="http://www.01nz.com.cn/discover" target="_blank">专题</a></li>
+                            <li class="zhuanti_dh" style="float: right;"><a href="#" target="_blank">专题</a></li>
                         </ul>
                     </div>
                 </div>

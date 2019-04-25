@@ -25,7 +25,11 @@ namespace FTZ.PlayAndAte.DAL
             {
                 using (PlayAndAteEntities entities = new PlayAndAteEntities())
                 {
-                    List<Product> result = entities.Product.Include("Image").Include("Area").Where(m => m.AreaId == areaId).ToList<Product>();
+                    List<Product> result = entities.Product
+                                                   .Include("Image")
+                                                   .Include("Area")
+                                                   .Where(m => m.AreaId == areaId)
+                                                   .ToList<Product>();
                     return result;
                 }
             }
@@ -46,9 +50,13 @@ namespace FTZ.PlayAndAte.DAL
             {
                 using (PlayAndAteEntities entities = new PlayAndAteEntities())
                 {
-                    List<Product> result = entities.Product.Include("UserInfo_Role").Include("Image").OrderBy(m => m.UserInfo_Role.Sincerity.SincerityNumber).Take(rankNum).ToList<Product>();
+                    List<Product> result = entities
+                                          .Product
+                                          .Include("UserInfo_Role")
+                                          .Include("Image")
+                                          .OrderBy(m => m.UserInfo_Role.Sincerity.SincerityNumber)
+                                          .Take(rankNum).ToList<Product>();
                     return result.ToList<Product>();
-
                 }
             }
             catch (Exception ex)
@@ -69,7 +77,10 @@ namespace FTZ.PlayAndAte.DAL
                 using (PlayAndAteEntities entities = new PlayAndAteEntities())
                 {
                     int id = Convert.ToInt32(productId);
-                    Product result = entities.Product.Include("Area").Include("Image").Where(d=>d.ProductId==id).FirstOrDefault();
+                    Product result = entities.Product
+                                     .Include("Area")
+                                     .Include("Image")
+                                     .Where(d => d.ProductId == id).FirstOrDefault();
                     return result;
                 }
             }
