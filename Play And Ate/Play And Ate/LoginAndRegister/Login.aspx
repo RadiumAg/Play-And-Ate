@@ -26,7 +26,7 @@ var ERROR_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
  
 <div class="blank"></div>
 	<div class="inc wb">
-		<div class="user_inc_top">第一农庄网会员登陆 <span>&nbsp;或者 <a href="http://sh.01nz.com.cn/user-register">注册</a></span>	</div>
+		<div class="user_inc_top">第一农庄网会员登陆 <span>&nbsp;或者 <a href="Register.aspx">注册</a></span>	</div>
 		<div class="inc_main clearfix">
 			<div class="user-lr-box-left f_l">
 					<div style="margin:10px;">
@@ -145,6 +145,7 @@ var ERROR_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 				<h3>合作网站账号登录</h3><div class="blank10"></div><div class="blank10"></div><span id="api_Sina_1"><a href="https://api.weibo.com/oauth2/authorize?client_id=1124953983&amp;redirect_uri=http%3A%2F%2Fsh.01nz.com.cn%2Fapi_callback.php%3Fc%3DSina&amp;response_type=code" title="用微博登陆"><img src="./第一农庄网_会员登录_files/52a1881254edd.png" alt="用微博登陆"></a>&nbsp;</span><div class="blank10"></div><span id="api_Qqv2_1"><a href="http://www.01nz.com.cn/system/api_login/qqv2/qq_login.php" title="用QQ账号登陆"><img src="./第一农庄网_会员登录_files/52d0f08581839.png" alt="用QQ账号登陆"></a>&nbsp;</span><div class="blank10"></div><span id="api_Wechat_0"><a title="用微信登陆" href="https://open.weixin.qq.com/connect/qrconnect?appid=wx6431ca26112607a7&amp;redirect_uri=http%3A%2F%2F01nz.com.cn%2Fuser-welogin%2F&amp;response_type=code&amp;scope=snsapi_login&amp;state=STATE#wechat_redirect"><img alt="用微信登陆" src="./第一农庄网_会员登录_files/wechat.png"></a>&nbsp;</span>				</div>
 			</div>
 		</div>
+    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">

@@ -82,6 +82,7 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 									<input type="text" value="" id="verify" class="f-input" name="verify" style="height:20px; padding:5px;">	
 									<img alt="验证码" src="./第一农庄网_会员注册_files/verify.php" style="height:30px" onclick="this.src=&#39;/verify.php?rand=&#39;+ Math.random();" title="看不清楚？换一张">			
 									</div>
+
 								</div>
 																<div class="blank"></div>
 								<div class="field username" id="reg_mobile">
