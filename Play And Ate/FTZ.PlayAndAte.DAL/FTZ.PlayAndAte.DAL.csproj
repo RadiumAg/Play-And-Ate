@@ -59,9 +59,11 @@
     <Compile Include="Customers.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="DBHelper.cs" />
     <Compile Include="Image.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="LoginAndRegister\UserLoginService.cs" />
     <Compile Include="Models.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
