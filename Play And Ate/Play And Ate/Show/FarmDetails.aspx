@@ -1,5 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="FarmDetails.aspx.cs" Inherits="Play_And_Ate.Show.FarmDetails" %>
+﻿<%@ Page Title="农庄详情" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="FarmDetails.aspx.cs" Inherits="Play_And_Ate.Show.FarmDetails" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
+    <link href="../Content/Show/FarmDetails/style.css" rel="stylesheet" />
     	<style type="text/css">
     	    .BMap_mask {
     	        background: transparent url(about:blank);
@@ -706,11 +707,14 @@
     	        background-image: url(http://api.map.baidu.com/images/node.gif);
     	    }
     	</style>
+    <link href="../Content/Show/FarmDetails/baidu_map.css" rel="stylesheet" />
             <link href="../Content/Show/FarmDetails/list.css" rel="stylesheet" />
             <link href="../Content/Show/FarmDetails/review.css" rel="stylesheet" />
             <script src="../Scripts/Show/FarmDetails/seller.js"></script>
             <script src="../Scripts/Show/FarmDetails/api.js"></script>
             <script src="../Scripts/Show/FarmDetails/getscript.js"></script>
+          <link href="../Content/Show/FarmDetails/cityquery.css" rel="stylesheet" />
+    <link href="../Content/Show/FarmDetails/main_huandeng.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
 		<div class="warps">
@@ -720,8 +724,8 @@
 					您所在的位置：
 					<a href="http://sh.01nz.com.cn/">首页</a>
 					- <a href="http://sh.01nz.com.cn/farm">农庄</a>
-					- <a href="http://sh.01nz.com.cn/farmlist">上海农庄</a>
-					- <a href="http://sh.01nz.com.cn/farm/40.html">香豪小镇农家乐</a>
+					- <a href="http://sh.01nz.com.cn/farmlist"><%=product.Area.AreaName %></a>
+					- <a href="http://sh.01nz.com.cn/farm/40.html"><%= product.ProductName %></a>
 				</div>
 				<div class="f_r r_range">
 					&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" class="fav-store FW-FAV-STORE" dataid="40">关注</a>
@@ -737,7 +741,7 @@
 
             
 			<dl id="idBox" class="lightbox" style="z-index: 10000; display: none;">
-				<dt id="idBoxHead"><b>香豪小镇农家乐</b> </dt>
+				<dt id="idBoxHead"><b><%= product.ProductName %></b> </dt>
 				<dd>
 					<div class="scrolltab">
 						<span id="sLeftBtnA" class="sLeftBtnABan"></span>
@@ -746,13 +750,13 @@
 							<li class="liSelected">
 								<span class="sPic">
 									<i class="iBigPic"><a
-											href="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f19a08f280.jpg"
+											href="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>""
 											target="_blank" title=""><img alt="" height="420"
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f19a08f280_860x420.jpg"></a></i>
+											src="../Images/Show/FarmDetails/<%=product.Image.ToList().FirstOrDefault().ImageName %>"></a></i>
 								</span>
 								<span class="sSideBox">
 									<span class="sTitle"><a
-											href="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f19a08f280.jpg"
+											href="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>""
 											target="_blank" title=""></a></span>
 								</span>
 							</li>
@@ -894,7 +898,7 @@
 			</dl>
 			<div class="mtext">
 				<div class="sd_sname">
-					<div class="sd_snames f-24 f_l">香豪小镇农家乐</div>
+					<div class="sd_snames f-24 f_l"><%= product.ProductName %></div>
 					<div class="f_r sd_rl"><span class="hrdl f_l">6589次浏览</span>&nbsp;&nbsp;
 						<!-- <a>我要认领</a> -->
 					</div>
@@ -911,32 +915,32 @@
 					<div class="sd_imgl zxx_test_list">
 						<div class="mt_77">
 							<a class="sd_imgone preview" title=""
-								href="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f19a08f280_520x400.jpg">
-								<img alt="" src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f19a08f280.jpg"
+								href="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>">
+								<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>"
 									class="f_l" width="100%" height="100%">
 							</a>
 							<a class="sd_gd " id="idBoxOpen">查看更多图片（7）</a>
 						</div>
 						<a class="sd_imgl_img preview" title=""
-							href="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f19997eb34_520x400.jpg">
-							<img alt="" src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f19997eb34.jpg"
+							href="../Images/Show/FarmDetails/<%=product.Image.ToList()[1].ImageName%>">
+							<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[1].ImageName %>"
 								width="100%" height="100%">
 						</a>
 						<a class="sd_imgl_img preview" title=""
-							href="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f1992d9ea9_520x400.jpg">
-							<img alt="" src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f1992d9ea9.jpg"
+							href="../Images/Show/FarmDetails/<%=product.Image.ToList()[2].ImageName%>">
+							<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[2].ImageName%>"
 								width="100%" height="100%">
 						</a>
 						<a class="sd_imgl_img preview" title=""
-							href="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f198cf183f_520x400.jpg">
-							<img alt="" src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f198cf183f.jpg"
+							href="../Images/Show/FarmDetails/<%=product.Image.ToList()[3].ImageName%>">
+							<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[3].ImageName%>"
 								width="100%" height="100%">
 						</a>
-						<a class="sd_imgl_img preview" title=""
-							href="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f1986dee04_520x400.jpg">
-							<img alt="" src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f1986dee04.jpg"
-								width="100%" height="100%">
-						</a>
+                        <a class="sd_imgl_img preview" title=""
+                            href="../Images/Show/FarmDetails/<%=product.Image.ToList()[4].ImageName%>">
+                            <img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[4].ImageName%>"
+                                width="100%" height="100%">
+                        </a>
 					</div>
 					<div class="sd_imgr">
 						<div class="sd_imgr_top">
@@ -1066,8 +1070,7 @@
 						</div>
 						<div class="sd_zxyd">
 							<ul>
-								<li><img class="f_l" alt=""
-										src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/sd_news.png"></li>
+								<li><img class="f_l" alt="" src="../Images/Show/FarmDetails/sd_news.png"></li>
 								<li><label class="red">最新预定:</label> 赖***</li>
 								<li>预定成功：<label class="red">以法莲度假村</label></li>
 								<li>骑马 垂钓 烧烤 11人 </li>
@@ -1266,14 +1269,6 @@
 								<div class="sd_publish" onclick="review_forms(40);">我也发表</div>
 							</div>
 							<div id="store_dp" class="store_dp" name="store_dp">
-
-
-								<!--<div class="k2-fix-float" id="dp-tab">
-        <ul>
-        	 <li ><a href="javascript:void(0);" onclick="load_store_dp(40,1,'','');">精华点评<em>(0)</em></a></li> 
-          	<li class="current"><a href="javascript:void(0);" onclick="load_store_dp(40,0,'','');">全部点评<em>(2)</em></a></li>
-        </ul>       
-</div>-->
 								<div class="sd_comment_text">
 									<ul>
 										<li class="current"><a href="javascript:void(0);"
@@ -1282,39 +1277,11 @@
 									</ul>
 								</div>
 								<div class="blank"></div>
-								<!--<div class="k2-fix-float" id="dp-filter">
-         <label>筛选：</label>
-	        <a  href="javascript:void(0);" onclick="load_store_dp(40,0,'good','');">[好评]</a>	        
-	        <a  href="javascript:void(0);" onclick="load_store_dp(40,0,'bad','');">[差评]</a>	        
-	        <a  href="javascript:void(0);" onclick="load_store_dp(40,0,'is_buy','');">[消费者点评]</a>	
-			<a  href="javascript:void(0);" onclick="load_store_dp(40,0,'tuan','');">[团购点评]</a>	        
-	        <a  href="javascript:void(0);" onclick="load_store_dp(40,0,'daijin','');">[现金券点评]</a>
-			<a  href="javascript:void(0);" onclick="load_store_dp(40,0,'youhui','');">[优惠券点评]</a>	  	        	        
-	        <a  href="javascript:void(0);" onclick="load_store_dp(40,0,'event','');">[活动点评]</a>	        
-	        <a  href="javascript:void(0);" onclick="load_store_dp(40,0,'shop','');">[商城购物点评]</a>	        
-	               
-	        <a  href="javascript:void(0);" onclick="load_store_dp(40,0,'img','');">图文</a>
-        <p class="filter-select">
-         	 排序：
-			<select id="dp-filter-select">
-	     		<option value="create_time"  >发布时间</option>
-	            <option value="good_count" >鲜花总数</option>
-	            <option value="reply_count" >回应总数</option>
-			</select>
-        </p>
-
-</div>-->
 								<div class="clearfix">
 									<div class="blank"></div>
 									<div class="review_item" style="margin-left:15px;margin-right:15px;">
-
 										<div class="hd">
-											<!-- <a href='/space/id-341' style='text-align:center; display:inline-block;'  onmouseover='userCard.load(this,341);'><img src='/public/avatar/noavatar_small.gif'  /></a>			<div class="user_name">
-			<a href='/space/id-341'  class='user_name' onmouseover='userCard.load(this,341);' >liule…</a> 
-			</div> -->
-											<img alt="亲子游玩"
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/55b09aae67069.png"
-												width="100%" height="100px">
+											<img alt="亲子游玩" src="../Images/Show/FarmDetails/55b09aae67069.png"	width="100%" height="100px"/>
 											<div class="sd_cname f_l"><a href="http://sh.01nz.com.cn/space/id-341"
 													class="user_name" onmouseover="userCard.load(this,341);">liule…</a>
 											</div>
@@ -1333,8 +1300,6 @@
 												<a href="http://sh.01nz.com.cn/store/review-detail/id-124"
 													title="钓鱼还不错">钓鱼还不错</a>
 											</div>
-
-
 											哈哈哈 一天钓了好多鱼，开心啦啦啦啦啦啊 <a class="viewall"
 												href="http://sh.01nz.com.cn/store/review-detail/id-124"
 												title="查看全文">[查看全文 ]</a>
@@ -1372,12 +1337,8 @@
 									<div class="review_item" style="margin-left:15px;margin-right:15px;">
 
 										<div class="hd">
-											<!-- <a href='/space/id-766' style='text-align:center; display:inline-block;'  onmouseover='userCard.load(this,766);'><img src='/public/avatar/noavatar_small.gif'  /></a>			<div class="user_name">
-			<a href='/space/id-766'  class='user_name' onmouseover='userCard.load(this,);' ></a> 
-			</div> -->
-											<img alt="朋友圈活动"
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/55b09a924aac5.png"
-												width="100%" height="100px">
+											
+											<img alt="朋友圈活动" src="../Images/Show/FarmDetails/55b09a924aac5.png"" width="100%" height="100px"/>
 											<div class="sd_cname f_l"><a href="http://sh.01nz.com.cn/space/id-766"
 													class="user_name" onmouseover="userCard.load(this,);"></a> </div>
 											<div class="sd_cname f_l">2015-07-23</div>
@@ -3767,12 +3728,11 @@
 		<!-- 热门农庄 -->
 </asp:Content>
 <asp:Content runat="server" ID="Footer" ContentPlaceHolderID="Footer">
-    <div id="preview"
+    <%--<div id="preview"
 		style="position: absolute; padding: 4px; border: 1px solid rgb(243, 243, 243); background-color: rgb(238, 238, 238); top: 512px; z-index: 1000; left: 658px; right: auto;">
-		<div style="padding: 5px; background-color: white; border: 1px solid rgb(204, 204, 204);"><img
-				src="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f198cf183f_520x400.jpg">
+		<div style="padding: 5px; background-color: white; border: 1px solid rgb(204, 204, 204);">
 			<p style="text-align: center; font-size: 12px; padding: 2px 0px; margin: 0px;"></p>
 		</div>
-	</div>
+	</div>--%>
 </asp:Content>
 

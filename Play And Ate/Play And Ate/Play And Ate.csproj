@@ -40,6 +40,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -62,31 +68,26 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Content\LoginAndRegister\Login\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Login\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Register\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
+    <Content Include="Content\Products\base.v606141511.css" />
+    <Content Include="Content\Products\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Shared\cityquery.css" />
     <Content Include="Content\Shared\font-awesome.min.css" />
     <Content Include="Content\Shared\main_huandeng.css" />
-    <Content Include="Content\Shared\new_main.css" />
+    <Content Include="Content\Commond\new_main.css" />
     <Content Include="Content\Shared\style.css" />
     <Content Include="Content\Shared\WdatePicker.css" />
     <Content Include="Content\Shared\weebox.css" />
     <Content Include="Content\Show\FarmDetails\baidu_map.css" />
     <Content Include="Content\Show\FarmDetails\cityquery.css" />
-    <Content Include="Content\Show\FarmDetails\font-awesome.min.css" />
     <Content Include="Content\Show\FarmDetails\list.css" />
     <Content Include="Content\Show\FarmDetails\main_huandeng.css" />
-    <Content Include="Content\Show\FarmDetails\new_main.css" />
     <Content Include="Content\Show\FarmDetails\review.css" />
     <Content Include="Content\Show\FarmDetails\review_form.css" />
-    <Content Include="Content\Show\FarmDetails\style.css" />
     <Content Include="Content\Show\FarmDetails\weebox.css" />
     <Content Include="Content\Show\FarmRow\a_line.css" />
     <Content Include="Content\Show\FarmRow\a_rili.css" />
@@ -97,16 +98,92 @@
     <Content Include="Content\Special topic\base.v606141511.css" />
     <Content Include="Content\Special topic\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Home\Home.aspx" />
-    <Content Include="Home\Home.html" />
-    <Content Include="Images\Shared\35.gif" />
-    <Content Include="Images\Home\553dde4f96103.jpg" />
+    <Content Include="Home\PartialView\Company.html" />
+    <Content Include="Home\PartialView\Hot.html" />
+    <Content Include="Images\Home\5270b12bd8b1d.jpg" />
+    <Content Include="Images\Home\52807b105cb1b.jpg" />
+    <Content Include="Images\Home\5282e9733ca7c_70x50.jpg" />
+    <Content Include="Images\Home\5285962e0dcb7.jpg" />
+    <Content Include="Images\Home\528acb6ab3d41_70x50.jpg" />
+    <Content Include="Images\Home\52c4c840630af_70x50.jpg" />
+    <Content Include="Images\Home\530ef673b2355_70x50.jpg" />
+    <Content Include="Images\Home\531d696e4abfe.jpg" />
+    <Content Include="Images\Home\53200a00bd60b.jpg" />
+    <Content Include="Images\Home\5326a2c7a1113.jpg" />
+    <Content Include="Images\Home\536b1ae130bc6.jpg" />
+    <Content Include="Images\Home\5374721fb9390_70x50.jpg" />
+    <Content Include="Images\Home\546ed47f516e5_70x50.jpg" />
+    <Content Include="Images\Home\553e30da866a7.jpg" />
+    <Content Include="Images\Home\5549b5a4cabbf.jpg" />
+    <Content Include="Images\Home\555954e529637.jpg" />
+    <Content Include="Images\Home\555954ef1316e.jpg" />
+    <Content Include="Images\Home\5565534cdda31.jpg" />
     <Content Include="Images\Home\56ab04ed628d5.jpg" />
     <Content Include="Images\Home\56b45111dc613.jpg" />
     <Content Include="Images\Home\57bd13bc56362.jpg" />
     <Content Include="Images\Home\57e103de2ce7e.jpg" />
+    <Content Include="Images\Home\57e105a3d7f31.jpg" />
+    <Content Include="Images\Home\57e1080ee0356.png" />
+    <Content Include="Images\Home\5ad7060c01cf0_70x50.jpg" />
+    <Content Include="Images\Home\image_err.gif" />
+    <Content Include="Images\Home\label.png" />
+    <Content Include="Images\Home\lazy_loading.gif" />
+    <Content Include="Images\Shared\main_icon.png" />
+    <Content Include="Images\Home\nongjiafb.png" />
+    <Content Include="Images\Shared\shadow.png" />
+    <Content Include="Images\Shared\35.gif" />
+    <Content Include="Images\Home\1.jpg" />
+    <Content Include="Images\Home\2.jpg" />
+    <Content Include="Images\Home\3.jpg" />
+    <Content Include="Images\Home\4.jpg" />
+    <Content Include="Images\Home\5.jpg" />
     <Content Include="Images\Home\grey.gif" />
     <Content Include="Images\Shared\cs_dw.png" />
     <Content Include="Images\Shared\loge.gif" />
+    <Content Include="Images\Show\FarmDetails\1.jpg" />
+    <Content Include="Images\Show\FarmDetails\2.jpg" />
+    <Content Include="Images\Show\FarmDetails\3.jpg" />
+    <Content Include="Images\Show\FarmDetails\35.gif" />
+    <Content Include="Images\Show\FarmDetails\4.jpg" />
+    <Content Include="Images\Show\FarmDetails\5.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f197875732_135x100.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f197875732_860x420.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f197edc141_135x100.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f197edc141_860x420.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f1986dee04.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f1986dee04_135x100.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f1986dee04_860x420.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f198cf183f.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f198cf183f_135x100.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f198cf183f_860x420.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f1992d9ea9.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f1992d9ea9_135x100.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f1992d9ea9_860x420.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f19997eb34.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f19997eb34_135x100.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f19997eb34_860x420.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f19a08f280.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f19a08f280_135x100.jpg" />
+    <Content Include="Images\Show\FarmDetails\526f19a08f280_860x420.jpg" />
+    <Content Include="Images\Show\FarmDetails\53abb59815ac6_170x130.jpg" />
+    <Content Include="Images\Show\FarmDetails\55b09a924aac5.png" />
+    <Content Include="Images\Show\FarmDetails\55b09aae67069.png" />
+    <Content Include="Images\Show\FarmDetails\copyright_logo.png" />
+    <Content Include="Images\Show\FarmDetails\cs_dw.png" />
+    <Content Include="Images\Show\FarmDetails\end_2.gif" />
+    <Content Include="Images\Show\FarmDetails\end_3.gif" />
+    <Content Include="Images\Show\FarmDetails\fav_ico.gif" />
+    <Content Include="Images\Show\FarmDetails\icon.gif" />
+    <Content Include="Images\Show\FarmDetails\jubao.gif" />
+    <Content Include="Images\Show\FarmDetails\last_map.png" />
+    <Content Include="Images\Show\FarmDetails\loge.gif" />
+    <Content Include="Images\Show\FarmDetails\map-location.png" />
+    <Content Include="Images\Show\FarmDetails\markers.png" />
+    <Content Include="Images\Show\FarmDetails\marker_red_hd.png" />
+    <Content Include="Images\Show\FarmDetails\marker_red_sprite.png" />
+    <Content Include="Images\Show\FarmDetails\sd_icon.png" />
+    <Content Include="Images\Show\FarmDetails\sd_news.png" />
+    <Content Include="Images\Show\FarmDetails\xian.jpg" />
     <Content Include="LoginAndRegister\Login.aspx" />
     <Content Include="LoginAndRegister\Register.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
@@ -133,6 +210,16 @@
     <Content Include="Scripts\LoginAndRegister\Register\lang.js" />
     <Content Include="Scripts\LoginAndRegister\Register\mt3.v1014201036.js" />
     <Content Include="Scripts\LoginAndRegister\Register\sousuo.js" />
+    <Content Include="Scripts\Products\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="Scripts\Products\baidumap.js" />
+    <Content Include="Scripts\Products\c.js" />
+    <Content Include="Scripts\Products\ca3e4166f3f1cd8619807edc574f075c.js" />
+    <Content Include="Scripts\Products\fgcomm.v620152248.js" />
+    <Content Include="Scripts\Products\header.js" />
+    <Content Include="Scripts\Products\index_header.js" />
+    <Content Include="Scripts\Products\lang.js" />
+    <Content Include="Scripts\Products\mt3.v1014201036.js" />
+    <Content Include="Scripts\Products\sousuo.js" />
     <Content Include="Scripts\Show\FarmDetails\getscript.js" />
     <Content Include="Scripts\Show\FarmDetails\list.js" />
     <Content Include="Scripts\Show\FarmDetails\seller.js" />
@@ -147,8 +234,6 @@
     <Content Include="Scripts\Special topic\lang.js" />
     <Content Include="Scripts\Special topic\mt3.v1014201036.js" />
     <Content Include="Scripts\Special topic\sousuo.js" />
-    <Content Include="Scripts\vue.js" />
-    <Content Include="Scripts\vue.min.js" />
     <Content Include="Show\FarmDetails.aspx" />
     <Content Include="Show\FarmRow.aspx" />
     <Content Include="Special topic\Special topic.aspx" />
@@ -213,7 +298,7 @@
     <Content Include="Plugin\jquery.lazyload.js" />
     <Content Include="Scripts\Shared\lang.js" />
     <Content Include="Scripts\Shared\lanrenzhijia.js" />
-    <Content Include="Scripts\Shared\main_store.js" />
+    <Content Include="Scripts\Home\main_store.js" />
     <Content Include="Scripts\Shared\querycity.js" />
     <Content Include="Scripts\Shared\script.js" />
     <Content Include="Scripts\Shared\scripts.js" />
@@ -256,12 +341,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\Commond\" />
     <Folder Include="Content\Home\" />
     <Folder Include="Products\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Commond\" />
-    <Folder Include="Scripts\Home\" />
+    <Folder Include="Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
