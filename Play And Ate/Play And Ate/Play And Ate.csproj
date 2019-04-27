@@ -50,6 +50,9 @@
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -69,12 +72,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\LoginAndRegister\Login\base.v606141511.css" />
-    <Content Include="Content\LoginAndRegister\Login\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\LoginAndRegister\Login\Login.css" />
     <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Register\cf62177493ce4db40c22962f60d846f8.css" />
-    <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
+    <Content Include="Content\Products\Login.css" />
     <Content Include="Content\Products\base.v606141511.css" />
-    <Content Include="Content\Products\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\Products\LoginTwo.css" />
     <Content Include="Content\Shared\cityquery.css" />
     <Content Include="Content\Shared\font-awesome.min.css" />
     <Content Include="Content\Shared\main_huandeng.css" />
@@ -128,6 +131,21 @@
     <Content Include="Images\Home\image_err.gif" />
     <Content Include="Images\Home\label.png" />
     <Content Include="Images\Home\lazy_loading.gif" />
+    <Content Include="Images\LoginAndRegister\2.gif" />
+    <Content Include="Images\LoginAndRegister\35.gif" />
+    <Content Include="Images\LoginAndRegister\52a1881254edd.png" />
+    <Content Include="Images\LoginAndRegister\52d0f08581839.png" />
+    <Content Include="Images\LoginAndRegister\cs_dw.png" />
+    <Content Include="Images\LoginAndRegister\end_2.gif" />
+    <Content Include="Images\LoginAndRegister\end_3.gif" />
+    <Content Include="Images\LoginAndRegister\icon.gif" />
+    <Content Include="Images\LoginAndRegister\image_err.gif" />
+    <Content Include="Images\LoginAndRegister\jubao.gif" />
+    <Content Include="Images\LoginAndRegister\loge.gif" />
+    <Content Include="Images\LoginAndRegister\user_rl.gif" />
+    <Content Include="Images\LoginAndRegister\wechat.png" />
+    <Content Include="Images\LoginAndRegister\wg.png" />
+    <Content Include="Images\LoginAndRegister\xian.jpg" />
     <Content Include="Images\Shared\main_icon.png" />
     <Content Include="Images\Home\nongjiafb.png" />
     <Content Include="Images\Shared\shadow.png" />
@@ -232,12 +250,16 @@
     <Content Include="Scripts\LoginAndRegister\Login\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\LoginAndRegister\Login\baidumap.js" />
     <Content Include="Scripts\LoginAndRegister\Login\c.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\core%281%29.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\core.js" />
     <Content Include="Scripts\LoginAndRegister\Login\fgcomm.v620152248.js" />
     <Content Include="Scripts\LoginAndRegister\Login\header.js" />
     <Content Include="Scripts\LoginAndRegister\Login\index_header.js" />
     <Content Include="Scripts\LoginAndRegister\Login\lang.js" />
     <Content Include="Scripts\LoginAndRegister\Login\mt3.v1014201036.js" />
     <Content Include="Scripts\LoginAndRegister\Login\sousuo.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\tongji_360.js" />
+    <Content Include="Scripts\LoginAndRegister\Login\z_stat.js" />
     <Content Include="Scripts\LoginAndRegister\Register\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\LoginAndRegister\Register\baidumap.js" />
     <Content Include="Scripts\LoginAndRegister\Register\c.js" />
@@ -334,6 +356,9 @@
       <DependentUpon>Generated.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Main.ashx.cs">
+      <DependentUpon>Main.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Shared\Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -395,6 +420,7 @@
     <Content Include="Scripts\Show\FarmRow\logger.js" />
     <Content Include="Scripts\Show\FarmRow\order20121228.js" />
     <Content Include="Scripts\Show\FarmRow\sousuo.js" />
+    <Content Include="Services\Main.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -406,7 +432,6 @@
     <Folder Include="Content\Home\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Commond\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FTZ.PlayAndAte.BLL\FTZ.PlayAndAte.BLL.csproj">

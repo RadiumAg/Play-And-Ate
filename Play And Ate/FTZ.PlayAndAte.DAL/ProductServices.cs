@@ -77,10 +77,13 @@ namespace FTZ.PlayAndAte.DAL
                 using (PlayAndAteEntities entities = new PlayAndAteEntities())
                 {
                     int id = Convert.ToInt32(productId);
-                    Product result = entities.Product
-                                     .Include("Area")
-                                     .Include("Image")
+                    var data = entities.Product
                                      .Where(d => d.ProductId == id).FirstOrDefault();
+                    Product result = new Product();
+                    result = data;
+                    result.Image = data.Image;
+                    result.Area = data.Area;
+                    result.PPointsType = data.PPointsType;
                     return result;
                 }
             }

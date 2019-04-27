@@ -52,10 +52,18 @@
             <div class="top_nav">
                 <div class="wrap">
                     <div>
+                        <%if (string.IsNullOrEmpty(userName))
+                            { %>
                         <span id="user_head_tip" class="f_l">你好，欢迎光临第一农庄网！
-                        <a href="javascript:void(0);" onclick="ajax_login();">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="http://sh.01nz.com.cn/user-register">注册</a>
+                        <a href="../LoginAndRegister/Login.aspx">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                        <a href="../LoginAndRegister/Register.aspx">注册</a>
                         </span>
+                        <%}
+                        else
+                        { %>
+                        <span class="f_l">你好<%=userName %>，欢迎光临第一农庄网！
+                        </span>
+                        <%} %>
                         <!-- <span class="cart_ico"><a href="/cart" class="">购物车<span class="cart_count" id="cart_count">0</span> 件</a></span> -->
                         <!-- <span class="v_line">&nbsp;|&nbsp;</span> -->
                         <a href="javascript:void(0)" onclick="submit_sms();">短信订阅</a><span class="v_line">&nbsp;|&nbsp;</span>

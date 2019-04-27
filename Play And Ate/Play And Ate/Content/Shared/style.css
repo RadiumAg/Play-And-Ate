@@ -6074,7 +6074,7 @@ a.switch_city, a.switch_city:hover {
             font-size: 14px;
         }
 
-    .user-lr-box-left .login-submit-btn {
+    /*.user-lr-box-left .login-submit-btn {
         overflow: hidden;
         float: left;
         text-indent: -100em;
@@ -6083,7 +6083,7 @@ a.switch_city, a.switch_city:hover {
         height: 30px;
         width: 100px;
         background: url(../images/user_rl.gif) no-repeat 0 0;
-    }
+    }*/
 
     .user-lr-box-left .login-sign-btn {
         overflow: hidden;
