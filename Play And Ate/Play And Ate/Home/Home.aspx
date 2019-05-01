@@ -14,16 +14,7 @@
         var LOADER_IMG = '../Images/Home/lazy_loading.gif';
         var ERROR_IMG = '../Images/Home/image_err.gif';
     </script>
-    <script type="text/javascript">
-        jQuery(document).ready(
-            //function ($) {
-            //    $("img").lazyload({
-            //        effect: "fadeIn",
-            //        threshold: "200",
-            //        failurelimit: "10"
-            //    });
-            //});
-    </script>
+    
     <script type="text/javascript">
             //首先用JQ判断浏览器类型及版本，如果是IE8以下的浏览器就用effect=show，否则就用effect=fadeIn，判断浏览器版本函数如下
             function checkbrowse() {

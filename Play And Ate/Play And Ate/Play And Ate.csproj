@@ -75,9 +75,7 @@
     <Content Include="Content\LoginAndRegister\Login\Login.css" />
     <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Register\cf62177493ce4db40c22962f60d846f8.css" />
-    <Content Include="Content\Products\Login.css" />
     <Content Include="Content\Products\base.v606141511.css" />
-    <Content Include="Content\Products\LoginTwo.css" />
     <Content Include="Content\Shared\cityquery.css" />
     <Content Include="Content\Shared\font-awesome.min.css" />
     <Content Include="Content\Shared\main_huandeng.css" />
@@ -146,6 +144,7 @@
     <Content Include="Images\LoginAndRegister\wechat.png" />
     <Content Include="Images\LoginAndRegister\wg.png" />
     <Content Include="Images\LoginAndRegister\xian.jpg" />
+    <Content Include="Images\Shared\LOGO1.PNG" />
     <Content Include="Images\Shared\main_icon.png" />
     <Content Include="Images\Home\nongjiafb.png" />
     <Content Include="Images\Shared\shadow.png" />
@@ -231,6 +230,9 @@
     <Content Include="Images\Show\FarmRow\nopic.jpg" />
     <Content Include="Images\Show\FarmRow\xian.jpg" />
     <Content Include="Index.aspx" />
+    <Content Include="Line\Line.aspx" />
+    <Content Include="Line\Line.html" />
+    <Content Include="Line\LineDetail.aspx" />
     <Content Include="LoginAndRegister\Login.aspx" />
     <Content Include="LoginAndRegister\Register.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
@@ -312,6 +314,20 @@
     </Compile>
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Line\Line.aspx.cs">
+      <DependentUpon>Line.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Line\Line.aspx.designer.cs">
+      <DependentUpon>Line.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Line\LineDetail.aspx.cs">
+      <DependentUpon>LineDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Line\LineDetail.aspx.designer.cs">
+      <DependentUpon>LineDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginAndRegister\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

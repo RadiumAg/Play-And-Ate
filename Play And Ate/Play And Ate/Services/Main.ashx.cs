@@ -46,8 +46,12 @@ namespace Play_And_Ate.Services
             }
             else
             {
-                FormsAuthentication.RedirectFromLoginPage(user.UserName, true);
+                string isAutoNum = context.Request["auto_login"].ToString();
+                //判断是否自动登陆
+                FormsAuthentication.RedirectFromLoginPage(user.UserName, isAutoNum=="1" ?true:false);
                 context.Response.Cookies["UserName"].Value = userData.UserName;
+                //设定登陆时间
+                context.Response.Cookies["UserName"].Expires = DateTime.Now.AddDays(7);
                 context.Response.Write(JsonConvert.SerializeObject(true));
             }
         }
