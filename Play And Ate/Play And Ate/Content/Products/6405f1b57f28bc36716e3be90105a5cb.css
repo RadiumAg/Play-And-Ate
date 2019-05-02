@@ -337,6 +337,7 @@
     width: 757px;
     padding-top: 10px;
     border: 2px #75bf46 solid;
+    overflow:hidden;
 }
 
     .store_xianjin .shty_con .s_info {
