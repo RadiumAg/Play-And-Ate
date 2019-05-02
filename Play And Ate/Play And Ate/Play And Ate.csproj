@@ -299,6 +299,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helper\Authentication.cs" />
     <Compile Include="Home\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -429,6 +430,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Admin\" />
     <Folder Include="Content\Home\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Commond\" />
