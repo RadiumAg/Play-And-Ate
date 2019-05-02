@@ -1,6 +1,9 @@
-﻿using FTZ.PlayAndAte.DAL;
-using FTZ.PlayAndAte.Models;
+﻿using FTZ.PlayAndAte.Models;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 namespace FTZ.PlayAndAte.BLL
 {
     public class ProductManager
@@ -31,7 +34,8 @@ namespace FTZ.PlayAndAte.BLL
         /// </summary>
         /// <param name="productId">商品编号</param>
         /// <returns>商品实体</returns>
-        public static Product ShowProducts(string productId) {
+        public static Product ShowProducts(string productId)
+        {
             return ProductServices.ShowProductsData(productId);
         }
 
