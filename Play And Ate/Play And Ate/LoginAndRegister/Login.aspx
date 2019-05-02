@@ -32,7 +32,6 @@
                     <div style="margin: 10px;">
                         <!--登录表单-->
 
-                        <%--<form method="post" name="page_login_form" id="page_login_form">--%>
                         <div class="field email">
                             <label for="login-email-address">Email/手机</label>
                             <input type="text" value="" class="f-input ipttxt" id="login-email-address" name="email" size="30" tabindex="1">
@@ -58,6 +57,7 @@
                             <input type="hidden" name="ajax" value="1">
                             <input type="submit" class="login-submit-btn" id="user-login-submit" name="commit" value="登录">
                             <script>
+                                createCode();
                                 var code; //在全局 定义验证码
                                 function createCode() { //创建验证码函数
                                     code = "";
@@ -98,9 +98,10 @@
                                             data: $("#form1").serialize(),
                                             url: "../Services/Main.ashx?id=1",
                                             success: function (data) {
-                                                if (data) {
+                                                let msg = data;
+                                                if (msg.isLogin) {
                                                     alert("登陆成功！");
-                                                    window.open("../Home/Home.aspx");
+                                                    window.open(data.Role + ".html","_self");
                                                 }
                                                 else {
                                                     alert("登陆失败！");
@@ -112,8 +113,6 @@
                             </script>
                             <span class="to_regsiter">还没有账户？<a href="http://sh.01nz.com.cn/user-register">立即注册</a></span>
                         </div>
-                        <%--</form>--%>
-
 
                         <!--登录表单-->
                     </div>
@@ -169,12 +168,7 @@
 
     <script src="../Scripts/LoginAndRegister/Login/z_stat.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/core.js"></script>
-    <a href="https://www.cnzz.com/stat/website.php?web_id=1254939469" target="_blank" title="站长统计">站长统计</a>
-
     <script src="../Scripts/LoginAndRegister/Login/c.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/tongji_360.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/core(1).js"></script>
-    <a href="https://quanjing.cnzz.com/" target="_blank" title="全景统计">
-        <img border="0" hspace="0" vspace="0" src="../Images/LoginAndRegister/2.gif"></a>
-
 </asp:Content>

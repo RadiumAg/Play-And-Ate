@@ -23,6 +23,9 @@ namespace Play_And_Ate.Services
                 case "1":
                     ChekLogin();
                     break;
+                case "2":
+                    ShowBusiness();
+                    break;
             }
         }
 
@@ -39,19 +42,45 @@ namespace Play_And_Ate.Services
                 Pwd = context.Request["user_pwd"].ToString(),
 
             };
+
             UserInfo_Role userData = UserInfo_RoleManager.CheckUserInfo(user);
             if (userData == null)
             {
-                context.Response.Write(JsonConvert.SerializeObject(false));
+                var msg = new
+                {
+                    Role = "",
+                    isLogin = false,
+                };
+                context.Response.Write(JsonConvert.SerializeObject(msg));
             }
             else
             {
-                FormsAuthentication.RedirectFromLoginPage(user.UserName, true);
-                context.Response.Cookies["UserName"].Value = userData.UserName;
-                context.Response.Write(JsonConvert.SerializeObject(true));
+                var msg = new
+                {
+                    Role = userData.Role_UserInfo.RoleName,
+                    isLogin = true
+                };
+                Helper.Authentication.SetCookie(userData.UserName, userData.Pwd, userData.Role_UserInfo.RoleName);
+                this.context.Response.Cookies["UserName"].Value = userData.UserName;
+                context.Response.Write(JsonConvert.SerializeObject(msg));
             }
         }
 
+        /// <summary>
+        /// 获取所有商户
+        /// </summary>
+        public void ShowBusiness()
+        {
+            context.Response.Write(JsonConvert.SerializeObject(UserInfo_RoleManager.ShowBusiness().Select(x =>new {
+                x.Address,
+                x.Email,
+                x.Phone,
+                x.UserName,
+                x.Pwd,
+                x.QQ,
+                Product= x.Product.Select(n=>new {n.ProductName,n.ProductPrice }),
+            })));
+        }
 
         public bool IsReusable
         {

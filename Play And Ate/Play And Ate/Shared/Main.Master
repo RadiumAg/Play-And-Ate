@@ -28,7 +28,6 @@
     <script src="../Scripts/Shared/lanrenzhijia.js"></script>
     <script src="../Scripts/Shared/scripts.js"></script>
     <script src="../Scripts/Shared/script.js"></script>
-    <%--<script src="../Plugin/jquery.lazyload.js"></script>--%>
     <link href="../Content/Shared/font-awesome.min.css" rel="stylesheet" />
     <link href="../Content/Shared/main_huandeng.css" rel="stylesheet" />
     <link href="../Content/Commond/new_main.css" rel="stylesheet" />
@@ -64,11 +63,9 @@
                         <span class="f_l">你好<%=userName %>，欢迎光临第一农庄网！
                         </span>
                         <%} %>
-                        <!-- <span class="cart_ico"><a href="/cart" class="">购物车<span class="cart_count" id="cart_count">0</span> 件</a></span> -->
-                        <!-- <span class="v_line">&nbsp;|&nbsp;</span> -->
                         <a href="javascript:void(0)" onclick="submit_sms();">短信订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
                         <a href="javascript:void(0)" onclick="unsubmit_sms();">短信退订</a><span class="v_line">&nbsp;|&nbsp;</span>
-                        <a href="http://sh.01nz.com.cn/tuan/subscribe-mail">邮件订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
+                        <a href="javascript:void(0)">邮件订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
                     </div>
                 </div>
             </div>
@@ -77,7 +74,7 @@
                 <div class="headerss">
                     <div class="LOGE">
                         <a href="#">
-                            <img alt="第一农庄" class="f_1" src="../Images/Shared/loge.gif" />
+                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG"  style="width:185px;height:100px;"/>
                         </a>
                     </div>
                     <div id="city">
@@ -253,8 +250,24 @@
                 }
             </script>
             <asp:ContentPlaceHolder ID="Content" runat="server" />
-            <!-- 专题友情链接 -->
             <div class="blank"></div>
+			<div class="foot_xian"> </div>
+			<div id="ftw">
+				<div class="blank"></div>
+				<div class="tc">
+					<a href="http://sh.01nz.com.cn/sys/id-20" target="_blank">关于我们</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-6" target="_blank">加入我们</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-30" target="_blank">联系我们</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-28" target="_blank">隐私保护</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-45" target="_blank">网站地图</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-9" target="_blank">商家登录</a>
+				</div>
+				<div class="blank"></div>
+				<div class="beian" align="center">版权所有：上海威和信息科技有限公司 <a href="http://www.miitbeian.gov.cn/"
+						target="_blank">沪ICP备 13043989号-1</a> 电话：400-021-3158 邮箱：mc_01nz@163.com </div>
+				<div align="center" class="beian_eng">
+					Copyright 2013 www.01nz.com.cn All Rights Reserved.</div>
+               </div>
             <asp:ContentPlaceHolder ID="Footer" runat="server" />
         </div>
     </form>

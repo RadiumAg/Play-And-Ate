@@ -13,6 +13,15 @@ namespace FTZ.PlayAndAte.BLL
     {
 
         /// <summary>
+        /// 展示所有商户信息
+        /// </summary>
+        /// <returns>商户信息</returns>
+        public static List<UserInfo_Role> ShowBusiness()
+        {
+            return UserInfo_RoleService.ShowBusiness();
+        }
+
+        /// <summary>
         /// 验证是否存在用户信息
         /// </summary>
         /// <returns>用户实体</returns>
@@ -26,7 +35,8 @@ namespace FTZ.PlayAndAte.BLL
         /// </summary>
         /// <param name="user">用户实体</param>
         /// <returns>是否注册成功</returns>
-        public static int Register(UserInfo_Role user) {
+        public static int Register(UserInfo_Role user)
+        {
             return UserInfo_RoleService.InsertUser(user);
         }
 
