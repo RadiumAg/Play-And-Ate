@@ -28,10 +28,10 @@
         <div id="tree"></div>
     </div>
     <script>
-       
+
         <%if (role == "admin")
         { %>
-         let data = [{
+        let data = [{
             'id': 1,
             'text': '商户管理',
             'children': [{
@@ -108,10 +108,10 @@
         else if (role == "business")
         {%>
 
-         let data = [{
+        let data = [{
             'id': 1,
             'text': '订单管理',
-             'children': [{
+            'children': [{
                 'id': 1,
                 'text': '订单信息',
                 'url': '/Admin/PartialView/ShowData.html',
@@ -122,7 +122,7 @@
             }]
         }]
 
-          //渲染DataGridView
+        //渲染DataGridView
         function ShowData() {
             $("#dataContext").datagrid({
                 fit: true,
