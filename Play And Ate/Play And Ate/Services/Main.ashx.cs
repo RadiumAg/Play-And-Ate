@@ -39,19 +39,29 @@ namespace Play_And_Ate.Services
                 Pwd = context.Request["user_pwd"].ToString(),
 
             };
+           
             UserInfo_Role userData = UserInfo_RoleManager.CheckUserInfo(user);
             if (userData == null)
             {
-                context.Response.Write(JsonConvert.SerializeObject(false));
+                var msg = new
+                {
+                    Role = "",
+                    isLogin = false,
+                };
+                context.Response.Write(JsonConvert.SerializeObject(msg));
             }
             else
             {
-                FormsAuthentication.RedirectFromLoginPage(user.UserName, true);
-                context.Response.Cookies["UserName"].Value = userData.UserName;
-                context.Response.Write(JsonConvert.SerializeObject(true));
+                var msg = new
+                {
+                    Role = userData.Role_UserInfo.RoleName,
+                    isLogin = true
+                };
+                Helper.Authentication.SetCookie(userData.UserName,userData.Pwd,userData.Role_UserInfo.RoleName);
+                this.context.Response.Cookies["UserName"].Value=userData.UserName;
+                context.Response.Write(JsonConvert.SerializeObject(msg));
             }
         }
-
 
         public bool IsReusable
         {

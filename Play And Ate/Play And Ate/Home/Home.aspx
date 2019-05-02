@@ -15,16 +15,6 @@
         var ERROR_IMG = '../Images/Home/image_err.gif';
     </script>
     <script type="text/javascript">
-        jQuery(document).ready(
-            //function ($) {
-            //    $("img").lazyload({
-            //        effect: "fadeIn",
-            //        threshold: "200",
-            //        failurelimit: "10"
-            //    });
-            //});
-    </script>
-    <script type="text/javascript">
             //首先用JQ判断浏览器类型及版本，如果是IE8以下的浏览器就用effect=show，否则就用effect=fadeIn，判断浏览器版本函数如下
             function checkbrowse() {
                 var ua = navigator.userAgent.toLowerCase();
@@ -46,19 +36,12 @@
         } else {
             showeffect = "fadeIn"
         }
-        //jQuery(document).ready(function ($) {
-        //    $("img").lazyload({
-        //        placeholder: "../Images/Home/grey.gif",
-        //        effect: showeffect,
-        //        failurelimit: 10
-        //    })
-        //});
     </script>
     <div id="bn" class="w-100">
         <!-- 热搜直通车 -->
         <div class="train">
             <div class="train_tit">搜索直通车</div>
-            <a href="http://huzhou.01nz.com.cn/farmlist/zht--aid-899-tid-0-cid-49-deal_type-0"
+            <a href="#"
                 title="安吉农家乐">安吉农家乐</a>
         </div>
         <div class="warps">
@@ -1062,9 +1045,8 @@
                 <div class="mtext_b_l f_l">
                     <div class="mtext_b_l_title violet">
                         <div class="mtext_title_l f_l">企业精选</div>
-                        <a href="javascript:;" id="company1" onclick="company(1)"
-                            class="stitlea stitlea_hover">拓展基地</a>
-                        <a href="javascript:;" id="company2" onclick="company(2)" class="stitlea">会议活动</a>
+                        <a href="javascript:;" id="company1" class="stitlea stitlea_hover">拓展基地</a>
+                        <a href="javascript:;" id="company2" class="stitlea">会议活动</a>
                         <a href="#" title="" class="myy_yd f_r">更多 &gt;&gt;</a>
                     </div>
                     <div class="mtext_c_l" id="company_html">
