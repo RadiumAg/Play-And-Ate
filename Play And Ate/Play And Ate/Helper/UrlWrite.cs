@@ -30,11 +30,11 @@ namespace Play_And_Ate.Helper
             string role = url.Substring(0, dot + 1);
             if (role.Contains("admin"))
             {
-                context.Server.Transfer("~/Admin/Backstage.html?id=1",true);
+                context.Server.Transfer("~/Admin/Backstage.aspx?id=1");
             }
             else if (role.Contains("business"))
             {
-                context.Server.Transfer("~/Admin/Backstage.html?id=2",true);
+                context.Server.Transfer("~/Admin/Backstage.aspx?id=2");
             }
             else if (role.Contains("ordinary"))
             {
