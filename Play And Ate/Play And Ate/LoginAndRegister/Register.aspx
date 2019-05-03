@@ -1,17 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Play_And_Ate.LoginAndRegister.Register" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
-    <%--    <script src="../Scripts/LoginAndRegister/Register/908ca0ab9e4d27144b60bc878b237327.js"></script>
-    <script src="../Scripts/LoginAndRegister/Register/baidumap.js"></script>
-    <script src="../Scripts/LoginAndRegister/Register/c.js"></script>
-    <script src="../Scripts/LoginAndRegister/Register/fgcomm.v620152248.js"></script>
-    <script src="../Scripts/LoginAndRegister/Register/header.js"></script>
-    <script src="../Scripts/LoginAndRegister/Register/index_header.js"></script>
-    <script src="../Scripts/LoginAndRegister/Register/lang.js"></script>
-    <script src="../Scripts/LoginAndRegister/Register/mt3.v1014201036.js"></script>
-    <script src="../Scripts/LoginAndRegister/Register/sousuo.js"></script>--%>
-    <link href="../Content/LoginAndRegister/Register/base.v606141511.css" rel="stylesheet" />
-    <%--<link href="../Content/LoginAndRegister/Register/cf62177493ce4db40c22962f60d846f8.css" rel="stylesheet" />--%>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="wraps">
@@ -40,11 +29,12 @@
                         <form action="http://sh.01nz.com.cn/user-doregister" method="post" id="signup-user-form">
                             <div class="field mobile" id="mobile-div">
                                 <label for="signup-mobile-address">手机</label>
-                                <input type="text" value="" class="f-input ipttxt" id="signup-mobile-address" name="mobile" size="30">
+                                <input type="text" value="" class="f-input ipttxt" id="signup-mobile-address" name="phoneNumber" size="30">
                                 <span class="f-input-tip"></span>
                                 <span class="hint">登录及找回密码用，不会公开</span>
                                 <input type="hidden" value="0" id="mobile_hid">
                             </div>
+
                             <div class="field email" id="email-div">
                                 <label for="signup-email-address">邮箱</label>
                                 <input type="text" value="" class="f-input ipttxt" id="signup-email-address" name="email" size="30">
@@ -59,6 +49,14 @@
                                 <span class="f-input-tip"></span>
                                 <span class="hint">3-15个字符，一个汉字为两个字符</span>
                                 <input type="hidden" value="0" id="user_name_hid">
+                            </div>
+                            <div class="blank1"></div>
+                            <div class="field username">
+                                <label for="signup-username">地址</label>
+                                <input type="text" value="" class="f-input ipttxt" id="signup-address" name="user_name" size="50">
+                                <span class="f-input-tip"></span>
+                                <span class="hint">请填写您的详细地址</span>
+                                <input type="hidden" value="0" id="address_hid">
                             </div>
                             <div class="blank1"></div>
                             <div class="field password">
@@ -77,13 +75,12 @@
                                 <input type="hidden" value="0" id="user_pwd_confirm_hid">
                             </div>
                             <div class="blank1"></div>
-                            <div class="field username" id="reg_email">
-                                <label for="signup-verify-address">安全码</label>
-                                <div class="verify_row">
-                                    <input type="text" value="" id="verify" class="f-input" name="verify" style="height: 20px; padding: 5px;">
-                                    <img alt="验证码" src="./第一农庄网_会员注册_files/verify.php" style="height: 30px" onclick="this.src=&#39;/verify.php?rand=&#39;+ Math.random();" title="看不清楚？换一张">
-                                </div>
-
+                            <div class="field username">
+                                <label for="signup-username">QQ</label>
+                                <input type="text" value="" class="f-input ipttxt" id="signup-qq" name="user_name" size="30">
+                                <span class="f-input-tip"></span>
+                                <span class="hint">填写QQ账号</span>
+                                <input type="hidden" value="0" id="qq_hid">
                             </div>
                             <div class="blank"></div>
                             <div class="field username" id="reg_mobile">
@@ -95,6 +92,37 @@
                                 <div style="float: left; margin-left: 15em; margin-top: -37px;">
                                     <input id="get-code" type="button" style="height: 30px;" value="获取验证码">
                                 </div>
+                                <script>
+                                    let code;
+                                    $(function () {
+                                        SMSMsg();
+                                    });
+                                    function SMSMsg() {
+                                        $("#get-code").click(function () {
+                                            $.ajax({
+                                                url: "../Services/Main.ashx?id=3",
+                                                type: "POST",
+                                                dataType: "JSON",
+                                                data: {
+                                                    phoneNumber: $("#signup-mobile-address").val()
+                                                },
+                                                success: function (data) {
+                                                    let msg = data;//将json对象赋值给变量
+                                                    code = msg.Str;//发送的验证码
+                                                    let result = JSON.parse(msg.Result);//将字符串转换为json对象
+                                                    console.log(result, code)
+                                                    if (result.Code == "OK" && result.Message == "OK") {
+                                                        alert("发送成功！");
+                                                    }
+                                                    else {
+                                                        alert("发送失败！");
+                                                    }
+                                                }
+                                            });
+
+                                        });
+                                    }
+                                </script>
                             </div>
                             <div class="blank"></div>
                             <div class="act">
