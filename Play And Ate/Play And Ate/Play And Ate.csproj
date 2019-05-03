@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -68,6 +69,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Cart\Cart.aspx" />
+    <Content Include="Cart\Cart.html" />
+    <Content Include="Content\Cart\base.v606141511.css" />
+    <Content Include="Content\Cart\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\Line\index.css" />
+    <Content Include="Content\Line\LineDetial\a_rili.css" />
+    <Content Include="Content\Line\LineDetial\index.css" />
+    <Content Include="Content\Line\LineDetial\list_line.css" />
+    <Content Include="Content\Line\LineDetial\search.css" />
+    <Content Include="Content\Line\LineDetial\style.css" />
+    <Content Include="Content\Line\search.css" />
+    <Content Include="Content\Line\style%281%29.css" />
+    <Content Include="Content\Line\style.css" />
     <Content Include="Content\LoginAndRegister\Login\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Login\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
@@ -100,6 +114,17 @@
     <Content Include="Home\Home.aspx" />
     <Content Include="Home\PartialView\Company.html" />
     <Content Include="Home\PartialView\Hot.html" />
+    <Content Include="Images\Cart\2.gif" />
+    <Content Include="Images\Cart\35.gif" />
+    <Content Include="Images\Cart\cs_dw.png" />
+    <Content Include="Images\Cart\end_2.gif" />
+    <Content Include="Images\Cart\end_3.gif" />
+    <Content Include="Images\Cart\icon.gif" />
+    <Content Include="Images\Cart\image_err.gif" />
+    <Content Include="Images\Cart\jubao.gif" />
+    <Content Include="Images\Cart\loge.gif" />
+    <Content Include="Images\Cart\wg.png" />
+    <Content Include="Images\Cart\xian.jpg" />
     <Content Include="Images\Home\5270b12bd8b1d.jpg" />
     <Content Include="Images\Home\52807b105cb1b.jpg" />
     <Content Include="Images\Home\5282e9733ca7c_70x50.jpg" />
@@ -344,11 +369,23 @@
     <Content Include="LoginAndRegister\Login.aspx" />
     <Content Include="LoginAndRegister\Register.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
+    <Content Include="Content\Cart\core%281%29.php" />
+    <Content Include="Content\Cart\core.php" />
+    <Content Include="Content\Cart\tongji_360.php" />
+    <Content Include="Content\Cart\z_stat.php" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
     <Content Include="Plugin\jquery-3.3.1.js" />
     <Content Include="Plugin\jquery-3.3.1.min.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\Cart\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="Scripts\Cart\baidumap.js" />
+    <Content Include="Scripts\Cart\c.js" />
+    <Content Include="Scripts\Cart\fgcomm.v620152248.js" />
+    <Content Include="Scripts\Cart\header.js" />
+    <Content Include="Scripts\Cart\index_header.js" />
+    <Content Include="Scripts\Cart\mt3.v1014201036.js" />
+    <Content Include="Scripts\Cart\sousuo.js" />
     <Content Include="Scripts\Line\ajax188.js" />
     <Content Include="Scripts\Line\global.js" />
     <Content Include="Scripts\Line\index.js" />
@@ -412,6 +449,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cart\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -517,6 +561,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\Home\" />
+    <Folder Include="Products\" />
+    <Folder Include="Propaganda\" />
+    <Folder Include="Scripts\Commond\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\FTZ.PlayAndAte.BLL\FTZ.PlayAndAte.BLL.csproj">
       <Project>{66603945-f973-4954-8232-30364b2c866b}</Project>
       <Name>FTZ.PlayAndAte.BLL</Name>
@@ -525,13 +576,6 @@
       <Project>{7384c779-1c2a-4d18-88b0-52911e368678}</Project>
       <Name>FTZ.PlayAndAte.Models</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\Home\" />
-    <Folder Include="Products\" />
-    <Folder Include="Propaganda\" />
-    <Folder Include="Scripts\Commond\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
