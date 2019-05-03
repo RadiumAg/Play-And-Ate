@@ -914,7 +914,6 @@
 				<div class="sd_img">
 					<div class="sd_imgl zxx_test_list">
 						<div class="mt_77">
-                            <img src="526f197875732_135x100.jpg" />
 							<a class="sd_imgone preview" title=""
 								href="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>">
 								<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>"
@@ -937,11 +936,11 @@
 							<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[3].ImageName%>"
 								width="100%" height="100%">
 						</a>
-						<a class="sd_imgl_img preview" title=""
-							href="../Images/Show/FarmDetails/<%=product.Image.ToList()[4].ImageName%>">
-							<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[4].ImageName%>"
-								width="100%" height="100%">
-						</a>
+                        <a class="sd_imgl_img preview" title=""
+                            href="../Images/Show/FarmDetails/<%=product.Image.ToList()[4].ImageName%>">
+                            <img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[4].ImageName%>"
+                                width="100%" height="100%">
+                        </a>
 					</div>
 					<div class="sd_imgr">
 						<div class="sd_imgr_top">
@@ -3729,12 +3728,11 @@
 		<!-- 热门农庄 -->
 </asp:Content>
 <asp:Content runat="server" ID="Footer" ContentPlaceHolderID="Footer">
-    <div id="preview"
+    <%--<div id="preview"
 		style="position: absolute; padding: 4px; border: 1px solid rgb(243, 243, 243); background-color: rgb(238, 238, 238); top: 512px; z-index: 1000; left: 658px; right: auto;">
 		<div style="padding: 5px; background-color: white; border: 1px solid rgb(204, 204, 204);">
-
 			<p style="text-align: center; font-size: 12px; padding: 2px 0px; margin: 0px;"></p>
 		</div>
-	</div>
+	</div>--%>
 </asp:Content>
 

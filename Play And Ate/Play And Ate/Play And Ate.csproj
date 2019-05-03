@@ -294,7 +294,12 @@
     <Content Include="Images\Home\grey.gif" />
     <Content Include="Images\Shared\cs_dw.png" />
     <Content Include="Images\Shared\loge.gif" />
+    <Content Include="Images\Show\FarmDetails\1.jpg" />
+    <Content Include="Images\Show\FarmDetails\2.jpg" />
+    <Content Include="Images\Show\FarmDetails\3.jpg" />
     <Content Include="Images\Show\FarmDetails\35.gif" />
+    <Content Include="Images\Show\FarmDetails\4.jpg" />
+    <Content Include="Images\Show\FarmDetails\5.jpg" />
     <Content Include="Images\Show\FarmDetails\526f197875732_135x100.jpg" />
     <Content Include="Images\Show\FarmDetails\526f197875732_860x420.jpg" />
     <Content Include="Images\Show\FarmDetails\526f197edc141_135x100.jpg" />

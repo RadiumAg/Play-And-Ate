@@ -27,11 +27,11 @@ namespace Play_And_Ate.Home
         /// <param name="areaId"></param>
         private void ShowFarmData(int areaId = 1)
         {
-             var result = ProductManager.ShowProducts(areaId).Take(6).Select(s=>new { s.ProductName,s.ProductPrice,s.ProductId,s.Image.FirstOrDefault().ImageName }) ;
+            var result = ProductManager.ShowProducts(areaId).Take(6).Select(s=>new { s.ProductName,s.ProductPrice,s.ProductId,Image=s.Image.FirstOrDefault() }) ;
             this.ReProduct.DataSource = result;
             this.ReProduct.DataBind();
 
-            this.ReSincerityPro.DataSource = ProductManager.ShowProductByRankNum(8);
+            this.ReSincerityPro.DataSource = ProductManager.ShowProductByRankNum(8).Select(s=> new { s.ProductName, s.ProductPrice, s.ProductId, Image = s.Image.FirstOrDefault(), UserInfo_Role=s.UserInfo_Role });
             this.ReSincerityPro.DataBind();
         }
 

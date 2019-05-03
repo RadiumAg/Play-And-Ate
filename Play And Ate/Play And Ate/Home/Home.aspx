@@ -706,7 +706,7 @@
                                                 <li>
                                                     <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>' onmouseout="shadowout(<%# Eval("ProductID") %>)"
                                                         onmouseover="shadow(<%# Eval("ProductID") %>)" target="_blank" />
-                                                    <img src='../Images/Home/<%# Eval("Image[0].ImageName")%>'
+                                                    <img src='../Images/Home/<%# Eval("Image.ImageName")%>'
                                                         alt='<%# Eval("ProductName") %>' class="f_l"
                                                         style="display: block; width: 100%; height: 100%;" />
 
@@ -993,7 +993,7 @@
                                                 <li>
                                                     <a href="http://sh.01nz.com.cn/farm/3.html" target="_blank">
                                                         <img style="width: 100%; height: 132px;" alt="<%# Eval("Image.ImageName") %>"
-                                                            src='../Images/Home/<%# Eval("Image[0].ImageName") %>' />
+                                                            src='../Images/Home/<%# Eval("Image.ImageName") %>' />
                                                         <div class="m_title_s"><%# Eval("ProductName") %></div>
                                                         <div class="m_title_c"><%# Eval("UserInfo_Role.Address") %></div>
                                                     </a>
