@@ -41,6 +41,30 @@
         .none {
             display: none;
         }
+        .auto-style1 {
+            width: 195px;
+            height: 125px;
+         
+        }
+        .auto-style2 {
+            margin-bottom: 0;
+        }
+        .auto-style3 {
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 微软雅黑;
+            font-size: 15px;
+            font-weight: bolder;
+            height: 36px;
+            line-height: 38px;
+            text-align: center;
+            width: 66px;
+            border-style: none;
+            border-color: inherit;
+            border-width: 0;
+            background: #fe7300 0 0;
+        }
     </style>
     <asp:ContentPlaceHolder ID="Style" runat="server" />
 </head>
@@ -74,7 +98,7 @@
                 <div class="headerss">
                     <div class="LOGE">
                         <a href="#">
-                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG"  style="width:185px;height:100px;"/>
+                            <img alt="第一农庄" class="auto-style1" src="../Images/Shared/LOGO1.PNG" style="margin-top:-15px;"/>
                         </a>
                     </div>
                     <div id="city">
@@ -198,17 +222,16 @@
                             </dd>
                         </dl>
                     </div>
-                    <div class="search_box_main search_boxs f_l">
-                        <div class="search_input_main f_l">
-                            <input type="text" class="search_txt_main" name="keyword" id="header_kw" value="请输入您要搜索的关键词" x-webkit-speech="" x-webkit-grammar="builtin:translate">
-                            <a id="sousuo_btn" class="search_btn_ss">搜索</a>
+                    <div class="auto-style2">
+                        <div class="search_input_main f_l" style="mer" style="margin-top:10px;">
+                            <input type="text" class="search_txt_main" name="keyword" id="header_kw" value="请输入您要搜索的关键词" x-webkit-speech="" x-webkit-grammar="builtin:translate" >
+                            <a id="sousuo_btn" class="auto-style3">搜索</a>
                         </div>
                         <!-- <a id="sousuo_btn_map" class="search_btn_main search_btn_map"><span class='map_biao'></span>地图</a> -->
-                        <div class="blank1"></div>
+                        <img src="../Images/Shared/35.gif" style="margin-top:-20px;"/><div class="blank1"></div>
                     </div>
                     <div class="f_r busy_yh">
-                        <img src="../Images/Shared/35.gif" />
-                    </div>
+                        &nbsp;</div>
 
                 </div>
             </div>

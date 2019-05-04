@@ -50,3 +50,29 @@ D:\项目\Play And Ate\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.cspr
 D:\项目\Play And Ate\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CopyComplete
 D:\项目\Play And Ate\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.dll
 D:\项目\Play And Ate\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.pdb
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\Play And Ate.dll.config
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\Play And Ate.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\Play And Ate.pdb
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\EntityFramework.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\EntityFramework.SqlServer.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.BLL.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.Models.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\Newtonsoft.Json.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.BLL.pdb
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.Models.pdb
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.Models.dll.config
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\EntityFramework.xml
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\EntityFramework.SqlServer.xml
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\Newtonsoft.Json.xml
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.pdb
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.dll.config
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\zh-Hans\EntityFramework.resources.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csprojAssemblyReference.cache
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CoreCompileInputs.cache
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CopyComplete
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.pdb
