@@ -9,9 +9,9 @@ namespace Play_And_Ate.Shared
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (this.Request.Cookies["UserName"] != null)
+            if (this.Request.Cookies["UserName"]!=null)
             {
-                userName = this.Request.Cookies["UserName"].Value.ToString();
+                userName = this.Request.Cookies["UserName"].Value;
             }
         }
 

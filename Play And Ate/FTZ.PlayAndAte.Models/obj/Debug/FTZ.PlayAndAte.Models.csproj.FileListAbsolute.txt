@@ -12,3 +12,17 @@ D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFram
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CopyComplete
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csprojAssemblyReference.cache
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.dll.config
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.pdb
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.xml
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csprojAssemblyReference.cache
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CoreCompileInputs.cache
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CopyComplete
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.pdb

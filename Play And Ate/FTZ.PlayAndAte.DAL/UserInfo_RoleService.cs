@@ -11,6 +11,19 @@ namespace FTZ.PlayAndAte.DAL
     {
 
         /// <summary>
+        /// 展示所有商户
+        /// </summary>
+        /// <returns>展示所有商户信息</returns>
+        public static List<UserInfo_Role> ShowBusiness()
+        {
+            using (PlayAndAteEntities entities = new PlayAndAteEntities())
+            {
+                var result = entities.UserInfo_Role.Include("Product").Where(x => x.Role_UserInfo.RoleName == "business").ToList<UserInfo_Role>();
+                return result;
+            }
+        }
+
+        /// <summary>
         /// 查询用户信息
         /// </summary>
         /// <param name="user">用户实体</param>

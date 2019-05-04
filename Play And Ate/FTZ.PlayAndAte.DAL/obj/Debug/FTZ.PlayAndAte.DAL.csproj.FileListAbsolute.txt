@@ -27,3 +27,29 @@ D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.E
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.pdb
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.DAL.dll.config
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.DAL.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.DAL.pdb
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.Models.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.Models.pdb
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.Models.dll.config
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\EntityFramework.xml
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.pdb
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.csprojAssemblyReference.cache
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.csproj.CoreCompileInputs.cache
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.csproj.CopyComplete
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.dll
+D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.pdb

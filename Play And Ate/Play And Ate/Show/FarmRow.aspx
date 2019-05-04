@@ -844,12 +844,6 @@
 
                                             </div>
                                             <div style="clear: both"></div>
-
-
-
-
-
-
                                         </div>
                                     </div>
                                 </div>
@@ -989,103 +983,6 @@
             </ul>
         </div>
 
-        <div class="blank"></div>
-        <div id="ftw">
-            <div id="ft">
-                <div class="xiantiao"></div>
-                <div class="blank"></div>
-                <div class="tc" align="center">
-                    <a href="http://www.01nz.com.cn/sys/id-20" target="_blank">关于我们</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-6" target="_blank">加入我们</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-30" target="_blank">联系我们</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-27" target="_blank">免责条款</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-28" target="_blank">隐私保护</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-45" target="_blank">网站地图</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-9" target="_blank">商家登录</a>
-                </div>
-                <div class="blank"></div>
-                <div class="beian" align="center">版权所有：上海威和信息科技有限公司  <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备 13043989号-1</a>  电话：021-60172228    邮箱：mc_01nz@163.com </div>
-                <div align="center" class="beian_eng">
-                    Copyright 2013 www.01nz.com.cn All Rights Reserved.
-                </div>
-                <!-- 热门城市 -->
-                <!-- 区县分类 -->
-                <!-- 热门农庄 -->
-
-                <!-- 友情链接 -->
-                <div align="center">
-                    <img src="../Images/Show/FarmRow/xian.jpg" alt="灰线">
-                </div>
-                <div align="center">
-                    <img src="../Images/Show/FarmRow/jubao.gif" alt="举报中心" class="img">
-                    <img src="../Images/Show/FarmRow/end_2.gif" alt="官方认证" class="img">
-                    <img src="../Images/Show/FarmRow/end_3.gif" alt="网络110" class="img">
-                    <!-- <img src="http://www.01nz.com.cn/app/Tpl/fanwe/images/site_logo.png" alt="安全联盟" class="img"/> -->
-                    <img src="../Images/Show/FarmRow/end_4.gif" alt="360绿色网站" class="img">
-                </div>
-                <div class="blank"></div>
-                <div class="blank"></div>
-                <div class="blank"></div>
-            </div>
-        </div>
-        <div class="ydcont" id="hidden_div" style="display: none; position: absolute; width: 530px; z-index: 10000;">
-            <div class="ydcont_center" style="width: 528px; position: relative; float: left; height: 150px;">
-                <strong class="sClose1"><a href="http://xianlu.01nz.com.cn/archives/1147.html#"></a></strong>
-                <div class="fastCalender1" id="fastCalender1">
-                    <p class="p9">
-                        <label>出游人数：</label><span>成人数
-                            <input type="text" onfocus="focustonone(this)" onblur="blurtohave(this)" maxlength="2" onchange="changNum(&#39;fastCalender1&#39;)" value="2" class="person">&nbsp;&nbsp;&nbsp;&nbsp;儿童数
-                            <input type="text" onfocus="focustonone(this)" onblur="blurtohave(this)" maxlength="2" onchange="changNum(&#39;fastCalender1&#39;)" value="0" class="child"></span>
-                    </p>
-                    <div class="p10">
-                        <label>选择日期：</label><span class="s10 pTimeSpan"><s class="s1"></s><s class="s2"><input type="text" class="pTime" value="点击选择出发日期" style="color: #666666" id="pTime"></s><s class="s3"></s></span>
-                        <div class="clearfix"></div>
-                        <div class="s10Trim1 pDropCalender" style="z-index: 999">
-                            <div class="calenderPart" style="display: none;">
-                                <div class="calenderPartM">
-                                    <ul>
-                                        <li id="2019-04-17" v="2019-04-17" son="160" title="189" onclick="changeGoDate(this)">2019-04-17 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-04-20" v="2019-04-20" son="160" title="199" onclick="changeGoDate(this)">2019-04-20 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-04-24" v="2019-04-24" son="160" title="189" onclick="changeGoDate(this)">2019-04-24 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-04-27" v="2019-04-27" son="160" title="199" onclick="changeGoDate(this)">2019-04-27 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-05-01" v="2019-05-01" son="160" title="189" onclick="changeGoDate(this)">2019-05-01 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-05-04" v="2019-05-04" son="160" title="199" onclick="changeGoDate(this)">2019-05-04 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-05-08" v="2019-05-08" son="160" title="189" onclick="changeGoDate(this)">2019-05-08 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-05-11" v="2019-05-11" son="160" title="199" onclick="changeGoDate(this)">2019-05-11 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-05-15" v="2019-05-15" son="160" title="189" onclick="changeGoDate(this)">2019-05-15 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-05-18" v="2019-05-18" son="160" title="199" onclick="changeGoDate(this)">2019-05-18 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-05-22" v="2019-05-22" son="160" title="189" onclick="changeGoDate(this)">2019-05-22 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-05-25" v="2019-05-25" son="160" title="199" onclick="changeGoDate(this)">2019-05-25 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-05-29" v="2019-05-29" son="160" title="189" onclick="changeGoDate(this)">2019-05-29 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-06-01" v="2019-06-01" son="160" title="199" onclick="changeGoDate(this)">2019-06-01 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-06-05" v="2019-06-05" son="160" title="189" onclick="changeGoDate(this)">2019-06-05 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-06-08" v="2019-06-08" son="160" title="199" onclick="changeGoDate(this)">2019-06-08 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-06-12" v="2019-06-12" son="160" title="189" onclick="changeGoDate(this)">2019-06-12 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-06-15" v="2019-06-15" son="160" title="199" onclick="changeGoDate(this)">2019-06-15 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-06-19" v="2019-06-19" son="160" title="189" onclick="changeGoDate(this)">2019-06-19 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-06-22" v="2019-06-22" son="160" title="199" onclick="changeGoDate(this)">2019-06-22 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-06-26" v="2019-06-26" son="160" title="189" onclick="changeGoDate(this)">2019-06-26 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-06-29" v="2019-06-29" son="160" title="199" onclick="changeGoDate(this)">2019-06-29 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-07-03" v="2019-07-03" son="160" title="189" onclick="changeGoDate(this)">2019-07-03 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-07-06" v="2019-07-06" son="160" title="199" onclick="changeGoDate(this)">2019-07-06 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-07-10" v="2019-07-10" son="160" title="189" onclick="changeGoDate(this)">2019-07-10 (星期三) 出发,<b>189</b>元/成人, <b>160</b>元/儿童</li>
-                                        <li id="2019-07-13" v="2019-07-13" son="160" title="199" onclick="changeGoDate(this)">2019-07-13 (星期六) 出发,<b>199</b>元/成人, <b>160</b>元/儿童</li>
-                                    </ul>
-                                </div>
-                                <div class="calenderPartF"></div>
-                            </div>
-                            <div class="cArrow cdown"></div>
-                        </div>
-                    </div>
-                    <div class="p11">
-                        <label>&nbsp;</label>
-                        <span class="s11">
-                            <input type="button" id="submit_a" onclick="Ordersave(&#39; fastCalender1 &#39;);" style="margin-left: 150px;">
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <input type="hidden" id="txtHiddenPId" name="txtHiddenPId" value="&lt;?php echo $pid;?&gt;">
 
