@@ -81,11 +81,22 @@
   <ItemGroup>
     <Content Include="Admin\Backstage.aspx" />
     <Content Include="Admin\PartialView\ShowData.html" />
+    <Content Include="Content\Cart\base.v606141511.css" />
+    <Content Include="Content\Cart\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\Cart\core%281%29.php" />
+    <Content Include="Content\Cart\core.php" />
+    <Content Include="Content\Cart\tongji_360.php" />
+    <Content Include="Content\Cart\z_stat.php" />
     <Content Include="Content\LoginAndRegister\Login\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Login\Login.css" />
     <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Register\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
+    <Content Include="Content\Products\b61e5d222cddc2d58eececba5f1f9e27.css" />
     <Content Include="Content\Products\base.v606141511.css" />
+    <Content Include="Content\Products\bmap.css" />
+    <Content Include="Content\Products\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\Products\hdcss.css" />
     <Content Include="Content\Shared\cityquery.css" />
     <Content Include="Content\Shared\font-awesome.min.css" />
     <Content Include="Content\Shared\main_huandeng.css" />
@@ -155,6 +166,121 @@
     <Content Include="Images\LoginAndRegister\wechat.png" />
     <Content Include="Images\LoginAndRegister\wg.png" />
     <Content Include="Images\LoginAndRegister\xian.jpg" />
+    <Content Include="Images\Products\2.gif" />
+    <Content Include="Images\Products\527868f808230_180x137.jpg" />
+    <Content Include="Images\Products\5279e04b1fb2b_180x137.jpg" />
+    <Content Include="Images\Products\527a049a434ac_154x110.jpg" />
+    <Content Include="Images\Products\527a049a434ac_367x254.jpg" />
+    <Content Include="Images\Products\527aea9ed4140_180x137.jpg" />
+    <Content Include="Images\Products\527b5e69d7a65_154x110.jpg" />
+    <Content Include="Images\Products\527b5e69d7a65_367x254.jpg" />
+    <Content Include="Images\Products\527c79aaa9acf_180x110.jpg" />
+    <Content Include="Images\Products\527c79aaa9acf_180x137.jpg" />
+    <Content Include="Images\Products\52807b105cb1b_154x110.jpg" />
+    <Content Include="Images\Products\52807b105cb1b_367x254.jpg" />
+    <Content Include="Images\Products\528081565ab4c_154x110.jpg" />
+    <Content Include="Images\Products\52808f7530691_154x110.jpg" />
+    <Content Include="Images\Products\52808f7530691_367x254.jpg" />
+    <Content Include="Images\Products\5282e9733ca7c_180x110.jpg" />
+    <Content Include="Images\Products\5283442de3c46_154x110.jpg" />
+    <Content Include="Images\Products\5283442de3c46_367x254.jpg" />
+    <Content Include="Images\Products\528479d9a2d1e_367x254.jpg" />
+    <Content Include="Images\Products\5285962e0dcb7_180x137.jpg" />
+    <Content Include="Images\Products\52c4cac186016_180x137.jpg" />
+    <Content Include="Images\Products\52d3793a2d538_180x110.jpg" />
+    <Content Include="Images\Products\52d3793a2d538_180x137.jpg" />
+    <Content Include="Images\Products\52de3a723f8cf_180x137.jpg" />
+    <Content Include="Images\Products\532f8c883ccb9_154x110.jpg" />
+    <Content Include="Images\Products\532f8c883ccb9_367x254.jpg" />
+    <Content Include="Images\Products\53339727b2398_154x110.jpg" />
+    <Content Include="Images\Products\535dbd02541db_180x137.jpg" />
+    <Content Include="Images\Products\5360a3a69bfd1_154x110.jpg" />
+    <Content Include="Images\Products\5360a3a69bfd1_367x254.jpg" />
+    <Content Include="Images\Products\53698c918d245_180x137.jpg" />
+    <Content Include="Images\Products\5369c48d309a7_180x110.jpg" />
+    <Content Include="Images\Products\5369c48d309a7_367x254.jpg" />
+    <Content Include="Images\Products\5369ca29c8f4a_154x110.jpg" />
+    <Content Include="Images\Products\5373031b06d21.jpg" />
+    <Content Include="Images\Products\5373040ac02d7.jpg" />
+    <Content Include="Images\Products\537304a8395ef.jpg" />
+    <Content Include="Images\Products\537305412576c.jpg" />
+    <Content Include="Images\Products\53730553ce7f6.jpg" />
+    <Content Include="Images\Products\53733e39b0df8_180x110.jpg" />
+    <Content Include="Images\Products\53742882ba3a6_180x110.jpg" />
+    <Content Include="Images\Products\537450e23d8ff_180x110.jpg" />
+    <Content Include="Images\Products\53745d6d50625.jpg" />
+    <Content Include="Images\Products\53745ee60b87c.jpg" />
+    <Content Include="Images\Products\5374600616246.jpg" />
+    <Content Include="Images\Products\5374641e5dcc5.jpg" />
+    <Content Include="Images\Products\5374661217295.jpg" />
+    <Content Include="Images\Products\53757cf7d48c0_367x254.jpg" />
+    <Content Include="Images\Products\5375bb6c9f36e.jpg" />
+    <Content Include="Images\Products\5375bc10b7da9.jpg" />
+    <Content Include="Images\Products\538435e12f69b_180x137.jpg" />
+    <Content Include="Images\Products\53843c975ad39_180x137.jpg" />
+    <Content Include="Images\Products\5384479d97192_180x137.jpg" />
+    <Content Include="Images\Products\53868e3bcab42_180x137.jpg" />
+    <Content Include="Images\Products\5386a12edadec_180x137.jpg" />
+    <Content Include="Images\Products\5386c9359ba55_180x137.jpg" />
+    <Content Include="Images\Products\5386dc039d2cc_180x137.jpg" />
+    <Content Include="Images\Products\5386e55eb067d_180x137.jpg" />
+    <Content Include="Images\Products\538801c210753_154x110.jpg" />
+    <Content Include="Images\Products\53882e60e81a8.jpg" />
+    <Content Include="Images\Products\538830f9e3dfd.jpg" />
+    <Content Include="Images\Products\538836ab70c0f.jpg" />
+    <Content Include="Images\Products\5388375bd90ed.jpg" />
+    <Content Include="Images\Products\53883ab38a6d7_180x110.jpg" />
+    <Content Include="Images\Products\53883d1073fd3_180x110.jpg" />
+    <Content Include="Images\Products\5388418a5541c_180x110.jpg" />
+    <Content Include="Images\Products\53884425cea9a_180x110.jpg" />
+    <Content Include="Images\Products\53a78a1a3bb97.jpg" />
+    <Content Include="Images\Products\53a78b0d7abed.jpg" />
+    <Content Include="Images\Products\53a78c2c08c46.jpg" />
+    <Content Include="Images\Products\53a78c76ce2de.jpg" />
+    <Content Include="Images\Products\53ad39116cd3d_180x137.jpg" />
+    <Content Include="Images\Products\53ad3bc35e206_180x137.jpg" />
+    <Content Include="Images\Products\53b21abd4c7e4_270x165.jpg" />
+    <Content Include="Images\Products\53b21abd4c7e4_494x280.jpg" />
+    <Content Include="Images\Products\53b223dfb1dee_270x165.jpg" />
+    <Content Include="Images\Products\53b223dfb1dee_494x280.jpg" />
+    <Content Include="Images\Products\53b256b569be5_270x165.jpg" />
+    <Content Include="Images\Products\53b2627c351dc.jpg" />
+    <Content Include="Images\Products\53b26301f41be.jpg" />
+    <Content Include="Images\Products\53b2646fc3b99.jpg" />
+    <Content Include="Images\Products\53b264f2be468.jpg" />
+    <Content Include="Images\Products\53b39ef17aab8_180x137.jpg" />
+    <Content Include="Images\Products\53ba3cf26ea68_270x165.jpg" />
+    <Content Include="Images\Products\53ba42aca04ee_270x165.jpg" />
+    <Content Include="Images\Products\53ba635c4860c.jpg" />
+    <Content Include="Images\Products\53ba63662bb80.jpg" />
+    <Content Include="Images\Products\53ba636be54fc.jpg" />
+    <Content Include="Images\Products\53ba63728080d.jpg" />
+    <Content Include="Images\Products\53ba67426fb5e.jpg" />
+    <Content Include="Images\Products\53ba674c6da8d.jpg" />
+    <Content Include="Images\Products\53ba675c5b4ac.jpg" />
+    <Content Include="Images\Products\53ba676dae711.jpg" />
+    <Content Include="Images\Products\53ba677b06bec.jpg" />
+    <Content Include="Images\Products\53e98d9722393_180x110.jpg" />
+    <Content Include="Images\Products\53eb2c9cea0ab_180x110.jpg" />
+    <Content Include="Images\Products\53eb2dd6bbb71_180x110.jpg" />
+    <Content Include="Images\Products\53fff603557ba_180x110.jpg" />
+    <Content Include="Images\Products\543771c0bcc17_180x110.jpg" />
+    <Content Include="Images\Products\5440d06e740cf_180x110.jpg" />
+    <Content Include="Images\Products\547fbcfd562ca_180x110.jpg" />
+    <Content Include="Images\Products\551a779b45e14_180x110.jpg" />
+    <Content Include="Images\Products\553e30da866a7_154x110.jpg" />
+    <Content Include="Images\Products\cs_dw.png" />
+    <Content Include="Images\Products\end_2.gif" />
+    <Content Include="Images\Products\end_3.gif" />
+    <Content Include="Images\Products\icon.gif" />
+    <Content Include="Images\Products\image_err.gif" />
+    <Content Include="Images\Products\jubao.gif" />
+    <Content Include="Images\Products\loge.gif" />
+    <Content Include="Images\Products\stycaizhai.png" />
+    <Content Include="Images\Products\styguanguang.png" />
+    <Content Include="Images\Products\styyangzhi.png" />
+    <Content Include="Images\Products\wg.png" />
+    <Content Include="Images\Products\xian.jpg" />
     <Content Include="Images\Shared\LOGO1.PNG" />
     <Content Include="Images\Shared\main_icon.png" />
     <Content Include="Images\Home\nongjiafb.png" />
@@ -246,6 +372,10 @@
     <Content Include="Line\LineDetail.aspx" />
     <Content Include="LoginAndRegister\Login.aspx" />
     <Content Include="LoginAndRegister\Register.aspx" />
+    <Content Include="Order\Order.aspx" />
+    <Content Include="Order\Order.html" />
+    <Content Include="Order\Order_2.aspx" />
+    <Content Include="Order\Order_2.html" />
     <Content Include="Plugin\jquery-easyui-1.7.0\changelog.txt" />
     <Content Include="Plugin\jquery-easyui-1.7.0\datagrid-defaultview.js" />
     <Content Include="Plugin\jquery-easyui-1.7.0\datagrid-detailview.js" />
@@ -1123,6 +1253,8 @@
     <Content Include="Plugin\jquery-3.3.1.slim.min.js" />
     <Content Include="Products\Ecological.aspx" />
     <Content Include="Products\Ecological.html" />
+    <Content Include="Products\Ecological\1.html" />
+    <Content Include="Products\Ecological\2.html" />
     <Content Include="Products\Farm.aspx" />
     <Content Include="Products\Farm.html" />
     <Content Include="Products\Fishing.aspx" />
@@ -1158,9 +1290,12 @@
     <Content Include="Scripts\Products\fgcomm.v620152248.js" />
     <Content Include="Scripts\Products\header.js" />
     <Content Include="Scripts\Products\index_header.js" />
+    <Content Include="Scripts\Products\jia.js" />
     <Content Include="Scripts\Products\lang.js" />
     <Content Include="Scripts\Products\mt3.v1014201036.js" />
     <Content Include="Scripts\Products\sousuo.js" />
+    <Content Include="Scripts\Products\store.js" />
+    <Content Include="Scripts\Products\storeview.js" />
     <Content Include="Scripts\Show\FarmDetails\getscript.js" />
     <Content Include="Scripts\Show\FarmDetails\list.js" />
     <Content Include="Scripts\Show\FarmDetails\seller.js" />
@@ -1234,6 +1369,20 @@
     </Compile>
     <Compile Include="LoginAndRegister\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Order_2.aspx.cs">
+      <DependentUpon>Order_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Order_2.aspx.designer.cs">
+      <DependentUpon>Order_2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products\Ecological.aspx.cs">
       <DependentUpon>Ecological.aspx</DependentUpon>
@@ -1353,6 +1502,8 @@
     <Content Include="Plugin\jquery-easyui-1.7.0\demo\tree\tree_data2.json" />
     <Content Include="Plugin\jquery-easyui-1.7.0\themes\material-teal\images\Thumbs.db" />
     <Content Include="Plugin\jquery-easyui-1.7.0\themes\material\images\Thumbs.db" />
+    <Content Include="Scripts\Products\api" />
+    <Content Include="Scripts\Products\getscript" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
