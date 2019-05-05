@@ -86,6 +86,9 @@
     <Content Include="Content\LoginAndRegister\Login\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Register\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\Order\common_wm.html" />
+    <Content Include="Content\Order\order.css" />
+    <Content Include="Content\Order\style.css" />
     <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
     <Content Include="Content\Products\base.v606141511.css" />
     <Content Include="Content\Products\cf62177493ce4db40c22962f60d846f8.css" />
@@ -368,6 +371,10 @@
     <Content Include="Line\LineDetail.aspx" />
     <Content Include="LoginAndRegister\Login.aspx" />
     <Content Include="LoginAndRegister\Register.aspx" />
+    <Content Include="Order\Order.aspx" />
+    <Content Include="Order\Order.html" />
+    <Content Include="Order\Order_2.aspx" />
+    <Content Include="Order\Order_2.html" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
     <Content Include="Content\Cart\core%281%29.php" />
     <Content Include="Content\Cart\core.php" />
@@ -419,6 +426,15 @@
     <Content Include="Scripts\LoginAndRegister\Register\lang.js" />
     <Content Include="Scripts\LoginAndRegister\Register\mt3.v1014201036.js" />
     <Content Include="Scripts\LoginAndRegister\Register\sousuo.js" />
+    <Content Include="Scripts\Order\ajax188.js" />
+    <Content Include="Scripts\Order\global.js" />
+    <Content Include="Scripts\Order\jquery.js" />
+    <Content Include="Scripts\Order\jquery.scrollfollow.js" />
+    <Content Include="Scripts\Order\one_order.js" />
+    <Content Include="Scripts\Order\order.js" />
+    <Content Include="Scripts\Order\sousuo.js" />
+    <Content Include="Scripts\Order\tooltip.js" />
+    <Content Include="Scripts\Order\two_order.js" />
     <Content Include="Scripts\Products\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\Products\baidumap.js" />
     <Content Include="Scripts\Products\c.js" />
@@ -490,6 +506,20 @@
     </Compile>
     <Compile Include="LoginAndRegister\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Order_2.aspx.cs">
+      <DependentUpon>Order_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Order_2.aspx.designer.cs">
+      <DependentUpon>Order_2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shared\Main.Master.cs">
