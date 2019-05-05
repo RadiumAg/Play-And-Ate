@@ -35,7 +35,7 @@ namespace FTZ.PlayAndAte.DAL
             }
             catch (Exception ex)
             {
-                throw;
+                return null;
             }
         }
 
@@ -93,6 +93,7 @@ namespace FTZ.PlayAndAte.DAL
             }
         }
 
-
+       
+        
     }
 }
