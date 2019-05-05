@@ -92,6 +92,9 @@
                                 <div style="float: left; margin-left: 15em; margin-top: -37px;">
                                     <input id="get-code" type="button" style="height: 30px;" value="获取验证码">
                                 </div>
+                                <div class="verify_row">
+                                    <input id="add" type="button" value="注册"/>
+                                </div>
                                 <script>
                                     let code;
                                     $(function () {
