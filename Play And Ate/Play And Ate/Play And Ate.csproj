@@ -81,6 +81,8 @@
   <ItemGroup>
     <Content Include="Admin\Backstage.aspx" />
     <Content Include="Admin\PartialView\ShowData.html" />
+    <Content Include="Cart\Cart.aspx" />
+    <Content Include="Cart\Cart.html" />
     <Content Include="Content\Cart\base.v606141511.css" />
     <Content Include="Content\Cart\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Cart\core%281%29.php" />
@@ -1324,6 +1326,13 @@
     </Compile>
     <Compile Include="Admin\Backstage.aspx.designer.cs">
       <DependentUpon>Backstage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart\Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart\Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Helper\Authentication.cs" />
     <Compile Include="Helper\SMSinterface.cs" />
