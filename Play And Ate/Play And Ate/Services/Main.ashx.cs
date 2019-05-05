@@ -30,6 +30,9 @@ namespace Play_And_Ate.Services
                 case "3":
                     GetSMS();
                     break;
+                case "4":
+                    Register();
+                    break;
             }
         }
 
@@ -48,6 +51,32 @@ namespace Play_And_Ate.Services
             context.Response.Write(JsonConvert.SerializeObject(msg));
         }
 
+        /// <summary>
+        /// 用户注册
+        /// </summary>
+        public void Register()
+        {
+            UserInfo_Role user = new UserInfo_Role
+            {
+                UserName = context.Request["user_name"].ToString(),
+                Pwd = context.Request["user_pwd"].ToString(),
+                Address = context.Request["user_address"].ToString(),
+                Email = context.Request["email"].ToString(),
+                QQ = context.Request["user_qq"].ToString(),
+                Phone = context.Request["phoneNumber"].ToString()
+            };
+
+            if (UserInfo_RoleManager.Register(user))
+            {
+                context.Response.Write(JsonConvert.SerializeObject("1"));
+            }
+            else
+            {
+                context.Response.Write(JsonConvert.SerializeObject("0"));
+            }
+                
+                
+        }
 
         /// <summary>
         /// 登陆
