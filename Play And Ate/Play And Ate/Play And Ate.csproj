@@ -1521,6 +1521,7 @@
     <Content Include="Plugin\jquery-easyui-1.7.0\themes\material\images\Thumbs.db" />
     <Content Include="Scripts\Products\api" />
     <Content Include="Scripts\Products\getscript" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
