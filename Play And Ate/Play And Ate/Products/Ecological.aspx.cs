@@ -12,6 +12,7 @@ namespace Play_And_Ate.Products
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //欢乐周末
             this.ReProduct.DataSource = ProductManager.ShowProducts(1).OrderBy(x=>x.ProductId).Take(4).Select(s=>new {Image = s.Image.FirstOrDefault().ImageName,ProductName=s.ProductName,ProductPrice = s.ProductPrice,ProductID = s.ProductId});
             this.ReProduct.DataBind();
         }
