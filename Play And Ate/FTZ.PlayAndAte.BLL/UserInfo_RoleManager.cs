@@ -35,11 +35,9 @@ namespace FTZ.PlayAndAte.BLL
         /// </summary>
         /// <param name="user">用户实体</param>
         /// <returns>是否注册成功</returns>
-        public static int Register(UserInfo_Role user)
+        public static bool Register(UserInfo_Role user)
         {
             return UserInfo_RoleService.InsertUser(user);
         }
-
-
     }
 }

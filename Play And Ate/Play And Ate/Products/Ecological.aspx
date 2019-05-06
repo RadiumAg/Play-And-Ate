@@ -353,27 +353,27 @@
                                 <div class="flexslider">
                                     <ul class="slides" id="stodes">
                                         <li style="width: 100%; float: left; margin-right: -100%; display: none;">
-                                            <a href="http://sh.01nz.com.cn/shty/1150.html" target="_blank">
-                                                <img src="../Images/Products/53b2627c351dc.jpg" alt="" border="0" height="306" width="758"></a>
+                                            <a href="Ecological/2.html" target="_blank">
+                                                <img src="../Images/Products/53b2627c351dc.jpg" alt="" border="0" height="306" width="758" /></a>
                                         </li>
                                         <li style="width: 100%; float: left; margin-right: -100%; display: list-item;">
-                                            <a href="http://sh.01nz.com.cn/shty/1142.html" target="_blank">
-                                                <img src="../Images/Products/53b26301f41be.jpg" alt="" border="0" height="306" width="758"></a>
+                                            <a href="Ecological/1.html" target="_blank">
+                                                <img src="../Images/Products/53b21abd4c7e4_270x165.jpg" alt="" border="0" height="306" width="758" /></a>
                                         </li>
                                         <li style="width: 100%; float: left; margin-right: -100%;">
-                                            <a href="http://sh.01nz.com.cn/shty/1144.html" target="_blank">
-                                                <img src="../Images/Products/53b2646fc3b99.jpg" alt="" border="0" height="306" width="758"></a>
+                                            <a href="Ecological/2.html" target="_blank">
+                                                <img src="../Images/Products/53b2627c351dc.jpg" alt="" border="0" height="306" width="758" /></a>
                                         </li>
                                         <li style="width: 100%; float: left; margin-right: -100%;">
-                                            <a href="http://sh.01nz.com.cn/shty/1156.html" target="_blank">
-                                                <img src="../Images/Products/53b264f2be468.jpg" alt="" border="0" height="306" width="758"></a>
+                                            <a href="Ecological/1.html" target="_blank">
+                                                <img src="../Images/Products/53b21abd4c7e4_270x165.jpg" alt="" border="0" height="306" width="758" /></a>
                                         </li>
                                     </ul>
                                     <ol class="flex-control-nav">
                                         <li class="p9">申隆生态园</li>
-                                        <li class="p9 active">奉浦四季生态园</li>
-                                        <li class="p9">渔家湾生态园</li>
-                                        <li class="p9">人然合一现代农业生态园</li>
+                                        <li class="p9 active">高家庄生态园</li>
+                                        <li class="p9">申隆生态园</li>
+                                        <li class="p9">高家庄生态园</li>
                                     </ol>
                                 </div>
                             </div>
@@ -405,10 +405,10 @@
                     </div>
                     <div class="shty_vip">
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l"><a href="http://sh.01nz.com.cn/shty/1146.html" target="_blank">
-                                <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/53b21abd4c7e4_270x165.jpg" alt="高家庄生态园" width="270" height="165"></a></div>
+                            <div class="shty_lb_img f_l"><a href="Ecological/1.html" target="_blank">
+                                <img src="../Images/Products/53b21abd4c7e4_270x165.jpg" alt="高家庄生态园" width="270" height="165" /></a></div>
                             <div class="shty_lb_txt f_l">
-                                <div class="shty_tit"><a href="http://sh.01nz.com.cn/shty/1146.html" target="_blank">高家庄生态园</a></div>
+                                <div class="shty_tit"><a href="Ecological/1.html" target="_blank">高家庄生态园</a></div>
                                 <div class="shty_pingxing">
                                     <span class="city_area lv">[ 上海 • 崇明 ]</span>
                                     <span class="lv shty_tjzs">推荐指数：
@@ -422,10 +422,10 @@
                             <div class="clear"></div>
                         </div>
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l"><a href="http://sh.01nz.com.cn/shty/1150.html" target="_blank">
-                                <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a></div>
+                            <div class="shty_lb_img f_l"><a href="Ecological/2.html" target="_blank">
+                                <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a></div>
                             <div class="shty_lb_txt f_l">
-                                <div class="shty_tit"><a href="http://sh.01nz.com.cn/shty/1150.html" target="_blank">申隆生态园</a></div>
+                                <div class="shty_tit"><a href="Ecological/2.html" target="_blank">申隆生态园</a></div>
                                 <div class="shty_pingxing">
                                     <span class="city_area lv">[ 上海 • 奉贤 ]</span>
                                     <span class="lv shty_tjzs">推荐指数：
@@ -439,10 +439,10 @@
                             <div class="clear"></div>
                         </div>
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l"><a href="http://sh.01nz.com.cn/shty/1160.html" target="_blank">
-                                <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/53b256b569be5_270x165.jpg" alt="名阳生态园" width="270" height="165"></a></div>
+                            <div class="shty_lb_img f_l"><a href="Ecological/1.html" target="_blank">
+                                <img src="../Images/Products/53b21abd4c7e4_270x165.jpg" alt="高家庄生态园" width="270" height="165" /></a></div>
                             <div class="shty_lb_txt f_l">
-                                <div class="shty_tit"><a href="http://sh.01nz.com.cn/shty/1160.html" target="_blank">名阳生态园</a></div>
+                                <div class="shty_tit"><a href="Ecological/1.html" target="_blank">高家庄生态园</a></div>
                                 <div class="shty_pingxing">
                                     <span class="city_area lv">[ 上海 • 崇明 ]</span>
                                     <span class="lv shty_tjzs">推荐指数：
@@ -450,41 +450,41 @@
                                     <span class="shty_xing m_avg_point_5"></span>
                                 </div>
                                 <div class="shty_jianjie">
-                                    基地位于崇明岛蟠龙公路2688号，总面积800余亩，绿色覆盖达95%以上，与崇明森林公园毗邻，从上海驾车经长江隧桥入园仅一小时左右车程。生态园林内开设有宾馆、水上餐厅、会议室、多功能娱乐休闲厅、棋牌室、网球场、篮球场、羽毛球场、乒乓球室、垂钓中心、时令果品采摘等项目。					
+                                    上海高家庄生态园（乡村俱乐部）地处崇明岛著名的景观道路—港西镇港东公路999号，占地面积1000亩，是一家集旅游、休闲、度假、餐饮、住宿、会务、娱乐、农业观光为一体的综合性生态休闲农庄。2009年被命名为3A级国家旅游景区，并先后荣获上海市旅游推荐单位、世博农业观光园等荣誉称号。 高家庄生态园（乡村俱乐部）极有品位的创意设计和最有情趣的特色景观，已被誉为高雅的景区、温馨的家园、美丽的田庄。					
                                 </div>
                             </div>
                             <div class="clear"></div>
                         </div>
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l"><a href="http://bj.01nz.com.cn/shty/1508.html" target="_blank">
-                                <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/53ba3cf26ea68_270x165.jpg" alt="北京潮河湾农业生态园" width="270" height="165"></a></div>
+                            <div class="shty_lb_img f_l"><a href="Ecological/2.html" target="_blank">
+                                <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a></div>
                             <div class="shty_lb_txt f_l">
-                                <div class="shty_tit"><a href="http://bj.01nz.com.cn/shty/1508.html" target="_blank">北京潮河湾农业生态园</a></div>
+                                <div class="shty_tit"><a href="Ecological/2.html" target="_blank">申隆生态园</a></div>
                                 <div class="shty_pingxing">
-                                    <span class="city_area lv">[ 北京 • 密云 ]</span>
+                                    <span class="city_area lv">[ 上海 • 奉贤 ]</span>
                                     <span class="lv shty_tjzs">推荐指数：
                                     </span>
                                     <span class="shty_xing m_avg_point_5"></span>
                                 </div>
                                 <div class="shty_jianjie">
-                                    北京潮河湾农业生态园成立于2012年11月13日，占地十八亩，主要经营餐饮，垂钓，会议，住宿；位于北方唯一一个国家级生态县密云县，紧邻京承高速17号出口和潮河沿线，地理优势得天独厚，依托密云水库水质一流，我们利用潮河水饲养优质鱼类，灌溉绿色无污染有机食品。让广大尊客吃得放心，玩得开心！农家风味，值得一去，尤其值得推荐那里的烧烤，纯羊肉货真价实。					
+                                    进入申隆生态园犹如徜徉大自然，一个个葱绿的小岛好似镶嵌在大地上的绿色翡翠，拱桥、流水、小岛、绿湖，白色路面蜿蜒曲折，绿色岛屿坡回路转，好一个碧水环绕的由诸多小岛组成的近自然状态的森林公园。绿树掩映，林木叠翠；蓝天碧水，绿地青山。					
                                 </div>
                             </div>
                             <div class="clear"></div>
                         </div>
-                        <div class=" f_r shty_sj">
-                            <div class="shty_lb_img f_l"><a href="http://bj.01nz.com.cn/shty/1518.html" target="_blank">
-                                <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/53ba42aca04ee_270x165.jpg" alt="老吴生态园CS基地" width="270" height="165"></a></div>
+                        <div class="shty_fenge f_r shty_sj">
+                            <div class="shty_lb_img f_l"><a href="Ecological/2.html" target="_blank">
+                                <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a></div>
                             <div class="shty_lb_txt f_l">
-                                <div class="shty_tit"><a href="http://bj.01nz.com.cn/shty/1518.html" target="_blank">老吴生态园CS基地</a></div>
+                                <div class="shty_tit"><a href="Ecological/2.html" target="_blank">申隆生态园</a></div>
                                 <div class="shty_pingxing">
-                                    <span class="city_area lv">[ 北京 • 昌平 ]</span>
+                                    <span class="city_area lv">[ 上海 • 奉贤 ]</span>
                                     <span class="lv shty_tjzs">推荐指数：
                                     </span>
                                     <span class="shty_xing m_avg_point_5"></span>
                                 </div>
                                 <div class="shty_jianjie">
-                                    这儿是城北最近的山林度假村，这里群山环抱、空气清新，果园中的农家院，夏天比城里温度至少低4－5度。这山庄叫“老吴生态园”，可很多来过这儿的城里的朋友们总喜欢把它叫作是“咱家”的山庄，为什么呢？打听了一下我才知道，原来原因很简单，就是因为这里的氛围总会让人感觉很自在，吃住也很实在。					
+                                    进入申隆生态园犹如徜徉大自然，一个个葱绿的小岛好似镶嵌在大地上的绿色翡翠，拱桥、流水、小岛、绿湖，白色路面蜿蜒曲折，绿色岛屿坡回路转，好一个碧水环绕的由诸多小岛组成的近自然状态的森林公园。绿树掩映，林木叠翠；蓝天碧水，绿地青山。					
                                 </div>
                             </div>
                             <div class="clear"></div>

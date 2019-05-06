@@ -6105,7 +6105,7 @@ a.switch_city, a.switch_city:hover {
         cursor: pointer;
         height: 45px;
         width: 168px;
-        background: url(../images/user_rl.gif) no-repeat 0 -50px;
+        background: url(../../Images/LoginAndRegister/user_rl.gif) no-repeat 0 -50px;
     }
 
     .user-lr-box-left span.to_regsiter {

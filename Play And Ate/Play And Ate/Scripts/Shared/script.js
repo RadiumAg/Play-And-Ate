@@ -276,7 +276,7 @@ $("#bookOrderCancel").bind("click",function(){
 //用于未来扩展的提示正确错误的JS
 $.showErr = function(str,func)
 {
-	$.weeboxs.open(str, {boxid:'fanwe_error_box',contentType:'text',showButton:true, showCancel:false, showOk:true,title:'错误',width:250,type:'wee',onclose:func});
+	//$.weeboxs.open(str, {boxid:'fanwe_error_box',contentType:'text',showButton:true, showCancel:false, showOk:true,title:'错误',width:250,type:'wee',onclose:func});
 };
 
 $.showSuccess = function(str,func)

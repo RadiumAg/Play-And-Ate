@@ -46,16 +46,14 @@ namespace FTZ.PlayAndAte.DAL
         /// </summary>
         /// <param name="user">用户实体</param>
         /// <returns>是否添加成功</returns>
-        public static int InsertUser(UserInfo_Role user)
+        public static bool InsertUser(UserInfo_Role user)
         {
             using (PlayAndAteEntities entities = new PlayAndAteEntities())
             {
                 user.RoleId = 3;
                 entities.UserInfo_Role.Add(user);
-                return entities.SaveChanges();
+                return entities.SaveChanges() > 0; ;
             }
         }
-
-
     }
 }
