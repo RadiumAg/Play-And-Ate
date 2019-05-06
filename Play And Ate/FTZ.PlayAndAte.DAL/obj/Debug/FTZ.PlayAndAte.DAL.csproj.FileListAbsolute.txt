@@ -8,22 +8,15 @@ D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.cs
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.pdb
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.DAL.dll.config
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\EntityFramework.dll
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\EntityFramework.SqlServer.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\EntityFramework.xml
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\EntityFramework.SqlServer.xml
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.dll
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.Interception.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.Models.dll.config
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.pdb
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.pdb
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
@@ -74,3 +67,7 @@ C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.P
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.csproj.CopyComplete
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.dll
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.pdb
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.Interception.xml
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml
