@@ -11,3 +11,4 @@ D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.Sq
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CopyComplete
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csprojAssemblyReference.cache

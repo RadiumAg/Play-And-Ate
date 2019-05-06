@@ -11,11 +11,14 @@
     <link href="../Plugin/jquery-easyui-1.7.0/themes/icon.css" rel="stylesheet" />
     <script src="../Plugin/jquery-easyui-1.7.0/locale/easyui-lang-zh_CN.js"></script>
     <script src="../Plugin/jquery-easyui-1.7.0/datagrid-detailview.js"></script>
+    <script src="../Plugin/jquery-easyui-1.7.0/jquery.portal.js"></script>
     <style>
         #welcome {
             background-image: url('../Images/Admin/Admin.jpg');
+            overflow:hidden;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment:fixed;
         }
     </style>
 </head>
@@ -42,7 +45,17 @@
             {
                 'id': 2,
                 'text': '商户产品申请管理'
+            },
+            ]
+        },
+        {
+            'id': 2,
+            'text': '用户管理',
+            'children': [{
+                'id': 1,
+                'text': '所有用户信息',
             }]
+
         }]
 
         //渲染DataGridView
@@ -185,6 +198,8 @@
 
         //主函数
         $(function () {
+
+
             //渲染tab
             $("#content").tabs({
                 fit: true,
@@ -192,8 +207,9 @@
 
             //显示主界面
             $("#content").tabs('add', {
+                method: "GET",
                 title: '主界面',
-                href: 'sdfsdf',
+                href: '/Admin/PartialView/Welcome.html',
                 loadingMessage: '正在加载中',
                 closable: true,
             })

@@ -73,6 +73,7 @@
   <ItemGroup>
     <Content Include="Admin\Backstage.aspx" />
     <Content Include="Admin\PartialView\ShowData.html" />
+    <Content Include="Admin\PartialView\Welcome.html" />
     <Content Include="Content\LoginAndRegister\Login\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Login\Login.css" />
     <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
@@ -569,6 +570,7 @@
     <Content Include="Plugin\jquery-easyui-1.7.0\jquery.easyui.min.js" />
     <Content Include="Plugin\jquery-easyui-1.7.0\jquery.easyui.mobile.js" />
     <Content Include="Plugin\jquery-easyui-1.7.0\jquery.min.js" />
+    <Content Include="Plugin\jquery-easyui-1.7.0\jquery.portal.js" />
     <Content Include="Plugin\jquery-easyui-1.7.0\license_freeware.txt" />
     <Content Include="Plugin\jquery-easyui-1.7.0\locale\easyui-lang-af.js" />
     <Content Include="Plugin\jquery-easyui-1.7.0\locale\easyui-lang-am.js" />
@@ -646,6 +648,7 @@
     <Content Include="Plugin\jquery-easyui-1.7.0\plugins\jquery.treegrid.js" />
     <Content Include="Plugin\jquery-easyui-1.7.0\plugins\jquery.validatebox.js" />
     <Content Include="Plugin\jquery-easyui-1.7.0\plugins\jquery.window.js" />
+    <Content Include="Plugin\jquery-easyui-1.7.0\portal.css" />
     <Content Include="Plugin\jquery-easyui-1.7.0\readme.txt" />
     <Content Include="Plugin\jquery-easyui-1.7.0\src\easyloader.js" />
     <Content Include="Plugin\jquery-easyui-1.7.0\src\jquery.accordion.js" />
@@ -1344,6 +1347,7 @@
     <Content Include="Plugin\jquery-easyui-1.7.0\demo\tree\tree_data2.json" />
     <Content Include="Plugin\jquery-easyui-1.7.0\themes\material-teal\images\Thumbs.db" />
     <Content Include="Plugin\jquery-easyui-1.7.0\themes\material\images\Thumbs.db" />
+    <Content Include="Plugin\jquery-easyui-1.7.0\datagrid_data.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

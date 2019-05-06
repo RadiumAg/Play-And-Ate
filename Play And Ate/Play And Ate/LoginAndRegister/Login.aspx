@@ -8,7 +8,7 @@
     <script src="../Scripts/LoginAndRegister/Login/c.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/fgcomm.v620152248.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/header.js"></script>
-    <script src="../Scripts/LoginAndRegister/Login/index_header.js"></script>
+    <script src="../Scripts/LoginAndRegister/Login/index_header.js"></script>                
     <script src="../Scripts/LoginAndRegister/Login/lang.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/mt3.v1014201036.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/sousuo.js"></script>
