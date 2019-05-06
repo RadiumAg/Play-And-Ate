@@ -29,7 +29,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="head1">
         <div class="de">
-            <div class="lt"><span class="weizhi">你的位置：</span><a href="http://xianlu.01nz.com.cn/">农家行</a><a href="http://xianlu.01nz.com.cn/add/l.php?tid="></a><a href="http://xianlu.01nz.com.cn/add/list/490.html">跟团行</a><a href="http://xianlu.01nz.com.cn/add/list/615.html">临安</a><span class="biha">产品编号：652305dec205071</span> </div>
+            <div class="lt"><span class="weizhi">0你的位置：</span><a href="http://xianlu.01nz.com.cn/">农家行</a><a href="http://xianlu.01nz.com.cn/add/l.php?tid="></a><a href="http://xianlu.01nz.com.cn/add/list/490.html">跟团行</a><a href="http://xianlu.01nz.com.cn/add/list/615.html">临安</a><span class="biha">产品编号：652305dec205071</span> </div>
             <div class="dee">
                 <a href="http://xianlu.01nz.com.cn/add/print.php?aid=1147" target="_blank">
                     <img src="../Images/Show/FarmRow/share.gif" width="16" height="18" border="0" align="absmiddle" />打印行程</a>

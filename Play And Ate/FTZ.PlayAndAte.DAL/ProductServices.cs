@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.SqlServer.Server;
-using Microsoft.Practices.EnterpriseLibrary.Data;
+
 using System.Data;
 using FTZ.PlayAndAte.Models;
 
@@ -35,7 +35,7 @@ namespace FTZ.PlayAndAte.DAL
             }
             catch (Exception ex)
             {
-                throw;
+                return null;
             }
         }
 
@@ -93,6 +93,7 @@ namespace FTZ.PlayAndAte.DAL
             }
         }
 
-
+       
+        
     }
 }

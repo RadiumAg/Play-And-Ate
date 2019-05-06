@@ -445,7 +445,7 @@
                             <ItemTemplate>
                             <div class="s_info">
                              <a href="http://xianlu.01nz.com.cn/archives/1147.html" target="_blank">
-                                <img src="../Images/Line/1411040G321.jpg" width="180" height="137" }"="" alt="<%# Eval("ProductName") %>">
+                                <img src='../Images/Line/<%# Eval("ImagesName") %>' width="180" height="137" }"="" alt="<%# Eval("ProductName") %>">
                                 <p class="jieshao"> </p>
                                 <span class="jg f_l">￥<%# Eval("ProductPrice") %>起</span>
                             </a>

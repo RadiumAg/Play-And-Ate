@@ -51,7 +51,7 @@
       <Name>FTZ.PlayAndAte.DAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\FTZ.PlayAndAte.Models\FTZ.PlayAndAte.Models.csproj">
-      <Project>{7384c779-1c2a-4d18-88b0-52911e368678}</Project>
+      <Project>{7384C779-1C2A-4D18-88B0-52911E368678}</Project>
       <Name>FTZ.PlayAndAte.Models</Name>
     </ProjectReference>
   </ItemGroup>

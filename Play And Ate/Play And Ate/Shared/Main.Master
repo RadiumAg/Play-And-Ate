@@ -74,12 +74,12 @@
                 <div class="headerss">
                     <div class="LOGE">
                         <a href="#">
-                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG"  style="width:185px;height:100px;"/>
+                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width:185px;height:110px;margin-top:-15px;"/>
                         </a>
                     </div>
                     <div id="city">
                         <dl id="warpper">
-                            <dt onclick="changeMenu(this,0);"><font><b class="chengshi">城市</b></font><font color="#C80063"><b><img src="../Images/Shared/cs_dw.png" alt="城市" /></b></font></dt>
+                            <dt onclick="changeMenu(this,0);"><font><b class="chengshi" style="margin-top:-8px;">城市</b></font><font color="#C80063"><b><img src="../Images/Shared/cs_dw.png" alt="城市"  style="margin-top:-8px;/></b></font></dt>
                             <script>
                                 $(document).ready(function () {
                                     var sousuo_btn = document.getElementById("sousuo_btn");
@@ -199,7 +199,7 @@
                         </dl>
                     </div>
                     <div class="search_box_main search_boxs f_l">
-                        <div class="search_input_main f_l">
+                        <div class="search_input_main f_l" >
                             <input type="text" class="search_txt_main" name="keyword" id="header_kw" value="请输入您要搜索的关键词" x-webkit-speech="" x-webkit-grammar="builtin:translate">
                             <a id="sousuo_btn" class="search_btn_ss">搜索</a>
                         </div>
@@ -221,24 +221,24 @@
                                 <a href="../Home/Home.aspx" target="">首页</a>
                             </li>
                             <li onclick="nav(1)" id="n1" class="soso ">
-                                <a href="#" target="">农家推荐</a>
+                                <a href="../Show/FarmDetails.aspx" target="">农家推荐</a>
                             </li>
                             <li onclick="nav(2)" id="n2" class="soso ">
-                                <a href="#" target="">农家行</a>
+                                <a href="../Show/FarmRow.aspx" target="">农家行</a>
                             </li>
                             <li onclick="nav(3)" id="n3" class="soso ">
-                                <a href="#" target="">农庄</a>
+                                <a href="../Products/Farm.aspx" target="">农庄</a>
                             </li>
                             <li onclick="nav(4)" id="n4" class="soso ">
-                                <a href="#" target="">农家乐</a>
+                                <a href="../Products/Generated.aspx" target="">农家乐</a>
                             </li>
                             <li onclick="nav(5)" id="n5" class="soso ">
-                                <a href="#" target="">生态园</a>
+                                <a href="../Products/Ecological.aspx" target="">生态园</a>
                             </li>
                             <li onclick="nav(6)" id="n6" class="soso ">
-                                <a href="#" target="">垂钓场</a>
+                                <a href="../Products/Fishing.aspx" target="">垂钓场</a>
                             </li>
-                            <li class="zhuanti_dh" style="float: right;"><a href="#" target="_blank">专题</a></li>
+                            <li class="soso""><a href="../Special topic/Special topic.aspx" target="_blank">专题</a></li>
                         </ul>
                     </div>
                 </div>
