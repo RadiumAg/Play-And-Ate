@@ -19,6 +19,9 @@ namespace Play_And_Ate.Products
             //绑定农家住宿数据
             this.ZhuSu.DataSource = ProductManager.ShowProducts(1).OrderBy(x => x.ProductId).Take(8).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
             this.ZhuSu.DataBind();
+
+
+
         }
     }
 }
