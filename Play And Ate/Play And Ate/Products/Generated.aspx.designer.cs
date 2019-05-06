@@ -7,9 +7,9 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace Play_And_Ate.Products {
+namespace Play_And_Ate.Shared {
     
     
-    public partial class Generated {
+    public partial class WebForm1 {
     }
 }

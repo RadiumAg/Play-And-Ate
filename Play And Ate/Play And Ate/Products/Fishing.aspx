@@ -22,7 +22,7 @@
 <%--</head>
 <body>
 	--%><asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-<div id="dropdown">	
+    <div id="dropdown">	
 	<!--<a href="javascript:void(0);" ctl="farmlist" act="index" action="/store.php" id="search_farmlist">搜农庄</a>
 	<a href="javascript:void(0);" ctl="houselb" act="index" action="/store.php" id="search_houselb">农家乐</a>
 	<a href="javascript:void(0);" ctl="fish" act="index" action="/store.php" id="search_fish">搜钓场</a>
