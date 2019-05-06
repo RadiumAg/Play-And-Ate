@@ -7,7 +7,7 @@
     <script src="../Scripts/LoginAndRegister/Login/c.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/fgcomm.v620152248.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/header.js"></script>
-    <script src="../Scripts/LoginAndRegister/Login/index_header.js"></script>
+    <script src="../Scripts/LoginAndRegister/Login/index_header.js"></script>                
     <script src="../Scripts/LoginAndRegister/Login/lang.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/mt3.v1014201036.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/sousuo.js"></script>
@@ -42,7 +42,7 @@
                         </div>
                         <div class="field autologin">
                             <div class="input">
-                                <input id="t1" class="f-input ipttxt" style="width: 100px;" type="text" name="u" placeholder="验证码" onblur="but()" />
+                                <input id="t1" class="f-input ipttxt" style="width: 100px;" type="text" name="u" placeholder="验证码" />
                                 <span id="discode"></span>
                                 <input type="button" value="换一换" class="c" style="height: 50px; line-height: 50px; vertical-align: baseline;" onclick="createCode()">
                             </div>
