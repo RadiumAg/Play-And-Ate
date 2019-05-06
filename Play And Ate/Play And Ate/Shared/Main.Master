@@ -74,7 +74,7 @@
                 <div class="headerss">
                     <div class="LOGE">
                         <a href="#">
-                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width:185px;height:110px;margin-top:-15px;"/>
+                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width:185px;height:150px;margin-top:-35px;"/>
                         </a>
                     </div>
                     <div id="city">
@@ -212,9 +212,15 @@
 
                 </div>
             </div>
-            <div class="menu_box">
+            <div class="menu_box" style="    background-color: #fda300;
+    position: relative;
+    z-index: 2;">
                 <div class="menu" id="menus">
-                    <div class="menu white" id="menus">
+                    <div class="menu white" id="menus" style="    height: 36px;
+    background-color: #fda300;
+    margin: 0 auto;
+    position: relative;
+    width: 1180px;">
                         <ul>
                             <li><span class="LOGE_text">去农庄,就上第一农庄网</span></li>
                             <li onclick="nav(0)" id="n0" class="soso ">

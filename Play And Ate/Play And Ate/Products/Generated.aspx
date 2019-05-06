@@ -1,12 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Generated.aspx.cs" Inherits="Play_And_Ate.Products.Generated" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Play_And_Ate.Shared.WebForm1" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <link rel="Shortcut Icon" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" /><!--地址栏和标签上显示图标-->
+<asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">  <link rel="Shortcut Icon" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" /><!--地址栏和标签上显示图标-->
     <link rel="Bookmark" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" /><!--收藏夹显示图标-->
     <link rel="stylesheet" type="text/css" href="../Content/Products/cf62177493ce4db40c22962f60d846f8.css" />
     <script type="text/javascript" src="../Scripts/Products/908ca0ab9e4d27144b60bc878b237327.js" charset="utf-8"></script>
@@ -17,9 +11,13 @@
     <script type="text/javascript" src="../Scripts/Products/fgcomm.v620152248.js" charset="utf-8"></script>
     <script type="text/javascript" src="../Scripts/Products/sousuo.js" charset="utf-8"></script> 
     <script type="text/javascript" src="../Scripts/Products/index_header.js" charset="utf-8"></script>
+</asp:Content>
+<%--  
 </head>
-<body>
-<div class="header" id="header">
+<body>--%>
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+
+<%--<div class="header" id="header">
 	<div class="top_nav">
 		<div class="wrap">
 			<div>
@@ -96,7 +94,7 @@
 			</div>
 		</div>
 	</div><!--end 导航-->
-  </div>
+  </div>--%>
 	
 	<div class="wraps">
 		
@@ -793,5 +791,8 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 <!--</script>-->
 
 
-</body>
-</html>
+<%--</body>
+</html>--%>
+    </asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
+</asp:Content>
