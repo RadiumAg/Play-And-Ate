@@ -1,12 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Farm.aspx.cs" Inherits="Play_And_Ate.Products.Farm" %>
+﻿<%--<%@ Page Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Farm.aspx.cs" Inherits="Play_And_Ate.Products.Farm" %>--%>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Farm.aspx.cs" Inherits="Play_And_Ate.Products.Farm" %>
+<%--<!DOCTYPE html>--%>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<%--<html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
-    <link rel="Shortcut Icon" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
+    <title></title>--%>
+<asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server"> <link rel="Shortcut Icon" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
     <!--地址栏和标签上显示图标-->
     <link rel="Bookmark" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
     <!--收藏夹显示图标-->
@@ -19,8 +19,12 @@
     <script type="text/javascript" src="../Scripts/Products/fgcomm.v620152248.js" charset="utf-8"></script>
     <script type="text/javascript" src="../Scripts/Products/sousuo.js" charset="utf-8"></script>
     <script type="text/javascript" src="../Scripts/Products/index_header.js" charset="utf-8"></script>
-</head>
-<body>
+</asp:Content>
+   
+<%--</head>
+<body>--%>
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+
     <div id="dropdown">
         <!--<a href="javascript:void(0);" ctl="farmlist" act="index" action="/store.php" id="search_farmlist">搜农庄</a>
 	<a href="javascript:void(0);" ctl="houselb" act="index" action="/store.php" id="search_houselb">农家乐</a>
@@ -30,7 +34,7 @@
 	<a href="javascript:void(0);" ctl="event" act="index" action="/store.php" id="search_event">搜活动</a> -->
     </div>
 
-    <div class="header" id="header">
+ <%--   <div class="header" id="header">
         <div class="top_nav">
             <div class="wrap">
                 <div>
@@ -114,7 +118,7 @@
             </div>
         </div>
         <!--end 导航-->
-    </div>
+    </div>--%>
 
     <div class="wraps">
 
@@ -693,5 +697,9 @@
     <!--s.parentNode.insertBefore(hm, s);-->
     <!--})();-->
     <!--</script>-->
-</body>
-</html>
+<%--</body>
+</html>--%>
+        </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
+</asp:Content>

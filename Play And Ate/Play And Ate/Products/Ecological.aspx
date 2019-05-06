@@ -1,12 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ecological.aspx.cs" Inherits="Play_And_Ate.Products.Ecological" %>
-
-<!DOCTYPE html>
+﻿<%--<%@ Page Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Ecological.aspx.cs" Inherits="Play_And_Ate.Products.Ecological" %>--%>
+<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Ecological.aspx.cs" Inherits="Play_And_Ate.Products.Ecological" %>
+<%--<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Play-And-Ate </title>
-    <link rel="Shortcut Icon" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
+    <title>Play-And-Ate </title>--%>
+ <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server"> <link rel="Shortcut Icon" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
     <!--地址栏和标签上显示图标-->
     <link rel="Bookmark" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
     <!--收藏夹显示图标-->
@@ -19,9 +19,13 @@
     <script type="text/javascript" src="../Scripts/Products/fgcomm.v620152248.js" charset="utf-8"></script>
     <script type="text/javascript" src="../Scripts/Products/sousuo.js" charset="utf-8"></script>
     <script type="text/javascript" src="../Scripts/Products/index_header.js" charset="utf-8"></script>
-</head>
-<body>
-    <div class="header" id="header">
+</asp:Content>
+
+<%--</head>
+<body>--%>
+   <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+
+   <%-- <div class="header" id="header">
         <div class="top_nav">
             <div class="wrap">
                 <div>
@@ -99,7 +103,7 @@
             </div>
         </div>
         <!--end 导航-->
-    </div>
+    </div>--%>
     <div class="wraps">
         <div style="display: none">
             <div class="blank"></div>
@@ -577,5 +581,8 @@
         <!--})();-->
         <!--</script>-->
     </div>
-</body>
-</html>
+    </asp:Content>
+<%--</body>
+</html>--%>
+<asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
+</asp:Content>
