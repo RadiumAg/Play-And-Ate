@@ -14,6 +14,7 @@
     <meta name="360-site-verification" content="634348f4891eef9d2811d878f8674511" />
     <script src="../Plugin/jquery-1.8.3.min.js"></script>
     <script src="../Plugin/jquery.dotdotdot.js"></script>
+    <script src="../Scripts/jquery.unobtrusive-ajax.min.js"></script>
     <script src="../Scripts/Shared/querycity.js"></script>
     <script src="../Scripts/Shared/citylist.js"></script>
     <script src="../Scripts/Shared/lanrenzhijia.js"></script>
@@ -52,10 +53,8 @@
                             else
                             { %>
                         <span class="f_l">你好<%=userName %>，欢迎光临Play And Ate</span>
-                        <span><a href="javascript:void(0)" id="singOut" >退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>
+                        <span><a href="javascript:void(0)" id="singOut">退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>
                         <%} %>
-
-
                         <script>
                             $(function () {
                                 $("#singOut").click(function () {
@@ -71,21 +70,19 @@
                                                 alert("发生错误，退出失败！");
                                             }
                                         }
-
                                     });
-
                                 });
                             });
                         </script>
                     </div>
-                    </div>
                 </div>
+            </div>
             <!--end top_nav-->
             <div class="header_box">
                 <div class="headerss">
                     <div class="LOGE">
                         <a href="#">
-                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width:185px;height:150px;margin-top:-35px;"/>
+                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width: 185px; height: 150px; margin-top: -35px;" />
                         </a>
                     </div>
                     <div id="city">
@@ -210,7 +207,7 @@
                         </dl>
                     </div>
                     <div class="search_box_main search_boxs f_l">
-                        <div class="search_input_main f_l" >
+                        <div class="search_input_main f_l">
                             <input type="text" class="search_txt_main" name="keyword" id="header_kw" value="请输入您要搜索的关键词" x-webkit-speech="" x-webkit-grammar="builtin:translate">
                             <a id="sousuo_btn" class="search_btn_ss">搜索</a>
                         </div>
@@ -223,68 +220,68 @@
 
                 </div>
             </div>
-            </div>
+        </div>
         <div class="menu_box" style="background-color: #fda300; position: relative; z-index: 2;">
             <div class="menu" id="menus">
-                <div class="menu white"  style="height: 36px; background-color: #fda300; margin: 0 auto; position: relative; width: 1180px;">
-                        <ul>
-                            <li><span class="LOGE_text">去农庄,就来我们！</span></li>
-                            <li onclick="nav(0)" id="n0" class="soso ">
-                                <a href="../Home/Home.aspx" target="">首页</a>
-                            </li>
-                            <li onclick="nav(1)" id="n1" class="soso ">
-                                <a href="../Show/FarmDetails.aspx" target="">农家推荐</a>
-                            </li>
-                            <li onclick="nav(2)" id="n2" class="soso ">
-                                <a href="../Show/FarmRow.aspx" target="">农家行</a>
-                            </li>
-                            <li onclick="nav(3)" id="n3" class="soso ">
-                                <a href="../Products/Farm.aspx" target="">农庄</a>
-                            </li>
-                            <li onclick="nav(4)" id="n4" class="soso ">
-                                <a href="../Products/Generated.aspx" target="">农家乐</a>
-                            </li>
-                            <li onclick="nav(5)" id="n5" class="soso ">
-                                <a href="../Products/Ecological.aspx" target="">生态园</a>
-                            </li>
-                            <li onclick="nav(6)" id="n6" class="soso ">
-                                <a href="../Products/Fishing.aspx" target="">垂钓场</a>
-                            </li>
-                            <li class="soso""><a href="../Special topic/Special topic.aspx" target="_blank">专题</a></li>
-                        </ul>
-                    </div>
+                <div class="menu white" style="height: 36px; background-color: #fda300; margin: 0 auto; position: relative; width: 1180px;">
+                    <ul>
+                        <li><span class="LOGE_text">去农庄,就来我们！</span></li>
+                        <li onclick="nav(0)" id="n0" class="soso ">
+                            <a href="../Home/Home.aspx">首页</a>
+                        </li>
+                        <li onclick="nav(1)" id="n1" class="soso ">
+                            <a href="#">农家推荐</a>
+                        </li>
+                        <li onclick="nav(2)" id="n2" class="soso ">
+                            <a href="../Show/FarmRow.aspx">农家行</a>
+                        </li>
+                        <li onclick="nav(3)" id="n3" class="soso ">
+                            <a href="../Products/Farm.aspx" target="">农庄</a>
+                        </li>
+                        <li onclick="nav(4)" id="n4" class="soso ">
+                            <a href="../Products/Generated.aspx" target="">农家乐</a>
+                        </li>
+                        <li onclick="nav(5)" id="n5" class="soso ">
+                            <a href="../Products/Ecological.aspx" target="">生态园</a>
+                        </li>
+                        <li onclick="nav(6)" id="n6" class="soso ">
+                            <a href="../Products/Fishing.aspx" target="">垂钓场</a>
+                        </li>
+                        <li class="soso"><a href="../Special topic/Special topic.aspx">专题</a></li>
+                    </ul>
                 </div>
             </div>
-            <script>
-                function nav(id) {
-                    $(".soso").removeClass('nva_hover');
-                    $("#n" + id).addClass('nva_hover');
-                }
-            </script>
-        <asp:UpdatePanel runat="server" ID="UpMain" UpdateMode="Conditional">
-            <ContentTemplate>
-                <asp:ContentPlaceHolder ID="Content" runat="server" />
-            </ContentTemplate>
-        </asp:UpdatePanel>
+        </div>
+        <script>
+            function nav(id) {
+                $(".soso").removeClass('nva_hover');
+                $("#n" + id).addClass('nva_hover');
+            }
+        </script>
+
+        <asp:ContentPlaceHolder ID="Content" runat="server" />
+        <div class="blank"></div>
+        <div class="foot_xian"></div>
+        <div id="ftw">
             <div class="blank"></div>
-			<div class="foot_xian"> </div>
-			<div id="ftw">
-				<div class="blank"></div>
-				<div class="tc">
-					<a href="#" target="_blank">关于我们</a>
-					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">加入我们</a>
-					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">联系我们</a>
-					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">隐私保护</a>
-					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">网站地图</a>
-					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">商家登录</a>
-				</div>
-				<div class="blank"></div>
-				<div class="beian" align="center">版权所有：上海威和信息科技有限公司 <a href="#"
-						target="_blank">沪ICP备 13043989号-1</a> 电话：400-021-3158 邮箱：mc_01nz@163.com </div>
-				<div align="center" class="beian_eng">
-					Copyright 2013 www.01nz.com.cn All Rights Reserved.</div>
-               </div>
-            <asp:ContentPlaceHolder ID="Footer" runat="server" />
+            <div class="tc">
+                <a href="#" target="_blank">关于我们</a>
+                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">加入我们</a>
+                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">联系我们</a>
+                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">隐私保护</a>
+                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">网站地图</a>
+                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">商家登录</a>
+            </div>
+            <div class="blank"></div>
+            <div class="beian" align="center">
+                版权所有：上海威和信息科技有限公司 <a href="#"
+                    target="_blank">沪ICP备 13043989号-1</a> 电话：400-021-3158 邮箱：mc_01nz@163.com
+            </div>
+            <div align="center" class="beian_eng">
+                Copyright 2013 www.01nz.com.cn All Rights Reserved.
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="Footer" runat="server" />
     </form>
 </body>
 </html>
