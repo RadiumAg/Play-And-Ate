@@ -16,7 +16,7 @@
     <script src="../Scripts/Line/LineDetail/a_list.js" type="text/javascript"></script>
     <script src="../Scripts/Line/LineDetail/jquery-1.7.js" type="text/javascript"></script>
     <script src="../Scripts/Line/LineDetail/city_dcdr.js" type="text/javascript"></script>
-<link href="../Content/Line/LineDetial/index.css" rel="stylesheet" />
+    <link href="../Content/Line/LineDetial/index.css" rel="stylesheet" />
 </head>
 
 <body>

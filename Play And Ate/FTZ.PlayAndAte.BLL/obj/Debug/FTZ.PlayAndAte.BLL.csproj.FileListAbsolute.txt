@@ -46,3 +46,17 @@ C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.P
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.csproj.CopyComplete
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.dll
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.BLL.dll
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.BLL.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.DAL.dll
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.Models.dll
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\EntityFramework.dll
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.DAL.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.DAL.dll.config
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.Models.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.Models.dll.config
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.csprojAssemblyReference.cache
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.csproj.CoreCompileInputs.cache
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.csproj.CopyComplete
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.dll
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.pdb
