@@ -26,16 +26,17 @@ D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.Play
 D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CopyComplete
 D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.dll
 D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.pdb
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.dll.config
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.dll
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.pdb
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.dll
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.xml
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.resources.dll
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CoreCompileInputs.cache
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CopyComplete
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.dll
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.pdb
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.dll.config
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.pdb
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.xml
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csprojAssemblyReference.cache
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CoreCompileInputs.cache
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CopyComplete
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.dll
+C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.pdb
