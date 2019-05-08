@@ -38,7 +38,7 @@
                         <div class="field password">
                             <label for="login-password">密码</label>
                             <input type="password" value="" class="f-input ipttxt" id="login-password" name="user_pwd" size="30" tabindex="2">
-                            <span class="lostpassword">&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/user-getpassword">忘记密码?</a></span>
+                            <span class="lostpassword">&nbsp;&nbsp;<a href="#">忘记密码?</a></span>
                         </div>
                         <div class="field autologin">
                             <div class="input">
@@ -110,7 +110,7 @@
                                     }
                                 });
                             </script>
-                            <span class="to_regsiter">还没有账户？<a href="http://sh.01nz.com.cn/user-register">立即注册</a></span>
+                            <span class="to_regsiter">还没有账户？<a href="Register.aspx">立即注册</a></span>
                         </div>
 
                         <!--登录表单-->
