@@ -76,22 +76,3 @@ C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And At
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CopyComplete
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.dll
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.pdb
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Web.Infrastructure.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.Helpers.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.Mvc.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.Razor.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.WebPages.Deployment.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.WebPages.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.WebPages.Razor.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.Helpers.xml
-D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.Mvc.xml
-D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.Razor.xml
-D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.WebPages.xml
-D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.WebPages.Deployment.xml
-D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.WebPages.Razor.xml
-D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\System.Web.Helpers.resources.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\System.Web.Mvc.resources.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\System.Web.Razor.resources.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\System.Web.WebPages.resources.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll

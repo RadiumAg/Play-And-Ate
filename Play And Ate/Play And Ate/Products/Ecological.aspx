@@ -1,109 +1,5 @@
-﻿<%--<%@ Page Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Ecological.aspx.cs" Inherits="Play_And_Ate.Products.Ecological" %>--%>
-<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Ecological.aspx.cs" Inherits="Play_And_Ate.Products.Ecological" %>
-<%--<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Play-And-Ate </title>--%>
- <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server"> <link rel="Shortcut Icon" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
-    <!--地址栏和标签上显示图标-->
-    <link rel="Bookmark" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
-    <!--收藏夹显示图标-->
-    <link rel="stylesheet" type="text/css" href="../Content/Products/cf62177493ce4db40c22962f60d846f8.css" />
-    <script type="text/javascript" src="../Scripts/Products/908ca0ab9e4d27144b60bc878b237327.js" charset="utf-8"></script>
-    <script type="text/javascript" src="../Scripts/Products/baidumap.js"></script>
-    <link href="../Content/Products/base.v606141511.css" rel="stylesheet" type="text/css" media="all" />
-    <script type="text/javascript" src="../Scripts/Products/header.js" charset="utf-8"></script>
-    <script type="text/javascript" src="../Scripts/Products/mt3.v1014201036.js" charset="utf-8"></script>
-    <script type="text/javascript" src="../Scripts/Products/fgcomm.v620152248.js" charset="utf-8"></script>
-    <script type="text/javascript" src="../Scripts/Products/sousuo.js" charset="utf-8"></script>
-    <script type="text/javascript" src="../Scripts/Products/index_header.js" charset="utf-8"></script>
-</asp:Content>
-
-<%--</head>
-<body>--%>
-   <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-
-   <%-- <div class="header" id="header">
-        <div class="top_nav">
-            <div class="wrap">
-                <div>
-                    <span id="user_head_tip" class="f_l">你好，欢迎光临Play-And-Ate！
-	                    <a href="javascript:void(0);" onclick="ajax_login();">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-	                    <a href="http://www.01nz.com.cn/user-register">注册</a>
-                    </span>
-                    <span class="cart_ico"><a href="http://www.01nz.com.cn/cart" targer="_blank">购物车<span class="cart_count" id="cart_count">0</span> 件</a></span>
-                    <span class="v_line">&nbsp;|&nbsp;</span>
-                    <a href="javascript:void(0)" onclick="submit_sms();">短信订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
-                    <a href="javascript:void(0)" onclick="unsubmit_sms();">短信退订</a><span class="v_line">&nbsp;|&nbsp;</span>
-                    <a href="http://www.01nz.com.cn/tuan/subscribe-mail">邮件订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
-                </div>
-            </div>
-        </div>
-        <div class="header_box">
-            <div class="headers">
-                <div class="LOGE">
-                    <a href="http://www.01nz.com.cn/">
-                        <img alt="第一农庄网" class="f_l" src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/loge.gif" />
-                    </a>
-                </div>
-                <div id="city">
-                    <dl id="warpper">
-                        <dt><font><b class="chengshi">上海</b></font><font color="#C80063"><b><img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/cs_dw.png" alt="城市" /></b></font></dt>
-                    </dl>
-                </div>
-                <div class="search_box_main search_boxs f_l">
-                    <div class="search_input_main f_l">
-                        <input type="text" class="search_txt_main" name="keyword" id="header_kw" value="请输入您要搜索的关键词" x-webkit-speech="" x-webkit-grammar="builtin:translate" style="color: rgb(187, 187, 187);" />
-                        <a id="sousuo_btn" class="search_btn_ss">搜索</a>
-                    </div>
-                    <div class="blank1"></div>
-                </div>
-                <div class="f_r busy_yh">
-                    <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/35.gif" />
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="blank1"></div>
-    <div class="dh_fd">
-        <ul class="scrollnews"></ul>
-        <div class="menu_box">
-            <div class="menu">
-                <div class="menu white">
-                    <ul>
-                        <li><span class="LOGE_text">去农庄,就上第一农庄网</span></li>
-                        <li onclick="nav(0)" id="n0" class="soso ">
-                            <a href="http://www.01nz.com.cn/" target="">首页</a>
-                        </li>
-                        <li onclick="nav(1)" id="n1" class="soso ">
-                            <a href="http://www.01nz.com.cn/targeting" target="">农家推荐</a>
-                        </li>
-                        <li onclick="nav(2)" id="n2" class="soso ">
-                            <a href="http://xianlu.01nz.com.cn/" target="">农家行</a>
-                        </li>
-                        <li onclick="nav(3)" id="n3" class="soso ">
-                            <a href="http://www.01nz.com.cn/farm" target="">农庄</a>
-                        </li>
-                        <li onclick="nav(4)" id="n4" class="soso ">
-                            <a href="http://www.01nz.com.cn/farmhouse" target="">农家乐</a>
-                        </li>
-                        <li onclick="nav(5)" id="n5" class="soso ">
-                            <a href="http://www.01nz.com.cn/biotope" target="">生态园</a>
-                        </li>
-                        <li onclick="nav(6)" id="n6" class="soso ">
-                            <a href="http://www.01nz.com.cn/fishing" target="">垂钓场</a>
-                        </li>
-                        <li class="zhuanti_dh" style="float: right;">
-                            <a href="http://www.01nz.com.cn/discover" target="_blank">专题</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--end 导航-->
-    </div>--%>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Ecological.aspx.cs" Inherits="Play_And_Ate.Products.Ecological" %>
+<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="wraps">
         <div style="display: none">
             <div class="blank"></div>
@@ -409,8 +305,10 @@
                     </div>
                     <div class="shty_vip">
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l"><a href="Ecological/1.html" target="_blank">
-                                <img src="../Images/Products/53b21abd4c7e4_270x165.jpg" alt="高家庄生态园" width="270" height="165" /></a></div>
+                            <div class="shty_lb_img f_l">
+                                <a href="Ecological/1.html" target="_blank">
+                                    <img src="../Images/Products/53b21abd4c7e4_270x165.jpg" alt="高家庄生态园" width="270" height="165" /></a>
+                            </div>
                             <div class="shty_lb_txt f_l">
                                 <div class="shty_tit"><a href="Ecological/1.html" target="_blank">高家庄生态园</a></div>
                                 <div class="shty_pingxing">
@@ -426,8 +324,10 @@
                             <div class="clear"></div>
                         </div>
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l"><a href="Ecological/2.html" target="_blank">
-                                <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a></div>
+                            <div class="shty_lb_img f_l">
+                                <a href="Ecological/2.html" target="_blank">
+                                    <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a>
+                            </div>
                             <div class="shty_lb_txt f_l">
                                 <div class="shty_tit"><a href="Ecological/2.html" target="_blank">申隆生态园</a></div>
                                 <div class="shty_pingxing">
@@ -443,8 +343,10 @@
                             <div class="clear"></div>
                         </div>
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l"><a href="Ecological/1.html" target="_blank">
-                                <img src="../Images/Products/53b21abd4c7e4_270x165.jpg" alt="高家庄生态园" width="270" height="165" /></a></div>
+                            <div class="shty_lb_img f_l">
+                                <a href="Ecological/1.html" target="_blank">
+                                    <img src="../Images/Products/53b21abd4c7e4_270x165.jpg" alt="高家庄生态园" width="270" height="165" /></a>
+                            </div>
                             <div class="shty_lb_txt f_l">
                                 <div class="shty_tit"><a href="Ecological/1.html" target="_blank">高家庄生态园</a></div>
                                 <div class="shty_pingxing">
@@ -460,8 +362,10 @@
                             <div class="clear"></div>
                         </div>
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l"><a href="Ecological/2.html" target="_blank">
-                                <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a></div>
+                            <div class="shty_lb_img f_l">
+                                <a href="Ecological/2.html" target="_blank">
+                                    <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a>
+                            </div>
                             <div class="shty_lb_txt f_l">
                                 <div class="shty_tit"><a href="Ecological/2.html" target="_blank">申隆生态园</a></div>
                                 <div class="shty_pingxing">
@@ -477,8 +381,10 @@
                             <div class="clear"></div>
                         </div>
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l"><a href="Ecological/2.html" target="_blank">
-                                <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a></div>
+                            <div class="shty_lb_img f_l">
+                                <a href="Ecological/2.html" target="_blank">
+                                    <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a>
+                            </div>
                             <div class="shty_lb_txt f_l">
                                 <div class="shty_tit"><a href="Ecological/2.html" target="_blank">申隆生态园</a></div>
                                 <div class="shty_pingxing">
@@ -528,7 +434,8 @@
                 </div>
 
                 <div align="center">
-                    <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/xian.jpg" alt="灰线"></div>
+                    <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/xian.jpg" alt="灰线">
+                </div>
                 <div align="center">
                     <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/jubao.gif" alt="举报中心" class="img">
                     <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/end_2.gif" alt="官方认证" class="img">
@@ -581,7 +488,7 @@
         <!--})();-->
         <!--</script>-->
     </div>
-    </asp:Content>
+</asp:Content>
 <%--</body>
 </html>--%>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
