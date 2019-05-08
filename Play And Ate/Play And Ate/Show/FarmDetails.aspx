@@ -750,13 +750,13 @@
 							<li class="liSelected">
 								<span class="sPic">
 									<i class="iBigPic"><a
-											href="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>""
+											href="../Images/Tailorism/<%=product.Image.ToList()[0].ImageName %>""
 											target="_blank" title=""><img alt="" height="420"
-											src="../Images/Show/FarmDetails/<%=product.Image.ToList().FirstOrDefault().ImageName %>"></a></i>
+											src="../Images/Tailorism/<%=product.Image.ToList().FirstOrDefault().ImageName %>"></a></i>
 								</span>
 								<span class="sSideBox">
 									<span class="sTitle"><a
-											href="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>""
+											href="../Images/Tailorism/<%=product.Image.ToList()[0].ImageName %>""
 											target="_blank" title=""></a></span>
 								</span>
 							</li>
@@ -917,29 +917,29 @@
 					<div class="sd_imgl zxx_test_list">
 						<div class="mt_77">
 							<a class="sd_imgone preview" title=""
-								href="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>">
-								<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>"
+								href="../Images/Tailorism/<%=product.Image.ToList()[0].ImageName %>">
+								<img alt="" src="../Images/Tailorism/<%=product.Image.ToList()[0].ImageName %>"
 									class="f_l" width="100%" height="100%">
 							</a>
 							<a class="sd_gd " id="idBoxOpen">查看更多图片（7）</a>
 						</div>
 						<a class="sd_imgl_img preview" title=""
-							href="../Images/Show/FarmDetails/<%=product.Image.ToList()[1].ImageName%>">
+							href="../Images/Tailorism/<%=product.Image.ToList()[1].ImageName%>">
 							<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[1].ImageName %>"
 								width="100%" height="100%">
 						</a>
 						<a class="sd_imgl_img preview" title=""
-							href="../Images/Show/FarmDetails/<%=product.Image.ToList()[2].ImageName%>">
+							href="../Images/Tailorism/<%=product.Image.ToList()[2].ImageName%>">
 							<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[2].ImageName%>"
 								width="100%" height="100%">
 						</a>
 						<a class="sd_imgl_img preview" title=""
-							href="../Images/Show/FarmDetails/<%=product.Image.ToList()[3].ImageName%>">
+							href="../Images/Tailorism/<%=product.Image.ToList()[3].ImageName%>">
 							<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[3].ImageName%>"
 								width="100%" height="100%">
 						</a>
                         <a class="sd_imgl_img preview" title=""
-                            href="../Images/Show/FarmDetails/<%=product.Image.ToList()[4].ImageName%>">
+                            href="../Images/Tailorism/<%=product.Image.ToList()[4].ImageName%>">
                             <img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[4].ImageName%>"
                                 width="100%" height="100%">
                         </a>
