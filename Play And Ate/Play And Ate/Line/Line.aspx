@@ -10,6 +10,7 @@
     <link href="../Content/Line/search.css" rel="stylesheet" />
     <link href="../Content/Line/index.css" rel="stylesheet" />
     <script src="../Scripts/Line/global.js"></script>
+    <script src="../Scripts/Line/index.js"></script>
 </head>
 <body>
     <script src="../Scripts/Line/ajax188.js"></script>
@@ -233,7 +234,7 @@
                 <script src="../Scripts/Line/TN_city_suggest2-min.js"></script>
                 <script src="../Scripts/Line/TN_date-min.js"></script>
                 <script src="../Scripts/Line/TN_city_pos.js"></script>
-                <script language="javascript1.2">
+                <script>
                     $(document).ready(function () {
 
                         $('#s-tab li').each(function (i) {

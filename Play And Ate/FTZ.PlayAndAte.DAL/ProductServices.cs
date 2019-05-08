@@ -93,7 +93,47 @@ namespace FTZ.PlayAndAte.DAL
             }
         }
 
-       
-        
+       /// <summary>
+       /// 通过类别查询存在该类型的城市
+       /// </summary>
+       /// <param name="type">类型</param>
+       /// <returns></returns>
+        public static List<Product> GetAreaNameByPPtype(string type)
+        {
+            try
+            {
+                using (PlayAndAteEntities entities =new PlayAndAteEntities())
+                {
+                    List<Product> list = entities.Product.Include("Area").Include("PPointsType").Where(x => x.PPointsType.PPointsType1 == type).ToList<Product>();
+                    return list;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// 根据农家行查询下面所有农庄的信息
+        /// </summary>
+        /// <returns></returns>
+        public static List<Product> GetProductsBytotal()
+        {
+            try
+            {
+                using (PlayAndAteEntities entities =new PlayAndAteEntities())
+                {
+                    List<Product> list = entities.Product.Include("Image").Include("Area").Include("PPointsType").Where(x => x.PPointsType.Pid == 1).ToList<Product>();
+                    return list;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

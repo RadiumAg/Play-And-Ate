@@ -89,10 +89,22 @@
     <Content Include="Content\Cart\core.php" />
     <Content Include="Content\Cart\tongji_360.php" />
     <Content Include="Content\Cart\z_stat.php" />
+    <Content Include="Content\Line\index.css" />
+    <Content Include="Content\Line\LineDetial\a_rili.css" />
+    <Content Include="Content\Line\LineDetial\index.css" />
+    <Content Include="Content\Line\LineDetial\list_line.css" />
+    <Content Include="Content\Line\LineDetial\search.css" />
+    <Content Include="Content\Line\LineDetial\style.css" />
+    <Content Include="Content\Line\search.css" />
+    <Content Include="Content\Line\style%281%29.css" />
+    <Content Include="Content\Line\style.css" />
     <Content Include="Content\LoginAndRegister\Login\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Login\Login.css" />
     <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Register\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\Order\common_wm.html" />
+    <Content Include="Content\Order\order.css" />
+    <Content Include="Content\Order\style.css" />
     <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
     <Content Include="Content\Products\b61e5d222cddc2d58eececba5f1f9e27.css" />
     <Content Include="Content\Products\base.v606141511.css" />
@@ -371,7 +383,9 @@
     <Content Include="Index.aspx" />
     <Content Include="Line\Line.aspx" />
     <Content Include="Line\Line.html" />
+    <Content Include="Line\Line1.aspx" />
     <Content Include="Line\LineDetail.aspx" />
+    <Content Include="Line\LineDetail1.aspx" />
     <Content Include="LoginAndRegister\Login.aspx" />
     <Content Include="LoginAndRegister\Register.aspx" />
     <Content Include="Order\Order.aspx" />
@@ -1263,6 +1277,29 @@
     <Content Include="Products\Fishing.html" />
     <Content Include="Products\Generated.aspx" />
     <Content Include="Products\Generated.html" />
+    <Content Include="Scripts\Cart\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="Scripts\Cart\baidumap.js" />
+    <Content Include="Scripts\Cart\c.js" />
+    <Content Include="Scripts\Cart\fgcomm.v620152248.js" />
+    <Content Include="Scripts\Cart\header.js" />
+    <Content Include="Scripts\Cart\index_header.js" />
+    <Content Include="Scripts\Cart\mt3.v1014201036.js" />
+    <Content Include="Scripts\Cart\sousuo.js" />
+    <Content Include="Scripts\Line\ajax188.js" />
+    <Content Include="Scripts\Line\global.js" />
+    <Content Include="Scripts\Line\index.js" />
+    <Content Include="Scripts\Line\LineDetail\188date.js" />
+    <Content Include="Scripts\Line\LineDetail\a_list.js" />
+    <Content Include="Scripts\Line\LineDetail\city_dcdr.js" />
+    <Content Include="Scripts\Line\LineDetail\GetCNDate-12.15.js" />
+    <Content Include="Scripts\Line\LineDetail\index_header.js" />
+    <Content Include="Scripts\Line\LineDetail\jquery-1.7.js" />
+    <Content Include="Scripts\Line\LineDetail\script.js" />
+    <Content Include="Scripts\Line\sousuo.js" />
+    <Content Include="Scripts\Line\TN_city_pos.js" />
+    <Content Include="Scripts\Line\TN_city_suggest2-min.js" />
+    <Content Include="Scripts\Line\TN_date-min.js" />
+    <Content Include="Scripts\Line\TN_hotel-min.js" />
     <Content Include="Scripts\LoginAndRegister\Login\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\LoginAndRegister\Login\baidumap.js" />
     <Content Include="Scripts\LoginAndRegister\Login\c.js" />
@@ -1285,6 +1322,15 @@
     <Content Include="Scripts\LoginAndRegister\Register\lang.js" />
     <Content Include="Scripts\LoginAndRegister\Register\mt3.v1014201036.js" />
     <Content Include="Scripts\LoginAndRegister\Register\sousuo.js" />
+    <Content Include="Scripts\Order\ajax188.js" />
+    <Content Include="Scripts\Order\global.js" />
+    <Content Include="Scripts\Order\jquery.js" />
+    <Content Include="Scripts\Order\jquery.scrollfollow.js" />
+    <Content Include="Scripts\Order\one_order.js" />
+    <Content Include="Scripts\Order\order.js" />
+    <Content Include="Scripts\Order\sousuo.js" />
+    <Content Include="Scripts\Order\tooltip.js" />
+    <Content Include="Scripts\Order\two_order.js" />
     <Content Include="Scripts\Products\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\Products\baidumap.js" />
     <Content Include="Scripts\Products\c.js" />
@@ -1359,12 +1405,26 @@
     <Compile Include="Line\Line.aspx.designer.cs">
       <DependentUpon>Line.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Line\Line1.aspx.cs">
+      <DependentUpon>Line1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Line\Line1.aspx.designer.cs">
+      <DependentUpon>Line1.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Line\LineDetail.aspx.cs">
       <DependentUpon>LineDetail.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Line\LineDetail.aspx.designer.cs">
       <DependentUpon>LineDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Line\LineDetail1.aspx.cs">
+      <DependentUpon>LineDetail1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Line\LineDetail1.aspx.designer.cs">
+      <DependentUpon>LineDetail1.aspx</DependentUpon>
     </Compile>
     <Compile Include="LoginAndRegister\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

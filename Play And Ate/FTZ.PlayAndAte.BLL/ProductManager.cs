@@ -40,6 +40,23 @@ namespace FTZ.PlayAndAte.BLL
             return ProductServices.ShowProductsData(productId);
         }
 
+        /// <summary>
+        /// 通过类别查询存在该类型的城市
+        /// </summary>
+        /// <param name="type">类型</param>
+        /// <returns></returns>
+        public static List<Product> GetAreaNameByPPtype(string type)
+        {
+            return ProductServices.GetAreaNameByPPtype(type);
+        }
 
+        /// <summary>
+        /// 根据农家行查询下面所有农庄的信息
+        /// </summary>
+        /// <returns></returns>
+        public static List<Product> GetProductsBytotal()
+        {
+            return ProductServices.GetProductsBytotal();
+        }
     }
 }
