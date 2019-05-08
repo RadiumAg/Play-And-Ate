@@ -381,10 +381,7 @@
     <Content Include="Images\Show\FarmRow\nopic.jpg" />
     <Content Include="Images\Show\FarmRow\xian.jpg" />
     <Content Include="Index.aspx" />
-    <Content Include="Line\Line.aspx" />
-    <Content Include="Line\Line.html" />
     <Content Include="Line\Line1.aspx" />
-    <Content Include="Line\LineDetail.aspx" />
     <Content Include="Line\LineDetail1.aspx" />
     <Content Include="LoginAndRegister\Login.aspx" />
     <Content Include="LoginAndRegister\Register.aspx" />
@@ -1335,6 +1332,8 @@
     <Content Include="Scripts\Products\baidumap.js" />
     <Content Include="Scripts\Products\c.js" />
     <Content Include="Scripts\Products\ca3e4166f3f1cd8619807edc574f075c.js" />
+    <Content Include="Scripts\Products\core%281%29.php" />
+    <Content Include="Scripts\Products\core.php" />
     <Content Include="Scripts\Products\fgcomm.v620152248.js" />
     <Content Include="Scripts\Products\header.js" />
     <Content Include="Scripts\Products\index_header.js" />
@@ -1344,6 +1343,8 @@
     <Content Include="Scripts\Products\sousuo.js" />
     <Content Include="Scripts\Products\store.js" />
     <Content Include="Scripts\Products\storeview.js" />
+    <Content Include="Scripts\Products\tongji_360.php" />
+    <Content Include="Scripts\Products\z_stat.php" />
     <Content Include="Scripts\Show\FarmDetails\getscript.js" />
     <Content Include="Scripts\Show\FarmDetails\list.js" />
     <Content Include="Scripts\Show\FarmDetails\seller.js" />
@@ -1398,26 +1399,12 @@
     <Compile Include="Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Line\Line.aspx.cs">
-      <DependentUpon>Line.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Line\Line.aspx.designer.cs">
-      <DependentUpon>Line.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Line\Line1.aspx.cs">
       <DependentUpon>Line1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Line\Line1.aspx.designer.cs">
       <DependentUpon>Line1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Line\LineDetail.aspx.cs">
-      <DependentUpon>LineDetail.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Line\LineDetail.aspx.designer.cs">
-      <DependentUpon>LineDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Line\LineDetail1.aspx.cs">
       <DependentUpon>LineDetail1.aspx</DependentUpon>

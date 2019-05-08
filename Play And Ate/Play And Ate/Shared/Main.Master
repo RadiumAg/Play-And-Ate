@@ -230,7 +230,7 @@
                                 <a href="../Show/FarmDetails.aspx" target="">农家推荐</a>
                             </li>
                             <li onclick="nav(2)" id="n2" class="soso ">
-                                <a href="../Show/FarmRow.aspx" target="">农家行</a>
+                                <a href="../Line/Line1.aspx" target="">农家行</a>
                             </li>
                             <li onclick="nav(3)" id="n3" class="soso ">
                                 <a href="../Products/Farm.aspx" target="">农庄</a>

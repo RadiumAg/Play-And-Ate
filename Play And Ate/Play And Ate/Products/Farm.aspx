@@ -1,11 +1,4 @@
-﻿<%--<%@ Page Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Farm.aspx.cs" Inherits="Play_And_Ate.Products.Farm" %>--%>
-<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Farm.aspx.cs" Inherits="Play_And_Ate.Products.Farm" %>
-<%--<!DOCTYPE html>--%>
-
-<%--<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>--%>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Farm.aspx.cs" Inherits="Play_And_Ate.Products.Farm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server"> <link rel="Shortcut Icon" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
     <!--地址栏和标签上显示图标-->
     <link rel="Bookmark" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
@@ -20,106 +13,9 @@
     <script type="text/javascript" src="../Scripts/Products/sousuo.js" charset="utf-8"></script>
     <script type="text/javascript" src="../Scripts/Products/index_header.js" charset="utf-8"></script>
 </asp:Content>
-   
-<%--</head>
-<body>--%>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-
     <div id="dropdown">
-        <!--<a href="javascript:void(0);" ctl="farmlist" act="index" action="/store.php" id="search_farmlist">搜农庄</a>
-	<a href="javascript:void(0);" ctl="houselb" act="index" action="/store.php" id="search_houselb">农家乐</a>
-	<a href="javascript:void(0);" ctl="fish" act="index" action="/store.php" id="search_fish">搜钓场</a>
-	 <a href="javascript:void(0);" ctl="farmlist" act="index" action="/store.php" id="search_store">采摘园</a>
-    <a href="javascript:void(0);" ctl="ycate" act="index" action="/store.php" id="search_ycate">现金券</a>
-	<a href="javascript:void(0);" ctl="event" act="index" action="/store.php" id="search_event">搜活动</a> -->
     </div>
-
- <%--   <div class="header" id="header">
-        <div class="top_nav">
-            <div class="wrap">
-                <div>
-                    <span id="user_head_tip" class="f_l">你好，欢迎光临第一农庄网！
-
-                        <a href="javascript:void(0);" onclick="ajax_login();">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-
-                        <a href="http://sh.01nz.com.cn/user-register">注册</a>
-                    </span>
-                    <span class="cart_ico"><a href="http://sh.01nz.com.cn/cart" targer="_blank">购物车<span class="cart_count" id="cart_count">0</span> 件</a></span>
-                    <span class="v_line">&nbsp;|&nbsp;</span>
-                    <a href="javascript:void(0)" onclick="submit_sms();">短信订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
-                    <a href="javascript:void(0)" onclick="unsubmit_sms();">短信退订</a><span class="v_line">&nbsp;|&nbsp;</span>
-                    <a href="http://sh.01nz.com.cn/tuan/subscribe-mail">邮件订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
-                </div>
-            </div>
-        </div>
-        <!--end top_nav-->
-        <div class="header_box">
-            <div class="headers">
-                <div class="LOGE">
-                    <a href="http://www.01nz.com.cn/">
-                        <img alt="第一农庄网" class="f_l" src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/loge.gif">
-                    </a>
-                </div>
-                <div id="city">
-                    <dl id="warpper">
-                        <dt><font><b class="chengshi">上海</b></font><font color="#C80063"><b><img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/cs_dw.png" alt="城市"></b></font></dt>
-                    </dl>
-                </div>
-                <div class="search_box_main search_boxs f_l">
-                    <div class="search_input_main f_l">
-                        <input type="text" class="search_txt_main" name="keyword" id="header_kw" value="请输入您要搜索的关键词" x-webkit-speech="" x-webkit-grammar="builtin:translate" style="color: rgb(187, 187, 187);">
-                        <a id="sousuo_btn" class="search_btn_ss">搜索</a>
-                    </div>
-                    <div class="blank1"></div>
-                </div>
-                <div class="f_r busy_yh">
-                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/35.gif">
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-    <div class="blank1"></div>
-    <div class="dh_fd">
-        <ul class="scrollnews">
-        </ul>
-        <div class="menu_box">
-            <div class="menu">
-                <div class="menu white">
-                    <ul>
-                        <li><span class="LOGE_text">去农庄,就上第一农庄网</span></li>
-                        <li onclick="nav(0)" id="n0" class="soso ">
-                            <a href="http://www.01nz.com.cn/" target="">首页</a>
-                        </li>
-                        <li onclick="nav(1)" id="n1" class="soso ">
-                            <a href="http://www.01nz.com.cn/targeting" target="">农家推荐</a>
-                        </li>
-                        <li onclick="nav(2)" id="n2" class="soso ">
-                            <a href="http://xianlu.01nz.com.cn/" target="">农家行</a>
-                        </li>
-                        <li onclick="nav(3)" id="n3" class="soso ">
-                            <a href="http://www.01nz.com.cn/farm" target="">农庄</a>
-                        </li>
-                        <li onclick="nav(4)" id="n4" class="soso ">
-                            <a href="http://www.01nz.com.cn/farmhouse" target="">农家乐</a>
-                        </li>
-                        <li onclick="nav(5)" id="n5" class="soso ">
-                            <a href="http://www.01nz.com.cn/biotope" target="">生态园</a>
-                        </li>
-                        <li onclick="nav(6)" id="n6" class="soso ">
-                            <a href="http://www.01nz.com.cn/fishing" target="">垂钓场</a>
-                        </li>
-
-                        <li class="zhuanti_dh" style="float: right;"><a href="http://www.01nz.com.cn/discover" target="_blank">专题</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--end 导航-->
-    </div>--%>
-
     <div class="wraps">
 
         <script type="text/javascript" src="../Scripts/Products/lang.js"></script>
@@ -621,11 +517,6 @@
     <div class="blank"></div>
     <div id="ftw">
         <div id="ft">
-            <!-- 热门城市 -->
-            <!-- 区县分类 -->
-            <!-- 热门农庄 -->
-            <!-- 友情链接 -->
-            <!-- 专题友情链接 -->
             <div class="blank"></div>
             <div class="foot_xian"></div>
             <div class="blank"></div>
@@ -667,16 +558,7 @@
         <div id="gowu"></div>
     </a>
 
-    <!--<script>-->
-    <!--var _hmt = _hmt || [];-->
-    <!--(function() {-->
-    <!--var hm = document.createElement("script");-->
-    <!--hm.src = "//hm.baidu.com/hm.js?1318dc1c344853eb801972de684dc612";-->
-    <!--var s = document.getElementsByTagName("script")[0];-->
-    <!--s.parentNode.insertBefore(hm, s);-->
-    <!--})();-->
-    <!--</script>-->
-
+   
     <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/z_stat.php" language="JavaScript"></script>
     <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core.php" charset="utf-8" type="text/javascript"></script>
     <a href="https://www.cnzz.com/stat/website.php?web_id=1254939469" target="_blank" title="站长统计">站长统计</a>
@@ -687,18 +569,7 @@
     <a href="https://quanjing.cnzz.com/" target="_blank" title="全景统计">
         <img border="0" hspace="0" vspace="0" src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/2.gif">
     </a>
-    <!--<script type="text/javascript">-->
-    <!--var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8e539f2c9b5ea1c23be29aec34355f06' type='text/javascript'%3E%3C/script%3E"));-->
-    <!--var _hmt = _hmt || [];-->
-    <!--(function() {-->
-    <!--var hm = document.createElement("script");-->
-    <!--hm.src = "//hm.baidu.com/hm.js?f35b7bb370ac69983395e05eadad0079";-->
-    <!--var s = document.getElementsByTagName("script")[0];-->
-    <!--s.parentNode.insertBefore(hm, s);-->
-    <!--})();-->
-    <!--</script>-->
-<%--</body>
-</html>--%>
+   
         </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
