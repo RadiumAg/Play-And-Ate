@@ -10,6 +10,6 @@
 namespace Play_And_Ate.Shared {
     
     
-    public partial class WebForm1 {
+    public partial class Generated {
     }
 }

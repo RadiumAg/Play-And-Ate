@@ -1014,7 +1014,7 @@
                     $(function () {
                         //$(".m_rm_text").dotdotdot();
                         $.ajax({
-                            url: "PartialView/Hot.html",
+                            url: "/Home/PartialView/Hot.html",
                             type: "GET",
                             dataType: "HTML",
                             success: function (data) {
@@ -1028,9 +1028,7 @@
                 <div class="mtext_gg_img f_l">
                     <a href="#" class="guanggaotonglan" target="_blank">
                         <div>
-                            <font style="background-color: #ffffff;"><img alt="" border="0"
-											src="../Images/Home/57e105a3d7f31.jpg">
-									</font>
+                            <font style="background-color: #ffffff;"><img alt="" border="0" src="../Images/Home/57e105a3d7f31.jpg"></font>
                         </div>
                     </a>
                 </div>
@@ -1055,7 +1053,7 @@
                 </div>
                 <script>
                     $.ajax({
-                        url: "PartialView/Company.html",
+                        url: "/Home/PartialView/Company.html",
                         type: "GET",
                         dataType: "HTML",
                         success: function (data) {
@@ -1146,7 +1144,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="mtext_cm"><img src="http://www.01nz.com.cn/public/attachment/201505/12/14/55519e2dde624.jpg" alt="" border="0" /> </div> -->
             <div class="mtext_zt">
                 <div class="mtext_b_ls f_l">
                     <div class="mtext_b_l_title lvse">
@@ -1336,6 +1333,4 @@
             </div>
         </div>
     </div>
-    <div class="blank"></div>
-    <div class="foot_xian"></div>
 </asp:Content>

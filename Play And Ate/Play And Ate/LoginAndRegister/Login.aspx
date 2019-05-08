@@ -3,12 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
     <link href="../Content/LoginAndRegister/Login/base.v606141511.css" rel="stylesheet" />
     <link href="../Content/LoginAndRegister/Login/Login.css" rel="stylesheet" />
-    <script src="../Scripts/LoginAndRegister/Login/Login.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/baidumap.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/c.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/fgcomm.v620152248.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/header.js"></script>
-    <script src="../Scripts/LoginAndRegister/Login/index_header.js"></script>
+    <script src="../Scripts/LoginAndRegister/Login/index_header.js"></script>                
     <script src="../Scripts/LoginAndRegister/Login/lang.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/mt3.v1014201036.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/sousuo.js"></script>
@@ -43,7 +42,7 @@
                         </div>
                         <div class="field autologin">
                             <div class="input">
-                                <input id="t1" class="f-input ipttxt" style="width: 100px;" type="text" name="u" placeholder="验证码" onblur="but()" />
+                                <input id="t1" class="f-input ipttxt" style="width: 100px;" type="text" name="u" placeholder="验证码" />
                                 <span id="discode"></span>
                                 <input type="button" value="换一换" class="c" style="height: 50px; line-height: 50px; vertical-align: baseline;" onclick="createCode()">
                             </div>
@@ -131,41 +130,15 @@
                             <img alt="用微信登陆" src="../Images/LoginAndRegister/wechat.png"></a>&nbsp;</span>
                     </div>
                 </div>
-                <div class="inc_foot"></div>
-                <div class="blank"></div>
-                <div id="ftw">
-                    <div id="ft">
-                        <!-- 热门城市 -->
-                        <!-- 区县分类 -->
-                        <!-- 热门农庄 -->
-                        <!-- 友情链接 -->
-                        <!-- 专题友情链接 -->
-                        <div class="blank"></div>
-                        <div class="foot_xian"></div>
-                        <div class="blank"></div>
-                        <div class="tc">
-                            <a href="http://sh.01nz.com.cn/sys/id-20" target="_blank">关于我们</a>
-                            &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-6" target="_blank">加入我们</a>
-                            &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-30" target="_blank">联系我们</a>
-                            &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-28" target="_blank">隐私保护</a>
-                            &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-45" target="_blank">网站地图</a>
-                            &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-9" target="_blank">商家登录</a>
-                        </div>
-                        <div class="blank"></div>
-                        <div class="beian" align="center">版权所有：上海威和信息科技有限公司  <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备 13043989号-1</a>  电话：400-021-3158 邮箱：mc_01nz@163.com </div>
-                    </div>
-                </div>
                 <div id="gotop" style="display: none;"></div>
-                <a href="http://sh.01nz.com.cn/cart" target="_blank">
+                <a href="#" target="_blank">
                     <div id="gowu"></div>
                 </a>
-
             </div>
         </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
-
     <script src="../Scripts/LoginAndRegister/Login/z_stat.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/core.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/c.js"></script>

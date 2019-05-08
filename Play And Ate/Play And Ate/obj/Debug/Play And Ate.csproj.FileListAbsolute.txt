@@ -76,27 +76,22 @@ C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And At
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CopyComplete
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.dll
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.pdb
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Play And Ate.dll.config
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Play And Ate.dll
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Play And Ate.pdb
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\EntityFramework.dll
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\EntityFramework.SqlServer.dll
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.BLL.dll
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.Models.dll
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Newtonsoft.Json.dll
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.dll
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.BLL.pdb
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.Models.pdb
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.Models.dll.config
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\EntityFramework.xml
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\EntityFramework.SqlServer.xml
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Newtonsoft.Json.xml
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.pdb
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.dll.config
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\zh-Hans\EntityFramework.resources.dll
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csprojAssemblyReference.cache
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CoreCompileInputs.cache
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CopyComplete
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.dll
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.pdb
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Web.Infrastructure.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.Helpers.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.Mvc.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.Razor.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.WebPages.Deployment.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.WebPages.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.WebPages.Razor.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.Helpers.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.Mvc.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.Razor.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.WebPages.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.WebPages.Deployment.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\System.Web.WebPages.Razor.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\System.Web.Helpers.resources.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\System.Web.Mvc.resources.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\System.Web.Razor.resources.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\System.Web.WebPages.resources.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll

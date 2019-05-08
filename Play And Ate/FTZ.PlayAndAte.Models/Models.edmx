@@ -50,6 +50,18 @@
           <Property Name="ProductId" Type="int" Nullable="false" />
           <Property Name="UserId" Type="int" Nullable="false" />
         </EntityType>
+        <!--生成过程中发现错误:
+警告 6002: 表/视图“PlayAndAte.dbo.Point”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+        <EntityType Name="Point">
+          <Key>
+            <PropertyRef Name="Longitude" />
+            <PropertyRef Name="Latitude" />
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="Longitude" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Latitude" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ProductId" Type="int" Nullable="false" />
+        </EntityType>
         <EntityType Name="PPointsType">
           <Key>
             <PropertyRef Name="Id" />
@@ -161,6 +173,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Poing_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Point" Type="Self.Point" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="Point">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_PPointsType_PTotalType">
           <End Role="PTotalType" Type="Self.PTotalType" Multiplicity="0..1" />
           <End Role="PPointsType" Type="Self.PPointsType" Multiplicity="*" />
@@ -246,6 +270,13 @@
           <EntitySet Name="Sincerity" EntityType="Self.Sincerity" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UserInfo_Role" EntityType="Self.UserInfo_Role" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Point" EntityType="Self.Point" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Point].[Longitude] AS [Longitude], 
+    [Point].[Latitude] AS [Latitude], 
+    [Point].[ProductId] AS [ProductId]
+    FROM [dbo].[Point] AS [Point]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="FK_Customers_CardType" Association="Self.FK_Customers_CardType">
             <End Role="CardType" EntitySet="CardType" />
             <End Role="Customers" EntitySet="Customers" />
@@ -261,6 +292,10 @@
           <AssociationSet Name="FK_Order_UserInfo_Role" Association="Self.FK_Order_UserInfo_Role">
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
             <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Poing_Product" Association="Self.FK_Poing_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Point" EntitySet="Point" />
           </AssociationSet>
           <AssociationSet Name="FK_PPointsType_PTotalType" Association="Self.FK_PPointsType_PTotalType">
             <End Role="PTotalType" EntitySet="PTotalType" />
@@ -367,6 +402,7 @@
           <NavigationProperty Name="Image" Relationship="Self.FK_Image_Product" FromRole="Product" ToRole="Image" />
           <NavigationProperty Name="PPointsType" Relationship="Self.FK_Product_PPointsType" FromRole="Product" ToRole="PPointsType" />
           <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Product_UserInfo_Role" FromRole="Product" ToRole="UserInfo_Role" />
+          <NavigationProperty Name="Point" Relationship="PlayAndAteModel.FK_Poing_Product" FromRole="Product" ToRole="Point" />
         </EntityType>
         <EntityType Name="PTotalType">
           <Key>
@@ -592,7 +628,35 @@
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
             <End Role="Sincerity" EntitySet="Sincerity" />
           </AssociationSet>
+          <EntitySet Name="Point" EntityType="PlayAndAteModel.Point" />
+          <AssociationSet Name="FK_Poing_Product" Association="PlayAndAteModel.FK_Poing_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Point" EntitySet="Point" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="Point">
+          <Key>
+            <PropertyRef Name="Longitude" />
+            <PropertyRef Name="Latitude" />
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="Longitude" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Latitude" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="PlayAndAteModel.FK_Poing_Product" FromRole="Point" ToRole="Product" />
+        </EntityType>
+        <Association Name="FK_Poing_Product">
+          <End Type="PlayAndAteModel.Product" Role="Product" Multiplicity="1" />
+          <End Type="PlayAndAteModel.Point" Role="Point" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="Point">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -716,6 +780,15 @@
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="RoleId" ColumnName="RoleId" />
                 <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Point">
+            <EntityTypeMapping TypeName="PlayAndAteModel.Point">
+              <MappingFragment StoreEntitySet="Point">
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
