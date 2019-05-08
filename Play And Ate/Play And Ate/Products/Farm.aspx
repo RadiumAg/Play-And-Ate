@@ -443,134 +443,29 @@
                                     </div>
                                 </ItemTemplate>
                             </asp:Repeater>
-                            <%--<div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/24143.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/551a779b45e14_180x110.jpg" alt="马陆葡萄庄园"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/24143.html" target="_blank" class="f_l">马陆葡萄庄园</a><span class="people f_r">￥<span class="peoda">99</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/20909.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/547fbcfd562ca_180x110.jpg" alt="上海刚顺果蔬专业合作社农庄"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/20909.html" target="_blank" class="f_l">上海刚顺果蔬…</a><span class="people f_r">￥<span class="peoda">104</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/11749.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/5440d06e740cf_180x110.jpg" alt="孙桥现代农业园"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/11749.html" target="_blank" class="f_l">孙桥现代农业…</a><span class="people f_r">￥<span class="peoda">91</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/10663.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/543771c0bcc17_180x110.jpg" alt="上海梦徽草堂(今墨庄园)"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/10663.html" target="_blank" class="f_l">上海梦徽草堂…</a><span class="people f_r">￥<span class="peoda">100</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/8650.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53fff603557ba_180x110.jpg" alt="上海崇明六加伊农家乐"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/8650.html" target="_blank" class="f_l">上海崇明六加…</a><span class="people f_r">￥<span class="peoda">120</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/6637.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53eb2dd6bbb71_180x110.jpg" alt="凤冠奶油草莓基地"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/6637.html" target="_blank" class="f_l">凤冠奶油草莓…</a><span class="people f_r">￥<span class="peoda">114</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/6636.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53eb2c9cea0ab_180x110.jpg" alt="崧泽草莓园"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/6636.html" target="_blank" class="f_l">崧泽草莓园</a><span class="people f_r">￥<span class="peoda">95</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/6316.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53e98d9722393_180x110.jpg" alt="赵屯草莓基地NO37"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/6316.html" target="_blank" class="f_l">赵屯草莓基地…</a><span class="people f_r">￥<span class="peoda">91</span><span class="peohui">起</span></span></p>
-                            </div>--%>
                         </div>
                     </div>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
-        <!--<div class="blank"></div>
-<div class="hg_25 clear"></div>
-	 <div class="store_dangji">
-		<div class="djtore_top">
-			<div class="title">当季行</div>
-			<ul class="down_store" id="dj_pose">
-									<li class="p_4 dj_yf"><a href="javascript:void(0);" onclick="load_yuefen_store(4)">四月</a></li>
-									<li class="p_5 "><a href="javascript:void(0);" onclick="load_yuefen_store(5)">五月</a></li>
-									<li class="p_6 "><a href="javascript:void(0);" onclick="load_yuefen_store(6)">六月</a></li>
-							</ul>
-			<div class="clear"></div>
-		</div>
-		<div id="ajax_yuefen_store" class="dj_xiangmu">
-			<div class="f_l dj_zuo">
-													</div>
-			<div class="f_l dj_zhong">
-											<a href="/farmlist/tid-116-cid-49-deal_type-0" target="_blank"><img src="http://sh.01nz.com.cn/public/attachment/201405/14/15/53731fdb26058.jpg"  alt="垂钓" /></a>
-										</div>
-			<div class="f_l dj_you">
-													</div>
-			<div class="clear"></div>
-		</div>
-	</div> -->
         <!-- 改版 -->
     </div>
     <div class="blank"></div>
-    <div id="ftw">
-        <div id="ft">
-            <div class="blank"></div>
-            <div class="foot_xian"></div>
-            <div class="blank"></div>
-            <div class="tc">
-                <a href="http://sh.01nz.com.cn/sys/id-20" target="_blank">关于我们</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-6" target="_blank">加入我们</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-30" target="_blank">联系我们</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-28" target="_blank">隐私保护</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-45" target="_blank">网站地图</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-9" target="_blank">商家登录</a>
-            </div>
-            <div class="blank"></div>
-            <div class="beian" align="center">版权所有：上海威和信息科技有限公司  <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备 13043989号-1</a>  电话：400-021-3158 邮箱：mc_01nz@163.com </div>
-            <div align="center" class="beian_eng">
-                Copyright 2013 www.01nz.com.cn All Rights Reserved.
-            </div>
-
-            <div align="center">
-                <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/xian.jpg" alt="灰线"></div>
-            <div align="center">
-                <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/jubao.gif" alt="举报中心" class="img">
-                <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/end_2.gif" alt="官方认证" class="img">
-                <a href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=dov73ne2cve0r70m02lemast61960airrs" target="_blank">
-                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/icon.gif" border="0"></a>
-                <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/end_3.gif" alt="网络110" class="img">
-                <img border="0" src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/image_err.gif">
-                <a href="http://shwg.dianping.com/index.html?tp=1.1.20.0.27.LKAvY0C-00-8v9E9&amp;ti=AY74lO" target="_blank">
-                    <img border="0" src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/wg.png"></a>
-            </div>
-            <div class="blank"></div>
-            <div class="blank"></div>
-            <div class="blank"></div>
-        </div>
-    </div>
-
-
     <div id="gotop"></div>
     <a href="http://sh.01nz.com.cn/cart" target="_blank">
         <div id="gowu"></div>
     </a>
-
-   
     <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/z_stat.php" language="JavaScript"></script>
     <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core.php" charset="utf-8" type="text/javascript"></script>
-    <a href="https://www.cnzz.com/stat/website.php?web_id=1254939469" target="_blank" title="站长统计">站长统计</a>
+
 
     <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/c.js.下载" language="JavaScript"></script>
     <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/tongji_360.php" language="JavaScript" charset="gb2312"></script>
     <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core(1).php" charset="utf-8" type="text/javascript"></script>
     <a href="https://quanjing.cnzz.com/" target="_blank" title="全景统计">
         <img border="0" hspace="0" vspace="0" src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/2.gif">
-    </a>
-   
-        </div>
+    </a> </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
 </asp:Content>
