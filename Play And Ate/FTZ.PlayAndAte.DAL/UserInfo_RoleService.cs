@@ -55,5 +55,6 @@ namespace FTZ.PlayAndAte.DAL
                 return entities.SaveChanges() > 0; ;
             }
         }
+
     }
 }

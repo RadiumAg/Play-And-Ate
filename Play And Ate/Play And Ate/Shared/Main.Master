@@ -242,7 +242,7 @@
     position: relative;
     width: 1180px;">
                         <ul>
-                            <li><span class="LOGE_text">去农庄,就上第一农庄网</span></li>
+                            <li><span class="LOGE_text">去农庄,就来我们</span></li>
                             <li onclick="nav(0)" id="n0" class="soso ">
                                 <a href="../Home/Home.aspx" target="">首页</a>
                             </li>

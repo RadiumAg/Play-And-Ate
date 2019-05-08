@@ -1401,7 +1401,6 @@
     <Content Include="Scripts\Special topic\lang.js" />
     <Content Include="Scripts\Special topic\mt3.v1014201036.js" />
     <Content Include="Scripts\Special topic\sousuo.js" />
-    <Content Include="Shared\WebForm1.aspx" />
     <Content Include="Show\FarmDetails.aspx" />
     <Content Include="Show\FarmRow.aspx" />
     <Content Include="Special topic\Special topic.aspx" />
@@ -1528,13 +1527,6 @@
     </Compile>
     <Compile Include="Shared\Main.Master.designer.cs">
       <DependentUpon>Main.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Shared\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Shared\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Show\FarmDetails.aspx.cs">
       <DependentUpon>FarmDetails.aspx</DependentUpon>
