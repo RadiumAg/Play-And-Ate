@@ -74,7 +74,7 @@
                 <div class="headerss">
                     <div class="LOGE">
                         <a href="#">
-                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width:185px;height:150px;margin-top:-35px;"/>
+                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width:155px;height:80px;margin-right:-55px;margin-top:0px"/>
                         </a>
                     </div>
                     <div id="city">
