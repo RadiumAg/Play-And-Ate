@@ -1,11 +1,4 @@
-﻿<%--<%@ Page Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Farm.aspx.cs" Inherits="Play_And_Ate.Products.Farm" %>--%>
-<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Farm.aspx.cs" Inherits="Play_And_Ate.Products.Farm" %>
-<%--<!DOCTYPE html>--%>
-
-<%--<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>--%>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Farm.aspx.cs" Inherits="Play_And_Ate.Products.Farm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server"> <link rel="Shortcut Icon" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
     <!--地址栏和标签上显示图标-->
     <link rel="Bookmark" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
@@ -20,106 +13,9 @@
     <script type="text/javascript" src="../Scripts/Products/sousuo.js" charset="utf-8"></script>
     <script type="text/javascript" src="../Scripts/Products/index_header.js" charset="utf-8"></script>
 </asp:Content>
-   
-<%--</head>
-<body>--%>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-
     <div id="dropdown">
-        <!--<a href="javascript:void(0);" ctl="farmlist" act="index" action="/store.php" id="search_farmlist">搜农庄</a>
-	<a href="javascript:void(0);" ctl="houselb" act="index" action="/store.php" id="search_houselb">农家乐</a>
-	<a href="javascript:void(0);" ctl="fish" act="index" action="/store.php" id="search_fish">搜钓场</a>
-	 <a href="javascript:void(0);" ctl="farmlist" act="index" action="/store.php" id="search_store">采摘园</a>
-    <a href="javascript:void(0);" ctl="ycate" act="index" action="/store.php" id="search_ycate">现金券</a>
-	<a href="javascript:void(0);" ctl="event" act="index" action="/store.php" id="search_event">搜活动</a> -->
     </div>
-
- <%--   <div class="header" id="header">
-        <div class="top_nav">
-            <div class="wrap">
-                <div>
-                    <span id="user_head_tip" class="f_l">你好，欢迎光临第一农庄网！
-
-                        <a href="javascript:void(0);" onclick="ajax_login();">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-
-                        <a href="http://sh.01nz.com.cn/user-register">注册</a>
-                    </span>
-                    <span class="cart_ico"><a href="http://sh.01nz.com.cn/cart" targer="_blank">购物车<span class="cart_count" id="cart_count">0</span> 件</a></span>
-                    <span class="v_line">&nbsp;|&nbsp;</span>
-                    <a href="javascript:void(0)" onclick="submit_sms();">短信订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
-                    <a href="javascript:void(0)" onclick="unsubmit_sms();">短信退订</a><span class="v_line">&nbsp;|&nbsp;</span>
-                    <a href="http://sh.01nz.com.cn/tuan/subscribe-mail">邮件订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
-                </div>
-            </div>
-        </div>
-        <!--end top_nav-->
-        <div class="header_box">
-            <div class="headers">
-                <div class="LOGE">
-                    <a href="http://www.01nz.com.cn/">
-                        <img alt="第一农庄网" class="f_l" src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/loge.gif">
-                    </a>
-                </div>
-                <div id="city">
-                    <dl id="warpper">
-                        <dt><font><b class="chengshi">上海</b></font><font color="#C80063"><b><img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/cs_dw.png" alt="城市"></b></font></dt>
-                    </dl>
-                </div>
-                <div class="search_box_main search_boxs f_l">
-                    <div class="search_input_main f_l">
-                        <input type="text" class="search_txt_main" name="keyword" id="header_kw" value="请输入您要搜索的关键词" x-webkit-speech="" x-webkit-grammar="builtin:translate" style="color: rgb(187, 187, 187);">
-                        <a id="sousuo_btn" class="search_btn_ss">搜索</a>
-                    </div>
-                    <div class="blank1"></div>
-                </div>
-                <div class="f_r busy_yh">
-                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/35.gif">
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-
-    <div class="blank1"></div>
-    <div class="dh_fd">
-        <ul class="scrollnews">
-        </ul>
-        <div class="menu_box">
-            <div class="menu">
-                <div class="menu white">
-                    <ul>
-                        <li><span class="LOGE_text">去农庄,就上第一农庄网</span></li>
-                        <li onclick="nav(0)" id="n0" class="soso ">
-                            <a href="http://www.01nz.com.cn/" target="">首页</a>
-                        </li>
-                        <li onclick="nav(1)" id="n1" class="soso ">
-                            <a href="http://www.01nz.com.cn/targeting" target="">农家推荐</a>
-                        </li>
-                        <li onclick="nav(2)" id="n2" class="soso ">
-                            <a href="http://xianlu.01nz.com.cn/" target="">农家行</a>
-                        </li>
-                        <li onclick="nav(3)" id="n3" class="soso ">
-                            <a href="http://www.01nz.com.cn/farm" target="">农庄</a>
-                        </li>
-                        <li onclick="nav(4)" id="n4" class="soso ">
-                            <a href="http://www.01nz.com.cn/farmhouse" target="">农家乐</a>
-                        </li>
-                        <li onclick="nav(5)" id="n5" class="soso ">
-                            <a href="http://www.01nz.com.cn/biotope" target="">生态园</a>
-                        </li>
-                        <li onclick="nav(6)" id="n6" class="soso ">
-                            <a href="http://www.01nz.com.cn/fishing" target="">垂钓场</a>
-                        </li>
-
-                        <li class="zhuanti_dh" style="float: right;"><a href="http://www.01nz.com.cn/discover" target="_blank">专题</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--end 导航-->
-    </div>--%>
-
     <div class="wraps">
 
         <script type="text/javascript" src="../Scripts/Products/lang.js"></script>
@@ -547,159 +443,29 @@
                                     </div>
                                 </ItemTemplate>
                             </asp:Repeater>
-                            <%--<div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/24143.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/551a779b45e14_180x110.jpg" alt="马陆葡萄庄园"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/24143.html" target="_blank" class="f_l">马陆葡萄庄园</a><span class="people f_r">￥<span class="peoda">99</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/20909.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/547fbcfd562ca_180x110.jpg" alt="上海刚顺果蔬专业合作社农庄"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/20909.html" target="_blank" class="f_l">上海刚顺果蔬…</a><span class="people f_r">￥<span class="peoda">104</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/11749.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/5440d06e740cf_180x110.jpg" alt="孙桥现代农业园"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/11749.html" target="_blank" class="f_l">孙桥现代农业…</a><span class="people f_r">￥<span class="peoda">91</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/10663.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/543771c0bcc17_180x110.jpg" alt="上海梦徽草堂(今墨庄园)"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/10663.html" target="_blank" class="f_l">上海梦徽草堂…</a><span class="people f_r">￥<span class="peoda">100</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/8650.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53fff603557ba_180x110.jpg" alt="上海崇明六加伊农家乐"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/8650.html" target="_blank" class="f_l">上海崇明六加…</a><span class="people f_r">￥<span class="peoda">120</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/6637.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53eb2dd6bbb71_180x110.jpg" alt="凤冠奶油草莓基地"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/6637.html" target="_blank" class="f_l">凤冠奶油草莓…</a><span class="people f_r">￥<span class="peoda">114</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/6636.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53eb2c9cea0ab_180x110.jpg" alt="崧泽草莓园"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/6636.html" target="_blank" class="f_l">崧泽草莓园</a><span class="people f_r">￥<span class="peoda">95</span><span class="peohui">起</span></span></p>
-                            </div>
-                            <div class="s_info">
-                                <a href="http://sh.01nz.com.cn/farm/6316.html" target="_blank">
-                                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53e98d9722393_180x110.jpg" alt="赵屯草莓基地NO37"></a>
-                                <p class="store_name"><a href="http://sh.01nz.com.cn/farm/6316.html" target="_blank" class="f_l">赵屯草莓基地…</a><span class="people f_r">￥<span class="peoda">91</span><span class="peohui">起</span></span></p>
-                            </div>--%>
                         </div>
                     </div>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
-        <!--<div class="blank"></div>
-<div class="hg_25 clear"></div>
-	 <div class="store_dangji">
-		<div class="djtore_top">
-			<div class="title">当季行</div>
-			<ul class="down_store" id="dj_pose">
-									<li class="p_4 dj_yf"><a href="javascript:void(0);" onclick="load_yuefen_store(4)">四月</a></li>
-									<li class="p_5 "><a href="javascript:void(0);" onclick="load_yuefen_store(5)">五月</a></li>
-									<li class="p_6 "><a href="javascript:void(0);" onclick="load_yuefen_store(6)">六月</a></li>
-							</ul>
-			<div class="clear"></div>
-		</div>
-		<div id="ajax_yuefen_store" class="dj_xiangmu">
-			<div class="f_l dj_zuo">
-													</div>
-			<div class="f_l dj_zhong">
-											<a href="/farmlist/tid-116-cid-49-deal_type-0" target="_blank"><img src="http://sh.01nz.com.cn/public/attachment/201405/14/15/53731fdb26058.jpg"  alt="垂钓" /></a>
-										</div>
-			<div class="f_l dj_you">
-													</div>
-			<div class="clear"></div>
-		</div>
-	</div> -->
         <!-- 改版 -->
     </div>
     <div class="blank"></div>
-    <div id="ftw">
-        <div id="ft">
-            <!-- 热门城市 -->
-            <!-- 区县分类 -->
-            <!-- 热门农庄 -->
-            <!-- 友情链接 -->
-            <!-- 专题友情链接 -->
-            <div class="blank"></div>
-            <div class="foot_xian"></div>
-            <div class="blank"></div>
-            <div class="tc">
-                <a href="http://sh.01nz.com.cn/sys/id-20" target="_blank">关于我们</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-6" target="_blank">加入我们</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-30" target="_blank">联系我们</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-28" target="_blank">隐私保护</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-45" target="_blank">网站地图</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-9" target="_blank">商家登录</a>
-            </div>
-            <div class="blank"></div>
-            <div class="beian" align="center">版权所有：上海威和信息科技有限公司  <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备 13043989号-1</a>  电话：400-021-3158 邮箱：mc_01nz@163.com </div>
-            <div align="center" class="beian_eng">
-                Copyright 2013 www.01nz.com.cn All Rights Reserved.
-            </div>
-
-            <div align="center">
-                <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/xian.jpg" alt="灰线"></div>
-            <div align="center">
-                <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/jubao.gif" alt="举报中心" class="img">
-                <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/end_2.gif" alt="官方认证" class="img">
-                <a href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=dov73ne2cve0r70m02lemast61960airrs" target="_blank">
-                    <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/icon.gif" border="0"></a>
-                <img src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/end_3.gif" alt="网络110" class="img">
-                <img border="0" src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/image_err.gif">
-                <a href="http://shwg.dianping.com/index.html?tp=1.1.20.0.27.LKAvY0C-00-8v9E9&amp;ti=AY74lO" target="_blank">
-                    <img border="0" src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/wg.png"></a>
-            </div>
-            <div class="blank"></div>
-            <div class="blank"></div>
-            <div class="blank"></div>
-        </div>
-    </div>
-
-
     <div id="gotop"></div>
     <a href="http://sh.01nz.com.cn/cart" target="_blank">
         <div id="gowu"></div>
     </a>
-
-    <!--<script>-->
-    <!--var _hmt = _hmt || [];-->
-    <!--(function() {-->
-    <!--var hm = document.createElement("script");-->
-    <!--hm.src = "//hm.baidu.com/hm.js?1318dc1c344853eb801972de684dc612";-->
-    <!--var s = document.getElementsByTagName("script")[0];-->
-    <!--s.parentNode.insertBefore(hm, s);-->
-    <!--})();-->
-    <!--</script>-->
-
     <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/z_stat.php" language="JavaScript"></script>
     <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core.php" charset="utf-8" type="text/javascript"></script>
-    <a href="https://www.cnzz.com/stat/website.php?web_id=1254939469" target="_blank" title="站长统计">站长统计</a>
+
 
     <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/c.js.下载" language="JavaScript"></script>
     <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/tongji_360.php" language="JavaScript" charset="gb2312"></script>
     <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core(1).php" charset="utf-8" type="text/javascript"></script>
     <a href="https://quanjing.cnzz.com/" target="_blank" title="全景统计">
         <img border="0" hspace="0" vspace="0" src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/2.gif">
-    </a>
-    <!--<script type="text/javascript">-->
-    <!--var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8e539f2c9b5ea1c23be29aec34355f06' type='text/javascript'%3E%3C/script%3E"));-->
-    <!--var _hmt = _hmt || [];-->
-    <!--(function() {-->
-    <!--var hm = document.createElement("script");-->
-    <!--hm.src = "//hm.baidu.com/hm.js?f35b7bb370ac69983395e05eadad0079";-->
-    <!--var s = document.getElementsByTagName("script")[0];-->
-    <!--s.parentNode.insertBefore(hm, s);-->
-    <!--})();-->
-    <!--</script>-->
-<%--</body>
-</html>--%>
-        </div>
+    </a> </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
 </asp:Content>

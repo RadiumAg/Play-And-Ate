@@ -903,11 +903,13 @@
 						<!-- <a>我要认领</a> -->
 					</div>
 				</div>
-				<div class="l-40 sd_zdss f-16 f_l"> <label class="f_l ">地址：上海奉贤海湾旅游区金海公路8号</label> <a
-						href="javascript:void(0);" onclick="detail(40)" class="f_l ditu_bz"><span
-							class="ditu_biao"></span>查看地图</a>
-					<div class="f_r sd_rl"></div>
-				</div>
+                <div class="l-40 sd_zdss f-16 f_l">
+                    <label class="f_l ">地址：上海奉贤海湾旅游区金海公路8号</label>
+                    <a
+                        href="../Map/Map.aspx?productId=<%=product.ProductId %>" class="f_l ditu_bz"><span
+                            class="ditu_biao"></span>查看地图</a>
+                    <div class="f_r sd_rl"></div>
+                </div>
 				<div class="sd_hp f_l"><a href="http://sh.01nz.com.cn/farm/40.html#ul-store-tj">已推荐<label
 							class="blue">258</label>人</a><a href="http://sh.01nz.com.cn/farm/40.html#ul-store-dp"
 						class="blue">2个点评</a>&nbsp;&nbsp; <a>好评度<span class="spa_pa">100%</span></a> </div>

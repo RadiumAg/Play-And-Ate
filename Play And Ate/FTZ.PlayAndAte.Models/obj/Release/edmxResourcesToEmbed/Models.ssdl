@@ -45,6 +45,18 @@
     <Property Name="ProductId" Type="int" Nullable="false" />
     <Property Name="UserId" Type="int" Nullable="false" />
   </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“PlayAndAte.dbo.Point”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Point">
+    <Key>
+      <PropertyRef Name="Longitude" />
+      <PropertyRef Name="Latitude" />
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="Longitude" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Latitude" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+  </EntityType>
   <EntityType Name="PPointsType">
     <Key>
       <PropertyRef Name="Id" />
@@ -156,6 +168,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Poing_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="Point" Type="Self.Point" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="Point">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_PPointsType_PTotalType">
     <End Role="PTotalType" Type="Self.PTotalType" Multiplicity="0..1" />
     <End Role="PPointsType" Type="Self.PPointsType" Multiplicity="*" />
@@ -241,6 +265,13 @@
     <EntitySet Name="Sincerity" EntityType="Self.Sincerity" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="UserInfo_Role" EntityType="Self.UserInfo_Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Point" EntityType="Self.Point" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Point].[Longitude] AS [Longitude], 
+    [Point].[Latitude] AS [Latitude], 
+    [Point].[ProductId] AS [ProductId]
+    FROM [dbo].[Point] AS [Point]</DefiningQuery>
+    </EntitySet>
     <AssociationSet Name="FK_Customers_CardType" Association="Self.FK_Customers_CardType">
       <End Role="CardType" EntitySet="CardType" />
       <End Role="Customers" EntitySet="Customers" />
@@ -256,6 +287,10 @@
     <AssociationSet Name="FK_Order_UserInfo_Role" Association="Self.FK_Order_UserInfo_Role">
       <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
       <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Poing_Product" Association="Self.FK_Poing_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Point" EntitySet="Point" />
     </AssociationSet>
     <AssociationSet Name="FK_PPointsType_PTotalType" Association="Self.FK_PPointsType_PTotalType">
       <End Role="PTotalType" EntitySet="PTotalType" />
