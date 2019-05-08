@@ -4,17 +4,25 @@
 
 <html>
 <head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta property="qc:admins" content="1044064167601626375636" />
+    <meta property="wb:webmaster" content="efeb2f94a95bd5fd" />
     <meta name="Generator" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     <meta name="baidu-site-verification" content="rW5VmpPj0J" />
 
-    <title>第一农庄网:农家旅行的倾心之选;全国最大的农庄/农家乐/垂钓场/生态园/农家乐旅游在线预订平台</title>
+    <title>Play And Ate 生态农庄，采摘园，垂钓场，农家乐旅游</title>
+    <meta name="keywords" content="生态农庄,采摘园,垂钓场,温泉度假,农家乐旅游,三山岛农家乐,仙华山农家乐,安吉农家乐,前卫村,自驾游,周边游,农家菜,乡村游" />
+    <meta name="description" content="第一农庄网为热爱运动/休闲/养生和自驾游群体提供农庄/农家乐/垂钓场/农家乐旅游即时服务,可以快速找到身边的农庄/农家乐/垂钓场的信息,为更多商家寻找客源,扩大影响,并利用专业平台的优势,科学地帮助商家进行推广,提升品牌形象" />
     <meta name="baidu-site-verification" content="rW5VmpPj0J" />
     <meta name="360-site-verification" content="634348f4891eef9d2811d878f8674511" />
+    <link rel="Shortcut Icon" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
+    <!--地址栏和标签上显示图标-->
+    <link rel="Bookmark" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
+    <!--收藏夹显示图标-->
     <script src="../Plugin/jquery-1.8.3.min.js"></script>
     <script src="../Plugin/jquery.dotdotdot.js"></script>
-    <script src="../Scripts/jquery.unobtrusive-ajax.min.js"></script>
     <script src="../Scripts/Shared/querycity.js"></script>
     <script src="../Scripts/Shared/citylist.js"></script>
     <script src="../Scripts/Shared/lanrenzhijia.js"></script>
@@ -45,35 +53,19 @@
                     <div>
                         <%if (string.IsNullOrEmpty(userName))
                             { %>
-                        <span id="user_head_tip" class="f_l">欢迎光临 Play And Ate！
+                        <span id="user_head_tip" class="f_l">你好，欢迎光临第一农庄网！
                         <a href="../LoginAndRegister/Login.aspx">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                         <a href="../LoginAndRegister/Register.aspx">注册</a>
                         </span>
                         <%}
-                            else
-                            { %>
-                        <span class="f_l">你好<%=userName %>，欢迎光临Play And Ate</span>
-                        <span><a href="javascript:void(0)" id="singOut">退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>
+                        else
+                        { %>
+                        <span class="f_l">你好<%=userName %>，欢迎光临第一农庄网！
+                        </span>
                         <%} %>
-                        <script>
-                            $(function () {
-                                $("#singOut").click(function () {
-                                    $.ajax({
-                                        url: '../Services/Main.ashx?id=5',
-                                        type: 'POST',
-                                        dataType: 'json',
-                                        success: function (data) {
-                                            console.log(data);
-                                            if (data) {
-                                                location.reload();
-                                            } else {
-                                                alert("发生错误，退出失败！");
-                                            }
-                                        }
-                                    });
-                                });
-                            });
-                        </script>
+                        <a href="javascript:void(0)" onclick="submit_sms();">短信订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
+                        <a href="javascript:void(0)" onclick="unsubmit_sms();">短信退订</a><span class="v_line">&nbsp;|&nbsp;</span>
+                        <a href="javascript:void(0)">邮件订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
                     </div>
                 </div>
             </div>
@@ -82,7 +74,7 @@
                 <div class="headerss">
                     <div class="LOGE">
                         <a href="#">
-                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width: 185px; height: 150px; margin-top: -35px;" />
+                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width:185px;height:150px;margin-top:-35px;"/>
                         </a>
                     </div>
                     <div id="city">
@@ -207,7 +199,7 @@
                         </dl>
                     </div>
                     <div class="search_box_main search_boxs f_l">
-                        <div class="search_input_main f_l">
+                        <div class="search_input_main f_l" >
                             <input type="text" class="search_txt_main" name="keyword" id="header_kw" value="请输入您要搜索的关键词" x-webkit-speech="" x-webkit-grammar="builtin:translate">
                             <a id="sousuo_btn" class="search_btn_ss">搜索</a>
                         </div>
@@ -220,68 +212,70 @@
 
                 </div>
             </div>
-        </div>
-        <div class="menu_box" style="background-color: #fda300; position: relative; z-index: 2;">
-            <div class="menu" id="menus">
-                <div class="menu white" style="height: 36px; background-color: #fda300; margin: 0 auto; position: relative; width: 1180px;">
-                    <ul>
-                        <li><span class="LOGE_text">去农庄,就来我们！</span></li>
-                        <li onclick="nav(0)" id="n0" class="soso ">
-                            <a href="../Home/Home.aspx">首页</a>
-                        </li>
-                        <li onclick="nav(1)" id="n1" class="soso ">
-                            <a href="#">农家推荐</a>
-                        </li>
-                        <li onclick="nav(2)" id="n2" class="soso ">
-                            <a href="../Show/FarmRow.aspx">农家行</a>
-                        </li>
-                        <li onclick="nav(3)" id="n3" class="soso ">
-                            <a href="../Products/Farm.aspx" target="">农庄</a>
-                        </li>
-                        <li onclick="nav(4)" id="n4" class="soso ">
-                            <a href="../Products/Generated.aspx" target="">农家乐</a>
-                        </li>
-                        <li onclick="nav(5)" id="n5" class="soso ">
-                            <a href="../Products/Ecological.aspx" target="">生态园</a>
-                        </li>
-                        <li onclick="nav(6)" id="n6" class="soso ">
-                            <a href="../Products/Fishing.aspx" target="">垂钓场</a>
-                        </li>
-                        <li class="soso"><a href="../Special topic/Special topic.aspx">专题</a></li>
-                    </ul>
+            <div class="menu_box" style="    background-color: #fda300;
+    position: relative;
+    z-index: 2;">
+                <div class="menu" id="menus">
+                    <div class="menu white" id="menus" style="    height: 36px;
+    background-color: #fda300;
+    margin: 0 auto;
+    position: relative;
+    width: 1180px;">
+                        <ul>
+                            <li><span class="LOGE_text">去农庄,就上第一农庄网</span></li>
+                            <li onclick="nav(0)" id="n0" class="soso ">
+                                <a href="../Home/Home.aspx" target="">首页</a>
+                            </li>
+                            <li onclick="nav(1)" id="n1" class="soso ">
+                                <a href="../Show/FarmDetails.aspx" target="">农家推荐</a>
+                            </li>
+                            <li onclick="nav(2)" id="n2" class="soso ">
+                                <a href="../Line/Line1.aspx" target="">农家行</a>
+                            </li>
+                            <li onclick="nav(3)" id="n3" class="soso ">
+                                <a href="../Products/Farm.aspx" target="">农庄</a>
+                            </li>
+                            <li onclick="nav(4)" id="n4" class="soso ">
+                                <a href="../Products/Generated.aspx" target="">农家乐</a>
+                            </li>
+                            <li onclick="nav(5)" id="n5" class="soso ">
+                                <a href="../Products/Ecological.aspx" target="">生态园</a>
+                            </li>
+                            <li onclick="nav(6)" id="n6" class="soso ">
+                                <a href="../Products/Fishing.aspx" target="">垂钓场</a>
+                            </li>
+                            <li class="soso""><a href="../Special topic/Special topic.aspx" target="_blank">专题</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <script>
-            function nav(id) {
-                $(".soso").removeClass('nva_hover');
-                $("#n" + id).addClass('nva_hover');
-            }
-        </script>
-
-        <asp:ContentPlaceHolder ID="Content" runat="server" />
-        <div class="blank"></div>
-        <div class="foot_xian"></div>
-        <div id="ftw">
+            <script>
+                function nav(id) {
+                    $(".soso").removeClass('nva_hover');
+                    $("#n" + id).addClass('nva_hover');
+                }
+            </script>
+            <asp:ContentPlaceHolder ID="Content" runat="server" />
             <div class="blank"></div>
-            <div class="tc">
-                <a href="#" target="_blank">关于我们</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">加入我们</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">联系我们</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">隐私保护</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">网站地图</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">商家登录</a>
-            </div>
-            <div class="blank"></div>
-            <div class="beian" align="center">
-                版权所有：上海威和信息科技有限公司 <a href="#"
-                    target="_blank">沪ICP备 13043989号-1</a> 电话：400-021-3158 邮箱：mc_01nz@163.com
-            </div>
-            <div align="center" class="beian_eng">
-                Copyright 2013 www.01nz.com.cn All Rights Reserved.
-            </div>
+			<div class="foot_xian"> </div>
+			<div id="ftw">
+				<div class="blank"></div>
+				<div class="tc">
+					<a href="http://sh.01nz.com.cn/sys/id-20" target="_blank">关于我们</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-6" target="_blank">加入我们</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-30" target="_blank">联系我们</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-28" target="_blank">隐私保护</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-45" target="_blank">网站地图</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-9" target="_blank">商家登录</a>
+				</div>
+				<div class="blank"></div>
+				<div class="beian" align="center">版权所有：上海威和信息科技有限公司 <a href="http://www.miitbeian.gov.cn/"
+						target="_blank">沪ICP备 13043989号-1</a> 电话：400-021-3158 邮箱：mc_01nz@163.com </div>
+				<div align="center" class="beian_eng">
+					Copyright 2013 www.01nz.com.cn All Rights Reserved.</div>
+               </div>
+            <asp:ContentPlaceHolder ID="Footer" runat="server" />
         </div>
-        <asp:ContentPlaceHolder ID="Footer" runat="server" />
     </form>
 </body>
 </html>

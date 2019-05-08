@@ -34,14 +34,14 @@ function checksearchForm() {
     }
  
     function bannerAutoShow() {
-        if (s >= c) {
-            s = 0;
-        }
-        $("#divbanner li a").removeClass();
-        $("#divimagebanner a").filter(":visible").hide();
-        $("#divbanner li a").eq(s).addClass('on');
-        $("#divimagebanner a").eq(s).show();
-        s++;
+        //if (s >= c) {
+        //    s = 0;
+        //}
+        //$("#divbanner li a").removeClass();
+        //$("#divimagebanner a").filter(":visible").hide();
+        //$("#divbanner li a").eq(s).addClass('on');
+        //$("#divimagebanner a").eq(s).show();
+        //s++;
     }
     function bannerlist() {
         clock = window.setInterval("bannerAutoShow()", 3000);
@@ -51,7 +51,6 @@ function checksearchForm() {
         $("#divbanner li").each(function(index) {
 										 
             $(this).bind("mouseover", function() {
-			
                 $("#divbanner li a").removeClass();
                 $("#divimagebanner a").filter(":visible").hide();
                 $("#divbanner li a").eq(index).addClass('on');

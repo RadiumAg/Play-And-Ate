@@ -1,5 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Ecological.aspx.cs" Inherits="Play_And_Ate.Products.Ecological" %>
-<asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+
+ <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server"> <link rel="Shortcut Icon" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
+    <!--地址栏和标签上显示图标-->
+    <link rel="Bookmark" href="http://www.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
+    <!--收藏夹显示图标-->
+    <link rel="stylesheet" type="text/css" href="../Content/Products/cf62177493ce4db40c22962f60d846f8.css" />
+    <script type="text/javascript" src="../Scripts/Products/908ca0ab9e4d27144b60bc878b237327.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../Scripts/Products/baidumap.js"></script>
+    <link href="../Content/Products/base.v606141511.css" rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src="../Scripts/Products/header.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../Scripts/Products/mt3.v1014201036.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../Scripts/Products/fgcomm.v620152248.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../Scripts/Products/sousuo.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../Scripts/Products/index_header.js" charset="utf-8"></script>
+</asp:Content>
+   <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="wraps">
         <div style="display: none">
             <div class="blank"></div>
@@ -131,6 +146,7 @@
             </ul>
         </div>
         <div class="in_center">
+            <%--//左边栏--%>
             <div class="stort_left f_l">
                 <div class="store_zhti">
                     <div class="blank"></div>
@@ -238,6 +254,7 @@
 	    	<adv adv_id="生态园二级页左侧广告位2">
 		</adv></adv>
             </div>
+            <%--右边栏--%>
             <div class="store_middle f_r">
                 <div id="main_adv_box" class="main_adv_box f_l">
                     <div id="main_adv_img" class="main_adv_img">
@@ -305,10 +322,8 @@
                     </div>
                     <div class="shty_vip">
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l">
-                                <a href="Ecological/1.html" target="_blank">
-                                    <img src="../Images/Products/53b21abd4c7e4_270x165.jpg" alt="高家庄生态园" width="270" height="165" /></a>
-                            </div>
+                            <div class="shty_lb_img f_l"><a href="Ecological/1.html" target="_blank">
+                                <img src="../Images/Products/53b21abd4c7e4_270x165.jpg" alt="高家庄生态园" width="270" height="165" /></a></div>
                             <div class="shty_lb_txt f_l">
                                 <div class="shty_tit"><a href="Ecological/1.html" target="_blank">高家庄生态园</a></div>
                                 <div class="shty_pingxing">
@@ -324,10 +339,8 @@
                             <div class="clear"></div>
                         </div>
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l">
-                                <a href="Ecological/2.html" target="_blank">
-                                    <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a>
-                            </div>
+                            <div class="shty_lb_img f_l"><a href="Ecological/2.html" target="_blank">
+                                <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a></div>
                             <div class="shty_lb_txt f_l">
                                 <div class="shty_tit"><a href="Ecological/2.html" target="_blank">申隆生态园</a></div>
                                 <div class="shty_pingxing">
@@ -343,10 +356,8 @@
                             <div class="clear"></div>
                         </div>
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l">
-                                <a href="Ecological/1.html" target="_blank">
-                                    <img src="../Images/Products/53b21abd4c7e4_270x165.jpg" alt="高家庄生态园" width="270" height="165" /></a>
-                            </div>
+                            <div class="shty_lb_img f_l"><a href="Ecological/1.html" target="_blank">
+                                <img src="../Images/Products/53b21abd4c7e4_270x165.jpg" alt="高家庄生态园" width="270" height="165" /></a></div>
                             <div class="shty_lb_txt f_l">
                                 <div class="shty_tit"><a href="Ecological/1.html" target="_blank">高家庄生态园</a></div>
                                 <div class="shty_pingxing">
@@ -362,10 +373,8 @@
                             <div class="clear"></div>
                         </div>
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l">
-                                <a href="Ecological/2.html" target="_blank">
-                                    <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a>
-                            </div>
+                            <div class="shty_lb_img f_l"><a href="Ecological/2.html" target="_blank">
+                                <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a></div>
                             <div class="shty_lb_txt f_l">
                                 <div class="shty_tit"><a href="Ecological/2.html" target="_blank">申隆生态园</a></div>
                                 <div class="shty_pingxing">
@@ -381,10 +390,8 @@
                             <div class="clear"></div>
                         </div>
                         <div class="shty_fenge f_r shty_sj">
-                            <div class="shty_lb_img f_l">
-                                <a href="Ecological/2.html" target="_blank">
-                                    <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a>
-                            </div>
+                            <div class="shty_lb_img f_l"><a href="Ecological/2.html" target="_blank">
+                                <img src="../Images/Products/53b223dfb1dee_270x165.jpg" alt="申隆生态园" width="270" height="165"></a></div>
                             <div class="shty_lb_txt f_l">
                                 <div class="shty_tit"><a href="Ecological/2.html" target="_blank">申隆生态园</a></div>
                                 <div class="shty_pingxing">
@@ -409,87 +416,14 @@
             <!-- 改版 -->
         </div>
         <div class="blank"></div>
-        <div id="ftw">
-            <div id="ft">
-                <!-- 热门城市 -->
-                <!-- 区县分类 -->
-                <!-- 热门农庄 -->
-                <!-- 友情链接 -->
-                <!-- 专题友情链接 -->
-                <div class="blank"></div>
-                <div class="foot_xian"></div>
-                <div class="blank"></div>
-                <div class="tc">
-                    <a href="http://www.01nz.com.cn/sys/id-20" target="_blank">关于我们</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-6" target="_blank">加入我们</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-30" target="_blank">联系我们</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-28" target="_blank">隐私保护</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-45" target="_blank">网站地图</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-9" target="_blank">商家登录</a>
-                </div>
-                <div class="blank"></div>
-                <div class="beian" align="center">版权所有：上海威和信息科技有限公司  <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备 13043989号-1</a>  电话：400-021-3158 邮箱：mc_01nz@163.com </div>
-                <div align="center" class="beian_eng">
-                    Copyright 2013 www.01nz.com.cn All Rights Reserved.
-                </div>
-
-                <div align="center">
-                    <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/xian.jpg" alt="灰线">
-                </div>
-                <div align="center">
-                    <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/jubao.gif" alt="举报中心" class="img">
-                    <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/end_2.gif" alt="官方认证" class="img">
-                    <a href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=dov73ne2cve0r70m02lemast61960airrs" target="_blank">
-                        <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/icon.gif" border="0"></a>
-                    <img src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/end_3.gif" alt="网络110" class="img">
-                    <img border="0" src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/image_err.gif">
-                    <a href="http://shwg.dianping.com/index.html?tp=1.1.20.0.27.LKAvY0C-00-8v9E9&amp;ti=AY74lO" target="_blank">
-                        <img border="0" src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/wg.png"></a>
-                </div>
-                <div class="blank"></div>
-                <div class="blank"></div>
-                <div class="blank"></div>
-            </div>
-        </div>
-
-
-        <div id="gotop"></div>
-        <a href="http://www.01nz.com.cn/cart" target="_blank">
-            <div id="gowu"></div>
-        </a>
-
-        <!--<script>-->
-        <!--var _hmt = _hmt || [];-->
-        <!--(function() {-->
-        <!--var hm = document.createElement("script");-->
-        <!--hm.src = "//hm.baidu.com/hm.js?1318dc1c344853eb801972de684dc612";-->
-        <!--var s = document.getElementsByTagName("script")[0];-->
-        <!--s.parentNode.insertBefore(hm, s);-->
-        <!--})();-->
-        <!--</script>-->
-
-        <script src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/z_stat.php" language="JavaScript"></script>
-        <script src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/core.php" charset="utf-8" type="text/javascript"></script>
-        <a href="https://www.cnzz.com/stat/website.php?web_id=1254939469" target="_blank" title="站长统计">站长统计</a>
-
-        <script src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/c.js" language="JavaScript"></script>
-        <script src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/tongji_360.php" language="JavaScript" charset="gb2312"></script>
-        <script src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/core(1).php" charset="utf-8" type="text/javascript"></script>
+        <script src="../Scripts/Products/z_stat.php" ></script>
+        <script src="../Scripts/Products/core.php" charset="utf-8" type="text/javascript"></script> 
+        <script src="../Scripts/Products/c.js"></script>
+        <script src="../Scripts/Products/tongji_360.php" charset="gb2312"></script>
+        <script src="../Scripts/Products/core(1).php" charset="utf-8" type="text/javascript"></script>
         <a href="https://quanjing.cnzz.com/" target="_blank" title="全景统计">
-            <img border="0" hspace="0" vspace="0" src="./生态园_农庄_垂钓场_农家乐_农家度假哪里好，全国最大的生态园_垂钓场_农庄_农家乐_农家乐旅游在线预订平台-第一农庄网_files/2.gif"></a>
-        <!--<script type="text/javascript">-->
-        <!--var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F8e539f2c9b5ea1c23be29aec34355f06' type='text/javascript'%3E%3C/script%3E"));-->
-        <!--var _hmt = _hmt || [];-->
-        <!--(function() {-->
-        <!--var hm = document.createElement("script");-->
-        <!--hm.src = "//hm.baidu.com/hm.js?f35b7bb370ac69983395e05eadad0079";-->
-        <!--var s = document.getElementsByTagName("script")[0];-->
-        <!--s.parentNode.insertBefore(hm, s);-->
-        <!--})();-->
-        <!--</script>-->
     </div>
-</asp:Content>
-<%--</body>
-</html>--%>
+    </asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
 </asp:Content>
