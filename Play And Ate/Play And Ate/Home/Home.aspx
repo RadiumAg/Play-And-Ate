@@ -59,7 +59,7 @@
                     <div class="gdonetop">
                         <div class="gdonel">
                             <div class="odbg"></div>
-                            <label class="f_l">发需求获推荐 </label>
+                            <label style="color:black;">选择需求</label>
                         </div>
                         <div class="gdoner">
                             <div class="gdbgimg gda"></div>
@@ -69,6 +69,7 @@
                         <div class="gdonebotl">
                             <ul>
                                 <li>
+                                    
                                     <div class="gbotltop">
                                         <div class="gbotllibg gbga"></div>
                                         <label>专业客服</label>
