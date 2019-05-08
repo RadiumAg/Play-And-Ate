@@ -7,7 +7,7 @@
 // </自动生成>
 //------------------------------------------------------------------------------
 
-namespace Play_And_Ate.Shared {
+namespace Play_And_Ate.Products {
     
     
     public partial class Generated {

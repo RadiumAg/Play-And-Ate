@@ -35,7 +35,8 @@
                     <img src="../Images/Show/FarmRow/share.gif" width="16" height="18" border="0" align="absmiddle" />打印行程</a>
                 <a href="http://xianlu.01nz.com.cn/add/word.php?aid=1147" target="_blank">
                     <img src="../Images/Show/FarmRow/word.gif" width="16" height="16" border="0" align="absmiddle">下载行程</a>
-
+            </div>
+        </div>
         <div class="a_body top10">
 
             <div class="a_title">
