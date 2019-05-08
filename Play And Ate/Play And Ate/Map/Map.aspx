@@ -15,16 +15,6 @@
             margin: 0;
             font-family: "微软雅黑";
         }
-
-        #allmap {
-            width: 100%;
-            height: 500px;
-        }
-
-        p {
-            margin-left: 5px;
-            font-size: 14px;
-        }
     </style>
 </head>
 <body id="allmap" style="width: 100%; height: 100%;">
@@ -37,7 +27,7 @@
     //2.创建经纬对象
     var point = new BMap.Point(<%= point.Longitude%>, <%= point.Latitude%>);
     //3.初始化地区
-    map.centerAndZoom(point, 15);
+    map.centerAndZoom(point, 20);
     //4.创建标注
     var marker = new BMap.Marker(point);
     //5.将标注添加到地图中
@@ -52,4 +42,32 @@
     stCtrl.setOffset(new BMap.Size(20, 20));
     //9.添加全景控件
     map.addControl(stCtrl);
+    //添加定位相关控件
+    //1.添加带有定位的导航控件
+    var navigationControl = new BMap.NavigationControl({
+        //靠左上角位置
+        anchor: BMAP_ANCHOR_TOP_LEFT,
+        //LARGE类型
+        type: BMAP_NAVIGATION_CONTROL_LARGE,
+        //启用显示定位
+        enableGeolocation: true
+    });
+    map.addControl(navigationControl);
+    //添加定位控件
+    var geolocationControl = new BMap.GeolocationControl();
+    geolocationControl.addEventListener("locationSuccess", function (e) {
+        //定位成功事件
+        var address = '';
+        address += e.addressComponent.province;
+        address += e.addressComponent.city;
+        address += e.addressComponent.district;
+        address += e.addressComponent.street;
+        address += e.addressComponent.streetNumber;
+        alert("当前定位地址为：" + address);
+    });
+    geolocationControl.addEventListener("locationError", function (e) {
+        //定位失败事件
+        alert(e.message);
+    });
+    map.addControl(geolocationControl);
 </script>
