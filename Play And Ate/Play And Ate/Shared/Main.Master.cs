@@ -15,20 +15,6 @@ namespace Play_And_Ate.Shared
             }
         }
 
-        protected void btnHome_Click(object sender, EventArgs e)
-        {
-            this.Response.Redirect("/LoginAndRegister/ordinary.html");
-        }
-
-        protected void btnTui_Click(object sender, EventArgs e)
-        {
-            this.Response.Redirect("/Show/FarmDetails.aspx");
-        }
-
-        protected void btnGo_Click(object sender, EventArgs e)
-        {
-            this.Response.Redirect("/Show/FarmRow.aspx");
-        }
 
     }
 }
