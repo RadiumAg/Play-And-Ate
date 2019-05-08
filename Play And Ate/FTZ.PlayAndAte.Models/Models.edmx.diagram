@@ -27,6 +27,8 @@
         <AssociationConnector Association="PlayAndAteModel.FK_Product_UserInfo_Role" ManuallyRouted="false" />
         <AssociationConnector Association="PlayAndAteModel.FK_UserInfo_Role_Role_UserInfo" ManuallyRouted="false" />
         <AssociationConnector Association="PlayAndAteModel.FK_Sincerity_UserInfo_Role" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="PlayAndAteModel.Point" Width="1.5" PointX="10.5" PointY="10.875" />
+        <AssociationConnector Association="PlayAndAteModel.FK_Poing_Product" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

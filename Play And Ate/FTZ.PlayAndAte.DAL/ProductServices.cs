@@ -78,6 +78,7 @@ namespace FTZ.PlayAndAte.DAL
                 {
                     int id = Convert.ToInt32(productId);
                     var data = entities.Product
+                                     .Include("Point")
                                      .Where(d => d.ProductId == id).FirstOrDefault();
                     Product result = new Product();
                     result = data;

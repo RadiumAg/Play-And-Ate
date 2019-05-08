@@ -76,6 +76,7 @@
     <NavigationProperty Name="Image" Relationship="Self.FK_Image_Product" FromRole="Product" ToRole="Image" />
     <NavigationProperty Name="PPointsType" Relationship="Self.FK_Product_PPointsType" FromRole="Product" ToRole="PPointsType" />
     <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Product_UserInfo_Role" FromRole="Product" ToRole="UserInfo_Role" />
+    <NavigationProperty Name="Point" Relationship="PlayAndAteModel.FK_Poing_Product" FromRole="Product" ToRole="Point" />
   </EntityType>
   <EntityType Name="PTotalType">
     <Key>
@@ -301,5 +302,33 @@
       <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
       <End Role="Sincerity" EntitySet="Sincerity" />
     </AssociationSet>
+    <EntitySet Name="Point" EntityType="PlayAndAteModel.Point" />
+    <AssociationSet Name="FK_Poing_Product" Association="PlayAndAteModel.FK_Poing_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Point" EntitySet="Point" />
+    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="Point">
+    <Key>
+      <PropertyRef Name="Longitude" />
+      <PropertyRef Name="Latitude" />
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="Longitude" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Latitude" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Product" Relationship="PlayAndAteModel.FK_Poing_Product" FromRole="Point" ToRole="Product" />
+  </EntityType>
+  <Association Name="FK_Poing_Product">
+    <End Type="PlayAndAteModel.Product" Role="Product" Multiplicity="1" />
+    <End Type="PlayAndAteModel.Point" Role="Point" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="ProductId" />
+      </Principal>
+      <Dependent Role="Point">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

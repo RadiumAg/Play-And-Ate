@@ -1144,7 +1144,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="mtext_cm"><img src="http://www.01nz.com.cn/public/attachment/201505/12/14/55519e2dde624.jpg" alt="" border="0" /> </div> -->
             <div class="mtext_zt">
                 <div class="mtext_b_ls f_l">
                     <div class="mtext_b_l_title lvse">

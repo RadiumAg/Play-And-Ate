@@ -283,6 +283,7 @@
     <Content Include="Line\LineDetail.aspx" />
     <Content Include="LoginAndRegister\Login.aspx" />
     <Content Include="LoginAndRegister\Register.aspx" />
+    <Content Include="Map\Map.aspx" />
     <Content Include="Order\Order.aspx" />
     <Content Include="Order\Order.html" />
     <Content Include="Order\Order_2.aspx" />
@@ -1287,6 +1288,13 @@
     </Compile>
     <Compile Include="LoginAndRegister\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\Map.aspx.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\Map.aspx.designer.cs">
+      <DependentUpon>Map.aspx</DependentUpon>
     </Compile>
     <Compile Include="Order\Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
