@@ -29,29 +29,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="head1">
         <div class="de">
-            <div class="lt"><span class="weizhi">0你的位置：</span><a href="http://xianlu.01nz.com.cn/">农家行</a><a href="http://xianlu.01nz.com.cn/add/l.php?tid="></a><a href="http://xianlu.01nz.com.cn/add/list/490.html">跟团行</a><a href="http://xianlu.01nz.com.cn/add/list/615.html">临安</a><span class="biha">产品编号：652305dec205071</span> </div>
+            <div class="lt"><span class="weizhi">你的位置：</span><a href="http://xianlu.01nz.com.cn/">农家行</a><a href="http://xianlu.01nz.com.cn/add/l.php?tid="></a><a href="http://xianlu.01nz.com.cn/add/list/490.html">跟团行</a><a href="http://xianlu.01nz.com.cn/add/list/615.html">临安</a><span class="biha">产品编号：652305dec205071</span> </div>
             <div class="dee">
                 <a href="http://xianlu.01nz.com.cn/add/print.php?aid=1147" target="_blank">
                     <img src="../Images/Show/FarmRow/share.gif" width="16" height="18" border="0" align="absmiddle" />打印行程</a>
                 <a href="http://xianlu.01nz.com.cn/add/word.php?aid=1147" target="_blank">
                     <img src="../Images/Show/FarmRow/word.gif" width="16" height="16" border="0" align="absmiddle">下载行程</a>
-
-
-
-                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
-
-                    <span class="bds_more"></span>
-                    <a class="bds_qzone" title="分享到QQ空间" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
-                    <a class="bds_tsina" title="分享到新浪微博" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
-                    <a class="bds_tqq" title="分享到腾讯微博" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
-                    <a class="bds_renren" title="分享到人人网" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
-
-                </div>
-
-
-
-            </div>
-        </div>
 
         <div class="a_body top10">
 
@@ -134,7 +117,32 @@
                             <div class="fastCalender2" id="fastCalender2">
                                 <li id="yuding"><span>预&nbsp;订&nbsp;价：</span><i>￥</i><b>189</b><i> 起</i> &nbsp;&nbsp;
                                     <span>原&nbsp;&nbsp;价：</span><span style="color: #666666; text-decoration: line-through;">￥299</span>&nbsp;&nbsp;<span>省：</span>￥110
-                                    <span><a href="javascript:void(0);">起价说明?</a></span></li>
+                                    <span><a href="javascript:void(0);">起价说明?<div class="de">
+            <div class="lt"><span class="weizhi">你的位置：</span><a href="http://xianlu.01nz.com.cn/">农家行</a><a href="http://xianlu.01nz.com.cn/add/list/490.html">跟团行</a><a href="http://xianlu.01nz.com.cn/add/list/615.html">临安</a><span class="biha">产品编号：652305dec205071</span> </div>
+            <div class="dee">
+                <a href="http://xianlu.01nz.com.cn/add/print.php?aid=1147" target="_blank">
+                    <img src="../Images/Show/FarmRow/share.gif" width="16" height="18" border="0" align="absmiddle" />打印行程</a>
+                <a href="http://xianlu.01nz.com.cn/add/word.php?aid=1147" target="_blank">
+                    <img src="../Images/Show/FarmRow/word.gif" width="16" height="16" border="0" align="absmiddle">下载行程</a>
+
+
+
+                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+
+                    <span class="bds_more"></span>
+                    <a class="bds_qzone" title="分享到QQ空间" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
+                    <a class="bds_tsina" title="分享到新浪微博" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
+                    <a class="bds_tqq" title="分享到腾讯微博" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
+                    <a class="bds_renren" title="分享到人人网" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+                                    </a></span></li>
                                 <li style="margin-top: 5px;"><span>出发日期：</span><font>星期三,星期六</font></li>
 
                                 <li><span>提前报名：</span>建议提前3天报名</li>
