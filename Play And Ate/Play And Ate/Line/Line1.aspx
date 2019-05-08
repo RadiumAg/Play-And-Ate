@@ -84,7 +84,6 @@
                         $('#s_begin_date,#s_end_date').TN_date();
                         $('#business_park').TN_CityPos({ 'ldObj': $('#city'), 'ldObjInitTxt': '中文/拼音' });
                     });
-
                     $(document).ready(function () {
                         $('#index_chengshi li').eq(0).removeClass('city');
                         $('#index_chengshi li').eq(0).addClass('moren mr_nj');
