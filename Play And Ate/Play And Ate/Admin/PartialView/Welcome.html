@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="pp">
+        <div style="width:33%"></div>
+        <div style="width:33%"></div>
+        <div style="width:33%"></div>
+    </div>
+    <script>
+        $(function () {
+            //渲染门户
+            ShowPortal();
+        });
+       
+
+        //渲染门户
+        function ShowPortal() {
+            $('#pp').portal({
+                fit: true
+            });
+
+            let title = ["时间", "公告", "时间", "欢迎光临", "新动态", "竞标"];
+
+            // 创建面板
+            for (i = 0; i < 6; i++) {
+                var p = $('<div></div>').appendTo('body');
+                p.panel({
+                    title: title[i],
+                    height: 150,
+                    closable: true,
+                    collapsible: true
+                });
+
+                // 添加面板对象到门户对象中
+                $('#pp').portal('add', {
+                    panel: p,
+                    columnIndex: i % 3
+                });
+            }
+
+        }
+    </script>
+</body>
+</html>

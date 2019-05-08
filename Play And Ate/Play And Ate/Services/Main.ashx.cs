@@ -33,6 +33,26 @@ namespace Play_And_Ate.Services
                 case "4":
                     Register();
                     break;
+                case "5":
+                    Logout();
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// 退出登录
+        /// </summary>
+        public void Logout()
+        {
+            try
+            {
+                Authentication.logOut();
+                context.Response.Cookies["UserName"].Value = null;
+                context.Response.Write(JsonConvert.SerializeObject(true));
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write(JsonConvert.SerializeObject(false));
             }
         }
 
@@ -74,8 +94,8 @@ namespace Play_And_Ate.Services
             {
                 context.Response.Write(JsonConvert.SerializeObject("0"));
             }
-                
-                
+
+
         }
 
         /// <summary>

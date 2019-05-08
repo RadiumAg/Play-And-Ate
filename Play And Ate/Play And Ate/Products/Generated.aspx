@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Play_And_Ate.Shared.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Generated.aspx.cs" Inherits="Play_And_Ate.Products.Generated" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">  <link rel="Shortcut Icon" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" /><!--地址栏和标签上显示图标-->
     <link rel="Bookmark" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" /><!--收藏夹显示图标-->

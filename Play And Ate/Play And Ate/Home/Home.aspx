@@ -15,19 +15,19 @@
         var ERROR_IMG = '../Images/Home/image_err.gif';
     </script>
     <script type="text/javascript">
-            //首先用JQ判断浏览器类型及版本，如果是IE8以下的浏览器就用effect=show，否则就用effect=fadeIn，判断浏览器版本函数如下
-            function checkbrowse() {
-                var ua = navigator.userAgent.toLowerCase();
-                var is = (ua.match(/\b(chrome|opera|safari|msie|firefox)\b/) || ['', 'mozilla'])[1];
-                var r = '(?:' + is + '|version)[\\/: ]([\\d.]+)';
-                var v = (ua.match(new RegExp(r)) || [])[1];
-                jQuery.browser.is = is;
-                jQuery.browser.ver = v;
-                return {
-                    'is': jQuery.browser.is,
-                    'ver': jQuery.browser.ver
-                }
+        //首先用JQ判断浏览器类型及版本，如果是IE8以下的浏览器就用effect=show，否则就用effect=fadeIn，判断浏览器版本函数如下
+        function checkbrowse() {
+            var ua = navigator.userAgent.toLowerCase();
+            var is = (ua.match(/\b(chrome|opera|safari|msie|firefox)\b/) || ['', 'mozilla'])[1];
+            var r = '(?:' + is + '|version)[\\/: ]([\\d.]+)';
+            var v = (ua.match(new RegExp(r)) || [])[1];
+            jQuery.browser.is = is;
+            jQuery.browser.ver = v;
+            return {
+                'is': jQuery.browser.is,
+                'ver': jQuery.browser.ver
             }
+        }
         //改造Jquery.LazyLoad.js函数，根据浏览器版本来显示不同的滤镜效果
         var public = checkbrowse();
         var showeffect = "";
@@ -105,7 +105,7 @@
                         <div id="citys" class="none">
                             <dl id="warpper">
                                 <dd id="c1">
-                                    <ul id="rm_chengshi">
+                                    <ul>
                                         <li>
                                             <font color="#DE751E"><b>&nbsp;华北</b></font>
                                         </li>
@@ -449,7 +449,7 @@
                                     target="_blank">淀山湖</a>
                             </li>
                             <li>
-                                <a href=#"
+                                <a href="#"
                                     target="_blank">野生动物园</a>
                             </li>
                             <li>
@@ -461,7 +461,7 @@
                                     target="_blank">欢乐谷</a>
                             </li>
                             <li>
-                                <a href=#"
+                                <a href="#"
                                     target="_blank">前卫生态村</a>
                             </li>
                             <li>
@@ -485,7 +485,7 @@
                                     target="_blank">滨江森林公园</a>
                             </li>
                             <li>
-                                <a href=#"
+                                <a href="#"
                                     target="_blank">长兴岛</a>
                             </li>
                             <li>
@@ -497,7 +497,7 @@
                                     target="_blank">美兰湖</a>
                             </li>
                             <li>
-                                <a href=#"
+                                <a href="#"
                                     target="_blank">东平国家森林公园</a>
                             </li>
                             <li>
@@ -1014,7 +1014,7 @@
                     $(function () {
                         //$(".m_rm_text").dotdotdot();
                         $.ajax({
-                            url: "PartialView/Hot.html",
+                            url: "/Home/PartialView/Hot.html",
                             type: "GET",
                             dataType: "HTML",
                             success: function (data) {
@@ -1028,9 +1028,7 @@
                 <div class="mtext_gg_img f_l">
                     <a href="#" class="guanggaotonglan" target="_blank">
                         <div>
-                            <font style="background-color: #ffffff;"><img alt="" border="0"
-											src="../Images/Home/57e105a3d7f31.jpg">
-									</font>
+                            <font style="background-color: #ffffff;"><img alt="" border="0" src="../Images/Home/57e105a3d7f31.jpg"></font>
                         </div>
                     </a>
                 </div>
@@ -1055,7 +1053,7 @@
                 </div>
                 <script>
                     $.ajax({
-                        url: "PartialView/Company.html",
+                        url: "/Home/PartialView/Company.html",
                         type: "GET",
                         dataType: "HTML",
                         success: function (data) {
@@ -1146,7 +1144,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="mtext_cm"><img src="http://www.01nz.com.cn/public/attachment/201505/12/14/55519e2dde624.jpg" alt="" border="0" /> </div> -->
             <div class="mtext_zt">
                 <div class="mtext_b_ls f_l">
                     <div class="mtext_b_l_title lvse">
@@ -1336,6 +1333,4 @@
             </div>
         </div>
     </div>
-    <div class="blank"></div>
-    <div class="foot_xian"></div>
 </asp:Content>

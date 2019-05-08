@@ -11,8 +11,6 @@ D:\项目\项目\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.dl
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.pdb
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\EntityFramework.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.DAL.dll.config
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\EntityFramework.xml
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.Models.dll.config
 D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.BLL.dll
 D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.BLL.pdb
@@ -39,8 +37,6 @@ C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.P
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.DAL.dll.config
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.Models.pdb
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAndAte.Models.dll.config
-C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\EntityFramework.xml
-C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.csprojAssemblyReference.cache
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.csproj.CoreCompileInputs.cache
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.csproj.CopyComplete
