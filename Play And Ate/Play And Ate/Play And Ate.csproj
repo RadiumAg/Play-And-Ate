@@ -136,7 +136,6 @@
     <Content Include="Home\Home.aspx" />
     <Content Include="Home\PartialView\Company.html" />
     <Content Include="Home\PartialView\Hot.html" />
-    <Content Include="HtmlPage1.html" />
     <Content Include="Images\Admin\Admin.jpg" />
     <Content Include="Images\Home\5270b12bd8b1d.jpg" />
     <Content Include="Images\Home\52807b105cb1b.jpg" />
