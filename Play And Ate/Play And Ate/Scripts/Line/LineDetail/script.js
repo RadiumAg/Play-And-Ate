@@ -2435,10 +2435,12 @@ function load_farm_store(farm){
 	$("#index_purpose li.p_"+farm).css({"background-image":"none","background":"#f9af46","border-radius":"3px"});
 	$("#index_purpose li.p_"+farm+" a").css({"color":"#fff"});
 	$.ajax({
-		url:APP_ROOT+"/store.php?ctl=farm&act=ajax_gengduo_chengshi&is_ajax=1&farm_id="+farm,
-		success:function(e){
-			$("#chengshi_gengduo a").attr("href","http://"+e+".01nz.com.cn/farmlist");
-		},
+        url: "../Products/Farm.aspx?TAreaID=farm",
+        success: function (e) {
+            $("#chengshi_gengduo a").attr("href", "#");
+        },
+        type: JSON,
+
 		error:function(o){
 			//alert(123);
 		}

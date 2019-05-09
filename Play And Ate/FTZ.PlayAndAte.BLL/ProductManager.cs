@@ -53,9 +53,19 @@ namespace FTZ.PlayAndAte.BLL
         /// 根据农家行查询下面所有农庄的信息
         /// </summary>
         /// <returns></returns>
-        public static List<Product> GetProductsBytotal()
+        public static List<Product> GetProductsBytotal(int id)
         {
-            return ProductServices.GetProductsBytotal();
+            return ProductServices.GetProductsBytotal(id);
+        }
+
+        /// <summary>
+        /// 根据总类型查询地区
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public static List<Area> GetAreasByTotal(int type)
+        {
+            return ProductServices.GetAreasByTotal(type);
         }
 
     }

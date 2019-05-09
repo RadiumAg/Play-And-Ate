@@ -27,6 +27,9 @@ namespace FTZ.PlayAndAte.Models
         public Nullable<int> PPTId { get; set; }
         public Nullable<int> AreaId { get; set; }
         public Nullable<decimal> ProductPrice { get; set; }
+        public string DetailAreaName { get; set; }
+        public string DetailIntroduction { get; set; }
+        public string Feature { get; set; }
     
         public virtual Area Area { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

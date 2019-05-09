@@ -550,8 +550,7 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 
 <script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/z_stat.php" language="JavaScript"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core.php" charset="utf-8" type="text/javascript"></script><a href="https://www.cnzz.com/stat/website.php?web_id=1254939469" target="_blank" title="站长统计">站长统计</a>
 
-<script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/c.js" language="JavaScript"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/tongji_360.php" language="JavaScript" charset="gb2312"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core(1).php" charset="utf-8" type="text/javascript"></script><a href="https://quanjing.cnzz.com/" target="_blank" title="全景统计"><img border="0" hspace="0" vspace="0" src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/2.gif"></a>
-
+<script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/c.js" language="JavaScript"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/tongji_360.php" language="JavaScript" charset="gb2312"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core(1).php" charset="utf-8" type="text/javascript"></script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
 </asp:Content>
