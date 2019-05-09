@@ -77,6 +77,9 @@
     <NavigationProperty Name="PPointsType" Relationship="Self.FK_Product_PPointsType" FromRole="Product" ToRole="PPointsType" />
     <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Product_UserInfo_Role" FromRole="Product" ToRole="UserInfo_Role" />
     <NavigationProperty Name="Point" Relationship="PlayAndAteModel.FK_Poing_Product" FromRole="Product" ToRole="Point" />
+    <Property Name="DetailAreaName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DetailIntroduction" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Feature" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="PTotalType">
     <Key>

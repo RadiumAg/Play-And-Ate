@@ -51,3 +51,19 @@ C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.P
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.csproj.CopyComplete
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.dll
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.DAL.dll.config
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.DAL.dll
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.DAL.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.Models.dll
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.dll
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.Models.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\FTZ.PlayAndAte.Models.dll.config
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.Unity.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.csprojAssemblyReference.cache
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.csproj.CoreCompileInputs.cache
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.csproj.CopyComplete
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.dll
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.DAL\obj\Debug\FTZ.PlayAndAte.DAL.pdb

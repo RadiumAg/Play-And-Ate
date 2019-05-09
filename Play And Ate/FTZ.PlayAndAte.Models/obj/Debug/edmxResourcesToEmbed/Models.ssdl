@@ -75,6 +75,9 @@
     <Property Name="PPTId" Type="int" />
     <Property Name="AreaId" Type="int" />
     <Property Name="ProductPrice" Type="money" />
+    <Property Name="DetailAreaName" Type="nvarchar" MaxLength="50" />
+    <Property Name="DetailIntroduction" Type="nvarchar" MaxLength="500" />
+    <Property Name="Feature" Type="nvarchar" MaxLength="200" />
   </EntityType>
   <EntityType Name="PTotalType">
     <Key>

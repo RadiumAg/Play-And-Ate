@@ -63,6 +63,9 @@
     <EntitySetMapping Name="Product">
       <EntityTypeMapping TypeName="PlayAndAteModel.Product">
         <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
+          <ScalarProperty Name="DetailIntroduction" ColumnName="DetailIntroduction" />
+          <ScalarProperty Name="DetailAreaName" ColumnName="DetailAreaName" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="ProductName" ColumnName="ProductName" />

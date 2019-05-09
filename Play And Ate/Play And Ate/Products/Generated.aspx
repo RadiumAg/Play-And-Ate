@@ -647,8 +647,6 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 <script src="../Scripts/Products/c.js" language="JavaScript"></script>
 <script src="../Scripts/Products/tongji_360.php" language="JavaScript" charset="gb2312"></script>
 <script src="../Scripts/Products/core(1).php" charset="utf-8" type="text/javascript"></script>
-<a href="https://quanjing.cnzz.com/" target="_blank" title="全景统计">
-<img border="0" hspace="0" vspace="0" src="./上海农家乐_上海农庄_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农家乐_农庄_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/2.gif" /></a>
 
     </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">

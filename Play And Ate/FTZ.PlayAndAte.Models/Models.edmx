@@ -80,6 +80,9 @@
           <Property Name="PPTId" Type="int" />
           <Property Name="AreaId" Type="int" />
           <Property Name="ProductPrice" Type="money" />
+          <Property Name="DetailAreaName" Type="nvarchar" MaxLength="50" />
+          <Property Name="DetailIntroduction" Type="nvarchar" MaxLength="500" />
+          <Property Name="Feature" Type="nvarchar" MaxLength="200" />
         </EntityType>
         <EntityType Name="PTotalType">
           <Key>
@@ -403,6 +406,9 @@
           <NavigationProperty Name="PPointsType" Relationship="Self.FK_Product_PPointsType" FromRole="Product" ToRole="PPointsType" />
           <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Product_UserInfo_Role" FromRole="Product" ToRole="UserInfo_Role" />
           <NavigationProperty Name="Point" Relationship="PlayAndAteModel.FK_Poing_Product" FromRole="Product" ToRole="Point" />
+          <Property Name="DetailAreaName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DetailIntroduction" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Feature" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="PTotalType">
           <Key>
@@ -725,6 +731,9 @@
           <EntitySetMapping Name="Product">
             <EntityTypeMapping TypeName="PlayAndAteModel.Product">
               <MappingFragment StoreEntitySet="Product">
+                <ScalarProperty Name="Feature" ColumnName="Feature" />
+                <ScalarProperty Name="DetailIntroduction" ColumnName="DetailIntroduction" />
+                <ScalarProperty Name="DetailAreaName" ColumnName="DetailAreaName" />
                 <ScalarProperty Name="ProductId" ColumnName="ProductId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="ProductName" ColumnName="ProductName" />
