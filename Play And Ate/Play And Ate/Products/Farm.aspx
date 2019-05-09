@@ -4,7 +4,6 @@
     <link rel="Bookmark" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" />
     <!--收藏夹显示图标-->
     <link href="../Content/Products/cf62177493ce4db40c22962f60d846f8.css" rel="stylesheet" />
-    <script type="text/javascript" src="../Scripts/Products/908ca0ab9e4d27144b60bc878b237327.js" charset="utf-8"></script>
     <script type="text/javascript" src="../Scripts/Products/baidumap.js"></script>
     <link href="../Content/Products/base.v606141511.css" rel="stylesheet" type="text/css" media="all" />
     <script type="text/javascript" src="../Scripts/Products/header.js" charset="utf-8"></script>
@@ -195,21 +194,46 @@
                     </div>
                 </div>
                 <div class="hg_25 clear"></div>
+                 <script>
+                        $(function () {
+                            load_farm_stor(farm);
+                        })
+                     function load_farm_stor(farm) {
+                         console.info(farm);
+                         $("#index_purpose li.first").css({ "background": "none" });
+                         $("#index_purpose li ").css({ "background": "none" });
+                         $("#index_purpose li.first a").css({ "color": "#f9af46" });
+                         $("#index_purpose li a").css({ "color": "#f9af46" });
+                         $("#index_purpose li.p_" + farm).css({ "background-image": "none", "background": "#f9af46", "border-radius": "3px" });
+                         $("#index_purpose li.p_" + farm + " a").css({ "color": "#fff" });
+                         $.ajax({
+                             type: 'POST',
+                             url: "Farm.aspx",
+                             data: { "TAreaID": farm },
+                             success: function (e) {
+                             },
+                             error: function (o) {
+                                 //alert(123);
+                             }
+                         });
+                     }
+                    </script>
                 <div class="store_xianjin">
                     <div class="xjtore_top">
                         <div class="title">推荐</div>
                         <ul class="down_store" id="index_purpose">
-                            <li class="p_1 mr_tj"><a href="javascript:void(0);" onclick="load_farm_store(1)" >上海</a></li>
-                            <li class="p_4"><a href="javascript:void(0);" onclick="load_farm_store(4)">北京</a></li>
-                            <li class="p_7"><a href="javascript:void(0);" onclick="load_farm_store(7)">天津</a></li>
-                            <li class="p_2"><a href="javascript:void(0);" onclick="load_farm_store(2)">南京</a></li>
-                            <li class="p_3"><a href="javascript:void(0);" onclick="load_farm_store(3)">杭州</a></li>
-                            <li class="p_6"><a href="javascript:void(0);" onclick="load_farm_store(6)">济南</a></li>
-                            <li class="p_8"><a href="javascript:void(0);" onclick="load_farm_store(8)">苏州</a></li>
+                            <li class="p_1 mr_tj"><a href="javascript:void(0);" onclick="load_farm_stor(1)" >上海</a></li>
+                            <li class="p_4"><a href="javascript:void(0);" onclick="load_farm_stor(4)">北京</a></li>
+                            <li class="p_7"><a href="javascript:void(0);" onclick="load_farm_stor(7)">天津</a></li>
+                            <li class="p_2"><a href="javascript:void(0);" onclick="load_farm_stor(2)">南京</a></li>
+                            <li class="p_3"><a href="javascript:void(0);" onclick="load_farm_stor(3)">杭州</a></li>
+                            <li class="p_6"><a href="javascript:void(0);" onclick="load_farm_stor(6)">济南</a></li>
+                            <li class="p_8"><a href="javascript:void(0);" onclick="load_farm_stor(8)">苏州</a></li>
                         </ul>
                         <div class="gengduo f_r" id="chengshi_gengduo"><a href="#" target="_blank">更多&gt;&gt;</a></div>
                         <div class="clear"></div>
                     </div>
+                   
                     <div class="xjtore_con" id="ajax_farm_store">
                          <asp:Repeater runat="server" ID="RPTJ">
                                 <ItemTemplate>
