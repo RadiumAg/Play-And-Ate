@@ -48,27 +48,47 @@
     <form id="form1" runat="server">
         <div>
             <asp:ScriptManager ID="MainScript" runat="server"></asp:ScriptManager>
-            <div class="top_nav">
+           <div class="top_nav">
                 <div class="wrap">
                     <div>
                         <%if (string.IsNullOrEmpty(userName))
                             { %>
-                        <span id="user_head_tip" class="f_l">你好，欢迎光临第一农庄网！
+                        <span id="user_head_tip" class="f_l">欢迎光临 Play And Ate！
                         <a href="../LoginAndRegister/Login.aspx">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                         <a href="../LoginAndRegister/Register.aspx">注册</a>
                         </span>
                         <%}
-                        else
-                        { %>
-                        <span class="f_l">你好<%=userName %>，欢迎光临第一农庄网！
-                        </span>
+                            else
+                            { %>
+                        <span class="f_l">你好<%=userName %>，欢迎光临Play And Ate</span>
+                        <span><a href="javascript:void(0)" id="singOut" >退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>
                         <%} %>
-                        <a href="javascript:void(0)" onclick="submit_sms();">短信订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
-                        <a href="javascript:void(0)" onclick="unsubmit_sms();">短信退订</a><span class="v_line">&nbsp;|&nbsp;</span>
-                        <a href="javascript:void(0)">邮件订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
+
+
+                        <script>
+                            $(function () {
+                                $("#singOut").click(function () {
+                                    $.ajax({
+                                        url: '../Services/Main.ashx?id=5',
+                                        type: 'POST',
+                                        dataType: 'json',
+                                        success: function (data) {
+                                            console.log(data);
+                                            if (data) {
+                                                location.reload();
+                                            } else {
+                                                alert("发生错误，退出失败！");
+                                            }
+                                        }
+
+                                    });
+
+                                });
+                            });
+                        </script>
+                    </div>
                     </div>
                 </div>
-            </div>
             <!--end top_nav-->
             <div class="header_box">
                 <div class="headerss">

@@ -10,7 +10,6 @@ namespace FTZ.PlayAndAte.BLL
     public class ProductManager
     {
 
-
         /// <summary>
         /// 根据地区编号展示商品信息
         /// </summary>
@@ -58,5 +57,6 @@ namespace FTZ.PlayAndAte.BLL
         {
             return ProductServices.GetProductsBytotal();
         }
+
     }
 }
