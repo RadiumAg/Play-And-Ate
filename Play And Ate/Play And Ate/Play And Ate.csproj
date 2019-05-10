@@ -1311,7 +1311,6 @@
     <Content Include="Products\Ecological\1.html" />
     <Content Include="Products\Ecological\2.html" />
     <Content Include="Products\Farm.aspx" />
-    <Content Include="Products\Farm.html" />
     <Content Include="Products\Fishing.aspx" />
     <Content Include="Products\Fishing.html" />
     <Content Include="Products\Generated.aspx" />
