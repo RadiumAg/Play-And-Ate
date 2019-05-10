@@ -141,7 +141,7 @@ namespace FTZ.PlayAndAte.DAL
         /// <summary>
         /// 根据总类型查询地区
         /// </summary>
-        /// <param name="type"></param>
+        /// <param name="type">传入总类型ID</param>
         /// <returns></returns>
         public static List<Area> GetAreasByTotal( int type)
         {

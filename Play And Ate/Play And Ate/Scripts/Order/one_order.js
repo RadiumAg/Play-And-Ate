@@ -466,49 +466,49 @@ function sumAll() {
     var person_price = $("#txtHiddenUzaiPrice").val(); //成人价
     var child_price = $("#txtHiddenChildPrice").val(); //儿童价
     /**附加产品 Start**/
-    var html = "";
-    var addProTotal = 0; //附加产品的总金额
-    $("div[id^='dd_travel_'] select[id^='ddl_nums_'][value!='0']").each(function (i) {
-        if ($(this).val() != 0) {
+    //var html = "";
+    //var addProTotal = 0; //附加产品的总金额
+    //$("div[id^='dd_travel_'] select[id^='ddl_nums_'][value!='0']").each(function (i) {
+    //    if ($(this).val() != 0) {
 
-            var relationId = $(this).attr("id").substr($(this).attr("id").lastIndexOf("_") + 1);
-            var title = $("#a_" + relationId).text(); //附加产品名称
-            var gounum = $("#ddl_nums_" + relationId).val(); //附加产品购买份数
+    //        var relationId = $(this).attr("id").substr($(this).attr("id").lastIndexOf("_") + 1);
+    //        var title = $("#a_" + relationId).text(); //附加产品名称
+    //        var gounum = $("#ddl_nums_" + relationId).val(); //附加产品购买份数
 
-            //  var gounum = document.getElementById("ddl_nums_" + relationId).value; //附加产品购买份数
+    //        //  var gounum = document.getElementById("ddl_nums_" + relationId).value; //附加产品购买份数
 
-            var price = $.trim($("#td_price_" + relationId).text()); //附加产品单价
-            var total = $.trim($("#td_total_" + relationId).text()); //总价
-            if ($("div[id^='dd_travel_'] select[id^='ddl_nums_'][value!='0']").length - 1 == i) {
-                //最后一行加样式
-                html += "<div class=\"last\"><p>" + title + "</p><p><b>￥<s>" + total + "</s></b>" + gounum + "份×￥" + price + "</p></div>";
-            }
-            else {
-                html += "<div><p>" + title + "</p><p><b>￥<s>" + total + "</s></b>" + gounum + "份×￥" + price + "</p></div>";
-            }
-            addProTotal += parseFloat(total);
-        }
-    });
-    if (html != "") {
-        $("#AddPList").append("<p class=\"p1\">附加产品</p>" + html);
-    }
-    /**附加产品 End**/
-    var cutTotal = $("#span_cutScore").text(); //金币抵扣金额
-    var codeTotal = $("#span_ActiveCode").text(); //抵扣券金额
-    if (cutTotal != 0) {
-        $("#DeKouList").append("<p class=\"p1\">优惠抵扣</p><p><b>￥-<s>" + cutTotal + "</s></b>金币抵扣</p>");
-    }
-    if (codeTotal != 0) {
-        $("#DeKouList").append("<p class=\"p1\">优惠抵扣</p><p><b>￥-<s>" + codeTotal + "</s></b>抵用券抵扣</p>");
-    }
-    if ($("#AddPList").html() == "") {
-        $("#AddPList").hide();
-    }
-    if ($("#DeKouList").html() == "") {
-        $("#DeKouList").hide();
-    }
+    //        var price = $.trim($("#td_price_" + relationId).text()); //附加产品单价
+    //        var total = $.trim($("#td_total_" + relationId).text()); //总价
+    //        if ($("div[id^='dd_travel_'] select[id^='ddl_nums_'][value!='0']").length - 1 == i) {
+    //            //最后一行加样式
+    //            html += "<div class=\"last\"><p>" + title + "</p><p><b>￥<s>" + total + "</s></b>" + gounum + "份×￥" + price + "</p></div>";
+    //        }
+    //        else {
+    //            html += "<div><p>" + title + "</p><p><b>￥<s>" + total + "</s></b>" + gounum + "份×￥" + price + "</p></div>";
+    //        }
+    //        addProTotal += parseFloat(total);
+    //    }
+    //});
+    //if (html != "") {
+    //    $("#AddPList").append("<p class=\"p1\">附加产品</p>" + html);
+    //}
+    ///**附加产品 End**/
+    //var cutTotal = $("#span_cutScore").text(); //金币抵扣金额
+    //var codeTotal = $("#span_ActiveCode").text(); //抵扣券金额
+    //if (cutTotal != 0) {
+    //    $("#DeKouList").append("<p class=\"p1\">优惠抵扣</p><p><b>￥-<s>" + cutTotal + "</s></b>金币抵扣</p>");
+    //}
+    //if (codeTotal != 0) {
+    //    $("#DeKouList").append("<p class=\"p1\">优惠抵扣</p><p><b>￥-<s>" + codeTotal + "</s></b>抵用券抵扣</p>");
+    //}
+    //if ($("#AddPList").html() == "") {
+    //    $("#AddPList").hide();
+    //}
+    //if ($("#DeKouList").html() == "") {
+    //    $("#DeKouList").hide();
+    //}
     //应付金额
-    var all = parseFloat(person * person_price) + parseFloat(child * child_price) + parseFloat(addProTotal) - parseFloat(cutTotal) - parseFloat(codeTotal);
+    var all = parseFloat(person * person_price) + parseFloat(child * child_price);
     if (all < 0) {
         $("#offerPrice").text(0);
         document.getElementById("allp").value = 0;

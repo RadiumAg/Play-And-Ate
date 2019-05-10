@@ -11,7 +11,6 @@ namespace Play_And_Ate.Order
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

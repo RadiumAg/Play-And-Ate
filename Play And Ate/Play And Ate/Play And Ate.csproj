@@ -102,6 +102,7 @@
     <Content Include="Content\LoginAndRegister\Login\Login.css" />
     <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Register\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\Order\common_wm.css" />
     <Content Include="Content\Order\common_wm.html" />
     <Content Include="Content\Order\order.css" />
     <Content Include="Content\Order\style.css" />
@@ -431,6 +432,9 @@
     <Content Include="Order\Order.html" />
     <Content Include="Order\Order_2.aspx" />
     <Content Include="Order\Order_2.html" />
+    <Content Include="Order\Order_3.aspx" />
+    <Content Include="Order\Order_3.html" />
+    <Content Include="Order\Order_4.html" />
     <Content Include="Plugin\jquery-easyui-1.7.0\changelog.txt" />
     <Content Include="Plugin\jquery-easyui-1.7.0\datagrid-defaultview.js" />
     <Content Include="Plugin\jquery-easyui-1.7.0\datagrid-detailview.js" />
@@ -1311,7 +1315,6 @@
     <Content Include="Products\Ecological\1.html" />
     <Content Include="Products\Ecological\2.html" />
     <Content Include="Products\Farm.aspx" />
-    <Content Include="Products\Farm.html" />
     <Content Include="Products\Fishing.aspx" />
     <Content Include="Products\Fishing.html" />
     <Content Include="Products\Generated.aspx" />
@@ -1362,12 +1365,16 @@
     <Content Include="Scripts\LoginAndRegister\Register\mt3.v1014201036.js" />
     <Content Include="Scripts\LoginAndRegister\Register\sousuo.js" />
     <Content Include="Scripts\Order\ajax188.js" />
+    <Content Include="Scripts\Order\four_proc.js" />
     <Content Include="Scripts\Order\global.js" />
+    <Content Include="Scripts\Order\jquery.bgiframe.min.js" />
     <Content Include="Scripts\Order\jquery.js" />
+    <Content Include="Scripts\Order\jquery.modal.js" />
     <Content Include="Scripts\Order\jquery.scrollfollow.js" />
     <Content Include="Scripts\Order\one_order.js" />
     <Content Include="Scripts\Order\order.js" />
     <Content Include="Scripts\Order\sousuo.js" />
+    <Content Include="Scripts\Order\three_order.js" />
     <Content Include="Scripts\Order\tooltip.js" />
     <Content Include="Scripts\Order\two_order.js" />
     <Content Include="Scripts\Products\908ca0ab9e4d27144b60bc878b237327.js" />
@@ -1488,6 +1495,13 @@
     </Compile>
     <Compile Include="Order\Order_2.aspx.designer.cs">
       <DependentUpon>Order_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Order_3.aspx.cs">
+      <DependentUpon>Order_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Order_3.aspx.designer.cs">
+      <DependentUpon>Order_3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products\Ecological.aspx.cs">
       <DependentUpon>Ecological.aspx</DependentUpon>

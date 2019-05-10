@@ -11,8 +11,8 @@
     <script src="../Scripts/Order/global.js"></script>
 </head>
 <body>
-    <script src="../Scripts/Order/ajax188.js"></script>
-    <script src="../Scripts/Order/sousuo.js"></script>
+    <%--<script src="../Scripts/Order/ajax188.js"></script>--%>
+    <%--<script src="../Scripts/Order/sousuo.js"></script>
     <script language="javascript" type="text/javascript">
         function Check_head_Login() {
 
@@ -31,7 +31,8 @@
         }
 
 
-    </script><div class="head">
+    </script>--%>
+    <div class="head">
     <div class="head_mid">
 
             <div class="head_mid_right">
@@ -53,7 +54,7 @@
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                         <a href="http://www.01nz.com.cn/user-register" target="_blank">注册</a>
                     </span>
-                    <script language="javascript">Check_head_Login();</script>
+                    <%--<script language="javascript">Check_head_Login();</script>--%>
                     <!--<A
                     style="CURSOR: hand" title='第一农庄网'
                     href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.01nz.com.cn','第一农庄网')";>+收藏</A>
@@ -134,7 +135,7 @@
                     </ul>
                 </div>
                 <!--订单步骤 END-->
-                <form id="one_form" name="one_form" action="188_order_2.php" method="post">
+                <form  runat="server">
                     <div class="orderWrap">
                         <div class="userInfo">
                             <h2>
@@ -161,8 +162,6 @@
                                                 <th width="18%">
                                                     出游儿童数
                                                 </th>
-
-
                                             </tr>
                                             <tr>
                                                 <td class="lt">
@@ -192,7 +191,7 @@
 
 
                                                     <input type="button" value="-" name="ccc" id="ccc" class="put" title="减少成人数"/>
-                                                   <asp:TextBox ID="txtHiddenPersonNum"  runat="server"   name="txtHiddenPersonNum"  value="2"  class="txtHiddenPersonNum"></asp:TextBox>
+                                                   <input type="text" id="txtHiddenPersonNum" name="txtHiddenPersonNum" value="2" class="txtHiddenPersonNum" />
                                                     <input type="button" value="+" onclick="javascript:this.form.txtHiddenPersonNum.value++;" name="bbb" id="bbb" class="put" title="增加成人数"/>
                                                 </td>
                                                 <td>
@@ -220,15 +219,26 @@
                                             旅游团费
                                         </p>
                                         <p>
-                                            <b>￥<s id="getjiage">398</s></b> <font id="getcr">2</font> 成人×￥<font id="gethidChenRen">199</font>
+                                            <b>￥<span id="getjiage">398</span></b> <font id="getcr" >2</font> 成人×￥<font  id="gethidChenRen">199</font>
                                         </p>
                                         <p>
-                                            <b>￥<s id="getrtjiage">0</s></b><font id="getrt">0</font> 儿童×￥<font id="gethidErTong">160</font>
+                                            <b>￥<span id="getrtjiage">0</span></b><font id="getrt">0</font> 儿童×￥<font id="gethidErTong">160</font>
                                         </p>
                                     </li>
                                     <li class="li2" id="AddPList" style="display: none;"></li>
                                     <li class="li3" id="DeKouList" style="display: none;"></li>
                                 </ul>
+                                <script>
+                                    //获取价格
+                                    $(function () {
+                                        var s = $("#getjiage").html();
+                                        console.info(s);
+                                    })
+                                </script>
+                                <%--<script>
+                                    var crjg = "<b>￥<s>" + $("#getjiage").val() + "</s></b>" + $("#getcr").val() + "成人×￥" + $("#gethidChenRen").val();
+                                    var etjg = "<b>￥<s>" + $("#getrtjiage").val() + "</s></b>" + $("#getrt").val() + "成人×￥" + $("#gethidErTong").val();
+                                </script>--%>
                                 <div class="li4">
                                     <p>
                                         <strong>应付总额：</strong><label>￥<i id="offerPrice">398</i></label>
@@ -241,10 +251,32 @@
                         </div>
                         <!--页面-->
                         <div class="userInfoBtn" id="gl_return" style="display: block;">
-                            <input type="button" onclick="window.location.href='http://xianlu.01nz.com.cn/archives/1147.html'" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/order15.gif); border-width: 0px;
+                            <input type="button" id="btn_pre" <%--onclick="window.location.href='http://xianlu.01nz.com.cn/archives/1147.html'"--%> style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/order15.gif); border-width: 0px;
                         cursor: pointer; width: 139px; height: 44px;">
-                            <input type="button" id="btn_Next" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/order19.gif);
-                        border-width: 0px; cursor: pointer; width: 139px; height: 44px;">
+                            <input type="button" id="btn_next" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/order19.gif);
+                        border-width: 0px; cursor: pointer; width: 139px; height: 44px;"/>
+                            <script>
+                                //点击上一页返回页面
+                                $("#btn_pre").click(function () {
+                                    window.location.href = document.referrer;
+                                    window.history.back(-1);
+                                })
+                            </script>
+                            <script>
+                                $(function () {
+                                    //点击下一页实现跳转
+                                    $("#btn_next").click(function () {
+                                        var cr = $("#txtHiddenPersonNum").val();
+                                        var et = $("#txtHiddenChildNum").val();
+                                        sessionStorage.setItem("crrs", cr); //保存成人人数
+                                        sessionStorage.setItem("etrs", et); //保存儿童人数
+                                        console.log(sessionStorage.getItem("crrs"));
+                                        window.location.href = "Order_2.aspx?Length=" + $("#txtHiddenPersonNum").val() + "&crzjg=" + $("#getjiage").html() +
+                                            "&crjg=" + $("#gethidChenRen").html() + "&etzjg=" + $("#getrtjiage").html() + "&etrs=" + $("#txtHiddenChildNum").val()
+                                            + "&etjg=" + $("#gethidErTong").html() + "&zjg=" + $("#offerPrice").html(); //url传递参数
+                                    });
+                                })
+                            </script>
                         </div>
                         <div class="clearfix">
                         </div>
@@ -279,7 +311,7 @@
             <script src="../Scripts/Order/jquery.js"></script>
             <script src="../Scripts/Order/tooltip.js"></script>
             <script src="../Scripts/Order/order.js"></script>
-            <script language="javascript1.2">
+            <script type="text/javascript">
 
 
                 $.ajax({
@@ -434,6 +466,32 @@
                     <div class="blank"></div>
                     <div class="blank"></div>
                     <div class="blank"></div>
+                    <script>
+                        //返回页面后自动点击按钮,恢复原有数据
+                        $(function () {
+                            if (sessionStorage.getItem("crrs") != null) {
+                                if (sessionStorage.getItem("crrs") > 2) {
+                                    var inti = sessionStorage.getItem("crrs") - 2;
+                                    for (var i = 0; i < inti; i++) {
+                                        document.getElementById("bbb").click();
+                                    }
+                                } else if (sessionStorage.getItem("crrs") < 2) {
+                                    var inti = 2 - sessionStorage.getItem("crrs");
+                                    for (var i = 0; i < inti; i++) {
+                                        document.getElementById("ccc").click();
+                                    }
+                                }
+                            }
+                            if (sessionStorage.getItem("etrs") != null) {
+                                if (sessionStorage.getItem("etrs") > 0) {
+                                    var inti = sessionStorage.getItem("etrs");
+                                    for (var i = 0; i < inti; i++) {
+                                        document.getElementById("ddd").click();
+                                    }
+                                }
+                            }
+                        })
+                    </script>
                 </div>
             </div>
         </div>
