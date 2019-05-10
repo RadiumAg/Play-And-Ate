@@ -235,7 +235,12 @@
                     </div>
                    
                     <div class="xjtore_con" id="ajax_farm_store">
-                         <asp:Repeater runat="server" ID="RPTJ">
+                        <asp:ScriptManager runat="server" ID="SM1">
+
+                        </asp:ScriptManager>
+                        <asp:UpdatePanel runat="server" ID="UP1">
+                            <ContentTemplate>
+                                 <asp:Repeater runat="server" ID="RPTJ">
                                 <ItemTemplate>
                                     <div class="s_info">
                                         <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>' target="_blank">
@@ -247,6 +252,9 @@
                                     </div>
                                 </ItemTemplate>
                             </asp:Repeater>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
+                        
                     </div>
                 </div>
                 <div class="hg_25 both"></div>
