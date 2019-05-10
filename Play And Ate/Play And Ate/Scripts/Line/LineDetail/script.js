@@ -2424,38 +2424,7 @@ function load_farm_zhuti(zhuti){
 	});
 }
 
-function load_farm_store(farm){
-	
-	var farm=farm;
-	
-    $("#index_purpose li.first").css({"background":"none"});
-	$("#index_purpose li ").css({"background":"none"});
-	$("#index_purpose li.first a").css({"color":"#f9af46"});
-	$("#index_purpose li a").css({"color":"#f9af46"});
-	$("#index_purpose li.p_"+farm).css({"background-image":"none","background":"#f9af46","border-radius":"3px"});
-	$("#index_purpose li.p_"+farm+" a").css({"color":"#fff"});
-	$.ajax({
-        url: "../Products/Farm.aspx?TAreaID=farm",
-        success: function (e) {
-            $("#chengshi_gengduo a").attr("href", "#");
-        },
-        type: JSON,
 
-		error:function(o){
-			//alert(123);
-		}
-	});
-	$.ajax({
-		url:APP_ROOT+"/store.php?ctl=farm&act=ajax_farm_store&is_ajax=1&farm_id="+farm,
-		success:function(text){
-			//alert(farm);
-			$("#ajax_farm_store").html(text);
-		},
-		error:function(o){
-			//alert(123);
-		}
-	});
-}
 
 function load_purpose_store(purpose){
 	var purpose=purpose;

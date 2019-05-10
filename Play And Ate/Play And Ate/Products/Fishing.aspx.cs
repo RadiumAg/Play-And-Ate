@@ -12,17 +12,20 @@ namespace Play_And_Ate.Products
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //绑定热门钓场数据
-            this.ReProduct.DataSource = ProductManager.ShowProducts(1).OrderBy(x => x.ProductId).Take(8).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
-            this.ReProduct.DataBind();
+            //城市
+            this.RPcity.DataSource = ProductManager.GetAreasByTotal(5).Select(s => new { AreaName = s.AreaName }).Distinct();
+            this.RPcity.DataBind();
+            //热门钓场
 
-            //绑定农家钓场大图片数据
-            this.ReZhu.DataSource = ProductManager.ShowProducts(1).OrderBy(x => x.ProductId).Take(1).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
-            this.ReZhu.DataBind();
+            //农家钓场
+            this.RPdiaoChang.DataSource = ProductManager.GetProductsBytotal(5).Where(s => s.PPointsType.PPointsType1 == "农家").Take(3).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductID = s.ProductId, AreaName = s.Area.AreaName });
+            this.RPdiaoChang.DataBind();
 
-            //绑定农家钓场小图片数据
-            this.ReZhuT.DataSource = ProductManager.ShowProducts(1).OrderBy(x => x.ProductId).Take(4).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
-            this.ReZhuT.DataBind();
+            //所有钓场
+            this.RPFree.DataSource=ProductManager.GetProductsBytotal(5).OrderBy(s=>s.ProductPrice).Take(10).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductID = s.ProductId, AreaName = s.Area.AreaName,TypeName=s.PPointsType.PPointsType1 });
+            this.RPFree.DataBind();
+            this.RPCharge.DataSource = ProductManager.GetProductsBytotal(5).Take(8).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductID = s.ProductId, AreaName = s.Area.AreaName, TypeName = s.PPointsType.PPointsType1 });
+            this.RPCharge.DataBind();
         }
     }
 }
