@@ -63,6 +63,9 @@
     <EntitySetMapping Name="Product">
       <EntityTypeMapping TypeName="PlayAndAteModel.Product">
         <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
+          <ScalarProperty Name="DetailIntroduction" ColumnName="DetailIntroduction" />
+          <ScalarProperty Name="DetailAreaName" ColumnName="DetailAreaName" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="ProductName" ColumnName="ProductName" />
@@ -118,6 +121,15 @@
           <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="RoleId" ColumnName="RoleId" />
           <ScalarProperty Name="Pwd" ColumnName="Pwd" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Point">
+      <EntityTypeMapping TypeName="PlayAndAteModel.Point">
+        <MappingFragment StoreEntitySet="Point">
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

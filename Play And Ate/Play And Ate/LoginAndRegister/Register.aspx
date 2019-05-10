@@ -486,30 +486,5 @@
             });
         </script>
     </div>
-    <div class="blank"></div>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
-    <div id="ftw">
-        <div id="ft">
-            <!-- 热门城市 -->
-            <!-- 区县分类 -->
-            <!-- 热门农庄 -->
-            <!-- 友情链接 -->
-            <!-- 专题友情链接 -->
-            <div class="blank"></div>
-            <div class="foot_xian"></div>
-            <div class="blank"></div>
-            <div class="tc">
-                <a href="#" target="_blank">关于我们</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">加入我们</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">联系我们</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">隐私保护</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">网站地图</a>
-                &nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">商家登录</a>
-            </div>
-            <div class="blank"></div>
-            <div class="beian" align="center">版权所有：上海威和信息科技有限公司  <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备 13043989号-1</a>  电话：400-021-3158 邮箱：mc_01nz@163.com </div>
-            <div align="center" class="beian_eng">
-                Copyright 2013 www.01nz.com.cn All Rights Reserved.
-            </div>
-</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server"></asp:Content>

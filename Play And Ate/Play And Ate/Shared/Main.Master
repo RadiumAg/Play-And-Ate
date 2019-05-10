@@ -12,7 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     <meta name="baidu-site-verification" content="rW5VmpPj0J" />
 
-    <title>第一农庄网:农家旅行的倾心之选;全国最大的农庄/农家乐/垂钓场/生态园/农家乐旅游在线预订平台</title>
+    <title>Play And Ate 生态农庄，采摘园，垂钓场，农家乐旅游</title>
     <meta name="keywords" content="生态农庄,采摘园,垂钓场,温泉度假,农家乐旅游,三山岛农家乐,仙华山农家乐,安吉农家乐,前卫村,自驾游,周边游,农家菜,乡村游" />
     <meta name="description" content="第一农庄网为热爱运动/休闲/养生和自驾游群体提供农庄/农家乐/垂钓场/农家乐旅游即时服务,可以快速找到身边的农庄/农家乐/垂钓场的信息,为更多商家寻找客源,扩大影响,并利用专业平台的优势,科学地帮助商家进行推广,提升品牌形象" />
     <meta name="baidu-site-verification" content="rW5VmpPj0J" />
@@ -48,33 +48,53 @@
     <form id="form1" runat="server">
         <div>
             <asp:ScriptManager ID="MainScript" runat="server"></asp:ScriptManager>
-            <div class="top_nav">
+           <div class="top_nav">
                 <div class="wrap">
                     <div>
                         <%if (string.IsNullOrEmpty(userName))
                             { %>
-                        <span id="user_head_tip" class="f_l">你好，欢迎光临第一农庄网！
+                        <span id="user_head_tip" class="f_l">欢迎光临 Play And Ate！
                         <a href="../LoginAndRegister/Login.aspx">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
                         <a href="../LoginAndRegister/Register.aspx">注册</a>
                         </span>
                         <%}
-                        else
-                        { %>
-                        <span class="f_l">你好<%=userName %>，欢迎光临第一农庄网！
-                        </span>
+                            else
+                            { %>
+                        <span class="f_l">你好<%=userName %>，欢迎光临Play And Ate</span>
+                        <span><a href="javascript:void(0)" id="singOut" >退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>
                         <%} %>
-                        <a href="javascript:void(0)" onclick="submit_sms();">短信订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
-                        <a href="javascript:void(0)" onclick="unsubmit_sms();">短信退订</a><span class="v_line">&nbsp;|&nbsp;</span>
-                        <a href="javascript:void(0)">邮件订阅</a><span class="v_line">&nbsp;|&nbsp;</span>
+
+
+                        <script>
+                            $(function () {
+                                $("#singOut").click(function () {
+                                    $.ajax({
+                                        url: '../Services/Main.ashx?id=5',
+                                        type: 'POST',
+                                        dataType: 'json',
+                                        success: function (data) {
+                                            console.log(data);
+                                            if (data) {
+                                                location.reload();
+                                            } else {
+                                                alert("发生错误，退出失败！");
+                                            }
+                                        }
+
+                                    });
+
+                                });
+                            });
+                        </script>
+                    </div>
                     </div>
                 </div>
-            </div>
             <!--end top_nav-->
             <div class="header_box">
                 <div class="headerss">
                     <div class="LOGE">
                         <a href="#">
-                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width:185px;height:110px;margin-top:-15px;"/>
+                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width:185px;height:150px;margin-top:-35px;"/>
                         </a>
                     </div>
                     <div id="city">
@@ -212,19 +232,21 @@
 
                 </div>
             </div>
-            <div class="menu_box">
+            <div class="menu_box" style="    background-color: #fda300;
+    position: relative;
+    z-index: 2;">
                 <div class="menu" id="menus">
-                    <div class="menu white" id="menus">
+                    <div class="menu white"  style="height: 36px; background-color: #fda300; margin: 0 auto; position: relative; width: 1180px;">
                         <ul>
-                            <li><span class="LOGE_text">去农庄,就上第一农庄网</span></li>
+                            <li><span class="LOGE_text">去农庄,就来我们</span></li>
                             <li onclick="nav(0)" id="n0" class="soso ">
                                 <a href="../Home/Home.aspx" target="">首页</a>
                             </li>
                             <li onclick="nav(1)" id="n1" class="soso ">
-                                <a href="../Show/FarmDetails.aspx" target="">农家推荐</a>
+                                <a href="#" target="">农家推荐</a>
                             </li>
                             <li onclick="nav(2)" id="n2" class="soso ">
-                                <a href="../Show/FarmRow.aspx" target="">农家行</a>
+                                <a href="../Line/Line1.aspx" target="">农家行</a>
                             </li>
                             <li onclick="nav(3)" id="n3" class="soso ">
                                 <a href="../Products/Farm.aspx" target="">农庄</a>

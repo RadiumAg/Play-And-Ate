@@ -37,5 +37,6 @@ namespace FTZ.PlayAndAte.Models
         public virtual DbSet<Sincerity> Sincerity { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<UserInfo_Role> UserInfo_Role { get; set; }
+        public virtual DbSet<Point> Point { get; set; }
     }
 }

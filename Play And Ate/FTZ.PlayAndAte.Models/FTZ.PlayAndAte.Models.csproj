@@ -80,6 +80,9 @@
     <Compile Include="Order.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="Point.cs">
+      <DependentUpon>Models.tt</DependentUpon>
+    </Compile>
     <Compile Include="PPointsType.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>

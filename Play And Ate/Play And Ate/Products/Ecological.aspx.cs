@@ -12,9 +12,19 @@ namespace Play_And_Ate.Products
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //欢乐周末
-            this.ReProduct.DataSource = ProductManager.ShowProducts(1).OrderBy(x=>x.ProductId).Take(4).Select(s=>new {Image = s.Image.FirstOrDefault().ImageName,ProductName=s.ProductName,ProductPrice = s.ProductPrice,ProductID = s.ProductId});
-            this.ReProduct.DataBind();
+            if (!IsPostBack)
+            {
+                //欢乐周末
+                this.ReProduct.DataSource = ProductManager.GetProductsBytotal(4).Take(4).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId, AreaName = s.Area.AreaName});
+                this.ReProduct.DataBind();
+                //存在生态园的城市
+                this.RPcity.DataSource = ProductManager.GetAreasByTotal(4).Distinct();
+                this.RPcity.DataBind();
+                //查询生态园
+                this.RPshengtaiyuan.DataSource = ProductManager.GetProductsBytotal(4).Take(6).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId,AreaName=s.Area.AreaName, DetailIntroduction=s.DetailIntroduction });
+                this.RPshengtaiyuan.DataBind();
+            }
+           
         }
     }
 }

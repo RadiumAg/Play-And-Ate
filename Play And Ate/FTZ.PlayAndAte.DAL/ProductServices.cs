@@ -78,6 +78,7 @@ namespace FTZ.PlayAndAte.DAL
                 {
                     int id = Convert.ToInt32(productId);
                     var data = entities.Product
+                                     .Include("Point")
                                      .Where(d => d.ProductId == id).FirstOrDefault();
                     Product result = new Product();
                     result = data;
@@ -93,7 +94,70 @@ namespace FTZ.PlayAndAte.DAL
             }
         }
 
-       
-        
+       /// <summary>
+       /// 通过类别查询存在该类型的城市
+       /// </summary>
+       /// <param name="type">类型</param>
+       /// <returns></returns>
+        public static List<Product> GetAreaNameByPPtype(string type)
+        {
+            try
+            {
+                using (PlayAndAteEntities entities =new PlayAndAteEntities())
+                {
+                    List<Product> list = entities.Product.Include("Area").Include("PPointsType").Where(x => x.PPointsType.PPointsType1 == type).ToList<Product>();
+                    return list;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// 根据总类型ID查询下面的农庄
+        /// </summary>
+        /// <param name="id">总类型ID</param>
+        /// <returns></returns>
+        public static List<Product> GetProductsBytotal(int id)
+        {
+            try
+            {
+                using (PlayAndAteEntities entities =new PlayAndAteEntities())
+                {
+                    List<Product> list = entities.Product.Include("Image").Include("Area").Include("PPointsType").Where(x => x.PPointsType.Pid == id).ToList<Product>();
+                    return list;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        /// <summary>
+        /// 根据总类型查询地区
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
+        public static List<Area> GetAreasByTotal( int type)
+        {
+            List<Area> areas = new List<Area>();
+            using (PlayAndAteEntities entities =new PlayAndAteEntities())
+            {
+                var list = entities.Product.Include("Area").Include("PPointsType").Where(x => x.PPointsType.Pid == type).ToList();
+                foreach (var dr in list)
+                {
+                    Area area = new Area();
+                    area.AreaId = dr.Area.AreaId;
+                    area.AreaName = dr.Area.AreaName;
+                    areas.Add(area);
+                }
+                return areas;
+            }
+        }
     }
 }
