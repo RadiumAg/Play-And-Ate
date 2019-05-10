@@ -25,8 +25,12 @@ namespace Play_And_Ate.Line
             this.RPremaiLine.DataSource = ProductManager.GetProductsBytotal(1).Take(6).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
             this.RPremaiLine.DataBind();
             //加载特价推荐
-            this.RPtjtj.DataSource = ProductManager.GetProductsBytotal(1).OrderBy(m => m.ProductPrice).Take(8).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
-            this.RPtjtj.DataBind();
+            this.RPgent.DataSource = ProductManager.GetProductsBytotal(1).Where(s => s.PPointsType.PPointsType1 == "跟团行").OrderBy(m => m.ProductPrice).Take(8).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
+            this.RPgent.DataBind();
+            this.RPzij.DataSource = ProductManager.GetProductsBytotal(1).Where(s => s.PPointsType.PPointsType1 == "自驾行").OrderBy(m => m.ProductPrice).Take(8).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
+            this.RPzij.DataBind();
+            this.RPziz.DataSource = ProductManager.GetProductsBytotal(1).Where(s => s.PPointsType.PPointsType1 == "自助行").OrderBy(m => m.ProductPrice).Take(8).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
+            this.RPziz.DataBind();
             this.RPgentuan1.DataSource = ProductManager.GetProductsBytotal(1).Where(m => m.PPointsType.PPointsType1 == "跟团行").Take(6).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
             this.RPgentuan1.DataBind();
             this.RPgentuan2.DataSource = ProductManager.GetProductsBytotal(1).Where(m => m.PPointsType.PPointsType1 == "跟团行").Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });

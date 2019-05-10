@@ -907,6 +907,11 @@ li{margin:0px;padding:0px;}
 .middle01 .shty_top .down_store li a{font-size:14px; font:'宋体'; color:#75bf46; }
 .middle01 .shty_top .down_store li a:hover{color:#ff8a00; text-decoration:none;} 
 .middle01 .shty_top .down_store li.first{border-bottom:2px #d04102 solid;  width:70px; height:30px;padding-left:18px; border:none;}
+.down_store_next {
+    font-size: 14px;
+    font: '宋体';
+    color: #75bf46;
+}
 .istore_con .s_info{float:left;padding:5px 8px;_margin:5px 8px;width:176px; height:162px; position:relative}
 .istore_con .s_info img{ width:180px; height:125px;}
 .istore_con .s_info:hover{background-color:#fbf5ed}
