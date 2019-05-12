@@ -109,7 +109,6 @@ namespace Play_And_Ate.Services
                 Email = context.Request["email"].ToString(),
                 Phone = context.Request["email"].ToString(),
                 Pwd = context.Request["user_pwd"].ToString(),
-
             };
 
             UserInfo_Role userData = UserInfo_RoleManager.CheckUserInfo(user);
