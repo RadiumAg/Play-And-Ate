@@ -34,7 +34,7 @@ namespace Play_And_Ate.Services
                     Register();
                     break;
                 case "5":
-                    Logout();
+                    LoginOut();
                     break;
             }
         }
@@ -42,7 +42,7 @@ namespace Play_And_Ate.Services
         /// <summary>
         /// 退出登录
         /// </summary>
-        public void Logout()
+        public void LoginOut()
         {
             try
             {

@@ -15,6 +15,7 @@
     <meta content="" name="description" />
     <meta content="" name="author" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <script src="../Plugin/public/media/js/jquery-1.10.1.min.js"></script>
     <link rel="stylesheet" href="/Plugin/public/media/css/colpick.css" type="text/css" />
     <link rel="stylesheet" href="/Plugin/public/static/css/website.css" type="text/css" />
     <link rel="stylesheet" href="/Plugin/public/swiper/dist/css/swiper.min.css" type="text/css" />
@@ -35,17 +36,17 @@
     <!-- END COPYRIGHT -->
     <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
     <!-- BEGIN CORE PLUGINS -->
-    <script src="../Plugin/public/media/js/jquery-1.10.1.min.js"></script>
+    <script src="../Plugin/public/media/js/bootstrap.min.js"></script>
     <script src="/Plugin/public/media/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
     <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
     <script src="/Plugin/public/media/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
-<!---->
+    <!---->
     <script src="/Plugin/public/media/js/jquery.slimscroll.min.js" type="text/javascript"></script>
     <script src="/Plugin/public/media/js/jquery.blockui.min.js" type="text/javascript"></script>
     <script src="/Plugin/public/media/js/jquery.cookie.min.js" type="text/javascript"></script>
     <script src="/Plugin/public/media/js/jquery.uniform.min.js" type="text/javascript"></script>
     <!-- END CORE PLUGINS -->
-    
+
     <!-- BEGIN PAGE LEVEL PLUGINS -->
     <script src="/Plugin/public/media/js/jquery.validate.min.js" type="text/javascript"></script>
     <script src="/Plugin/public/media/js/jquery.backstretch.min.js" type="text/javascript"></script>
@@ -99,7 +100,7 @@
                 <!-- BEGIN TOP NAVIGATION MENU -->
                 <ul class="nav pull-right">
                     <!-- BEGIN NOTIFICATION DROPDOWN -->
-                    <li class="brand pull-right text-center" style="margin-top:10px;" >您好，<%= userName %></li>
+                    <li class="brand pull-right text-center" style="margin-top: 10px;">您好，<%= userName %></li>
                     <li class="dropdown" id="header_notification_bar">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="icon-warning-sign"></i>
@@ -127,13 +128,28 @@
                     <!-- BEGIN USER LOGIN DROPDOWN -->
                     <li class="dropdown user">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img alt="" src="public/media/image/avatar1_small.jpg" />
+                            <img alt="" src="/Plugin/public/media/image/avatar1_small.jpg" />
                             <span class="username"></span>
                             <i class="icon-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href=""><i class="icon-lock"></i>修改密码</a></li>
-                            <li><a href=""><i class="icon-key"></i>退出</a></li>
+                            <li><a href="" onclick="return false"><i class="icon-lock"></i>修改密码</a></li>
+                            <li><a href="" id="loginOut" onclick="return false"><i class="icon-key"></i>退出</a></li>
+                            <script>
+                                $("#loginOut").click(function () {
+                                    $.ajax({
+                                        url: '/Services/Main.ashx?id=5',
+                                        data: 'GET',
+                                        dataType: 'JSON',
+                                        success: function (data) {
+                                            console.log(111, typeof (data))
+                                            if (data) {
+                                                window.open("/LoginAndRegister/Login.aspx", "_Self");
+                                            }
+                                        }
+                                    });
+                                });
+                            </script>
                         </ul>
                     </li>
                     <!-- END USER LOGIN DROPDOWN -->
@@ -156,6 +172,7 @@
                     <div class="sidebar-toggler hidden-phone"></div>
                     <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
                 </li>
+                <%if (roleId == "1"){ %>
                 <li>
                     <a href="javascript:;">
                         <i class="icon-comments"></i>
@@ -166,52 +183,73 @@
                         <li>
                             <a href="#" onclick="return false" id="businesses">商户名单</a>
                             <a href="#" onclick="return false">商户商品请求</a>
-                            <a href="#" onclick ="return false">商户评分</a>
+                            <a href="#" onclick="return false">商户评分</a>
                         </li>
                     </ul>
                 </li>
+                <%}else if (roleId == "2"){ %>
+                <li>
+                    <a href="javascript:;">
+                        <i class="icon-comments"></i>
+                        <span class="title">订单</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#" onclick="return false" id="products">产品列表</a>
+                            <a href="#" onclick="return false">客户订单</a>
+                            <a href="#" onclick="return false">交易营收</a>
+                        </li>
+                    </ul>
+                </li>
+                <%} %>
             </ul>
             <!-- END SIDEBAR MENU -->
         </div>
         <!-- END SIDEBAR -->
         <!-- BEGIN PAGE -->
         <div class="page-content easyui-tabs" data-options="fit:true" id="content">
-            <div data-options="title:'首页'"></div>
+            <div data-options="title:'首页'">
+                <img src="../Images/Admin/Admin.jpg" style="width: 100%; height: 100%;" />
+            </div>
         </div>
-        <script>
-            $(function () {
-                $("#businesses").click(function () {
-                    //获取标题
-                    var title = $(this).html();
-                    if (!$("#content").tabs("exists", title)) {
-                        $("#content").tabs('add', {
-                            href: '/Admin/PartialView/ShowBussinessData.html',
-                            fit: true,
-                            closable: true,
-                            title:title,
-                        });
-                    }
-                });
+    </div>
+    <script>
+        $(function () {
+            $("#businesses").click(function () {
+                //获取标题
+                var title = $(this).html();
+                if (!$("#content").tabs("exists", title)) {
+                    $("#content").tabs('add', {
+                        href: '/Admin/PartialView/ShowBussinessData.html',
+                        fit: true,
+                        closable: true,
+                        title: title,
+                    });
+                } else {
+                    $("#content").tabs("select", title);
+                }
             });
-        </script>
-        <!-- end PAGE -->
-        <!-- **** -->
-        <!-- **** -->
-        <!-- === -->
-        <div id="static" class="modal hide fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                <h3 id="titler"></h3>
-            </div>
-            <div class="modal-body">
-                <p id="contenter"></p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" data-dismiss="modal" class="btn">确定</button>
-                <button type="button" data-dismiss="modal" class="btn green">关闭会话</button>
-            </div>
+        });
+    </script>
+    <!-- end PAGE -->
+    <!-- **** -->
+    <!-- **** -->
+    <!-- === -->
+    <div id="static" class="modal hide fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+            <h3 id="titler"></h3>
         </div>
-        <!-- === -->
+        <div class="modal-body">
+            <p id="contenter"></p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn">确定</button>
+            <button type="button" data-dismiss="modal" class="btn green">关闭会话</button>
+        </div>
+    </div>
+    <!-- === -->
     </div>
     <!-- END CONTAINER -->
     <!-- BEGIN FOOTER -->
