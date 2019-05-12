@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using FTZ.PlayAndAte.BLL;
-
 namespace Play_And_Ate.Products
 {
     public partial class Farm : System.Web.UI.Page
@@ -27,7 +26,7 @@ namespace Play_And_Ate.Products
                 {
                     this.RPTJ.DataSource = ProductManager.GetProductsBytotal(2).Where(s => s.Area.AreaId == int.Parse(Request["TAreaID"].ToString())).Take(8).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
                     this.RPTJ.DataBind();
-
+                   
                 }
                 else
                 {
@@ -35,13 +34,24 @@ namespace Play_And_Ate.Products
                     this.RPTJ.DataBind();
                 }
 
+
+                //主题
+                this.ReZhu.DataSource = ProductManager.GetProductsBytotal(2).Where(s=>s.PPointsType.PPointsType1=="度假村").Take(1).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice ,ProductID = s.ProductId });
+                this.ReZhu.DataBind();
+                this.ReZhuT.DataSource= ProductManager.GetProductsBytotal(2).Where(s => s.PPointsType.PPointsType1 == "温泉农庄").Take(3).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
+                this.ReZhuT.DataBind();
+                //采摘园
+                this.ReProduct.DataSource= ProductManager.GetProductsBytotal(2).Where(s => s.PPointsType.PPointsType1 == "科普基地").Take(8).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId });
+                this.ReProduct.DataBind();
             }
 
 
 
         }
 
-     
+        protected void Unnamed_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

@@ -58,13 +58,31 @@ namespace Play_And_Ate.Line {
         protected global::System.Web.UI.WebControls.Repeater RPremaiLine;
         
         /// <summary>
-        /// RPtjtj 控件。
+        /// RPgent 控件。
         /// </summary>
         /// <remarks>
         /// 自动生成的字段。
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater RPtjtj;
+        protected global::System.Web.UI.WebControls.Repeater RPgent;
+        
+        /// <summary>
+        /// RPziz 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RPziz;
+        
+        /// <summary>
+        /// RPzij 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater RPzij;
         
         /// <summary>
         /// RPgentuan1 控件。
