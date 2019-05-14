@@ -77,6 +77,10 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="XddPay, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\XddPay.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Backstage.aspx" />
@@ -202,6 +206,12 @@
     <Content Include="Images\LoginAndRegister\wechat.png" />
     <Content Include="Images\LoginAndRegister\wg.png" />
     <Content Include="Images\LoginAndRegister\xian.jpg" />
+    <Content Include="Images\Order\order12.gif" />
+    <Content Include="Images\Order\order6.gif" />
+    <Content Include="Images\Order\paypal_logo.gif" />
+    <Content Include="Images\Order\qyfk43_03.jpg" />
+    <Content Include="Images\Order\tenpay_buy.gif" />
+    <Content Include="Images\Order\微信支付.jpg" />
     <Content Include="Images\Tailorism\n1.jpg" />
     <Content Include="Images\Tailorism\n2.jpg" />
     <Content Include="Images\Tailorism\n3.jpg" />
@@ -434,7 +444,9 @@
     <Content Include="Order\Order_2.html" />
     <Content Include="Order\Order_3.aspx" />
     <Content Include="Order\Order_3.html" />
+    <Content Include="Order\Order_4.aspx" />
     <Content Include="Order\Order_4.html" />
+    <Content Include="Order\PayTo.aspx" />
     <Content Include="Plugin\jquery-easyui-1.7.0\changelog.txt" />
     <Content Include="Plugin\jquery-easyui-1.7.0\datagrid-defaultview.js" />
     <Content Include="Plugin\jquery-easyui-1.7.0\datagrid-detailview.js" />
@@ -1482,6 +1494,10 @@
     <Compile Include="Map\Map.aspx.designer.cs">
       <DependentUpon>Map.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Order\App_Code\XddpayConfig.cs" />
+    <Compile Include="Order\App_Code\XddpayFunction.cs" />
+    <Compile Include="Order\App_Code\XddpayResponse.cs" />
+    <Compile Include="Order\App_Code\XddpayService.cs" />
     <Compile Include="Order\Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1502,6 +1518,20 @@
     </Compile>
     <Compile Include="Order\Order_3.aspx.designer.cs">
       <DependentUpon>Order_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\Order_4.aspx.cs">
+      <DependentUpon>Order_4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\Order_4.aspx.designer.cs">
+      <DependentUpon>Order_4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order\PayTo.aspx.cs">
+      <DependentUpon>PayTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order\PayTo.aspx.designer.cs">
+      <DependentUpon>PayTo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products\Ecological.aspx.cs">
       <DependentUpon>Ecological.aspx</DependentUpon>
