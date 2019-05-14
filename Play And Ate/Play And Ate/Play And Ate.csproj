@@ -83,6 +83,7 @@
     <Content Include="Admin\PartialView\ShowBussinessData.html" />
     <Content Include="Cart\Cart.aspx" />
     <Content Include="Cart\Cart.html" />
+    <Content Include="Content\Admin\Index.css" />
     <Content Include="Content\Cart\base.v606141511.css" />
     <Content Include="Content\Cart\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Cart\core%281%29.php" />

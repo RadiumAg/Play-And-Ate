@@ -34,7 +34,13 @@ namespace Play_And_Ate.Services
                     Register();
                     break;
                 case "5":
-                    Logout();
+                    LoginOut();
+                    break;
+                case "6":
+                    UserIsExists();
+                    break;
+                case "7":
+                    UpdatePwd();
                     break;
             }
         }
@@ -42,7 +48,7 @@ namespace Play_And_Ate.Services
         /// <summary>
         /// 退出登录
         /// </summary>
-        public void Logout()
+        public void LoginOut()
         {
             try
             {
@@ -69,6 +75,44 @@ namespace Play_And_Ate.Services
                 Str = sM.str,
             };
             context.Response.Write(JsonConvert.SerializeObject(msg));
+        }
+
+        /// <summary>
+        /// 更新用户数据
+        /// </summary>
+        public void UpdatePwd()
+        {
+            string pwd = context.Request["pwd"].ToString();
+            UserInfo_Role user = new UserInfo_Role
+            {
+                Pwd = pwd,
+            };
+            if (UserInfo_RoleManager.UpdateUser(user))
+            {
+                context.Response.Write(JsonConvert.SerializeObject(true));
+            }
+            else
+            {
+                context.Response.Write(JsonConvert.SerializeObject(false));
+            }
+        }
+
+
+        /// <summary>
+        /// 判断用户是否存在
+        /// </summary>
+        public void UserIsExists()
+        {
+            string userName = context.Request["userName"].ToString();
+            string phoneNumber = context.Request["phoneNumber"].ToString();
+            if (UserInfo_RoleManager.UserData().Where(x => x.Phone == phoneNumber && x.UserName == userName).Count() > 0)
+            {
+                context.Response.Write(JsonConvert.SerializeObject(true));
+            }
+            else
+            {
+                context.Response.Write(JsonConvert.SerializeObject(false));
+            }
         }
 
         /// <summary>
