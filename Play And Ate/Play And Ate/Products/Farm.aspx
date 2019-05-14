@@ -211,6 +211,8 @@
                              url: "Farm.aspx",
                              data: { "TAreaID": farm },
                              success: function (e) {
+                                 window.location.href = "../Products/Farm.aspx?TAreaID=" + farm;
+                                 window.parent.location.reload();//，让页面刷新一下，数据就出来了。
                              },
                              error: function (o) {
                                  //alert(123);
@@ -222,39 +224,31 @@
                     <div class="xjtore_top">
                         <div class="title">推荐</div>
                         <ul class="down_store" id="index_purpose">
-                            <li class="p_1 mr_tj"><a href="javascript:void(0);" onclick="load_farm_stor(1)" >上海</a></li>
-                            <li class="p_4"><a href="javascript:void(0);" onclick="load_farm_stor(4)">北京</a></li>
-                            <li class="p_7"><a href="javascript:void(0);" onclick="load_farm_stor(7)">天津</a></li>
-                            <li class="p_2"><a href="javascript:void(0);" onclick="load_farm_stor(2)">南京</a></li>
-                            <li class="p_3"><a href="javascript:void(0);" onclick="load_farm_stor(3)">杭州</a></li>
-                            <li class="p_6"><a href="javascript:void(0);" onclick="load_farm_stor(6)">济南</a></li>
-                            <li class="p_8"><a href="javascript:void(0);" onclick="load_farm_stor(8)">苏州</a></li>
+                            <li ><a class="p_1 mr_tj"   Onclick="return load_farm_stor(1)">上海</a></li>
+                            <li ><a class="p_4"   Onclick="return load_farm_stor(4)">北京</a></li>
+                            <li ><a class="p_7"   Onclick="return load_farm_stor(7)">天津</a></li>
+                            <li ><a class="p_2"   Onclick="return load_farm_stor(2)">南京</a></li>
+                            <li ><a class="p_3"   Onclick="return load_farm_stor(3)">杭州</a></li>
+                            <li ><a class="p_6"   Onclick="return load_farm_stor(6)">济南</a></li>
+                            <li ><a class="p_8"   Onclick="return load_farm_stor(8)">苏州</a></li>
                         </ul>
                         <div class="gengduo f_r" id="chengshi_gengduo"><a href="#" target="_blank">更多&gt;&gt;</a></div>
                         <div class="clear"></div>
                     </div>
-                   
                     <div class="xjtore_con" id="ajax_farm_store">
-                        <asp:ScriptManager runat="server" ID="SM1">
+                        <asp:Repeater runat="server" ID="RPTJ">
+                            <ItemTemplate>
+                                <div class="s_info">
+                                    <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>' target="_blank">
+                                        <img src='../Images/Home/<%#Eval("Image") %>' alt='<%#Eval("ProductName") %>'></a>
+                                    <p class="store_name">
+                                        <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>' target="_blank" class="f_l"><%#Eval("ProductName") %></a>
+                                        <span class="people f_r">￥<span class="peoda"><%#string.Format("{0:F2}",Eval("ProductPrice")) %></span><span class="peohui">起</span></span>
+                                    </p>
+                                </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
 
-                        </asp:ScriptManager>
-                        <asp:UpdatePanel runat="server" ID="UP1">
-                            <ContentTemplate>
-                                 <asp:Repeater runat="server" ID="RPTJ">
-                                <ItemTemplate>
-                                    <div class="s_info">
-                                        <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>' target="_blank">
-                                            <img src='../Images/Home/<%#Eval("Image") %>' alt='<%#Eval("ProductName") %>'></a>
-                                        <p class="store_name">
-                                            <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>' target="_blank" class="f_l"><%#Eval("ProductName") %></a>
-                                            <span class="people f_r">￥<span class="peoda"><%#string.Format("{0:F2}",Eval("ProductPrice")) %></span><span class="peohui">起</span></span>
-                                        </p>
-                                    </div>
-                                </ItemTemplate>
-                            </asp:Repeater>
-                            </ContentTemplate>
-                        </asp:UpdatePanel>
-                        
                     </div>
                 </div>
                 <div class="hg_25 both"></div>
@@ -270,7 +264,7 @@
                             <li class="zht_21 f_l"><a href="javascript:void(0);" onclick="load_farm_zhuti(21)">度假村</a></li>
                             <li class="zht_17 f_l"><a href="javascript:void(0);" onclick="load_farm_zhuti(17)">科普基地</a></li>
                         </ul>
-                        <div class="gengduo f_r" id="zhuti_gengduo"><a href="http://sh.01nz.com.cn/farmlist/zht-wenquan" target="_blank">更多&gt;&gt;</a></div>
+                        <div class="gengduo f_r" id="zhuti_gengduo"><a href="#" target="_blank">更多&gt;&gt;</a></div>
                         <div class="clear"></div>
                     </div>
                     <div id="ajax_farm_zhuti">
@@ -316,7 +310,7 @@
                             <li class="czfl_31 f_l"><a href="javascript:void(0);" onclick="load_farm_caizhai(31)">桑葚采摘</a></li>
                             <li class="czfl_30 f_l"><a href="javascript:void(0);" onclick="load_farm_caizhai(30)">樱桃采摘</a></li>
                         </ul>
-                        <div class="gengduo f_r"><a href="http://sh.01nz.com.cn/farmlist/zht-caizhai" target="_blank">更多&gt;&gt;</a></div>
+                        <div class="gengduo f_r"><a href="#" target="_blank">更多&gt;&gt;</a></div>
                     </div>
                     <div id="ajax_farm_caizhai">
                         <div class="mztore_con">

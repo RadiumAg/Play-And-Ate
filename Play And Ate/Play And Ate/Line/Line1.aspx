@@ -254,12 +254,18 @@
                     <div class="middle01">
                         <div class="shty_top tj">
                             <div class="title tj_tit">特价推荐</div>
+                            <ul class="down_store" id="index_purnj">
+			                <li id="gtx" class="gentuan mr_nj"><a href="javascript:void(0);" onclick="load_rmcdc_store({$city_id})">跟团行</a></li> 
+			                <li id="zzx" class="zizhu"><a href="javascript:void(0);" onclick="load_rmcdc_store({$purpose.id})">自助行</a></li>
+			                <li id="zjx" class="zijia"><a href="javascript:void(0);" onclick="load_rmcdc_store({$purpose.id})">自驾行</a></li>
+			                </ul>
                             <div class="clear"></div>
                         </div>
                     </div>
+                    
                     <!-- 根据农家行进行特教推荐-->
                     <div id="gentuan" class="istore_con f_r">
-                        <asp:Repeater ID="RPtjtj" runat="server">
+                        <asp:Repeater ID="RPgent" runat="server">
                             <ItemTemplate>
                             <div class="s_info">
                              <a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank">
@@ -267,7 +273,35 @@
                                 <p class="jieshao"> </p>
                                 <span class="jg f_l">￥<%# Eval("ProductPrice") %>起</span>
                             </a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<p class="store_name"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><%# Eval("ProductName") %></a></p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="store_name"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><%# Eval("ProductName") %></a></p>
+                        </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </div>
+                    <div id="zizhu" class="istore_con f_r"  style="display:none" >
+                        <asp:Repeater ID="RPziz" runat="server">
+                            <ItemTemplate>
+                            <div class="s_info">
+                             <a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank">
+                                <img src="../Images/Home/<%# Eval("Image") %>" width="180" height="137" }"="" alt="<%# Eval("ProductName") %>">
+                                <p class="jieshao"> </p>
+                                <span class="jg f_l">￥<%# Eval("ProductPrice") %>起</span>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="store_name"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><%# Eval("ProductName") %></a></p>
+                        </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                    </div>
+                    <div id="zijia" class="istore_con f_r"  style="display:none" >
+                        <asp:Repeater ID="RPzij" runat="server">
+                            <ItemTemplate>
+                            <div class="s_info">
+                             <a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank">
+                                <img src="../Images/Home/<%# Eval("Image") %>" width="180" height="137" }"="" alt="<%# Eval("ProductName") %>">
+                                <p class="jieshao"> </p>
+                                <span class="jg f_l">￥<%# Eval("ProductPrice") %>起</span>
+                            </a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="store_name"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><%# Eval("ProductName") %></a></p>
                         </div>
                             </ItemTemplate>
                         </asp:Repeater>
@@ -291,7 +325,7 @@
                                 <p class="jieshao"> </p>
                                 <span class="jg f_l">￥<%# Eval("ProductPrice").ToString().Split('.')[0] %>起</span>
                             </a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<p class="store_name"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><%# Eval("ProductName") %></a></p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="store_name"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><%# Eval("ProductName") %></a></p>
                         </div>
                             </ItemTemplate>
                         </asp:Repeater>
@@ -328,7 +362,7 @@
                                 <p class="jieshao"> </p>
                                 <span class="jg f_l">￥<%# Eval("ProductPrice").ToString().Split('.')[0] %>起</span>
                             </a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<p class="store_name"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><%# Eval("ProductName") %></a></p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="store_name"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><%# Eval("ProductName") %></a></p>
                         </div>
                             </ItemTemplate>
                         </asp:Repeater>
@@ -365,7 +399,7 @@
                                 <p class="jieshao"> </p>
                                 <span class="jg f_l">￥<%# Eval("ProductPrice").ToString().Split('.')[0] %>起</span>
                             </a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;<p class="store_name"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><%# Eval("ProductName") %></a></p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="store_name"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><%# Eval("ProductName") %></a></p>
                         </div>
                             </ItemTemplate>
                         </asp:Repeater>

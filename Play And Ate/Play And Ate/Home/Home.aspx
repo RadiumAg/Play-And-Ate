@@ -5,15 +5,16 @@
     <script src="../Scripts/Home/main_store.js"></script>
     <style>
         #kefu {
-         position:fixed;
-         top:200px;
-         z-index:99999;
+            position: fixed;
+            top: 200px;
+            z-index: 99999;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-    <a id="kefu" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2637304079&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2637304079:53" alt="点击这里查询客服" title="点击这里查询客服"/></a>
-    
+    <a id="kefu" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2637304079&site=qq&menu=yes">
+        <img border="0" src="http://wpa.qq.com/pa?p=2:2637304079:53" alt="点击这里查询客服" title="点击这里查询客服" /></a>
+
     <asp:ScriptManagerProxy runat="server" ID="spHome">
     </asp:ScriptManagerProxy>
     <script type="text/javascript">
@@ -68,7 +69,7 @@
                     <div class="gdonetop">
                         <div class="gdonel">
                             <div class="odbg"></div>
-                            <label style="color:black;">选择需求</label>
+                            <label style="color: black;">选择需求</label>
                         </div>
                         <div class="gdoner">
                             <div class="gdbgimg gda"></div>
@@ -78,7 +79,7 @@
                         <div class="gdonebotl">
                             <ul>
                                 <li>
-                                    
+
                                     <div class="gbotltop">
                                         <div class="gbotllibg gbga"></div>
                                         <label>专业客服</label>
