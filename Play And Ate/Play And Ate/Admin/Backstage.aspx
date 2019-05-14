@@ -33,6 +33,7 @@
     <!-- mask alert -->
     <!-- END GLOBAL MANDATORY STYLES -->
     <link rel="shortcut icon" href="/Plugin/public/media/image/favicon.png" />
+    <link href="../Content/Admin/Index.css" rel="stylesheet" />
     <!-- END COPYRIGHT -->
     <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
     <!-- BEGIN CORE PLUGINS -->
@@ -72,6 +73,7 @@
             background-color: initial !important;
         }
     </style>
+
 </head>
 <!-- END HEAD -->
 <!-- BEGIN PAGE LEVEL STYLES -->
@@ -94,7 +96,7 @@
                 <!-- END LOGO -->
                 <!-- BEGIN RESPONSIVE MENU TOGGLER -->
                 <a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
-                    <img src="public/media/image/menu-toggler.png" alt="" />
+                    <img src="/Plugin/public/media/image/menu-toggler.png" alt="" />
                 </a>
                 <!-- END RESPONSIVE MENU TOGGLER -->
                 <!-- BEGIN TOP NAVIGATION MENU -->
@@ -133,9 +135,15 @@
                             <i class="icon-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="" onclick="return false"><i class="icon-lock"></i>修改密码</a></li>
-                            <li><a href="" id="loginOut" onclick="return false"><i class="icon-key"></i>退出</a></li>
+                            <li><a href="#" onclick="return false" id="modify"><i class="icon-lock"></i>修改密码</a></li>
+                            <li><a href="#" id="loginOut" onclick="return false"><i class="icon-key"></i>退出</a></li>
                             <script>
+                                //修改密码
+                                $("#modify").click(function () {
+                                    $("#dialog").dialog("open");
+                                });
+
+                                //退出
                                 $("#loginOut").click(function () {
                                     $.ajax({
                                         url: '/Services/Main.ashx?id=5',
@@ -172,7 +180,8 @@
                     <div class="sidebar-toggler hidden-phone"></div>
                     <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
                 </li>
-                <%if (roleId == "1"){ %>
+                <%if (roleId == "1")
+                    { %>
                 <li>
                     <a href="javascript:;">
                         <i class="icon-comments"></i>
@@ -187,7 +196,9 @@
                         </li>
                     </ul>
                 </li>
-                <%}else if (roleId == "2"){ %>
+                <%}
+                    else if (roleId == "2")
+                    { %>
                 <li>
                     <a href="javascript:;">
                         <i class="icon-comments"></i>
@@ -250,16 +261,13 @@
         </div>
     </div>
     <!-- === -->
-    </div>
     <!-- END CONTAINER -->
     <!-- BEGIN FOOTER -->
     <!-- END FOOTER -->
-    <!-- <script type="text/javascript" src="/media/js/yy_card.js"></script> -->
     <script src="/Plugin/public/media/js/colpick.js"></script>
     <script src="/Plugin/public/media/js/plugin.js"></script>
     <script src="/Plugin/public/media/js/website.js"></script>
     <script src="/Plugin/public/media/js/jquery.upload.js"></script>
-    <!--     <script src="/media/js/jquery.rotate.min.js"></script> -->
     <script src="/Plugin/public/swiper/dist/js/swiper.min.js"></script>
     <script>
         jQuery(document).ready(function () {
@@ -270,43 +278,8 @@
         });
 
 
-        //上传图片
-        function upload(obj, num, b) {
-            $.upload({
-                // 上传地址
-                url: "{:url('user/website/ajax_upload')}",
-                // 文件域名字
-                fileName: 'file' + num,
-                // 其他表单数据
-                // 上传完成后, 返回json, text
-                dataType: 'json',
-                // 上传之前回调,return true表示可继续上传
-                onSend: function () {
-                    return true;
-                },
-                // 上传之后回调
-                onComplate: function (data) {
-                    if (b == 1) {
-                        if (data.errcode == 1) {
-                            // alert("上传成功");
-                            $(obj).attr('src', data.errmsg);
-                        } else {
-                            alert("网络错误");
-                        }
-                    } else {
-                        $('#wraps').css({
-                            'background': 'url(' + data.errmsg + ')  no-repeat',
-                            'background-size': '100%',
-                        });
-                        // $("#containment-wrapper").attr('background','url('+data.errmsg+')');
-                    }
-                }
-            });
-        }
         //保存
-
         function savewebsite() {
-
             var content = $(".dome_exp").html(); //后台元素    
             $("#website .maininfo img").attr('ondblclick', '');
             $('.ui-widget-header,.ui-resizable-handle').remove();
@@ -336,7 +309,6 @@
 
         function keepdomafter() {
             play();
-
             $('.loading').hide();
             $('.ui-resizable-se').nextAll().remove();
             var swiper = new Swiper('.swiper-container', {
@@ -344,6 +316,129 @@
         }
     </script>
     <!-- END JAVASCRIPTS -->
+    <!--对话框-->
+    <div id="dialog">
+        <form id="dialogForm">
+            <p>
+                <span>填写密码:</span>
+                <input class="easyui-validatebox" data-options="required:true" type="password" style="height: 20px;" id="passWord" />
+            </p>
+            <p>
+                <span>确认密码:</span>
+                <input id="cpwd" class="easyui-validatebox" data-options="required:true,validType:'equalTo[\'#passWord\']'" type="password" />
+            </p>
+            <p>
+                <span>填写手机号:</span>
+                <input id="phoneNumber" class="easyui-validatebox text" data-options="required:true,missingMessage:'手机号必填！'" type="text" style="height: 20px;" />
+            </p>
+            <p>
+                <span>验证码：</span>
+                <input type="text" id="code" style="width: 100px; height: 20px;" class="easyui-validatebox" />
+            </p>
+            <div id="btnGo" style="width: 80px;">发送验证码</div>
+        </form>
+    </div>
+    <script>
+        $("#dialog").dialog({
+            title: '修改密码',
+            width: 310,
+            height: 330,
+            modal: true,
+            buttons: [{
+                text: '确定修改',
+                iconCls: 'icon-ok',
+                onClick: function () {
+                    console.log(VCode);
+                    let code = $("#code").val();
+                    if (VCode != code || VCode == "") {
+                        $("#code").tooltip({
+                            position: "right",
+                            content: "验证码不正确",
+                        });
+                    } else {
+                        $.ajax({
+                            dataType: 'JSON',
+                            type: 'GET',
+                            url: '/Services/Main.ashx?id=7',
+                            data: {
+                                pwd: $("#cpwd").val()
+                            },
+                            success: function (data) {
+                                if (data) {
+                                    $.messager.alert("提示", "密码更新成功！");
+                                    location.reload("/LoginAndRegister/Login.aspx", "_Self");
+                                }
+                                else {
+                                    location.messager("更新失败！！");
+                                }
+                            }
+                        });
+                    }
+                }
+            }]
+        });
+
+        //重写验证
+        $.extend($.fn.validatebox.defaults.rules, {
+            equalTo: {
+                validator: function (value, param) {
+                    return $(param[0]).val() == value;
+                },
+                message: '两次输入密码不一致'
+            }
+        })
+        $("#dialog").dialog("close");
+        //发送验证码
+        let VCode = "";//验证码
+
+        $("#btnGo").linkbutton({
+            iconCls: 'icon-ok',
+            text: '确定发送',
+            onClick: function () {
+                if (!$("#dialogForm").form('validate')) return;
+
+                $.ajax({
+                    type: 'GET',
+                    dataType: 'JSON',
+                    url: '/Services/Main.ashx?id=6',
+                    data: {
+                        phoneNumber: $("#phoneNumber").val(),
+                        userName:'<%= userName%>',
+                    },
+                    success: function (data) {
+                        console.log(data, typeof (data));
+                        if (data) {
+                            $.ajax({
+                                type: 'GET',
+                                dataType: 'JSON',
+                                data: {
+                                    phoneNumber: $("#phoneNumber").val()
+                                },
+                                url: '/Services/Main.ashx?id=3',
+                                success: function (data) {
+                                    let result = data;
+                                    console.log(result);
+                                    if (JSON.parse(result.Result).Code == "OK" && JSON.parse(result.Result).Message == "OK") {
+                                        alert("发送成功！");
+                                        VCode = result.Str;
+                                    }
+                                    else {
+                                        alert("发送失败！");
+                                    }
+                                }
+                            })
+                        } else {
+                            $.messager.alert("提示", "当前用户未绑定该手机号！！");
+                        }
+                    },
+                    error: function (data) {
+                        console.log(data);
+                    }
+                });
+            }
+        });
+    </script>
+    <!--对话框-->
 </body>
 <!-- END BODY -->
 
