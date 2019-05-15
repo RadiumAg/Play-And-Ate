@@ -159,5 +159,26 @@ namespace FTZ.PlayAndAte.DAL
                 return areas;
             }
         }
+
+        /// <summary>
+        /// 获取所有产品
+        /// </summary>
+        /// <returns></returns>
+        public static List<Product> GetALLProducts()
+        {
+            try
+            {
+                using (PlayAndAteEntities entities =new PlayAndAteEntities())
+                {
+                    List<Product> list = entities.Product.Include("Image").Include("Area").Include("PPointsType").ToList<Product>();
+                    return list;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }
