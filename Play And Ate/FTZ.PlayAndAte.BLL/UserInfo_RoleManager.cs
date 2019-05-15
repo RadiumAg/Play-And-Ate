@@ -13,6 +13,24 @@ namespace FTZ.PlayAndAte.BLL
     {
 
         /// <summary>
+        /// 更新用户信息 
+        /// </summary>
+        /// <returns>是否更新成功</returns>
+        public static bool UpdateUser(UserInfo_Role user)
+        {
+            return UserInfo_RoleService.UpdateUser(user);
+        }
+
+        /// <summary>
+        /// 返回所有商户信息
+        /// </summary>
+        /// <returns>商户信息实体集合</returns>
+        public static List<UserInfo_Role> UserData()
+        {
+            return UserInfo_RoleService.UserData();
+        }
+
+        /// <summary>
         /// 展示所有商户信息
         /// </summary>
         /// <returns>商户信息</returns>
@@ -39,5 +57,7 @@ namespace FTZ.PlayAndAte.BLL
         {
             return UserInfo_RoleService.InsertUser(user);
         }
+
+
     }
 }

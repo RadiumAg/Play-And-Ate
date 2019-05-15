@@ -1,26 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using FTZ.PlayAndAte.Models;
+using FTZ.PlayAndAte.BLL;
 
 namespace Play_And_Ate.Admin
 {
     public partial class Backstage : System.Web.UI.Page
     {
 
-        protected string role; //权限
+        /// <summary>
+        /// 用户权限
+        /// </summary>
+        protected string roleId { get; set; }
+        protected string userName { get; set; }//用户姓名
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (this.Request["id"].ToString() == "1")
-            {
-                role = "admin";
-            }
-            else if (this.Request["id"].ToString() == "2")
-            {
-                role = "business";
-            }
+            this.userName = this.Request["UserName"].ToString();
+            roleId = this.Request["id"] ?? "";
         }
 
     }

@@ -378,9 +378,9 @@
                                 if (sessionStorage.getItem("Order") == null) {
                                     sessionStorage.setItem("Order", document.referrer);
                                     a = document.referrer;
-                                    window.open(a);
+                                    window.location.href = a;
                                 } else {
-                                    window.open("Order.aspx");
+                                    window.location.href = "Order.aspx";
                                 }
                             })
                         })
