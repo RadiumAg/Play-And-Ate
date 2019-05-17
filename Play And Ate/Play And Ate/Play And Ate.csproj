@@ -49,8 +49,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\aliyun-net-sdk-dysmsapi.dll</HintPath>
     </Reference>
-    <Reference Include="AspNetPager">
-      <HintPath>D:\ChromeDownLoad\AspNetPagerCN-7.5.1\Demo\Bin\AspNetPager.dll</HintPath>
+    <Reference Include="AspNetPager, Version=7.5.1.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNetPager_CN.7.5.1\lib\AspNetPager.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>

@@ -112,5 +112,6 @@ namespace Play_And_Ate.Search
             Pager.CurrentPageIndex = e.NewPageIndex;
             DataBind();
         }
+
     }
 }
