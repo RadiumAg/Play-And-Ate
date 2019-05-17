@@ -50,7 +50,7 @@ namespace FTZ.PlayAndAte.BLL
         }
 
         /// <summary>
-        /// 根据农家行查询下面所有农庄的信息
+        /// 根据总类型ID查询下面的农庄
         /// </summary>
         /// <returns></returns>
         public static List<Product> GetProductsBytotal(int id)
@@ -66,6 +66,14 @@ namespace FTZ.PlayAndAte.BLL
         public static List<Area> GetAreasByTotal(int type)
         {
             return ProductServices.GetAreasByTotal(type);
+        }
+        /// <summary>
+        /// 返回所有产品
+        /// </summary>
+        /// <returns></returns>
+        public static List<Product> GetALLProducts()
+        {
+            return ProductServices.GetALLProducts();
         }
 
     }
