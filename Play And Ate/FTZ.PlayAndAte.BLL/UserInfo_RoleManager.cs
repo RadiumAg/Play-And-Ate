@@ -18,7 +18,7 @@ namespace FTZ.PlayAndAte.BLL
         /// <returns>是否更新成功</returns>
         public static bool UpdateUser(UserInfo_Role user)
         {
-            return UserInfo_RoleService.UpdateUser(user);
+            return UserInfo_RoleServices.UpdateUser(user);
         }
 
         /// <summary>
@@ -27,7 +27,7 @@ namespace FTZ.PlayAndAte.BLL
         /// <returns>商户信息实体集合</returns>
         public static List<UserInfo_Role> UserData()
         {
-            return UserInfo_RoleService.UserData();
+            return UserInfo_RoleServices.UserData();
         }
 
         /// <summary>
@@ -36,7 +36,7 @@ namespace FTZ.PlayAndAte.BLL
         /// <returns>商户信息</returns>
         public static List<UserInfo_Role> ShowBusiness()
         {
-            return UserInfo_RoleService.ShowBusiness();
+            return UserInfo_RoleServices.ShowBusiness();
         }
 
         /// <summary>
@@ -45,7 +45,7 @@ namespace FTZ.PlayAndAte.BLL
         /// <returns>用户实体</returns>
         public static UserInfo_Role CheckUserInfo(UserInfo_Role user)
         {
-            return UserInfo_RoleService.UserData(user);
+            return UserInfo_RoleServices.UserData(user);
         }
 
         /// <summary>
@@ -55,7 +55,7 @@ namespace FTZ.PlayAndAte.BLL
         /// <returns>是否注册成功</returns>
         public static bool Register(UserInfo_Role user)
         {
-            return UserInfo_RoleService.InsertUser(user);
+            return UserInfo_RoleServices.InsertUser(user);
         }
 
 

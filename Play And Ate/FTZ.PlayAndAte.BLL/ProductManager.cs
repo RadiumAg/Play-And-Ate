@@ -11,6 +11,16 @@ namespace FTZ.PlayAndAte.BLL
     {
 
         /// <summary>
+        /// 根据商家姓名显示该商家的所有商品
+        /// </summary>
+        /// <param name="userName">商家姓名</param>
+        /// <returns>商品实体信息集合</returns>
+        public static List<Product> ShowProducts(string userName, int id = 0)
+        {
+            return ProductServices.ShowProductsData(userName: userName, id: id);
+        }
+
+        /// <summary>
         /// 根据地区编号展示商品信息
         /// </summary>
         /// <returns>商品信息</returns>

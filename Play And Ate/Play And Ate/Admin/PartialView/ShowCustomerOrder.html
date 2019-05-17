@@ -1,0 +1,19 @@
+﻿
+<body>
+    <div id="dgOrder"></div>
+    <script>
+        $("#dgOrder").datagrid({
+            url: '/Services/Main.ashx?id=8&userName=zsq',
+            fit: true,
+            fitColumns: true,
+            columns: [[
+                { field: 'Id', width: 50, title: '编号' },
+                { field: 'OrderId', width: 50, title: '订单号' },
+                { field: 'OrderName', width: 50, title: '订单名' },
+                { field: 'CustomerNum', width: 50, title: '客户数量' },
+                { field: 'OrderPrice', width: 50, title: '总价格' },
+                { field: 'Customers', width: 50, title: '客户详情', hidden: true }
+            ]]
+        });
+    </script>
+</body>

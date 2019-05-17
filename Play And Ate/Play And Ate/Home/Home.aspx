@@ -624,7 +624,7 @@
                     <div class="mtext_b_l f_l">
                         <div class="mtext_b_l_title blue">
                             <div class="f_l kuais">主题分类</div>
-                            <a href="http://www.01nz.com.cn/#" title="" class="myy_yd f_r">更多 &gt;&gt;</a>
+                            <a href="#" title="" class="myy_yd f_r">更多 &gt;&gt;</a>
                         </div>
                         <div class="mzt_left">
                             <div class="theme">
@@ -636,7 +636,7 @@
                                         target="_blank">度假村</a> </li>
                                     <li><a href="#"
                                         target="_blank">温泉农庄</a> </li>
-                                    <li><a href="http://sh.01nz.#" target="_blank">科普基地</a>
+                                    <li><a href="#" target="_blank">科普基地</a>
                                     </li>
                                     <li><a href="#"
                                         target="_blank">拓展培训</a> </li>

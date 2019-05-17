@@ -42,7 +42,23 @@ namespace Play_And_Ate.Services
                 case "7":
                     UpdatePwd();
                     break;
+                case "8":
+                    ShowCustomerOrder();
+                    break;
+                case "9":
+                    ShowProduct();
+                    break;
             }
+        }
+
+        /// <summary>
+        /// 展示客户订单列表
+        /// </summary>
+        public void ShowCustomerOrder()
+        {
+            string userName = context.Request["UserName"].ToString();//获取登录的管理员名
+            var result = OrderManager.ShowOrder(userName);
+            context.Response.Write(JsonConvert.SerializeObject(result));
         }
 
         /// <summary>
@@ -195,6 +211,14 @@ namespace Play_And_Ate.Services
             })));
         }
 
+        /// <summary>
+        /// 获取指定所有商户
+        /// </summary>
+        public void ShowProduct()
+        {
+            string userName = context.Request["UserName"].ToString();
+            context.Response.Write(JsonConvert.SerializeObject(ProductManager.ShowProducts(userName:userName)));
+        }
         public bool IsReusable
         {
             get
