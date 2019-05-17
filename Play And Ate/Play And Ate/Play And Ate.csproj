@@ -89,6 +89,8 @@
   <ItemGroup>
     <Content Include="Admin\Backstage.aspx" />
     <Content Include="Admin\PartialView\ShowBussinessData.html" />
+    <Content Include="Admin\PartialView\ShowCustomerOrder.html" />
+    <Content Include="Admin\PartialView\ShowProductsData.html" />
     <Content Include="Cart\Cart.aspx" />
     <Content Include="Cart\Cart.html" />
     <Content Include="Content\Admin\Index.css" />
@@ -482,6 +484,7 @@
     <Content Include="Images\LoginAndRegister\52a1881254edd.png" />
     <Content Include="Images\LoginAndRegister\52d0f08581839.png" />
     <Content Include="Images\LoginAndRegister\cs_dw.png" />
+    <Content Include="Images\LoginAndRegister\denglu.png" />
     <Content Include="Images\LoginAndRegister\end_2.gif" />
     <Content Include="Images\LoginAndRegister\end_3.gif" />
     <Content Include="Images\LoginAndRegister\icon.gif" />
@@ -1014,6 +1017,7 @@
     <Content Include="Products\Fishing.html" />
     <Content Include="Products\Generated.aspx" />
     <Content Include="Products\Generated.html" />
+    <Content Include="Scripts\Admin\Index.js" />
     <Content Include="Scripts\Cart\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\Cart\baidumap.js" />
     <Content Include="Scripts\Cart\c.js" />
@@ -1099,6 +1103,7 @@
     <Content Include="Scripts\LoginAndRegister\Register\c.js" />
     <Content Include="Scripts\LoginAndRegister\Register\fgcomm.v620152248.js" />
     <Content Include="Scripts\LoginAndRegister\Register\header.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\Index.js" />
     <Content Include="Scripts\LoginAndRegister\Register\index_header.js" />
     <Content Include="Scripts\LoginAndRegister\Register\lang.js" />
     <Content Include="Scripts\LoginAndRegister\Register\mt3.v1014201036.js" />
@@ -1226,6 +1231,10 @@
     <Compile Include="Map\Map.aspx.designer.cs">
       <DependentUpon>Map.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Order\App_Code\XddpayConfig.cs" />
+    <Compile Include="Order\App_Code\XddpayFunction.cs" />
+    <Compile Include="Order\App_Code\XddpayResponse.cs" />
+    <Compile Include="Order\App_Code\XddpayService.cs" />
     <Compile Include="Order\Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
