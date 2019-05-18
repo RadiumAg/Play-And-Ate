@@ -258,8 +258,17 @@
                             <script>
                                 //点击上一页返回页面
                                 $("#btn_pre").click(function () {
-                                    window.location.href = document.referrer;
-                                    window.history.back(-1);
+                                    //window.location.href = document.referrer;
+                                    //window.history.back(-1);
+                                    $("#btn_pre").click(function () {
+                                    if (sessionStorage.getItem("Order_0") == null) {
+                                    sessionStorage.setItem("Order_0", document.referrer);
+                                    a = document.referrer;
+                                    window.location.href = a;
+                                } else {
+                                    window.location.href = sessionStorage.getItem("Order_0");
+                                }
+                                })
                                 })
                             </script>
                             <script>
@@ -268,6 +277,8 @@
                                     $("#btn_next").click(function () {
                                         var cr = $("#txtHiddenPersonNum").val();
                                         var et = $("#txtHiddenChildNum").val();
+                                        var jg1 = $("#offerPrice").html();
+                                        sessionStorage.setItem("orderzjg", jg1);//保存价格
                                         sessionStorage.setItem("crrs", cr); //保存成人人数
                                         sessionStorage.setItem("etrs", et); //保存儿童人数
                                         console.log(sessionStorage.getItem("crrs"));
