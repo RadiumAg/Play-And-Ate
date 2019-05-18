@@ -34,15 +34,37 @@ namespace Play_And_Ate.Services
                     Register();
                     break;
                 case "5":
-                    Logout();
+                    LoginOut();
+                    break;
+                case "6":
+                    UserIsExists();
+                    break;
+                case "7":
+                    UpdatePwd();
+                    break;
+                case "8":
+                    ShowCustomerOrder();
+                    break;
+                case "9":
+                    ShowProduct();
                     break;
             }
         }
 
         /// <summary>
+        /// 展示客户订单列表
+        /// </summary>
+        public void ShowCustomerOrder()
+        {
+            string userName = context.Request["UserName"].ToString();//获取登录的管理员名
+            var result = OrderManager.ShowOrder(userName);
+            context.Response.Write(JsonConvert.SerializeObject(result));
+        }
+
+        /// <summary>
         /// 退出登录
         /// </summary>
-        public void Logout()
+        public void LoginOut()
         {
             try
             {
@@ -69,6 +91,44 @@ namespace Play_And_Ate.Services
                 Str = sM.str,
             };
             context.Response.Write(JsonConvert.SerializeObject(msg));
+        }
+
+        /// <summary>
+        /// 更新用户数据
+        /// </summary>
+        public void UpdatePwd()
+        {
+            string pwd = context.Request["pwd"].ToString();
+            UserInfo_Role user = new UserInfo_Role
+            {
+                Pwd = pwd,
+            };
+            if (UserInfo_RoleManager.UpdateUser(user))
+            {
+                context.Response.Write(JsonConvert.SerializeObject(true));
+            }
+            else
+            {
+                context.Response.Write(JsonConvert.SerializeObject(false));
+            }
+        }
+
+
+        /// <summary>
+        /// 判断用户是否存在
+        /// </summary>
+        public void UserIsExists()
+        {
+            string userName = context.Request["userName"].ToString();
+            string phoneNumber = context.Request["phoneNumber"].ToString();
+            if (UserInfo_RoleManager.UserData().Where(x => x.Phone == phoneNumber && x.UserName == userName).Count() > 0)
+            {
+                context.Response.Write(JsonConvert.SerializeObject(true));
+            }
+            else
+            {
+                context.Response.Write(JsonConvert.SerializeObject(false));
+            }
         }
 
         /// <summary>
@@ -151,6 +211,14 @@ namespace Play_And_Ate.Services
             })));
         }
 
+        /// <summary>
+        /// 获取指定所有商户
+        /// </summary>
+        public void ShowProduct()
+        {
+            string userName = context.Request["UserName"].ToString();
+            context.Response.Write(JsonConvert.SerializeObject(ProductManager.ShowProducts(userName:userName)));
+        }
         public bool IsReusable
         {
             get

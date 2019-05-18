@@ -13,6 +13,28 @@ namespace FTZ.PlayAndAte.DAL
     public class ProductServices
     {
 
+        /// <summary>
+        /// 查询指定商户的产品
+        /// </summary>
+        /// <param name="userName">商户名称</param>
+        /// <returns>产品实体集合</returns>
+        public static List<Product> ShowProductsData(string userName, int id = 0)
+        {
+            try
+            {
+                using (PlayAndAteEntities entities = new PlayAndAteEntities())
+                {
+                    entities.Configuration.LazyLoadingEnabled = false;
+                    return entities.Product
+                        .Where(x => x.UserInfo_Role.UserName == userName)
+                        .ToList();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+        }
 
         /// <summary>
         /// 根据地区编号展示商品信息
@@ -94,16 +116,16 @@ namespace FTZ.PlayAndAte.DAL
             }
         }
 
-       /// <summary>
-       /// 通过类别查询存在该类型的城市
-       /// </summary>
-       /// <param name="type">类型</param>
-       /// <returns></returns>
+        /// <summary>
+        /// 通过类别查询存在该类型的城市
+        /// </summary>
+        /// <param name="type">类型</param>
+        /// <returns></returns>
         public static List<Product> GetAreaNameByPPtype(string type)
         {
             try
             {
-                using (PlayAndAteEntities entities =new PlayAndAteEntities())
+                using (PlayAndAteEntities entities = new PlayAndAteEntities())
                 {
                     List<Product> list = entities.Product.Include("Area").Include("PPointsType").Where(x => x.PPointsType.PPointsType1 == type).ToList<Product>();
                     return list;
@@ -125,7 +147,7 @@ namespace FTZ.PlayAndAte.DAL
         {
             try
             {
-                using (PlayAndAteEntities entities =new PlayAndAteEntities())
+                using (PlayAndAteEntities entities = new PlayAndAteEntities())
                 {
                     List<Product> list = entities.Product.Include("Image").Include("Area").Include("PPointsType").Where(x => x.PPointsType.Pid == id).ToList<Product>();
                     return list;
@@ -143,10 +165,10 @@ namespace FTZ.PlayAndAte.DAL
         /// </summary>
         /// <param name="type">传入总类型ID</param>
         /// <returns></returns>
-        public static List<Area> GetAreasByTotal( int type)
+        public static List<Area> GetAreasByTotal(int type)
         {
             List<Area> areas = new List<Area>();
-            using (PlayAndAteEntities entities =new PlayAndAteEntities())
+            using (PlayAndAteEntities entities = new PlayAndAteEntities())
             {
                 var list = entities.Product.Include("Area").Include("PPointsType").Where(x => x.PPointsType.Pid == type).ToList();
                 foreach (var dr in list)
@@ -157,6 +179,27 @@ namespace FTZ.PlayAndAte.DAL
                     areas.Add(area);
                 }
                 return areas;
+            }
+        }
+
+        /// <summary>
+        /// 获取所有产品
+        /// </summary>
+        /// <returns></returns>
+        public static List<Product> GetALLProducts()
+        {
+            try
+            {
+                using (PlayAndAteEntities entities =new PlayAndAteEntities())
+                {
+                    List<Product> list = entities.Product.Include("Image").Include("Area").Include("PPointsType").ToList<Product>();
+                    return list;
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
             }
         }
     }

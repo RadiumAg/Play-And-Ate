@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -48,6 +49,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\aliyun-net-sdk-dysmsapi.dll</HintPath>
     </Reference>
+    <Reference Include="AspNetPager, Version=7.5.1.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
+      <HintPath>..\packages\AspNetPager_CN.7.5.1\lib\AspNetPager.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -55,6 +59,10 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Database, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -81,8 +89,11 @@
   <ItemGroup>
     <Content Include="Admin\Backstage.aspx" />
     <Content Include="Admin\PartialView\ShowBussinessData.html" />
+    <Content Include="Admin\PartialView\ShowCustomerOrder.html" />
+    <Content Include="Admin\PartialView\ShowProductsData.html" />
     <Content Include="Cart\Cart.aspx" />
     <Content Include="Cart\Cart.html" />
+    <Content Include="Content\Admin\Index.css" />
     <Content Include="Content\Cart\base.v606141511.css" />
     <Content Include="Content\Cart\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Cart\core%281%29.php" />
@@ -112,6 +123,23 @@
     <Content Include="Content\Products\bmap.css" />
     <Content Include="Content\Products\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Products\hdcss.css" />
+    <Content Include="Content\Search\buttons.css" />
+    <Content Include="Content\Search\chanel.css" />
+    <Content Include="Content\Search\css.css" />
+    <Content Include="Content\Search\dialog.css" />
+    <Content Include="Content\Search\index.php.css" />
+    <Content Include="Content\Search\index.php2.css" />
+    <Content Include="Content\Search\jquery.common.css" />
+    <Content Include="Content\Search\new_default.css" />
+    <Content Include="Content\Search\normalize.css" />
+    <Content Include="Content\Search\orderV2.css" />
+    <Content Include="Content\Search\responsive.css" />
+    <Content Include="Content\Search\select_share.css" />
+    <Content Include="Content\Search\select_share2.css" />
+    <Content Include="Content\Search\share_popup.css" />
+    <Content Include="Content\Search\share_style0_16.css" />
+    <Content Include="Content\Search\style.css" />
+    <Content Include="Content\Search\ui-components.css" />
     <Content Include="Content\Shared\cityquery.css" />
     <Content Include="Content\Shared\font-awesome.min.css" />
     <Content Include="Content\Shared\main_huandeng.css" />
@@ -401,6 +429,7 @@
     <Content Include="Home\PartialView\Company.html" />
     <Content Include="Home\PartialView\Hot.html" />
     <Content Include="Images\Admin\Admin.jpg" />
+    <Content Include="Images\error\捏脸.gif" />
     <Content Include="Images\Home\5270b12bd8b1d.jpg" />
     <Content Include="Images\Home\52807b105cb1b.jpg" />
     <Content Include="Images\Home\5282e9733ca7c_70x50.jpg" />
@@ -455,6 +484,7 @@
     <Content Include="Images\LoginAndRegister\52a1881254edd.png" />
     <Content Include="Images\LoginAndRegister\52d0f08581839.png" />
     <Content Include="Images\LoginAndRegister\cs_dw.png" />
+    <Content Include="Images\LoginAndRegister\denglu.png" />
     <Content Include="Images\LoginAndRegister\end_2.gif" />
     <Content Include="Images\LoginAndRegister\end_3.gif" />
     <Content Include="Images\LoginAndRegister\icon.gif" />
@@ -699,6 +729,7 @@
     <Content Include="Order\Order_3.html" />
     <Content Include="Order\Order_4.html" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
+    <Content Include="Content\Search\new_default.css.bak" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
     <Content Include="Plugin\jquery-3.3.1.js" />
     <Content Include="Plugin\jquery-3.3.1.min.js" />
@@ -986,6 +1017,7 @@
     <Content Include="Products\Fishing.html" />
     <Content Include="Products\Generated.aspx" />
     <Content Include="Products\Generated.html" />
+    <Content Include="Scripts\Admin\Index.js" />
     <Content Include="Scripts\Cart\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\Cart\baidumap.js" />
     <Content Include="Scripts\Cart\c.js" />
@@ -1071,6 +1103,7 @@
     <Content Include="Scripts\LoginAndRegister\Register\c.js" />
     <Content Include="Scripts\LoginAndRegister\Register\fgcomm.v620152248.js" />
     <Content Include="Scripts\LoginAndRegister\Register\header.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\Index.js" />
     <Content Include="Scripts\LoginAndRegister\Register\index_header.js" />
     <Content Include="Scripts\LoginAndRegister\Register\lang.js" />
     <Content Include="Scripts\LoginAndRegister\Register\mt3.v1014201036.js" />
@@ -1105,6 +1138,8 @@
     <Content Include="Scripts\Products\storeview.js" />
     <Content Include="Scripts\Products\tongji_360.php" />
     <Content Include="Scripts\Products\z_stat.php" />
+    <Content Include="Scripts\Search\chengtourUI.js" />
+    <Content Include="Scripts\Search\pindao1.js" />
     <Content Include="Scripts\Show\FarmDetails\getscript.js" />
     <Content Include="Scripts\Show\FarmDetails\list.js" />
     <Content Include="Scripts\Show\FarmDetails\seller.js" />
@@ -1119,6 +1154,7 @@
     <Content Include="Scripts\Special topic\lang.js" />
     <Content Include="Scripts\Special topic\mt3.v1014201036.js" />
     <Content Include="Scripts\Special topic\sousuo.js" />
+    <Content Include="Search\Search.aspx" />
     <Content Include="Show\FarmDetails.aspx" />
     <Content Include="Show\FarmRow.aspx" />
     <Content Include="Special topic\Special topic.aspx" />
@@ -1142,7 +1178,9 @@
       <DependentUpon>Cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Helper\Authentication.cs" />
+    <Compile Include="Helper\PreventLink.cs" />
     <Compile Include="Helper\SMSinterface.cs" />
+    <Compile Include="Helper\UrlRewriteModule.cs" />
     <Compile Include="Helper\UrlWrite.cs" />
     <Compile Include="Home\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
@@ -1193,6 +1231,10 @@
     <Compile Include="Map\Map.aspx.designer.cs">
       <DependentUpon>Map.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Order\App_Code\XddpayConfig.cs" />
+    <Compile Include="Order\App_Code\XddpayFunction.cs" />
+    <Compile Include="Order\App_Code\XddpayResponse.cs" />
+    <Compile Include="Order\App_Code\XddpayService.cs" />
     <Compile Include="Order\Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1243,6 +1285,13 @@
       <DependentUpon>Generated.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Search\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Services\Main.ashx.cs">
       <DependentUpon>Main.ashx</DependentUpon>
     </Compile>

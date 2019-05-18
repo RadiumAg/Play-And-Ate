@@ -11,6 +11,16 @@ namespace FTZ.PlayAndAte.BLL
     {
 
         /// <summary>
+        /// 根据商家姓名显示该商家的所有商品
+        /// </summary>
+        /// <param name="userName">商家姓名</param>
+        /// <returns>商品实体信息集合</returns>
+        public static List<Product> ShowProducts(string userName, int id = 0)
+        {
+            return ProductServices.ShowProductsData(userName: userName, id: id);
+        }
+
+        /// <summary>
         /// 根据地区编号展示商品信息
         /// </summary>
         /// <returns>商品信息</returns>
@@ -50,7 +60,7 @@ namespace FTZ.PlayAndAte.BLL
         }
 
         /// <summary>
-        /// 根据农家行查询下面所有农庄的信息
+        /// 根据总类型ID查询下面的农庄
         /// </summary>
         /// <returns></returns>
         public static List<Product> GetProductsBytotal(int id)
@@ -66,6 +76,14 @@ namespace FTZ.PlayAndAte.BLL
         public static List<Area> GetAreasByTotal(int type)
         {
             return ProductServices.GetAreasByTotal(type);
+        }
+        /// <summary>
+        /// 返回所有产品
+        /// </summary>
+        /// <returns></returns>
+        public static List<Product> GetALLProducts()
+        {
+            return ProductServices.GetALLProducts();
         }
 
     }

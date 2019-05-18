@@ -1,0 +1,753 @@
+img {vertical-align:middle;}
+.phone400 {padding-left:10px;}
+.middle {vertical-align:middle;}
+.w-980 ,#warp .w-980 {width:980px;margin:0 auto;}
+.o-header {overflow:hidden; zoom:1;}
+.left-location {float:left;padding:15px 0 25px 20px;}
+.ord-0001,.ord-1101,.ord-1111,.ord-1011,.ord-0011,.ord-0101,.ord-1001,.ord-0111,.ord-0000,.ord-0100,.ord-1000,.ord-1100 {height:27px;margin:0 auto;background:url(http://pic.lvmama.com/img/order/ticket_steps.gif) no-repeat 1000px 1000px;line-height:100px;overflow:hidden;}
+.ord-1101 {background:url(http://pic.lvmama.com/img/order/verify_steps.gif) no-repeat 1000px 1000px;}
+.ord-1111 {background:url(http://pic.lvmama.com/img/order/sign_steps.gif) no-repeat 1000px 1000px;}
+.ord-1011 {background:url(http://pic.lvmama.com/img/order/o-qy.gif) no-repeat 1000px 1000px;}
+.ord-0011 {background:url(http://pic.lvmama.com/img/order/o-qy2.gif) no-repeat 1000px 1000px;}
+.ord-0101 {background:url(http://pic.lvmama.com/img/order/o-sh.gif) no-repeat 1000px 1000px;}
+.ord-1001 {background:url(http://pic.lvmama.com/img/order/o-write.gif) no-repeat 1000px 1000px;}
+.ord-0111 {background:url(http://pic.lvmama.com/img/order/o-sh-qy.gif) no-repeat 1000px 1000px;}
+.ord-0000 {background:url(http://pic.lvmama.com/img/order/o-9.gif) no-repeat 1000px 1000px;}
+.ord-0100 {background:url(http://pic.lvmama.com/img/order/o-10.gif) no-repeat 1000px 1000px;}
+.ord-1000 {background:url(http://pic.lvmama.com/img/order/o-11.gif) no-repeat 1000px 1000px;}
+.ord-1100 {background:url(http://pic.lvmama.com/img/order/o-12.gif) no-repeat 1000px 1000px;}
+.step1 {background-position:0 0;}
+.step2 {background-position:0 -35px;}
+.step3 {background-position:0 -69px;}
+.step4 {background-position:0 -114px;}
+.step5 {background-position:0 -154px;}
+.step6 {background-position:0 -194px;}
+.order-title {color:#000;overflow:hidden;/*height:25px;*/margin:0px auto;padding-top:40px;}
+.order-title h1 {font-weight:bold;font-size:14px;float:left;line-height:25px;width:695px;}
+.order-title em {font-weight:bold;font-size:16px;color:#d06;float:left;}
+
+.o-tips {float:right;}
+.o-tips a {cursor:default;float:left;width:70px;height:25px;margin:0 0 0 8px;line-height:120px;overflow:hidden;background:url(http://pic.lvmama.com/img/order/order_icon.gif) no-repeat 1000px 1000px;}
+.o-tips .btn-promise {background-position:0 0;}
+.o-tips .btn-ensure {background-position:-78px 0;}
+.o-tips .btn-safepay {background-position:-156px 0;}
+.btn-content {position:absolute;z-index:10;display:none;width:237px;background:url(http://pic.lvmama.com/img/order/layer_top.gif) no-repeat left top;top:150px;padding-top:12px;}
+.btn-content2 {position:absolute;z-index:100;display:none;width:237px;background:url(http://pic.lvmama.com/img/order/layer_bottom.gif) no-repeat left bottom;right:35px;top:75px;}
+.btn-content div,.btn-content2 div,.btn-content dl{background:url(http://pic.lvmama.com/img/order/layer_bottom.gif) no-repeat left bottom;padding:10px 15px 20px;}
+.btn-content dl{line-height:18px;padding:20px 10px;}
+.btn-content dl dt{color:#d50076;}
+.btn-content dl dd{text-indent:10px;}
+
+
+.o-container .p-l36 {padding-left:36px;}
+.o-container {color:#333;border:3px solid #ED71B0;width:974px;margin:0 auto;}
+.o-container h3 {color:#000;height:16px;line-height:16px;padding:25px 0 10px 15px;font-size:14px;font-weight:bold;}
+.o-container h3 em {font-size:12px;font-weight:100;color:#c06;}
+.o-container h3 s {float:left;display:inherit;margin:1px 8px 0 0;width:13px;height:13px;background:url(http://pic.lvmama.com/img/order/order_icon.gif) no-repeat -218px -34px;}
+.o-container h3 span.explain-write {background:url(http://pic.lvmama.com/img/order/icon-down.gif) no-repeat right top;margin-left:10px;padding-right:10px;color:#05e;font:normal 12px simsun;}
+.tooltip {font-size:12px;color:#05e;font-weight:100;cursor:pointer;}
+.orderpro-list {border-top:1px solid #E5E5E5;width:902px;margin:0 auto;}
+.orderpro-list th {background-color:#FBF7F8;font-size:12px;font-weight:500;height:26px; text-align:center;}
+.orderpro-list td {height:28px;border-bottom:1px solid #E5E5E5;text-align:center;}
+.insure-detail td {text-align:left;padding:5px 10px;}
+.orderpro-list .col0 {width:170px;padding-left:10px;text-align:left;}
+.orderpro-list .col1 {width:80px;padding-left:10px;text-align:left;}
+.orderpro-list .col2 {width:360px;padding-left:5px;text-align:left;}
+.orderpro-list .col3 {width:85px;}
+.orderpro-list .col4 {width:75px;}
+.orderpro-list .col5 {width:55px;}
+.orderpro-list .col6 {width:115px;}
+.orderpro-list .col7 {width:102px;}
+.orderpro-list .col7 span {color:#f50; font-family:Arial;}
+.o-container em,.date {color:#f50;font-weight:bold;}
+.o-container .txt {color:#c06;font-weight:normal;margin-top:5px;display:inline-block;zoom:1;}
+.o-container strong {font-weight:bold; font-family:Arial;}
+.addition strong{color:#333;}
+strong.total {font-size:12px;/*font-size:14px;*/}
+.orderpro-list .btn-nums {width:102px;padding-left:13px;overflow:hidden;vertical-align:middle;}
+.btn-nums button {cursor:pointer;float:left;display:block;border:none;width:18px;height:18px;text-indent:120px;overflow:hidden;background:url(http://pic.lvmama.com/img/order/order_icon.gif) no-repeat 1000px 1000px;}
+.btn-nums .btn-minus {background-position:-155px -34px;}
+.btn-nums .btn-add {background-position:-177px -34px;}
+.btn-nums .inp-text {float:left;border:1px solid #bdbddb;margin:0 5px;padding:1px 2px;width:45px;height:14px;line-height:14px;text-align:center;}
+
+.detail {width:902px;margin:10px auto 0;}
+.detail ul {overflow:hidden;zoom:1;position:relative;z-index:5;margin-bottom:-1px;} 
+.detail li {float:left;cursor:pointer;width:90px;height:26px;color:#000;line-height:26px;text-align:center;border-top:1px solid #ddd;border-right:1px solid #ddd; border-left:#ddd solid 1px; margin-right:5px;}
+.detail .tab-con {clear:both;display:none;width:882px;line-height:18px;border:1px solid #ddd;border-left:none;padding:5px 10px;color:#666;position:relative;z-index:4;}
+.detail .cur-tab {color:#c06;background:url(http://pic.lvmama.com/img/order/order_icon.gif) no-repeat -75px -61px #FBF7F8;}
+.detail .cur-tab01 {color:#000;background:url(http://pic.lvmama.com/img/order/order_icon.gif) no-repeat -15px -61px #FBF7F8; border-left:#ddd solid 1px; color:#000}
+.detail .cur-content {display:block;height:85px;overflow:auto;line-height:1.8; border:#ddd solid 1px;}
+.coupon,.inp-list {width:882px;padding:5px 0 5px 20px;margin:0 auto;border-top:1px solid #ddd;border-bottom:1px dashed #ddd;overflow:hidden;zoom:1;}
+.coupon-list {padding:3px;overflow:hidden;zoom:1;position:relative;}
+.coupon label {float:left;}
+.coupon button {cursor:pointer;float:left;margin-left:5px;width:60px;height:24px;line-height:24px;border:none;background:url(http://pic.lvmama.com/img/order/order_icon.gif) no-repeat 0 -97px;}
+.coupon span {float:left;margin-top:5px;}
+.coupon input {float:left;}
+.coupon .inp-radio {margin:6px 5px 0 0;*margin:2px 2px 0 0;}
+.coupon input.inp-txt {height:18px;line-height:18px;padding:2px 3px;border:1px solid #bdbdbd;background-color:#FFF9D9;}
+.coupon .coupon-tips {right:30px;position:absolute;top:3px;}
+.o-container table td.insure-detail{padding:5px 10px; color:#666;}
+.insure-detail a{color:#abc}
+.insure-detail {display:none;width:880px;height:85px;line-height:18px;overflow:auto;padding:10px;margin:0 auto; text-align:left;}
+.insure-detail td,.orderpro-list .insure-detail {text-align:left;}
+.inp-list label {display:block;padding:5px 0;}
+.inp-list input {float:left;margin-right:5px;}
+
+.user-info {width:902px;padding:3px 0 0;margin:0 auto;border-top:1px solid #ddd;}
+.user-info dl {overflow:hidden;zoom:1;}
+.user-info dt {clear:both;position:relative;float:left;line-height:25px;min-height:25px;width:84px;text-align:right;padding:3px 0 3px 15px;}
+.user-info dd {min-height:25px;padding:3px 0 3px 90px;#padding:3px 0 3px 20px;}
+.user-info dt span {color:#f00;margin-left:-5px;}
+.user-info .inp-txt {border:1px solid #7F9DB9;padding:2px 3px;height:20px;line-height:20px;vertical-align:middle;}
+.user-info select {margin:0 10px;width:150px;}
+.user-info select.select-left {margin:0;}
+.inp-checkbox {margin:2px 5px 0 10px;}
+.user-info dd span {color:#666;}
+.user-info textarea {color:#999;border:1px solid #7F9DB9;padding:2px 3px;resize:none;}
+.remark {margin:10px auto 20px;}
+.remark2 {margin:0 auto 20px;}
+.remark3 {margin:0 auto;border:none;border-bottom:1px solid #ddd;padding-bottom:10px;}
+.remark4 {margin:0 auto;}
+.remark5 {border:none;}
+.car-place {margin-left:35px;}
+.remark2 em {color:#c06;font-weight:normal;}
+
+/*****  player-info  *****/
+.player-info,.player-info li {width:665px;/*550*/}
+.player-info {margin-left:35px;}
+.player-info li {margin-bottom:10px;overflow:hidden;}
+.player-info li h1 {font:700 12px/30px simsun;color:#333;height:30px;background-color:#F6F6F6;}
+.player-info li h1 .players {float:left;margin-left:10px;}
+.player-info li h1 .list-player-input {float:right;font-weight:normal;margin-right:10px;}
+.player-info li h1 em {color:#333;}
+.copy-player {color:#05e;font:12px simsun;cursor:pointer;}
+
+.order-total {margin:20px 0 0;text-align:right;padding:0 40px;font-size:14px;font-weight:bold;line-height:48px;border-top:1px solid #ddd;background-color:#FBF7F8;}
+.order-total span {font-size:12px;font-weight:normal;}
+.order-total em {color:#f50; font-family:Arial;}
+.order-total strong {font-size:28px;font-stretch:wider;}
+
+.order-commit {min-height:60px;height:auto !important;height:60px;background-color:#FBE3EF;padding:14px 40px 10px 130px;}
+
+.order-commit label {float:left;color:#05e;overflow:hidden;margin-top:8px;}
+.order-commit label input {vertical-align:baseline;margin-right:3px;}
+.order-commit-floatnone label{float:none; display:inline-block;}
+.order-commit-floatnone #lvmamaxieyi{ float:left; margin-top:12px;}
+#titAgreement{cursor:pointer;}
+.btn-submit,.func-btn input, .fenqi_list li .next{width:130px; height:36px;background:url(http://pic.lvmama.com/img/new_v/newBtn_bg.gif) no-repeat 0 -451px;text-indent:-9999px;*text-indent:0;*line-height:300px;
+cursor:pointer;color:#fff;font-size:14px;font-weight:bold;border:none;overflow:hidden;} 
+.btn-submit{float:right;margin-left:33px;}
+.btn-submit:hover,.func-btn input:hover, .fenqi_list li .next:hover{background-position:-144px -451px;}
+.go-back {float:right;margin-top:8px;color:#666;font-size:14px;text-decoration:underline;}
+.go-back:hover {color:#05e;}
+.order-commit-floatnone .btn-submit{background-position:0 -451px;}
+.order-commit-floatnone .btn-submit:hover{background-position:-144px -451px;}
+
+.agreement {display:none;clear:both;padding:10px;border:1px solid #ccc;color:#333; width:520px;height:100px;line-height:18px;word-wrap:break-word;overflow:auto;background-color:#fff;}
+.agreement h5 {font-size:14px;font-weight:bold;padding:2px 0 5px;}
+.agreement strong {color:#333;font-weight:bold;}
+
+.footer {border:none;padding:0 0 20px;}
+
+/*payinfo css*/
+.tips-info {position:relative;border:1px solid #FFDFA6;background-color:#FFF8D8;padding:15px 20px;margin:0 auto 10px;width:940px;line-height:20px;overflow:hidden;zoom:1;}
+.tips-info-auto {overflow:visible;}
+.width-auto {width:auto;}
+.width-auto strong {color:#666;font-weight:bold;}
+.count-pay {border:1px solid #ddd;margin-bottom:10px;}
+.count-pay dt,.count-pay dd {padding-left:15px;height:27px;line-height:27px;}
+.count-pay dd {border-top:1px dashed #e5e5e5;}
+.count-pay .inp-checkbox {margin-right:5px;}
+.has-price p {padding:0 0 0 35px;float:left;}
+.tips-title {position:relative;min-height:26px;line-height:23px;}
+.tips-title s {position:absolute;top:0;left:0;display:block;width:26px;height:26px;background:url(http://pic.lvmama.com/img/order/order_icon.gif) no-repeat -205px -304px;}
+.tips-title strong {position:relative;padding-left:35px;display:inline-block;color:#390;font-size:16px;font-weight:bold;}
+.warning {color:#f00;padding-left:35px;}
+.f-14 {font-size:14px;}
+.f-16 {font-size:16px;}
+.tips-title span {display:block;}
+.tips-title .f-16 {display:inline;}
+.price {position:absolute;right:35px;top:20px;font-size:14px;font-weight:bold;}
+.price strong {font-size:28px;font-weight:bold;line-height:25px;}
+.align-center {text-align:center;}
+.p-t10 {padding-top:10px;display:block;position:relative;}
+.help-tip {font-size:14px;position:absolute;right:10px;top:10px;}
+
+/*tag menu*/
+.onlinepay-detail {width:980px;color:#666;margin:10px auto;overflow:hidden;}
+.onlinepay-detail ul.tag-menus {height:30px;border-bottom:1px solid #D50976;}
+.onlinepay-detail ul.tag-menus li {position:relative;bottom:-1px;float:left;cursor:pointer;height:30px;font-size:14px;font-weight:bold;padding-left:25px;margin-right:5px;background:url(http://pic.lvmama.com/img/order/order_icon.gif) 0 -251px no-repeat;}
+.onlinepay-detail ul.tag-menus li.currentli {color:#c06;background:url(http://pic.lvmama.com/img/order/order_icon.gif) 0 -212px no-repeat;}
+.onlinepay-detail ul.tag-menus li a {color:#000;text-decoration:none;display:inline-block;padding:5px 25px 0 0;height:25px;background:url(http://pic.lvmama.com/img/order/order_icon.gif) right -251px no-repeat;}
+.onlinepay-detail ul.tag-menus li.currentli a {color:#c06;background:url(http://pic.lvmama.com/img/order/order_icon.gif) right -212px no-repeat;}
+/*online pay detail */
+#tagcontent {padding:20px 25px;border-width:0 1px 1px;border-color:#D50976;border-style:solid;}
+#tagcontent li {overflow:hidden;*zoom:1;}
+.pay_tagcontent1 li {padding:5px 0;}
+.tit-payway {padding:5px 0; padding-left: 10px;cursor:pointer;color:#555;}
+.tit-payway1 {background:url(http://pic.lvmama.com/img/icons/btn-right.gif) no-repeat 99% 50%;background-color:#E1E1E1;}
+.tit-payway2 {background:url(http://pic.lvmama.com/img/icons/btn-down.gif) no-repeat 99% 50%;background-color:#E1E1E1;}
+.ico-payway {margin:10px auto;/*display:none;*/}
+.ico-payway a,.ico-payway label {margin:5px 13px;float:left;display:inline-block;zoom:1;_padding-bottom:2px;}
+.ico-payway img { vertical-align:middle}
+.ico-payway label input {margin-right:5px;*margin-right:2px;}
+.ico-payway a.bankImg1 {margin:5px 0;margin-left:10px;}
+.ico-payway a.bankImg2 {margin:5px 0;margin-left:3px;}
+.ico-payway p {clear:both;line-height:32px;}
+.func-btn {padding:13px;border-top:1px solid #ddd;text-align:center;}
+
+#bgColor {z-index:999;display: none;position:fixed;_position:absolute;width:100%;height:100%;left:0;top:0;background-color:#fff;background-attachment:fixed;width:100%;height:100%;filter:alpha(opacity=90);-moz-opacity:0.9;opacity:0.9;}
+#tipsWindow {z-index:9999;display:none;position:absolute;top:30px;left:40px;width:460px;border:5px solid #c06;background-color:#fff;padding:15px 20px;font:12px/1.5 arial,"simsun"}
+#tipsWindow img {vertical-align:middle;margin-top:-3px;}
+#tipsWindow h3 {font-size:14px;font-weight:bold;color:#333;line-height:30px;border-bottom:1px solid #D8DFEA;}
+#tipsWindow strong {color:#333;font-weight:bold;display:block;}
+#tipsWindow p {color:#666;line-height:16px;ertical-align:middle;}
+#tipsWindow .tbtn {text-align:center;padding:15px 0 30px;}
+#tipsWindow .btn-close {position:absolute;right:20px;top:20px;cursor:pointer;ertical-align:middle;}
+#tipsWindow .btn-paySpan1 {float:left;margin:0 20px 0 100px;display:block;height:27px;width:85px;background:url(http://pic.lvmama.com/img/icons/bg-btn-pay.gif) no-repeat right 0;text-align:left;}
+#tipsWindow .btn-paySpan1 .btn-payA1 {display:block;height:27px;width:84px;text-indent:1px;background:url(http://pic.lvmama.com/img/icons/bg-btn-pay.gif) no-repeat left 0;text-align:center;font:600 12px/27px "simsun";text-decoration:none;color:#333;cursor:pointer;}
+#tipsWindow .btn-paySpan2 {float:left;display:inline-block;height:27px;width:90px;background:url(http://pic.lvmama.com/img/icons/bg-btn-pay.gif) no-repeat right 0;text-align:left;}
+#tipsWindow .btn-paySpan2 .btn-payA2 {display:inline-block;height:27px;width:89px;background:url(http://pic.lvmama.com/img/icons/bg-btn-pay.gif) no-repeat left 0;text-align:center;font:600 12px/27px "simsun";text-decoration:none;color:#333;cursor:pointer;}
+#tipsWindow input {cursor:pointer;margin:0 15px;}
+#tipsWindow .close-too {float:left;display:block;margin:0px auto;text-decoration:none;color:#0056AE;}
+#tipsWindow .close-too:hover {text-decoration:underline;}
+
+
+.payTtitle,.user-add-pic dt{background:#E1E1E1 url(http://pic.lvmama.com/img/icons/btn-down.gif) no-repeat 99% 50%;text-indent:10px;cursor:pointer;margin-top:10px;color:#555;}
+.pay_tagcontent1 .payOtherCon{padding:15px 25px;}
+.pay_tagcontent1 .payOtherCon a{margin-right:20px;}
+.pay_tagcontent1 .payExplain{border:1px solid #FFDFA6;background-color:#FFF8D8;padding:10px;margin-top:10px;}
+.pay_tagcontent1 span {float:left;display:inline-block;}
+.pay_tagcontent1 span.bankExplain {line-height:1.5;padding-top:4px;}
+.pay_tagcontent1 .bankExplainA {margin:0;}
+.pay_tagcontent1 span.bankExplain em {color:#999;}
+.pay_tagcontent1 .span01 {width:140px;}
+.pay_tagcontent1 .span02 {width:480px;min-height:35px;line-height:35px;}
+.pay_tagcontent1 .span03 {width:90px;}
+.pay_tagcontent1 .span02 strong {color:#666;}
+.pay_tagcontent2 {padding-left:10px;}
+.pay_tagcontent2 img {float:left;margin:0 55px 30px 0;}
+.pay_tagcontent2 p {line-height:25px;}
+.pay_tagcontent2 div img, .pay_tagcontent3 div i.bank {float:none;margin:10px 0; margin-left:23px;}
+.pay_tagcontent2 strong {color:#000;font-weight:bold;}
+.pay_tagcontent2 h3, .pay_tagcontent3 h3 {clear:both;color:#000;font-size:14px;font-weight:bold;margin:0;}
+.pay_tagcontent3 h3 {padding:30px 0 0;}
+.pay_tagcontent3 td {color:#333;height:25px;line-height:25px;}
+.pay_tagcontent3 td strong {color:#000;font-weight:bold;}
+.pay_tagcontent4 {}
+.pay_tagcontent4 img {vertical-align:middle;float:left;margin: 0 40px 10px 0;}
+.pay_tagcontent4 .lkl-dec {float:left;margin:10px 0 0;}
+.pay_tagcontent4 .lkl-btn {display:block;background: url(http://pic.lvmama.com/img/icons/white_btn_bg.gif) no-repeat 0 0 #F5F5F5;float: right;text-align:center;width:120px;height: 31px;line-height: 31px;margin: 4px 0 0;padding: 0 0 0 10px;}
+.pay_tagcontent4 .lkl-btn:hover {background: url(http://pic.lvmama.com/img/icons/white_btn_bg.gif) no-repeat 0 -32px #F5F5F5;float: right;height: 31px;line-height: 31px;margin: 4px 0 0;padding: 0 0 0 10px;}
+.pay_tagcontent4 .lkl-btn a {background: url(http://pic.lvmama.com/img/icons/white_btn_bg.gif) no-repeat right -64px;display: block;height: 31px;line-height: 31px;padding: 0 10px 0 0;}
+.pay_tagcontent4 .lkl-btn:hover a {text-decoration:none;background: url(http://pic.lvmama.com/img/icons/white_btn_bg.gif) no-repeat right -96px;}
+.pay_tagcontent4 .lkl-btn a:hover {text-decoration:none;}
+.pay_tagcontent4 p {clear:both;border:1px solid #FFDFA6;background-color:#FFF8D8;padding:10px;margin:10px 0;line-height:20px;}
+.pay_tagcontent4 p span {color:#f00;padding-right:30px;}
+
+.user-add-pic dt{padding:5px 0;margin-bottom:10px;clear:both;}
+.user-add-pic dt.payTtitle{margin-bottom:0;}
+.user-add-pic dd{padding:5px 25px;clear:both;overflow:hidden;zoom:1;}
+.user-add-pic dd a{float:left;margin-right:22px;_display:inline;}
+.user-add-pic dd.payOtherCon a{float:none;}
+.pay_tagcontent1 dd p{float:left;}
+.pay_tagcontent1 dd p span{color:#999;}
+
+.order-info,.other-info {width:978px;border:1px solid #E5E5E5;margin:0 auto;}
+.order-info h3 {color:#333;font-size:14px;font-weight:bold;line-height:25px;background-color:#F6F6F6;border-bottom:1px solid #e5e5e5;padding-left:10px;}
+.order-info dl {width:930px;margin:0 auto;overflow:hidden;line-height:25px;}
+.order-info dt {clear:both;float:left;color:#666;width:125px;text-align:right;height:25px;}
+.order-info dd {color:#333;min-height:25px;padding:0 0 0 130px;+padding:0 0 0 10px;_padding;0 0 0 130px;zoom:1;}
+.order-info dd strong {font-weight:bold;}
+.order-info dl .title {font-weight:bold;}
+.order-info .order-id {color:#d06;font-weight:bold;}
+.order-info .date {color:#f50;}
+.c-d06 {color:#d06;}
+.part1 {padding:10px 0 5px;border-bottom:1px dashed #ddd;}
+.partNoborder {border-bottom:none;}
+.part2 {padding:5px 0 10px;}
+.order-bottom-detail {width:980px;margin:10px auto 20px;color:#666;}
+.order-bottom-detail p {padding:0 0 0 25px;background:url(http://pic.lvmama.com/img/order/order_icon.gif) no-repeat -214px -333px;}
+.other-info {width:898px;height:auto !important;height:310px;min-height:310px;padding:25px 40px;line-height:30px;font-size:14px;position:relative;}
+.other-info p {margin-bottom:10px;color:#333;}
+.m-code {width:445px;height:320px;padding-left:45px;border-left:1px solid #E5E5E5;background:url(http://pic.lvmama.com/img/order/m_code.jpg) no-repeat 245px 0;position:absolute;top:15px;right:2px;}
+.m-code-bgDiff {background:url(http://pic.lvmama.com/img/order/m_code2.jpg) no-repeat 245px 0;display:none;}/*right side hide*/
+.complete-left p {padding:0 80px;}
+.m-code strong {font:bold 14px simsun;color:#333;display:block;margin-top:20px;}
+.m-code p {width:140px;font-size:12px;color:#666;margin-top:10px;}
+.m-code p.img-txt {width:135px;height:145px;line-height:1.5;color:#000;position:absolute;bottom:40px;right:90px;}
+.m-code p.img-txt2 {height:205px;font:14px/1.5 simsun;}
+/*login layer*/
+#alphabg {border:none;}
+#login-div {border:2px solid #c06;padding:2px;}
+#login-div h2 {font:bold 14px simsun;color:#333;position:relative;}
+.close-btn {position:absolute;right:10px;top:5px;display:block;width:14px;height:14px;background:;}
+
+/*****  order_write.html  *****/
+.show-insure,.hide-insure {color:#05e;cursor:pointer;}
+
+/*****  login  *****/
+.bgLogin {position:fixed;_position:absolute;left:0;top:0;height:100%;width:100%;filter:Alpha(opacity=50);-moz-opacity:0.5;opacity:0.5;background-color:#000;z-index:9998;display:none;}
+.LoginAndReg {position:absolute;z-index:99999;left:0;top:0;width:700px;padding:5px;background-color:#eee;display:none; background:url(http://pic.lvmama.com/img/common_pop/pop_bg.png) repeat;}
+.pop_loginner{ background:#fff;}
+.topLogin {font:700 14px/30px arial,simsun;height:30px;position:relative; background:#eee; border-top:2px solid #d37;}
+.titleLogin {padding-left:8px;float:left;}
+.btn-close {float:right;cursor:pointer;position:absolute;right:10px;top:5px;line-height:normal;height:16px;width:16px;display:block; background:url(http://pic.lvmama.com/img/common_pop/close.gif) no-repeat 4px 4px;}
+.btn-close img{display:none;}
+.contLogin {overflow:hidden; zoom:1;padding:15px 0 20px 40px; background:#fff;color:#333;}
+.contLeft,.contRight {width:300px;float:left;overflow:hidden;}
+.contRight{display:inline;border-left:1px dashed #ddd; padding-left:40px;}
+.contLogin p {overflow:hidden;zoom:1;}
+.contLogin p em {color:#f00;line-height:2;}
+.contLogin p em.contTsInfo {display:block;margin-top:18px;line-height:18px;color:#888;}
+.titleUser {width:300px;margin-bottom:15px;font:400 17px/2 "Microsoft YaHei";color:#333;}
+.contLogin p span {display:block;float:left;}
+.contLogin p input {width:200px;position:relative;color:#666;}
+.contLogin p .inputName {display:block;width:50px; line-height:34px;text-align:right;}
+.contLogin p .inputValue {width:240px;}
+.contLogin p .inputValue input {float:left;font-size:16px;font-weight:700;border:#cecece solid 1px; height:35px; line-height:34px; padding-left:5px; color:#333;-moz-box-shadow: 0 0 4px #CECECE;
+-o-box-shadow: 0 0 4px #CECECE inset;
+-webkit-box-shadow: 0 0 4px #CECECE inset;
+box-shadow: 0 0 4px #CECECE inset;}
+.contLogin p .inputValue #mobileLoinTextSuccessTip img {margin:5px 0 0 5px;_margin:4px 0 0 5px;}
+.contLogin p .inputValue2 {width:200px;line-height:2;}
+.contLogin p .inputValue2 a.wrongPass {color:#f00;}
+.contLogin p .inputValue2 a.freeUser {color:#07c;}
+.quickBuy {display:block;float:left;margin:5px 0;margin-right:10px; width:130px; height:36px; background:url(http://pic.lvmama.com/img/new_v/newBtn_bg.gif) no-repeat 0 -204px; }
+.quickBuy:hover{background-position:-144px -204px;}
+.contRight .quickBuy{background-position:0 -328px;}
+.contRight .quickBuy:hover{background-position:-144px -328px;}
+.quickBuy img{display:none;}
+.weiboBtn a,.weiboBtn a:link,.weiboBtn:hover{color:#888;}
+.add_inputValue{ margin-left:23px;}
+.findPass{ vertical-align:middle; line-height:48px;color:#07c;}
+.findPass:hover{color:#07c;}
+#mobileLoinTextErrorTip,#loinTextErrorTip {height:18px;*width:200px;}
+#loinTextErrorTip font,#mobileLoinTextErrorTip font {margin-left:50px;}
+.quick-area {}
+.mb-10 {margin-bottom:10px;}
+
+.weiboLogin {margin:10px auto;margin-left:-5px; padding-top:10px;border-top:1px dashed #ddd; color:#888;}
+.weiboH1 {font:12px/2 simsun;}
+.weiboBtn a {float:left; white-space:nowrap; color:#888;cursor:pointer;}
+.redInfo {display:none;}
+
+/*****  getPWD  *****/
+.getPass {width:930px;border:3px solid #ed71b0;margin:0px auto 20px;}
+.getPassDIV {width:785px;margin:20px auto;overflow:hidden;}
+.getPassDIV li {float:left;width:380px;}
+.getPassDIV li.getPassLI1 {border-right:1px solid #ddd;margin-right:20px;}
+.getPassDIV li.getPassLI3 {width:785px;height:20px;padding:50px 0 60px;text-align:center;color:#c06;font:14px simsun;overflow:hidden;}
+.getPassDIV li h1.phoneFind {font:700 14px simsun;color:#c06;margin-bottom:10px;}
+.getPassDIV li h1.phoneFind s {float:left;display:inherit;margin:1px 8px 0 0;width:13px;height:13px;background:url(http://pic.lvmama.com/img/order/order_icon.gif) no-repeat -218px -34px;}
+.getPassDIV li p {width:380px;overflow:hidden;}
+.getPassDIV p em {color:#f00;line-height:2;}
+.getPassDIV p em.contTsInfo {color:#666;}
+.getPassDIV p span {display:block;float:left;overflow:hidden;}
+.getPassDIV p input {width:185px;height:20px;line-height:20px;margin-bottom:10px;position:relative;color:#666;}
+.getPassDIV p .inputName {width:120px;text-align:right;padding-top:2px;+padding-top:5px;margin:0 10px 0 15px;_margin:0 5px 0 7px;}
+.getPassDIV p .inputValue {width:230px;}
+.getPassDIV p .inputValue2 {width:200px;line-height:2;}
+.getPassDIV p .inputValue2 a.wrongPass {color:#f00;}
+.getPassDIV p .inputValue2 a.freeUser {color:#05e;}
+.getPassDIV p input.inputYZ {width:120px;float:left;}
+.yanZheng {display:block;float:left;margin:2px 0 0 3px;}
+.yanZheng em {width:90px;height:20px;display:block;background-color:red;}
+.sendInfo {display:block;margin-top:10px;}
+
+/*****  电子合同  *****/
+.contEcontract {width:633px;height:102px;border:1px solid #7F9DB9;overflow:auto;font:12px/1.5 simsun;color:#666;margin-left:135px;+margin-left:155px;_margin-left:135px;padding:5px;}
+.contEcontract strong {font-size:12px;color:#333;}
+.contEcontract em {color:#666;font-weight:700}
+.hetongInput {margin:10px 5px 10px 135px;+margin:10px 5px 10px 150px;_margin:10px 5px 10px 135px;vertical-align:middle;}
+.contEcontract2 {height:520px;line-height:1.5;overflow-x:hidden;overflow-y:auto;}
+.btn-submit-left {float:left;margin-left:3px;+margin-left:20px;_margin-left:4px;}
+.user-info .hto-explain {color:#c06;font-weight:100;}
+.info-ts {width:978px;margin:10px auto;background-color:#fff8d8;border:1px solid #FFDFA6;overflow:hidden;color:#390;font:700 14px/4 simsun;text-indent:2em;}
+.inp-txt2 {width:90px;margin-right:5px;}
+.downHeto {width:80px;height:27px;background:url(http://pic.lvmama.com/img/icons/btn-download.gif) no-repeat;display:inline-block;font:700 14px/27px simsun;color:#000;text-align:center;text-decoration:none;}
+.downHeto:hover {text-decoration:none;color:#000;}
+.remark3 em {color:#c06;font-size:12px;font-weight:100;}
+.resend {cursor:pointer;}
+	.t-bg-tm {width:410px;background-color:#000;filter:Alpha(opacity=10);-moz-opacity:0.1;opacity:0.1;position:absolute;left:0;top:0;z-index:99;display:none;}
+	.t-div-zf {width:402px;padding:4px;position:absolute;left:0;top:0;z-index:100;display:none;}
+	.t-div-cont {border:1px solid #b8b8b8;background-color:#FAFAFA;zoom:1;}
+	.t-div-cont p {width:95%;margin:10px auto;}
+	.t-div-cont p.t-titleandclose {border-bottom:1px solid #ddd;overflow:hidden;margin:0 auto;}
+	.t-fuanfatome {float:left;margin:10px 0;font:700 14px simsun;color:#333;}
+	.t-btn-close {display:block;float:right;cursor:pointer;margin:10px 0;}
+	.t-img-zf-down-span {position:absolute;width:17px;height:9px;display:block;left:30%;margin-left:-45px;z-index:9999;background:url(http://pic.lvmama.com/img/icons/bg-down.gif) no-repeat scroll -1px -2px;bottom:-4px;_bottom:-11px;}
+	.inputNameSend {display:inline-block;width:70px;}
+	.txtSendMail {width:170px;height:22px;line-height:22px;margin-right:5px;vertical-align:middle;}
+	.inputNameSend em {color:#f00;}
+	.wrongInfo {color:#f00;}
+	.sendEmailInfo {width:96px;height:24px;background-color:#c06;font:700 14px/24px simsun;text-align:center;border:none;color:#FFF;margin-bottom:10px;}
+
+.disTR {display:none;}
+.productNum {margin-left:300px;font:700 12px arial;color:#333;}
+
+/*****  2011-7-20  填写说明样式 *****/
+.qijiashuoming, a.qijiashuoming:hover {background: url("http://pic.lvmama.com/img/super_v2/s2_order_icons.gif") no-repeat scroll 52px 5px transparent;color: #0055EE; cursor: help; display: inline-block; font-size: 12px; font-weight: 100; margin: 0 0 0 10px; padding: 0 15px 0 0; text-decoration: none;} 
+.shuoming {background-color: #FFF0FF;border: 1px solid #D7D7D7; color: #666666; display: none; padding: 10px 15px; position: absolute; width: 365px; z-index: 99;} 
+.shuoming strong {color:#c06;}
+/*****  2011-7-20  填写说明样式 *****/
+
+
+	/*存款账户弹出层样式float layer start*/	
+	.fl-bg {display:none;background-color:#000;-moz-opacity:0.4;opacity:.4;filter:alpha(opacity=40);width: 100%;height:100%;left:0;top:0;z-index:900;position:fixed!important;position:absolute;}
+	.fl-layer {display:none;position:absolute;z-index:999;width:360px;border:2px solid #CC0467;background-color:#fff;}
+	.fl-layer div {padding:20px;line-height:22px;}
+	.fl-layer div span {display:block;color:#f00;padding-left:85px;}
+	.fl-layer div em {color:#d06;}
+	.close-btn {position:absolute;right:3px;top:3px;cursor:pointer;}
+	.close-btn img {cursor:pointer;}
+	.sm-btn {border:none;width:98px;height:32px;margin-left:85px;background:url(http://pic.lvmama.com/img/myspace/sentMMS.gif) no-repeat 0 0;}
+	.sent-mms {cursor:pointer;color:#05e;}
+	.fl-layer div span.sent-time {color: #999999;display: inline;font-weight: bold;padding-left: 15px;}
+	.fl-layer div.fl-bm {position:absolute;bottom:0;padding:0;margin:0;width:360px;height:25px;line-height:25px;text-align:center;background-color:#E9E9E9;}
+	.fl-layer div h3 {font-size:16px; font-weight:700; font-style:normal;margin-bottom:10px;}
+	.fl-layer div h3 s{color:#f00; text-decoration:none; font-weight:500;}
+	.fl-layer div strong{color:#4b9737; font-weight:700;}
+	/*end*/
+/*0 baoxian*/	
+.without {display:none;color:#f50;width:880px;border:1px solid #ddd;padding:10px;line-height:18px;background-color:#fff;}
+/*徐多多*/
+
+.pay_tagcontent3 img{ margin:0px;}
+.pay_tagcontent3 .add_order{width:818px; height:43px; border:#ffdfa6 solid 1px;float:right; text-indent:0px; background:#fff8d8; line-height:43px; vertical-align:middle; margin-top:20px; padding:0 5px;}
+
+.pay_tagcontent3 .add_order1{width:818px; height:28px;float:right; text-indent:0px; background:#f0f0f0; line-height:28px; vertical-align:middle; margin-top:30px; padding:0 5px;}
+
+.pay_tagcontent3 .add_order_list{width:818px;padding-left:95px;}
+.pay_tagcontent3 .add_order_list a{ margin-right:24px;}
+.add_order_list h3{ color:#333;}
+/*20111024fenbizhifu*/
+.tips-info01{ width:980px; margin:0 auto;}
+.tips-info01 .tit01{ background:url(http://pic.lvmama.com/img/myspace/tit.gif) no-repeat 70px top;height:28px;line-height:28px; color:#FFB27F;font-size:16px;font-weight:bold; padding: 0 0 0 100px;width:200px;margin:20px auto;}
+.red14_txt01{width:393px; background:url(http://pic.lvmama.com/img/myspace/tit.gif) no-repeat left -68px; margin:0 auto;padding:30px;}
+.red14_txt01 dt{ background:url(http://pic.lvmama.com/img/myspace/tit.gif) no-repeat left -28px;line-height:22px; margin:10px 0;font-size:14px;color:#000000;font-weight:bold;padding:0 0 0 15px;}
+.red14_txt01 dd{background:url(http://pic.lvmama.com/img/myspace/tit.gif) no-repeat 20px -44px;line-height:22px;height:22px; text-indent:30px;margin:5px 0;}
+.red14_txt01 dd span,.red14_txt01 dd strong{color:#FF0000;font-weight:bold;margin:0 3px;}
+.botton01 a{ display:block; margin:0 auto;width:89px; background:url(http://pic.lvmama.com/img/myspace/tit.gif) no-repeat right top;height:23px;line-height:23px;text-align:center;color:#000000;}
+
+/*footer*/
+.footer {border-top:3px solid #D35299;clear:both;color:#666666;line-height:25px;margin:10px auto;padding:10px 0;text-align:center;width:980px;}
+.footer_img{margin:3px 0px 3px 0px; zoom: 1; overflow: hidden;padding:0;width:980px;}
+.footer_img ul{margin-left:6px;}
+.footer_img ul li{padding-right:0px;float:left;}
+.footer_img ul li a{margin:0 3px !important;}
+.footer_img ul li img{margin:0;}
+.footer_img ul li span{width: 135px; display: block;margin-right:7px;}
+.indexftmenu{color:#0055EE;}
+.footer_span_a{color:##0055ee;font-family: Arial,simsun;}
+
+
+
+/*徐婷婷*/
+
+
+.add_contRight{ margin-top:0px;}
+.add_contRight p.delv_tips{text-align: right; color:#484849;}
+.delv_form_list{ overflow:hidden; zoom:1}
+.add_quickBuy{ margin-left:43px; margin-top:0px;}
+.delv_form_list li{ overflow:hidden; zoom:1;}
+.delv_form_list li.other_list_input{ height:60px; margin-bottom:0px;}
+.delv_form_list li.other_list_input02{ height:100px;}
+.delv_form_list label{ text-align:right; float:left; line-height:28px; vertical-align:middle; height:28px; width:45px; font-size:12px; color:#030303}
+.delv_form_list li .login_input{height:24px; width:230px; line-height:25px; vertical-align:middle;}
+.delv_form_list li input{height:24px; border:#cccccc solid 1px; width:150px; line-height:25px; vertical-align:middle; padding-left:5px; float:left;background:url(http://pic.lvmama.com/img/myspace/delv_bg.gif) repeat-x 0 -5px;*background:url(http://pic.lvmama.com/img/myspace/delv_bg.gif) repeat-x 0 -5px; margin-right:5px; display:inline }
+.delv_form_list li input.yanzheng_shuzi{ width:78px;}
+.delv_form_list li .tips{ border:#cccccc solid 1px;}
+
+.delv_form_list li input.focus{  border:#66CCFF solid 1px; outline:^;}
+.delv_form_list li i{ background:url(http://pic.lvmama.com/img/myspace/delv_bg.gif) no-repeat -450px -38px; *background:url(http://pic.lvmama.com/img/myspace/delv_bg.gif) no-repeat -448px -38px; width:25px;height:23px; float:left; }
+
+
+.forget_mima{ display:block; width:80px; float:left;    line-height: 30px;}
+.delv_form_list li .hint {color: red;display: block;padding: 3px 0 0 47px;width: 329px;display:block; clear:both;line-height:17px; display:none }
+.tip01{border:1px solid #66CCFF !important;}
+
+/*new2011-12-22*/
+.tips-title span{color:#f00;padding-left:5px;font-size:12px;font-weight:500;}
+.cardsPayment ul,.cardsPayment p,.cardsPayment li{overflow:hidden;zoom:1;}
+.cardsPayment{margin:10px auto 0;width:980px;border:1px solid #D2D2D2;}
+.cardsPayment h3{background:url(http://pic.lvmama.com/img/order/titBg.gif) repeat-x;border-bottom:1px solid #d2d2d2;height:29px;line-height:29px;position:relative;text-indent:20px;font-size:14px;color:#020202;font-weight:700;cursor:pointer;}
+.h3Close em{background:url(http://pic.lvmama.com/img/order/order_icon01.gif) no-repeat -233px -3px;display:block;height:8px;width:8px;position:absolute;top:10px;right:30px;overflow:hidden;}
+.h3CloseB em{background-position:-233px -11px;}
+.cardsPalmentText{display:none;}
+.cardsPayment ul{margin:0px 20px;padding:10px 0;border-bottom:1px dashed #DEDEDE;}
+.cardsPayment li{float:left;line-height:24px;}
+.cardsPayment li label{width:80px;display:inline-block;text-align:right;float:left;}
+.cardsPayment li span{padding-left:80px;color:#FF0000;display:none;}
+.cardsPayment li input{background:url(http://pic.lvmama.com/img/order/order_icon01.gif) no-repeat left -45px;width:248px;height:18px;padding:3px;border:none;border-right:1px solid #ddd;float:left;}
+.cardsPayment li input.verification{width:80px;}
+.cardsPayment li img{float:left;margin:0 10px;}
+.cardsPayment li .button,.newbutton{width:74px;height:27px;background:url(http://pic.lvmama.com/img/order/order_icon01.gif) no-repeat left 0;display:inline-block;margin-left:80px;border:none;}
+.cardsPayment p{margin:0px 25px;padding:5px 0;line-height:20px;}
+.cardsPayment p strong{width:20px;font-weight:700;color:#666;display:inline-block;float:left;}
+.cardsPayment p span{float:left;color:#666;}
+.cardsPayment table{text-align:center;border:1px solid #ddd;margin:10px 25px;color:#666;}
+.cardsPayment td{border:1px solid #ddd;height:30px;}
+.cardsPayment .tableTit td{height:26px;background:#F4F4F4;font-weight:700;color:#333;}
+.cardsPayment td span{margin:0 5px;}
+
+.tips-info02{padding:30px 20px;}
+.tips-info02 .price01,.tips-info02 .price02,.tips-info02 .price03{position:absolute;left:750px;color:#333;font-weight:700;font-size:14px;line-height:30px;display:inline-block;}
+.tips-info02 b{font-weight:700;margin:0 3px 0 0;}
+.tips-info02 .price01 b{font-size:22px;}
+.tips-info02 .price01{top:5px;}
+
+.tips-info02 .price02{top:35px;}
+.tips-info02 .price03 b{font-size:28px;color:#FF5500;}
+.tips-info02 .price03{top:60px;}
+html,body {_height:100%;_width:100%;}
+.msgDiv{border:3px solid #c06;padding:17px;width:344px;background:#fff;font-size: 12px;left: 50%;margin-left:-190px;position: absolute;top:30%;z-index: 51;color:#000;display:none;}
+.msgNewBlock .close{background:url(http://pic.lvmama.com/img/order/order_icon01.gif) no-repeat -165px -9px;display:inline-block;height:15px;width:15px;position:absolute;top:0px;right:0px;_right:10px;cursor:pointer;}
+.msgNewBlock p.msgTitle{font-weight:bold;font-size:14px;border:none;border-bottom:1px solid #d8dfea;height:25px;padding:0;}
+.msgNewBlock{position:relative;color#:333;}
+.msgNewBlock ul{padding:20px 0;line-height:25px;text-align:center;position:relative;}
+.msgDiv strong{font-weight:700;color:#333;}
+.msgNewBlock p{border-top:1px solid #D8DFEA;padding:10px 0;}
+.msgText s{background:url(http://pic.lvmama.com/img/order/order_icon01.gif) no-repeat -180px -2px;display:inline-block;height:25px;width:26px;position:absolute;top:20px;left:60px;_left:-110px;}
+.msgText02 s{background-position:-206px -1px;}
+.msgDiv01 .msgText s{left:100px;_left:-65px;}
+.msgText02{font-size:14px;font-weight:700;}
+.msgDiv .button{text-align:center;}
+.newbutton{padding:0 10px;margin:0 10px;cursor:pointer;}
+.bgDiv{filter:Alpha(opacity=40);-moz-opacity:0.4;opacity:0.4;position:absolute;width:100%; height:100%;top:0;left:0; background:#000000;z-index:50; display:none;}	
+
+.player-info li.add_margin_xu{ margin-left:16px;}
+/*订单页面new20120228*/
+*{margin:0; padding:0; list-style:none;}
+.h_order{border: 3px solid #ED71B0;color: #333333;margin: 0 auto;width: 974px; font-size:12px;}
+.h_order em{font-style:normal; font-weight:700;font-family:Arial,\5b8b\4f53;}
+.h_order h3{color:#000;height:16px;line-height:16px;padding:25px 0 10px 15px;font-size:14px;font-weight:bold;}
+.h_order h3 s {float:left;display:inherit;margin:1px 8px 0 0;width:13px;height:13px;background: url(http://pic.lvmama.com/img/order/order_icon.gif) no-repeat -218px -34px;}
+.h_order-list{border-top: 1px solid #e5e5e5;margin: 0 auto;width: 902px; padding:0 10px;border-collapse: collapse;border-spacing: 0; text-align:left;}
+.h_order-list tr{border-bottom:1px dashed #e5e5e5;height: 28px;}
+.h_order-list tr.h_title{border:0;}
+.h_order-list td del{font-family:Arial,\5b8b\4f53;}
+.h_order-list th{ background:#fbf7f8;height: 26px; font-weight:500; text-align:left;}
+.h_order-list th.h_col_1{color:#333;}
+.o-container table td,.o-container table th{padding:0 2px;}
+.h_order-list .h_col_1{width:100px; color:#f60;}
+.h_order-list .h_space{ margin-left:20px;}
+.h_hotel .h_col_1{color:#333; width:325px;}
+.h_hotel .h_col_2{width:100px; }
+.h_hotel .h_col_3{width:100px; }
+.h_detail{margin: 10px auto 0;width: 902px;}
+.h_detail ul {overflow: hidden;position: relative;z-index: 5; color:#000;zoom:1;}
+.h_detail li {border:1px solid #ddd; border-bottom:0;cursor: pointer;float: left;height: 26px;line-height: 26px;margin-right: 5px;text-align: center;width: 90px;}
+.h_detail li.h_cur-tab {background: url(http://pic.lvmama.com/img/order/order_icon.gif) no-repeat scroll -75px -61px #FBF7F8; color: #c06;}
+.h_detail .h_costcontain { border:1px solid #DDDDDD; padding-left:8px; padding-top:5px;height: 85px;line-height: 1.8;overflow: auto; margin-top:-1px; display:none; overflow:auto;}
+.h_detail .h_cur_con{ display:block;}
+.h_add em,.h_add font,.h_add del{ font-family:Arial;}
+.h_add del{color:#666;}
+.h_add em{ color:#f50; font-weight:700; }
+.h_add a{ color:#05e; text-decoration:none;}
+.h_add .h_col_1{ color:#333;}
+.h_add .h_col_3{ width:100px;}
+.h_coupon input{ vertical-align:middle;}
+.h_coupon{border-bottom: 1px dashed #ddd; border-top: 1px solid #ddd;margin: 0 auto;overflow: hidden;padding:8px 0 8px 20px;width: 882px;}
+.h_coupon .h_inp-radio{ position:relative; top:-2px; display:inline-block;top:0px\9;_top:-2px}
+.h_coupon .h_inp-txt{ width:130px; height:18px; border:1px solid #bdbdbd; background:#fff9d9; padding:2px; line-height:18px;}
+.h_coupon .h_inp_but{padding:0 4px 2px 4px; margin-left:5px; line-height:20px; height:24px;}
+.h_coupon .h_txt {color: #CC0066;  display:inline-block; font-weight:500; }
+.h_order-total{background:#fbf7f8;border-top: 1px solid #ddd;font-size:12px;line-height: 48px;margin: 20px 0 0;padding: 0 40px;text-align: right;}
+.h_order-total em,.h_order-total strong{ color:#f50; font-weight:700; font-family: Arial; margin-right:2px;}
+.h_order-total strong{ font-size:28px;}
+.h_order-commit {background-color: #fbe3ef;min-height:60px;padding: 14px 40px 10px 130px; _height:60px;}
+.h_order-commit p{ overflow:hidden;zoom:1;}
+.h_order-commit label{ float:left;}
+.h_inp_agree{ position:relative; top:2px;}
+.h_btn-submit{background:url(http://pic.lvmama.com/img/order/order_icon.gif) no-repeat scroll 0 -133px transparent;color: #fff;cursor: pointer;float: right;font-size: 14px;font-weight:700; height: 36px;margin-left: 33px;width: 122px; border:0;}
+.h_agreement { background-color:#fff;border: 1px solid #ccc;clear: both;color: #333;height: 100px;line-height: 18px;overflow: auto;padding: 10px;width: 520px; display:none;word-wrap: break-word;}
+.h_agreement h5 {font-size: 14px;font-weight:700;padding: 2px 0 5px;}
+
+
+/*徐婷婷 2012-5-28*/ 
+.fenqi_contant{ width:790px; margin-left:128px; overflow:hidden; zoom:1} 
+h3.font_style{ font-size:16px; color:#333333; padding:0px; line-height:30px; height:30px; margin-top:15px;} 
+.fenqi_info{ background:#fff8d8; border:#ffdfa6 solid 1px; width:780px; margin-top:10px} 
+.fenqi_list{ margin-left:160px; margin-top:31px;} 
+
+
+.fenqi_list li {overflow:hidden; zoom:1; margin:10px 0px; color:#666666; line-height:30px;} 
+.fenqi_list li .other { height:39px; line-height:39px;} 
+
+.fenqi_list li img{ margin:0px; vertical-align:middle} 
+.xh-cs{color:#f00; }span.xh-cs{ display:inline !important}
+p.xh-cs{padding-left:65px;}
+.onlinepay-detail li.xh-bz{ position:relative}
+.ico-price_pre{ background:url(http://pic.lvmama.com/img/order/ico-price_pre.gif) no-repeat; display:inline-block;*display:inline;*zoom:1; width:17px; height:20px; position:absolute; right:5px; top:5px;}
+.fenqi_list li span{ display:block; float:none} 
+.fenqi_list li .span_mt{ margin-top:-10px;} 
+.fenqi_list li .label_name{ float:left; font-weight:700; font-size:12px; color:#666 } 
+.fenqi_list li .list_text{ float:left; width:450px;overflow:hidden; zoom:1;} 
+.fenqi_list li .list_text em{ color:#ff5500} 
+.fenqi_list li .radio_style{ margin:0px 5px 0px 0px; margin-top:3px; } 
+.fenqi_list li .next { margin:20px 0 20px 184px;*margin:20px 0 20px 24px; display:inline; float:left} 
+dl .fenqi_text_titile{ font-weight:700; font-size:12px; color:#666; background:url(http://pic.lvmama.com/img/order/fenqi_text.gif) no-repeat left center; padding-left:8px; margin:5px 0px;} 
+dl .fenqi_text{ margin-left:8px; margin-bottom:20px;} 
+.fenqi_bottom_text{ border-top:#f2f2f2 solid 1px; margin-top:15px;} 
+.add_info_list{ float:left;} 
+.radio_style_add{ vertical-align:-3px;} 
+.tips-info .add_xu_margin{ margin-left:355px;} 
+
+/*add_reconnect*/
+.hh_head_call1{float:left;width:auto;margin-left:18px;overflow:hidden;padding-top:15px; padding-right:70px;font:normal 22px/32px '\5FAE\8F6F\96C5\9ED1'; color:#dd3388; background:url(http://pic.lvmama.com/img/new_v/ob_main/head_call_bg.gif) no-repeat right top; text-align:left;}
+.left-location img{float:left;}
+.instalment_bankinfo{display:none;}
+
+/*add by pp 2012-7-30*/
+.atr_pay_hint em,.o_cont_newtit li,.ord_atr_btn,.ord_atr_mobtit,.ord_atr_iphone,.ord_atr_android,.ord_step_arrow,.ord_bkpop_arrow,.atr_online_print{background:url(http://pic.lvmama.com/img/order/atr_bg.gif) no-repeat;}
+.ord_hintbox{position:relative; zoom:1; overflow:hidden; margin:9px auto; padding:9px; border:4px solid #d9d6d6;}
+.ord_inner{padding:18px;}
+.ord_hintbox .price{top:5px;}
+.ord_hintbox_prolink{float:left;display:block; width:500px; overflow:hidden;  margin-right:18px; font-size:14px; font-weight:bold;color:#000;}
+.atr_pay_hint{color:#339900;}
+.atr_pay_hint p,.atr_pay_hint em{font-size:14px;height:30px;padding-left:30px; color:#339900;}
+.atr_pay_hint em{display:block;  line-height:30px; font-size:14px; font-weight:bold;background-position: -174px -32px;}
+.atr_pay_listtxt{padding-left:24px;color:#333;}
+.o_container_new{ padding:25px; margin-top:-2px; border:1px solid #d1056e;}
+.o_cont_newtit{ overflow:hidden; zoom:1; height:32px; line-height:30px;}
+.o_cont_newtit li{float:left; padding:0 18px; margin-right:4px; font-size:14px; font-weight:bold; border:1px solid #d4d4d4; 
+border-bottom:none; background-position:0 -166px; cursor:pointer;}
+.o_cont_newtit li.o_cont_tit_crt{position:relative; zoom:1; z-index:3; border:1px solid #d1056e; border-bottom:none; background:#fff; color:#d1056e;border-radius: 4px 4px 0 0;}
+.ord_tipbox{border:1px solid #ffdfa6;background-color:#fff8d8;padding:9px 20px;margin:0 auto 10px;line-height:20px; color:#666;}
+.ord_tipbox dt{font-weight:bold;}
+.ord_col_tit{ height:30px; line-height:30px; padding-left:9px;color:#666; background:#f0f0f0; }
+.ord_bank{position:relative; zoom:1; z-index:9;margin-right:-18px;} 
+.ord_banklist{overflow:hidden}
+.ord_banklist span,.ord_banklist a{float:left; width:125px; height:32px; margin:0 24px 9px 0;background:url(http://pic.lvmama.com/img/bank/bank.gif) no-repeat;}
+.ord_banklist a{float:right;line-height:32px;  background:none; }
+.ord_banklist span.ord_bk_zs{ background-position:-143px 0;}
+.ord_banklist span.ord_bk_js{ background-position:-286px 0;}
+.ord_banklist span.ord_bk_zg{ background-position:-429px 0;}
+.ord_banklist span.ord_bk_gs{ background-position:0 0;}
+.ord_banklist span.ord_bk_ny{ display:none; background-position:0 -42px;}
+.ord_banklist span.ord_bk_jt{ background-position:-143px -42px;}
+.ord_banklist span.ord_bk_ms{ background-position:-143px -126px;}
+.ord_banklist span.ord_bk_gd{ background-position:-429px -42px;}
+.ord_banklist span.ord_bk_pf{ background-position:0 -84px;}
+.ord_banklist span.ord_bk_pa{ background-position:-286px -168px;}
+.ord_banklist span.ord_bk_gf{ background-position:-143px -84px;}
+.ord_banklist span.ord_bk_sh{ background-position:0 -168px;}
+.ord_banklist span.ord_bk_xy{ background-position:-429px -84px;}
+.ord_banklist span.ord_bk_sz{ background-position:0 -126px;}
+.ord_banklist span.ord_bk_zx{ background-position:-286px -84px;}
+.ord_banklist span.ord_bk_yz{ background-position:-286px -42px;}
+.ord_banklist span.ord_bk_bj{ background-position:-286px -126px;}
+.ord_act_box{border-top:1px solid #ddd; padding:18px; text-align:center;}
+.ord_atr_btn{display:block; width:121px; height:33px; line-height:33px; margin:auto; font-size:14px; font-weight:bold; color:#fff; border:0; background-position:0 0; cursor:pointer;}
+.ord_act_box .ord_atr_btn{margin-bottom:18px;}
+.ord_act_box a{margin-left:27px;}
+.ord_dtl_pop{display:none;position:relative;zoom:1;z-index:9; left:0; top:-15px; width:972px; padding:4px; height:auto; background:url(http://pic.lvmama.com/img/order/opa_bg.png) repeat;}
+.ord_dtl_pop table{width:100%;line-height:30px; border-top:1px solid #ccc; border-right:1px solid #ccc; background:#fff;}
+.ord_dtl_pop th{height:30px; text-align:left; font-weight:bold; background:#ececec;}
+.ord_dtl_pop th,.ord_dtl_pop td{padding:0 7px;border-bottom:1px solid #ccc; border-left:1px solid #ccc;}
+.ord_prolink{width:600px;color:#333;}
+.ord_bank_pop{display:none;position:absolute; z-index:10; left:50px; bottom:60px; width:840px; height:auto; color:#333; background:url(http://pic.lvmama.com/img/order/opa_bg.png) repeat;}
+.ord_bank_inner{margin:4px;background:#fff; border:1px solid #ccc;}
+.ord_bank_poptit{margin:1px; padding-left:13px; line-height:27px;font-size:14px; font-weight:bold; background:#e9e9e9;}
+.bkpop_list{overflow:hidden; zoom:1; padding:7px 13px;}
+.bkpop_list li{float:left; width:150px; margin-right:9px;}
+.bkpop_list span{display:block; line-height:22px;}
+.bkpop_list em{display:block; line-height:24px; font-weight:bold; color:#333;}
+.ord_atr_moblink{overflow:hidden; zoom:1; margin:9px 0;padding:18px 50px;background:#f7f7f7;}
+.ord_atr_mobtit{line-height:24px;padding-left:18px; font-size:12px;margin-bottom:9px;background-position:-188px 4px;}
+.ord_atr_iphone{display:inline-block;width:114px; height:46px; margin-right:9px;background-position:0 -33px; }
+.ord_atr_android{display:inline-block;width:114px; height:46px; background-position:0 -80px; }
+.ord_step_hint{*height:70px; margin:9px; padding:15px 20px; overflow:hidden; zoom:1; text-align:center; color:#cc0066;}
+.ord_step_cont{float:left; padding:13px 21px; border:1px solid #cc0066;background:#fdeef6; border-radius:4px;}
+.ord_step_arrow{float:left; border:0;width:18px; height:13px;  margin:27px 7px;background-position: 0 -140px;}
+.ord_atr_img{float:right; width:310px; margin-top:18px;}
+.ord_atr_txt{float:left; width:400px; font-size:14px; line-height:24px;}
+.ord_atr_txt p{margin-top:18px;}
+.ord_atr_txt em,.ord_atr_txt strong{padding:0 4px;font-family:Arial;}
+#ord_atr_callbox{display:none;}
+.ord_dtlpop_arrow{position:absolute; top:-10px; right:500px; width:0px; height:0px; overflow:hidden; background:#fff; 
+border-left:10px solid #fff;border-right:10px solid #fff;border-bottom:10px solid #ececec; }
+.ord_bkpop_arrow{position:absolute; bottom:-6px; *bottom:-11px; right:70px; width:15px; height:11px; background-position:-20px -140px;}
+
+
+/*预签约重写页面样式*/
+.atr_online_top{overflow:hidden; zoom:1;}
+.tips-title strong{font-size:14px;}
+.atr_online_print{float:right;margin-right:36px; padding-left:24px; font-size:12px;font-weight:normal; background-position:-184px -127px;color:#0066cc;}
+.atr_online_ifm,.atr_online_ifm1{ width:100%;height:440px;padding-right:1px;border:1px solid #7F9DB9; overflow-x:hidden;overflow-y:auto;}
+.atr_online_ifm1{height:290px; margin-top:20px;}
+.atr_btnbox {padding:13px 100px; margin-top:18px; background:#fbe3ef;}
+.atr_btnbox  .btn-submit{float:none;}
+.atr_imp_point{color:#ff0000; padding:0 4px;}
+.atr_acp input{ vertical-align:middle; margin-right:4px;}
+.atr_ifrbox{width:734px; margin:0 auto 27px; }
+.contractTemplateIframe1{margin-top:18px;}
+.atr_cover{opacity:0.1;filter:alpha(opacity=10);background:#fff;height:1px;}
+
+/*预签约重写页面样式2*/
+.atr_acp p.textindent24{ text-indent:24px;}
+.atr_acp p.textindent48{ text-indent:48px;}
+/*预签约重写页面样式*/
+
+/*addpop 12-08-22*/
+#tipsWindow .ysq_popclose{cursor: pointer;position: absolute;right: 20px;top: 20px;}
+#tipsWindow .ord_ysqpop_txt {line-height: 20px;padding: 15px 0;}
+#pageOverlay{display:none;position:absolute; top:0; left:0; z-index:99; width:100%; height:100%; background:#000; filter:alpha(opacity=70); opacity:0.7;}
+.weiboBtn p{margin-bottom:7px;}
+.login_conQQ,.login_conTT,.login_conSN,.login_conALP,.login_conSD,.login_conKX{display:inline-block; padding-left:18px; margin-right:9px;}
+.login_conQQ{background:url(http://pic.lvmama.com/img/order/qq.gif) no-repeat;}
+.login_conTT{background:url(http://pic.lvmama.com/img/order/tx.gif) no-repeat  0 2px;}
+.login_conBD{background:url(http://pic.lvmama.com/img/new_v/ob_login/login_suprise.jpg) no-repeat  -112px -71px; width:16px;padding-left:17px; display:inline-block; height:20px;}
+.login_conSN{background:url(http://pic.lvmama.com/img/order/xl.gif) no-repeat;}
+.login_conALP{background:url(http://pic.lvmama.com/img/order/zfb.gif) no-repeat;}
+.login_conSD{padding-left:22px;background:url(http://pic.lvmama.com/img/order/sd.gif) no-repeat;}
+.login_conKX{ background:url(http://pic.lvmama.com/img/order/kaixing.gif) no-repeat;}
+.login_lbl{float:left;margin-right:25px;}
+/*12-11-08*/
+.freeUser,.freeUser:link,.freeUser:visited{margin-left:9px;color:#07c;}
+.freeUser:hover,.freeUser:active{color:#e08;}
+
+/*银行图标*/
+.bank{background-image:url(http://pic.lvmama.com/img/bank/bank_all.gif);display:inline-block;width:125px;height:32px;background-repeat:no-repeat;vertical-align:middle}
+.icbc{background-position:0 0}
+.cmb{background-position:0 -32px}
+.ccb{background-position:0 -64px}
+.boc{background-position:0 -96px}
+.abc{background-position:0 -128px}
+.comm{background-position:0 -160px}
+.cebbank{background-position:0 -192px}
+.spdb{background-position:0 -224px}
+.gdb{background-position:0 -256px}
+.citic{background-position:0 -288px}
+.cib{background-position:0 -320px}
+.sdb{background-position:0 -352px}
+.cmbc{background-position:0 -384px}
+.bjbank{background-position:0 -416px}
+.hzcbb2c{background-position:0 -448px}
+.shbank{background-position:0 -480px}
+.bjrcb{background-position:0 -512px}
+.spabank{background-position:0 -544px}
+.fdb{background-position:0 -576px}
+.nbbank{background-position:0 -608px}
+.postgc{background-position:0 -640px}
+.wzcbb2c-debit{background-position:0 -672px}
+.alipay{background-position:0 -704px}
+.alipayDirectpay{background-position:0 -736px}
+.unionpay{background-position:0 -768px}
+.chinaMobile{background-position:0 -800px}
+.tenpay{background-position:0 -832px}
+.tenpay2{background-position:0 -864px}
+.alipayScannerCode{background-position:0 -896px}
+.hxb {background-position: 0 -928px;}
+.weixinpay{background-position: 0 -960px;}
+
+.bankinfo {
+    background-image: none;
+    display: block; 
+    height: auto; 
+    vertical-align: middle; 
+    width: auto; 
+}
+
+

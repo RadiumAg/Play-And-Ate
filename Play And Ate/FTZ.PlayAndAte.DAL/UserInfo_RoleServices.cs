@@ -7,7 +7,7 @@ using FTZ.PlayAndAte.Models;
 
 namespace FTZ.PlayAndAte.DAL
 {
-    public class UserInfo_RoleService
+    public class UserInfo_RoleServices
     {
 
         /// <summary>
@@ -41,6 +41,20 @@ namespace FTZ.PlayAndAte.DAL
             }
         }
 
+
+        /// <summary>
+        /// 展示所有用户信息
+        /// </summary>
+        /// <returns>商户信息实体集合</returns>
+        public static List<UserInfo_Role> UserData()
+        {
+            using (PlayAndAteEntities entities = new PlayAndAteEntities())
+            {
+                var result = entities.UserInfo_Role.ToList();
+                return result;
+            }
+        }
+
         /// <summary>
         /// 增加用户
         /// </summary>
@@ -53,6 +67,19 @@ namespace FTZ.PlayAndAte.DAL
                 user.RoleId = 3;
                 entities.UserInfo_Role.Add(user);
                 return entities.SaveChanges() > 0; ;
+            }
+        }
+
+        /// <summary>
+        /// 更新用户数信息
+        /// </summary>
+        /// <param name="user">用户实体</param>
+        /// <returns>是否更新成功</returns>
+        public static bool UpdateUser(UserInfo_Role user) {
+            using (PlayAndAteEntities entities = new PlayAndAteEntities()) {
+                var data = entities.UserInfo_Role.Where(x=>x.Pwd == user.Pwd).FirstOrDefault();
+                data.Pwd = user.Pwd;
+                return entities.SaveChanges()>0;
             }
         }
 

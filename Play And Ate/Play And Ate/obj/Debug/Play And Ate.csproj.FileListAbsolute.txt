@@ -76,7 +76,6 @@ C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And At
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CopyComplete
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.dll
 C:\Users\ym\Desktop\Play And Ate\Play And Ate\Play And Ate\obj\Debug\Play And Ate.pdb
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Play And Ate.dll.config
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Play And Ate.dll
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Play And Ate.pdb
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\EntityFramework.dll
@@ -87,16 +86,61 @@ C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Newtonsoft.Json.dll
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.dll
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.BLL.pdb
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.Models.pdb
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.Models.dll.config
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\EntityFramework.xml
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\EntityFramework.SqlServer.xml
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Newtonsoft.Json.xml
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.pdb
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.dll.config
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\zh-Hans\EntityFramework.resources.dll
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.dll
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\AspNetPager.dll
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\AspNetPager.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\en\AspNetPager.resources.dll
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\zh-CHT\AspNetPager.resources.dll
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.ServiceLocation.dll
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.Unity.dll
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.Unity.Interception.dll
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.xml
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.Unity.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.Unity.Interception.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Play And Ate.dll.config
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.Models.dll.config
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csprojAssemblyReference.cache
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CoreCompileInputs.cache
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CopyComplete
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.dll
-C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.dll.config
+D:\项目\项目\Play And Ate\Play And Ate\bin\AspNetPager.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.ServiceLocation.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.Unity.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.Unity.Interception.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\AspNetPager.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.pdb
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.pdb
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Data.pdb
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.ServiceLocation.pdb
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.Unity.pdb
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.Unity.Interception.pdb
+D:\项目\项目\Play And Ate\Play And Ate\bin\en\AspNetPager.resources.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\zh-CHT\AspNetPager.resources.dll
