@@ -9,6 +9,7 @@ namespace Play_And_Ate.Order
 {
     public partial class Order_2 : System.Web.UI.Page
     {
+        protected string Getzjg;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request["Length"] != null)

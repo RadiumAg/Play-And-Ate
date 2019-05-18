@@ -18,19 +18,19 @@
     }
 
     .orderStep .step1 {
-        background-image: url("../images/step1.gif");
+        background-image: url("../../Images/Order/step1.gif");
     }
 
     .orderStep .step2 {
-        background-image: url("../images/step2.gif");
+        background-image: url("../../Images/Order/step2.gif");
     }
 
     .orderStep .step3 {
-        background-image: url("../images/step3.gif");
+        background-image: url("../../Images/Order/step3.gif");
     }
 
     .orderStep .step4 {
-        background-image: url("../images/step4.gif");
+        background-image: url("../../Images/Order/step4.gif");
     }
 
     .orderStep .step5 {
