@@ -83,6 +83,7 @@
     <Content Include="Admin\PartialView\ShowBussinessData.html" />
     <Content Include="Cart\Cart.aspx" />
     <Content Include="Cart\Cart.html" />
+    <Content Include="Content\Admin\Index.css" />
     <Content Include="Content\Cart\base.v606141511.css" />
     <Content Include="Content\Cart\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Cart\core%281%29.php" />
@@ -112,6 +113,23 @@
     <Content Include="Content\Products\bmap.css" />
     <Content Include="Content\Products\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Products\hdcss.css" />
+    <Content Include="Content\Search\buttons.css" />
+    <Content Include="Content\Search\chanel.css" />
+    <Content Include="Content\Search\css.css" />
+    <Content Include="Content\Search\dialog.css" />
+    <Content Include="Content\Search\index.php.css" />
+    <Content Include="Content\Search\index.php2.css" />
+    <Content Include="Content\Search\jquery.common.css" />
+    <Content Include="Content\Search\new_default.css" />
+    <Content Include="Content\Search\normalize.css" />
+    <Content Include="Content\Search\orderV2.css" />
+    <Content Include="Content\Search\responsive.css" />
+    <Content Include="Content\Search\select_share.css" />
+    <Content Include="Content\Search\select_share2.css" />
+    <Content Include="Content\Search\share_popup.css" />
+    <Content Include="Content\Search\share_style0_16.css" />
+    <Content Include="Content\Search\style.css" />
+    <Content Include="Content\Search\ui-components.css" />
     <Content Include="Content\Shared\cityquery.css" />
     <Content Include="Content\Shared\font-awesome.min.css" />
     <Content Include="Content\Shared\main_huandeng.css" />
@@ -412,6 +430,7 @@
     <Content Include="Images\Cart\loge.gif" />
     <Content Include="Images\Cart\wg.png" />
     <Content Include="Images\Cart\xian.jpg" />
+    <Content Include="Images\error\捏脸.gif" />
     <Content Include="Images\Home\5270b12bd8b1d.jpg" />
     <Content Include="Images\Home\52807b105cb1b.jpg" />
     <Content Include="Images\Home\5282e9733ca7c_70x50.jpg" />
@@ -772,6 +791,7 @@
     <Content Include="Order\Order_5.aspx" />
     <Content Include="Order\PayTo.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
+    <Content Include="Content\Search\new_default.css.bak" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
     <Content Include="Plugin\jquery-3.3.1.js" />
     <Content Include="Plugin\jquery-3.3.1.min.js" />
@@ -1215,7 +1235,9 @@
       <DependentUpon>Cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Helper\Authentication.cs" />
+    <Compile Include="Helper\PreventLink.cs" />
     <Compile Include="Helper\SMSinterface.cs" />
+    <Compile Include="Helper\UrlRewriteModule.cs" />
     <Compile Include="Helper\UrlWrite.cs" />
     <Compile Include="Home\Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
