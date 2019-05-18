@@ -8,6 +8,7 @@ using Newtonsoft.Json;
 using System.Web.Security;
 using Play_And_Ate.Helper;
 using Newtonsoft.Json.Linq;
+using Play_And_Ate.Order.App_Code;
 
 namespace Play_And_Ate.Services
 {
@@ -52,6 +53,32 @@ namespace Play_And_Ate.Services
                 case "10":
                     CreateOrder();
                     break;
+                case "11":
+                    CheckPay();
+                    break;
+            }
+        }
+
+        /// <summary>
+        /// 判断是否支付成功，并更新订单状态
+        /// </summary>
+        public void CheckPay()
+        {
+            //创建XddpayResponse实例
+            XddpayResponse xddpayResponse = new XddpayResponse(context);
+            //判断签名
+            if (xddpayResponse.IsXddpaySign())
+            {
+                string result = xddpayResponse.getParameter("result");//支付结果
+                string order_no = xddpayResponse.getParameter("order_no");//商户自己的订单号
+                if ("success".Equals(result))
+                {
+                    FTZ.PlayAndAte.Models.Order order = new FTZ.PlayAndAte.Models.Order()
+                    {
+                        OrderName = Helper.OrderMessage.OrderName,
+                    };
+                    OrderManager.UPdateOrder(order);
+                }
             }
         }
 
@@ -94,7 +121,7 @@ namespace Play_And_Ate.Services
             为用户开辟一块新内存地址
             */
             //为订单添加信息
-            order.OrderName = Guid.NewGuid().ToString();
+            order.OrderName =Helper.OrderMessage.OrderName;
             order.OrderPrice = Convert.ToDecimal(context.Request["sumMoney"].ToString());
             order.Success = false;
             order.CustomerNum = order.OrderItem.Count();
@@ -284,6 +311,7 @@ namespace Play_And_Ate.Services
             string userName = context.Request["UserName"].ToString();
             context.Response.Write(JsonConvert.SerializeObject(ProductManager.ShowProducts(userName: userName)));
         }
+
         public bool IsReusable
         {
             get
@@ -291,5 +319,6 @@ namespace Play_And_Ate.Services
                 return false;
             }
         }
+
     }
 }

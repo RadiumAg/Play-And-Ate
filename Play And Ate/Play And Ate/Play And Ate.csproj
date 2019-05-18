@@ -81,6 +81,8 @@
   <ItemGroup>
     <Content Include="Admin\Backstage.aspx" />
     <Content Include="Admin\PartialView\ShowBussinessData.html" />
+    <Content Include="Admin\PartialView\ShowCustomerOrder.html" />
+    <Content Include="Admin\PartialView\ShowProductsData.html" />
     <Content Include="Cart\Cart.aspx" />
     <Content Include="Cart\Cart.html" />
     <Content Include="Content\Admin\Index.css" />
@@ -1235,6 +1237,7 @@
       <DependentUpon>Cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Helper\Authentication.cs" />
+    <Compile Include="Helper\OrderMessage.cs" />
     <Compile Include="Helper\PreventLink.cs" />
     <Compile Include="Helper\SMSinterface.cs" />
     <Compile Include="Helper\UrlRewriteModule.cs" />

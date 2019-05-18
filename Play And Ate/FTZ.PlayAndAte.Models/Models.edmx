@@ -195,6 +195,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Order_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Order_UserInfo_Role">
           <End Role="UserInfo_Role" Type="Self.UserInfo_Role" Multiplicity="1" />
           <End Role="Order" Type="Self.Order" Multiplicity="*" />
@@ -341,6 +353,10 @@
             <End Role="Contacts" EntitySet="Contacts" />
             <End Role="Order" EntitySet="Order" />
           </AssociationSet>
+          <AssociationSet Name="FK_Order_Product" Association="Self.FK_Order_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
           <AssociationSet Name="FK_Order_UserInfo_Role" Association="Self.FK_Order_UserInfo_Role">
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
             <End Role="Order" EntitySet="Order" />
@@ -446,6 +462,7 @@
           <NavigationProperty Name="Contacts" Relationship="Self.FK_Order_Contacts" FromRole="Order" ToRole="Contacts" />
           <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Order_UserInfo_Role" FromRole="Order" ToRole="UserInfo_Role" />
           <NavigationProperty Name="OrderItem" Relationship="Self.FK_OrderItem_Order" FromRole="Order" ToRole="OrderItem" />
+          <NavigationProperty Name="Product" Relationship="PlayAndAteModel.FK_Order_Product" FromRole="Order" ToRole="Product" />
         </EntityType>
         <EntityType Name="OrderItem">
           <Key>
@@ -485,6 +502,7 @@
           <NavigationProperty Name="PPointsType" Relationship="Self.FK_Product_PPointsType" FromRole="Product" ToRole="PPointsType" />
           <NavigationProperty Name="Point" Relationship="Self.FK_Poing_Product" FromRole="Product" ToRole="Point" />
           <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Product_UserInfo_Role" FromRole="Product" ToRole="UserInfo_Role" />
+          <NavigationProperty Name="Order" Relationship="PlayAndAteModel.FK_Order_Product" FromRole="Product" ToRole="Order" />
         </EntityType>
         <EntityType Name="PTotalType">
           <Key>
@@ -772,7 +790,23 @@
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
             <End Role="Sincerity" EntitySet="Sincerity" />
           </AssociationSet>
+          <AssociationSet Name="FK_Order_Product" Association="PlayAndAteModel.FK_Order_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
         </EntityContainer>
+        <Association Name="FK_Order_Product">
+          <End Type="PlayAndAteModel.Product" Role="Product" Multiplicity="1" />
+          <End Type="PlayAndAteModel.Order" Role="Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->

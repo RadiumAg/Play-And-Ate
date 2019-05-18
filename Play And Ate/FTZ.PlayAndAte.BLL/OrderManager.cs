@@ -11,6 +11,13 @@ namespace FTZ.PlayAndAte.BLL
     public class OrderManager
     {
 
+        /// <summary>
+        /// 更新订单状态
+        /// </summary>
+        public static void UPdateOrder(Order order)
+        {
+            OrderServices.UpdateOrderData(order);
+        }
 
         /// <summary>
         /// 根据商户姓名查询该商户的所有订单

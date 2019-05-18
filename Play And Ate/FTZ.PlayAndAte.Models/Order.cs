@@ -33,5 +33,6 @@ namespace FTZ.PlayAndAte.Models
         public virtual UserInfo_Role UserInfo_Role { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<OrderItem> OrderItem { get; set; }
+        public virtual Product Product { get; set; }
     }
 }

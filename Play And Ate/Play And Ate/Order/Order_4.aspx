@@ -76,9 +76,6 @@
                     <li class="daohang"><a href="http://www.01nz.com.cn/biotope">生态园</a></li>
                     <li class="daohang"><a href="http://www.01nz.com.cn/fish">垂钓场</a></li>
                     <li class="cur"><a href="http://xianlu.01nz.com.cn/" title="农家行">农家行</a></li>
-
-
-
                     <!-- <li class="fl"><a href="http://xianlu.01nz.com.cn/add/list/111.html">资讯  </a></li>	 -->
                     <li class="fl"><a href="http://01nz.com.cn/discover" target="_blank">专题</a></li>
                     <!--  <li class="fl"><a href="http://xianlu.01nz.com.cn/add/dingzhi.html">定制</a></li>-->
@@ -87,13 +84,6 @@
             </div>
         </div>
         <div class="head1">
-            <!--  <div class="g_w top10">
-<a href=#><img src=http://xianlu.01nz.com.cn/uploads/userup/0/1352476686.jpg width="1000" height="80"></a>
-</div>-->
-            <!--  head1 -->
-
-
-
             <div id="page">
                 <div style="float: left; margin-top: 10px">
                     <form name="formpay" id="formpay" method="post" action="http://xianlu.01nz.com.cn/order/pay/alipay/jishi/alipayto.php" target="_blank">
@@ -259,16 +249,16 @@
                             </div>
                     </form>
                 </div>
-                <input id="out_trade_no" name="out_trade_no" value="CHN-11471556872421" type="hidden">
-                <input type="hidden" id="subject" name="subject" value="上海出发 【临安】东天目山、青山湖2日农家行">
-                <input type="hidden" id="total_fee" name="total_fee" value="378">
-                <input type="hidden" id="show_url" name="show_url" value="xianlu.01nz.com.cn">
+                <input id="out_trade_no" name="out_trade_no" value="CHN-11471556872421" type="hidden"/>
+                <input type="hidden" id="subject" name="subject" value="上海出发 【临安】东天目山、青山湖2日农家行"/>
+                <input type="hidden" id="total_fee" name="total_fee" value="378"/>
+                <input type="hidden" id="show_url" name="show_url" value="xianlu.01nz.com.cn"/>
                 <!--此处注释取代，放置底部用户控件-->
                 <!---弹出付款提示 START--->
                 <div class="OrderStatusPop jqmWindow jqmID1" id="OrderStatusPop">
                     <div class="hd">
                         <a onclick="javascript:window.location.reload();" class="jqmClose2" style="cursor: pointer;">
-                            <img src="./在线预订-第一农庄网4_files/order8.gif"></a>付款确认
+                            <img src="./在线预订-第一农庄网4_files/order8.gif"/></a>付款确认
                     </div>
                     <div class="bd">
                         <p class="p1">
