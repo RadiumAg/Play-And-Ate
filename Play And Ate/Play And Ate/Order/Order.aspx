@@ -1,90 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Order.aspx.cs" Inherits="Play_And_Ate.Order.Order" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Order.aspx.cs" Inherits="Play_And_Ate.Order.Order" %>
+<asp:Content runat="server" ID="Header"  ContentPlaceHolderID="Style">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="../Content/Order/common_wm.html" rel="stylesheet" media="screen" type="text/css" />
-    <link href="../Content/Order/order.css" rel="stylesheet" />
-    <link href="../Content/Order/style.css" rel="stylesheet" />
-    <title>在线预订-Play And Ate</title>
-    <script src="../Scripts/Order/global.js"></script>
-</head>
-<body>
-    <div class="head">
-        <div class="head_mid">
-            <div class="head_mid_right">
-            </div>
-            <div class="head_mid_left">
-                <div>
-                    <span id="_Check_head_Login">
-                        <!-- <a href="http://xianlu.01nz.com.cn/weibo/index.php"><img src="http://xianlu.01nz.com.cn/ORG7188_templets/default//images/sina.png" class="tt"/></a> -->
-                        你好，欢迎光临第一农庄网！<!-- <a href="http://xianlu.01nz.com.cn/qq/index.php"><img src="http://xianlu.01nz.com.cn/ORG7188_templets/default//images/qq.png" class="tt"/></a> --><a href="http://www.01nz.com.cn/user-login">登录</a>
-                        &nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="http://www.01nz.com.cn/user-register" target="_blank">注册</a>
-                    </span>
-                </div>
-
-            </div>
-
-        </div>
-        <!--  head_mid -->
-    </div>
-    <!--  head -->
-
-    <div class="clear"></div>
-    <div class="head1">
-
-        <!--通告开始-->
-
-        <div class="head_ad">
-            <div id="adv_forum_home_full"></div>
-            <div class="fade_btn"></div>
-        </div>
-        <!--通告结束-->
-
-        <div class="head1_logo top20"><a href="http://www.01nz.com.cn/">
-            <img src="%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%AE%A2-%E7%AC%AC%E4%B8%80%E5%86%9C%E5%BA%84%E7%BD%91_files/logo.gif"></a></div>
-        <div style="margin-top: 35px; float: left; border-left: 1px #666666 solid; width: 93px; height: 23px; text-align: center; font-size: 25px; line-height: 16px; font-family: '微软雅黑';">农家行</div>
-        <div class="fenzhan"></div>
-        <div class="search_box f_l" style="margin-top: 25px;">
-            <div class="search_input f_l">
-                <input type="text" class="search_txt" name="keyword" id="header_kw" value="农庄 农家乐 垂钓场 生态园 农家行" x-webkit-speech="" x-webkit-grammar="builtin:translate">
-                <a id="sousuo_btn" class="search_btn">搜索</a>
-            </div>
-            <div class="blank1"></div>
-        </div>
-        <div class="hour24 top20"><span>400-021-3158</span><img src="%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%AE%A2-%E7%AC%AC%E4%B8%80%E5%86%9C%E5%BA%84%E7%BD%91_files/busy_yh.gif"></div>
-
-        <!-- <div class="headbanner"><a href=#><img src=http://xianlu.01nz.com.cn/uploads/userup/0/1345455395.gif></a></div> -->
-    </div>
-    <div class="nv top20">
-        <div class="wrap">
-            <ul>
-                <li class="all_class nz_biaoyu">
-                    <div class="nz_biaoyu_dv">
-                        <ul id="scrollnews" class="scrollnews">
-                            <li class="clear">去农庄&nbsp;&nbsp;就上第一农庄网</li>
-                            <li class="clear">热线电话：400-021-3158</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/">首页</a></li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/farm">农庄</a></li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/farmhouse">农家乐</a></li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/biotope">生态园</a></li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/fish">垂钓场</a></li>
-                <li class="cur"><a href="http://xianlu.01nz.com.cn/" title="农家行">农家行</a></li>
-
-
-
-                <!-- <li class="fl"><a href="http://xianlu.01nz.com.cn/add/list/111.html">资讯  </a></li>	 -->
-                <li class="fl"><a href="http://01nz.com.cn/discover" target="_blank">专题</a></li>
-                <!--  <li class="fl"><a href="http://xianlu.01nz.com.cn/add/dingzhi.html">定制</a></li>-->
-                <div class="clear"></div>
-            </ul>
-        </div>
-    </div>
+</asp:Content>
+<asp:Content runat="server" ID="content" ContentPlaceHolderID="Content">
     <div class="head1">
         <!--  head1 -->
         <div id="page">
@@ -100,7 +18,6 @@
                     </ul>
                 </div>
                 <!--订单步骤 END-->
-                <form runat="server">
                     <div class="orderWrap">
                         <div class="userInfo">
                             <h2>在线预订：<a class="a1" href='../Line/' target="_blank"></a> <a href="">
@@ -371,71 +288,7 @@
                     });
                 }
             </script>
-            <!--//尾部-->
-            <div class="blank"></div>
-            <div id="ftw">
-                <div id="ft">
-                    <div class="xiantiao"></div>
-                    <div class="blank"></div>
-                    <div class="tc" align="center">
-                        <a href="http://www.01nz.com.cn/sys/id-20" target="_blank">关于我们</a>
-                        &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-6" target="_blank">加入我们</a>
-                        &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-30" target="_blank">联系我们</a>
-                        &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-27" target="_blank">免责条款</a>
-                        &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-28" target="_blank">隐私保护</a>
-                        &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-45" target="_blank">网站地图</a>
-                        &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-9" target="_blank">商家登录</a>
-                    </div>
-                    <div class="blank"></div>
-                    <div class="beian" align="center">版权所有：上海威和信息科技有限公司  <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备 13043989号-1</a>  电话：021-60172228    邮箱：mc_01nz@163.com </div>
-                    <div class="beian_eng" align="center">
-                        Copyright 2013 www.01nz.com.cn All Rights Reserved.
-                    </div>
-                    <!-- 热门城市 -->
-                    <!-- 区县分类 -->
-                    <!-- 热门农庄 -->
-                    <!-- 友情链接 -->
-                    <div align="center">
-                        <img src="%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%AE%A2-%E7%AC%AC%E4%B8%80%E5%86%9C%E5%BA%84%E7%BD%91_files/xian.jpg" alt="灰线"></div>
-                    <div align="center">
-                        <img src="%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%AE%A2-%E7%AC%AC%E4%B8%80%E5%86%9C%E5%BA%84%E7%BD%91_files/jubao.gif" alt="举报中心" class="img">
-                        <img src="%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%AE%A2-%E7%AC%AC%E4%B8%80%E5%86%9C%E5%BA%84%E7%BD%91_files/end_2.gif" alt="官方认证" class="img">
-                        <img src="%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%AE%A2-%E7%AC%AC%E4%B8%80%E5%86%9C%E5%BA%84%E7%BD%91_files/end_3.gif" alt="网络110" class="img">
-                        <!-- <img src="http://www.01nz.com.cn/app/Tpl/fanwe/images/site_logo.png" alt="安全联盟" class="img"/> -->
-                        <img src="%E5%9C%A8%E7%BA%BF%E9%A2%84%E8%AE%A2-%E7%AC%AC%E4%B8%80%E5%86%9C%E5%BA%84%E7%BD%91_files/end_4.gif" alt="360绿色网站" class="img">
-                    </div>
-                    <div class="blank"></div>
-                    <div class="blank"></div>
-                    <div class="blank"></div>
-                    <script>
-                        //返回页面后自动点击按钮,恢复原有数据
-                        $(function () {
-                            if (sessionStorage.getItem("crrs") != null) {
-                                if (sessionStorage.getItem("crrs") > 2) {
-                                    var inti = sessionStorage.getItem("crrs") - 2;
-                                    for (var i = 0; i < inti; i++) {
-                                        document.getElementById("bbb").click();
-                                    }
-                                } else if (sessionStorage.getItem("crrs") < 2) {
-                                    var inti = 2 - sessionStorage.getItem("crrs");
-                                    for (var i = 0; i < inti; i++) {
-                                        document.getElementById("ccc").click();
-                                    }
-                                }
-                            }
-                            if (sessionStorage.getItem("etrs") != null) {
-                                if (sessionStorage.getItem("etrs") > 0) {
-                                    var inti = sessionStorage.getItem("etrs");
-                                    for (var i = 0; i < inti; i++) {
-                                        document.getElementById("ddd").click();
-                                    }
-                                }
-                            }
-                        })
-                    </script>
-                </div>
             </div>
         </div>
-    </div>
-</body>
-</html>
+</asp:Content>
+<asp:Content runat="server" ID="Footer" ContentPlaceHolderID="Footer"></asp:Content>
