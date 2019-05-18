@@ -14,16 +14,26 @@
     <Property Name="TypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="ContactsId" />
+    </Key>
+    <Property Name="ContactsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContactsName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ContactsEmail" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FixedTelephone" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContactsMobilePhone" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="Customers">
     <Key>
       <PropertyRef Name="CustomerId" />
     </Key>
-    <Property Name="CustomerId" Type="int" Nullable="false" />
+    <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Id_Number" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="CardTypeId" Type="int" Nullable="false" />
-    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="OrderItemID" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Image">
     <Key>
@@ -35,15 +45,24 @@
   </EntityType>
   <EntityType Name="Order">
     <Key>
-      <PropertyRef Name="Id" />
+      <PropertyRef Name="OrderId" />
     </Key>
-    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="OrderId" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="OrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="OrderName" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="CustomerNum" Type="int" Nullable="false" />
     <Property Name="OrderPrice" Type="money" Nullable="false" />
     <Property Name="ProductId" Type="int" Nullable="false" />
     <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Success" Type="bit" Nullable="false" />
+    <Property Name="ContactsId" Type="int" />
+  </EntityType>
+  <EntityType Name="OrderItem">
+    <Key>
+      <PropertyRef Name="OrderItemId" />
+    </Key>
+    <Property Name="OrderItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrderId" Type="int" Nullable="false" />
+    <Property Name="CustomerId" Type="int" Nullable="false" />
   </EntityType>
   <!--生成过程中发现错误:
 警告 6002: 表/视图“PlayAndAte.dbo.Point”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
@@ -135,15 +154,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_Customers_Order">
-    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+  <Association Name="FK_Customers_OrderItem">
+    <End Role="OrderItem" Type="Self.OrderItem" Multiplicity="1" />
     <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="Order">
-        <PropertyRef Name="Id" />
+      <Principal Role="OrderItem">
+        <PropertyRef Name="OrderItemId" />
       </Principal>
       <Dependent Role="Customers">
-        <PropertyRef Name="OrderID" />
+        <PropertyRef Name="OrderItemID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -159,6 +178,18 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Order_Contacts">
+    <End Role="Contacts" Type="Self.Contacts" Multiplicity="0..1" />
+    <End Role="Order" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Contacts">
+        <PropertyRef Name="ContactsId" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="ContactsId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Order_UserInfo_Role">
     <End Role="UserInfo_Role" Type="Self.UserInfo_Role" Multiplicity="1" />
     <End Role="Order" Type="Self.Order" Multiplicity="*" />
@@ -168,6 +199,18 @@
       </Principal>
       <Dependent Role="Order">
         <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OrderItem_Order">
+    <End Role="Order" Type="Self.Order" Multiplicity="1" />
+    <End Role="OrderItem" Type="Self.OrderItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="OrderItem">
+        <PropertyRef Name="OrderId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -258,9 +301,11 @@
   <EntityContainer Name="PlayAndAteModelStoreContainer">
     <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="CardType" EntityType="Self.CardType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contacts" EntityType="Self.Contacts" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Image" EntityType="Self.Image" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OrderItem" EntityType="Self.OrderItem" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PPointsType" EntityType="Self.PPointsType" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="PTotalType" EntityType="Self.PTotalType" Schema="dbo" store:Type="Tables" />
@@ -279,17 +324,25 @@
       <End Role="CardType" EntitySet="CardType" />
       <End Role="Customers" EntitySet="Customers" />
     </AssociationSet>
-    <AssociationSet Name="FK_Customers_Order" Association="Self.FK_Customers_Order">
-      <End Role="Order" EntitySet="Order" />
+    <AssociationSet Name="FK_Customers_OrderItem" Association="Self.FK_Customers_OrderItem">
+      <End Role="OrderItem" EntitySet="OrderItem" />
       <End Role="Customers" EntitySet="Customers" />
     </AssociationSet>
     <AssociationSet Name="FK_Image_Product" Association="Self.FK_Image_Product">
       <End Role="Product" EntitySet="Product" />
       <End Role="Image" EntitySet="Image" />
     </AssociationSet>
+    <AssociationSet Name="FK_Order_Contacts" Association="Self.FK_Order_Contacts">
+      <End Role="Contacts" EntitySet="Contacts" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
     <AssociationSet Name="FK_Order_UserInfo_Role" Association="Self.FK_Order_UserInfo_Role">
       <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
       <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OrderItem_Order" Association="Self.FK_OrderItem_Order">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="OrderItem" EntitySet="OrderItem" />
     </AssociationSet>
     <AssociationSet Name="FK_Poing_Product" Association="Self.FK_Poing_Product">
       <End Role="Product" EntitySet="Product" />

@@ -4,10 +4,10 @@
 <!-- saved from url=(0047)http://xianlu.01nz.com.cn/order/188_order_2.php -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="../Content/Order/common_wm.css" rel="stylesheet" media="screen" type="text/css">
-    <link href="../Content/Order/style.css" rel="stylesheet" media="screen" type="text/css">
-    <link href="../Content/Order/order.css" rel="stylesheet" media="screen" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../Content/Order/common_wm.css" rel="stylesheet" media="screen" type="text/css"/>
+    <link href="../Content/Order/style.css" rel="stylesheet" media="screen" type="text/css"/>
+    <link href="../Content/Order/order.css" rel="stylesheet" media="screen" type="text/css"/>
     <title>在线预订-第一农庄网</title>
     <script src="./在线预订-第一农庄网_files/global.js" type="text/javascript"></script>
     <script src="../Plugin/jquery-3.3.1.min.js"></script>
@@ -19,7 +19,6 @@
 </head>
 
 <body>
-    <%--<script language="javascript" type="text/javascript" src="../Scripts/Order/sousuo.js" charset="utf-8"></script>--%>
         <div class="head">
         <div class="head_mid">
             <div class="head_mid_right">
@@ -40,7 +39,6 @@
                         &nbsp;&nbsp;|&nbsp;&nbsp;
                         <a href="http://www.01nz.com.cn/user-register" target="_blank">注册</a>
                     </span>
-                    <%--<script language="javascript">Check_head_Login();</script>--%>
                 </div>
             </div>
         </div>
@@ -179,11 +177,11 @@
                                                 </td>
                                                 <td>
                                                     <select name="select" style="width: 162px;" id="ddl_ch_person_CodeType">
-                                                        <option value="身份证">身份证</option>
-                                                        <option value="学生证">学生证</option>
-                                                        <option value="军官证">军官证</option>
-                                                        <option value="退休证">退休证</option>
-                                                        <option value="护照">护照</option>
+                                                        <option value="1" selected="selected">身份证</option>
+                                                        <option value="2">学生证</option>
+                                                        <option value="3">军官证</option>
+                                                        <option value="4">退休证</option>
+                                                        <option value="6">护照</option>
                                                         <option value="其他">其他</option>
 
                                                     </select>
@@ -344,7 +342,7 @@
                     </div>
                     <div class="userInfoBtn" id="gl_submit" style="display: block;">
                         <input type="button" id="btn_pre" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/order15.gif);
-                        border-width: 0px; cursor: pointer; width: 139px; height: 44px;">
+                        border-width: 0px; cursor: pointer; width: 139px; height: 44px;"/>
                         <input type="button" id="btn_next" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/order19.gif);
                         border-width: 0px; cursor: pointer; width: 139px; height: 44px;" />
                     </div>
@@ -390,11 +388,11 @@
                             $("#btn_next").click(function () {
                                 var name = $("#GetLength").text(); //保存成人数量
                                 for (var i = 0; i < name; i++) {
-                                    var a = $("#div_ch_person_" + i + " input[name=name]").val();
-                                    var b = $("#div_ch_person_" + i + " select[name=select]").val();
-                                    var c = $("#div_ch_person_" + i + " input[name=CardId]").val();
-                                    var d = $("#div_ch_person_" + i + " input[name=phone]").val();
-                                    var person = { a: a, b: b, c: c, d: d };
+                                    var cName = $("#div_ch_person_" + i + " input[name=name]").val();
+                                    var cardTypeId = $("#div_ch_person_" + i + " select[name=select]").val();
+                                    var carId = $("#div_ch_person_" + i + " input[name=CardId]").val();
+                                    var phone = $("#div_ch_person_" + i + " input[name=phone]").val();
+                                    var person = { cName: cName, cardTypeId: cardTypeId, carId: carId, phone: phone };
                                     dat.push(person); //将信息存入数组
                                 }
                                 //获得联系人信息
@@ -411,8 +409,24 @@
                                 sessionStorage.setItem("Lxmobile", Lxmobile);
                                 sessionStorage.setItem("Lxemail", Lxemail);
                                 sessionStorage.setItem("Lxphone", Lxphone);
-                                window.location.href="Order_3.aspx?datt=" + datt + "&Lxname=" + Lxname + "&Lxmobile=" + Lxmobile + "&Lxemail=" + Lxemail +
+                                window.location.href = "Order_3.aspx?datt=" + datt + "&Lxname=" + Lxname + "&Lxmobile=" + Lxmobile + "&Lxemail=" + Lxemail +
                                     "&Lxphone=" + Lxphone + "&Crrs=" + Crrs + "&Etrs=" + Etrs + "&Zjg=" + Zjg; //url传递参数
+                                $.ajax({
+                                    url: '/Services/Main.ashx?id=10',
+                                    dataType: 'JSON',
+                                    type:"GET",
+                                    data: {
+                                        Customers: datt,
+                                        sumMoney: Zjg,
+                                        lxname: Lxname,
+                                        lxmobile: Lxmobile,
+                                        lxphone: Lxphone,
+                                        lxemail: Lxemail
+                                    },
+                                    success: function (data) {
+
+                                    }
+                                })
                             });
                         })
                     </script>
@@ -447,7 +461,6 @@
         <script src="../Scripts/Order/two_order.js" type="text/javascript"></script>
         <script src="../Scripts/Order/jquery.scrollfollow.js" type="text/javascript"></script>
         <script src="../Scripts/Order/tooltip.js" type="text/javascript"></script>
-        <%--<script src="../Scripts/Order/order.js" type="text/javascript"></script>--%>
         <script type="text/javascript">
     $(function () {
 

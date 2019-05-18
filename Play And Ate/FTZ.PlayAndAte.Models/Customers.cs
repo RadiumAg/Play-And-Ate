@@ -19,9 +19,9 @@ namespace FTZ.PlayAndAte.Models
         public string Phone { get; set; }
         public string Id_Number { get; set; }
         public int CardTypeId { get; set; }
-        public int OrderID { get; set; }
+        public int OrderItemID { get; set; }
     
         public virtual CardType CardType { get; set; }
-        public virtual Order Order { get; set; }
+        public virtual OrderItem OrderItem { get; set; }
     }
 }

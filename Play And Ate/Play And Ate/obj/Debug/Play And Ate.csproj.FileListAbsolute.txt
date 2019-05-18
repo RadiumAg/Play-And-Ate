@@ -122,25 +122,3 @@ C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.cspr
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CoreCompileInputs.cache
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CopyComplete
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.dll.config
-D:\项目\项目\Play And Ate\Play And Ate\bin\AspNetPager.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.ServiceLocation.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.Unity.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.Unity.Interception.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\AspNetPager.xml
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.pdb
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.xml
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.pdb
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Caching.xml
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Common.pdb
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Data.pdb
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.ServiceLocation.pdb
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.Unity.pdb
-D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.Unity.Interception.pdb
-D:\项目\项目\Play And Ate\Play And Ate\bin\en\AspNetPager.resources.dll
-D:\项目\项目\Play And Ate\Play And Ate\bin\zh-CHT\AspNetPager.resources.dll

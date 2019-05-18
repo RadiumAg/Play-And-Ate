@@ -34,6 +34,23 @@ namespace FTZ.PlayAndAte.DAL
             }
         }
 
+        /// <summary>
+        /// 插入订单信息
+        /// </summary>
+        /// <param name="Order">订单实体</param>
+        public static void InsertOrder(Order Order) {
+            try
+            {
+                using (PlayAndAteEntities entities = new PlayAndAteEntities())
+                {
+                    entities.Order.Add(Order);
+                    entities.SaveChanges();
+                }
+            }
+            catch (Exception ex) {
+                throw;
+            }
+        }
 
     }
 }

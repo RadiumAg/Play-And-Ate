@@ -7,6 +7,7 @@ using FTZ.PlayAndAte.BLL;
 using Newtonsoft.Json;
 using System.Web.Security;
 using Play_And_Ate.Helper;
+using Newtonsoft.Json.Linq;
 
 namespace Play_And_Ate.Services
 {
@@ -48,7 +49,70 @@ namespace Play_And_Ate.Services
                 case "9":
                     ShowProduct();
                     break;
+                case "10":
+                    CreateOrder();
+                    break;
             }
+        }
+
+        /// <summary>
+        /// 生成订单
+        /// </summary>
+        public void CreateOrder()
+        {
+            string data = context.Request["Customers"].ToString();
+            //取出JArray对象
+            JArray Customers = JsonConvert.DeserializeObject(data) as JArray;
+            FTZ.PlayAndAte.Models.Order order = new FTZ.PlayAndAte.Models.Order();
+            //遍历JArray对象中的每个json数组
+            /*
+             创建订单详情
+             为订单详情开辟一块新内存地址
+             */
+            order.OrderItem = new List<OrderItem>();
+            List<Customers> customerList = new List<Customers>();
+            //为订单添加游客项
+            foreach (JToken item in Customers)
+            {
+                //创建一个新的订单详情
+                OrderItem orderItem = new OrderItem();
+
+                //创建一个新的顾客
+                Customers customer = new Customers();
+                customer.Name = item["cName"].ToString();
+                customer.Phone = item["phone"].ToString();
+                customer.CardTypeId = Convert.ToInt32(item["cardTypeId"].ToString());
+                customer.Id_Number = item["carId"].ToString();
+                customerList.Add(customer);
+                //将顾客和OrderItem连接起来
+                orderItem.Customers.Add(customer);
+                order.OrderItem.Add(orderItem);
+            }
+
+            /*
+            创建下单用户
+            为用户开辟一块新内存地址
+            */
+            //为订单添加信息
+            order.OrderName = Guid.NewGuid().ToString();
+            order.OrderPrice = Convert.ToDecimal(context.Request["sumMoney"].ToString());
+            order.Success = false;
+            order.CustomerNum = order.OrderItem.Count();
+            order.UserId = Convert.ToInt32(context.Request.Cookies["UserId"].Value);
+
+            /*
+             创建联系人
+             为联系人开辟一块新内存地址
+             */
+            order.Contacts = new Contacts()
+            {
+                ContactsEmail = this.context.Request["lxemail"].ToString(),
+                ContactsName = this.context.Request["lxname"].ToString(),
+                FixedTelephone = this.context.Request["lxphone"].ToString(),
+                ContactsMobilePhone = this.context.Request["lxmobile"].ToString(),
+            };
+            //创建订单
+            FTZ.PlayAndAte.BLL.OrderManager.CreateOrder(order);
         }
 
         /// <summary>
@@ -190,6 +254,7 @@ namespace Play_And_Ate.Services
                 };
                 Helper.Authentication.SetCookie(userData.UserName, userData.Pwd, userData.Role_UserInfo.RoleName);
                 this.context.Response.Cookies["UserName"].Value = userData.UserName;
+                this.context.Response.Cookies["UserId"].Value = userData.UserId.ToString();
                 context.Response.Write(JsonConvert.SerializeObject(msg));
             }
         }
@@ -217,7 +282,7 @@ namespace Play_And_Ate.Services
         public void ShowProduct()
         {
             string userName = context.Request["UserName"].ToString();
-            context.Response.Write(JsonConvert.SerializeObject(ProductManager.ShowProducts(userName:userName)));
+            context.Response.Write(JsonConvert.SerializeObject(ProductManager.ShowProducts(userName: userName)));
         }
         public bool IsReusable
         {
