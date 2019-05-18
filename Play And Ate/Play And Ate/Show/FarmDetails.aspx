@@ -722,10 +722,10 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 			<div class="site_nav clearfix">
 				<div class="f_l">
 					您所在的位置：
-					<a href="http://sh.01nz.com.cn/">首页</a>
-					- <a href="http://sh.01nz.com.cn/farm">农庄</a>
-					- <a href="http://sh.01nz.com.cn/farmlist"><%=product.Area.AreaName %></a>
-					- <a href="http://sh.01nz.com.cn/farm/40.html"><%= product.ProductName %></a>
+					<a href="#">首页</a>
+					- <a href="#">农庄</a>
+					- <a href="#"><%=product.Area.AreaName %></a>
+					- <a href="#"><%= product.ProductName %></a>
 				</div>
 				<div class="f_r r_range">
 					&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" class="fav-store FW-FAV-STORE" dataid="40">关注</a>
@@ -735,8 +735,8 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
                 var APP_ROOT = '';
                 var CART_URL = '/cart';
                 var CART_CHECK_URL = '/cart-check';
-                var LOADER_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/lazy_loading.gif';
-                var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
+                var LOADER_IMG = '#';
+                var ERROR_IMG = '#';
 			</script>
 
             
@@ -815,20 +815,20 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 							<li class="">
 								<span class="sPic">
 									<i class="iBigPic"><a
-											href="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f197edc141.jpg"
+											href="#"
 											target="_blank" title=""><img alt="" height="420"
 												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f197edc141_860x420.jpg"></a></i>
 								</span>
 								<span class="sSideBox">
 									<span class="sTitle"><a
-											href="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f197edc141.jpg"
+											href="#"
 											target="_blank" title=""></a></span>
 								</span>
 							</li>
 							<li class="">
 								<span class="sPic">
 									<i class="iBigPic"><a
-											href="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f197875732.jpg"
+											href="#"
 											target="_blank" title=""><img alt="" height="420"
 												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f197875732_860x420.jpg"></a></i>
 								</span>
@@ -910,8 +910,8 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
                             class="ditu_biao"></span>查看地图</a>
                     <div class="f_r sd_rl"></div>
                 </div>
-				<div class="sd_hp f_l"><a href="http://sh.01nz.com.cn/farm/40.html#ul-store-tj">已推荐<label
-							class="blue">258</label>人</a><a href="http://sh.01nz.com.cn/farm/40.html#ul-store-dp"
+				<div class="sd_hp f_l"><a href="#">已推荐<label
+							class="blue">258</label>人</a><a href="#"
 						class="blue">2个点评</a>&nbsp;&nbsp; <a>好评度<span class="spa_pa">100%</span></a> </div>
 				<div class="sd_img">
 					<div class="sd_imgl zxx_test_list">
@@ -1039,10 +1039,10 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 					<div class="sd_cxx f_l">出行人数：<input type="text" name="number">人</div>
 					<div class="sd_cxx f_l">联系人：<input type="text" name="contacts"></div>
 					<div class="sd_cxx f_l">联系方式：<input type="text" name="contact"></div>
-					<a href="http://sh.01nz.com.cn/farm/40.html#">
+					<a href="#">
 						<div class="sd_tj f_l">加入推荐</div>
 					</a>
-					<a href="http://sh.01nz.com.cn/farm/40.html#">
+					<a href="#">
 						<div class="sd_tj f_l">立即预定</div>
 					</a>
 				</div>
@@ -1053,10 +1053,10 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 							<ul>
 								<li class="sd_xql_bb">预定须知</li>
 								<li class="sd_xql_cc"><a
-										href="http://sh.01nz.com.cn/farm/40.html#ul-store-info">预定项目</a></li>
+										href="#">预定项目</a></li>
 								<li class="sd_xql_cc"><a
-										href="http://sh.01nz.com.cn/farm/40.html#ul-store-review">商户详情</a></li>
-								<li class="sd_xql_cc"><a href="http://sh.01nz.com.cn/farm/40.html#ul-store-dp">客户点评</a>
+										href="#">商户详情</a></li>
+								<li class="sd_xql_cc"><a href="#">客户点评</a>
 								</li>
 							</ul>
 						</div>
@@ -1108,7 +1108,7 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 										<li class="th_c">含</li>
 										<li class="th_d">¥288&nbsp;/&nbsp;间 </li>
 										<li class="th_e">¥<span class="vip_price">200</span>&nbsp;/&nbsp;间</li>
-										<li class="th_f"><a href="http://sh.01nz.com.cn/store/order/id-40-lid-660"
+										<li class="th_f"><a href="#"
 												target="_blank">
 												<div class="sd_messin">预订</div>
 											</a></li>
@@ -1134,8 +1134,8 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 											style="font-size:12px;">号，（海湾旅游区和奉贤大学城金海公路东侧，奉柘公里北侧），占地面积</span></font>
 									<font face="Times New Roman"><span style="font-size:12px;">120</span></font>
 									<font face="宋体"><span style="font-size:12px;">亩。香豪小镇农家乐集餐饮、住宿、垂钓、<a
-												href="http://sh.01nz.com.cn/" target="_blank">果蔬采摘</a>、会务、<a
-												href="http://sh.01nz.com.cn/" target="_blank">棋牌</a>、</span></font>
+												href="#" target="_blank">果蔬采摘</a>、会务、<a
+												href="#" target="_blank">棋牌</a>、</span></font>
 									<font face="Times New Roman"><span style="font-size:12px;">KTV</span></font>
 									<font face="宋体"><span
 											style="font-size:12px;">、白领拓展、农产品超市于一体的农家乐式休闲度假农庄，香豪小镇是上海市市级三星级农家乐，也是最有特色、设施设备齐全、最受市民喜爱的农家乐。</span>
@@ -1284,7 +1284,7 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 									<div class="review_item" style="margin-left:15px;margin-right:15px;">
 										<div class="hd">
 											<img alt="亲子游玩" src="../Images/Show/FarmDetails/55b09aae67069.png"	width="100%" height="100px"/>
-											<div class="sd_cname f_l"><a href="http://sh.01nz.com.cn/space/id-341"
+											<div class="sd_cname f_l"><a href="#"
 													class="user_name" onmouseover="userCard.load(this,341);">liule…</a>
 											</div>
 											<div class="sd_cname f_l">2015-09-02</div>
@@ -1299,11 +1299,11 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 											</div>
 
 											<div class="review_title">
-												<a href="http://sh.01nz.com.cn/store/review-detail/id-124"
+												<a href="#"
 													title="钓鱼还不错">钓鱼还不错</a>
 											</div>
 											哈哈哈 一天钓了好多鱼，开心啦啦啦啦啦啊 <a class="viewall"
-												href="http://sh.01nz.com.cn/store/review-detail/id-124"
+												href="#"
 												title="查看全文">[查看全文 ]</a>
 											<div class="blank"></div>
 											<div class="store_tag_info">
@@ -1325,9 +1325,9 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 														href="javascript:void(0);">没用</a><b>(0)</b></p>
 
 												<div class="funcbox">
-													<a href="http://sh.01nz.com.cn/store/review-detail/id-124">详情</a> |
+													<a href="#">详情</a> |
 													<a
-														href="http://sh.01nz.com.cn/store/review-detail/id-124#reply">回应</a>
+														href="#">回应</a>
 													<!--<a href="javascript:void(0);" onclick="$.User_Report('dp',124);">举报</a>-->
 												</div>
 											</div>
@@ -1341,7 +1341,7 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 										<div class="hd">
 											
 											<img alt="朋友圈活动" src="../Images/Show/FarmDetails/55b09a924aac5.png"" width="100%" height="100px"/>
-											<div class="sd_cname f_l"><a href="http://sh.01nz.com.cn/space/id-766"
+											<div class="sd_cname f_l"><a href="#"
 													class="user_name" onmouseover="userCard.load(this,);"></a> </div>
 											<div class="sd_cname f_l">2015-07-23</div>
 										</div>
@@ -1355,13 +1355,13 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 											</div>
 
 											<div class="review_title">
-												<a href="http://sh.01nz.com.cn/store/review-detail/id-112"
+												<a href="#"
 													title="和朋友去的">和朋友去的</a>
 											</div>
 
 
 											农庄不错，和朋友一起去过的，环境 卫生都很好。很开心 <a class="viewall"
-												href="http://sh.01nz.com.cn/store/review-detail/id-112"
+												href="#SS"
 												title="查看全文">[查看全文 ]</a>
 											<div class="blank"></div>
 											<div class="store_tag_info">
@@ -1383,9 +1383,9 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 														href="javascript:void(0);">没用</a><b>(0)</b></p>
 
 												<div class="funcbox">
-													<a href="http://sh.01nz.com.cn/store/review-detail/id-112">详情</a> |
+													<a href="#">详情</a> |
 													<a
-														href="http://sh.01nz.com.cn/store/review-detail/id-112#reply">回应</a>
+														href="#">回应</a>
 													<!--<a href="javascript:void(0);" onclick="$.User_Report('dp',112);">举报</a>-->
 												</div>
 											</div>
@@ -3616,7 +3616,6 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 									<div class="sd_yh f-14"> 2015-07-23 该信息来自PC端 </div>
 								</li>
 							</ul>
-							<!-- <div class="sd_yhgd f_l"><a href="#" class="f_r f-16">更多>></a></div> -->
 						</div>
 					</div>
 					<div class="sd_lx">
@@ -3624,7 +3623,6 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 							<div class="f_l f-24">线路推荐</div>
 							<div class="f_r"></div>
 						</div>
-						<!-- <img alt="" src="http://sh.01nz.com.cn/app/Tpl/fanwe/images/main/01.jpg" width="345px" height="235px"> -->
 						<div class="sd_lx_text"></div>
 					</div>
 				</div>

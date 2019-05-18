@@ -193,7 +193,7 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                                                         <td>名称：上海出发 【临安】东天目山、青山湖2日农家行                                    </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>人数：2人（2成人+0儿童）
+                                                        <td><span id="renshu">人数：2人（2成人+0儿童）</span>
                                                         </td>
                                                         <td>应付总额：<i>￥</i><b id="bprice">378</b>
                                                         </td>
@@ -202,6 +202,16 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                                             </table>
                                         </div>
                                     </div>
+                                    <script>
+                                        //显示人数，金额
+                                        $(function () {
+                                            var crrs = sessionStorage.getItem("crrs");
+                                            var etrs = sessionStorage.getItem("etrs");
+                                            var zongrs =Number(crrs) +Number(etrs);
+                                            $("#renshu").html("人数：" + zongrs + "人（" + crrs + "成人" + etrs + "儿童）");
+                                            $("#bprice").html(sessionStorage.getItem("zje"));
+                                        })
+                                    </script>
                                     <div class="orderPayTip">
                                         <div class="d1">
                                             <p class="pT">
@@ -209,7 +219,7 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                                             </p>
                                             <p class="p2">
                                                 请您全额支付，以确保您的预订能得到最快安排<br>
-                                                您的支付记录会保存在本网站、第三方支付（支付宝、财付通、快钱、拉卡拉）、银行<br>
+                                                您的支付记录会保存在本网站、第三方支付（支付宝、微信、财付通、快钱）、银行<br>
                                                 支付完成后，相关客服会尽快与您联系确定出游事宜<br>
                                             </p>
                                         </div>

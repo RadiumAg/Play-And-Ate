@@ -415,9 +415,12 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                         <script>
                             //实现返回上一页不刷新
                             $(function () {
+                                //第一次加载时保存上个页面的URL
+                                if (sessionStorage.getItem("Order_2") == null) {
+                                    sessionStorage.setItem("Order_2", document.referrer);
+                                }
                                 $("#btn_pre").click(function () {
-                                    window.location.href = document.referrer;
-                                    window.history.back(-1);
+                                    window.location.href = sessionStorage.getItem("Order_2");
                                 })
                             })
                         </script>
@@ -427,6 +430,14 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                                 var je =<%=Zjg%>;
                                 $("#cpzong").html("￥" + je);
                                 $("#yfzong").html("￥" + je);
+                                sessionStorage.setItem("zje", je);
+                            })
+                        </script>
+                        <script>
+                            $(function () {
+                                $("#btn_next").click(function () {
+                                    window.location.href = "Order_4.aspx";
+                                });
                             })
                         </script>
                         <div class="login_pay_dh" id="dv_Repeat" style="display: none;">

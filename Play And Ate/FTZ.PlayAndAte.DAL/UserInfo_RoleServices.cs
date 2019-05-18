@@ -7,7 +7,7 @@ using FTZ.PlayAndAte.Models;
 
 namespace FTZ.PlayAndAte.DAL
 {
-    public class UserInfo_RoleService
+    public class UserInfo_RoleServices
     {
 
         /// <summary>

@@ -119,29 +119,29 @@
                                 <li id="yuding"><span>预&nbsp;订&nbsp;价：</span><i>￥</i><b>189</b><i> 起</i> &nbsp;&nbsp;
                                     <span>原&nbsp;&nbsp;价：</span><span style="color: #666666; text-decoration: line-through;">￥299</span>&nbsp;&nbsp;<span>省：</span>￥110
                                     <span><a href="javascript:void(0);">起价说明?<div class="de">
-            <div class="lt"><span class="weizhi">你的位置：</span><a href="http://xianlu.01nz.com.cn/">农家行</a><a href="http://xianlu.01nz.com.cn/add/list/490.html">跟团行</a><a href="http://xianlu.01nz.com.cn/add/list/615.html">临安</a><span class="biha">产品编号：652305dec205071</span> </div>
-            <div class="dee">
-                <a href="http://xianlu.01nz.com.cn/add/print.php?aid=1147" target="_blank">
-                    <img src="../Images/Show/FarmRow/share.gif" width="16" height="18" border="0" align="absmiddle" />打印行程</a>
-                <a href="http://xianlu.01nz.com.cn/add/word.php?aid=1147" target="_blank">
-                    <img src="../Images/Show/FarmRow/word.gif" width="16" height="16" border="0" align="absmiddle">下载行程</a>
+                                        <div class="lt"><span class="weizhi">你的位置：</span><a href="http://xianlu.01nz.com.cn/">农家行</a><a href="http://xianlu.01nz.com.cn/add/list/490.html">跟团行</a><a href="http://xianlu.01nz.com.cn/add/list/615.html">临安</a><span class="biha">产品编号：652305dec205071</span> </div>
+                                        <div class="dee">
+                                            <a href="http://xianlu.01nz.com.cn/add/print.php?aid=1147" target="_blank">
+                                                <img src="../Images/Show/FarmRow/share.gif" width="16" height="18" border="0" align="absmiddle" />打印行程</a>
+                                            <a href="http://xianlu.01nz.com.cn/add/word.php?aid=1147" target="_blank">
+                                                <img src="../Images/Show/FarmRow/word.gif" width="16" height="16" border="0" align="absmiddle">下载行程</a>
 
 
 
-                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                                            <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
 
-                    <span class="bds_more"></span>
-                    <a class="bds_qzone" title="分享到QQ空间" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
-                    <a class="bds_tsina" title="分享到新浪微博" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
-                    <a class="bds_tqq" title="分享到腾讯微博" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
-                    <a class="bds_renren" title="分享到人人网" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
+                                                <span class="bds_more"></span>
+                                                <a class="bds_qzone" title="分享到QQ空间" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
+                                                <a class="bds_tsina" title="分享到新浪微博" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
+                                                <a class="bds_tqq" title="分享到腾讯微博" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
+                                                <a class="bds_renren" title="分享到人人网" href="http://xianlu.01nz.com.cn/archives/1147.html#"></a>
 
-                </div>
+                                            </div>
 
 
 
-            </div>
-        </div>
+                                        </div>
+                                    </div>
 
                                     </a></span></li>
                                 <li style="margin-top: 5px;"><span>出发日期：</span><font>星期三,星期六</font></li>
@@ -952,33 +952,20 @@
             <ul class="slt_rout clearfix">
             </ul>
         </div>
-
-
-
         <p class="J_ScrollTop" style="display: none;"><a href="javascript:void(0)" title="返回顶部" target="_self">返回顶部</a></p>
-
-
         <div class="fn-browse">
             <ul class="fn-browseTitle">
-
                 <li class="fn-browseLi"><span>最近浏览</span></li>
             </ul>
-
-
-
             <div class="fn-browseBox">
                 <div class="fn-browseOne" style="display: none;">
                     <div class="fn-browseTop" id="rs-browseTop"><a href="javascript:void(0)" title="关闭"></a><span>最近浏览</span></div>
-
                     <div>
                         <div class="hosturlo">
-
                             <div id="rs-browseMsg">
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -1000,20 +987,14 @@
     <input type="hidden" id="txtHiddenGoDate" name="txtHiddenGoDate" value="2019-04-17">
     <input type="hidden" id="txtHiddenUzaiPrice" name="txtHiddenUzaiPrice" value="189">
     <input type="hidden" id="txtHiddenChildPrice" name="txtHiddenChildPrice" value="160">
-
     <input type="hidden" id="txtHiddenProcessType" name="txtHiddenProcessType" value="1">
     <input type="hidden" id="txtHiddenMType" name="txtHiddenMType" value="3">
-
     <input type="hidden" id="txtHiddenYesOrNo" name="txtHiddenYesOrNo" value="&lt;?php echo $txtHiddenYesOrNo;?&gt;">
-
     <input type="hidden" id="txtSubmitHiddenAdd" name="txtSubmitHiddenAdd" value="&lt;?php echo $txtSubmitHiddenAdd;?&gt;">
     <input type="hidden" id="txtSubmitHiddenUb" name="txtSubmitHiddenUb" value="&lt;?php echo $txtSubmitHiddenUb;?&gt;">
     <input type="hidden" id="txtSubmitHiddenUpTrain" name="txtSubmitHiddenUpTrain" value="">
-
-
     <input type="hidden" id="txtHiddenUList" name="txtHiddenUList" value="&lt;?php echo $txtHiddenUList;?&gt;">
     <input type="hidden" id="txtHiddenDes" name="txtHiddenDes" value="">
-
     <input type="hidden" id="txtHiddenUseScore" name="txtHiddenUseScore" value="&lt;?php echo $moeny;?&gt;">
     <input type="hidden" id="txtHiddenAllScore" name="txtHiddenAllScore" />&gt;
     <!-- 日历点击弹出的下来单-->
@@ -1041,7 +1022,7 @@
         <div class="d4">
             <b>您暂不能对该线路进行点评，可能有以下原因：</b>
             <p>
-                1.您还未登录，<a href="http://www.01nz.com.cn/user-login">立即登录&gt;&gt;</a>。<br>
+                1.您还未登录，<a href="#">立即登录&gt;&gt;</a>。<br>
                 2.您可能没有在第一农庄网预订过该线路。<br>
                 3.您已经评价过该线路。<br>
                 4.您还未出行或归来。<br>

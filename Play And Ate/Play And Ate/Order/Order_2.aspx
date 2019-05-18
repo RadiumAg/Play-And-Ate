@@ -349,6 +349,9 @@
                         border-width: 0px; cursor: pointer; width: 139px; height: 44px;" />
                     </div>
                     <script>
+                        if (sessionStorage.getItem("Order") == null) {
+                            sessionStorage.setItem("Order", document.referrer);
+                        }
                         //实现返回上一页不刷新
                         $(function () {
                             $("#btn_pre").click(function () {
@@ -375,13 +378,8 @@
 
                                 //window.location.href = document.referrer;
                                 //window.history.back(-1); //返回上一页
-                                if (sessionStorage.getItem("Order") == null) {
-                                    sessionStorage.setItem("Order", document.referrer);
-                                    a = document.referrer;
-                                    window.location.href = a;
-                                } else {
-                                    window.location.href = "Order.aspx";
-                                }
+                                //返回上一页
+                                window.location.href = sessionStorage.getItem("Order");
                             })
                         })
                     </script>
@@ -404,17 +402,17 @@
                                 var Lxmobile = $("#txt_mobile").val();
                                 var Lxemail = $("#txt_email").val();
                                 var Lxphone = $("#txt_start_phone").val() + "-" + $("#txt_end_phone").val();
-                                var Crrs = $("#GetLength").text(); //成人人数
-                                var Etrs = $("#GetET").text(); //儿童人数
-                                var Zjg = $("#GetZJ").text(); //总金额
+                                var Crrs = sessionStorage.getItem("crrs"); //成人人数
+                                var Etrs = sessionStorage.getItem("etrs") //儿童人数
+                                var Zjg = sessionStorage.getItem("orderzjg") //总金额
                                 var datt = JSON.stringify(dat); //将数组转化为JSON格式
                                 sessionStorage.setItem("dat",JSON.stringify(dat));
                                 sessionStorage.setItem("Lxname", Lxname);
                                 sessionStorage.setItem("Lxmobile", Lxmobile);
                                 sessionStorage.setItem("Lxemail", Lxemail);
                                 sessionStorage.setItem("Lxphone", Lxphone);
-                                window.open("Order_3.aspx?datt=" + datt + "&Lxname=" + Lxname + "&Lxmobile=" + Lxmobile + "&Lxemail=" + Lxemail +
-                                    "&Lxphone=" + Lxphone + "&Crrs=" + Crrs + "&Etrs=" + Etrs + "&Zjg=" + Zjg); //url传递参数
+                                window.location.href="Order_3.aspx?datt=" + datt + "&Lxname=" + Lxname + "&Lxmobile=" + Lxmobile + "&Lxemail=" + Lxemail +
+                                    "&Lxphone=" + Lxphone + "&Crrs=" + Crrs + "&Etrs=" + Etrs + "&Zjg=" + Zjg; //url传递参数
                             });
                         })
                     </script>
