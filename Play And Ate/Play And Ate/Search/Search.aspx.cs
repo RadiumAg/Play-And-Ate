@@ -95,12 +95,12 @@ namespace Play_And_Ate.Search
             int pageIndex = this.Pager.CurrentPageIndex;
             if (Request["content"]!=null)
             {
-                this.Repeater1.DataSource = ProductManager.GetALLProducts().Where(x=>x.ProductName.Contains(Request["content"])).Where(x=>x.PPointsType.PPointsType1.Contains(Request["content"])).Where(x=>x.Feature.Contains(Request["content"])).OrderBy(x => x.ProductId).Skip(rows * (pageIndex - 1)).Take(rows);
+                this.Repeater1.DataSource = ProductManager.GetALLProducts().Where(x=>x.ProductName.Contains(Request["content"])).Where(x=>x.PPointsType.PPointsType1.Contains(Request["content"])).Where(x=>x.Feature.Contains(Request["content"])).OrderBy(x => x.ProductId).Skip(rows * (pageIndex - 1)).Take(rows).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId, AreaName = s.Area.AreaName });
                 this.Repeater1.DataBind();
             }
             else
             {
-                this.Repeater1.DataSource = ProductManager.GetALLProducts().OrderBy(x => x.ProductId).Skip(rows * (pageIndex - 1)).Take(rows);
+                this.Repeater1.DataSource = ProductManager.GetALLProducts().OrderBy(x => x.ProductId).Skip(rows * (pageIndex - 1)).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductPrice = s.ProductPrice, ProductID = s.ProductId, AreaName = s.Area.AreaName, DetailIntroduction = s.DetailIntroduction }).Take(rows);
                 this.Repeater1.DataBind();
             }
             

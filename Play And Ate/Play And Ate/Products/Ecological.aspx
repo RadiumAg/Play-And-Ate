@@ -17,13 +17,7 @@
    <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="wraps">
         <script type="text/javascript" src="../Scripts/Products/lang.js"></script>
-        <script type="text/javascript">
-            var APP_ROOT = '';
-            var CART_URL = '/cart';
-            var CART_CHECK_URL = '/cart-check';
-            var LOADER_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/lazy_loading.gif';
-            var ERROR_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
-        </script>
+        
         <script type="text/javascript">
             var is_order_show = false;
         </script>
@@ -96,14 +90,6 @@
                     <div class="copyright">
                         <div class="blank"></div>
                     </div>
-                    <script type="text/javascript">
-                        $(document).ready(function () {
-                            $("#QQkf a:eq(0)").html('<img alt="QQ客服咨询预订" src="http://www.01nz.com.cn/app/Tpl/fanwe/images/ydzx.png">');
-                            $("#QQkf a:eq(1)").html('<img alt="QQ客服团队业务" src="http://www.01nz.com.cn/app/Tpl/fanwe/images/ttyw.png">');
-                            $("#QQkf a:eq(2)").html('<img alt="QQ客服售后服务" src="http://www.01nz.com.cn/app/Tpl/fanwe/images/shfw.png">');
-                            $("#QQkf a:eq(3)").html('<img alt="QQ客服商家入驻" src="http://www.01nz.com.cn/app/Tpl/fanwe/images/sjrz.png">');
-                        });
-                    </script>
                     <div class="fengehuix"></div>
                     <div class="fankui">
                         <div class="yjfankui">意见反馈</div>
