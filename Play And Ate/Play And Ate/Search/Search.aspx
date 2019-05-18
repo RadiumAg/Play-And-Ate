@@ -14,10 +14,7 @@
 <!--主要内容开始-->
 <!-- 小导航开始  -->
 <div class="l_lv-crumbs l_wrap">
-    <p>
-        <b>您当前所处的位置：</b>
-        <a href="#">首页</a> &gt; <a href="#">成都出发</a> &gt; 马尔代夫
-    </p>
+   
 </div>
 <!-- 小导航结束  -->
 <div class="l_ui-content l_wrap">
@@ -238,9 +235,9 @@
              <dl class="search-result-item line-info">
                         <dt class="img">
                             <a rel="nofollow" target="_blank" href="#" >
-                            <img src="../image/12.jpg" width="168" height="86">
+                            <img src="../Images/Home/52c4c840630af_70x50.jpg" width="168" height="86">
                             </a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="s-type">特色景点
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="s-type">特色景点
                             </span>
                         </dt>
                 <dd class="info">
@@ -270,7 +267,7 @@
          ShowMoreButtons="true" ShowCustomInfoSection="Right" 
          CustomInfoTextAlign="Right"  LayoutType="Table" 
          ShowPageIndexBox="Never" SubmitButtonText="跳转" 
-         PageSize="8" CustomInfoHTML="共%PageCount%页/第%CurrentPageIndex%页，每页%PageSize%条，总记录数：%RecordCount%" OnPageChanged="Pager_PageChanged" OnPageChanging="Pager_PageChanging" >
+         PageSize="8" CustomInfoHTML="共%PageCount%页/第%CurrentPageIndex%页，每页%PageSize%条，总记录数：%RecordCount%" OnPageChanged="Pager_PageChanged" OnPageChanging="Pager_PageChanging" BorderColor="#FF6600">
        
   </webdiyer:AspNetPager>
      

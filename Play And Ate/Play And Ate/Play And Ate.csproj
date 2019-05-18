@@ -91,7 +91,35 @@
     <Content Include="Admin\PartialView\ShowBussinessData.html" />
     <Content Include="Cart\Cart.aspx" />
     <Content Include="Cart\Cart.html" />
+    <Content Include="Content\Admin\global_pop.css" />
+    <Content Include="Content\Admin\header-air.css" />
+    <Content Include="Content\Admin\index%281%29.php" />
+    <Content Include="Content\Admin\index%2810%29.php" />
+    <Content Include="Content\Admin\index%2811%29.php" />
+    <Content Include="Content\Admin\index%2812%29.php" />
+    <Content Include="Content\Admin\index%2813%29.php" />
+    <Content Include="Content\Admin\index%2814%29.php" />
+    <Content Include="Content\Admin\index%282%29.php" />
+    <Content Include="Content\Admin\index%283%29.php" />
+    <Content Include="Content\Admin\index%284%29.php" />
+    <Content Include="Content\Admin\index%285%29.php" />
+    <Content Include="Content\Admin\index%286%29.php" />
+    <Content Include="Content\Admin\index%287%29.php" />
+    <Content Include="Content\Admin\index%288%29.php" />
+    <Content Include="Content\Admin\index%289%29.php" />
     <Content Include="Content\Admin\Index.css" />
+    <Content Include="Content\Admin\index.php" />
+    <Content Include="Content\Admin\integral.css" />
+    <Content Include="Content\Admin\invoice.css" />
+    <Content Include="Content\Admin\jquery.common.css" />
+    <Content Include="Content\Admin\lv-bought.css" />
+    <Content Include="Content\Admin\lv-user-mytrip.css" />
+    <Content Include="Content\Admin\newcommon.css" />
+    <Content Include="Content\Admin\newmember.css" />
+    <Content Include="Content\Admin\popup.css" />
+    <Content Include="Content\Admin\ui-components%281%29.css" />
+    <Content Include="Content\Admin\ui-components.css" />
+    <Content Include="Content\Admin\ui-lvmama.css" />
     <Content Include="Content\Cart\base.v606141511.css" />
     <Content Include="Content\Cart\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Cart\core%281%29.php" />
@@ -115,12 +143,37 @@
     <Content Include="Content\Order\common_wm.html" />
     <Content Include="Content\Order\order.css" />
     <Content Include="Content\Order\style.css" />
+    <Content Include="Content\Personage\global_pop.css" />
+    <Content Include="Content\Personage\header-air.css" />
+    <Content Include="Content\Personage\index%281%29.php" />
+    <Content Include="Content\Personage\index%282%29.php" />
+    <Content Include="Content\Personage\index%283%29.php" />
+    <Content Include="Content\Personage\index%284%29.php" />
+    <Content Include="Content\Personage\index%285%29.php" />
+    <Content Include="Content\Personage\index.php" />
+    <Content Include="Content\Personage\integral.css" />
+    <Content Include="Content\Personage\jquery.common.css" />
+    <Content Include="Content\Personage\lv-bought.css" />
+    <Content Include="Content\Personage\newcommon.css" />
+    <Content Include="Content\Personage\newmember.css" />
+    <Content Include="Content\Personage\ui-components%281%29.css" />
+    <Content Include="Content\Personage\ui-components.css" />
+    <Content Include="Content\Personage\ui-lvmama.css" />
     <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
     <Content Include="Content\Products\b61e5d222cddc2d58eececba5f1f9e27.css" />
     <Content Include="Content\Products\base.v606141511.css" />
     <Content Include="Content\Products\bmap.css" />
     <Content Include="Content\Products\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Products\hdcss.css" />
+    <Content Include="Content\Promotion\cityquery.css" />
+    <Content Include="Content\Promotion\datepicker%281%29.css" />
+    <Content Include="Content\Promotion\datepicker.css" />
+    <Content Include="Content\Promotion\font-awesome.min.css" />
+    <Content Include="Content\Promotion\main_huandeng.css" />
+    <Content Include="Content\Promotion\new_main.css" />
+    <Content Include="Content\Promotion\style.css" />
+    <Content Include="Content\Promotion\WdatePicker.css" />
+    <Content Include="Content\Promotion\weebox.css" />
     <Content Include="Content\Search\buttons.css" />
     <Content Include="Content\Search\chanel.css" />
     <Content Include="Content\Search\css.css" />
@@ -725,8 +778,13 @@
     <Content Include="Order\Order_3.aspx" />
     <Content Include="Order\Order_3.html" />
     <Content Include="Order\Order_4.html" />
+    <Content Include="Personage\Order.aspx" />
+    <Content Include="Personage\Personage.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
     <Content Include="Content\Search\new_default.css.bak" />
+    <Content Include="Content\Personage\newmember.css&amp;v=051610" />
+    <Content Include="Content\Personage\ztRecommendInfoJson.do" />
+    <Content Include="Content\Admin\ztRecommendInfoJson.do" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
     <Content Include="Plugin\jquery-3.3.1.js" />
     <Content Include="Plugin\jquery-3.3.1.min.js" />
@@ -1014,6 +1072,7 @@
     <Content Include="Products\Fishing.html" />
     <Content Include="Products\Generated.aspx" />
     <Content Include="Products\Generated.html" />
+    <Content Include="Promotion\Promotion.aspx" />
     <Content Include="Scripts\Cart\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\Cart\baidumap.js" />
     <Content Include="Scripts\Cart\c.js" />
@@ -1116,6 +1175,38 @@
     <Content Include="Scripts\Order\three_order.js" />
     <Content Include="Scripts\Order\tooltip.js" />
     <Content Include="Scripts\Order\two_order.js" />
+    <Content Include="Scripts\Personage\52710000.js" />
+    <Content Include="Scripts\Personage\analytics.js" />
+    <Content Include="Scripts\Personage\appendcomdom.js" />
+    <Content Include="Scripts\Personage\bdctrace-pc.js" />
+    <Content Include="Scripts\Personage\city.js" />
+    <Content Include="Scripts\Personage\coremetrics-initalize.js" />
+    <Content Include="Scripts\Personage\eluminate.js" />
+    <Content Include="Scripts\Personage\footer.js" />
+    <Content Include="Scripts\Personage\fp2.js" />
+    <Content Include="Scripts\Personage\fp2.min.js" />
+    <Content Include="Scripts\Personage\fx.js" />
+    <Content Include="Scripts\Personage\hm.js" />
+    <Content Include="Scripts\Personage\iflight_popup.js" />
+    <Content Include="Scripts\Personage\jquery-ui-1.8.21.custom.min.js" />
+    <Content Include="Scripts\Personage\jquery.tools.min.js" />
+    <Content Include="Scripts\Personage\jQuerySuperScript.js" />
+    <Content Include="Scripts\Personage\js.cookie.js" />
+    <Content Include="Scripts\Personage\losc.js" />
+    <Content Include="Scripts\Personage\lvmama-custom.js" />
+    <Content Include="Scripts\Personage\lvmember.js" />
+    <Content Include="Scripts\Personage\mba.js" />
+    <Content Include="Scripts\Personage\Method.js" />
+    <Content Include="Scripts\Personage\mv.js" />
+    <Content Include="Scripts\Personage\mvl.js" />
+    <Content Include="Scripts\Personage\orderlistCommon.js" />
+    <Content Include="Scripts\Personage\orderPolicy.js" />
+    <Content Include="Scripts\Personage\plpupload.js" />
+    <Content Include="Scripts\Personage\plupload.full.min.js" />
+    <Content Include="Scripts\Personage\push.js" />
+    <Content Include="Scripts\Personage\reschedule.js" />
+    <Content Include="Scripts\Personage\selectOrder.js" />
+    <Content Include="Scripts\Personage\v.js" />
     <Content Include="Scripts\Products\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\Products\baidumap.js" />
     <Content Include="Scripts\Products\c.js" />
@@ -1133,6 +1224,15 @@
     <Content Include="Scripts\Products\storeview.js" />
     <Content Include="Scripts\Products\tongji_360.php" />
     <Content Include="Scripts\Products\z_stat.php" />
+    <Content Include="Scripts\Promotion\config.js" />
+    <Content Include="Scripts\Promotion\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\Promotion\jquery.dotdotdot.js" />
+    <Content Include="Scripts\Promotion\lanrenzhijia.js" />
+    <Content Include="Scripts\Promotion\main_store.js" />
+    <Content Include="Scripts\Promotion\querycity.js" />
+    <Content Include="Scripts\Promotion\script.js" />
+    <Content Include="Scripts\Promotion\WdatePicker.js" />
+    <Content Include="Scripts\Promotion\zh-cn.js" />
     <Content Include="Scripts\Search\chengtourUI.js" />
     <Content Include="Scripts\Search\pindao1.js" />
     <Content Include="Scripts\Show\FarmDetails\getscript.js" />
@@ -1247,6 +1347,20 @@
     <Compile Include="Order\Order_3.aspx.designer.cs">
       <DependentUpon>Order_3.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Personage\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personage\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personage\Personage.aspx.cs">
+      <DependentUpon>Personage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personage\Personage.aspx.designer.cs">
+      <DependentUpon>Personage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Products\Ecological.aspx.cs">
       <DependentUpon>Ecological.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1274,6 +1388,13 @@
     </Compile>
     <Compile Include="Products\Generated.aspx.designer.cs">
       <DependentUpon>Generated.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Promotion\Promotion.aspx.cs">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Promotion\Promotion.aspx.designer.cs">
+      <DependentUpon>Promotion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search\Search.aspx.cs">
@@ -1377,6 +1498,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Home\" />
+    <Folder Include="Content\NewFolder1\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Commond\" />
   </ItemGroup>

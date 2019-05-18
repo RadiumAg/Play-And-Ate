@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*-------------------------common---------------------------*/
+#pageOver{display:none;position:absolute; z-index:999; top:0; left:0; width:100%; height:100%; background:#000; filter:alpha(opacity=50); opacity:0.5;}
+.lv_pop{position:absolute;z-index:9999;top:0; padding:4px; background:url(../../../img/common_pop/pop_bg.png) repeat;}
+.lv_pop_btn_yl,.lv_pop_close{background:url(../../../img/common_pop/close.gif);}
+.lv_pop_w1{display:none;width:340px;}
+.lv_pop_inner{ background:#fff;}
+.lv_pop_tit,.lv_pop_tit1{height:38px; line-height:38px; text-indent:18px; font-size:14px; font-weight:bold; color:#000; background:url(../../../img/common_pop/pop_bg.gif) repeat-x;}
+.lv_pop_tit1{height:32px; line-height:32px;background:#eee;}
+.lv_pop_close{position:absolute; right:4px; top:4px; width:30px; height:30px; background-position:10px 10px;  background-repeat:no-repeat; cursor:pointer;}
+.lv_pop_cont{padding:10px;color:#555;}
+.lv_pop_dl dt{ line-height:36px;font-size:14px; font-weight:bold; text-align:center;}
+.lv_pop_dl dd{ line-height:20px; text-indent:24px;}
+.lv_pop_page{margin-top:27px; text-align:right;}
+.lv_pop_prev{display:inline-block; padding-left:9px; background:url(../../../img/common_pop/pop_page.gif) no-repeat 0 5px; cursor:pointer;}
+.lv_pop_next{display:inline-block; padding-right:9px; background:url(../../../img/common_pop/pop_page.gif) no-repeat right -25px; cursor:pointer;}
+.lv_pop_prev1{background-position: 0 -55px;}
+.lv_pop_next1{background-position: right -85px;}
+.lv_pop_btn{padding:18px;text-align:right;}
+.lv_pop_p{font-size:14px; font-weight:bold; padding:0 9px 18px;}
+.lv_input_date{width:142px; height:27px; padding:0 2px; font-size:14px; font-family:verdana; color:#000; border:1px solid #aabbcc; background:url(../../../img/common_pop/date.jpg) no-repeat right 0px; cursor:pointer;}
+
+.lv_pop_btnbox{padding:10px; text-align:center;}
+.lv_pop_btn_yl{display:inline-block; padding:0 18px; height:24px;margin:auto; line-height:24px; font-size:14px; color:#fff; border:1px solid #e60; border-radius:3px; background-position:0 -40px; cursor:pointer;}
+.lv_pop_btn_yl:hover{background-position:0 -70px;color:#fff; text-decoration:none;}
+
+/*自定义下拉选择框*/
+.lv_pop_slt{width:108px; height:27px;  line-height:27px; text-indent:4px; color:#000; border:1px solid #aabbcc; background:url(../../../img/common_pop/pop_bg.gif) no-repeat right -150px; cursor:pointer;}
+.lv_pop_slt_pop{position:absolute; z-index:9; top:27px; left:0;  width:108px; display:none; border:1px solid #aabbcc; background:#fff;}
+.lv_pop_slt_pop li{line-height:20px; text-indent:4px;  cursor:pointer;}
+.lv_pop_slt_popcrt{background:#f0f5fc;}
+.lv_pop_cont_c{text-align:center;}
+.lv_pop_tsicon{display:inline-block; width:24px; height:30px; vertical-align:middle; background:url(../../../img/common_pop/pop_bg.gif) no-repeat 0 -275px;}
+.lv_pop_tstxt{padding-left:13px; font-size:14px; color:#555;}
