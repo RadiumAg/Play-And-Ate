@@ -128,7 +128,7 @@ namespace Play_And_Ate.Services
             order.Success = false;
             order.CustomerNum = order.OrderItem.Count();
             order.UserId = Convert.ToInt32(context.Request.Cookies["UserId"].Value);
-            order.ProductId = Convert.ToInt32(this.context.Session["ProductId"].ToString());
+            order.ProductId = Helper.OrderMessage.ProductID;
             /*
              创建联系人
              为联系人开辟一块新内存地址

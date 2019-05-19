@@ -12,8 +12,8 @@ namespace Play_And_Ate.Order
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //获得商品编号
-            this.Session["ProductId"] = this.Context.Request["ProductId"].ToString();
+            //获取商品编号
+           Helper.OrderMessage.ProductID = Convert.ToInt32(this.Request["productId"].ToString());
         }
 
     }
