@@ -783,13 +783,9 @@
     <Content Include="LoginAndRegister\Register.aspx" />
     <Content Include="Map\Map.aspx" />
     <Content Include="Order\Order.aspx" />
-    <Content Include="Order\Order.html" />
     <Content Include="Order\Order_2.aspx" />
-    <Content Include="Order\Order_2.html" />
     <Content Include="Order\Order_3.aspx" />
-    <Content Include="Order\Order_3.html" />
     <Content Include="Order\Order_4.aspx" />
-    <Content Include="Order\Order_4.html" />
     <Content Include="Order\Order_5.aspx" />
     <Content Include="Order\PayTo.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
@@ -1451,6 +1447,7 @@
     <Content Include="Plugin\public\swiper\src\less\scrollbar.less" />
     <Content Include="Plugin\public\swiper\src\less\swiper.less" />
     <Content Include="Plugin\public\swiper\src\less\zoom.less" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

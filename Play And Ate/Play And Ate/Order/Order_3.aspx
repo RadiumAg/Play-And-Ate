@@ -1,11 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Order_3.aspx.cs" Inherits="Play_And_Ate.Order.Order_3" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="../Content/Order/common_wm.css" rel="stylesheet" />
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Order_3.aspx.cs" Inherits="Play_And_Ate.Order.Order_3" %>
+<asp:Content  ContentPlaceHolderID="Style" runat="server" ID="Style">
+       <link href="../Content/Order/common_wm.css" rel="stylesheet" />
     <link href="../Content/Order/order.css" rel="stylesheet" />
     <link href="../Content/Order/style.css" rel="stylesheet" />
     <title>在线预订-第一农庄网</title>
@@ -22,106 +17,9 @@
             display:none;
         }
     </style>
-</head>
-<body>
-    <script language="javascript" type="text/javascript" src="../Scripts/Order/sousuo.js" charset="utf-8"></script>
-    <div class="head">
-        <div class="head_mid">
-
-            <div class="head_mid_right">
-                <!-- <span>旅游出发地 |</span>
-<ul>
-
-<li><a href="http://xianlu.01nz.com.cn/add/go.php?area=500&channelid=4">上海</a></li>
-
-
-</ul>-->
-            </div>
-
-
-            <div class="head_mid_left">
-                <div>
-                    <span id="_Check_head_Login">
-                        <!-- <a href="http://xianlu.01nz.com.cn/weibo/index.php"><img src="http://xianlu.01nz.com.cn/ORG7188_templets/default//images/sina.png" class="tt"/></a> -->
-                        你好，欢迎光临第一农庄网！<!-- <a href="http://xianlu.01nz.com.cn/qq/index.php"><img src="http://xianlu.01nz.com.cn/ORG7188_templets/default//images/qq.png" class="tt"/></a> --><a href="http://www.01nz.com.cn/user-login">登录</a>
-                        &nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="http://www.01nz.com.cn/user-register" target="_blank">注册</a></span>
-                    <!--<A 
-style="CURSOR: hand" title='第一农庄网' 
-href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.01nz.com.cn','第一农庄网')";>+收藏</A>
- -->
-                </div>
-
-            </div>
-
-        </div>
-        <!--  head_mid -->
-    </div>
-    <!--  head -->
-
-    <div class="clear"></div>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="Content" runat="server" ID="Content">
     <div class="head1">
-
-        <!--通告开始-->
-
-        <div class="head_ad">
-            <div id="adv_forum_home_full"></div>
-            <div class="fade_btn"></div>
-        </div>
-        <!--通告结束-->
-
-        <div class="head1_logo top20">
-            <a href="http://www.01nz.com.cn/">
-                <img src="./在线预订-第一农庄网3_files/logo.gif"></a>
-        </div>
-        <div style="margin-top: 35px; float: left; border-left: 1px #666666 solid; width: 93px; height: 23px; text-align: center; font-size: 25px; line-height: 16px; font-family: &#39; 微软雅黑&#39;">农家行</div>
-        <div class="fenzhan"></div>
-        <div class="search_box f_l" style="margin-top: 25px;">
-            <div class="search_input f_l">
-                <input type="text" class="search_txt" name="keyword" id="header_kw" value="农庄 农家乐 垂钓场 生态园 农家行" x-webkit-speech="" x-webkit-grammar="builtin:translate">
-                <a id="sousuo_btn" class="search_btn">搜索</a>
-            </div>
-            <div class="blank1"></div>
-        </div>
-        <div class="hour24 top20"><span>400-021-3158</span><img src="./在线预订-第一农庄网3_files/busy_yh.gif"></div>
-
-        <!-- <div class="headbanner"><a href=#><img src=http://xianlu.01nz.com.cn/uploads/userup/0/1345455395.gif></a></div> -->
-    </div>
-    <div class="nv top20">
-        <div class="wrap">
-            <ul>
-                <li class="all_class nz_biaoyu">
-                    <div class="nz_biaoyu_dv">
-                        <ul id="scrollnews" class="scrollnews">
-                            <li class="clear">去农庄&nbsp;&nbsp;就上第一农庄网</li>
-                            <li class="clear">热线电话：400-021-3158</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/">首页</a></li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/farm">农庄</a></li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/farmhouse">农家乐</a></li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/biotope">生态园</a></li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/fish">垂钓场</a></li>
-                <li class="cur"><a href="http://xianlu.01nz.com.cn/" title="农家行">农家行</a></li>
-
-
-
-                <!-- <li class="fl"><a href="http://xianlu.01nz.com.cn/add/list/111.html">资讯  </a></li>	 -->
-                <li class="fl"><a href="http://01nz.com.cn/discover" target="_blank">专题</a></li>
-                <!--  <li class="fl"><a href="http://xianlu.01nz.com.cn/add/dingzhi.html">定制</a></li>-->
-                <div class="clear"></div>
-            </ul>
-        </div>
-    </div>
-    <div class="head1">
-        <!--  <div class="g_w top10">
-<a href=#><img src=http://xianlu.01nz.com.cn/uploads/userup/0/1352476686.jpg width="1000" height="80"></a>
-</div>-->
-        <!--  head1 -->
-
-
-
         <div id="page">
             <div class="page top10">
                 <div id="xs2" class="xs" style="text-align: center; display: none;">
@@ -155,30 +53,21 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                                         <table width="100%" cellpadding="0" cellspacing="0">
                                             <tbody>
                                                 <tr>
-                                                    <th class="lt" width="10%">线路编号
-                                    </th>
-                                                    <th width="45%">线路名称
-                                    </th>
-                                                    <th width="10%">出发城市
-                                    </th>
-                                                    <th width="10%">出发时间
-                                    </th>
-                                                    <th width="15%">出游人数
-                                    </th>
-                                                    <th width="10%">小计
-                                    </th>
+                                                    <th class="lt" width="10%">线路编号</th>
+                                                    <th width="45%">线路名称</th>
+                                                    <th width="10%">出发城市</th>
+                                                    <th width="10%">出发时间</th>
+                                                    <th width="15%">出游人数</th>
+                                                    <th width="10%">小计</th>
                                                 </tr>
                                                 <tr>
-                                                    <td class="lt">CHN114711                                    </td>
+                                                    <td class="lt"><%= Play_And_Ate.Helper.OrderMessage.OrderName %></td>
                                                     <td class="lt" style="text-align: center;">
                                                         <a class="a1" href="http://xianlu.01nz.com.cn/order/188_order_3.php#" target="_blank">上海出发 【临安】东天目山、青山湖2日农家行</a>
                                                     </td>
-                                                    <td>上海 
-                                    </td>
-                                                    <td>2019-05-08 
-                                    </td>
-                                                    <td id="cret" name="cret">2 成人+ 0儿童
-                                    </td>
+                                                    <td>上海</td>
+                                                    <td>2019-05-08</td>
+                                                    <td id="cret" name="cret">2 成人+ 0儿童 </td>
                                                     <td>
                                                         <b>￥</b><b id="proTotal">378</b>
                                                     </td>
@@ -202,9 +91,7 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                                     <div class="hd">
                                         附加产品信息
                                     </div>
-                                    <div class="bd">
-                                    </div>
-
+                                    <div class="bd"></div>
                                     <!--附加产品信息 END-->
                                     <!--游客及联系人信息 START-->
                                     <div class="hd">
@@ -215,24 +102,15 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                                         <table width="100%" cellpadding="0" cellspacing="0" id="table_client_ch">
                                             <tbody>
                                                 <tr>
-                                                    <th class="lt" width="10%">游客类型
-                                    </th>
-                                                    <th width="20%">真实姓名
-                                    </th>
-                                                    <th width="15%">证件类型
-                                    </th>
-                                                    <th width="30%">证件号码
-                                    </th>
-                                                    <th width="5%">性别
-                                    </th>
-                                                    <th width="10%">出生年月
-                                    </th>
-                                                    <th width="10%">手机
-                                    </th>
-                                                    <th style="display: none;">游客ID
-                                    </th>
-                                                    <th style="display: none;">是否保存
-                                    </th>
+                                                    <th class="lt" width="10%">游客类型</th>
+                                                    <th width="20%">真实姓名</th>
+                                                    <th width="15%">证件类型</th>
+                                                    <th width="30%">证件号码</th>
+                                                    <th width="5%">性别</th>
+                                                    <th width="10%">出生年月</th>
+                                                    <th width="10%">手机</th>
+                                                    <th style="display: none;">游客ID</th>
+                                                    <th style="display: none;">是否保存 </th>
                                                 </tr>
                                                 <tr id="tr_0">
                                                     <td class="lt">成人</td>
@@ -250,9 +128,6 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                                     </div>
                                     <asp:Label ID="Label1" runat="server" Text="1"></asp:Label>
                                     <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
-                                 <%--   <script>
-                                        window.onload = 
-                                    </script>--%>
                                     <script>
                                         $(function () {
                                             clone();
@@ -283,8 +158,6 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                                     <asp:Literal ID="Literal1" runat="server" ></asp:Literal>
                                     <!--游客及联系人信息 END-->
                                     <!--联系人信息 START-->
-
-
                                     <div class="hd hdTrim1">
                                         联系人信息
                                     </div>
@@ -405,9 +278,9 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                                         </p>
                                     </div>
                                     <div class="checkOrderBtn" id="gl_return" style="display: block;">
-                                        <input type="button" id="btn_pre" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default//images/order15.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;">
+                                        <input type="button" id="btn_pre" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default//images/order15.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;"/>
                                         <%--提交订单按钮--%>
-                                        <input type="button" id="btn_next" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default//images/order16.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;">
+                                        <input type="button" id="btn_next" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default//images/order16.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;"/>
                                     </div>
                                 </div>
                             </div>
@@ -488,10 +361,6 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                         <input type="hidden" id="txtSubmitHiddenUb" name="txtSubmitHiddenUb" value="1,0,score">
                     </form>
                 </div>
-                <%--<script src="../Scripts/Order/jquery.bgiframe.min.js" type="text/javascript"></script>
-                <script src="../Scripts/Order/jquery.modal.js" type="text/javascript"></script>
-                <%--<script src="../Scripts/Order/three_order.js" type="text/javascript"></script>--%>
-                <%--<script src="../Scripts/Order/tooltip.js" type="text/javascript"></script>
                 <script src="../Scripts/Order/order.js" type="text/javascript"></script>--%>
                 <div class="commitment">
                     <div class="commitment_head">阳光服务承诺</div>
@@ -545,5 +414,4 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
             </div>
         </div>
     </div>
-</body>
-</html>
+    </asp:Content>

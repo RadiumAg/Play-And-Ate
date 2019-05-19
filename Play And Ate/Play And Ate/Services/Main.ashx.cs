@@ -80,6 +80,7 @@ namespace Play_And_Ate.Services
                     OrderManager.UPdateOrder(order);
                 }
             }
+            context.Response.Write("这里是订单的确认支付！");
         }
 
         /// <summary>
@@ -121,12 +122,13 @@ namespace Play_And_Ate.Services
             为用户开辟一块新内存地址
             */
             //为订单添加信息
+            Helper.OrderMessage.OrderName=DateTime.Now.ToString("yyyyMMddHHmmssfff");
             order.OrderName =Helper.OrderMessage.OrderName;
             order.OrderPrice = Convert.ToDecimal(context.Request["sumMoney"].ToString());
             order.Success = false;
             order.CustomerNum = order.OrderItem.Count();
             order.UserId = Convert.ToInt32(context.Request.Cookies["UserId"].Value);
-
+            order.ProductId = 37;
             /*
              创建联系人
              为联系人开辟一块新内存地址
