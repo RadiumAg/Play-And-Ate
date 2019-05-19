@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Order_3.aspx.cs" Inherits="Play_And_Ate.Order.Order_3" %>
 <asp:Content  ContentPlaceHolderID="Style" runat="server" ID="Style">
-       <link href="../Content/Order/common_wm.css" rel="stylesheet" />
+    <link href="../Content/Order/common_wm.css" rel="stylesheet" />
     <link href="../Content/Order/order.css" rel="stylesheet" />
     <link href="../Content/Order/style.css" rel="stylesheet" />
     <title>在线预订-第一农庄网</title>
@@ -61,7 +61,7 @@
                                                     <th width="10%">小计</th>
                                                 </tr>
                                                 <tr>
-                                                    <td class="lt"><%= Play_And_Ate.Helper.OrderMessage.OrderName %></td>
+                                                    <td class="lt">CHN114762</td>
                                                     <td class="lt" style="text-align: center;">
                                                         <a class="a1" href="http://xianlu.01nz.com.cn/order/188_order_3.php#" target="_blank">上海出发 【临安】东天目山、青山湖2日农家行</a>
                                                     </td>
@@ -143,15 +143,15 @@
                                                         sourceNode.parentNode.appendChild(clonedNode); // 在父节点插入克隆的节点 
                                                     }
                                                 }
-                                            var list =  <%= result%>;
-                                            var iiLength =<%=Crrs%>;
+                                            var list = <%= result %>;
+                                            var iiLength =<%= Crrs %>;
                                             for (var i = 0; i < iiLength; i++) {
                                                 var a = list[i];
                                                 console.log(a.name);
-                                                $("#tr_" + i + " td[name=name1]").html(a.name);
-                                                $("#tr_" + i + " td[name=select1]").html(a.select);
-                                                $("#tr_" + i + " td[name=cardid1]").html(a.CardId);
-                                                $("#tr_" + i + " td[name=phone1]").html(a.phone);
+                                                $("#tr_" + i + " td[name=name1]").html(a.Name);
+                                                $("#tr_" + i + " td[name=select1]").html(a.CardTypeId);
+                                                $("#tr_" + i + " td[name=cardid1]").html(a.Id_Number);
+                                                $("#tr_" + i + " td[name=phone1]").html(a.Phone);
                                             }
                                         })
                                     </script>
@@ -266,11 +266,11 @@
                                     </div>
                                     <div class="checkOrderMoney">
                                         <p>
-                                            旅游产品总价：<label id="cpzong">￥378</label><br>
+                                            旅游产品总价：<label id="cpzong">￥378</label><br/>
                                         </p>
 
                                         <p>
-                                            金币抵扣：<label>￥0</label><br>
+                                            金币抵扣：<label>￥0</label><br/>
                                         </p>
 
                                         <p class="p0">
@@ -317,7 +317,7 @@
                             <div class="login_paybg_dh">
                                 <div class="login_tit_dh">
                                     <h1>温馨提示</h1>
-                                    <img alt="关闭" src="./在线预订-第一农庄网3_files/login_closebtn_dh.jpg" onclick="close_repeat_div();" style="cursor: pointer;">
+                                    <img alt="关闭" src="./在线预订-第一农庄网3_files/login_closebtn_dh.jpg" onclick="close_repeat_div();" style="cursor: pointer;"/>
                                 </div>
                                 <div class="login_input_dh margin_right_dh">
                                     <div class="P1_dh">
@@ -333,32 +333,31 @@
                             </div>
                         </div>
 
-                        <input type="hidden" name="title" value="上海出发 【临安】东天目山、青山湖2日农家行">
-                        <input type="hidden" id="txtHiddenPId" name="txtHiddenPId" value="1147">
-                        <input type="hidden" id="allp" name="allp" value="378">
-                        <input type="hidden" id="txtHiddenProductTotal" name="txtHiddenProductTotal" value="378">
-                        <input type="hidden" id="txtHiddenNums" name="txtHiddenNums" value="2">
-                        <input type="hidden" id="txtHiddenDays" name="txtHiddenDays" value="3">
-                        <input type="hidden" id="txtHiddenGoDate" name="txtHiddenGoDate" value="2019-05-08">
-                        <input type="hidden" id="txtHiddenUzaiPrice" name="txtHiddenUzaiPrice" value="189">
-                        <input type="hidden" id="txtHiddenChildPrice" name="txtHiddenChildPrice" value="160">
-                        <input type="hidden" id="txtHiddenPersonNum" name="txtHiddenPersonNum" value="2">
-                        <input type="hidden" id="txtHiddenChildNum" name="txtHiddenChildNum" value="0">
-                        <input type="hidden" id="txtHiddenProcessType" name="txtHiddenProcessType" value="1">
-                        <input type="hidden" id="txtHiddenMType" name="txtHiddenMType" value="3">
-                        <input type="hidden" id="phpurl" name="phpurl" value="http://xianlu.01nz.com.cn">
-                        <input type="hidden" id="txtSubmitHiddenAdd" name="txtSubmitHiddenAdd" value="77935^1147^0^5^2.0000^1900-01-01^0^5^3^人^^^^太平洋意外险$77936^1147^0^40^2.0000^1900-01-01^1^40^3^人^^^^单房差$0">
-                        <input type="hidden" id="userName" name="userName" value="苏乞儿">
-                        <input type="hidden" id="txt_mobile0" name="txt_mobile0" value="18815168007">
-                        <input type="hidden" id="dd" name="dd" value="500">
+                        <input type="hidden" name="title" value="上海出发 【临安】东天目山、青山湖2日农家行"/>
+                        <input type="hidden" id="txtHiddenPId" name="txtHiddenPId" value="1147"/>
+                        <input type="hidden" id="allp" name="allp" value="378"/>
+                        <input type="hidden" id="txtHiddenProductTotal" name="txtHiddenProductTotal" value="378"/>
+                        <input type="hidden" id="txtHiddenNums" name="txtHiddenNums" value="2"/>
+                        <input type="hidden" id="txtHiddenDays" name="txtHiddenDays" value="3"/>
+                        <input type="hidden" id="txtHiddenGoDate" name="txtHiddenGoDate" value="2019-05-08"/>
+                        <input type="hidden" id="txtHiddenUzaiPrice" name="txtHiddenUzaiPrice" value="189"/>
+                        <input type="hidden" id="txtHiddenChildPrice" name="txtHiddenChildPrice" value="160"/>
+                        <input type="hidden" id="txtHiddenPersonNum" name="txtHiddenPersonNum" value="2"/>
+                        <input type="hidden" id="txtHiddenChildNum" name="txtHiddenChildNum" value="0"/>
+                        <input type="hidden" id="txtHiddenProcessType" name="txtHiddenProcessType" value="1"/>
+                        <input type="hidden" id="txtHiddenMType" name="txtHiddenMType" value="3"/>
+                        <input type="hidden" id="phpurl" name="phpurl" value="http://xianlu.01nz.com.cn"/>
+                        <input type="hidden" id="txtSubmitHiddenAdd" name="txtSubmitHiddenAdd" value="77935^1147^0^5^2.0000^1900-01-01^0^5^3^人^^^^太平洋意外险$77936^1147^0^40^2.0000^1900-01-01^1^40^3^人^^^^单房差$0"/>
+                        <input type="hidden" id="userName" name="userName" value="苏乞儿"/>
+                        <input type="hidden" id="txt_mobile0" name="txt_mobile0" value="18815168007"/>
+                        <input type="hidden" id="dd" name="dd" value="500"/>
 
-                        <%--<input type="hidden" id="txtHiddenUList" name="txtHiddenUList" value="{&quot;users&quot;:[{&quot;uname&quot;:&quot;苏乞儿&quot;,&quot;umobile&quot;:&quot;18815168007&quot;,&quot;uemail&quot;:&quot;11@11.com&quot;,&quot;uphone&quot;:&quot;&quot;}],&quot;client&quot;:[{&quot;name&quot;:&quot;asd切&quot;,&quot;type&quot;:&quot;0&quot;,&quot;no&quot;:&quot;132356132165413&quot;,&quot;sex&quot;:&quot;1&quot;,&quot;birth&quot;:&quot;1321-65-41&quot;,&quot;mobile&quot;:&quot;13246516815&quot;,&quot;selectUser&quot;:&quot;asd&quot;,&quot;isUpOrAdd&quot;:&quot;1&quot;,&quot;ageType&quot;:&quot;0&quot;},{&quot;name&quot;:&quot;asd&quot;,&quot;type&quot;:&quot;0&quot;,&quot;no&quot;:&quot;132356132165414&quot;,&quot;sex&quot;:&quot;1&quot;,&quot;birth&quot;:&quot;1321-65-41&quot;,&quot;mobile&quot;:&quot;13246516815&quot;,&quot;selectUser&quot;:&quot;asd&quot;,&quot;isUpOrAdd&quot;:&quot;1&quot;,&quot;ageType&quot;:&quot;0&quot;}]}">--%>
-                        <input type="hidden" id="txtHiddenDes" name="txtHiddenDes" value="">
-                        <input type="hidden" id="txtHiddenLinker" name="txtHiddenLinker">
-                        <input type="hidden" id="txtHiddenClienter" name="txtHiddenClienter">
-                        <input type="hidden" id="txt_email" name="txt_email" value="11@11.com">
-                        <input type="hidden" id="txtHiddenTotal" name="txtHiddenTotal" value="378">
-                        <input type="hidden" id="txtSubmitHiddenUb" name="txtSubmitHiddenUb" value="1,0,score">
+                        <input type="hidden" id="txtHiddenDes" name="txtHiddenDes" value=""/>
+                        <input type="hidden" id="txtHiddenLinker" name="txtHiddenLinker"/>
+                        <input type="hidden" id="txtHiddenClienter" name="txtHiddenClienter"/>
+                        <input type="hidden" id="txt_email" name="txt_email" value="11@11.com"/>
+                        <input type="hidden" id="txtHiddenTotal" name="txtHiddenTotal" value="378"/>
+                        <input type="hidden" id="txtSubmitHiddenUb" name="txtSubmitHiddenUb" value="1,0,score"/>
                     </form>
                 </div>
                 <script src="../Scripts/Order/order.js" type="text/javascript"></script>--%>
@@ -373,44 +372,6 @@
                 </div>
 
                 <div class="blank"></div>
-                <div id="ftw">
-                    <div id="ft">
-                        <div class="xiantiao"></div>
-                        <div class="blank"></div>
-                        <div class="tc" align="center">
-                            <a href="http://www.01nz.com.cn/sys/id-20" target="_blank">关于我们</a>
-                            &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-6" target="_blank">加入我们</a>
-                            &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-30" target="_blank">联系我们</a>
-                            &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-27" target="_blank">免责条款</a>
-                            &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-28" target="_blank">隐私保护</a>
-                            &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-45" target="_blank">网站地图</a>
-                            &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-9" target="_blank">商家登录</a>
-                        </div>
-                        <div class="blank"></div>
-                        <div class="beian" align="center">版权所有：上海威和信息科技有限公司  <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备 13043989号-1</a>  电话：021-60172228    邮箱：mc_01nz@163.com </div>
-                        <div align="center" class="beian_eng">
-                            Copyright 2013 www.01nz.com.cn All Rights Reserved.
-                        </div>
-                        <!-- 热门城市 -->
-                        <!-- 区县分类 -->
-                        <!-- 热门农庄 -->
-
-                        <!-- 友情链接 -->
-                        <div align="center">
-                            <img src="./在线预订-第一农庄网3_files/xian.jpg" alt="灰线">
-                        </div>
-                        <div align="center">
-                            <img src="./在线预订-第一农庄网3_files/jubao.gif" alt="举报中心" class="img">
-                            <img src="./在线预订-第一农庄网3_files/end_2.gif" alt="官方认证" class="img">
-                            <img src="./在线预订-第一农庄网3_files/end_3.gif" alt="网络110" class="img">
-                            <!-- <img src="http://www.01nz.com.cn/app/Tpl/fanwe/images/site_logo.png" alt="安全联盟" class="img"/> -->
-                            <img src="./在线预订-第一农庄网3_files/end_4.gif" alt="360绿色网站" class="img">
-                        </div>
-                        <div class="blank"></div>
-                        <div class="blank"></div>
-                        <div class="blank"></div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

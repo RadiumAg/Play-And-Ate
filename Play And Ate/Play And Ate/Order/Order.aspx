@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Order.aspx.cs" Inherits="Play_And_Ate.Order.Order" %>
 
 <asp:Content runat="server" ID="Header" ContentPlaceHolderID="Style">
-     <link href="../Content/Order/common_wm.html" rel="stylesheet" media="screen" type="text/css"/>
+    <link href="../Content/Order/common_wm.html" rel="stylesheet" media="screen" type="text/css" />
     <link href="../Content/Order/order.css" rel="stylesheet" />
     <link href="../Content/Order/style.css" rel="stylesheet" />
 </asp:Content>
@@ -24,7 +24,7 @@
                 <div class="orderWrap">
                     <div class="userInfo">
                         <h2>在线预订：<a class="a1" href='../Line/' target="_blank"></a> <a href="">
-                            <asp:Label ID="Label1" runat="server" Text='<%#Eval("路线") %>'></asp:Label></a>&lt;上海 出发&gt;
+                            <asp:Label ID="Label1" runat="server" Text='<%#Eval("路线") %>'></asp:Label></a>&lt;上海出发&gt;
                         </h2>
                         <div class="checkOrderInfo">
                             <div class="hd">
@@ -45,10 +45,7 @@
                                             </th>
                                         </tr>
                                         <tr>
-                                            <td class="lt">CHN114762
-                                            </td>
-
-
+                                            <td class="lt">CHN114762</td>
                                             <td>
                                                 <div class="fastCalender2" id="fastCalender2">
                                                     <div class="p10">

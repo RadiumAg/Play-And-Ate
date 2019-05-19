@@ -14,7 +14,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <a id="kefu" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2637304079&site=qq&menu=yes">
         <img border="0" src="http://wpa.qq.com/pa?p=2:2637304079:53" alt="点击这里查询客服" title="点击这里查询客服" /></a>
-
     <asp:ScriptManagerProxy runat="server" ID="spHome">
     </asp:ScriptManagerProxy>
     <script type="text/javascript">

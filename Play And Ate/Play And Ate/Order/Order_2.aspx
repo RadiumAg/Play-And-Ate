@@ -4,6 +4,11 @@
     <link href="../Content/Order/common_wm.css" rel="stylesheet" media="screen" type="text/css" />
     <link href="../Content/Order/style.css" rel="stylesheet" media="screen" type="text/css" />
     <link href="../Content/Order/order.css" rel="stylesheet" media="screen" type="text/css" />
+      <style>
+        .Disnone{
+            display:none;
+        }
+    </style>
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="Content" ID="Content">
     <div class="head1">
@@ -19,7 +24,6 @@
                 </ul>
             </div>
             <!--订单步骤 END-->
-            <form id="two_form" action="http://xianlu.01nz.com.cn/order/188_order_2.php" method="post">
                 <div class="orderWrap">
                     <div class="userInfo">
 
@@ -122,7 +126,7 @@
                                 lone();
                                 function lone() {
                                     var sourceNode = document.getElementById("div_ch_person_0"); // 获得被克隆的节点对象 
-                                    var GetLength = document.getElementById("GetLength").innerHTML; //获取循环的次数
+                                    var GetLength = document.getElementById("Content_GetLength").innerHTML; //获取循环的次数
                                     console.log(GetLength);
                                     for (var i = 1; i < GetLength; i++) {
                                         var clonedNode = sourceNode.cloneNode(true); // 克隆节点 
@@ -135,10 +139,10 @@
                                     var crrs = sessionStorage.getItem("crrs");
                                     var dat = JSON.parse(sessionStorage.getItem("dat"));
                                     for (var i = 0; i < crrs; i++) {
-                                        var a = $("#div_ch_person_" + i + " input[name=name]").val(dat[i].a);
-                                        var b = $("#div_ch_person_" + i + " select[name=select]").val(dat[i].b);
-                                        var c = $("#div_ch_person_" + i + " input[name=CardId]").val(dat[i].c);
-                                        var d = $("#div_ch_person_" + i + " input[name=phone]").val(dat[i].d);
+                                        var cName = $("#div_ch_person_" + i + " input[name=name]").val(dat[i].cName);
+                                        var cardTypeId = $("#div_ch_person_" + i + " select[name=select]").val(dat[i].cardTypeId);
+                                        var carId = $("#div_ch_person_" + i + " input[name=CardId]").val(dat[i].carId);
+                                        var phone = $("#div_ch_person_" + i + " input[name=phone]").val(dat[i].phone);
                                     }
                                 }
                                 if (sessionStorage.getItem("Lxname") != null) {
@@ -159,7 +163,6 @@
                                 }
                             })
                         </script>
-
                         <!--成人游客 END-->
                         <!--儿童游客 START-->
                         <!--儿童游客 END-->
@@ -265,13 +268,13 @@
                         $(function () {
                             $("#btn_pre").click(function () {
                                 var datat = []; //传递成人信息数组
-                                var name = $("#GetLength").text(); //保存成人数量
+                                var name = $("#Content_GetLength").text(); //保存成人数量
                                 for (var i = 0; i < name; i++) {
-                                    var a = $("#div_ch_person_" + i + " input[name=name]").val();
-                                    var b = $("#div_ch_person_" + i + " select[name=select]").val();
-                                    var c = $("#div_ch_person_" + i + " input[name=CardId]").val();
-                                    var d = $("#div_ch_person_" + i + " input[name=phone]").val();
-                                    var person = { a: a, b: b, c: c, d: d };
+                                    var cName = $("#div_ch_person_" + i + " input[name=name]").val();
+                                    var cardTypeId = $("#div_ch_person_" + i + " select[name=select]").val();
+                                    var carId = $("#div_ch_person_" + i + " input[name=CardId]").val();
+                                    var phone = $("#div_ch_person_" + i + " input[name=phone]").val();
+                                    var person = { cName: cName, cardTypeId: cardTypeId, carId: carId, phone: phone };
                                     datat.push(person); //将信息存入数组
                                 }
                                 //获得联系人信息
@@ -297,7 +300,7 @@
                         $(function () {
                             var dat = []; //传递成人信息数组
                             $("#btn_next").click(function () {
-                                var name = $("#GetLength").text(); //保存成人数量
+                                var name = $("#Content_GetLength").text(); //保存成人数量
                                 for (var i = 0; i < name; i++) {
                                     var cName = $("#div_ch_person_" + i + " input[name=name]").val();
                                     var cardTypeId = $("#div_ch_person_" + i + " select[name=select]").val();
@@ -335,7 +338,6 @@
                                         lxemail: Lxemail
                                     },
                                     success: function (data) {
-
                                     }
                                 })
                             });
@@ -345,28 +347,27 @@
                     </div>
                 </div>
 
-                <input type="hidden" id="txtHiddenPId" name="txtHiddenPId" value="1147">
-                <input type="hidden" id="txtHiddenDays" name="txtHiddenDays" value="2">
-                <input type="hidden" id="pid" name="pid" value="1147">
-                <input type="hidden" id="txtHiddenGoDate" name="txtHiddenGoDate" value="2019-05-08">
-                <input type="hidden" id="txtHiddenUzaiPrice" name="txtHiddenUzaiPrice" value="189">
-                <input type="hidden" id="txtHiddenChildPrice" name="txtHiddenChildPrice" value="160">
-                <input type="hidden" id="txtHiddenPersonNum" name="txtHiddenPersonNum" value="2">
-                <input type="hidden" id="txtHiddenChildNum" name="txtHiddenChildNum" value="0">
-                <input type="hidden" id="txtHiddenProcessType" name="txtHiddenProcessType" value="1">
-                <input type="hidden" id="txtHiddenMType" name="txtHiddenMType" value="3">
+                <input type="hidden" id="txtHiddenPId" name="txtHiddenPId" value="1147"/>
+                <input type="hidden" id="txtHiddenDays" name="txtHiddenDays" value="2"/>
+                <input type="hidden" id="pid" name="pid" value="1147"/>
+                <input type="hidden" id="txtHiddenGoDate" name="txtHiddenGoDate" value="2019-05-08"/>
+                <input type="hidden" id="txtHiddenUzaiPrice" name="txtHiddenUzaiPrice" value="189"/>
+                <input type="hidden" id="txtHiddenChildPrice" name="txtHiddenChildPrice" value="160"/>
+                <input type="hidden" id="txtHiddenPersonNum" name="txtHiddenPersonNum" value="2"/>
+                <input type="hidden" id="txtHiddenChildNum" name="txtHiddenChildNum" value="0"/>
+                <input type="hidden" id="txtHiddenProcessType" name="txtHiddenProcessType" value="1"/>
+                <input type="hidden" id="txtHiddenMType" name="txtHiddenMType" value="3"/>
 
-                <input type="hidden" id="txtSubmitHiddenAdd" name="txtSubmitHiddenAdd" value="77935^1147^0^5^2.0000^1900-01-01^0^5^3^人^^^^太平洋意外险$77936^1147^0^40^2.0000^1900-01-01^1^40^3^人^^^^单房差$0">
-                <input type="hidden" id="txtSubmitHiddenUb" name="txtSubmitHiddenUb" value="1,0,score">
-                <input type="hidden" id="txtSubmitHiddenUpTrain" name="txtSubmitHiddenUpTrain" value="">
+                <input type="hidden" id="txtSubmitHiddenAdd" name="txtSubmitHiddenAdd" value="77935^1147^0^5^2.0000^1900-01-01^0^5^3^人^^^^太平洋意外险$77936^1147^0^40^2.0000^1900-01-01^1^40^3^人^^^^单房差$0"/>
+                <input type="hidden" id="txtSubmitHiddenUb" name="txtSubmitHiddenUb" value="1,0,score"/>
+                <input type="hidden" id="txtSubmitHiddenUpTrain" name="txtSubmitHiddenUpTrain" value=""/>
 
-                <input type="hidden" id="txtHiddenUList" name="txtHiddenUList" value="">
-                <input type="hidden" id="txtHiddenDes" name="txtHiddenDes" value="">
-                <input type="hidden" id="txt_current_date_hz" value="2012-11-20">
+                <input type="hidden" id="txtHiddenUList" name="txtHiddenUList" value=""/>
+                <input type="hidden" id="txtHiddenDes" name="txtHiddenDes" value=""/>
+                <input type="hidden" id="txt_current_date_hz" value="2012-11-20"/>
 
-                <input type="hidden" id="allp" name="allp" value="378">
-                <input type="hidden" id="ddl_nums_person" name="ddl_nums_person" value="0">
-            </form>
+                <input type="hidden" id="allp" name="allp" value="378"/>
+                <input type="hidden" id="ddl_nums_person" name="ddl_nums_person" value="0"/>
         </div>
         <script src="../Scripts/Order/two_order.js" type="text/javascript"></script>
         <script src="../Scripts/Order/jquery.scrollfollow.js" type="text/javascript"></script>
@@ -415,4 +416,8 @@
         </div>
     </div>
 </asp:Content>
-<asp:Content runat="server" ContentPlaceHolderID="Footer" ID="Footer"></asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="Footer" ID="Footer">
+    <script src="../Scripts/Order/two_order.js" type="text/javascript"></script>
+    <script src="../Scripts/Order/jquery.scrollfollow.js" type="text/javascript"></script>
+    <script src="../Scripts/Order/tooltip.js" type="text/javascript"></script>
+</asp:Content>
