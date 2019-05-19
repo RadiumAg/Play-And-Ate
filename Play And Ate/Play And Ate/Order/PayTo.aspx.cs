@@ -21,7 +21,7 @@ namespace Play_And_Ate.Order
             string extra = HttpUtility.UrlDecode(Request.QueryString["extra"]);
 
             //创建订单
-            string order_no = DateTime.Now.ToString("yyyyMMddHHmmssfff");//商户的订单号
+            string order_no = Helper.OrderMessage.OrderName;//商户的订单号
             Helper.OrderMessage.OrderName = order_no;//将商户订单号保存
             //构造请求函数，无需修改
             XddpayService xddservice = new XddpayService(order_no, subject, pay_type.ToString(), money.ToString("f2"), extra);

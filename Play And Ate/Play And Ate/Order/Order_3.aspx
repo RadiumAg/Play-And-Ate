@@ -405,9 +405,9 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                                         </p>
                                     </div>
                                     <div class="checkOrderBtn" id="gl_return" style="display: block;">
-                                        <input type="button" id="btn_pre" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default//images/order15.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;">
+                                        <input type="button" id="btn_pre" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default//images/order15.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;"/>
                                         <%--提交订单按钮--%>
-                                        <input type="button" id="btn_next" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default//images/order16.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;">
+                                        <input type="button" id="btn_next" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default//images/order16.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;"/>
                                     </div>
                                 </div>
                             </div>
@@ -488,10 +488,6 @@ href="javascript:void(0)" onClick="myAddPanel('第一农庄网','http://xianlu.0
                         <input type="hidden" id="txtSubmitHiddenUb" name="txtSubmitHiddenUb" value="1,0,score">
                     </form>
                 </div>
-                <%--<script src="../Scripts/Order/jquery.bgiframe.min.js" type="text/javascript"></script>
-                <script src="../Scripts/Order/jquery.modal.js" type="text/javascript"></script>
-                <%--<script src="../Scripts/Order/three_order.js" type="text/javascript"></script>--%>
-                <%--<script src="../Scripts/Order/tooltip.js" type="text/javascript"></script>
                 <script src="../Scripts/Order/order.js" type="text/javascript"></script>--%>
                 <div class="commitment">
                     <div class="commitment_head">阳光服务承诺</div>

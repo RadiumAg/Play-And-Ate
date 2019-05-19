@@ -80,9 +80,7 @@
                                                 alert("发生错误，退出失败！");
                                             }
                                         }
-
                                     });
-
                                 });
                             });
                         </script>
@@ -115,7 +113,7 @@
                                         if (input.value == '请输入您要搜索的关键词') {
                                             input.value = '';
                                         }
-                                        sousuo_btn.href += url + input.value;
+                                        sousuo_btn.href = "../Search/Search.aspx?content=" + input.value;
                                     }
                                 });
                             </script>
@@ -236,21 +234,17 @@
     position: relative;
     z-index: 2;">
                 <div class="menu" id="menus">
-                    <div class="menu white" id="menus" style="    height: 36px;
-    background-color: #fda300;
-    margin: 0 auto;
-    position: relative;
-    width: 1180px;">
+                    <div class="menu white"  style="height: 36px; background-color: #fda300; margin: 0 auto; position: relative; width: 1180px;">
                         <ul>
-                            <li><span class="LOGE_text">去农庄,就上第一农庄网</span></li>
+                            <li><span class="LOGE_text">去农庄,就来我们</span></li>
                             <li onclick="nav(0)" id="n0" class="soso ">
                                 <a href="../Home/Home.aspx" target="">首页</a>
                             </li>
                             <li onclick="nav(1)" id="n1" class="soso ">
-                                <a href="../Show/FarmDetails.aspx" target="">农家推荐</a>
+                                <a href="#" target="">农家推荐</a>
                             </li>
                             <li onclick="nav(2)" id="n2" class="soso ">
-                                <a href="../Line/Line1.aspx" target="">农家行</a>
+                                <a href="../Line/Line1.html" target="">农家行</a>
                             </li>
                             <li onclick="nav(3)" id="n3" class="soso ">
                                 <a href="../Products/Farm.aspx" target="">农庄</a>
@@ -281,18 +275,18 @@
 			<div id="ftw">
 				<div class="blank"></div>
 				<div class="tc">
-					<a href="http://sh.01nz.com.cn/sys/id-20" target="_blank">关于我们</a>
-					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-6" target="_blank">加入我们</a>
-					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-30" target="_blank">联系我们</a>
-					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-28" target="_blank">隐私保护</a>
-					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-45" target="_blank">网站地图</a>
-					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://sh.01nz.com.cn/sys/id-9" target="_blank">商家登录</a>
+					<a href="#" target="_blank">关于我们</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">加入我们</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">联系我们</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">隐私保护</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">网站地图</a>
+					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">商家登录</a>
 				</div>
 				<div class="blank"></div>
-				<div class="beian" align="center">版权所有：上海威和信息科技有限公司 <a href="http://www.miitbeian.gov.cn/"
-						target="_blank">沪ICP备 13043989号-1</a> 电话：400-021-3158 邮箱：mc_01nz@163.com </div>
+				<div class="beian" align="center">版权所有：Play-And-Ate <a href="#"
+						target="_blank">沪ICP备 13043989号</a> 电话：400-021-3158 邮箱：527505931@qq.com </div>
 				<div align="center" class="beian_eng">
-					Copyright 2013 www.01nz.com.cn All Rights Reserved.</div>
+					Copyright 2019 PlayAndAte.club All Rights Reserved.</div>
                </div>
             <asp:ContentPlaceHolder ID="Footer" runat="server" />
         </div>

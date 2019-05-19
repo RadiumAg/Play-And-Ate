@@ -53,7 +53,7 @@
             <PropertyRef Name="OrderId" />
           </Key>
           <Property Name="OrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="OrderName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="OrderName" Type="nvarchar" MaxLength="50" />
           <Property Name="CustomerNum" Type="int" Nullable="false" />
           <Property Name="OrderPrice" Type="money" Nullable="false" />
           <Property Name="ProductId" Type="int" Nullable="false" />
@@ -452,7 +452,7 @@
             <PropertyRef Name="OrderId" />
           </Key>
           <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="OrderName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OrderName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CustomerNum" Type="Int32" Nullable="false" />
           <Property Name="OrderPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="ProductId" Type="Int32" Nullable="false" />
