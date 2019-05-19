@@ -17,6 +17,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Contacts">
+      <EntityTypeMapping TypeName="PlayAndAteModel.Contacts">
+        <MappingFragment StoreEntitySet="Contacts">
+          <ScalarProperty Name="ContactsId" ColumnName="ContactsId" />
+          <ScalarProperty Name="ContactsName" ColumnName="ContactsName" />
+          <ScalarProperty Name="ContactsEmail" ColumnName="ContactsEmail" />
+          <ScalarProperty Name="FixedTelephone" ColumnName="FixedTelephone" />
+          <ScalarProperty Name="ContactsMobilePhone" ColumnName="ContactsMobilePhone" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Customers">
       <EntityTypeMapping TypeName="PlayAndAteModel.Customers">
         <MappingFragment StoreEntitySet="Customers">
@@ -25,7 +36,7 @@
           <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="Id_Number" ColumnName="Id_Number" />
           <ScalarProperty Name="CardTypeId" ColumnName="CardTypeId" />
-          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="OrderItemID" ColumnName="OrderItemID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -41,13 +52,23 @@
     <EntitySetMapping Name="Order">
       <EntityTypeMapping TypeName="PlayAndAteModel.Order">
         <MappingFragment StoreEntitySet="Order">
-          <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="OrderId" ColumnName="OrderId" />
           <ScalarProperty Name="OrderName" ColumnName="OrderName" />
           <ScalarProperty Name="CustomerNum" ColumnName="CustomerNum" />
           <ScalarProperty Name="OrderPrice" ColumnName="OrderPrice" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Success" ColumnName="Success" />
+          <ScalarProperty Name="ContactsId" ColumnName="ContactsId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderItem">
+      <EntityTypeMapping TypeName="PlayAndAteModel.OrderItem">
+        <MappingFragment StoreEntitySet="OrderItem">
+          <ScalarProperty Name="OrderItemId" ColumnName="OrderItemId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -63,15 +84,15 @@
     <EntitySetMapping Name="Product">
       <EntityTypeMapping TypeName="PlayAndAteModel.Product">
         <MappingFragment StoreEntitySet="Product">
-          <ScalarProperty Name="Feature" ColumnName="Feature" />
-          <ScalarProperty Name="DetailIntroduction" ColumnName="DetailIntroduction" />
-          <ScalarProperty Name="DetailAreaName" ColumnName="DetailAreaName" />
           <ScalarProperty Name="ProductId" ColumnName="ProductId" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
           <ScalarProperty Name="ProductName" ColumnName="ProductName" />
           <ScalarProperty Name="PPTId" ColumnName="PPTId" />
           <ScalarProperty Name="AreaId" ColumnName="AreaId" />
           <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="DetailAreaName" ColumnName="DetailAreaName" />
+          <ScalarProperty Name="DetailIntroduction" ColumnName="DetailIntroduction" />
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -127,9 +148,9 @@
     <EntitySetMapping Name="Point">
       <EntityTypeMapping TypeName="PlayAndAteModel.Point">
         <MappingFragment StoreEntitySet="Point">
-          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
-          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
           <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -9,8 +9,12 @@ namespace Play_And_Ate.Order
 {
     public partial class Order : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
+            //获得商品编号
+            this.Session["ProductId"] = this.Context.Request["ProductId"].ToString();
         }
+
     }
 }

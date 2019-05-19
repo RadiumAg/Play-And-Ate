@@ -1,97 +1,16 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Order_2.aspx.cs" Inherits="Play_And_Ate.Order.Order_2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Order_2.aspx.cs" Inherits="Play_And_Ate.Order.Order_2" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0047)http://xianlu.01nz.com.cn/order/188_order_2.php -->
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="../Content/Order/common_wm.css" rel="stylesheet" media="screen" type="text/css">
-    <link href="../Content/Order/style.css" rel="stylesheet" media="screen" type="text/css">
-    <link href="../Content/Order/order.css" rel="stylesheet" media="screen" type="text/css">
-    <title>在线预订-第一农庄网</title>
-    <script src="./在线预订-第一农庄网_files/global.js" type="text/javascript"></script>
-    <script src="../Plugin/jquery-3.3.1.min.js"></script>
-    <style>
+<asp:Content runat="server" ContentPlaceHolderID="Style" ID="Style">
+    <link href="../Content/Order/common_wm.css" rel="stylesheet" media="screen" type="text/css" />
+    <link href="../Content/Order/style.css" rel="stylesheet" media="screen" type="text/css" />
+    <link href="../Content/Order/order.css" rel="stylesheet" media="screen" type="text/css" />
+      <style>
         .Disnone{
             display:none;
         }
     </style>
-</head>
-
-<body>
-    <%--<script language="javascript" type="text/javascript" src="../Scripts/Order/sousuo.js" charset="utf-8"></script>--%>
-        <div class="head">
-        <div class="head_mid">
-            <div class="head_mid_right">
-                <!-- <span>旅游出发地 |</span>
-                <ul>
-
-                <li><a href="http://xianlu.01nz.com.cn/add/go.php?area=500&channelid=4">上海</a></li>
-
-
-                </ul>-->
-            </div>
-
-            <div class="head_mid_left">
-                <div>
-                    <span id="_Check_head_Login">
-                        <!-- <a href="http://xianlu.01nz.com.cn/weibo/index.php"><img src="http://xianlu.01nz.com.cn/ORG7188_templets/default//images/sina.png" class="tt"/></a> -->
-                        你好，欢迎光临第一农庄网！<!-- <a href="http://xianlu.01nz.com.cn/qq/index.php"><img src="http://xianlu.01nz.com.cn/ORG7188_templets/default//images/qq.png" class="tt"/></a> --><a href="http://www.01nz.com.cn/user-login">登录</a>
-                        &nbsp;&nbsp;|&nbsp;&nbsp;
-                        <a href="http://www.01nz.com.cn/user-register" target="_blank">注册</a>
-                    </span>
-                    <%--<script language="javascript">Check_head_Login();</script>--%>
-                </div>
-            </div>
-        </div>
-        <!--  head_mid -->
-    </div>
-    <!--  head -->
-    <div class="clear"></div>
-    <div class="head1">
-        <!--通告开始-->
-        <div class="head_ad">
-            <div id="adv_forum_home_full"></div>
-            <div class="fade_btn"></div>
-        </div>
-        <!--通告结束-->
-        <div class="head1_logo top20"><a href="http://www.01nz.com.cn/"><img src="./在线预订-第一农庄网_files/logo.gif"></a></div>
-        <div style="margin-top:35px; float:left; border-left:1px #666666 solid; width:93px; height:23px; text-align:center;  font-size:25px; line-height:16px; font-family:&#39;微软雅黑&#39;; ">农家行</div>
-        <div class="fenzhan"></div>
-        <div class="search_box f_l" style="margin-top:25px;">
-            <div class="search_input f_l">
-                <input type="text" class="search_txt" name="keyword" id="header_kw" value="农庄 农家乐 垂钓场 生态园 农家行" x-webkit-speech="" x-webkit-grammar="builtin:translate">
-                <a id="sousuo_btn" class="search_btn">搜索</a>
-            </div>
-            <div class="blank1"></div>
-        </div>
-        <div class="hour24 top20"><span>400-021-3158</span><img src="./在线预订-第一农庄网_files/busy_yh.gif"></div>
-       </div>
-    <div class="nv top20">
-        <div class="wrap">
-            <ul>
-                <li class="all_class nz_biaoyu">
-                    <div class="nz_biaoyu_dv">
-                        <ul id="scrollnews" class="scrollnews">
-                            <li class="clear"> 去农庄&nbsp;&nbsp;就上第一农庄网</li>
-                            <li class="clear"> 热线电话：400-021-3158</li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/">首页</a></li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/farm">农庄</a></li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/farmhouse">农家乐</a></li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/biotope">生态园</a></li>
-                <li class="daohang"><a href="http://www.01nz.com.cn/fish">垂钓场</a></li>
-                <li class="cur"><a href="http://xianlu.01nz.com.cn/" title="农家行">农家行</a></li>
-
-
-                <li class="fl"><a href="http://01nz.com.cn/discover" target="_blank">专题</a></li>
-                <!--  <li class="fl"><a href="http://xianlu.01nz.com.cn/add/dingzhi.html">定制</a></li>-->
-                <div class="clear"></div>
-            </ul>
-        </div>
-    </div>
+</asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="Content" ID="Content">
     <div class="head1">
         <div class="order top10">
             <!--订单步骤 START-->
@@ -105,14 +24,12 @@
                 </ul>
             </div>
             <!--订单步骤 END-->
-            <form id="two_form" action="http://xianlu.01nz.com.cn/order/188_order_2.php" method="post">
                 <div class="orderWrap">
                     <div class="userInfo">
 
                         <div class="notice"><b id="closeNotice"></b>按照旅游局最新规定，请您配合提供所有出行客人姓名，证件号码，联系电话，感谢您的配合！</div>
 
-                        <h2>
-                            订单信息确认 <span>请准确填写游客信息，以免在办理相关手续时发生问题。 </span><a id="userInfo"></a>
+                        <h2>订单信息确认 <span>请准确填写游客信息，以免在办理相关手续时发生问题。 </span><a id="userInfo"></a>
                         </h2>
                         <!--成人游客 START-->
                         <div>
@@ -168,7 +85,7 @@
                                                 </td>
                                                 <td>
                                                     <div class="floatDiv">
-                                                        <input class="input1" name ="phone" maxlength="11" id="txt_ch_person_Phone" />
+                                                        <input class="input1" name="phone" maxlength="11" id="txt_ch_person_Phone" />
                                                         <span style="color: Red;">必填</span>
                                                     </div>
                                                 </td>
@@ -179,11 +96,11 @@
                                                 </td>
                                                 <td>
                                                     <select name="select" style="width: 162px;" id="ddl_ch_person_CodeType">
-                                                        <option value="身份证">身份证</option>
-                                                        <option value="学生证">学生证</option>
-                                                        <option value="军官证">军官证</option>
-                                                        <option value="退休证">退休证</option>
-                                                        <option value="护照">护照</option>
+                                                        <option value="1" selected="selected">身份证</option>
+                                                        <option value="2">学生证</option>
+                                                        <option value="3">军官证</option>
+                                                        <option value="4">退休证</option>
+                                                        <option value="6">护照</option>
                                                         <option value="其他">其他</option>
 
                                                     </select>
@@ -209,7 +126,7 @@
                                 lone();
                                 function lone() {
                                     var sourceNode = document.getElementById("div_ch_person_0"); // 获得被克隆的节点对象 
-                                    var GetLength = document.getElementById("GetLength").innerHTML; //获取循环的次数
+                                    var GetLength = document.getElementById("Content_GetLength").innerHTML; //获取循环的次数
                                     console.log(GetLength);
                                     for (var i = 1; i < GetLength; i++) {
                                         var clonedNode = sourceNode.cloneNode(true); // 克隆节点 
@@ -222,10 +139,10 @@
                                     var crrs = sessionStorage.getItem("crrs");
                                     var dat = JSON.parse(sessionStorage.getItem("dat"));
                                     for (var i = 0; i < crrs; i++) {
-                                        var a = $("#div_ch_person_" + i + " input[name=name]").val(dat[i].a);
-                                        var b = $("#div_ch_person_" + i + " select[name=select]").val(dat[i].b);
-                                        var c = $("#div_ch_person_" + i + " input[name=CardId]").val(dat[i].c);
-                                        var d = $("#div_ch_person_" + i + " input[name=phone]").val(dat[i].d);
+                                        var cName = $("#div_ch_person_" + i + " input[name=name]").val(dat[i].cName);
+                                        var cardTypeId = $("#div_ch_person_" + i + " select[name=select]").val(dat[i].cardTypeId);
+                                        var carId = $("#div_ch_person_" + i + " input[name=CardId]").val(dat[i].carId);
+                                        var phone = $("#div_ch_person_" + i + " input[name=phone]").val(dat[i].phone);
                                     }
                                 }
                                 if (sessionStorage.getItem("Lxname") != null) {
@@ -246,12 +163,10 @@
                                 }
                             })
                         </script>
-                        
                         <!--成人游客 END-->
                         <!--儿童游客 START-->
                         <!--儿童游客 END-->
-                        <h2>
-                            填写联系人信息 <span>请准确填写联系人信息（手机号码、E-mail），以便我们与您联系。</span>
+                        <h2>填写联系人信息 <span>请准确填写联系人信息（手机号码、E-mail），以便我们与您联系。</span>
                         </h2>
                         <div class="userType userTypeContact">
                             <div class="bd">
@@ -287,8 +202,7 @@
                                                     <span style="color: Red;">必填</span>
                                                 </div>
                                             </td>
-                                            <td class="td1">
-                                                固定电话：
+                                            <td class="td1">固定电话：
                                             </td>
                                             <td>
                                                 <div class="floatDiv">
@@ -343,10 +257,8 @@
                     <div class="clearfix">
                     </div>
                     <div class="userInfoBtn" id="gl_submit" style="display: block;">
-                        <input type="button" id="btn_pre" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/order15.gif);
-                        border-width: 0px; cursor: pointer; width: 139px; height: 44px;">
-                        <input type="button" id="btn_next" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/order19.gif);
-                        border-width: 0px; cursor: pointer; width: 139px; height: 44px;" />
+                        <input type="button" id="btn_pre" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/order15.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;" />
+                        <input type="button" id="btn_next" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/order19.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;" />
                     </div>
                     <script>
                         if (sessionStorage.getItem("Order") == null) {
@@ -356,13 +268,13 @@
                         $(function () {
                             $("#btn_pre").click(function () {
                                 var datat = []; //传递成人信息数组
-                                var name = $("#GetLength").text(); //保存成人数量
+                                var name = $("#Content_GetLength").text(); //保存成人数量
                                 for (var i = 0; i < name; i++) {
-                                    var a = $("#div_ch_person_" + i + " input[name=name]").val();
-                                    var b = $("#div_ch_person_" + i + " select[name=select]").val();
-                                    var c = $("#div_ch_person_" + i + " input[name=CardId]").val();
-                                    var d = $("#div_ch_person_" + i + " input[name=phone]").val();
-                                    var person = { a: a, b: b, c: c, d: d };
+                                    var cName = $("#div_ch_person_" + i + " input[name=name]").val();
+                                    var cardTypeId = $("#div_ch_person_" + i + " select[name=select]").val();
+                                    var carId = $("#div_ch_person_" + i + " input[name=CardId]").val();
+                                    var phone = $("#div_ch_person_" + i + " input[name=phone]").val();
+                                    var person = { cName: cName, cardTypeId: cardTypeId, carId: carId, phone: phone };
                                     datat.push(person); //将信息存入数组
                                 }
                                 //获得联系人信息
@@ -370,7 +282,7 @@
                                 var Lxmobile = $("#txt_mobile").val();
                                 var Lxemail = $("#txt_email").val();
                                 var Lxphone = $("#txt_start_phone").val() + "-" + $("#txt_end_phone").val();
-                                sessionStorage.setItem("dat",JSON.stringify(datat));
+                                sessionStorage.setItem("dat", JSON.stringify(datat));
                                 sessionStorage.setItem("Lxname", Lxname);
                                 sessionStorage.setItem("Lxmobile", Lxmobile);
                                 sessionStorage.setItem("Lxemail", Lxemail);
@@ -388,13 +300,13 @@
                         $(function () {
                             var dat = []; //传递成人信息数组
                             $("#btn_next").click(function () {
-                                var name = $("#GetLength").text(); //保存成人数量
+                                var name = $("#Content_GetLength").text(); //保存成人数量
                                 for (var i = 0; i < name; i++) {
-                                    var a = $("#div_ch_person_" + i + " input[name=name]").val();
-                                    var b = $("#div_ch_person_" + i + " select[name=select]").val();
-                                    var c = $("#div_ch_person_" + i + " input[name=CardId]").val();
-                                    var d = $("#div_ch_person_" + i + " input[name=phone]").val();
-                                    var person = { a: a, b: b, c: c, d: d };
+                                    var cName = $("#div_ch_person_" + i + " input[name=name]").val();
+                                    var cardTypeId = $("#div_ch_person_" + i + " select[name=select]").val();
+                                    var carId = $("#div_ch_person_" + i + " input[name=CardId]").val();
+                                    var phone = $("#div_ch_person_" + i + " input[name=phone]").val();
+                                    var person = { cName: cName, cardTypeId: cardTypeId, carId: carId, phone: phone };
                                     dat.push(person); //将信息存入数组
                                 }
                                 //获得联系人信息
@@ -406,13 +318,28 @@
                                 var Etrs = sessionStorage.getItem("etrs") //儿童人数
                                 var Zjg = sessionStorage.getItem("orderzjg") //总金额
                                 var datt = JSON.stringify(dat); //将数组转化为JSON格式
-                                sessionStorage.setItem("dat",JSON.stringify(dat));
+                                sessionStorage.setItem("dat", JSON.stringify(dat));
                                 sessionStorage.setItem("Lxname", Lxname);
                                 sessionStorage.setItem("Lxmobile", Lxmobile);
                                 sessionStorage.setItem("Lxemail", Lxemail);
                                 sessionStorage.setItem("Lxphone", Lxphone);
-                                window.location.href="Order_3.aspx?datt=" + datt + "&Lxname=" + Lxname + "&Lxmobile=" + Lxmobile + "&Lxemail=" + Lxemail +
+                                window.location.href = "Order_3.aspx?datt=" + datt + "&Lxname=" + Lxname + "&Lxmobile=" + Lxmobile + "&Lxemail=" + Lxemail +
                                     "&Lxphone=" + Lxphone + "&Crrs=" + Crrs + "&Etrs=" + Etrs + "&Zjg=" + Zjg; //url传递参数
+                                $.ajax({
+                                    url: '/Services/Main.ashx?id=10',
+                                    dataType: 'JSON',
+                                    type: "GET",
+                                    data: {
+                                        Customers: datt,
+                                        sumMoney: Zjg,
+                                        lxname: Lxname,
+                                        lxmobile: Lxmobile,
+                                        lxphone: Lxphone,
+                                        lxemail: Lxemail
+                                    },
+                                    success: function (data) {
+                                    }
+                                })
                             });
                         })
                     </script>
@@ -420,36 +347,33 @@
                     </div>
                 </div>
 
-                <input type="hidden" id="txtHiddenPId" name="txtHiddenPId" value="1147">
-                <input type="hidden" id="txtHiddenDays" name="txtHiddenDays" value="2">
-                <input type="hidden" id="pid" name="pid" value="1147">
-                <input type="hidden" id="txtHiddenGoDate" name="txtHiddenGoDate" value="2019-05-08">
-                <input type="hidden" id="txtHiddenUzaiPrice" name="txtHiddenUzaiPrice" value="189">
-                <input type="hidden" id="txtHiddenChildPrice" name="txtHiddenChildPrice" value="160">
-                <input type="hidden" id="txtHiddenPersonNum" name="txtHiddenPersonNum" value="2">
-                <input type="hidden" id="txtHiddenChildNum" name="txtHiddenChildNum" value="0">
-                <input type="hidden" id="txtHiddenProcessType" name="txtHiddenProcessType" value="1">
-                <input type="hidden" id="txtHiddenMType" name="txtHiddenMType" value="3">
+                <input type="hidden" id="txtHiddenPId" name="txtHiddenPId" value="1147"/>
+                <input type="hidden" id="txtHiddenDays" name="txtHiddenDays" value="2"/>
+                <input type="hidden" id="pid" name="pid" value="1147"/>
+                <input type="hidden" id="txtHiddenGoDate" name="txtHiddenGoDate" value="2019-05-08"/>
+                <input type="hidden" id="txtHiddenUzaiPrice" name="txtHiddenUzaiPrice" value="189"/>
+                <input type="hidden" id="txtHiddenChildPrice" name="txtHiddenChildPrice" value="160"/>
+                <input type="hidden" id="txtHiddenPersonNum" name="txtHiddenPersonNum" value="2"/>
+                <input type="hidden" id="txtHiddenChildNum" name="txtHiddenChildNum" value="0"/>
+                <input type="hidden" id="txtHiddenProcessType" name="txtHiddenProcessType" value="1"/>
+                <input type="hidden" id="txtHiddenMType" name="txtHiddenMType" value="3"/>
 
-                <input type="hidden" id="txtSubmitHiddenAdd" name="txtSubmitHiddenAdd" value="77935^1147^0^5^2.0000^1900-01-01^0^5^3^人^^^^太平洋意外险$77936^1147^0^40^2.0000^1900-01-01^1^40^3^人^^^^单房差$0">
-                <input type="hidden" id="txtSubmitHiddenUb" name="txtSubmitHiddenUb" value="1,0,score">
-                <input type="hidden" id="txtSubmitHiddenUpTrain" name="txtSubmitHiddenUpTrain" value="">
+                <input type="hidden" id="txtSubmitHiddenAdd" name="txtSubmitHiddenAdd" value="77935^1147^0^5^2.0000^1900-01-01^0^5^3^人^^^^太平洋意外险$77936^1147^0^40^2.0000^1900-01-01^1^40^3^人^^^^单房差$0"/>
+                <input type="hidden" id="txtSubmitHiddenUb" name="txtSubmitHiddenUb" value="1,0,score"/>
+                <input type="hidden" id="txtSubmitHiddenUpTrain" name="txtSubmitHiddenUpTrain" value=""/>
 
-                <input type="hidden" id="txtHiddenUList" name="txtHiddenUList" value="">
-                <input type="hidden" id="txtHiddenDes" name="txtHiddenDes" value="">
-                <input type="hidden" id="txt_current_date_hz" value="2012-11-20">
+                <input type="hidden" id="txtHiddenUList" name="txtHiddenUList" value=""/>
+                <input type="hidden" id="txtHiddenDes" name="txtHiddenDes" value=""/>
+                <input type="hidden" id="txt_current_date_hz" value="2012-11-20"/>
 
-                <input type="hidden" id="allp" name="allp" value="378">
-                <input type="hidden" id="ddl_nums_person" name="ddl_nums_person" value="0">
-
-            </form>
+                <input type="hidden" id="allp" name="allp" value="378"/>
+                <input type="hidden" id="ddl_nums_person" name="ddl_nums_person" value="0"/>
         </div>
         <script src="../Scripts/Order/two_order.js" type="text/javascript"></script>
         <script src="../Scripts/Order/jquery.scrollfollow.js" type="text/javascript"></script>
         <script src="../Scripts/Order/tooltip.js" type="text/javascript"></script>
-        <%--<script src="../Scripts/Order/order.js" type="text/javascript"></script>--%>
         <script type="text/javascript">
-    $(function () {
+            $(function () {
 
                 $('.tip').hover(function () {
                     $(this).parents('.userType').find('select').hide();
@@ -457,7 +381,7 @@
                     $(this).parents('.userType').find('select').show();
                 });
             });</script>
-       <div class="blank"></div>
+        <div class="blank"></div>
         <div id="ftw">
             <div id="ft">
                 <div class="xiantiao"></div>
@@ -476,7 +400,8 @@
                 <div align="center" class="beian_eng">
                     Copyright 2013 www.01nz.com.cn All Rights Reserved.
                 </div>
-                <div align="center"><img src="./在线预订-第一农庄网_files/xian.jpg" alt="灰线"></div>
+                <div align="center">
+                    <img src="./在线预订-第一农庄网_files/xian.jpg" alt="灰线"></div>
                 <div align="center">
                     <img src="./在线预订-第一农庄网_files/jubao.gif" alt="举报中心" class="img">
                     <img src="./在线预订-第一农庄网_files/end_2.gif" alt="官方认证" class="img">
@@ -490,5 +415,9 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+</asp:Content>
+<asp:Content runat="server" ContentPlaceHolderID="Footer" ID="Footer">
+    <script src="../Scripts/Order/two_order.js" type="text/javascript"></script>
+    <script src="../Scripts/Order/jquery.scrollfollow.js" type="text/javascript"></script>
+    <script src="../Scripts/Order/tooltip.js" type="text/javascript"></script>
+</asp:Content>
