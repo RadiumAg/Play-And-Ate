@@ -9,25 +9,63 @@
             onLoadSuccess: function (data) {
                 console.log(data);
             },
-            columns: [[
-                { field: 'OrderId', width: 50, title: '订单编号' },
-                { field: 'OrderName', width: 50, title: '订单名' },
-                { field: 'CustomerNum', width: 50, title: '客户数量' },
-                {
-                    field: 'OrderPrice', width: 50, title: '总价格'
-                },
-                {
-                    field: 'Success', width: 50, title: '订单状态', formatter: function (value, rowData, rowIndex) {
-                        if (value == "true") {
-                            return `<span>订单已支付</span>`;
+            toolbar: [{
+                iconCls: 'icon-ok',
+                text: '删除',
+                handler: function (data) {
+                    $.messager.confirm("提示", "确认删除吗？", function (result) {
+                        if (result) {
+                            console.log("删除中");
+                            console.log(($("#dgOrder").datagrid("getSelections")));
+                            $.ajax({
+                                url: '/Services/OrderServices.ashx?id=1',
+                                type: "POST",
+                                dataType: "JSON",
+                                data:
+                                {
+                                    orderId: JSON.stringify($("#dgOrder").datagrid("getSelections"))
+                                },
+                                success: function (data) {
+                                    if (data) {
+                                        $.messager.alert("提示！", "删除成功！", "info", function () {
+                                            //重新加载
+                                            $("#dgOrder").datagrid("reload");
+                                        });
+                                    } else {
+                                        $.messager.alert("错误！", "删除订单号:" + data + "失败！");
+                                    }
+                                }
+                            });
                         }
-                        else {
-                            return `<span style="color:'red';">订单未支付</span>`;
-                        }
-                    }
-                },
+                    })
 
-            ]]
+
+                }
+            }],
+            columns:
+                [[
+                    { title: '多选框', colspan: 1, width: 10, checkbox: true },
+                    { title: '数据', width: 50, colspan: 5 }
+                ],
+                [
+                    { checkbox: true, width: 50, title: '' },
+                    { field: 'OrderId', width: 50, title: '订单编号' },
+                    { field: 'OrderName', width: 50, title: '订单名' },
+                    { field: 'CustomerNum', width: 50, title: '客户数量' },
+                    {
+                        field: 'OrderPrice', width: 50, title: '总价格'
+                    },
+                    {
+                        field: 'Success', width: 50, title: '订单状态', formatter: function (value, rowData, rowIndex) {
+                            if (value == "true") {
+                                return `<span>订单已支付</span>`;
+                            }
+                            else {
+                                return `<span style="color:'black';">订单未支付</span>`;
+                            }
+                        }
+                    },
+                ]]
         });
     </script>
 </body>
