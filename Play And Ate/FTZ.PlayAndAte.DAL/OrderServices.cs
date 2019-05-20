@@ -44,11 +44,22 @@ namespace FTZ.PlayAndAte.DAL
             {
                 using (PlayAndAteEntities entities = new PlayAndAteEntities())
                 {
-                    int productId = entities.Product.Include("UserInfo_Role")
+                    entities.Configuration.LazyLoadingEnabled = false;//关闭延迟加载
+                    List<Order> result = new List<Order>();
+                    var productIdList = entities.Product
+                                                    .Include("UserInfo_Role")
                                                     .Where(x => x.UserInfo_Role.UserName == UserName)
-                                                    .SingleOrDefault().ProductId;
-                    var data = entities.Order.Where(x => x.ProductId == productId);
-                    return data.ToList();
+                                                    .Select(x => x.ProductId);
+                    foreach (int id in productIdList)
+                    {
+                        var data = entities.Order
+                                            .Where(x => x.ProductId.Equals(id));
+                        foreach (Order order in data)
+                        {
+                            result.Add(order);
+                        }
+                    }
+                    return result;
                 }
             }
             catch (Exception ex)
