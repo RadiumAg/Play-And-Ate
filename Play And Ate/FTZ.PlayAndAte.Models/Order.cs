@@ -17,19 +17,22 @@ namespace FTZ.PlayAndAte.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Order()
         {
-            this.Customers = new HashSet<Customers>();
+            this.OrderItem = new HashSet<OrderItem>();
         }
     
-        public int Id { get; set; }
-        public string OrderId { get; set; }
+        public int OrderId { get; set; }
         public string OrderName { get; set; }
         public int CustomerNum { get; set; }
         public decimal OrderPrice { get; set; }
         public int ProductId { get; set; }
         public int UserId { get; set; }
+        public bool Success { get; set; }
+        public Nullable<int> ContactsId { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Customers> Customers { get; set; }
+        public virtual Contacts Contacts { get; set; }
         public virtual UserInfo_Role UserInfo_Role { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<OrderItem> OrderItem { get; set; }
+        public virtual Product Product { get; set; }
     }
 }

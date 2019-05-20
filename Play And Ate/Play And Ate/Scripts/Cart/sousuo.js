@@ -16,16 +16,16 @@ window.onload=function()
 	input.onblur=function(){
 		input.value=input.value;
 	}
-	var url="http://www.01nz.com.cn/store/index/keyword-";
+	var url="../Search/Search.aspx";
 	sousuo_btn.onclick=function(){
 		if (input.value == '请输入您要搜索的关键词')
 		{
 			input.value = '';
 		}
-		sousuo_btn.href+=url+input.value;
+        sousuo_btn.href +="../Search/Search.aspx?content="+input.value;
 	}
 	
-	var map_search_url="/store/map/keyword-";
+    var map_search_url ="../Search/Search.aspx?content=";
 	sousuo_btn_map.onclick=function(){
 		if (input.value == '请输入您要搜索的关键词')
 		{

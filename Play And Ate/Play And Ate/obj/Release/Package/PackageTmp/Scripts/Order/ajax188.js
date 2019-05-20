@@ -201,9 +201,7 @@ this.SendGet2 = function(purl) {
 		if(purl.indexOf('?')==-1) purl = purl + '?' + gkey;
 		else  purl = purl + '&' + gkey;
 	}
-	A188XHTTP.open("GET", purl, false);
 	this.SendHead();
-	A188XHTTP.send(null);
 	//firefox中直接检测XHTTP状态
 	this.BarrageStat();
 };

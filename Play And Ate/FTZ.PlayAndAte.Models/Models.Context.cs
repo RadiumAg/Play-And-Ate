@@ -27,9 +27,11 @@ namespace FTZ.PlayAndAte.Models
     
         public virtual DbSet<Area> Area { get; set; }
         public virtual DbSet<CardType> CardType { get; set; }
+        public virtual DbSet<Contacts> Contacts { get; set; }
         public virtual DbSet<Customers> Customers { get; set; }
         public virtual DbSet<Image> Image { get; set; }
         public virtual DbSet<Order> Order { get; set; }
+        public virtual DbSet<OrderItem> OrderItem { get; set; }
         public virtual DbSet<PPointsType> PPointsType { get; set; }
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<PTotalType> PTotalType { get; set; }

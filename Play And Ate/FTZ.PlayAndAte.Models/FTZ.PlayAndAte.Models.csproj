@@ -56,6 +56,9 @@
     <Compile Include="CardType.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
+    <Compile Include="Contacts.cs">
+      <DependentUpon>Models.tt</DependentUpon>
+    </Compile>
     <Compile Include="Customers.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
@@ -78,6 +81,9 @@
       <DependentUpon>Models.edmx</DependentUpon>
     </Compile>
     <Compile Include="Order.cs">
+      <DependentUpon>Models.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OrderItem.cs">
       <DependentUpon>Models.tt</DependentUpon>
     </Compile>
     <Compile Include="Point.cs">

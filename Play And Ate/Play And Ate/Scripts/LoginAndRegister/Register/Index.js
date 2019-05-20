@@ -56,8 +56,9 @@ function dtime(i) {
 function SMSMsg() {
     $("#get-code").click(function () {
         if (!$("#phoneNumber").val() == "") {
+            console.log($("#signup-mobile-address").val());
             $.ajax({
-                url: "../Services/Main.ashx?id=3",
+                url: "/Services/Main.ashx?id=3",
                 type: "POST",
                 dataType: "JSON",
                 data: {
