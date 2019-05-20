@@ -788,7 +788,6 @@
     <Content Include="Order\Order_4.aspx" />
     <Content Include="Order\Order_5.aspx" />
     <Content Include="Order\PayTo.aspx" />
-    <Content Include="Order\WebForm1.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
     <Content Include="Content\Search\new_default.css.bak" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
@@ -1333,13 +1332,6 @@
     </Compile>
     <Compile Include="Order\PayTo.aspx.designer.cs">
       <DependentUpon>PayTo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Order\WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Order\WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products\Ecological.aspx.cs">
       <DependentUpon>Ecological.aspx</DependentUpon>

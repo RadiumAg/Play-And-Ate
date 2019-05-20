@@ -51,21 +51,12 @@
                                                 <div class="fastCalender2" id="fastCalender2">
                                                     <div class="p10">
                                                         <span class="s10 pTimeSpan">
-                                                            <input type="text" class="pTime" value="2019-05-04 (星期六) 出发,199元/成人, 160元/儿童" style="color: #666666" id="pTime"></span>
+                                                            <input type="text" class="pTime" value="2019-05-29 (星期三) 出发,189元/成人, 160元/儿童" style="color: #666666" id="pTime"></span>
                                                         <div class="clearfix"></div>
                                                         <div class="s10Trim1 pDropCalender" style="z-index: 999;">
                                                             <div class="calenderPart" id="calenderPart">
                                                                 <div class="calenderPartM">
                                                                     <ul>
-                                                                        <li id="2019-04-27" v="2019-04-27" son="160" title="199" onclick="changeGoDate(this)">2019-04-27 (星期六) 出发,<b>199</b>元/成人, 160元/儿童</li>
-                                                                        <li id="2019-05-01" v="2019-05-01" son="160" title="189" onclick="changeGoDate(this)">2019-05-01 (星期三) 出发,<b>189</b>元/成人, 160元/儿童</li>
-                                                                        <li id="2019-05-04" v="2019-05-04" son="160" title="199" onclick="changeGoDate(this)">2019-05-04 (星期六) 出发,<b>199</b>元/成人, 160元/儿童</li>
-                                                                        <li id="2019-05-08" v="2019-05-08" son="160" title="189" onclick="changeGoDate(this)">2019-05-08 (星期三) 出发,<b>189</b>元/成人, 160元/儿童</li>
-                                                                        <li id="2019-05-11" v="2019-05-11" son="160" title="199" onclick="changeGoDate(this)">2019-05-11 (星期六) 出发,<b>199</b>元/成人, 160元/儿童</li>
-                                                                        <li id="2019-05-15" v="2019-05-15" son="160" title="189" onclick="changeGoDate(this)">2019-05-15 (星期三) 出发,<b>189</b>元/成人, 160元/儿童</li>
-                                                                        <li id="2019-05-18" v="2019-05-18" son="160" title="199" onclick="changeGoDate(this)">2019-05-18 (星期六) 出发,<b>199</b>元/成人, 160元/儿童</li>
-                                                                        <li id="2019-05-22" v="2019-05-22" son="160" title="189" onclick="changeGoDate(this)">2019-05-22 (星期三) 出发,<b>189</b>元/成人, 160元/儿童</li>
-                                                                        <li id="2019-05-25" v="2019-05-25" son="160" title="199" onclick="changeGoDate(this)">2019-05-25 (星期六) 出发,<b>199</b>元/成人, 160元/儿童</li>
                                                                         <li id="2019-05-29" v="2019-05-29" son="160" title="189" onclick="changeGoDate(this)">2019-05-29 (星期三) 出发,<b>189</b>元/成人, 160元/儿童</li>
                                                                         <li id="2019-06-01" v="2019-06-01" son="160" title="199" onclick="changeGoDate(this)">2019-06-01 (星期六) 出发,<b>199</b>元/成人, 160元/儿童</li>
                                                                         <li id="2019-06-05" v="2019-06-05" son="160" title="189" onclick="changeGoDate(this)">2019-06-05 (星期三) 出发,<b>189</b>元/成人, 160元/儿童</li>
@@ -83,6 +74,15 @@
                                                                         <li id="2019-07-17" v="2019-07-17" son="160" title="189" onclick="changeGoDate(this)">2019-07-17 (星期三) 出发,<b>189</b>元/成人, 160元/儿童</li>
                                                                         <li id="2019-07-20" v="2019-07-20" son="160" title="199" onclick="changeGoDate(this)">2019-07-20 (星期六) 出发,<b>199</b>元/成人, 160元/儿童</li>
                                                                         <li id="2019-07-24" v="2019-07-24" son="160" title="189" onclick="changeGoDate(this)">2019-07-24 (星期三) 出发,<b>189</b>元/成人, 160元/儿童</li>
+                                                                        <li id="2019-07-27" v="2019-07-27" son="160" title="199" onclick="changeGoDate(this)">2019-07-27 (星期六) 出发,<b>199</b>元/成人, 160元/儿童</li>
+                                                                        <li id="2019-07-30" v="2019-07-30" son="160" title="199" onclick="changeGoDate(this)">2019-07-30 (星期三) 出发,<b>199</b>元/成人, 160元/儿童</li>
+                                                                        <li id="2019-08-03" v="2019-08-03" son="160" title="189" onclick="changeGoDate(this)">2019-08-03 (星期六) 出发,<b>189</b>元/成人, 160元/儿童</li>
+                                                                        <li id="2019-08-06" v="2019-08-06" son="160" title="199" onclick="changeGoDate(this)">2019-08-06 (星期三) 出发,<b>199</b>元/成人, 160元/儿童</li>
+                                                                        <li id="2019-08-10" v="2019-08-10" son="160" title="189" onclick="changeGoDate(this)">2019-08-10 (星期六) 出发,<b>189</b>元/成人, 160元/儿童</li>
+                                                                        <li id="2019-08-13" v="2019-08-13" son="160" title="199" onclick="changeGoDate(this)">2019-08-13 (星期三) 出发,<b>199</b>元/成人, 160元/儿童</li>
+                                                                        <li id="2019-08-17" v="2019-08-17" son="160" title="189" onclick="changeGoDate(this)">2019-08-17 (星期六) 出发,<b>189</b>元/成人, 160元/儿童</li>
+                                                                        <li id="2019-08-28" v="2019-08-28" son="160" title="199" onclick="changeGoDate(this)">2019-08-28 (星期三) 出发,<b>199</b>元/成人, 160元/儿童</li>
+                                                                        <li id="2019-08-31" v="2019-08-31" son="160" title="189" onclick="changeGoDate(this)">2019-08-31 (星期六) 出发,<b>189</b>元/成人, 160元/儿童</li>
                                                                     </ul>
                                                                 </div>
                                                                 <div class="calenderPartF"></div>
@@ -185,6 +185,8 @@
                                     sessionStorage.setItem("crrs", cr); //保存成人人数
                                     sessionStorage.setItem("etrs", et); //保存儿童人数
                                     console.log(sessionStorage.getItem("crrs"));
+                                    var sj = $("#pTime").val();
+                                    sessionStorage.setItem("sj", sj.substring(0, 11));    
                                     window.location.href = "Order_2.aspx?Length=" + $("#txtHiddenPersonNum").val() + "&crzjg=" + $("#getjiage").html() +
                                         "&crjg=" + $("#gethidChenRen").html() + "&etzjg=" + $("#getrtjiage").html() + "&etrs=" + $("#txtHiddenChildNum").val()
                                         + "&etjg=" + $("#gethidErTong").html() + "&zjg=" + $("#offerPrice").html(); //url传递参数

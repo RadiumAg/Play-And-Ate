@@ -135,8 +135,8 @@
                                 }
                             }
                             //返回上一页时呈现上一页原有数据
-                            if (sessionStorage.getItem("dat") != null & sessionStorage.getItem("crrs") != null) {
-                                var crrs = sessionStorage.getItem("crrs");
+                            if (sessionStorage.getItem("dat") != null & sessionStorage.getItem("crsl") != null) {
+                                var crrs = sessionStorage.getItem("crsl");
                                 var dat = JSON.parse(sessionStorage.getItem("dat"));
                                 for (var i = 0; i < crrs; i++) {
                                     var cName = $("#div_ch_person_" + i + " input[name=name]").val(dat[i].cName);
@@ -207,7 +207,7 @@
                                         <td>
                                             <div class="floatDiv">
                                                 <input class="input3" id="txt_start_phone" name="txt_start_phone" maxlength="4" value="">
-                                                -
+                                                
                                                     <input class="input4" id="txt_end_phone" name="txt_end_phone" maxlength="8" value="">
                                                 <span style="color: Red;" id="span_phone"></span>
                                             </div>
@@ -287,7 +287,7 @@
                             sessionStorage.setItem("Lxmobile", Lxmobile);
                             sessionStorage.setItem("Lxemail", Lxemail);
                             sessionStorage.setItem("Lxphone", Lxphone);
-
+                            sessionStorage.setItem("crsl", name);
                             //window.location.href = document.referrer;
                             //window.history.back(-1); //返回上一页
                             //返回上一页
@@ -323,6 +323,7 @@
                             sessionStorage.setItem("Lxmobile", Lxmobile);
                             sessionStorage.setItem("Lxemail", Lxemail);
                             sessionStorage.setItem("Lxphone", Lxphone);
+                            sessionStorage.setItem("crsl", name);
                             window.location.href = "Order_3.aspx?datt=" + datt + "&Lxname=" + Lxname + "&Lxmobile=" + Lxmobile + "&Lxemail=" + Lxemail +
                                 "&Lxphone=" + Lxphone + "&Crrs=" + Crrs + "&Etrs=" + Etrs + "&Zjg=" + Zjg; //url传递参数
                             $.ajax({
