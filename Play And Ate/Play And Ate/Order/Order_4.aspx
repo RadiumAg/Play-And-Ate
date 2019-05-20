@@ -39,7 +39,7 @@
                                             <tbody>
                                                 <tr>
                                                     <td>订单号：<%= Play_And_Ate.Helper.OrderMessage.OrderName %></td>
-                                                    <td>名称：上海出发 【临安】东天目山、青山湖2日农家行 </td>
+                                                    <td id="jqname">名称：上海出发 【临安】东天目山、青山湖2日农家行 </td>
                                                 </tr>
                                                 <tr>
                                                     <td><span id="renshu">人数：2人（2成人+0儿童）</span>
@@ -51,6 +51,11 @@
                                         </table>
                                     </div>
                                 </div>
+                                <script>
+                                    $(function () {
+                                        $("#jqname").html(sessionStorage.getItem("jqname"));
+                                    })
+                                </script>
                                 <script>
                                     //显示人数，金额
                                     $(function () {

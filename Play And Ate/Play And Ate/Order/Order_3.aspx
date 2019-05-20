@@ -16,6 +16,9 @@
         #Label2{
             display:none;
         }
+        #Literal1{
+            display:none;
+        }
     </style>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="Content" runat="server" ID="Content">
@@ -63,10 +66,10 @@
                                                 <tr>
                                                     <td class="lt">CHN114762</td>
                                                     <td class="lt" style="text-align: center;">
-                                                        <a class="a1" href="http://xianlu.01nz.com.cn/order/188_order_3.php#" target="_blank">上海出发 【临安】东天目山、青山湖2日农家行</a>
+                                                        <a id="jqname" class="a1" href="#" target="_blank">上海出发 【临安】东天目山、青山湖2日农家行</a>
                                                     </td>
                                                     <td>上海</td>
-                                                    <td>2019-05-08</td>
+                                                    <td><span id="cfsj">2019-05-29</span></td>
                                                     <td id="cret" name="cret">2 成人+ 0儿童 </td>
                                                     <td>
                                                         <b>￥</b><b id="proTotal">378</b>
@@ -75,6 +78,12 @@
                                             </tbody>
                                         </table>
                                     </div>
+                                    <script>
+                                        $(function () {
+                                            $("#cfsj").html(sessionStorage.getItem("sj"));
+                                            $("#jqname").html(sessionStorage.getItem("jqname"));
+                                        })
+                                    </script>
                                     <script>
                                         //显示出行人数和总金额
                                         $(function () {
@@ -126,7 +135,7 @@
                                             </tbody>
                                         </table>
                                     </div>
-                                    <asp:Label ID="Label1" runat="server" Text="1"></asp:Label>
+                                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label>
                                     <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
                                     <script>
                                         $(function () {
@@ -147,9 +156,9 @@
                                             var iiLength =<%= Crrs %>;
                                             for (var i = 0; i < iiLength; i++) {
                                                 var a = list[i];
-                                                console.log(a.name);
+                                                console.log(a.Name);
                                                 $("#tr_" + i + " td[name=name1]").html(a.Name);
-                                                $("#tr_" + i + " td[name=select1]").html(a.CardTypeId);
+                                                $("#tr_" + i + " td[name=select1]").html(a.CardTypeId.TypeName);
                                                 $("#tr_" + i + " td[name=cardid1]").html(a.Id_Number);
                                                 $("#tr_" + i + " td[name=phone1]").html(a.Phone);
                                             }
@@ -196,10 +205,9 @@
                                     <!--联系人信息 END-->
                                 </div>
                                 <div id="yans" style="height: 220px; overflow: hidden;"></div>
-                                <div id="orderProtocol" class="orderProtocol">
+                                <div id="orderProtocol" class="orderProtocol" style="margin-top:100px;">
                                     <div class="hd">
                                         <ul>
-
                                             <li class=""><a href="http://xianlu.01nz.com.cn/order/188_order_3.php#">费用包含 </a></li>
                                             <li class="on"><a href="http://xianlu.01nz.com.cn/order/188_order_3.php#">费用不包含 </a></li>
                                             <li class=""><a href="http://xianlu.01nz.com.cn/order/188_order_3.php#">温馨提示 </a></li>
@@ -351,7 +359,6 @@
                         <input type="hidden" id="userName" name="userName" value="苏乞儿"/>
                         <input type="hidden" id="txt_mobile0" name="txt_mobile0" value="18815168007"/>
                         <input type="hidden" id="dd" name="dd" value="500"/>
-
                         <input type="hidden" id="txtHiddenDes" name="txtHiddenDes" value=""/>
                         <input type="hidden" id="txtHiddenLinker" name="txtHiddenLinker"/>
                         <input type="hidden" id="txtHiddenClienter" name="txtHiddenClienter"/>
@@ -360,7 +367,7 @@
                         <input type="hidden" id="txtSubmitHiddenUb" name="txtSubmitHiddenUb" value="1,0,score"/>
                     </form>
                 </div>
-                <script src="../Scripts/Order/order.js" type="text/javascript"></script>--%>
+                <script src="../Scripts/Order/order.js" type="text/javascript"></script>
                 <div class="commitment">
                     <div class="commitment_head">阳光服务承诺</div>
                     <ul>
