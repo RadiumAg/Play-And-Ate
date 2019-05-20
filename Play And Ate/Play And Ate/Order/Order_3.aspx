@@ -16,6 +16,9 @@
         #Label2{
             display:none;
         }
+        #Literal1{
+            display:none;
+        }
     </style>
 </asp:Content>
 <asp:Content ContentPlaceHolderID="Content" runat="server" ID="Content">
@@ -196,10 +199,9 @@
                                     <!--联系人信息 END-->
                                 </div>
                                 <div id="yans" style="height: 220px; overflow: hidden;"></div>
-                                <div id="orderProtocol" class="orderProtocol">
+                                <div id="orderProtocol" class="orderProtocol" style="margin-top:100px;">
                                     <div class="hd">
                                         <ul>
-
                                             <li class=""><a href="http://xianlu.01nz.com.cn/order/188_order_3.php#">费用包含 </a></li>
                                             <li class="on"><a href="http://xianlu.01nz.com.cn/order/188_order_3.php#">费用不包含 </a></li>
                                             <li class=""><a href="http://xianlu.01nz.com.cn/order/188_order_3.php#">温馨提示 </a></li>
