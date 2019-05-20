@@ -24,7 +24,8 @@
                 <div class="orderWrap">
                     <div class="userInfo">
                         <h2>在线预订：<a class="a1" href='../Line/' target="_blank"></a> <a href="">
-                            <asp:Label ID="Label1" runat="server" Text='<%#Eval("路线") %>'></asp:Label></a>&lt;上海出发&gt;
+                            <asp:label id="Label1" runat="server" text='<%#Eval("路线") %>'></asp:label>
+                        </a>&lt;上海出发&gt;
                         </h2>
                         <div class="checkOrderInfo">
                             <div class="hd">
@@ -287,6 +288,32 @@
                         }
                     });
                 }
+            </script>
+            <script>
+                //返回页面后自动点击按钮,恢复原有数据
+                $(function () {
+                    if (sessionStorage.getItem("crrs") != null) {
+                        if (sessionStorage.getItem("crrs") > 2) {
+                            var inti = sessionStorage.getItem("crrs") - 2;
+                            for (var i = 0; i < inti; i++) {
+                                document.getElementById("bbb").click();
+                            }
+                        } else if (sessionStorage.getItem("crrs") < 2) {
+                            var inti = 2 - sessionStorage.getItem("crrs");
+                            for (var i = 0; i < inti; i++) {
+                                document.getElementById("ccc").click();
+                            }
+                        }
+                    }
+                    if (sessionStorage.getItem("etrs") != null) {
+                        if (sessionStorage.getItem("etrs") > 0) {
+                            var inti = sessionStorage.getItem("etrs");
+                            for (var i = 0; i < inti; i++) {
+                               document.getElementById("ddd").click();
+                            }
+                        }
+                    }
+                })
             </script>
         </div>
     </div>
