@@ -1077,7 +1077,6 @@
     <Content Include="Products\Fishing.html" />
     <Content Include="Products\Generated.aspx" />
     <Content Include="Products\Generated.html" />
-    <Content Include="Scripts\Admin\Index.js" />
     <Content Include="Scripts\Cart\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\Cart\baidumap.js" />
     <Content Include="Scripts\Cart\c.js" />
