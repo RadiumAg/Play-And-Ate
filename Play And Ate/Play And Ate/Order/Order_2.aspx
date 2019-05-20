@@ -135,8 +135,8 @@
                                 }
                             }
                             //返回上一页时呈现上一页原有数据
-                            if (sessionStorage.getItem("dat") != null & sessionStorage.getItem("crrs") != null) {
-                                var crrs = sessionStorage.getItem("crrs");
+                            if (sessionStorage.getItem("dat") != null & sessionStorage.getItem("crsl") != null) {
+                                var crrs = sessionStorage.getItem("crsl");
                                 var dat = JSON.parse(sessionStorage.getItem("dat"));
                                 for (var i = 0; i < crrs; i++) {
                                     var cName = $("#div_ch_person_" + i + " input[name=name]").val(dat[i].cName);
@@ -207,7 +207,7 @@
                                         <td>
                                             <div class="floatDiv">
                                                 <input class="input3" id="txt_start_phone" name="txt_start_phone" maxlength="4" value="">
-                                                -
+                                                
                                                     <input class="input4" id="txt_end_phone" name="txt_end_phone" maxlength="8" value="">
                                                 <span style="color: Red;" id="span_phone"></span>
                                             </div>
@@ -287,7 +287,7 @@
                             sessionStorage.setItem("Lxmobile", Lxmobile);
                             sessionStorage.setItem("Lxemail", Lxemail);
                             sessionStorage.setItem("Lxphone", Lxphone);
-
+                            sessionStorage.setItem("crsl", name);
                             //window.location.href = document.referrer;
                             //window.history.back(-1); //返回上一页
                             //返回上一页
@@ -323,6 +323,7 @@
                             sessionStorage.setItem("Lxmobile", Lxmobile);
                             sessionStorage.setItem("Lxemail", Lxemail);
                             sessionStorage.setItem("Lxphone", Lxphone);
+                            sessionStorage.setItem("crsl", name);
                             window.location.href = "Order_3.aspx?datt=" + datt + "&Lxname=" + Lxname + "&Lxmobile=" + Lxmobile + "&Lxemail=" + Lxemail +
                                 "&Lxphone=" + Lxphone + "&Crrs=" + Crrs + "&Etrs=" + Etrs + "&Zjg=" + Zjg; //url传递参数
                             $.ajax({
@@ -384,35 +385,6 @@
         <div class="blank"></div>
         <div id="ftw">
             <div id="ft">
-                <div class="xiantiao"></div>
-                <div class="blank"></div>
-                <div class="tc" align="center">
-                    <a href="http://www.01nz.com.cn/sys/id-20" target="_blank">关于我们</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-6" target="_blank">加入我们</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-30" target="_blank">联系我们</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-27" target="_blank">免责条款</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-28" target="_blank">隐私保护</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-45" target="_blank">网站地图</a>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;<a href="http://www.01nz.com.cn/sys/id-9" target="_blank">商家登录</a>
-                </div>
-                <div class="blank"></div>
-                <div class="beian" align="center">版权所有：上海威和信息科技有限公司  <a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备 13043989号-1</a>  电话：021-60172228    邮箱：mc_01nz@163.com </div>
-                <div align="center" class="beian_eng">
-                    Copyright 2013 www.01nz.com.cn All Rights Reserved.
-                </div>
-                <div align="center">
-                    <img src="./在线预订-第一农庄网_files/xian.jpg" alt="灰线">
-                </div>
-                <div align="center">
-                    <img src="./在线预订-第一农庄网_files/jubao.gif" alt="举报中心" class="img">
-                    <img src="./在线预订-第一农庄网_files/end_2.gif" alt="官方认证" class="img">
-                    <img src="./在线预订-第一农庄网_files/end_3.gif" alt="网络110" class="img">
-                    <!-- <img src="http://www.01nz.com.cn/app/Tpl/fanwe/images/site_logo.png" alt="安全联盟" class="img"/> -->
-                    <img src="./在线预订-第一农庄网_files/end_4.gif" alt="360绿色网站" class="img">
-                </div>
-                <div class="blank"></div>
-                <div class="blank"></div>
-                <div class="blank"></div>
             </div>
         </div>
     </div>

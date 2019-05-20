@@ -33,6 +33,8 @@ namespace Play_And_Ate.Order
             //成人信息数组
             dynamic datt = JsonConvert.DeserializeObject(Request["datt"]);
             //获取数组成员
+            //初始化list
+            list.Clear();
             foreach (var item in datt)
             {
                 Customers customers = new Customers();

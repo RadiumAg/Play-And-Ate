@@ -710,7 +710,7 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
     <link href="../Content/Show/FarmDetails/baidu_map.css" rel="stylesheet" />
             <link href="../Content/Show/FarmDetails/list.css" rel="stylesheet" />
             <link href="../Content/Show/FarmDetails/review.css" rel="stylesheet" />
-            <script src="../Scripts/Show/FarmDetails/seller.js"></script>
+            <%--<script src="../Scripts/Show/FarmDetails/seller.js"></script>--%>
             <script src="../Scripts/Show/FarmDetails/api.js"></script>
             <script src="../Scripts/Show/FarmDetails/getscript.js"></script>
           <link href="../Content/Show/FarmDetails/cityquery.css" rel="stylesheet" />
@@ -747,7 +747,7 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 			</dl>
 			<div class="mtext">
 				<div class="sd_sname">
-					<div class="sd_snames f-24 f_l"><%= product.ProductName %></div>
+					<div id="jqName" class="sd_snames f-24 f_l"><%= product.ProductName %></div>
 					<div class="f_r sd_rl"><span class="hrdl f_l">6589次浏览</span>&nbsp;&nbsp;
 						<!-- <a>我要认领</a> -->
 					</div>
@@ -879,7 +879,12 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 						<div class="sd_tj f_l">立即预定</div>
 					</a>
 				</div>
-
+                <script>
+                    $(function () {
+                        var jqname ="<%= this.product.ProductName %>";
+                        sessionStorage.setItem("jqname", jqname);
+                    })
+                </script>
 				<div class="sd_xql">
 					<div class="sd_mages">
 						<div class="sd_xql_top">
