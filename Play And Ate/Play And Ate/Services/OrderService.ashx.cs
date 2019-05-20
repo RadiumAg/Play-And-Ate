@@ -12,7 +12,7 @@ namespace Play_And_Ate.Services
     /// <summary>
     /// OrderServices 的摘要说明
     /// </summary>
-    public class OrderServices : IHttpHandler
+    public class OrderService : IHttpHandler
     {
 
         HttpContext context = HttpContext.Current;

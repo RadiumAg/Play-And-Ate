@@ -54,3 +54,5 @@ C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\FTZ.PlayAnd
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.csprojAssemblyReference.cache
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.csproj.CoreCompileInputs.cache
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.BLL\obj\Debug\FTZ.PlayAndAte.BLL.csproj.CopyComplete
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\EntityFramework.xml
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.BLL\bin\Debug\zh-Hans\EntityFramework.resources.dll
