@@ -12,6 +12,15 @@ namespace FTZ.PlayAndAte.BLL
     {
 
         /// <summary>
+        /// 删除
+        /// </summary>
+        /// <param name="order"></param>
+        /// <returns></returns>
+        public static bool DeleteOrder(Order order) {
+            return OrderServices.DeleteOrderData(order);
+        }
+
+        /// <summary>
         /// 更新订单状态
         /// </summary>
         public static void UPdateOrder(Order order)

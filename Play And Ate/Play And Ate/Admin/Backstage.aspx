@@ -179,7 +179,8 @@
                     <div class="sidebar-toggler hidden-phone"></div>
                     <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
                 </li>
-                <%if (RoleId == "1"){ %>
+                <%if (RoleId == "1")
+                    { %>
                 <li>
                     <a href="javascript:;">
                         <i class="icon-comments"></i>
@@ -195,8 +196,8 @@
                     </ul>
                 </li>
                 <%}
-                else if (this.RoleId == "2")
-                { %>
+                    else if (this.RoleId == "2")
+                    { %>
                 <li>
                     <a href="javascript:;">
                         <i class="icon-comments"></i>

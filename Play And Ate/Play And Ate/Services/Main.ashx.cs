@@ -310,7 +310,7 @@ namespace Play_And_Ate.Services
         /// </summary>
         public void ShowProduct()
         {
-            string userName = context.Request["UserName"].ToString();
+            string userName = this.context.Request.Cookies["UserName"].Value.ToString();
             context.Response.Write(JsonConvert.SerializeObject(ProductManager.ShowProducts(userName: userName)));
         }
 

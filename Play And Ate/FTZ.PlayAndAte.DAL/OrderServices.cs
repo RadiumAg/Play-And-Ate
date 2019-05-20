@@ -10,6 +10,45 @@ namespace FTZ.PlayAndAte.DAL
     public class OrderServices
     {
 
+        public static bool DeleteOrderData(Order order)
+        {
+            try
+            {
+                using (PlayAndAteEntities entities = new PlayAndAteEntities())
+                {
+                    entities.Configuration.LazyLoadingEnabled = false;
+                    //1.移除Customers
+                    List<Customers> customers = entities.Customers
+                                                        .Include("OrderItem")
+                                                        .Where(x => x.OrderItem.OrderId == order.OrderId)
+                                                        .ToList();
+                    entities.Customers.RemoveRange(customers);
+
+                    //2.移除OrderItem
+                    List<OrderItem> orderItems = entities.OrderItem
+                                                         .Where(x => x.OrderId == order.OrderId)
+                                                         .ToList();
+                    entities.OrderItem.RemoveRange(orderItems);
+
+                    //3.移除Order
+                    Order orderData = entities.Order
+                                               .Include("Contacts")
+                                               .Where(x => x.OrderId == order.OrderId)
+                                               .SingleOrDefault();
+
+                    //4.移除Contacts
+                    entities.Contacts.Remove(orderData.Contacts);
+                    entities.Order.Remove(orderData);
+                    entities.SaveChanges();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
         /// <summary>
         /// 更新订单状态
         /// </summary>
@@ -44,11 +83,22 @@ namespace FTZ.PlayAndAte.DAL
             {
                 using (PlayAndAteEntities entities = new PlayAndAteEntities())
                 {
-                    int productId = entities.Product.Include("UserInfo_Role")
+                    entities.Configuration.LazyLoadingEnabled = false;//关闭延迟加载
+                    List<Order> result = new List<Order>();
+                    var productIdList = entities.Product
+                                                    .Include("UserInfo_Role")
                                                     .Where(x => x.UserInfo_Role.UserName == UserName)
-                                                    .SingleOrDefault().ProductId;
-                    var data = entities.Order.Where(x => x.ProductId == productId);
-                    return data.ToList();
+                                                    .Select(x => x.ProductId);
+                    foreach (int id in productIdList)
+                    {
+                        var data = entities.Order
+                                            .Where(x => x.ProductId.Equals(id));
+                        foreach (Order order in data)
+                        {
+                            result.Add(order);
+                        }
+                    }
+                    return result;
                 }
             }
             catch (Exception ex)

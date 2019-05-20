@@ -1365,6 +1365,9 @@
     <Compile Include="Services\Main.ashx.cs">
       <DependentUpon>Main.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Services\OrderService.ashx.cs">
+      <DependentUpon>OrderService.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Shared\Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1448,6 +1451,7 @@
     <Content Include="Plugin\public\swiper\src\less\swiper.less" />
     <Content Include="Plugin\public\swiper\src\less\zoom.less" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <Content Include="Services\OrderService.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
