@@ -88,7 +88,7 @@
                                 <div class="blank1"></div>
                             </div>
                             <div style="float: left; margin-left: 15em; margin-top: -37px;">
-                                <input id="get-code" type="button" style="height: 30px;" value="获取验证码">
+                                <input id="get-code" type="button" style="height: 30px;" value="获取验证码"/>
                             </div>
                             <script>
                                 $(function () {

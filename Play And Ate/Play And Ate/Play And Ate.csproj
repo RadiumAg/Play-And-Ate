@@ -58,6 +58,12 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -559,6 +565,11 @@
     <Content Include="Images\Order\step4.gif" />
     <Content Include="Images\Order\tenpay_buy.gif" />
     <Content Include="Images\Order\微信支付.jpg" />
+    <Content Include="Images\Tailorism\53abb59815ac6_170x130.jpg" />
+    <Content Include="Images\Tailorism\n1%281%29.jpg" />
+    <Content Include="Images\Tailorism\n1%282%29.jpg" />
+    <Content Include="Images\Tailorism\n1%283%29.jpg" />
+    <Content Include="Images\Tailorism\n1%284%29.jpg" />
     <Content Include="Images\Tailorism\n1.jpg" />
     <Content Include="Images\Tailorism\n2.jpg" />
     <Content Include="Images\Tailorism\n3.jpg" />
@@ -798,6 +809,28 @@
     <Content Include="Plugin\jquery-3.3.1.min.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.min.js" />
+    <Content Include="Plugin\jqzoom\BSD-LICENSE.txt" />
+    <Content Include="Plugin\jqzoom\css\jquery.jqzoom.css" />
+    <Content Include="Plugin\jqzoom\demos\demo_alwayson.html" />
+    <Content Include="Plugin\jqzoom\demos\demo_drag.html" />
+    <Content Include="Plugin\jqzoom\demos\demo_innerzoom.html" />
+    <Content Include="Plugin\jqzoom\demos\demo_resizeposition.html" />
+    <Content Include="Plugin\jqzoom\demos\demo_reverse.html" />
+    <Content Include="Plugin\jqzoom\demos\demo_standard.html" />
+    <Content Include="Plugin\jqzoom\demos\imgProd\thumbs\triumph_thumb1.jpg" />
+    <Content Include="Plugin\jqzoom\demos\imgProd\thumbs\triumph_thumb2.jpg" />
+    <Content Include="Plugin\jqzoom\demos\imgProd\thumbs\triumph_thumb3.jpg" />
+    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_big1.jpg" />
+    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_big2.jpg" />
+    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_big3.jpg" />
+    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_small1.jpg" />
+    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_small2.jpg" />
+    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_small3.jpg" />
+    <Content Include="Plugin\jqzoom\images\advertise.jpg" />
+    <Content Include="Plugin\jqzoom\images\zoomloader.gif" />
+    <Content Include="Plugin\jqzoom\js\jquery-1.5.js" />
+    <Content Include="Plugin\jqzoom\js\jquery.jqzoom-core.js" />
+    <Content Include="Plugin\jqzoom\js\jquery.jqzoom-core.pack.js" />
     <Content Include="Plugin\public\media\css\bootstrap-modal.css" />
     <Content Include="Plugin\public\media\css\bootstrap-responsive.min.css" />
     <Content Include="Plugin\public\media\css\bootstrap.min.css" />
@@ -1461,6 +1494,86 @@
     <Content Include="Plugin\public\swiper\src\less\scrollbar.less" />
     <Content Include="Plugin\public\swiper\src\less\swiper.less" />
     <Content Include="Plugin\public\swiper\src\less\zoom.less" />
+    <Content Include="Plugin\jqzoom\.git\config" />
+    <Content Include="Plugin\jqzoom\.git\description" />
+    <Content Include="Plugin\jqzoom\.git\HEAD" />
+    <Content Include="Plugin\jqzoom\.git\hooks\applypatch-msg.sample" />
+    <Content Include="Plugin\jqzoom\.git\hooks\commit-msg.sample" />
+    <Content Include="Plugin\jqzoom\.git\hooks\fsmonitor-watchman.sample" />
+    <Content Include="Plugin\jqzoom\.git\hooks\post-update.sample" />
+    <Content Include="Plugin\jqzoom\.git\hooks\pre-applypatch.sample" />
+    <Content Include="Plugin\jqzoom\.git\hooks\pre-commit.sample" />
+    <Content Include="Plugin\jqzoom\.git\hooks\pre-push.sample" />
+    <Content Include="Plugin\jqzoom\.git\hooks\pre-rebase.sample" />
+    <Content Include="Plugin\jqzoom\.git\hooks\pre-receive.sample" />
+    <Content Include="Plugin\jqzoom\.git\hooks\prepare-commit-msg.sample" />
+    <Content Include="Plugin\jqzoom\.git\hooks\update.sample" />
+    <Content Include="Plugin\jqzoom\.git\index" />
+    <Content Include="Plugin\jqzoom\.git\info\exclude" />
+    <Content Include="Plugin\jqzoom\.git\logs\HEAD" />
+    <Content Include="Plugin\jqzoom\.git\logs\refs\heads\master" />
+    <Content Include="Plugin\jqzoom\.git\logs\refs\remotes\origin\HEAD" />
+    <Content Include="Plugin\jqzoom\.git\objects\05\4567214d9248bbdee29b0853c9b51d5ebddeb4" />
+    <Content Include="Plugin\jqzoom\.git\objects\05\6b0e0f5d0a0c2a1b5f4f9e394db3e925e91177" />
+    <Content Include="Plugin\jqzoom\.git\objects\08\4d9b07c82e26c60a178291afeccd3d5292cd5a" />
+    <Content Include="Plugin\jqzoom\.git\objects\10\64ea3d60bafa5486322f0b379643aa7af1c766" />
+    <Content Include="Plugin\jqzoom\.git\objects\15\ac13c896a894031a978b5da6969ff77d350273" />
+    <Content Include="Plugin\jqzoom\.git\objects\26\ad4e74ab3ee1a5d27fc0c04da65ed9e17cea17" />
+    <Content Include="Plugin\jqzoom\.git\objects\2b\a16e7e0588bf10484e45ab0c9ed5a1e7b6fffe" />
+    <Content Include="Plugin\jqzoom\.git\objects\2c\540c8c8c05b7c545470a7e6c92982380ff3bfe" />
+    <Content Include="Plugin\jqzoom\.git\objects\31\17659b5afdad82067367fe7a47198425321da7" />
+    <Content Include="Plugin\jqzoom\.git\objects\3b\c2ec404e5fead41eea9680d8748dae3d44aaf5" />
+    <Content Include="Plugin\jqzoom\.git\objects\3e\0f115e462572632cc51022c2d0fbbf4b65958f" />
+    <Content Include="Plugin\jqzoom\.git\objects\43\334895692879c81d9898c89e95d54ca6c41c0f" />
+    <Content Include="Plugin\jqzoom\.git\objects\43\b3c0d7ab8464774f88780862ee5de483a30f63" />
+    <Content Include="Plugin\jqzoom\.git\objects\46\5c2b3e03a79c7887f5ee76e7c711a3866cb2bd" />
+    <Content Include="Plugin\jqzoom\.git\objects\48\1e428d4adf992ba04190eb3630a9e34df47a07" />
+    <Content Include="Plugin\jqzoom\.git\objects\55\aa3a3a4cf084ec770a78cee8fcd65d75ff2d14" />
+    <Content Include="Plugin\jqzoom\.git\objects\5b\33f7e54f4e55b6b8774d86d96895db9af044b4" />
+    <Content Include="Plugin\jqzoom\.git\objects\5c\99a8d4a8889f15947dc465a69c6fa286dfddee" />
+    <Content Include="Plugin\jqzoom\.git\objects\5c\b034aabf7a77754983b18068dcf05238ad525e" />
+    <Content Include="Plugin\jqzoom\.git\objects\5c\c7990eb11bf1bbf033139251d5388f2a8bb39f" />
+    <Content Include="Plugin\jqzoom\.git\objects\5f\244feee76533f3e1bcdd77c4b851a56e8183f9" />
+    <Content Include="Plugin\jqzoom\.git\objects\68\e7a28ef61703de9aac397591988785d90648d9" />
+    <Content Include="Plugin\jqzoom\.git\objects\6b\ce94612c315c70f386d283e4b57df6e981cd4b" />
+    <Content Include="Plugin\jqzoom\.git\objects\70\876ad38af63b9a9761a2ef1004ad9f8ba39a1f" />
+    <Content Include="Plugin\jqzoom\.git\objects\70\d3203d3aad6025c49c2213712dd48fb0c781d3" />
+    <Content Include="Plugin\jqzoom\.git\objects\75\18225f146f86c97012aa2e901f5c25834f5456" />
+    <Content Include="Plugin\jqzoom\.git\objects\76\e6f8964e81c7f31b61d77d494bee028f6b9846" />
+    <Content Include="Plugin\jqzoom\.git\objects\77\27d4e46e3e3b31e63c34740e0f5cc82a9164cd" />
+    <Content Include="Plugin\jqzoom\.git\objects\79\5032ac89f218d98d63503cd8353802a2615e51" />
+    <Content Include="Plugin\jqzoom\.git\objects\7a\29fa64da824018618567f54500e8462865c9ea" />
+    <Content Include="Plugin\jqzoom\.git\objects\7c\e4eccbeadaeaa91efef832d837b2a1e1376b1a" />
+    <Content Include="Plugin\jqzoom\.git\objects\81\d381b670cd1401a7b39a3b763f0242fed250f9" />
+    <Content Include="Plugin\jqzoom\.git\objects\82\0827b15f28e1bfd75dd7c64891c8d12e2d1493" />
+    <Content Include="Plugin\jqzoom\.git\objects\84\5f77f562f319609636837d9dedc4f7d56e6ffb" />
+    <Content Include="Plugin\jqzoom\.git\objects\88\7a53954b6e5010445c911938d7b5e5e7f81e86" />
+    <Content Include="Plugin\jqzoom\.git\objects\9d\56083a03caafbf1e076c19ffc0c3316b5b3fa2" />
+    <Content Include="Plugin\jqzoom\.git\objects\a9\1d9a4358106cbbce128f533f723bc06869c61b" />
+    <Content Include="Plugin\jqzoom\.git\objects\ac\d2e7c48a11518e2dc2e21eae3063590db8d17d" />
+    <Content Include="Plugin\jqzoom\.git\objects\b0\9ce209c53b2e385dbf5a71d689b7338171e548" />
+    <Content Include="Plugin\jqzoom\.git\objects\b1\8e97d287a6a65eb2bb83b1d7600b13477be974" />
+    <Content Include="Plugin\jqzoom\.git\objects\b2\4d426674965eb0964f6f525e03786ed5f58c67" />
+    <Content Include="Plugin\jqzoom\.git\objects\b3\74495a3942121e00a58f0e647743e97c564b54" />
+    <Content Include="Plugin\jqzoom\.git\objects\b5\794b4f79682f54bb4bf3dbe70f371599293235" />
+    <Content Include="Plugin\jqzoom\.git\objects\b8\cb6edc771a71e5f871e4614f2fc0b7366f77e6" />
+    <Content Include="Plugin\jqzoom\.git\objects\bd\9517a5bfb6f536288a42184e451e457c2353c9" />
+    <Content Include="Plugin\jqzoom\.git\objects\c0\f5a79dcbd96af3ae57f6a9432044732fc46c50" />
+    <Content Include="Plugin\jqzoom\.git\objects\c3\7b5b38a4ded9c2846b8a6ad498abf9b41d86dd" />
+    <Content Include="Plugin\jqzoom\.git\objects\c6\1367db5d9c4e12c138783374851d504e10c028" />
+    <Content Include="Plugin\jqzoom\.git\objects\e3\e617b33f03f8c0e2cf6ff33329ed5085d2f0de" />
+    <Content Include="Plugin\jqzoom\.git\objects\e4\8ea458d1a5ea94e269b5ab09554527796411ef" />
+    <Content Include="Plugin\jqzoom\.git\objects\e9\be91bc4f04282da649da3edd41e28456862d74" />
+    <Content Include="Plugin\jqzoom\.git\objects\f2\0ad6d823faf301ad4db1b8ea7e2a3892f98956" />
+    <Content Include="Plugin\jqzoom\.git\objects\f5\eb172089a1640c636af5c168a1257a203f7caa" />
+    <Content Include="Plugin\jqzoom\.git\objects\f8\d12af06b6234d5044493fb296ab362bb59f5be" />
+    <Content Include="Plugin\jqzoom\.git\objects\f8\dde86e6cd7a32bacbc7a4e1ab420117acb944a" />
+    <Content Include="Plugin\jqzoom\.git\objects\ff\034ff42190dc0c19d3915290447c71eefc0dbe" />
+    <Content Include="Plugin\jqzoom\.git\packed-refs" />
+    <Content Include="Plugin\jqzoom\.git\refs\heads\master" />
+    <Content Include="Plugin\jqzoom\.git\refs\remotes\origin\HEAD" />
+    <Content Include="Plugin\jqzoom\images\Thumbs.db" />
+    <Content Include="Plugin\jqzoom\README.md" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Services\OrderService.ashx" />
     <None Include="Web.Debug.config">
@@ -1472,6 +1585,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Home\" />
+    <Folder Include="Plugin\jqzoom\.git\objects\info\" />
+    <Folder Include="Plugin\jqzoom\.git\objects\pack\" />
+    <Folder Include="Plugin\jqzoom\.git\refs\tags\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Commond\" />
   </ItemGroup>
