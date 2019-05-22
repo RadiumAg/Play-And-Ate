@@ -8,22 +8,16 @@
     <script src="../Scripts/Personage/hm.js"></script>
     <script src="../Scripts/Personage/analytics.js"></script>
     <script src="../Scripts/Personage/bdctrace-pc.js"></script>
-    <link rel="stylesheet" href="../Content/Personage/index.php">
     <link rel="stylesheet" href="../Content/Personage/newmember.css&amp;v=051610">
-    <link rel="stylesheet" href="../Content/Personage/index(1).php">
     <link href="../Content/Personage/header-air.css" rel="stylesheet">
     <link href="../Content/Personage/ui-lvmama.css" rel="stylesheet">
     <link href="../Content/Personage/ui-components.css" rel="stylesheet">
     <link href="../Content/Personage/lv-bought.css" rel="stylesheet">
     <link rel="stylesheet" href="../Content/Personage/global_pop.css">
     <link href="../Content/Personage/ui-components(1).css" rel="stylesheet">
-    <link rel="stylesheet" href="../Content/Personage/index(2).php">
     <link rel="stylesheet" href="../Content/Personage/newmember.css">
-    <link rel="stylesheet" href="../Content/Personage/index(3).php">
     <link rel="stylesheet" href="../Content/Personage/newcommon.css">
     <link rel="stylesheet" href="../Content/Personage/integral.css">
-    <script src="../Content/Personage/index(4).php"></script>
-    <script src="../Content/Personage/index(5).php"></script>
     <script src="../Content/Personage/lvmember.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
@@ -87,7 +81,7 @@
             </dl>
             <dl>
                 <dt><i class="info_icon"></i>个人订单<i class="downarr"></i></dt>
-                <dd><a href="#" id="lvnav_tourinfo">个人订单</a></dd>
+                <dd><a href="Order.aspx" id="lvnav_tourinfo">个人订单</a></dd>
             </dl>
 
         </div>
