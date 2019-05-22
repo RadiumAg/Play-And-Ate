@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -48,8 +49,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\aliyun-net-sdk-dysmsapi.dll</HintPath>
     </Reference>
-    <Reference Include="AspNetPager, Version=7.5.1.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
-      <HintPath>..\packages\AspNetPager_CN.7.5.1\lib\AspNetPager.dll</HintPath>
+    <Reference Include="AspNetPager">
+      <HintPath>D:\ChromeDownLoad\AspNetPagerCN-7.5.1\Demo\Bin\AspNetPager.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -58,6 +59,10 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Database, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
@@ -84,17 +89,21 @@
   <ItemGroup>
     <Content Include="Admin\Backstage.aspx" />
     <Content Include="Admin\PartialView\ShowBussinessData.html" />
-    <Content Include="Admin\PartialView\ShowCustomerOrder.html" />
-    <Content Include="Admin\PartialView\ShowProductsData.html" />
+    <Content Include="bin\aliyun-net-sdk-core.dll" />
+    <Content Include="bin\aliyun-net-sdk-dysmsapi.dll" />
+    <Content Include="bin\AspNetPager.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\FTZ.PlayAndAte.Models.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll" />
+    <Content Include="bin\Microsoft.Practices.ServiceLocation.xml" />
+    <Content Include="bin\Microsoft.QualityTools.Testing.Fakes.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
     <Content Include="Cart\Cart.aspx" />
     <Content Include="Cart\Cart.html" />
     <Content Include="Content\Admin\Index.css" />
-    <Content Include="Content\Cart\base.v606141511.css" />
-    <Content Include="Content\Cart\cf62177493ce4db40c22962f60d846f8.css" />
-    <Content Include="Content\Cart\core%281%29.php" />
-    <Content Include="Content\Cart\core.php" />
-    <Content Include="Content\Cart\tongji_360.php" />
-    <Content Include="Content\Cart\z_stat.php" />
     <Content Include="Content\Line\index.css" />
     <Content Include="Content\Line\LineDetial\a_rili.css" />
     <Content Include="Content\Line\LineDetial\index.css" />
@@ -112,12 +121,48 @@
     <Content Include="Content\Order\common_wm.html" />
     <Content Include="Content\Order\order.css" />
     <Content Include="Content\Order\style.css" />
+    <Content Include="Content\Personage\global_pop.css" />
+    <Content Include="Content\Personage\header-air.css" />
+    <Content Include="Content\Personage\index%281%29.php" />
+    <Content Include="Content\Personage\index%2810%29.php" />
+    <Content Include="Content\Personage\index%2811%29.php" />
+    <Content Include="Content\Personage\index%2812%29.php" />
+    <Content Include="Content\Personage\index%2813%29.php" />
+    <Content Include="Content\Personage\index%2814%29.php" />
+    <Content Include="Content\Personage\index%282%29.php" />
+    <Content Include="Content\Personage\index%283%29.php" />
+    <Content Include="Content\Personage\index%284%29.php" />
+    <Content Include="Content\Personage\index%285%29.php" />
+    <Content Include="Content\Personage\index%286%29.php" />
+    <Content Include="Content\Personage\index%287%29.php" />
+    <Content Include="Content\Personage\index%288%29.php" />
+    <Content Include="Content\Personage\index%289%29.php" />
+    <Content Include="Content\Personage\index.php" />
+    <Content Include="Content\Personage\integral.css" />
+    <Content Include="Content\Personage\invoice.css" />
+    <Content Include="Content\Personage\jquery.common.css" />
+    <Content Include="Content\Personage\lv-bought.css" />
+    <Content Include="Content\Personage\lv-user-mytrip.css" />
+    <Content Include="Content\Personage\newcommon.css" />
+    <Content Include="Content\Personage\newmember.css" />
+    <Content Include="Content\Personage\popup.css" />
+    <Content Include="Content\Personage\ui-components%281%29.css" />
+    <Content Include="Content\Personage\ui-components.css" />
     <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
     <Content Include="Content\Products\b61e5d222cddc2d58eececba5f1f9e27.css" />
     <Content Include="Content\Products\base.v606141511.css" />
     <Content Include="Content\Products\bmap.css" />
     <Content Include="Content\Products\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Products\hdcss.css" />
+    <Content Include="Content\Promotion\cityquery.css" />
+    <Content Include="Content\Promotion\datepicker%281%29.css" />
+    <Content Include="Content\Promotion\datepicker.css" />
+    <Content Include="Content\Promotion\font-awesome.min.css" />
+    <Content Include="Content\Promotion\main_huandeng.css" />
+    <Content Include="Content\Promotion\new_main.css" />
+    <Content Include="Content\Promotion\style.css" />
+    <Content Include="Content\Promotion\WdatePicker.css" />
+    <Content Include="Content\Promotion\weebox.css" />
     <Content Include="Content\Search\buttons.css" />
     <Content Include="Content\Search\chanel.css" />
     <Content Include="Content\Search\css.css" />
@@ -424,17 +469,6 @@
     <Content Include="Home\PartialView\Company.html" />
     <Content Include="Home\PartialView\Hot.html" />
     <Content Include="Images\Admin\Admin.jpg" />
-    <Content Include="Images\Cart\2.gif" />
-    <Content Include="Images\Cart\35.gif" />
-    <Content Include="Images\Cart\cs_dw.png" />
-    <Content Include="Images\Cart\end_2.gif" />
-    <Content Include="Images\Cart\end_3.gif" />
-    <Content Include="Images\Cart\icon.gif" />
-    <Content Include="Images\Cart\image_err.gif" />
-    <Content Include="Images\Cart\jubao.gif" />
-    <Content Include="Images\Cart\loge.gif" />
-    <Content Include="Images\Cart\wg.png" />
-    <Content Include="Images\Cart\xian.jpg" />
     <Content Include="Images\error\捏脸.gif" />
     <Content Include="Images\Home\5270b12bd8b1d.jpg" />
     <Content Include="Images\Home\52807b105cb1b.jpg" />
@@ -485,55 +519,6 @@
     <Content Include="Images\Home\n48.jpg" />
     <Content Include="Images\Home\n49.jpg" />
     <Content Include="Images\Home\n50.jpg" />
-    <Content Include="Images\Line\1409110H249.jpg" />
-    <Content Include="Images\Line\14091F52K0.jpg" />
-    <Content Include="Images\Line\140921054956.jpg" />
-    <Content Include="Images\Line\1409220AI1.jpg" />
-    <Content Include="Images\Line\1409230RP5.jpg" />
-    <Content Include="Images\Line\140I00P629.jpg" />
-    <Content Include="Images\Line\140I00S339.jpg" />
-    <Content Include="Images\Line\140QPS245.jpg" />
-    <Content Include="Images\Line\140QZ32I8.jpg" />
-    <Content Include="Images\Line\140QZ54352.jpg" />
-    <Content Include="Images\Line\140R1023042.jpg" />
-    <Content Include="Images\Line\140R2053516.jpg" />
-    <Content Include="Images\Line\140Z2015921.jpg" />
-    <Content Include="Images\Line\140Z5020S8.jpg" />
-    <Content Include="Images\Line\140ZZ55131.jpg" />
-    <Content Include="Images\Line\141014062231.jpg" />
-    <Content Include="Images\Line\1410160S350.jpg" />
-    <Content Include="Images\Line\14101F33K8.jpg" />
-    <Content Include="Images\Line\141021033247.jpg" />
-    <Content Include="Images\Line\141021060S5.jpg" />
-    <Content Include="Images\Line\141022054043.jpg" />
-    <Content Include="Images\Line\1411040G321.jpg" />
-    <Content Include="Images\Line\14110F14532.jpg" />
-    <Content Include="Images\Line\14110ZUQ7.jpg" />
-    <Content Include="Images\Line\141110062509.jpg" />
-    <Content Include="Images\Line\141120013920.jpg" />
-    <Content Include="Images\Line\1411230K024.jpg" />
-    <Content Include="Images\Line\14112F25154.jpg" />
-    <Content Include="Images\Line\141201034443.jpg" />
-    <Content Include="Images\Line\141204025959.jpg" />
-    <Content Include="Images\Line\15011Z60T8.jpg" />
-    <Content Include="Images\Line\150120034141.jpg" />
-    <Content Include="Images\Line\1501200G626.jpg" />
-    <Content Include="Images\Line\1501200KS3.jpg" />
-    <Content Include="Images\Line\150122093116.jpg" />
-    <Content Include="Images\Line\150122095S8.jpg" />
-    <Content Include="Images\Line\150123020547.jpg" />
-    <Content Include="Images\Line\150205031I2.jpg" />
-    <Content Include="Images\Line\150210093504.jpg" />
-    <Content Include="Images\Line\150212091136.jpg" />
-    <Content Include="Images\Line\15022F54G9.jpg" />
-    <Content Include="Images\Line\15022P20R1.jpg" />
-    <Content Include="Images\Line\LineDetial\jubao.gif" />
-    <Content Include="Images\Line\LineDetial\logo.gif" />
-    <Content Include="Images\Line\LineDetial\nopic.jpg" />
-    <Content Include="Images\Line\LineDetial\remai.gif" />
-    <Content Include="Images\Line\LineDetial\tuijian.gif" />
-    <Content Include="Images\Line\LineDetial\xian.jpg" />
-    <Content Include="Images\Line\xian.jpg" />
     <Content Include="Images\LoginAndRegister\2.gif" />
     <Content Include="Images\LoginAndRegister\35.gif" />
     <Content Include="Images\LoginAndRegister\52a1881254edd.png" />
@@ -549,16 +534,6 @@
     <Content Include="Images\LoginAndRegister\wechat.png" />
     <Content Include="Images\LoginAndRegister\wg.png" />
     <Content Include="Images\LoginAndRegister\xian.jpg" />
-    <Content Include="Images\Order\order12.gif" />
-    <Content Include="Images\Order\order6.gif" />
-    <Content Include="Images\Order\paypal_logo.gif" />
-    <Content Include="Images\Order\qyfk43_03.jpg" />
-    <Content Include="Images\Order\step1.gif" />
-    <Content Include="Images\Order\step2.gif" />
-    <Content Include="Images\Order\step3.gif" />
-    <Content Include="Images\Order\step4.gif" />
-    <Content Include="Images\Order\tenpay_buy.gif" />
-    <Content Include="Images\Order\微信支付.jpg" />
     <Content Include="Images\Tailorism\n1.jpg" />
     <Content Include="Images\Tailorism\n2.jpg" />
     <Content Include="Images\Tailorism\n3.jpg" />
@@ -786,13 +761,19 @@
     <Content Include="LoginAndRegister\Register.aspx" />
     <Content Include="Map\Map.aspx" />
     <Content Include="Order\Order.aspx" />
+    <Content Include="Order\Order.html" />
     <Content Include="Order\Order_2.aspx" />
+    <Content Include="Order\Order_2.html" />
     <Content Include="Order\Order_3.aspx" />
-    <Content Include="Order\Order_4.aspx" />
-    <Content Include="Order\Order_5.aspx" />
-    <Content Include="Order\PayTo.aspx" />
+    <Content Include="Order\Order_3.html" />
+    <Content Include="Order\Order_4.html" />
+    <Content Include="Personage\Order.aspx" />
+    <Content Include="Personage\Personage.aspx" />
+    <Content Include="Personage\ShowOrder.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
     <Content Include="Content\Search\new_default.css.bak" />
+    <Content Include="Content\Personage\newmember.css&amp;v=051610" />
+    <Content Include="Content\Personage\ztRecommendInfoJson.do" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
     <Content Include="Plugin\jquery-3.3.1.js" />
     <Content Include="Plugin\jquery-3.3.1.min.js" />
@@ -1080,6 +1061,7 @@
     <Content Include="Products\Fishing.html" />
     <Content Include="Products\Generated.aspx" />
     <Content Include="Products\Generated.html" />
+    <Content Include="Promotion\Promotion.aspx" />
     <Content Include="Scripts\Cart\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\Cart\baidumap.js" />
     <Content Include="Scripts\Cart\c.js" />
@@ -1182,6 +1164,38 @@
     <Content Include="Scripts\Order\three_order.js" />
     <Content Include="Scripts\Order\tooltip.js" />
     <Content Include="Scripts\Order\two_order.js" />
+    <Content Include="Scripts\Personage\52710000.js" />
+    <Content Include="Scripts\Personage\analytics.js" />
+    <Content Include="Scripts\Personage\appendcomdom.js" />
+    <Content Include="Scripts\Personage\bdctrace-pc.js" />
+    <Content Include="Scripts\Personage\city.js" />
+    <Content Include="Scripts\Personage\coremetrics-initalize.js" />
+    <Content Include="Scripts\Personage\eluminate.js" />
+    <Content Include="Scripts\Personage\footer.js" />
+    <Content Include="Scripts\Personage\fp2.js" />
+    <Content Include="Scripts\Personage\fp2.min.js" />
+    <Content Include="Scripts\Personage\fx.js" />
+    <Content Include="Scripts\Personage\hm.js" />
+    <Content Include="Scripts\Personage\iflight_popup.js" />
+    <Content Include="Scripts\Personage\jquery-ui-1.8.21.custom.min.js" />
+    <Content Include="Scripts\Personage\jquery.tools.min.js" />
+    <Content Include="Scripts\Personage\jQuerySuperScript.js" />
+    <Content Include="Scripts\Personage\js.cookie.js" />
+    <Content Include="Scripts\Personage\losc.js" />
+    <Content Include="Scripts\Personage\lvmama-custom.js" />
+    <Content Include="Scripts\Personage\lvmember.js" />
+    <Content Include="Scripts\Personage\mba.js" />
+    <Content Include="Scripts\Personage\Method.js" />
+    <Content Include="Scripts\Personage\mv.js" />
+    <Content Include="Scripts\Personage\mvl.js" />
+    <Content Include="Scripts\Personage\orderlistCommon.js" />
+    <Content Include="Scripts\Personage\orderPolicy.js" />
+    <Content Include="Scripts\Personage\plpupload.js" />
+    <Content Include="Scripts\Personage\plupload.full.min.js" />
+    <Content Include="Scripts\Personage\push.js" />
+    <Content Include="Scripts\Personage\reschedule.js" />
+    <Content Include="Scripts\Personage\selectOrder.js" />
+    <Content Include="Scripts\Personage\v.js" />
     <Content Include="Scripts\Products\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\Products\baidumap.js" />
     <Content Include="Scripts\Products\c.js" />
@@ -1199,6 +1213,17 @@
     <Content Include="Scripts\Products\storeview.js" />
     <Content Include="Scripts\Products\tongji_360.php" />
     <Content Include="Scripts\Products\z_stat.php" />
+    <Content Include="Scripts\Promotion\config.js" />
+    <Content Include="Scripts\Promotion\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\Promotion\jquery.dotdotdot.js" />
+    <Content Include="Scripts\Promotion\lanrenzhijia.js" />
+    <Content Include="Scripts\Promotion\main_store.js" />
+    <Content Include="Scripts\Promotion\querycity.js" />
+    <Content Include="Scripts\Promotion\script.js" />
+    <Content Include="Scripts\Promotion\WdatePicker.js" />
+    <Content Include="Scripts\Promotion\zh-cn.js" />
+    <Content Include="Scripts\Search\chengtourUI.js" />
+    <Content Include="Scripts\Search\pindao1.js" />
     <Content Include="Scripts\Show\FarmDetails\getscript.js" />
     <Content Include="Scripts\Show\FarmDetails\list.js" />
     <Content Include="Scripts\Show\FarmDetails\seller.js" />
@@ -1229,6 +1254,10 @@
     <Compile Include="Admin\Backstage.aspx.designer.cs">
       <DependentUpon>Backstage.aspx</DependentUpon>
     </Compile>
+    <Content Include="App_Code\XddpayConfig.cs" />
+    <Content Include="App_Code\XddpayFunction.cs" />
+    <Content Include="App_Code\XddpayResponse.cs" />
+    <Content Include="App_Code\XddpayService.cs" />
     <Compile Include="Cart\Cart.aspx.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1237,7 +1266,6 @@
       <DependentUpon>Cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Helper\Authentication.cs" />
-    <Compile Include="Helper\OrderMessage.cs" />
     <Compile Include="Helper\PreventLink.cs" />
     <Compile Include="Helper\SMSinterface.cs" />
     <Compile Include="Helper\UrlRewriteModule.cs" />
@@ -1291,10 +1319,6 @@
     <Compile Include="Map\Map.aspx.designer.cs">
       <DependentUpon>Map.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Code\XddpayConfig.cs" />
-    <Compile Include="App_Code\XddpayFunction.cs" />
-    <Compile Include="App_Code\XddpayResponse.cs" />
-    <Compile Include="App_Code\XddpayService.cs" />
     <Compile Include="Order\Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1316,26 +1340,26 @@
     <Compile Include="Order\Order_3.aspx.designer.cs">
       <DependentUpon>Order_3.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Order\Order_4.aspx.cs">
-      <DependentUpon>Order_4.aspx</DependentUpon>
+    <Compile Include="Personage\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Order\Order_4.aspx.designer.cs">
-      <DependentUpon>Order_4.aspx</DependentUpon>
+    <Compile Include="Personage\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Order\Order_5.aspx.cs">
-      <DependentUpon>Order_5.aspx</DependentUpon>
+    <Compile Include="Personage\Personage.aspx.cs">
+      <DependentUpon>Personage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Order\Order_5.aspx.designer.cs">
-      <DependentUpon>Order_5.aspx</DependentUpon>
+    <Compile Include="Personage\Personage.aspx.designer.cs">
+      <DependentUpon>Personage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Order\PayTo.aspx.cs">
-      <DependentUpon>PayTo.aspx</DependentUpon>
+    <Compile Include="Personage\ShowOrder.aspx.cs">
+      <DependentUpon>ShowOrder.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Order\PayTo.aspx.designer.cs">
-      <DependentUpon>PayTo.aspx</DependentUpon>
+    <Compile Include="Personage\ShowOrder.aspx.designer.cs">
+      <DependentUpon>ShowOrder.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products\Ecological.aspx.cs">
       <DependentUpon>Ecological.aspx</DependentUpon>
@@ -1365,6 +1389,13 @@
     <Compile Include="Products\Generated.aspx.designer.cs">
       <DependentUpon>Generated.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Promotion\Promotion.aspx.cs">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Promotion\Promotion.aspx.designer.cs">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search\Search.aspx.cs">
       <DependentUpon>Search.aspx</DependentUpon>
@@ -1375,9 +1406,6 @@
     </Compile>
     <Compile Include="Services\Main.ashx.cs">
       <DependentUpon>Main.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Services\OrderService.ashx.cs">
-      <DependentUpon>OrderService.ashx</DependentUpon>
     </Compile>
     <Compile Include="Shared\Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
@@ -1461,8 +1489,6 @@
     <Content Include="Plugin\public\swiper\src\less\scrollbar.less" />
     <Content Include="Plugin\public\swiper\src\less\swiper.less" />
     <Content Include="Plugin\public\swiper\src\less\zoom.less" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Services\OrderService.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1471,9 +1497,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\en\" />
+    <Folder Include="bin\zh-CHT\" />
+    <Folder Include="bin\zh-Hans\" />
+    <Folder Include="Content\Cart\" />
     <Folder Include="Content\Home\" />
-    <Folder Include="Propaganda\" />
+    <Folder Include="Content\NewFolder1\" />
     <Folder Include="Scripts\Commond\" />
+    <Folder Include="Scripts\Propaganda\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FTZ.PlayAndAte.BLL\FTZ.PlayAndAte.BLL.csproj">
@@ -1484,9 +1515,6 @@
       <Project>{7384c779-1c2a-4d18-88b0-52911e368678}</Project>
       <Name>FTZ.PlayAndAte.Models</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

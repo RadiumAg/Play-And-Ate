@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="PlayAndAteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="PlayAndAteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Area">
           <Key>
             <PropertyRef Name="AreaId" />
@@ -394,7 +394,8 @@
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="PlayAndAteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -429,7 +430,7 @@
           <Key>
             <PropertyRef Name="CustomerId" />
           </Key>
-          <Property Name="CustomerId" Type="Int32" Nullable="false" />
+          <Property Name="CustomerId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Id_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
@@ -460,9 +461,9 @@
           <Property Name="Success" Type="Boolean" Nullable="false" />
           <Property Name="ContactsId" Type="Int32" />
           <NavigationProperty Name="Contacts" Relationship="Self.FK_Order_Contacts" FromRole="Order" ToRole="Contacts" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Order_Product" FromRole="Order" ToRole="Product" />
           <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Order_UserInfo_Role" FromRole="Order" ToRole="UserInfo_Role" />
           <NavigationProperty Name="OrderItem" Relationship="Self.FK_OrderItem_Order" FromRole="Order" ToRole="OrderItem" />
-          <NavigationProperty Name="Product" Relationship="PlayAndAteModel.FK_Order_Product" FromRole="Order" ToRole="Product" />
         </EntityType>
         <EntityType Name="OrderItem">
           <Key>
@@ -499,10 +500,10 @@
           <Property Name="Feature" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Area" Relationship="Self.FK_Product_Area" FromRole="Product" ToRole="Area" />
           <NavigationProperty Name="Image" Relationship="Self.FK_Image_Product" FromRole="Product" ToRole="Image" />
+          <NavigationProperty Name="Order" Relationship="Self.FK_Order_Product" FromRole="Product" ToRole="Order" />
           <NavigationProperty Name="PPointsType" Relationship="Self.FK_Product_PPointsType" FromRole="Product" ToRole="PPointsType" />
           <NavigationProperty Name="Point" Relationship="Self.FK_Poing_Product" FromRole="Product" ToRole="Point" />
           <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Product_UserInfo_Role" FromRole="Product" ToRole="UserInfo_Role" />
-          <NavigationProperty Name="Order" Relationship="PlayAndAteModel.FK_Order_Product" FromRole="Product" ToRole="Order" />
         </EntityType>
         <EntityType Name="PTotalType">
           <Key>
@@ -622,6 +623,18 @@
               <PropertyRef Name="ProductId" />
             </Principal>
             <Dependent Role="Image">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="Order">
               <PropertyRef Name="ProductId" />
             </Dependent>
           </ReferentialConstraint>
@@ -758,6 +771,10 @@
             <End Role="Product" EntitySet="Product" />
             <End Role="Image" EntitySet="Image" />
           </AssociationSet>
+          <AssociationSet Name="FK_Order_Product" Association="Self.FK_Order_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
           <AssociationSet Name="FK_Order_UserInfo_Role" Association="Self.FK_Order_UserInfo_Role">
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
             <End Role="Order" EntitySet="Order" />
@@ -790,23 +807,7 @@
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
             <End Role="Sincerity" EntitySet="Sincerity" />
           </AssociationSet>
-          <AssociationSet Name="FK_Order_Product" Association="PlayAndAteModel.FK_Order_Product">
-            <End Role="Product" EntitySet="Product" />
-            <End Role="Order" EntitySet="Order" />
-          </AssociationSet>
         </EntityContainer>
-        <Association Name="FK_Order_Product">
-          <End Type="PlayAndAteModel.Product" Role="Product" Multiplicity="1" />
-          <End Type="PlayAndAteModel.Order" Role="Order" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Product">
-              <PropertyRef Name="ProductId" />
-            </Principal>
-            <Dependent Role="Order">
-              <PropertyRef Name="ProductId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
