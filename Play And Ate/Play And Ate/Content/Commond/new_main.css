@@ -5813,10 +5813,10 @@ color: #616161
 }
 
 .search_input_main {
-height: 38px;
-border: 1px rgb(218, 61, 78) solid;
-border-radius: 5px;
-width: 400px;
+    height: 38px;
+    border: 1px solid #fda300;
+    border-radius: 5px;
+    width: 400px;
 }
 
 .search_txt_main {
@@ -5863,18 +5863,18 @@ color: #fff
 }
 
 .search_btn_ss {
-background: rgb(218, 61, 78) none repeat scroll 0 0;
-border: 0 none;
-color: #fff;
-cursor: pointer;
-display: inline-block;
-font-family: "微软雅黑";
-font-size: 15px;
-font-weight: bolder;
-height: 38px;
-line-height: 38px;
-text-align: center;
-width: 75px;
+    background: #fda300 none repeat scroll 0 0;
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "微软雅黑";
+    font-size: 15px;
+    font-weight: bolder;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    width: 75px;
 }
 
 #city dl {

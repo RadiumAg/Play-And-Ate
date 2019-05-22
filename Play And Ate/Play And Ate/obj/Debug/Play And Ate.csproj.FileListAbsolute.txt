@@ -107,3 +107,6 @@ C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.cspr
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CoreCompileInputs.cache
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\obj\Debug\Play And Ate.csproj.CopyComplete
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.dll.config
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\XddPay.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.ServiceLocation.xml
+C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll

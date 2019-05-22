@@ -268,7 +268,7 @@ a {
 
 .search_input_main {
     height: 38px;
-    border: 1px rgb(218, 61, 78) solid;
+    border: 1px #fda300 solid;
     border-radius: 5px;
     width: 400px;
 }
@@ -296,7 +296,7 @@ a {
 }
 
 .search_btn_ss {
-    background: rgb(218, 61, 78) none repeat scroll 0 0;
+    background: #fda300 none repeat scroll 0 0;
     border: 0 none;
     color: #fff;
     cursor: pointer;

@@ -61,13 +61,13 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 				<div class="blank"></div>
 				<div class="chuxing_title f_l"> 月度出行指南</div>
 				 					<div class="blank"></div>
-					<div class="yuejituc"><span class="yuejizn">04</span>
+					<div class="yuejituc"><span class="yuejizn">05</span>
 					<span class="xiangmu_nr f_r">
 											<a href="../Products/Finshing.aspx" class="f_l" target="_blank">垂钓</a>
 										</span></div>
 					
 				 					<div class="blank"></div>
-					<div class="yuejituc"><span class="yuejizn">05</span>
+					<div class="yuejituc"><span class="yuejizn">06</span>
 					<span class="xiangmu_nr f_r">
 											<a href="#" class="f_l" target="_blank">攀岩</a>
 											<a href="#" class="f_l" target="_blank">采摘</a>
@@ -78,7 +78,7 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 										</span></div>
 					
 				 					<div class="blank"></div>
-					<div class="yuejituc"><span class="yuejizn">06</span>
+					<div class="yuejituc"><span class="yuejizn">07</span>
 					<span class="xiangmu_nr f_r">
 											<a href="#" class="f_l" target="_blank">烧烤</a>
 											<a href="#" class="f_l" target="_blank">健身房</a>
@@ -143,21 +143,21 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 						<div class="flexslider">
 			    			<ul class="slides" id="stodes">
 							   							   	<li style="width: 100%; float: left; margin-right: -100%; display: none;">
-							   		<a href="#" target="_blank"><img src="../Images/Products/53882e60e81a8.jpg" title="人从众农家乐" alt="人从众农家乐" border="0" height="306" width="758" /></a>
+							   		<a href="#"><img src="../Images/Products/53882e60e81a8.jpg" title="人从众农家乐" alt="人从众农家乐" border="0" height="306" width="758" /></a>
 							   	</li>
 							   							   	<li style="width: 100%; float: left; margin-right: -100%; display: list-item;">
-							   		<a href="#" target="_blank"><img src="../Images/Products/538830f9e3dfd.jpg" title="浙西大峡谷老鲁农庄" alt="浙西大峡谷老鲁农庄" border="0" height="306" width="758" /></a>
+							   		<a href="#"><img src="../Images/Products/538830f9e3dfd.jpg" title="浙西大峡谷老鲁农庄" alt="浙西大峡谷老鲁农庄" border="0" height="306" width="758" /></a>
 							   	</li>
 							   							   	<li style="width: 100%; float: left; margin-right: -100%;">
-							   		<a href="#" target="_blank"><img src="../Images/Products/5388375bd90ed.jpg" title="前卫村叔季嘉苑" alt="前卫村叔季嘉苑" border="0" height="306" width="758" /></a>
+							   		<a href="#" ><img src="../Images/Products/5388375bd90ed.jpg" title="前卫村叔季嘉苑" alt="前卫村叔季嘉苑" border="0" height="306" width="758" /></a>
 							   	</li>
 							   							   	<li style="width: 100%; float: left; margin-right: -100%;">
-							   		<a href="#" target="_blank"><img src="../Images/Products/538836ab70c0f.jpg" title="日照永春农家乐" alt="日照永春农家乐" border="0" height="306" width="758" /></a>
+							   		<a href="#" ><img src="../Images/Products/538836ab70c0f.jpg" title="日照永春农家乐" alt="日照永春农家乐" border="0" height="306" width="758" /></a>
 							   	</li>
 							   							</ul>
 		        			<ol class="flex-control-nav">
 		        					        			<li class="p9">人从众农家乐</li>
-		        					        			<li class="p9 active">浙西大峡谷老鲁农庄</li>
+		        					        			<li class="p9 ">浙西大峡谷老鲁农庄</li>
 		        					        			<li class="p9">前卫村叔季嘉苑</li>
 		        					        			<li class="p9">日照永春农家乐</li>
 		        										</ol>
@@ -312,7 +312,7 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 
 <div class="blank"></div>
 <div id="gotop" style="display: none;"></div>
-<a href="http://sh.01nz.com.cn/cart" target="_blank"><div id="gowu"></div></a>
+
 <script src="../Scripts/Products/z_stat.php" ></script><script src="../Scripts/Products/core.php" charset="utf-8" type="text/javascript"></script>
 <script src="../Scripts/Products/c.js" ></script>
 <script src="../Scripts/Products/tongji_360.php" charset="gb2312"></script>
