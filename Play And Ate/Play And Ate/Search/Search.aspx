@@ -27,7 +27,7 @@
                     <li class="stuan-item">
                         <p class="img">
                             <a target="_blank" href="#">
-                                <img src="images/9O0MF.jpg" width="178" height="89"/></a>
+                                <img src="images/9O0MF.jpg" width="178" height="89" /></a>
                         </p>
                         <p class="tuan-title"><a rel="nofollow" target="_blank" href="#">【5.25出发】马尔代夫7日游*【出境游团购】享Kihaad吉哈德度假酒店+回程赠送香港酒店一晚+国泰航空+蜜月特别赠送套餐+酒店餐饮一价全包……度假天堂，怎容错过？</a></p>
                         <p>
@@ -238,37 +238,40 @@
 
                 <!-- //列表开始 -->
                 <div class="slist-item">
-                    <asp:Repeater ID="Repeater1" runat="server">
-                        <ItemTemplate>
-                            <dl class="search-result-item line-info">
-                                <dt class="img">
-                                    <a rel="nofollow" target="_blank" href="#">
-                                        <img src="../Images/Home/52c4c840630af_70x50.jpg" width="168" height="86">
-                                    </a>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="s-type">特色景点
-                                    </span>
-                                </dt>
-                                <dd class="info">
-                                    <dfn class="s-price">¥<i><%# Eval("ProductPrice").ToString().Split('.')[0] %></i>起</dfn>
-                                    <a rel="nofollow" href="#/comment" target="_blank" class="comment-num comment-num01">156人付款</a>
-                                    <a rel="nofollow" href="#/comment" target="_blank" class="comment-num">361条点评</a>
-                                </dd>
-
-                                <dd class="intro">
-                                    <h5>
-                                        <a rel="nofollow" target="_blank" href="#" onclick="#"><%# Eval("ProductName") %></a>
-                                    </h5>
-                                    <p class="promotions"><%# Eval("ProductName") %></p>
-                                    <p class="route">
-                                        <span></span><span></span><span></span><span></span>
-                                        <br>
-                                        <%# Eval("DetailIntroduction") %>
-                                        <a rel="nofollow" class="link-more" target="_blank" href="#">更多</a>
-                                    </p>
-                                </dd>
-                            </dl>
-                        </ItemTemplate>
-                    </asp:Repeater>
+                    <asp:UpdatePanel runat="server" ID="UpProduct">
+                        <ContentTemplate>
+                            <asp:Repeater ID="Repeater1" runat="server">
+                                <ItemTemplate>
+                                    <dl class="search-result-item line-info">
+                                        <dt class="img">
+                                            <a rel="nofollow" target="_blank" href="#">
+                                                <img src="../Images/Home/52c4c840630af_70x50.jpg" width="168" height="86">
+                                            </a>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="s-type">特色景点
+                                            </span>
+                                        </dt>
+                                        <dd class="info">
+                                            <dfn class="s-price">¥<i><%# Eval("ProductPrice").ToString().Split('.')[0] %></i>起</dfn>
+                                            <a rel="nofollow" href="#/comment" target="_blank" class="comment-num comment-num01">156人付款</a>
+                                            <a rel="nofollow" href="#/comment" target="_blank" class="comment-num">361条点评</a>
+                                        </dd>
+                                        <dd class="intro">
+                                            <h5>
+                                                <a rel="nofollow" target="_blank" href="#" onclick="#"><%# Eval("ProductName") %></a>
+                                            </h5>
+                                            <p class="promotions"><%# Eval("ProductName") %></p>
+                                            <p class="route">
+                                                <span></span><span></span><span></span><span></span>
+                                                <br>
+                                                <%# Eval("DetailIntroduction") %>
+                                                <a rel="nofollow" class="link-more" target="_blank" href="#">更多</a>
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
                     <webdiyer:AspNetPager ID="Pager" AlwaysShow="true"
                         runat="server" CssClass="paginator"
                         CurrentPageButtonClass="cpb" FirstPageText="首页"

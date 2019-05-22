@@ -1,0 +1,1085 @@
+@charset "utf-8";
+/* ------------------------------------------------------------
+  Css Reset v0.9
+  Last Updated: 2012-07-25
+  Author: Cloudyan
+------------------------------------------------------------ */
+/* RESET */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,select,textarea,p,blockquote,th,td,hr,button,figure,menu{margin:0;padding:0}article,aside,details,embed,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}command,datalist,keygen,mark,meter,progress,rp,rt,ruby,time,wbr{display:inline}table{border-collapse:collapse;border-spacing:0}th{text-align:inherit}fieldset,img{border:0}iframe{display:block}:focus{outline:0}abbr,acronym{border:0;font-variant:normal}del{text-decoration:line-through}address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:500}ol,ul{list-style-type:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:bold}button,input,select,textarea{font-size:100%}q:before,q:after{content:''}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}ins,a{text-decoration:none}a:hover{text-decoration:underline}img{vertical-align:top}
+/* common.css */
+.clearfix:after,.wrap:after,.cwrap:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}.clearfix,.wrap,.cwrap{zoom:1}.clr{clear:both}.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}blockquote,pre{white-space:pre-wrap;word-wrap:break-word;}.text-size{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}.text-justify{text-align:justify;text-justify:inter-ideograph;}.opacity{opacity:.5;filter:alpha(opacity=50);}.text-ell{display:block;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}.css3_shadow{transition:all 1s ease-out 0s;border-radius:5px;box-shadow:0 0px 4px rgba(206,201,170,0.8)}.css3_shadow:hover{box-shadow:0 0px 5px rgba(206,201,170,1)}.yahei{font-family:"Microsoft YaHei","\5FAE\8F6F\96C5\9ED1","黑体"}.fl,.fr{display:inline}.fl{float:left;}.fr{float:right}bc{margin-left:auto;margin-right:auto;}.tc{text-align:center}.f12{font-size:12px}.f14{font-size:14px}.f16{font-size:16px}.f18{font-size:18px}.f22{font-size:22px}.f24{font-size:24px}.f30{font-size:30px}.lh18{line-height:18px}.lh20{line-height:20px}.lh22{line-height:22px}.lh24{line-height:24px}.lh28{line-height:28px}.lh30{line-height:30px}.mt10{margin-top:10px}.mt20{margin-top:20px}.mb10{margin-bottom:10px}.mb20{margin-bottom:20px}.ml10{margin-left:10px}.mr10{margin-right:10px}.pd10{padding:10px}.pt10{padding-top:10px}.pb10{padding-bottom:10px}.plr10{padding-left:10px;padding-right:10px}
+.hr_a,.hr_b,.hr_c{font-size:1px;line-height:1px;display:block;clear:both;overflow:hidden}.hr_a{height:10px}.hr_b{height:5px}.hr_c{height:20px}
+.no-bg{background:none !important}.no-bd{border:none !important}.p_rel{position:relative}.p_abs{position:absolute}
+.B,.fb{font-weight:bold}.fnb{font-weight:normal}.tc{text-align:center}.tr{text-align:right}.dis{display:block}.undis{display:none}.disb{display:inline-block;zoom:1;*display:inline}i{font-style:normal}.inline{ display:inline}
+.hv_blank{ width:5px; overflow:hidden; height:80px; display:block;}.ie6_blank{display:none; width:1px;height:1px;overflow:hidden;zoom:1;_display:block}
+.hr_line{ border-top:1px dashed #e8e8e8; height:10px; overflow:hidden; display:block}
+.hor li{display:inline;float:left;zoom:1}.hor li a{display:block;float:left}
+.disa a,.g_btn a{display:block;width:100%;height:100%;background:url(about:blank);text-indent:-9999px;}
+body .hide{display:none;}
+/*全站统一样式dfn表示价格*/
+dfn,td.price{color:#f60;font-style:normal;}
+dfn{display:inline-block;zoom:1;*display:inline}
+dfn i{font-style:normal;font-weight:500;}
+.B dfn,.B dfn i{font-weight:bold;}
+ol.list-num{ padding:5px 10px 10px 30px;}
+ol.list-num li{ list-style:decimal outside; text-indent:0px; line-height:20px; margin:5px 0}
+
+.wrap{width:980px;margin-left:auto;margin-right:auto}.cwrap{width:960px;margin-left:auto;margin-right:auto;}
+body{font-size:12px;line-height:22px; color:#333; background:#fff; position:relative}
+/*a:link{color:#05a}a:visited{color:#7a94ae}a:hover{color:#f00}.view_more{color:#06c;padding:0 2px;}*/
+h3{font-size:14px;}h4{font-size:12px}
+a{color:#08c}a:hover{color:#D38}.view_more i{color:#08c;font-size:11px;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+.ui-content{background:#fff;overflow: hidden;}
+/*.lvmama-bg{ background:url(../../../img/mylvmama/lv-bg1.jpg) #f8fcff top center repeat-x}*/
+.lvmama-bg{ background:#f5f5f5}
+.lv-nav{ color:#888; height:24px; line-height:24px; padding:5px 0}.lv-nav a.current{color:#888;text-decoration: none}
+.lv-bd{ border:1px solid #d8d8d8}
+.lv-aside{ width:150px; padding:10px 0; background:#fafafa; margin-right:13px; float:left; overflow:hidden; display:inline; margin-bottom:-1000px;padding-bottom: 1000px;}
+.lv-content{ width:828px; float:left; display:inline; margin:10px 0 0; padding-bottom:20px; }
+.my-account{overflow:hidden; zoom:1;}
+.dot_line{clear:both;margin:20px 0;height:0;font-size:0;overflow:hidden;border-bottom:1px dashed #ddd;text-indent:-9999px;}
+
+/* 驴妈妈应用中心 */
+.mod-welcome{ margin:0 0 10px 10px;}
+.lv-img{ width:120px; height:120px; overflow:hidden; border:1px solid #ccc;}
+.lv-info{ line-height:24px;}
+.lvcenter-list{line-height:27px;}
+.lvcenter-list .ui-box-title{ border-width:1px 0; height:0; margin:4px 7px 4px 10px; overflow:hidden; border-style:solid; border-color:#ccc transparent #fff}
+.ui-box-follow{ border-bottom:none}
+.lvapp-item{ padding:0 7px 0 8px;}
+.lvapp-item a.normal{float:left; width:100%;}.lvapp-item a:hover{ text-decoration:none}.lvapp-item a.link-edit:hover{ text-decoration:underline}
+.lvapp-item span{color:#333;cursor:pointer;display:inline;float:left;font-size:12px;vertical-align:top;}
+.lvapp-item:hover,.lvcenter-list li.hover,.lvcenter-list li.lvapp-item-hover{ background:#ffe1f0}
+ 
+.lvapp-icon{ background-image:url(../../../img/mylvmama/combo.gif); display:inline-block;zoom:1;*display:inline;float:left;width:17px;height:16px; margin-right:5px;overflow:hidden;text-indent:-9999px;}
+.lvapp-item .lvapp-icon{margin:5px 6px 5px 3px;}
+.lvapp-item .icon-hot{margin:3px 0px 0 0; float:right; background:url(../../../img/mylvmama/hot.gif) 0 0 no-repeat; width:18px; height:17px; overflow: hidden}
+.lvapp-item-hover .icon-hot{ background-position:0 -17px;}
+
+.lvcenter-list li.lvapp-item-selected,.lvcenter-list li.lvapp-item-selected:hover{ background:#d8619b;color:#fff}
+.lvapp-item-selected a,.lvapp-item-selected a span,.lvapp-item-selected a:hover{color:#fff}
+.lvapp-item-selected a.msg-num:hover{color:#f60}
+.lvapp-item-selected .msg-num{background:#fff;color:#f60; font-weight:bold}
+.lvapp-item-selected .icon-hot{ background-position:0 -34px;}
+
+.lvapp-subitem span{ padding-left:28px;}
+/* 体验优化2012-11-01 */
+.lvapp-item { position:relative}
+.lvapp-item .link-edit,
+.lvapp-item .icon-hot
+{position:absolute;right:8px;}
+
+/* 页面标识body id="page-" 边栏导航li id="lvnav-",所实现的样式需要上面五行
+ * 现实现功能如下
+ */
+ 
+/*高亮状态*/
+#page-userinfo #lvnav-userinfo,
+#page-guide #lvnav-guide,
+#page-message #lvnav-message,
+#page-comment #lvnav-comment,
+#page-coupon #lvnav-coupon,
+#page-money #lvnav-money,
+#page-store #lvnav-store,
+#page-visitor #lvnav-visitor,
+#page-points #lvnav-points,
+#page-password #lvnav-password,
+#page-subscribe #lvnav-subscribe,
+#page-order #lvnav-order,
+#page-trip #lvnav-trip,
+#page-favorites #lvnav-favorites,
+#page-flight #lvnav-flight,
+#page-globalorder #lvnav-globalorder,
+#page-lipinka #lvnav-lipinka,
+#page-address #lvnav-address,
+#page-deposit #lvnav-deposit,
+#page-currency #lvnav-currency,
+#page-intention #lvnav-intention
+{background:#d8619b;color:#fff}
+
+#page-userinfo #lvnav-userinfo a,
+#page-guide #lvnav-guide a,
+#page-message #lvnav-message a,
+#page-comment #lvnav-comment a,
+#page-cupon #lvnav-coupon a,
+#page-money #lvnav-money a,
+#page-store #lvnav-store a,
+#page-visitor #lvnav-visitor a,
+#page-points #lvnav-points a,
+#page-password #lvnav-password a,
+#page-subscribe #lvnav-subscribe a,
+#page-order #lvnav-order a,
+#page-trip #lvnav-trip a,
+#page-favorites #lvnav-favorites a,
+#page-flight #lvnav-flight a,
+#page-userinfo #lvnav-userinfo a span,
+#page-guide #lvnav-guide a span,
+#page-message #lvnav-message a span,
+#page-comment #lvnav-comment a span,
+#page-coupon #lvnav-coupon a span,
+#page-money #lvnav-money a span,
+#page-store #lvnav-store a span,
+#page-visitor #lvnav-visitor a span,
+#page-points #lvnav-points a span,
+#page-password #lvnav-password a span,
+#page-subscribe #lvnav-subscribe a span,
+#page-order #lvnav-order a span,
+#page-trip #lvnav-trip a span,
+#page-favorites #lvnav-favorites a span,
+#page-flight #lvnav-flight a span,
+#page-globalorder #lvnav-globalorder a span,
+#page-lipinka #lvnav-lipinka a,
+#page-lipinka #lvnav-lipinka a span,
+#page-deposit #lvnav-deposit a,
+#page-deposit #lvnav-deposit a span,
+#page-currency #lvnav-currency a,
+#page-currency #lvnav-currency a span,
+#page-intention #lvnav-intention a,
+#page-intention #lvnav-intention a span
+{color:#fff}
+/*标识icon*/
+#page-userinfo #lvnav-userinfo a.msg-num:hover,
+#page-guide #lvnav-guide a.msg-num:hover,
+#page-message #lvnav-message a.msg-num:hover,
+#page-comment #lvnav-comment a.msg-num:hover,
+#page-coupon #lvnav-coupon a.msg-num:hover,
+#page-money #lvnav-money a.msg-num:hover,
+#page-store #lvnav-store a.msg-num:hover,
+#page-visitor #lvnav-visitor a.msg-num:hover,
+#page-points #lvnav-points a.msg-num:hover,
+#page-password #lvnav-password a.msg-num:hover,
+#page-subscribe #lvnav-subscribe a.msg-num:hover,
+#page-order #lvnav-order a.msg-num:hover,
+.lvapp-item-selected a.msg-num:hover
+{color:#f60}
+
+#page-userinfo #lvnav-userinfo .msg-num,
+#page-guide #lvnav-guide .msg-num,
+#page-message #lvnav-message  .msg-num,
+#page-comment #lvnav-comment .msg-num,
+#page-coupon #lvnav-coupon .msg-num,
+#page-money #lvnav-money .msg-num,
+#page-store #lvnav-store .msg-num,
+#page-visitor #lvnav-visitor .msg-num,
+#page-points #lvnav-points .msg-num,
+#page-password #lvnav-password .msg-num,
+#page-subscribe #lvnav-subscribe .msg-num,
+#page-order #lvnav-order .msg-num
+{background:#fff;color:#f60; font-weight:bold}
+
+#page-comment #lvnav-comment .icon-hot{ background-position:0 -34px;}
+
+.tips-msg .lvapp-icon{margin:4px 3px 0 0;}
+.icon-apps16-1000{ background-position:0 0}
+.icon-apps16-1001{ background-position:0 -16px}
+.icon-apps16-1002{ background-position:0 -32px}
+.icon-apps16-1003{ background-position:0 -48px}
+.icon-apps16-1004{ background-position:0 -64px}
+.icon-apps16-1005{ background-position:0 -80px}
+.icon-apps16-1006{ background-position:0 -96px}
+.icon-apps16-1007{ background-position:0 -112px}
+.icon-apps16-1008{ background-position:0 -128px}
+.icon-apps16-1009{ background-position:0 -144px}
+.icon-apps16-1010{ background-position:0 -160px}
+.icon-apps16-1011{ background-position:0 -176px}
+.icon-apps16-1012{ background-position:0 -192px}
+.icon-apps16-1013{ background-position:0 -208px}
+.icon-apps16-1014{ background-position:-20px -325px}/*现使用了0-14*/
+.icon-apps16-1015{ background-position:0 -240px}
+/*.icon-hot{background-position:0 -272px; height:18px;}*/
+.icon-hot{ background:none; width:18px; height:17px; overflow:hidden}
+.lvapp-item .icon-new{float:right;position:absolute;right:5px;top:3px;}
+.icon-apps16-1016{ background-position:0 -256px}
+.icon-apps60-1001{ background-position:-17px 0}
+.icon-apps60-1002{ background-position:-17px -60px}
+.icon-apps60-1003{ background-position:-17px -120px}
+.icon-apps60-1004{ background-position:-17px -180px}
+.icon-apps60-1005{ background-position:-17px -240px}
+
+/* 支付方式 */
+.pay-type{ position: relative; cursor: pointer; background:url(../../../img/mylvmama/pay-type.png) no-repeat; width:117px; height:37px; border: 1px solid #ddd; padding:0 !important; display:inline-block; zoom:1; *display:inline}
+.pay-type1{ background-position:0 0}
+.pay-type2{ background-position:-120px 0}
+.pay-type .icon-select{display: none; background:url(../../../img/mylvmama/my-privilege-bg.png) 0 -171px no-repeat; width: 17px; height: 17px; right: 0; bottom: 0;  position: absolute; }
+.store_set-edit-box .selected .pay-type{border: 1px solid #f60;}
+.store_set-edit-box .selected  .icon-select{ display: block; }
+/* 驴妈妈UI设计 */
+/* 字体颜色控制 */
+.lv-c1{color:#f60}
+.lv-ca{color:#333}
+.lv-cb{color:#555}
+.lv-cc{color:#888}
+.lv-cw{color:red}
+.gray{color:gray}
+.c_999{color:#999;}
+.lv-pink{color:#c40057}
+.hv_line{ border-right:1px solid #333; width:1px; height:12px; line-height:12px; display:inline-block;*display:inline;*zoom:1}
+.hv_line{ margin:0 15px;} 
+
+/* 按钮 */
+.ui-btn,.ui-btn i,a.travel-btn{ background-image:url(../../../img/mylvmama/lv-block.gif); vertical-align:middle; background-repeat:no-repeat;position:relative;display:inline-block;zoom:1;*display:inline;}
+a.ui-btn:hover{ text-decoration:none}
+.ui-btn i{height:100%;padding-right:8px; cursor:pointer;vertical-align:top;}.ui-btn{ padding-left:8px; text-align:center}
+.ui-btn1{background-position:0 0;}
+.ui-btn1 i{background-position:right 0;}
+.ui-btn2{background-position:0 -22px; }
+.ui-btn2 i{background-position:right -22px;}
+.ui-btn3{background-position:0 -46px; }
+.ui-btn3 i{background-position:right -46px;}
+.ui-btn4,.ui-button{background-position:0 -74px;}
+.ui-btn4 i,.ui-button i{background-position:right -74px;}
+.ui-disbtn{background-position:0 -100px;}
+.ui-disbtn i{background-position:right -100px;}
+.ui-btn5{background-position:0 -126px; }
+.ui-btn5 i{background-position:right -126px;}
+.ui-btn6{background-position:0 -157px;}
+.ui-btn6 i{background-position:right -157px;}
+.ui-btn7{background-position:0 -188px; }
+.ui-btn7 i{background-position:right -188px;}
+
+.ui-btn1:hover{background-position:0 -400px;}
+.ui-btn1:hover i{background-position:right -400px;}
+.ui-btn2:hover{background-position:0 -422px; }
+.ui-btn2:hover i{background-position:right -422px;}
+.ui-btn3:hover{background-position:0 -446px; }
+.ui-btn3:hover i{background-position:right -446px;}
+.ui-btn4:hover,.ui-button:hover{background-position:0 -474px;  }
+.ui-btn4:hover i,.ui-button:hover i{background-position:right -474px;}
+/*.ui-disbtn:hover{background-position:0 -500px;}
+.ui-disbtn:hover i{background-position:right -500px;}*/
+.ui-btn5:hover{background-position:0 -526px; }
+.ui-btn5:hover i{background-position:right -526px;}
+.ui-btn6:hover{background-position:0 -557px;}
+.ui-btn6:hover i{background-position:right -557px;}
+.ui-btn7:hover{background-position:0 -588px; }
+.ui-btn7:hover i{background-position:right -588px;}
+
+/*.subscribe-item .ui-btn1{font-weight:bold;}*/
+/*.ui-btn7,.subscribe-edit-box .ui-button,.subscribe-edit-box .ui-disbtn{font-size:14px; font-weight:bold}*/
+.ui-btn5,.ui-btn6{height:31px;line-height:31px;}
+.ui-btn5,.ui-btn6,.ui-btn7{font-size:14px; font-weight:bold}
+.ui-btn4:hover,.ui-button:hover,.ui-disbtn:hover,.ui-btn5:hover,.ui-btn6:hover{ text-decoration:none}
+.ui-btn1{color:#f17d0a;height:22px;line-height:22px;}a.ui-btn1:hover{color:#f17d0a;}
+.ui-btn2{color:#333;height:24px; line-height:24px;}a.ui-btn2:hover{color:#333}
+.ui-btn3{color:#f17d0a;height:28px; line-height:28px; top:1px;}a.ui-btn3:hover{color:#f17d0a;}
+.ui-btn4,.ui-button,.ui-btn5,.ui-btn7{color:#fff}
+a.ui-btn4:hover,a.ui-button:hover,a.ui-btn5:hover,a.ui-btn7:hover{color:#fff}
+.ui-btn4,.ui-button,.ui-disbtn{ height:26px; line-height:26px;_vertical-align:middle}
+.ui-btn6{color:#555;}a.ui-btn6:hover{color:#555;}
+.ui-btn7{height:32px; line-height:32px;}
+.ui-disbtn{color:#aca899;cursor:default;}.ui-disbtn:hover{color:#aca899;cursor:default;}.ui-disbtn i{ cursor:default}
+.ui-btn5 i,.ui-btn6 i{min-width:66px; *width:66px;}
+.verification .ui-btn{*vertical-align: middle;}
+.btn-disabled{cursor:default !important;}
+
+.btn-up-photo{ background-position:0 -220px; width:95px; height:28px; cursor:pointer}
+.btn-up-photo:hover{ background-position:0 -620px}
+.up-photo{ overflow:hidden; position:relative}
+.up-photo input.file{position:absolute;top:0;left:-170px;*top:0;width:280px;*width:300px; height:30px; outline:none;*left:-185px;filter: alpha(opacity=0);-moz-opacity: 0;opacity: 0;font-size: 18px;cursor: pointer;}
+
+/* 消息数-操作流程数字 */
+.msg-num,.s-num{background:#fe6600;display:inline-block;zoom:1;*display:inline;color:#fff;height:16px;line-height:16px;}
+.msg-num{background:#fe6600;border-radius:8px;margin-top:5px;padding:0 7px; float:right}.msg-num:hover{ text-decoration:none;color:#fff;}
+.s-num{background:#888;width:16px;font-weight:bold; border-radius:10px; text-align:center; margin-right:5px;}
+
+/* 操作-设置步骤流程 */
+.set-step{ border-bottom:1px solid #ececec; margin:15px 10px 10px; padding-bottom:3px} 
+.set-step li{ margin-right:6px;}
+.set-step1 .s-step1,.set-step2 .s-step2,.set-step3 .s-step3{ color:#f60}
+.set-step1 .s-step1 .s-num,.set-step2 .s-step2 .s-num,.set-step3 .s-step3 .s-num{ background:#f60}
+
+/* 针对IE的个性化圆角 
+.ie .msg-num,.ie .msg-num i,.ie .s-num{background:url(../../../img/mylvmama/lv-block.gif) #fff no-repeat; display:inline-block; *zoom:1;*display:inline; position:relative}
+.ie .msg-num{ background-position:-127px -220px; padding:0 0 0 7px;margin-top:7px; height:12px; line-height:12px;}
+.ie .msg-num i{ background-position:right -220px; padding:0 7px 0 0; float:left; height:100%; cursor:pointer}
+
+.ie .lvapp-item-hover .msg-num{background-position:-127px -232px;}
+.ie .lvapp-item-hover .msg-num i{background-position:right -232px;}
+.ie .lvapp-item-selected .msg-num{background-position:-127px -244px;}
+.ie .lvapp-item-selected .msg-num i{background-position:right -244px;}
+*/
+.ie .s-num{background:url(../../../img/mylvmama/lv-block.gif) #fff no-repeat; display:inline-block; *zoom:1;*display:inline; position:relative}
+.ie .s-num{ background-position:-92px -250px; height:17px; width:17px; text-align:center; line-height:17px;}
+.ie .set-step1 .s-step1 .s-num,
+.ie .set-step2 .s-step2 .s-num,
+.ie .set-step3 .s-step3 .s-num{background:url(../../../img/mylvmama/lv-block.gif) #fff no-repeat;background-position:-75px -250px;}
+
+/* 个人中心广告位 */
+.mod-s-ad{ padding:0 0 0 7px;}
+.mod-s-ad p{ width:130px; height:70px; margin:10px 0;}
+.mod-c-ad p{ width:808px; height:80px; overflow:hidden; margin-top:20px;}
+/* 右侧主内容区域 */
+.mod-top{ margin-bottom:20px;}
+
+/* 个人信息 */
+.my-account-info{ margin-bottom:5px; padding-left:10px;}
+.my-welcome span{color:#888}
+.my-welcome b{font-size:20px;}
+
+.ui-box-title{ border-bottom:2px solid #d8619b;}
+.ui-tab-title{ background:#d8619b;color:#fff; padding:0 10px; height:30px; position:relative; line-height:30px;border-top:1px solid #f7dfeb;/* border-bottom:1px solid #cfcfcf;*/}
+.ui-tab-title h3,.ui-tab-title .tab-nav{ display:inline; float:left}
+.ui-tab-title h3{ margin-right:50px;}
+.ui-box-title h3 small{font-size:12px;color:#999; font-weight:normal}
+.ui-tab-box{padding-bottom:20px; padding-top:10px;}
+.userinfo-edit .ui-tab-box{ border:1px solid #cfcfcf; border-top:none; padding:1em 1.4em}
+
+/* 上传修改头像 */
+.view-photo{margin-right:70px; float:left; display:inline; color:#555; line-height:18px;}
+.show-photo{ width:340px; height:240px;border:1px solid #ccc; overflow:hidden; background:url(../../../img/mylvmama/lvmama.gif) 500px 500px no-repeat}
+.lv-photo{ width:130px; height:130px; overflow: hidden}
+.view-photo-big .show-photo{width:130px; height:130px; background-position:-4px 0}
+.view-photo-small .show-photo{width:76px; height:76px; background-position:-4px -130px}
+.view-photo-big{ margin-right:10px; padding-top:25px;}
+.view-photo-small{ padding-top:100px; margin-right:0}
+
+/* 新改订阅 */
+.subscribe-item-list{ margin-right:-10px;}
+.subscribe-item{width:330px; margin-right:10px; height:70px; padding:15px 0 15px 68px;float:left;display:inline;}
+.subscribe-item dt{ width:60px; float:left; margin-left:-68px; display:inline}
+.subscribe-item .lvapp-icon{ width:60px; height:60px;}
+.subscribe-item .subscribe-edit-box{ margin-left:-68px;}
+.subscribe-edit-box .lv-bottom{left:760px;}
+.subscribe-item .lv-bottom{left:83px;}
+.no-list{ margin:15px 30px 10px}
+
+.subscribe-edit-box .check-box label{ margin-left:0; padding-right:10px;width:auto}
+.check-box label input{ margin-right:3px; vertical-align:middle}
+.subscribe-edit-box p{ clear:both}
+.dy_select{margin-right:10px}
+.dy_cha {border: 1px solid #A6A6A6;color: #898989;float: left;margin-right: 5px;padding: 2px;height:14px;line-height:14px;}
+.dy_cha img {cursor: pointer;vertical-align: top;}
+/* 编辑区edit-box */
+.edit-box{position:relative; margin-bottom:10px;}
+select.lv-select{height:24px; line-height:24px; margin-right:5px;}
+.input-text{ border:1px solid #ccc; color:#333; padding:3px 5px; height:22px; line-height:22px; margin-right:10px;}
+input.disabled{ border:none; background:#fff; padding:3px 0;}
+.edit-box .tips-c1{ padding-left:10px; *position:relative; *top:-6px;}
+.lv-done .tips-c1{ display:none}
+.s-wa{ width:84px;}.s-wb{ width:60px;}.s-wc{ width:45px;}/* 省市三级联动 */
+
+.input-email {width:160px; max-width:160px;}
+.i-checkcode{ width:60px; font-size:16px;}/* 验证框 */
+.input-uname{ width:70px;}
+.input-phone,.u-info-big{width:125px; font-size:18px;font-weight:bold;}
+.select-idtype{width:137px;}
+.input-idcards{width:200px;font-size:18px; font-weight:bold}
+.input-address{width:300px;}
+.input-zipcode{width:70px;}
+.input-money{ width:70px; color:#f60; font-size:18px; font-weight:bold}
+.input-bankcard{ width:240px; font-size:18px; font-weight:bold}
+.input-submit{ border:none; background:none; }
+.input-coupon{ font-size:18px; font-weight:bold; margin-right:3px; width:200px;}
+.select-bank{ width:150px;}
+.apply-textarea{ width:420px; height:100px; padding:3px 5px; line-height:20px;}
+.input-error{ border-color:#f44}
+.u-info,.u-info-big{ line-height:28px;color:#333}
+.u-info{ font-weight:bold; font-size:14px;}
+.input-disabled{background:#eee !important;}
+
+/* 用户信息 */
+.userinfo-edit-box .u-info,.userinfo-edit-box .u-info-big{ margin-right:10px;}
+.userinfo-edit-box .bind-phone{position:absolute; top:75px;left:210px; _margin-left:-10px;}
+.userinfo-edit-box .bind-email{position:absolute; top:40px; left:210px; _margin-left:-10px;}
+.userinfo-edit-box p i,.userinfo-edit-box a{ zoom:1; }
+/* 阅读区view-box */
+.view-box h4{ margin-top:15px; border-bottom:1px solid #ececec; font-size: 14px;}
+.view-box p{ margin-left:1em; text-indent:1em; height:30px; line-height:30px;}
+.view-box p.p-info{ border-bottom:1px dashed #ddd}
+.order-info{margin-left:2em; width:480px;}
+.order-info li{ width:49%;height:28px; line-height:28px; float:left; display:inline}
+
+p.price-sum{ text-align:right; padding:10px}
+p.price-sum dfn{ display:inline; margin:0; padding:0;*margin-left:-10px;}
+
+/* 推荐商品-猜你喜欢 */
+.p-vlist{ padding:20px 5px 10px}
+.p-vlist li{  margin:0 5px;}
+.p-vlist li img{ padding:1px; border:1px solid #ccc; margin-bottom:3px;}
+.p-vlist span{ clear:both; line-height:18px; display:block}
+.p-vlist a span{color:#333}.p-vlist a:hover span,.p-vlist a:hover{color:#d38}
+.p-vlist .lv-tit{word-wrap:break-word;word-break:break-all;overflow:hidden; cursor:pointer}
+.p-vlist dfn{ font-weight:bold}
+#scoll-content{ background:#fafafa; padding-bottom:10px;}
+.tj_p-vlist li{width:148px;}
+.tj_p-vlist li img{width:144px; height:96px;}
+.tj_p-vlist .lv-tit{ height:20px;}
+
+.guess_p-vlist li{width:142px;}
+.guess_p-vlist li img{width:138px; height:100px;}
+.guess_p-vlist .lv-tit{ height:38px;}
+.guess_p-vlist dfn{ font-weight:bold}
+/* 滚动控制 */
+.scoll-box{ position:relative}
+.scoll-box a.prev,.scoll-box a.next,#scoll-navi a{ background:url(../../../img/mylvmama/lv-block.gif) 0 0 no-repeat; cursor:pointer}
+.scoll-box a.prev,.scoll-box a.next{width:22px; height:62px; position:absolute;top:70px;}
+.scoll-box a.prev{background-position:0 -270px;left:0}.scoll-box a.prev:hover{background-position:-44px -270px;}
+.scoll-box a.next{background-position:-22px -270px;right:0}.scoll-box a.next:hover{background-position:-66px -270px;}
+.scoll-box a.disabled{/*filter:alpha(opacity=10); opacity:.1;*/ display: none; cursor:default}
+#scoll-navi{ margin-right:5px; float:right; display:inline}
+#scoll-navi a{background-position:0 -250px; width:13px; height:13px; display:inline-block; zoom:1;*display:inline}
+#scoll-navi a.active,#scoll-navi a:hover{background-position:-12px -250px;}
+
+.guess_p-vlist{margin:0 auto;height:184px; width:760px;overflow:hidden;position:relative}
+.guess_p-vlist .p-vlist{ margin-left:-5px;}
+#scoll-content .ajax-loader{ position:absolute; z-index:101;}
+.scrollable .items{ width:20000em;position:absolute;clear:both;}
+
+.ajax-loader,.ui-overlay{ width:100%;height:100%; }
+.ui-overlay{position:absolute; z-index:1000;left:0; top:0; background:#fff; filter:alpha(opacity=70); opacity:.7;}
+.ajax-loader p.loading{ position:relative; z-index:1002; line-height:25px; text-align:center; padding-top:70px;}
+
+/* 信息框（积分，存款，优惠券等） */
+.mod-info{ border:1px solid #ffce88; background:#ffffe0; padding:15px 15px 10px 20px;}
+.info-detail p{ margin:5px -80px 5px 0}
+.info-detail .info-num i{ font-size:30px; line-height:31px; color:#f60; height:31px; margin-right:5px;}
+.info-detail .info-num { vertical-align:bottom;color:#555; font-size:14px; margin-right:20px;}
+.info-detail .hv_blank{ background:url(../../../img/mylvmama/lvmama.gif) 0 0 no-repeat; width:2px;}
+/*.info-coupon .hv_blank{ background-position:-2px 0; height:150px;}*/
+.info-detail{ width:420px;}
+.info-tips,.info-set{padding:20px 10px 0 40px; width:300px}
+.info-set a:hover{ text-decoration:none ;}
+.info-m-tips{  border-top:1px dotted #ddd;padding-top:5px;}
+.info-detail .info-m-tips{border:none;padding-top:0;}
+.info-detail .ui-btn5,.info-detail .ui-btn6,.info-detail .ui-btn7{ margin-right:10px;}
+.info-tips .tips-info{ line-height:18px; margin-top:10px;}
+.info-detail .ui-btn3{ vertical-align:top;}
+.tips-info .lv-c1{ font-weight:bold} 
+
+.info-coupon .info-m-tips{margin-top:1px; padding-top:3px;border-top:1px dotted #ffd18f; margin-right:40px;}
+.ie6 .text_bottom a,.ie7 .text_bottom a{position:relative; top:20px;}
+.enter-coupon{ padding:10px 0 20px}
+.enter-coupon p{ padding-left:110px; margin:5px 0}
+.enter-coupon p label{ float:left; display:inline; margin-left:-110px; line-height:30px; height:30px;text-align:right}
+.enter-coupon .ui-btn{ vertical-align:top}
+
+/* 站内消息 */
+.msg-list{}
+.msg-list li{ line-height:30px; padding:0 10px; border-bottom:1px solid #eee; overflow:hidden;}
+.msg-list a.show-tips-detail{ color:#333; }.show-tips-detail{display:block;_width:615px;_float:left}
+.msg-list a.new{color:#08C}
+.msg-list span.pub-time{ color:#888}
+.msg-list li:hover,.msg-list li.hover{ background:#f3f3f3}
+.msg-list a:hover,.msg-list a.show-tips-detail:hover{color:#D38}
+.no-bg  a.new,.no-bg  a.new:hover{color:#333;}
+
+/* 站内消息改版增加 */
+.news-top{ height:29px; line-height:29px; padding-left:11px; background: url(../../../img/mylvmama/lv-bgx.gif) repeat-x left top; border:#dcdcdc solid 1px; border-top:none; color:#555;}
+.news-top span,.news-top b{ margin:0 3px;}
+.news-top b{ margin:0; padding:0 3px; }
+.news-top b,.news-top a{ color:#0088cc;}
+.news-class{ float:right; margin:5px 10px 0 0;}
+.news-list{ margin-top:10px; border:#dcdcdc solid 1px; color:#555;}
+.news-list dt{ height:29px; line-height:29px; background:#fafafa;}
+.news-list dd{ padding-bottom:13px; border-top:#dcdcdc solid 1px; overflow:hidden; zoom:1;}
+.news-list dd.news-list-bg{ background:#f3f3f3;}
+.news-list dt,.news-list dd{ overflow:hidden; zoom:1;}
+.news-list-box{ padding-top:13px; height:22px; line-height:22px; overflow:hidden; zoom:1;}
+.news-input-box,.news-bt,.news-time,.news-cz{ float:left; display:inline;}
+.news-input-box{ width:62px; text-align:center;}
+.news-input-box label{ height:26px; line-height:26px;}
+.news-list dt input,.new-bot .news-input-box input{ margin-right:4px; position:relative; top:2px;}
+.news-list dd input{ position:relative; top:2px; *top:0;}
+.new-bot .news-input-box input{ *top:0; _top:2px;}
+.news-list .news-bt{ width:500px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.news-list dd .news-bt{ color:#0088CC;}
+.news-list .news-bt a{ display:inline-block;}
+.news-list .news-bt-bold{ font-weight:bold;}
+.news-time,.news-cz{ text-align:center; padding:0 10px;}
+.news-time{ width:150px;}
+.news-cz{ width:70px;}
+.news-list dt .news-bt{ text-align:center;}
+.new-bot-box{ overflow:hidden; zoom:1;}
+.new-bot{ float:left; margin-top:10px; height:27px; line-height:26px;}
+.new-bot a{ line-height:26px; margin-left:10px;}
+.news-list dd .lv-tips-box{ margin:10px 20px 0 64px; background:#fbfbfb;}
+
+/* 信息验证 */
+.link-btn{margin-left:10px;}
+.email-verified,.phone-verified{color:#555; margin-right:20px;}
+.lv-done .link-btn{display:none;}
+
+/* 已验证 */
+.email-noverified,.phone-noverified{}
+
+.edit-inbox{ padding:0 10px;}
+.edit-inbox p{ margin:10px 0;}
+.edit-inbox p label{ line-height:39px; height:39px; float:left; display:inline;text-align:right}
+
+.edit-inbox p label span{ color:#f00; padding-right:3px;}
+.subscribe-edit-box{ margin-top:10px;}
+.subscribe-edit-box p{ padding-left:100px;}
+.subscribe-edit-box p label{width:100px; margin-left:-100px; }
+.phone-edit-box p{ padding-left:125px;}
+.phone-edit-box p label{width:125px; margin-left:-125px;}
+.email-edit-box p{ padding-left:140px;}
+.email-edit-box p label{width:140px; margin-left:-140px;}
+.email-checkcode img{ border:1px solid #ccc; margin-right:10px;}
+.name-edit-box p{ padding-left:100px;}
+.name-edit-box p label{ width:100px; margin-left:-100px;}
+.password-edit-box p{ padding-left:100px;}
+.password-edit-box p label{ width:100px; margin-left:-100px;}
+.visitor-edit-box p{ padding-left:75px;}
+.visitor-edit-box p label{width:75px; margin-left:-75px; }
+.userinfo-edit-box p{ padding-left:75px; line-height:28px;}
+.userinfo-edit-box p label{width:75px; margin-left:-75px;}
+.userinfo-edit-box label.sex{ margin:0; text-align:left; width:50px; line-height:24px;}
+.userinfo-edit-box label.sex input{ margin-right:5px; vertical-align:middle}
+.store_set-edit-box p{ padding-left:75px; line-height:28px;}
+.store_set-edit-box p label{width:75px; margin-left:-75px;}
+.store_set-edit-box label.store_set_type{ margin:0 10px 0 0; width:auto}
+.set_type{ margin:10px 5px 0; vertical-align:top; *margin-top:5px;}
+.edit-m-info{ padding-top:10px;}
+.edit-m-info p{ line-height:20px; width:560px}
+.edit-m-info .tabcon{ display:none}
+.edit-m-info .selected{ display:block}
+.store_del-edit-box p{ padding-left:120px;}
+.store_del-edit-box p label{width:120px; margin-left:-120px;}
+.store_pwd_change-edit-box p{ padding-left:120px;}
+.store_pwd_change-edit-box p label{ width:120px; margin-left:-120px;}
+.apply-edit-box{ overflow:hidden}
+.apply-edit-box p,.apply-edit-box .xh-p{ padding-left:100px;}
+.apply-edit-box p label,.apply-edit-box .xh-p label{ width:100px;margin-left:-100px;}
+.apply-edit-box .edit-inbox{ margin-top:-1px; border-top:1px solid #ccc; margin-left:30px}
+.apply-edit-box label.invoice{ margin-left:0; width:auto; float:none; margin-right:20px;}
+.apply-edit-box .invoice input{ margin-right:3px;}
+.apply-edit-box .input-money{ margin-right:2px; text-align:right}
+
+/* 提醒，弹窗，警告，错误提示，操作提示，疑问提示 */
+.tips-yellow{ background:#ffffe0; border:1px solid #ffce88; padding:8px;}
+.tips-msg{ display:inline-block;zoom:1;*display:inline;}
+.no-msg{color:#555; margin-right:45px;}.no-msg a{color:#555}
+.tips-yellow .lv-c1{margin-right:20px;}
+.tips-yellow .lvapp-icon{ margin-top:2px;}
+.tips-ico01,.tips-ico02,.tips-ico03,.tips-ico04,.msg-ico01,.msg-ico02,.msg-ico03,.s-arrow,.tips-faq{ background-image: url(../../../img/mylvmama/tips-ico.gif); display:inline-block;zoom:1;*display:inline;position:relative}
+.tips-ico01,.tips-ico02,.tips-ico03,.tips-ico04,.s-arrow,.tips-faq{width:12px; height:12px;margin:0px 5px 0 0;position:relative; top:1px}
+.msg-ico01,.msg-ico02,.msg-ico03{ width:32px; height:32px; margin-right:10px;}
+.tips-ico01{background-position:0 0;*top:9px; *vertical-align:top}
+.tips-ico02{background-position:0 -12px;}
+.tips-ico03{background-position:0 -24px;}
+.tips-ico04{background-position:0 -60px;}
+.tips-faq{background-position:0 -48px;}
+.s-arrow{background-position:0 -36px;}
+.msg-ico01{background-position:-12px 0;}
+.msg-ico02{background-position:-12px -32px;}
+.msg-ico03{background-position:-12px -64px;}
+.tips-success,.tips-error,.tips-warn,span.tips-info,p.tips-info,.tips-winfo{ padding:3px 10px !important; display:inline-block;zoom:1;*display:inline;vertical-align:top;position:relative;_vertical-align: baseline;_top:1px}
+p.tips-info{ display:block; margin:10px 0;}
+div.tips-info{ display:block; margin:15px auto;}
+.tips-success,.tips-error,.tips-warn{color:#888}
+.tips-success{ background:#f1ffe2; border:1px solid #7dc25e;}
+.tips-success .tips-ico01{background-position:0 0;*top:0;}
+.tips-error{ background:#fff2f2;color:red; border:1px solid #f44;}
+.tips-info{ background:#ffffe1; border:1px solid #ffce89;}
+.tips-warn{ background:#ffffe0; border:1px solid #ff8801;}
+.tips-winfo{ background:#f7f7f7; border:1px solid #e5e5e5; padding:1px 10px !important; line-height:24px; margin-left:10px;color:#888;*width:240px;}
+
+.tips-winfo .ui-disbtn{_top:-1px; display:inline;float:right; font-weight:normal; font-size:12px}
+.ie6 .tips-success,.ie6 .tips-error,.ie6 .tips-warn,.ie6 .tips-info{padding-top:7px !important; height:18px; vertical-align:top
+}
+.ie .tips-winfo,.ie .tips-winfo{width:240px;}
+.ie6 .tips-winfo{ padding:2px 10px 1px 10px !important;}
+.ie6 .tips-winfo .ui-disbtn{ top:-1px;}
+
+.tips-c1{color:#f00}
+.msg-success,.msg-warn,.msg-error,.msg-info,.msg-winfo{ padding:30px 20px 20px 60px;}
+.msg-success .msg-ico01,.msg-warn .msg-ico02,.msg-error .msg-ico03{ float:left; display:inline; margin:-5px 0 0 -45px;}
+.msg-success .lv-c1{ padding:0 3px;}
+.msg-success h3{color:#000}
+
+.radius{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px}
+.radius5{-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px}
+/* css实现的箭头--小小提示框 */
+.minitip{position:absolute;padding:2px 4px;text-align:center;white-space:nowrap;border:1px solid #ffce88;background:#ffffe0;z-index:5;display:none}
+.minitip .cont{color:#7a7a7a;line-height:18px}
+
+.minitip .pointy-bordr,.minitip .pointy{position:absolute;top:50%;width:0;height:0;line-height:0;font-size:0;border-width:6px;overflow:hidden}
+.lv-left .pointy-bordr,.lv-left .pointy{border-style:dashed dashed dashed solid}
+.lv-left .pointy-bordr{right:-12px;margin-top:-5px;border-color:transparent transparent transparent #ffce88}
+.lv-left .pointy{right:-10px;margin-top:-5px;border-color:transparent transparent transparent #ffffe0}
+
+.lv-right .pointy-bordr,.lv-right .pointy{border-style:dashed solid dashed dashed}
+.lv-right .pointy-bordr{left:-12px;margin-top:-5px;border-color:transparent #ffce88 transparent transparent}
+.lv-right .pointy{left:-10px;margin-top:-5px;border-color:transparent #ffffe0 transparent transparent}
+
+.lv-arrow{position:absolute;text-align:center;white-space:nowrap;z-index:5;}
+.lv-arrow .pointy-bordr,.lv-arrow .pointy{position:absolute;top:50%;width:0;height:0;line-height:0;font-size:0;border-width:6px;overflow:hidden}
+.lv-bottom .pointy-bordr,.lv-bottom .pointy{border-style:dashed dashed solid dashed}
+.lv-bottom .pointy-bordr{top:-12px;margin-right:-5px;border-color:transparent transparent #e5e5e5 transparent}
+.lv-bottom .pointy{top:-10px;margin-right:-5px;border-color:transparent transparent #fff transparent}
+
+.lv-tips-box{ margin-top:-2px; position:relative; left:0; top:0; display:none}
+.lv-tips-box .cont{ padding:10px;}
+.lv-tips-box .lv-bottom{ left:50px;}
+.lv-tips-box a{color:#08C}
+.msg-list .lv-tips-box{ background:#fbfbfb; line-height:22px; margin-bottom:5px;}
+
+.subscribe-tips{ background:#fff; display:none; z-index:100; width:350px;}
+
+.view_detail{ cursor:pointer}
+.tooltip{ display:none; position:absolute}
+.points-tooltip,.coupon-tooltip,.apply-tooltip,.item-new i,.withdrow-tooltip{ background:url(../../../img/mylvmama/lv-png24.png) 0 0 no-repeat; width:302px; height:214px; overflow:hidden;}
+
+/*#coupon-tooltip td.remark{ position:relative}*/
+.coupon-tooltip{ height:130px; background-position:-302px 0; z-index:100;color:#555;/* top:48px; left:-230px;*/}
+.apply-tooltip{ width:604px; background-position:0 -214px; z-index:100;color:#888}
+
+.points-tooltip p,.coupon-tooltip p{padding:20px 15px 10px; text-align:left; line-height:21px;}
+.apply-tooltip span{padding:20px 15px 10px; display:block; text-align:left; line-height:20px;}
+.apply-tooltip { position:absolute; top:20px; left:105px;}
+
+.item-new{ position:relative}
+.item-new i{ background-position:-310px -140px; height:40px; width:39px; position:absolute; left:-2px;top:-3px;}
+
+/* Pages页码控制 默认橙色 */
+.pages{margin:10px 0 0;text-align:right;}
+.Pages a,.Pages span{display:inline-block;zoom:1;*display:inline;margin-left:5px;padding:0 9px; height:25px; line-height:25px;}
+.Pages a{border:1px solid #ddd;color:#333; color:#07c;background:#fff;}
+.Pages .PageSel,.orangestyle .PageSel{font-weight:bold;color:#fff;border:1px solid #f80;background:#f80;}
+.Pages a:hover,.orangestyle a:hover{ text-decoration:none;border-color:#f80;color:#f80;}
+.Pages .PrevPage,.Pages .NextPage{ width:55px; padding:0; height:25px;/* color:#07c;*/ line-height:24px; background:url(../../../img/new_v/newBtn_bg.gif) 1000px 1000px no-repeat}
+.Pages .PrevPage{ background-position:0 -1817px; text-align:right; padding-right:10px;}
+.Pages .NextPage{ background-position:-144px -1817px; text-align:left; padding-left:10px;}
+.Pages span.PrevPage,.Pages span.NextPage{color:#ccc;border:1px solid #ddd;}
+.Pages span.PrevPage{ background-position:0 -1776px;}
+.Pages span.NextPage{ background-position:-144px -1776px;}
+.rosestyle .PageSel{border:1px solid #df1a7a;background:#df1a7a;}
+.rosestyle a:hover{ border-color:#df1a7a;color:#df1a7a;}
+.orangestyle .PageSel{border:1px solid #f80;background:#f80;}
+.orangestyle a:hover{ border-color:#f80;color:#f80;}
+
+/* 订单列表 */
+.ui-hide{ display:none}
+
+
+/* xh弹窗 */
+.xh_overlay,.xh_dialog{display:none}
+.xh_overlay{ background:#000;filter:alpha(opacity=50); opacity:.5; width:100%; height:100%; position:absolute; left:0;top:0; z-index:2000; }
+.xh_dialog{position:absolute; left:50%; width:294px; overflow:hidden; margin-left:-150px; z-index:2005; box-shadow:2px 2px 9px #ccc;}
+.xh_dialog-bg{display:none; position: absolute; left:0; top:0; width:100%; height:100%; _height:500px; background:#000;filter:alpha(opacity=20); opacity:.2;}
+.xh_dialog-box{width:252px; padding:18px 20px 0; overflow:hidden; background:#fff; border:1px solid #ccc;color:#555;}
+.xh_btn-ok,.xh_btn-cancel{display:inline-block; zoom:1;*display:inline;height:24px; line-height:24px; padding:0 13px; margin-left:10px; cursor:pointer;border-radius:3px;background:url(../../../img/common_pop/close.gif) repeat 0 -40px;}
+.xh_btn-ok:hover,.xh_btn-cancel:hover{ text-decoration:none;}
+.xh_btn-ok{border:1px solid #e60;color:#fff;}a.xh_btn-ok:hover{color:#fff; background-position: 0 -70px;}
+.xh_btn-cancel{border:1px solid #ccc; background-position:0 -100px;color:#000;}a.xh_btn-cancel:hover{border:1px solid #abc; background-position:0 -130px;color:#000;}
+.xh_dialog-box h4,.xh_dialog-box h3{ margin-bottom:10px;}
+
+/* 邮箱验证成功 */
+.ver-success .hh_header{ border-bottom:2px solid #dedede; padding-bottom:10px;}
+.ver-success .hh_logo{ float:left; display:inline; margin-left:20px;}
+.ver-success .msg-success{ width:400px; margin:50px auto 160px; clear:both}
+.ver-success p .lv-c1{ font-weight:bold; color:#555;}
+
+/* 我的驴妈妈新版引导 
+.lv-guide {color:#f80; display:inline-block; zoom:1; *display:inline;}
+.lv-guide .lvapp-icon{ background-position:0 -256px; width:16px; height:16px; margin:2px 2px 0 0; float:left;display:inline;}
+.guide_step{ position: absolute; left:50%; top:50%; display:none; padding-top:200px;z-index:2010}
+.guide_step .guide_box{ position:relative}
+.guide_step .xh_close{ display:block;width:40px; height:40px; position:absolute;right:0; top:0; cursor:pointer}
+.g_btn a{position:absolute;}
+.g_btn a.prev{width:50px;height:35px;}
+.g_btn a.next{width:100px; height:35px;}
+#step1 .guide_box{ background:url(../../../img/mylvmama/guide1.png) no-repeat; width:326px; height:209px;}
+#step2 .guide_box{ background:url(../../../img/mylvmama/guide2.png) no-repeat; width:499px; height:209px;}
+#step3 .guide_box{ background:url(../../../img/mylvmama/guide3.png) no-repeat; width:500px; height:277px;}
+#step4 .guide_box{ background:url(../../../img/mylvmama/guide4.png) no-repeat; width:500px; height:305px;}
+#step5 .guide_box{ background:url(../../../img/mylvmama/guide5.png) no-repeat; width:495px; height:230px;}
+/*#step6 .guide_box{ background:url(../../guide/guide6.png) no-repeat; width:326px; height:265px;}*/
+
+/*#step6 .xh_close{top:155px}
+
+#step1 a.prev{ display:none}
+#step1 a.next{left:200px; top:160px}
+#step2 a.prev{left:190px; top:155px}#step2 a.next{left:380px; top:155px}
+#step3 a.prev{left:190px; top:155px}#step3 a.next{left:380px; top:155px}
+#step4 a.prev{left:190px; top:165px}#step4 a.next{left:380px; top:165px}
+#step5 a.prev{left:190px; top:155px}#step5 a.xh_close{left:360px; top:155px;width:100px;}
+/*#step6 a.prev{left:10px; top:208px}#step6 a.xh_close{ width:100px;left:190px; top:205px}
+
+#step1{ top:0; margin-left:-200px;}
+#step2{ top:-13px; margin-left:-490px;}
+#step3{ top:23px; margin-left:-490px;}
+#step4{ top:140px; margin-left:-490px;}
+#step5{ top:253px; margin-left:-490px;}
+/*#step6{ top:113px; margin-left:-70px;}*/
+
+
+/* sns入口页 */
+a.travel-btn{ display:block; width:87px; height:25px; line-height:25px; text-align:center; color:#fff; background-position:0 -650px;}
+a.travel-btn:hover{color:#fff; text-decoration:none;}
+
+.lv-door{ margin-top:35px;}
+
+/* float layer start - 取消订单和发短信的的弹出样式 */
+.fl-bg {display:none;background-color:#000;-moz-opacity:0.4;opacity:.4;filter:alpha(opacity=40);width: 100%;height:100%;left:0;top:0;position:fixed!important;position:absolute;}
+.fl-layer {display:none;position:absolute;width:360px;height:150px;border:2px solid #CC0467;background-color:#fff;}
+.fl-layer h3 {background-color:#cc0467;height:23px;line-height:23px;padding-left:5px;color:#fff;font-weight:bold;}
+.fl-layer div {padding:20px 20px 40px 20px;line-height:30px;}
+.fl-layer div span {display:block;color:#f00;padding-left:85px;}
+.fl-layer div em {color:#d06;}
+.close-btn {position:absolute;right:3px;top:3px;cursor:pointer;}	
+.close-btn img {cursor:pointer;}
+.sm-btn {border:none;width:98px;height:32px;margin-left:85px;background:url(../../../img/myspace/sentMMS.gif) no-repeat 0 0;}
+.sm-gray-btn{background:url(../../../img/myspace/no_sentMMS.gif) no-repeat 0 0;}
+.sent-mms {cursor:pointer;color:#05e;}
+.fl-layer div span.sent-time {color: #999999;display: inline;font-weight: bold;padding-left: 15px;}
+.fl-layer div.fl-bm {position:absolute;bottom:0;padding:0;margin:0;z-index:1000;width:360px;height:25px;line-height:25px;text-align:center;background-color:#E9E9E9;}
+/*float layer cancel_wapper*/
+.bg-tan {background-color:#000;filter:Alpha(opacity=40);-moz-opacity:0.4;opacity:0.4; position:fixed;_position:absolute;width:100%; height:100%;left:0;top:0;z-index:996; display:none;}
+.cancel_wapper {position:absolute;z-index:999;width:354px;left:0;top:0;background:#cd0468;height:331px; display:none}
+.cancel_wapper01 {position:absolute;z-index:999;width:354px;left:0;top:0;background:#cd0468; height:160px; display:none}
+.cancel_wapper h4,.cancel_wapper01 h4{ left: 10px;position: absolute;top: 8px;color:#fff; font-size:14px; font-weight:700}
+.cancel_wapper .cancel_bg,.cancel_wapper01 .cancel_bg{ position: absolute; right: 9px;top: 8px;cursor:pointer}
+.cancel_wapper .cancel_list,.cancel_wapper01 .cancel_list{ width:350px; margin:0 auto; background:#fff; margin-top:30px; height:299px;}
+.cancel_wapper01 .cancel_list{ height:127px;}
+.cancel_wapper .cancel_list h3{   color: #CC0066;height: 40px;line-height: 46px;margin-left: 22px;text-align: left;vertical-align: middle;}
+.cancel_list_s { margin-left:45px; overflow:hidden; zoom:1}
+.cancel_list_s li{ height:25px; line-height:25px; color:#000;}
+.cancel_list_s li .input_radio{ vertical-align:-2px; margin-right:7px;}
+.cancel_list_s li.sub_bt{ line-height:40px; height:40px; margin-left:51px; display:inline-block;*margin-left:28px;}
+.denglv{ background:url(../../../img/myspace/myspace_fapiao/sub_bg.jpg) no-repeat left top; width:64px; height:21px; line-height:21px; vertical-align:middle; border:0px; margin-right:16px; margin-top:10px; cursor:pointer;  margin-left: -3px;}
+.cancel_closed{ background:url(../../../img/myspace/myspace_fapiao/cancel_t.jpg) no-repeat left top; padding-left:20px;display: block;height: 20px; }
+.cancel_ka{padding-left: 100px; padding-top: 30px; color:#000000;}
+.input_01{ margin-left:3px; width:183px; height:21px; border:#7f9db9 solid 1px; padding-left:5px;}
+
+
+/* 表单验证的提醒 */
+label.label_tip{ margin:0 !important; float:none !important;width: auto !important}
+
+
+/* 修复充值弹窗的位置 */
+#tipsWindow{left:50% !important; margin-left: -230px}
+#tipsWindow input{padding: 5px 10px;}
+
+/* 遗漏新作弹窗的关闭按钮 */
+span.close-this{/*display: none*/}
+/*
+span.close-this{float: right; display: inline; width: 22px; height: 18px; font:16px/18px Tahoma; border: 1px solid #ccc; background: #fff;color:#999;margin-top:-13px; margin-right: -13px; cursor: pointer; text-align: center;}
+span.close-this:hover{color:#333;border-color:#999;}
+*/
+
+.dy_add {background-color: #FF8041;border: 0 none;color: #FFFFFF;cursor: pointer;font-weight: bold;margin-left: 3px;padding: 1px 5px;}
+
+/*addbypp 121016*/
+.mylv_ckzh_pop{display:none;width:380px;left:50%; margin-left:-190px; }
+.mylv_ckzh_btn,.ui-btna{display:inline-block;*display:inline;*zoom:1;width:75px; height:27px; line-height:27px; text-align:center; color:#fff;  background:url(../../../img/mylvmama/lv-block.gif) no-repeat -75px -332px;}
+.ui-btna:hover,.mylv_ckzh_btn:hover,.mylv_ckzh_btn:active{color:#fff;background-position: -75px -359px; text-decoration:none}
+.ui-btna{ font-weight:bold}
+
+/* 新修改提现页面10M-22 */
+.store_withdrow-edit-box{ padding:20px 10px 10px}
+.store_withdrow-edit-box .info-num{ *vertical-align:baseline}
+.withdrow-item{ width:170px; height:80px; border:1px solid #dedede; background:#f7f7f7; float:left; display:inline; margin:5px 20px 10px 0; padding:15px 15px 15px 95px;}
+.withdrow-item span.lvapp-icon{ float:left; display:inline; width:50px; height:43px; margin-left:-60px; margin-top:5px;}
+.icon-app60-101{ background-position:-27px -240px;}
+.icon-app60-102{ background-position:-27px -283px;}
+.withdrow-item h4{ font-size:14px; font-weight:500;color:#333; display:inline}
+.withdrow-item p{color:#999; margin-bottom:5px;}
+.withdrow-tooltip{ width:326px; height:123px; background-position:0 -424px;}
+.withdrow-tooltip .tooltip-inner{ padding:18px 13px; line-height:18px;}
+.withdrow-tooltip p{color:#555}
+.ico-help{ background-position:0 -240px; float:none; display:inline-block; *display:inline; *zoom:1; width:16px; height:16px; position:relative; top:3px;*top:0; margin-left:3px;}
+
+.process-edit-box{ padding:20px;}
+.process-edit-box .info-detail{ overflow:hidden}
+.process-box{ margin:10px 20px 20px 40px; overflow:hidden; clear:both}
+.process-edit-box .inline{ padding-left:15px; float:left}
+.process-inner{ padding:20px 20px 10px; border:1px solid #efefef;}
+.ico-process{ background-position:0 -290px; width:24px; height:31px; position:relative; top:-5px;}
+.process-box p{color:#555}
+
+.xh_dialog-btn{padding:24px 0 20px; text-align:right;}
+span.close-this{position:absolute; top:7px; right:8px;display:block; width:16px; height:16px; text-indent:-100px; overflow:hidden; cursor:pointer; background:url(../../../img/common_pop/close.gif) no-repeat 4px -16px;}
+
+/*addbypp 添加大社区入口样式121116*/
+.lv_mytrip_info{ overflow:hidden; zoom:1;padding:20px 32px 32px; background:url(../../../img/new_v/trip/trip_what.gif) no-repeat 32px 20px #f2f4f7;}
+.lv_mytrip_ex{float:right;}
+.lv_mytrip_list li,.lv_mytrip_fblink{background:url(../../../img/new_v/trip/trip_bg.gif) no-repeat;}
+.lv_mytrip_list{padding:13px;margin-top:140px;font:normal 15px/1.5 "Arial", "PingFang SC", "Microsoft Yahei", "SimSun", sans-serif; color:#555; background:#fff;}
+.lv_mytrip_list li{padding:0 30px 0 24px;background-position: 0px -82px;}
+.lv_mytrip_link{display:block; padding:9px 0;margin-right:18px; font-size:14px; text-align:right; cursor:pointer;}
+.lv_mytrip_link b{font-size:12px; padding:0 18px 0 9px;}
+.lv_mytrip_btnbox{margin:9px 0;text-align:right;}
+.lv_mytrip_fblink{display:inline-block;width:130px; height:36px; background-position: 0 0;}
+.lv_mytrip_fblink:hover{ background-position:0 -40px;}
+.icon-apps16-1017{ background-position:0 -329px}
+
+/*
+.lv_mytrip_tab li{overflow:hidden; zoom:1; margin-top:-1px; line-height:30px; border-left:1px solid #ddd; border-top:1px solid #ddd;}
+.lv_mytrip_tab span{display:block;float:left; text-indent:9px; overflow:hidden;white-space:nowrap; overflow:hidden; text-overflow:ellipsis; color:#555;border-right:1px solid #ddd; border-bottom:1px solid #ddd;}
+.lv_mytrip_tab li.lv_mytrip_tit{margin-bottom:10px;font:bold 14px/30px "Microsoft YaHei";background:#f76997;}
+.lv_mytrip_tit  span{height:30px;border-color:#f76997; color:#fff; }
+.lv_mytrip_tab1{width:500px;}
+.lv_mytrip_tab2{width:100px;}
+.lv_mytrip_tab3{width:204px;}
+.lv_list_even{ background:#fafafa;}
+*/
+
+.lv_mytrip_btnS{display:inline-block; vertical-align:middle; height:20px;line-height:20px; padding:0 13px; text-indent:0; text-align:center; color:#fff;border:1px solid #d39; background:url(../../../img/common_pop/close.gif) repeat 0 -165px; border-radius:3px;}
+.lv_mytrip_btnS:hover{color:#fff; background-position:0 -205px; text-decoration:none;}
+.lv_mytrip_titlink{display:block;width:520px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.lv_mytrip_titlink:link{color:#555;}.lv_mytrip_titlink:hover{color:#e38;}
+.mylv_tripmain{margin-bottom:9px;position:relative;z-index:2;}
+.mylv_tripmain img{position:relative;z-index:2;}
+.mylv_tripmain a{background:url(about:blank);display:inline-block;position:absolute;z-index:10;}
+.mylv_tripmain a.trip1{left:505px;top:230px;width:270px; height:85px;}
+.mylv_tripmain a.trip2{left:180px;bottom:0px;width:640px; height:80px;}
+
+/* 优化按钮 */
+.btn_golook{background:url(../../../img/new_v/newBtn_bg.gif) 1000px 1000px no-repeat; text-indent:-9999px;zoom:1;}
+.btn_golook{ background-position:0 -1363px; display:inline-block; width:75px; height:26px; line-height:26px; display:block}
+.btn_golook:hover{ background-position:-144px -1363px;}
+
+/* 活动入口 */
+#xh_floatR{width:154px; height:195px; display:none; position:fixed; left:50%; margin-left:510px; top:235px; z-index:300; _position:absolute;_top:expression(eval(document.documentElement.scrollTop+180));}
+.bm-box{ width:154px; height:195px; position:relative; background:url(../../../img/mylvmama/best-wishes.png) no-repeat;cursor:pointer}
+.bm-box i.close{ display:block; position:absolute; z-index:20; width:20px; height:20px; right:0px; top:0px; cursor:pointer}
+.bm-box .bm-link{ display:block; position:absolute; z-index:10; left:0; top:0; width:100%; height:100%;}
+
+/* 点评重构 */
+.integral{ padding:5px 0  5px 2em; line-height:24px;color:#555;}
+.comment-box dfn,.comment-box dfn i{font-weight:bold}
+.comment-list dfn{padding:0 3px;}
+.cmt_situation{color:#888888;padding:5px 0;}
+.cmt_situation span{padding:0 10px;display:inline-block;line-height:18px;border:1px solid #E6E6E6;margin-right:3px;}
+.cmt_situation .has_click{color:#ff8800;border-color:#FFDD88;}
+.pro_scenic{border-bottom:1px solid #ddd;padding-bottom:20px;margin-right: -20px;}
+.pro_scenic li{float:left;margin:15px 20px 0 10px;width:380px;line-height:26px;display:inline;}
+.pro_scenic .pics{float:left;margin-right:10px; background: url(../../../img/new_v/ui_scrollLoading/loading.gif) no-repeat center center;display: block;width: 138px;height: 100px;}
+.pro_scenic .pics img{display:block;}
+.pro_scenic span a{margin:0 10px;}
+
+
+.imgtext-lr{margin:0 0 3px;padding:10px 0;overflow:hidden;}
+.imgtext-lr .img{float:left;display:inline;margin-right:10px;}
+.imgtext-lr .text{overflow:hidden;}
+.imgtext-lr p{line-height:18px;margin:3px 0}
+
+.favorites-guide{margin-right:-100px;*zoom:1;}
+.favorites-guide .imgtext-lr{ float:left;height:130px; width:230px;display:inline;margin:0 25px 10px 20px;}
+.favorites-guide .imgtext-lr p{margin-bottom:10px;line-height:18px;}
+.favorites-guide h4 {font-size:14px;line-height:18px;margin-bottom:10px;}
+.favorites-guide  .imgtext-lr{position:relative;}
+.favorites-guide .ui-btn{position:absolute;bottom:25px;left:99px;}
+
+
+/* 国际机票订单 */
+.iflt_pageWrap,.lv_pageWrap{padding:13px 0; text-align:right; font-size:12px; color:#555;}
+.lv_pagePrev i,.lv_pageNext i{display:inline-block; vertical-align:middle; width:0px; height:0px; overflow:hidden;  border-width:4px; border-style:solid; border-color:transparent;vertical-align: top;position: relative;top: 5px;}
+.lv_pagePrev i{margin:0 4px 0 0; border-left-width:0; border-right-color:#07c;}
+.lv_pageNext i{margin:0 0 0 4px; border-right-width:0; border-left-color:#07c;}
+.lv_pageWrap span{display:inline-block; vertical-align:middle; padding:4px 9px; line-height:18px; margin-right:4px; border:1px solid #ddd; cursor:pointer;}
+.lv_page_dayBox,lv_page_dayBox0,lv_page_dayBox1,lv_page_dayBox2,lv_page_dayBox3,lv_page_dayBox4,lv_page_dayBox5{display:inline-block; *display:inline;}
+.lv_page_dayBox span,.lv_page_dayBox0 span,.lv_page_dayBox1 span,.lv_page_dayBox2 span,.lv_page_dayBox3 span,.lv_page_dayBox4 span,.lv_page_dayBox5 span{color:#07c;}
+.lv_page_dayBox span:hover,.lv_page_dayBox0 span:hover,.lv_page_dayBox1 span:hover,.lv_page_dayBox2 span:hover,.lv_page_dayBox3 span:hover,.lv_page_dayBox4 span:hover{border:1px solid #f80; color:#f80;}
+.lv_page_dayBox span.lv_pageCrt{border:1px solid #f80; color:#fff; background:#f80}
+.lv_pageInput{width:30px; padding:2px; margin:0 4px; vertical-align:middle; text-align:center; border:1px solid #abc;}
+.lv_pageSure{border-radius:3px; color:#333;}
+
+/* 我的旅程推荐列表 2012-7-15 byXiaohan */
+.trip-list {clear:both;margin:10px 0;}
+.trip-list ul{margin-right:-40px;*zoom:1;}
+.trip-list li{margin-right:26px;position:relative;}
+.trip-list li a{display:block;padding:8px;border:1px solid #c1c1c1;position:relative;z-index:9;}
+.trip-list li a:hover{border-color:#999;}
+.trip-list li i.zuopin{position:absolute;z-index:10;top:-2px;left:-2px;display:inline-block;background:url(../../../img/mylvmama/zuopin.png) no-repeat; width:65px;height:58px; }
+
+/* 存款账户新修改 2012-07-30 byXiaohan */
+.gray-info{background:#f8f8f8;padding:3px 10px;color:#555;margin: 10px 0;}
+
+
+
+/*账户信息增加二维码*/
+.my-account .erweima{ float:right;}
+.my-account .tips-yellow{ overflow:hidden;}
+
+.codeapp_box{float:right;display:inline;margin-left:10px;width:305px;height:145px;padding:1px;background:url(../../../img/v4/codeapp_sbg.png) no-repeat;}
+.codeapp{display:none;overflow:hidden;width:130px;height:130px;margin:6px;background:#fafafa;}
+
+/*增加礼品卡*/
+.icon-apps16-1018{ background-position:-40px -327px;}
+.ui-btn-lpk{ padding-left:15px; float:right;  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.ui-btn-lpk i{ padding-right:15px; float:left; color:#fff;}
+.ui-btn-mx i{ color:#fff;}
+
+.lpk_bd{ padding-left:20px;}
+.lpk_bd_table{ width:100%;}
+.lpk_bd_table td{ color:#555; padding:3px 2px;}
+.lpk_bd_table td .ui-btn,.lpk_bd_table td a{ vertical-align: middle; *position:relative; *top:-5px;}
+.lpk_bd_table td input{ border:#ccc solid 1px; padding:3px 5px; height:22px; line-height:22px; *height:20px; *line-height:20px; margin-right:5px;}
+.w_80{ width:80px;}
+.btn_change{ margin-left:5px;}
+.lpk_bundling{ margin-left:10px;}
+.lpk_mx_tab2{ margin-top:20px;}
+.lpk_mx_tab2 th{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+
+
+
+
+/*实名认证*/
+
+.step1{width:100%;margin:35px 0 10px;color:#333;}
+.step1 tr{height:25px;line-height:25px;}
+.step1 tr td{padding-bottom:10px;}
+.item_text{width:100px;text-align:right;}
+.number b{font-size:16px;display:inline-block;padding:0 5px;}
+.number a{color:#0077cc;font-size:12px;}
+
+.step2{border-top:1px solid #ececec;width:100%;}
+.step2 .tiptext{display:inline-block;margin-bottom:0;*display:inline;}
+.step2 tr td{padding-top:15px;}
+.input-text2{width:200px;}
+.input-text3{box-shadow:2px 2px 2px rgba(0, 0, 0, 0.075) inset;}
+.mar20{padding-top:20px;}
+.top{vertical-align:top;}
+.upload{position:relative;}
+.upload .control-group{float:left;}
+.upload .poptip{display:none;position:absolute;top:85px;left:-12px;z-index:999;}
+/*.upload .poptip2{position:absolute;top:0px;left:130px;z-index:999;}*/
+.shenfen{float:left;color:#999;}
+.shenfen span{display:block;float:left;}
+.textIntro{float:left;margin-left:5px;position:relative;}
+.magnifier{width:17px;height:17px;background:url(../../../img/mylvmama/magnifier.gif) no-repeat;position:absolute;top:59px;left:0;}
+.textIntro img{display:block;cursor:pointer;}
+.textIntro p{margin-top:5px;}
+.small_image{display:block;float:left;margin-right:10px;}
+
+.max343.poptip{padding:10px;}
+.max343.poptip .tip-content{max-width:343px;*width:343px;}
+.step2 .controls{display:inline-block;*display:inline;}
+.step2 tr td.mar0{padding-top:0;}
+.step2 tr td.pad20{padding-bottom:20px;}
+.step2 tr td.submit{padding:20px 0;border-top:1px solid #ececec;}
+
+.form-hor .controls {*display: inline-block;margin-left: 100px;*margin-left: 0;*zoom:1;_height:24px;}
+.form-hor input,.form-hor select{display: inline-block;margin-bottom: 0;vertical-align: middle;}
+
+input[type="file"],.input-file {height: 26px;/* In IE7, the height of the select element cannot be changed by height, only font-size */*margin-top: 4px;/* For IE7, add top margin to align select with labels */ line-height: 30px;}
+input[type="file"],.input-file{width: auto;}
+
+.status b{display:block;margin-top:40px;color:#666;}
+.tipbox2 .tip-icon-big{background:url(../../../img/mylvmama/icon.png) no-repeat;}
+.tipbox2 .tip-icon-big-wait{background-position:-32px 0;}
+.textIntro .weizhi{position:absolute;}
+
+.username{font-size:12px;}
+.appeal .item_text{width:150px;}
+.controls .input-file{ height:22px; line-height:22px;}
+
+/*隐藏我的驴妈妈右侧图片。*/
+.codeapp_box{ display:none;}
+
+
+.cunkuan_search{ margin:10px 0; overflow:hidden; zoom:1;}
+.cunkuan_search li{ float:left; margin-right:20px; color:#333; padding:5px 0; height:26px; line-height:26px; overflow:hidden;}
+.cunkuan_search input{ width:80px; border:#CCC solid 1px; padding:2px 10px; height:20px; line-height:20px;}
+.cunkuan_search .w50{ width:50px;}
+
+/*我的驴妈妈等级*/
+.my-account-level{ border:1px solid #e3e3e3;padding:15px 0 15px 20px; margin:0 0 10px 0;}
+.my-level-left{ float:left; width:435px;border-right:1px dotted #e3e3e3;}
+.my-level-right{ float:left; width:345px; padding:40px 0 0 20px; color:#666; line-height:40px;}
+.my-level-right a{ margin:0 0 0 10px; color:#09c;}
+.my-level-right a:hover{ color:#f60;}
+.username-level{display:block; color:#333;font-size:14px; margin:0 0 16px 0; font-weight:400;}
+.username-level:hover{ color:#f60;}
+/*0-vip等级*/
+.icon-level{ background:url(../../../img/mylvmama/my-privilege-bg.png) no-repeat; display:inline-block; vertical-align:middle;} 
+.zero-level{ background-position:0 -143px; width:35px; height:15px; margin:0 0 0 5px;}
+.one-level{ background-position:-48px -143px; width:35px; height:15px; margin:0 0 0 5px;}
+.two-level{ background-position:-100px -143px; width:35px; height:15px; margin:0 0 0 5px;}
+.three-level{ background-position:-150px -143px; width:35px; height:15px; margin:0 0 0 5px;}
+.four-level{ background-position:-200px -143px; width:35px; height:15px; margin:0 0 0 5px;}
+.vip-level{ background-position:-249px -143px; width:37px; height:15px; margin:0 0 0 5px;}
+/*进度条*/
+.progress-box{ margin:0 0 24px 0; font-size:14px; color:#666;}
+.progress-box span{float:left}
+.progress-bar-bg{float:left; position: relative; width:280px; height:14px; background:#d9d9d9; border-radius:12px; display:inline-block; margin:3px 6px 0; text-align: center;}
+.bar-box{ position: absolute;left: 0;top: 0;border-radius:12px; background:#ff6600;background:-webkit-gradient(linear, 100% 0, 0 100%, from(#ff6600), to(#FF9F0F));width:60%; font-size:12px; height:14px;line-height:14px; text-align:center;color:#fff; }
+.my-privilege-box{ font-size:12px; color:#666;}
+.progress-bar-text { position: relative; top: -4px; z-index: 1; font-size: 12px; line-height: 12px;}
+/*我的特权*/
+.icon-privilege{ overflow:hidden; margin:10px 0 0 5px;}
+.icon-privilege a{ float:left; display:block; margin:0 10px 0 0; width:34px; height:34px; cursor: default; background:url(../../../img/mylvmama/my-privilege-bg.png) no-repeat; }
+.icon-privilege .quan{ background-position:0 0;}
+.icon-privilege .shen{ background-position:-44px 0 ;}
+.icon-privilege .fan{ background-position:-88px 0;}
+.icon-privilege .ping{ background-position:-132px 0;}
+.icon-privilege .quan:hover{ background-position:0 -34px;}
+.icon-privilege .shen:hover{ background-position:-44px -34px ;}
+.icon-privilege .fan:hover{ background-position:-88px -34px;}
+.icon-privilege .ping:hover{ background-position:-132px -34px;}
+.icon-privilege .icon-shou{background-position:-171px -70px}
+.icon-privilege .icon-shou:hover {background-position: -206px -70px;}
+/*我的特权未激活*/
+.icon-privilege .quan-no{ background-position:0 -68px;}
+.icon-privilege .shen-no{ background-position:-44px -68px ;}
+.icon-privilege .fan-no{ background-position:-88px -68px;}
+.icon-privilege .ping-no{ background-position:-132px -68px;}
+.icon-privilege .icon-shou-no{background-position:-241px -70px}
+
+/*我的优惠券优化*/
+.yhq_table th,.yhq_table td{ text-align:center;}
+.yhq_table .lv-table td{ padding:20px 10px;}
+.yhq_table td .ui-btn{ width:76px; padding:0; background:#f5f5f5; border:#ddd solid 1px; border-radius:3px; color:#666; margin-top:3px;}
+.yhq_table td .ui-btn i{ padding:0; background:none;}
+.yhq_table td .poptip{ text-align:left;}
+
+
+/*
+江圣
+添加 会员俱乐部
+*/
+.icon-apps16-1019{ background-position:-60px -325px;}
+/*会员中心增加注册时间&可用奖金*/
+.lv-reg-date {
+  color: #999999;
+  height: 17px;
+  line-height: 12px;
+}
+/*绑定流程优化*/
+.lv-bind {
+  display: none;
+}
+.lv-bind-email {
+  width: 170px;
+  float: left;
+}
+.lv-bind-phone {
+  width: 120px;
+  float: left;
+}
+.edit-inbox p {
+  line-height: 30px;
+  overflow: hidden;
+}
+.lv-cc-email {
+  color: #F00;
+  display: none;
+}
+.lv-cc-phone {
+  color: #F00;
+  display: none;
+}
+
+/*下载投保单*/
+.insure { display: none; font-size: 12px;}
+.dialog .insure { display: block;}
+.insureBtn { display: inline-block; padding: 2px 15px; margin: 0 10px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; line-height: 20px; cursor: pointer;}
+.insureBtn:hover { text-decoration: none;}
+.insureBtn-close { color: #333; background-color: #f8f8f8; border: 1px solid #e6e6e6;}
+.insureBtn-close:hover { color: #333; background-color: #e6e6e6;}
+.insure-BtnBox { margin-top: 10px; text-align: center; }
+
+.insureWrap a { display: inline-block; float: left; width: 115px; height: 30px; margin: 0 5px 5px 0; background: #f6f6f6; border: 1px solid #ddd; overflow: hidden; color: #666; text-align: center; white-space: nowrap; font-size: 12px; line-height: 30px; text-overflow: ellipsis;}
+.insureWrap a:hover { text-decoration: none; border: 1px solid #f60; color: #f60;}
+.insureWrap { font-size: 0; width: 370px;}
+.insureTit { margin-bottom: 5px;}
+.insureTable,.insureTable th { text-align: center;}
+.insureTable table { border: 1px solid #ddd; width: 100%; }
+.insureTable td { border: 1px solid #ddd;}
+
+/*点评游记抽奖活动，订单列表页*/
+.other .floatTips { position: absolute; right: -14px; top: -5px; padding: 0 3px; z-index: 1; line-height: 17px; color: #fff; background: #f90; font-size: 12px; border-radius:3px; -webkit-border-radius:3px;}
+.other .triangle { position: absolute; bottom: -6px; left: 28%; margin-left: -3px; display: block; width: 0; height: 0; font-size: 0; border: 3px solid transparent; border-top-color: #f90;}
+.bcomwrite { position: relative;}

@@ -2977,10 +2977,14 @@ border-bottom: 2px solid #ccc;
 margin-top: 20px;
 }
 
+* {
+margin:0px;
+padding:0px;
+}
 .sd_sname {
 width: 100%;
 float: left;
-line-height: 50px;
+height:36px;
 }
 
 .l-40 {
@@ -3086,7 +3090,7 @@ overflow: hidden;
 .sd_cx {
 line-height: 50px;
 border: 1px solid RGB(254,210,184);
-margin-top: 10px;
+margin-top: 20px;
 background-color: RGB(254,232,209);
 width: 100%;
 margin-bottom: 20px;
@@ -3132,8 +3136,7 @@ color: #fff;
 font-size: 14px;
 height: 25px;
 line-height: 25px;
-margin-left: 30px;
-margin-top: 10px;
+margin:10px;
 padding: 5px;
 text-align: center;
 width: 65px;

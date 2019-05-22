@@ -11,10 +11,22 @@
     <script src="../Scripts/LoginAndRegister/Login/lang.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/mt3.v1014201036.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/sousuo.js"></script>
+    <style>
+        #discode {
+            padding: 0px;
+            margin: 0px;
+            text-align:center;
+            border: 1px solid gray;
+            display: inline-block;
+            height: 35px;
+            line-height: 35px;
+            cursor:pointer;
+            margin-left:10px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="wraps">
-
         <script type="text/javascript">
             var APP_ROOT = '';
             var CART_URL = '/cart';
@@ -33,28 +45,27 @@
 
                         <div class="field email">
                             <label for="login-email-address">Email/手机</label>
-                            <input type="text" value="" class="f-input ipttxt" id="login-email-address" name="email" size="30" tabindex="1">
+                            <input type="text" value="" class="f-input ipttxt" id="login-email-address" name="email" size="30" tabindex="1"/>
                         </div>
                         <div class="field password">
                             <label for="login-password">密码</label>
-                            <input type="password" value="" class="f-input ipttxt" id="login-password" name="user_pwd" size="30" tabindex="2">
+                            <input type="password" value="" class="f-input ipttxt" id="login-password" name="user_pwd" size="30" tabindex="2"/>
                             <span class="lostpassword">&nbsp;&nbsp;<a href="#">忘记密码?</a></span>
                         </div>
                         <div class="field autologin">
                             <div class="input">
                                 <input id="t1" class="f-input ipttxt" style="width: 100px;" type="text" name="u" placeholder="验证码" />
-                                <span id="discode"></span>
-                                <input type="button" value="换一换" class="c" style="height: 50px; line-height: 50px; vertical-align: baseline;" onclick="createCode()">
+                                <span id="discode" onclick="createCode()"></span>
                             </div>
                         </div>
                         <div class="field autologin">
-                            <input type="checkbox" id="autologin" name="auto_login">下次自动登录？									
+                            <input type="checkbox" id="autologin" name="auto_login"/>下次自动登录？									
                         </div>
                         <div class="clear"></div>
 
                         <div class="act">
-                            <input type="hidden" name="ajax" value="1">
-                            <input type="submit" class="login-submit-btn" id="user-login-submit" name="commit" value="登录">
+                            <input type="hidden" name="ajax" value="1"/>
+                            <input type="submit" class="login-submit-btn" id="user-login-submit" name="commit" value="登录"/>
                             <script>
                                 createCode();
                                 var code; //在全局 定义验证码

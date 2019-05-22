@@ -127,53 +127,5 @@ namespace FTZ.PlayAndAte.DAL
             }
         }
 
-        //public static List<Order> ShowOrderDetails(int UserID)
-        //{
-        //    try
-        //    {
-        //        using (PlayAndAteEntities entities=new PlayAndAteEntities())
-        //        {
-        //            //var result = entities.Order
-        //            //                     .Include("Image").Include("Contact").Include("Product")
-        //            //                     .Where(x => x.UserId == UserID)
-        //            //                     .Select(x => new { OrderName = x.OrderName, ContactsName = x.Contacts.ContactsName, ProductID = x.ProductId, });
-        //            //return result.ToList<Order>();                    //var result = entities.Order
-        //            //                     .Include("Image").Include("Contact").Include("Product")
-        //            //                     .Where(x => x.UserId == UserID)
-        //            //                     .Select(x => new { OrderName = x.OrderName, ContactsName = x.Contacts.ContactsName, ProductID = x.ProductId, });
-        //            //return result.ToList<Order>();
-                        
-        //        }
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}        //public static List<Order> ShowOrderDetails(int UserID)
-        //{
-        //    try
-        //    {
-        //        using (PlayAndAteEntities entities=new PlayAndAteEntities())
-        //        {
-        //            //var result = entities.Order
-        //            //                     .Include("Image").Include("Contact").Include("Product")
-        //            //                     .Where(x => x.UserId == UserID)
-        //            //                     .Select(x => new { OrderName = x.OrderName, ContactsName = x.Contacts.ContactsName, ProductID = x.ProductId, });
-        //            //return result.ToList<Order>();                    //var result = entities.Order
-        //            //                     .Include("Image").Include("Contact").Include("Product")
-        //            //                     .Where(x => x.UserId == UserID)
-        //            //                     .Select(x => new { OrderName = x.OrderName, ContactsName = x.Contacts.ContactsName, ProductID = x.ProductId, });
-        //            //return result.ToList<Order>();
-                        
-        //        }
-        //    }
-        //    catch (Exception)
-        //    {
-
-        //        throw;
-        //    }
-        //}
-
     }
 }

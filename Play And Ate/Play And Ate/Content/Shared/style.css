@@ -352,11 +352,7 @@ a {
 }
 
 .f_r {
-    float: right;
-}
-
-.f_r {
-    float: right;
+    float: left;
 }
 
 .tl {
