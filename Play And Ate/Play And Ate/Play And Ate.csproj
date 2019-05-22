@@ -59,17 +59,12 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-<<<<<<< HEAD
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
-=======
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Database, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll</HintPath>
->>>>>>> 0ddb1edf042f0acd6c1e0608a916c5406e109467
     </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -542,24 +537,7 @@
     <Content Include="Images\LoginAndRegister\wechat.png" />
     <Content Include="Images\LoginAndRegister\wg.png" />
     <Content Include="Images\LoginAndRegister\xian.jpg" />
-<<<<<<< HEAD
-    <Content Include="Images\Order\order12.gif" />
-    <Content Include="Images\Order\order6.gif" />
-    <Content Include="Images\Order\paypal_logo.gif" />
-    <Content Include="Images\Order\qyfk43_03.jpg" />
-    <Content Include="Images\Order\step1.gif" />
-    <Content Include="Images\Order\step2.gif" />
-    <Content Include="Images\Order\step3.gif" />
-    <Content Include="Images\Order\step4.gif" />
-    <Content Include="Images\Order\tenpay_buy.gif" />
-    <Content Include="Images\Order\微信支付.jpg" />
-    <Content Include="Images\Tailorism\53abb59815ac6_170x130.jpg" />
-    <Content Include="Images\Tailorism\n1%281%29.jpg" />
-    <Content Include="Images\Tailorism\n1%282%29.jpg" />
-    <Content Include="Images\Tailorism\n1%283%29.jpg" />
-    <Content Include="Images\Tailorism\n1%284%29.jpg" />
-=======
->>>>>>> 0ddb1edf042f0acd6c1e0608a916c5406e109467
+
     <Content Include="Images\Tailorism\n1.jpg" />
     <Content Include="Images\Tailorism\n2.jpg" />
     <Content Include="Images\Tailorism\n3.jpg" />
@@ -1537,7 +1515,7 @@
     <Content Include="Plugin\public\swiper\src\less\scrollbar.less" />
     <Content Include="Plugin\public\swiper\src\less\swiper.less" />
     <Content Include="Plugin\public\swiper\src\less\zoom.less" />
-<<<<<<< HEAD
+
     <Content Include="Plugin\jqzoom\.git\config" />
     <Content Include="Plugin\jqzoom\.git\description" />
     <Content Include="Plugin\jqzoom\.git\HEAD" />
@@ -1620,8 +1598,6 @@
     <Content Include="Plugin\jqzoom\README.md" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Services\OrderService.ashx" />
-=======
->>>>>>> 0ddb1edf042f0acd6c1e0608a916c5406e109467
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1635,14 +1611,11 @@
     <Folder Include="bin\zh-Hans\" />
     <Folder Include="Content\Cart\" />
     <Folder Include="Content\Home\" />
-<<<<<<< HEAD
     <Folder Include="Plugin\jqzoom\.git\objects\info\" />
     <Folder Include="Plugin\jqzoom\.git\objects\pack\" />
     <Folder Include="Plugin\jqzoom\.git\refs\tags\" />
     <Folder Include="Propaganda\" />
-=======
-    <Folder Include="Content\NewFolder1\" />
->>>>>>> 0ddb1edf042f0acd6c1e0608a916c5406e109467
+
     <Folder Include="Scripts\Commond\" />
     <Folder Include="Scripts\Propaganda\" />
   </ItemGroup>
