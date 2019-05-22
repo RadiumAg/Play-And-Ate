@@ -19,16 +19,26 @@
           <Property Name="TypeId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="TypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
+        <EntityType Name="Contacts">
+          <Key>
+            <PropertyRef Name="ContactsId" />
+          </Key>
+          <Property Name="ContactsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ContactsName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ContactsEmail" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FixedTelephone" Type="nvarchar" MaxLength="50" />
+          <Property Name="ContactsMobilePhone" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="Customers">
           <Key>
             <PropertyRef Name="CustomerId" />
           </Key>
-          <Property Name="CustomerId" Type="int" Nullable="false" />
+          <Property Name="CustomerId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Phone" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="Id_Number" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="CardTypeId" Type="int" Nullable="false" />
-          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="OrderItemID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Image">
           <Key>
@@ -40,15 +50,24 @@
         </EntityType>
         <EntityType Name="Order">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="OrderId" />
           </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="OrderId" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="OrderName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="OrderId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrderName" Type="nvarchar" MaxLength="50" />
           <Property Name="CustomerNum" Type="int" Nullable="false" />
           <Property Name="OrderPrice" Type="money" Nullable="false" />
           <Property Name="ProductId" Type="int" Nullable="false" />
           <Property Name="UserId" Type="int" Nullable="false" />
+          <Property Name="Success" Type="bit" Nullable="false" />
+          <Property Name="ContactsId" Type="int" />
+        </EntityType>
+        <EntityType Name="OrderItem">
+          <Key>
+            <PropertyRef Name="OrderItemId" />
+          </Key>
+          <Property Name="OrderItemId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrderId" Type="int" Nullable="false" />
+          <Property Name="CustomerId" Type="int" Nullable="false" />
         </EntityType>
         <!--生成过程中发现错误:
 警告 6002: 表/视图“PlayAndAte.dbo.Point”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
@@ -140,15 +159,15 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Customers_Order">
-          <End Role="Order" Type="Self.Order" Multiplicity="1" />
+        <Association Name="FK_Customers_OrderItem">
+          <End Role="OrderItem" Type="Self.OrderItem" Multiplicity="1" />
           <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Order">
-              <PropertyRef Name="Id" />
+            <Principal Role="OrderItem">
+              <PropertyRef Name="OrderItemId" />
             </Principal>
             <Dependent Role="Customers">
-              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="OrderItemID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -164,6 +183,30 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Order_Contacts">
+          <End Role="Contacts" Type="Self.Contacts" Multiplicity="0..1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contacts">
+              <PropertyRef Name="ContactsId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="ContactsId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Order_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="ProductId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Order_UserInfo_Role">
           <End Role="UserInfo_Role" Type="Self.UserInfo_Role" Multiplicity="1" />
           <End Role="Order" Type="Self.Order" Multiplicity="*" />
@@ -173,6 +216,18 @@
             </Principal>
             <Dependent Role="Order">
               <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_OrderItem_Order">
+          <End Role="Order" Type="Self.Order" Multiplicity="1" />
+          <End Role="OrderItem" Type="Self.OrderItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderId" />
+            </Principal>
+            <Dependent Role="OrderItem">
+              <PropertyRef Name="OrderId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -263,9 +318,11 @@
         <EntityContainer Name="PlayAndAteModelStoreContainer">
           <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="CardType" EntityType="Self.CardType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Contacts" EntityType="Self.Contacts" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Image" EntityType="Self.Image" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Order" EntityType="Self.Order" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="OrderItem" EntityType="Self.OrderItem" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PPointsType" EntityType="Self.PPointsType" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="PTotalType" EntityType="Self.PTotalType" Schema="dbo" store:Type="Tables" />
@@ -284,17 +341,29 @@
             <End Role="CardType" EntitySet="CardType" />
             <End Role="Customers" EntitySet="Customers" />
           </AssociationSet>
-          <AssociationSet Name="FK_Customers_Order" Association="Self.FK_Customers_Order">
-            <End Role="Order" EntitySet="Order" />
+          <AssociationSet Name="FK_Customers_OrderItem" Association="Self.FK_Customers_OrderItem">
+            <End Role="OrderItem" EntitySet="OrderItem" />
             <End Role="Customers" EntitySet="Customers" />
           </AssociationSet>
           <AssociationSet Name="FK_Image_Product" Association="Self.FK_Image_Product">
             <End Role="Product" EntitySet="Product" />
             <End Role="Image" EntitySet="Image" />
           </AssociationSet>
+          <AssociationSet Name="FK_Order_Contacts" Association="Self.FK_Order_Contacts">
+            <End Role="Contacts" EntitySet="Contacts" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Order_Product" Association="Self.FK_Order_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
           <AssociationSet Name="FK_Order_UserInfo_Role" Association="Self.FK_Order_UserInfo_Role">
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
             <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_OrderItem_Order" Association="Self.FK_OrderItem_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="OrderItem" EntitySet="OrderItem" />
           </AssociationSet>
           <AssociationSet Name="FK_Poing_Product" Association="Self.FK_Poing_Product">
             <End Role="Product" EntitySet="Product" />
@@ -345,6 +414,17 @@
           <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Customers" Relationship="Self.FK_Customers_CardType" FromRole="CardType" ToRole="Customers" />
         </EntityType>
+        <EntityType Name="Contacts">
+          <Key>
+            <PropertyRef Name="ContactsId" />
+          </Key>
+          <Property Name="ContactsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ContactsName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ContactsEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FixedTelephone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ContactsMobilePhone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Order" Relationship="Self.FK_Order_Contacts" FromRole="Contacts" ToRole="Order" />
+        </EntityType>
         <EntityType Name="Customers">
           <Key>
             <PropertyRef Name="CustomerId" />
@@ -354,9 +434,9 @@
           <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Id_Number" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="CardTypeId" Type="Int32" Nullable="false" />
-          <Property Name="OrderID" Type="Int32" Nullable="false" />
+          <Property Name="OrderItemID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="CardType" Relationship="Self.FK_Customers_CardType" FromRole="Customers" ToRole="CardType" />
-          <NavigationProperty Name="Order" Relationship="Self.FK_Customers_Order" FromRole="Customers" ToRole="Order" />
+          <NavigationProperty Name="OrderItem" Relationship="Self.FK_Customers_OrderItem" FromRole="Customers" ToRole="OrderItem" />
         </EntityType>
         <EntityType Name="Image">
           <Key>
@@ -369,17 +449,30 @@
         </EntityType>
         <EntityType Name="Order">
           <Key>
-            <PropertyRef Name="Id" />
+            <PropertyRef Name="OrderId" />
           </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="OrderId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="OrderName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="OrderId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CustomerNum" Type="Int32" Nullable="false" />
           <Property Name="OrderPrice" Type="Decimal" Precision="19" Scale="4" Nullable="false" />
           <Property Name="ProductId" Type="Int32" Nullable="false" />
           <Property Name="UserId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Customers" Relationship="Self.FK_Customers_Order" FromRole="Order" ToRole="Customers" />
+          <Property Name="Success" Type="Boolean" Nullable="false" />
+          <Property Name="ContactsId" Type="Int32" />
+          <NavigationProperty Name="Contacts" Relationship="Self.FK_Order_Contacts" FromRole="Order" ToRole="Contacts" />
           <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Order_UserInfo_Role" FromRole="Order" ToRole="UserInfo_Role" />
+          <NavigationProperty Name="OrderItem" Relationship="Self.FK_OrderItem_Order" FromRole="Order" ToRole="OrderItem" />
+          <NavigationProperty Name="Product" Relationship="PlayAndAteModel.FK_Order_Product" FromRole="Order" ToRole="Product" />
+        </EntityType>
+        <EntityType Name="OrderItem">
+          <Key>
+            <PropertyRef Name="OrderItemId" />
+          </Key>
+          <Property Name="OrderItemId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrderId" Type="Int32" Nullable="false" />
+          <Property Name="CustomerId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Customers" Relationship="Self.FK_Customers_OrderItem" FromRole="OrderItem" ToRole="Customers" />
+          <NavigationProperty Name="Order" Relationship="Self.FK_OrderItem_Order" FromRole="OrderItem" ToRole="Order" />
         </EntityType>
         <EntityType Name="PPointsType">
           <Key>
@@ -401,14 +494,15 @@
           <Property Name="PPTId" Type="Int32" />
           <Property Name="AreaId" Type="Int32" />
           <Property Name="ProductPrice" Type="Decimal" Precision="19" Scale="4" />
-          <NavigationProperty Name="Area" Relationship="Self.FK_Product_Area" FromRole="Product" ToRole="Area" />
-          <NavigationProperty Name="Image" Relationship="Self.FK_Image_Product" FromRole="Product" ToRole="Image" />
-          <NavigationProperty Name="PPointsType" Relationship="Self.FK_Product_PPointsType" FromRole="Product" ToRole="PPointsType" />
-          <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Product_UserInfo_Role" FromRole="Product" ToRole="UserInfo_Role" />
-          <NavigationProperty Name="Point" Relationship="PlayAndAteModel.FK_Poing_Product" FromRole="Product" ToRole="Point" />
           <Property Name="DetailAreaName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="DetailIntroduction" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="Feature" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Area" Relationship="Self.FK_Product_Area" FromRole="Product" ToRole="Area" />
+          <NavigationProperty Name="Image" Relationship="Self.FK_Image_Product" FromRole="Product" ToRole="Image" />
+          <NavigationProperty Name="PPointsType" Relationship="Self.FK_Product_PPointsType" FromRole="Product" ToRole="PPointsType" />
+          <NavigationProperty Name="Point" Relationship="Self.FK_Poing_Product" FromRole="Product" ToRole="Point" />
+          <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Product_UserInfo_Role" FromRole="Product" ToRole="UserInfo_Role" />
+          <NavigationProperty Name="Order" Relationship="PlayAndAteModel.FK_Order_Product" FromRole="Product" ToRole="Order" />
         </EntityType>
         <EntityType Name="PTotalType">
           <Key>
@@ -461,6 +555,17 @@
           <NavigationProperty Name="Role_UserInfo" Relationship="Self.FK_UserInfo_Role_Role_UserInfo" FromRole="UserInfo_Role" ToRole="Role_UserInfo" />
           <NavigationProperty Name="Sincerity" Relationship="Self.FK_Sincerity_UserInfo_Role" FromRole="UserInfo_Role" ToRole="Sincerity" />
         </EntityType>
+        <EntityType Name="Point">
+          <Key>
+            <PropertyRef Name="Longitude" />
+            <PropertyRef Name="Latitude" />
+            <PropertyRef Name="ProductId" />
+          </Key>
+          <Property Name="Longitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Latitude" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProductId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Product" Relationship="Self.FK_Poing_Product" FromRole="Point" ToRole="Product" />
+        </EntityType>
         <Association Name="FK_Product_Area">
           <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
           <End Role="Product" Type="Self.Product" Multiplicity="*" />
@@ -485,15 +590,27 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Customers_Order">
-          <End Role="Order" Type="Self.Order" Multiplicity="1" />
+        <Association Name="FK_Order_Contacts">
+          <End Role="Contacts" Type="Self.Contacts" Multiplicity="0..1" />
+          <End Role="Order" Type="Self.Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Contacts">
+              <PropertyRef Name="ContactsId" />
+            </Principal>
+            <Dependent Role="Order">
+              <PropertyRef Name="ContactsId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Customers_OrderItem">
+          <End Role="OrderItem" Type="Self.OrderItem" Multiplicity="1" />
           <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
           <ReferentialConstraint>
-            <Principal Role="Order">
-              <PropertyRef Name="Id" />
+            <Principal Role="OrderItem">
+              <PropertyRef Name="OrderItemId" />
             </Principal>
             <Dependent Role="Customers">
-              <PropertyRef Name="OrderID" />
+              <PropertyRef Name="OrderItemID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -521,6 +638,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_OrderItem_Order">
+          <End Role="Order" Type="Self.Order" Multiplicity="1" />
+          <End Role="OrderItem" Type="Self.OrderItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Order">
+              <PropertyRef Name="OrderId" />
+            </Principal>
+            <Dependent Role="OrderItem">
+              <PropertyRef Name="OrderId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_PPointsType_PTotalType">
           <End Role="PTotalType" Type="Self.PTotalType" Multiplicity="0..1" />
           <End Role="PPointsType" Type="Self.PPointsType" Multiplicity="*" />
@@ -542,6 +671,18 @@
             </Principal>
             <Dependent Role="Product">
               <PropertyRef Name="PPTId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Poing_Product">
+          <End Role="Product" Type="Self.Product" Multiplicity="1" />
+          <End Role="Point" Type="Self.Point" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Product">
+              <PropertyRef Name="ProductId" />
+            </Principal>
+            <Dependent Role="Point">
+              <PropertyRef Name="ProductId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -584,9 +725,11 @@
         <EntityContainer Name="PlayAndAteEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Area" EntityType="Self.Area" />
           <EntitySet Name="CardType" EntityType="Self.CardType" />
+          <EntitySet Name="Contacts" EntityType="Self.Contacts" />
           <EntitySet Name="Customers" EntityType="Self.Customers" />
           <EntitySet Name="Image" EntityType="Self.Image" />
           <EntitySet Name="Order" EntityType="Self.Order" />
+          <EntitySet Name="OrderItem" EntityType="Self.OrderItem" />
           <EntitySet Name="PPointsType" EntityType="Self.PPointsType" />
           <EntitySet Name="Product" EntityType="Self.Product" />
           <EntitySet Name="PTotalType" EntityType="Self.PTotalType" />
@@ -594,6 +737,7 @@
           <EntitySet Name="Sincerity" EntityType="Self.Sincerity" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
           <EntitySet Name="UserInfo_Role" EntityType="Self.UserInfo_Role" />
+          <EntitySet Name="Point" EntityType="Self.Point" />
           <AssociationSet Name="FK_Product_Area" Association="Self.FK_Product_Area">
             <End Role="Area" EntitySet="Area" />
             <End Role="Product" EntitySet="Product" />
@@ -602,8 +746,12 @@
             <End Role="CardType" EntitySet="CardType" />
             <End Role="Customers" EntitySet="Customers" />
           </AssociationSet>
-          <AssociationSet Name="FK_Customers_Order" Association="Self.FK_Customers_Order">
+          <AssociationSet Name="FK_Order_Contacts" Association="Self.FK_Order_Contacts">
+            <End Role="Contacts" EntitySet="Contacts" />
             <End Role="Order" EntitySet="Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Customers_OrderItem" Association="Self.FK_Customers_OrderItem">
+            <End Role="OrderItem" EntitySet="OrderItem" />
             <End Role="Customers" EntitySet="Customers" />
           </AssociationSet>
           <AssociationSet Name="FK_Image_Product" Association="Self.FK_Image_Product">
@@ -614,6 +762,10 @@
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
             <End Role="Order" EntitySet="Order" />
           </AssociationSet>
+          <AssociationSet Name="FK_OrderItem_Order" Association="Self.FK_OrderItem_Order">
+            <End Role="Order" EntitySet="Order" />
+            <End Role="OrderItem" EntitySet="OrderItem" />
+          </AssociationSet>
           <AssociationSet Name="FK_PPointsType_PTotalType" Association="Self.FK_PPointsType_PTotalType">
             <End Role="PTotalType" EntitySet="PTotalType" />
             <End Role="PPointsType" EntitySet="PPointsType" />
@@ -621,6 +773,10 @@
           <AssociationSet Name="FK_Product_PPointsType" Association="Self.FK_Product_PPointsType">
             <End Role="PPointsType" EntitySet="PPointsType" />
             <End Role="Product" EntitySet="Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Poing_Product" Association="Self.FK_Poing_Product">
+            <End Role="Product" EntitySet="Product" />
+            <End Role="Point" EntitySet="Point" />
           </AssociationSet>
           <AssociationSet Name="FK_Product_UserInfo_Role" Association="Self.FK_Product_UserInfo_Role">
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
@@ -634,31 +790,19 @@
             <End Role="UserInfo_Role" EntitySet="UserInfo_Role" />
             <End Role="Sincerity" EntitySet="Sincerity" />
           </AssociationSet>
-          <EntitySet Name="Point" EntityType="PlayAndAteModel.Point" />
-          <AssociationSet Name="FK_Poing_Product" Association="PlayAndAteModel.FK_Poing_Product">
+          <AssociationSet Name="FK_Order_Product" Association="PlayAndAteModel.FK_Order_Product">
             <End Role="Product" EntitySet="Product" />
-            <End Role="Point" EntitySet="Point" />
+            <End Role="Order" EntitySet="Order" />
           </AssociationSet>
         </EntityContainer>
-        <EntityType Name="Point">
-          <Key>
-            <PropertyRef Name="Longitude" />
-            <PropertyRef Name="Latitude" />
-            <PropertyRef Name="ProductId" />
-          </Key>
-          <Property Name="Longitude" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Latitude" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="ProductId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="Product" Relationship="PlayAndAteModel.FK_Poing_Product" FromRole="Point" ToRole="Product" />
-        </EntityType>
-        <Association Name="FK_Poing_Product">
+        <Association Name="FK_Order_Product">
           <End Type="PlayAndAteModel.Product" Role="Product" Multiplicity="1" />
-          <End Type="PlayAndAteModel.Point" Role="Point" Multiplicity="*" />
+          <End Type="PlayAndAteModel.Order" Role="Order" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Product">
               <PropertyRef Name="ProductId" />
             </Principal>
-            <Dependent Role="Point">
+            <Dependent Role="Order">
               <PropertyRef Name="ProductId" />
             </Dependent>
           </ReferentialConstraint>
@@ -685,6 +829,17 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="Contacts">
+            <EntityTypeMapping TypeName="PlayAndAteModel.Contacts">
+              <MappingFragment StoreEntitySet="Contacts">
+                <ScalarProperty Name="ContactsId" ColumnName="ContactsId" />
+                <ScalarProperty Name="ContactsName" ColumnName="ContactsName" />
+                <ScalarProperty Name="ContactsEmail" ColumnName="ContactsEmail" />
+                <ScalarProperty Name="FixedTelephone" ColumnName="FixedTelephone" />
+                <ScalarProperty Name="ContactsMobilePhone" ColumnName="ContactsMobilePhone" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Customers">
             <EntityTypeMapping TypeName="PlayAndAteModel.Customers">
               <MappingFragment StoreEntitySet="Customers">
@@ -693,7 +848,7 @@
                 <ScalarProperty Name="Phone" ColumnName="Phone" />
                 <ScalarProperty Name="Id_Number" ColumnName="Id_Number" />
                 <ScalarProperty Name="CardTypeId" ColumnName="CardTypeId" />
-                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+                <ScalarProperty Name="OrderItemID" ColumnName="OrderItemID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -709,13 +864,23 @@
           <EntitySetMapping Name="Order">
             <EntityTypeMapping TypeName="PlayAndAteModel.Order">
               <MappingFragment StoreEntitySet="Order">
-                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="OrderId" ColumnName="OrderId" />
                 <ScalarProperty Name="OrderName" ColumnName="OrderName" />
                 <ScalarProperty Name="CustomerNum" ColumnName="CustomerNum" />
                 <ScalarProperty Name="OrderPrice" ColumnName="OrderPrice" />
                 <ScalarProperty Name="ProductId" ColumnName="ProductId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="Success" ColumnName="Success" />
+                <ScalarProperty Name="ContactsId" ColumnName="ContactsId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="OrderItem">
+            <EntityTypeMapping TypeName="PlayAndAteModel.OrderItem">
+              <MappingFragment StoreEntitySet="OrderItem">
+                <ScalarProperty Name="OrderItemId" ColumnName="OrderItemId" />
+                <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+                <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -731,15 +896,15 @@
           <EntitySetMapping Name="Product">
             <EntityTypeMapping TypeName="PlayAndAteModel.Product">
               <MappingFragment StoreEntitySet="Product">
-                <ScalarProperty Name="Feature" ColumnName="Feature" />
-                <ScalarProperty Name="DetailIntroduction" ColumnName="DetailIntroduction" />
-                <ScalarProperty Name="DetailAreaName" ColumnName="DetailAreaName" />
                 <ScalarProperty Name="ProductId" ColumnName="ProductId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="ProductName" ColumnName="ProductName" />
                 <ScalarProperty Name="PPTId" ColumnName="PPTId" />
                 <ScalarProperty Name="AreaId" ColumnName="AreaId" />
                 <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+                <ScalarProperty Name="DetailAreaName" ColumnName="DetailAreaName" />
+                <ScalarProperty Name="DetailIntroduction" ColumnName="DetailIntroduction" />
+                <ScalarProperty Name="Feature" ColumnName="Feature" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -795,9 +960,9 @@
           <EntitySetMapping Name="Point">
             <EntityTypeMapping TypeName="PlayAndAteModel.Point">
               <MappingFragment StoreEntitySet="Point">
-                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
-                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
                 <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="ProductId" ColumnName="ProductId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

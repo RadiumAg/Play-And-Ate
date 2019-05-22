@@ -710,7 +710,7 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
     <link href="../Content/Show/FarmDetails/baidu_map.css" rel="stylesheet" />
             <link href="../Content/Show/FarmDetails/list.css" rel="stylesheet" />
             <link href="../Content/Show/FarmDetails/review.css" rel="stylesheet" />
-            <script src="../Scripts/Show/FarmDetails/seller.js"></script>
+            <%--<script src="../Scripts/Show/FarmDetails/seller.js"></script>--%>
             <script src="../Scripts/Show/FarmDetails/api.js"></script>
             <script src="../Scripts/Show/FarmDetails/getscript.js"></script>
           <link href="../Content/Show/FarmDetails/cityquery.css" rel="stylesheet" />
@@ -738,167 +738,16 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
                 var LOADER_IMG = '#';
                 var ERROR_IMG = '#';
 			</script>
-
-            
 			<dl id="idBox" class="lightbox" style="z-index: 10000; display: none;">
 				<dt id="idBoxHead"><b><%= product.ProductName %></b> </dt>
 				<dd>
-					<div class="scrolltab">
-						<span id="sLeftBtnA" class="sLeftBtnABan"></span>
-						<span id="sRightBtnA" class="sRightBtnA"></span>
-						<ul class="ulBigPic">
-							<li class="liSelected">
-								<span class="sPic">
-									<i class="iBigPic"><a
-											href="../Images/Tailorism/<%=product.Image.ToList()[0].ImageName %>""
-											target="_blank" title=""><img alt="" height="420"
-											src="../Images/Tailorism/<%=product.Image.ToList().FirstOrDefault().ImageName %>"></a></i>
-								</span>
-								<span class="sSideBox">
-									<span class="sTitle"><a
-											href="../Images/Tailorism/<%=product.Image.ToList()[0].ImageName %>""
-											target="_blank" title=""></a></span>
-								</span>
-							</li>
-							<li class="">
-								<span class="sPic">
-									<i class="iBigPic"><a
-											href="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f19997eb34.jpg"
-											target="_blank" title=""><img alt="" height="420"
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f19997eb34_860x420.jpg"></a></i>
-								</span>
-								<span class="sSideBox">
-									<span class="sTitle"><a
-											href="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f19997eb34.jpg"
-											target="_blank" title=""></a></span>
-								</span>
-							</li>
-							<li class="">
-								<span class="sPic">
-									<i class="iBigPic"><a
-											href="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f1992d9ea9.jpg"
-											target="_blank" title=""><img alt="" height="420"
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f1992d9ea9_860x420.jpg"></a></i>
-								</span>
-								<span class="sSideBox">
-									<span class="sTitle"><a
-											href="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f1992d9ea9.jpg"
-											target="_blank" title=""></a></span>
-								</span>
-							</li>
-							<li class="">
-								<span class="sPic">
-									<i class="iBigPic"><a
-											href="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f198cf183f.jpg"
-											target="_blank" title=""><img alt="" height="420"
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f198cf183f_860x420.jpg"></a></i>
-								</span>
-								<span class="sSideBox">
-									<span class="sTitle"><a
-											href="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f198cf183f.jpg"
-											target="_blank" title=""></a></span>
-								</span>
-							</li>
-							<li class="">
-								<span class="sPic">
-									<i class="iBigPic"><a
-											href="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f1986dee04.jpg"
-											target="_blank" title=""><img alt="" height="420"
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f1986dee04_860x420.jpg"></a></i>
-								</span>
-								<span class="sSideBox">
-									<span class="sTitle"><a
-											href="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f1986dee04.jpg"
-											target="_blank" title=""></a></span>
-								</span>
-							</li>
-							<li class="">
-								<span class="sPic">
-									<i class="iBigPic"><a
-											href="#"
-											target="_blank" title=""><img alt="" height="420"
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f197edc141_860x420.jpg"></a></i>
-								</span>
-								<span class="sSideBox">
-									<span class="sTitle"><a
-											href="#"
-											target="_blank" title=""></a></span>
-								</span>
-							</li>
-							<li class="">
-								<span class="sPic">
-									<i class="iBigPic"><a
-											href="#"
-											target="_blank" title=""><img alt="" height="420"
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f197875732_860x420.jpg"></a></i>
-								</span>
-								<span class="sSideBox">
-									<span class="sTitle"><a
-											href="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f197875732.jpg"
-											target="_blank" title=""></a></span>
-								</span>
-							</li>
-						</ul>
-						<!--ulBigPic end-->
-						<div class="dSmallPicBox">
-							<div class="dSmallPic">
-								<ul class="ulSmallPic" style="width:2646px;left:0px" rel="stop">
-									<li class="liSelected">
-										<span class="sPic"><img alt=""
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f19a08f280_135x100.jpg"
-												width="135" height="100"></span>
-										<span class="sTitle"></span>
-									</li>
-									<li class="">
-										<span class="sPic"><img alt=""
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f19997eb34_135x100.jpg"
-												width="135" height="100"></span>
-										<span class="sTitle"></span>
-									</li>
-									<li class="">
-										<span class="sPic"><img alt=""
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f1992d9ea9_135x100.jpg"
-												width="135" height="100"></span>
-										<span class="sTitle"></span>
-									</li>
-									<li class="">
-										<span class="sPic"><img alt=""
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f198cf183f_135x100.jpg"
-												width="135" height="100"></span>
-										<span class="sTitle"></span>
-									</li>
-									<li class="">
-										<span class="sPic"><img alt=""
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f1986dee04_135x100.jpg"
-												width="135" height="100"></span>
-										<span class="sTitle"></span>
-									</li>
-									<li class="">
-										<span class="sPic"><img alt=""
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f197edc141_135x100.jpg"
-												width="135" height="100"></span>
-										<span class="sTitle"></span>
-									</li>
-									<li class="">
-										<span class="sPic"><img alt=""
-												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f197875732_135x100.jpg"
-												width="135" height="100"></span>
-										<span class="sTitle"></span>
-									</li>
-								</ul>
-							</div>
-							<span id="sLeftBtnB" class="sLeftBtnBBan"></span>
-							<span id="sRightBtnB" class="sRightBtnB"></span>
-						</div>
-						<!--dSmallPicBox end-->
-					</div>
 					<div id="idBoxCancel"></div>
-					<br><br>
+					<br/>
 				</dd>
 			</dl>
 			<div class="mtext">
 				<div class="sd_sname">
-					<div class="sd_snames f-24 f_l"><%= product.ProductName %></div>
+					<div id="jqName" class="sd_snames f-24 f_l"><%= product.ProductName %></div>
 					<div class="f_r sd_rl"><span class="hrdl f_l">6589次浏览</span>&nbsp;&nbsp;
 						<!-- <a>我要认领</a> -->
 					</div>
@@ -965,51 +814,51 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 								<li><label class="gray">提供设施：</label>
 									<a class="azure sd_info ">垂钓 <span>
 											<div class="sd_yc">
-												面 积：0 亩 <br>
-												费 用： 免费 <br>
+												面 积：0 亩 <br/>
+												费 用： 免费 <br/>
 											</div>
 										</span>
 									</a>
 									<a class="azure sd_info ">卡拉OK <span>
 											<div class="sd_yc">
-												名 称： <br>
-												可容纳：0 人 <br>
+												名 称： <br/>
+												可容纳：0 人 <br/>
 											</div>
 										</span>
 									</a>
 									<a class="azure sd_info ">会议室 <span>
 											<div class="sd_yc">
-												名 称： <br>
-												可容纳：0 人 <br>
+												名 称： <br/>
+												可容纳：0 人 <br/>
 											</div>
 										</span>
 									</a>
 									<a class="azure sd_info ">住宿 <span>
 											<div class="sd_yc">
-												可容纳：80 人 <br>
+												可容纳：80 人 <br/>
 												住 房：40 间
 											</div>
 										</span>
 									</a>
 									<a class="azure sd_info ">餐饮 <span>
 											<div class="sd_yc">
-												可容纳：200 人 <br>
-												大 厅：0 桌<br>
+												可容纳：200 人 <br/>
+												大 厅：0 桌<br/>
 												包 房：0 间
 											</div>
 										</span>
 									</a>
 									<a class="azure sd_info hide">烧烤 <span>
 											<div class="sd_yc">
-												可容纳：0 人<br>
-												费 用： 免费 <br>
+												可容纳：0 人<br/>
+												费 用： 免费 <br/>
 											</div>
 										</span>
 									</a>
 									<a class="azure sd_info hide">棋牌 <span>
 											<div class="sd_yc">
-												一 共：0 桌<br>
-												费 用： 免费 <br>
+												一 共：0 桌<br/>
+												费 用： 免费 <br/>
 											</div>
 										</span>
 									</a>
@@ -1026,27 +875,16 @@ background-image: url(http://api.map.baidu.com/images/node.gif);
 					</div>
 				</div>
 				<div class="sd_cx">
-					<div class="sd_cxx f_l">出行圈子：
-						<select name="group_id">
-							<option value="1">企业会务</option>
-							<option value="2">朋友圈活动</option>
-							<option value="3">老年养生</option>
-							<option value="4">亲子游玩</option>
-							<option value="5">家庭聚会</option>
-							<option value="8">学生活动</option>
-						</select>
-					</div>
-					<div class="sd_cxx f_l">出行人数：<input type="text" name="number">人</div>
-					<div class="sd_cxx f_l">联系人：<input type="text" name="contacts"></div>
-					<div class="sd_cxx f_l">联系方式：<input type="text" name="contact"></div>
-					<a href="#">
-						<div class="sd_tj f_l">加入推荐</div>
-					</a>
-					<a href="#">
+					<a href="/Order/Order.aspx?ProductId=<%= this.product.ProductId %>">
 						<div class="sd_tj f_l">立即预定</div>
 					</a>
 				</div>
-
+                <script>
+                    $(function () {
+                        var jqname ="<%= this.product.ProductName %>";
+                        sessionStorage.setItem("jqname", jqname);
+                    })
+                </script>
 				<div class="sd_xql">
 					<div class="sd_mages">
 						<div class="sd_xql_top">

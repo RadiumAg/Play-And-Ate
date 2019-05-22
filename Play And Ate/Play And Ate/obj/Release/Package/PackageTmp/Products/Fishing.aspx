@@ -16,17 +16,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
    
 	<div class="wraps">
-		<div style=" display:none">
-		<div class="blank"></div>
-		<div class="site_nav clearfix wraps">
-			<div class="f_l">
-						<a href="http://sh.01nz.com.cn/" class="huise">首页</a>
-						 - <a href="http://sh.01nz.com.cn/store" class="huise">农庄预定</a>
-						</div>
-		</div>	
-			</div>
-	
-		
 <script type="text/javascript" src="../Scripts/Products/lang.js"></script>
 	<script type="text/javascript">
 var APP_ROOT = '';
@@ -47,99 +36,7 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 	  <ul class="main_nav">
 		 <li class="all_class nz_jsfudong ">
 		   <div class="class_con" style="height:45px; width:219px;">
-			 <dl class="index_fenlei nz_city" style="border: none;">
-				<dt class="csqh" id="sc_1"><span class="spa">您现在 </span>上海&nbsp;&nbsp;&nbsp;<span class="spa2">更换城市</span></dt>
-				<dd class="sub_fenlei nz_city_lb" style="display: none;">
-			    <div class="chshqh">
-								<dl class="chengshi">
-				 <dt class="quyu f_l">华北</dt>
-				   <dd class="cs_dd f_l">
-					  				   	    <a href="http://bj.01nz.com.cn/">北京</a>
-					  				   	    <a href="http://tj.01nz.com.cn/">天津</a>
-					  				   </dd>
-				</dl>
-				<div class="blank1"></div>
-				<div class="blank1"></div>
-				<div class="blank1"></div>
-		        								<dl class="chengshi both">
-		         <dt class=" quyu f_l">东北</dt>
-		           <dd class=" cs_dd f_l">
-		               				   	     <a href="http://sy.01nz.com.cn/">沈阳</a>
-					   				   	     <a href="http://dl.01nz.com.cn/">大连</a>
-					   				    </dd>
-		         </dl>
-		         <div class="blank1"></div>
-				 <div class="blank1"></div>
-				 <div class="blank1"></div>
-		        		        		        <dl class="chengshi both">
-		          <dt class="quyu f_l">华东</dt>
-		            <dd class=" cs_dd f_l">
-		               				    	  <a href="http://sh.01nz.com.cn/">上海</a>
-					   				    	  <a href="http://nj.01nz.com.cn/">南京</a>
-					   				    	  <a href="http://hz.01nz.com.cn/">杭州</a>
-					   				    	  <a href="http://qingdao.01nz.com.cn/">青岛</a>
-					   				    	  <a href="http://nb.01nz.com.cn/">宁波</a>
-					   				    	  <a href="http://jn.01nz.com.cn/">济南</a>
-					   				    	  <a href="http://suzhou.01nz.com.cn/">苏州</a>
-					   				    	  <a href="http://wx.01nz.com.cn/">无锡</a>
-					   				    	  <a href="http://hf.01nz.com.cn/">合肥</a>
-					   				    	  <a href="http://wf.01nz.com.cn/">潍坊</a>
-					   				    	  <a href="http://shaoxing.01nz.com.cn/">绍兴</a>
-					   				    	  <a href="http://huzhou.01nz.com.cn/">湖州</a>
-					   				    	  <a href="http://jx.01nz.com.cn/">嘉兴</a>
-					   				    	  <a href="http://jh.01nz.com.cn/">金华</a>
-					   				    	  <a href="http://zhenjiang.01nz.com.cn/">镇江</a>
-					   				    	  <a href="http://yangzhou.01nz.com.cn/">扬州</a>
-					   				    	  <a href="http://rz.01nz.com.cn/">日照</a>
-					   				    	  <a href="http://lishui.01nz.com.cn/">丽水</a>
-					   				    	  <a href="http://quzhou.01nz.com.cn/">衢州</a>
-					   				    	  <a href="http://xuancheng.01nz.com.cn/">宣城</a>
-					   				    	  <a href="http://hs.01nz.com.cn/">黄山</a>
-					   				    	  <a href="http://sr.01nz.com.cn/">上饶</a>
-					   				    	  <a href="http://zhoushan.01nz.com.cn/">舟山</a>
-					   					</dd>
-		         </dl>
-		         <div class="blank1"></div>
-				 <div class="blank1"></div>
-				 <div class="blank1"></div>
-		        		        		        <dl class="chengshi both">
-		          <dt class="quyu f_l">中南</dt>
-		            <dd class=" cs_dd f_l">
-		              				    	 <a href="http://gz.01nz.com.cn/">广州</a>
-					  				    	 <a href="http://sz.01nz.com.cn/">深圳</a>
-					  				    	 <a href="http://wh.01nz.com.cn/">武汉</a>
-					  				    	 <a href="http://cs.01nz.com.cn/">长沙</a>
-					  				    	 <a href="http://nn.01nz.com.cn/">南宁</a>
-					  				    	 <a href="http://sanya.01nz.com.cn/">三亚</a>
-					  					</dd>
-		         </dl>
-		         <div class="blank1"></div>
-				 <div class="blank1"></div>
-				 <div class="blank1"></div>
-		         		         		         <dl class="chengshi both">
-		           <dt class="quyu f_l">西南</dt>
-		             <dd class="cs_dd f_l">
-		               					      <a href="http://cd.01nz.com.cn/">成都</a>
-					   					      <a href="http://cq.01nz.com.cn/">重庆</a>
-					   					      <a href="http://km.01nz.com.cn/">昆明</a>
-					   					      <a href="http://zy.01nz.com.cn/">遵义</a>
-					   					 </dd>
-		          </dl>
-		          <div class="blank1"></div>
-				  <div class="blank1"></div>
-				  <div class="blank1"></div>
-		          		          		          <dl class="chengshi both">
-		            <dt class="quyu f_l">西北</dt>
-		              <dd class="cs_dd f_l">
-		               					   	   <a href="http://xa.01nz.com.cn/">西安</a>
-					   		              </dd>
-		           </dl>
-		           <div class="blank1"></div>
-				   <div class="blank1"></div>
-				   <div class="blank1"></div>
-		           		           <div class="city_gd"><a href="http://sh.01nz.com.cn/city">更多</a></div>
-		          </div>
-			     </dd>
+			 <dl class="index_fenlei nz_city" style="border: none; background-color:#0ebac6">
 		       </dl>
 				</div>
 			</li>
@@ -152,11 +49,11 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 					<div class="blank"></div>
 					<div class="title">钓场</div>
 					<div class="shm_dx">
-										<span><a href="http://sh.01nz.com.cn/fish/un-chitang" target="_blank">池塘</a></span>
-										<span><a href="http://sh.01nz.com.cn/fish/un-nongjia" target="_blank">农家</a></span>
-										<span><a href="http://sh.01nz.com.cn/fish/un-huku" target="_blank">湖库</a></span>
-										<span><a href="http://sh.01nz.com.cn/fish/un-yesheng" target="_blank">野生</a></span>
-										<span><a href="http://sh.01nz.com.cn/fish/un-fangyang" target="_blank">放养</a></span>
+										<span><a href="#" target="_blank">池塘</a></span>
+										<span><a href="#" target="_blank">农家</a></span>
+										<span><a href="#" target="_blank">湖库</a></span>
+										<span><a href="#" target="_blank">野生</a></span>
+										<span><a href="#" target="_blank">放养</a></span>
 										</div>
 				</div>
 				<div class="blank"></div>
@@ -164,10 +61,10 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 					<div class="blank"></div>
 					<div class="title">专题</div>
 					<div class="shm_dx">
-					<span><a href="http://01nz.com.cn/fishspecial/8.html" target="_blank">垂钓赛事</a></span>
-					<span><a href="http://01nz.com.cn/fishspecial/9.html" target="_blank">钓鱼日记</a></span>
-					<span><a href="http://01nz.com.cn/fishspecial/10.html" target="_blank">技巧学习</a></span>
-					<span><a href="http://01nz.com.cn/fishspecial/11.html" target="_blank">钓饵配方</a></span>
+					<span><a href="#" target="_blank">垂钓赛事</a></span>
+					<span><a href="#" target="_blank">钓鱼日记</a></span>
+					<span><a href="#" target="_blank">技巧学习</a></span>
+					<span><a href="#" target="_blank">钓饵配方</a></span>
 					</div>
 				</div>
 				<div class="blank"></div>
@@ -176,45 +73,12 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 			<div class="store_xiangmu">
 				<div class="title_nz"><span class="cx f_l"></span>全国钓场</div>
 				<div class="neirong_city">
-											<a href="http://bj.01nz.com.cn/fish" class="rmhong" target="_blank">北京</a>
-					 						<a href="http://sh.01nz.com.cn/fish" class="rmhong" target="_blank">上海</a>
-					 						<a href="http://gz.01nz.com.cn/fish" target="_blank">广州</a>
-					 						<a href="http://sz.01nz.com.cn/fish" target="_blank">深圳</a>
-					 						<a href="http://tj.01nz.com.cn/fish" class="rmhong" target="_blank">天津</a>
-					 						<a href="http://nj.01nz.com.cn/fish" class="rmhong" target="_blank">南京</a>
-					 						<a href="http://wh.01nz.com.cn/fish" target="_blank">武汉</a>
-					 						<a href="http://sy.01nz.com.cn/fish" target="_blank">沈阳</a>
-					 						<a href="http://xa.01nz.com.cn/fish" target="_blank">西安</a>
-					 						<a href="http://cd.01nz.com.cn/fish" target="_blank">成都</a>
-					 						<a href="http://cq.01nz.com.cn/fish" target="_blank">重庆</a>
-					 						<a href="http://hz.01nz.com.cn/fish" class="rmhong" target="_blank">杭州</a>
-					 						<a href="http://qingdao.01nz.com.cn/fish" target="_blank">青岛</a>
-					 						<a href="http://dl.01nz.com.cn/fish" target="_blank">大连</a>
-					 						<a href="http://nb.01nz.com.cn/fish" target="_blank">宁波</a>
-					 						<a href="http://jn.01nz.com.cn/fish" class="rmhong" target="_blank">济南</a>
-					 						<a href="http://cs.01nz.com.cn/fish" target="_blank">长沙</a>
-					 						<a href="http://km.01nz.com.cn/fish" target="_blank">昆明</a>
-					 						<a href="http://suzhou.01nz.com.cn/fish" class="rmhong" target="_blank">苏州</a>
-					 						<a href="http://wx.01nz.com.cn/fish" target="_blank">无锡</a>
-					 						<a href="http://nn.01nz.com.cn/fish" target="_blank">南宁</a>
-					 						<a href="http://hf.01nz.com.cn/fish" target="_blank">合肥</a>
-					 						<a href="http://wf.01nz.com.cn/fish" target="_blank">潍坊</a>
-					 						<a href="http://shaoxing.01nz.com.cn/fish" target="_blank">绍兴</a>
-					 						<a href="http://huzhou.01nz.com.cn/fish" target="_blank">湖州</a>
-					 						<a href="http://jx.01nz.com.cn/fish" target="_blank">嘉兴</a>
-					 						<a href="http://jh.01nz.com.cn/fish" target="_blank">金华</a>
-					 						<a href="http://zhenjiang.01nz.com.cn/fish" target="_blank">镇江</a>
-					 						<a href="http://yangzhou.01nz.com.cn/fish" target="_blank">扬州</a>
-					 						<a href="http://rz.01nz.com.cn/fish" target="_blank">日照</a>
-					 						<a href="http://lishui.01nz.com.cn/fish" target="_blank">丽水</a>
-					 						<a href="http://quzhou.01nz.com.cn/fish" target="_blank">衢州</a>
-					 						<a href="http://zy.01nz.com.cn/fish" target="_blank">遵义</a>
-					 						<a href="http://sanya.01nz.com.cn/fish" target="_blank">三亚</a>
-					 						<a href="http://xuancheng.01nz.com.cn/fish" target="_blank">宣城</a>
-					 						<a href="http://hs.01nz.com.cn/fish" target="_blank">黄山</a>
-					 						<a href="http://sr.01nz.com.cn/fish" target="_blank">上饶</a>
-					 						<a href="http://zhoushan.01nz.com.cn/fish" target="_blank">舟山</a>
-					 				</div>
+                    <asp:Repeater ID="RPcity" runat="server">
+                        <ItemTemplate>
+                            <a href="#" class="rmhong" target="_blank"><%# Eval("AreaName") %></a>
+                        </ItemTemplate>
+                    </asp:Repeater>	
+				</div>
 				<div class="blank"></div>
 			</div>
 			<div class="blank"></div>
@@ -223,21 +87,22 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 				<div class="jinbei f_l"></div>
 					<div class="baozhang_tit f_l">消费保障</div>
 					<div class="hgh_4 clear"></div>
-					<div class="baozhang_jsh">第一农庄网在线预定的商家均签署诚信协议，如果商家未能履行预定服务，我们将先行赔付，以保障消费者协议权益。</div>
+					<div class="baozhang_jsh">Play And Ate在线预定的商家均签署诚信协议,保障你的消费。</div>
 					<div class="blank"></div>
 					<div class="blank"></div>
 				
 				<div class="jiage f_l"></div>
 					<div class="baozhang_tit f_l">价格保障</div>
 					<div class="hgh_4 clear"></div>
-					<div class="baozhang_jsh">如果您通过 www.01nz.com.cn 在线完成预订后，于 24 小时内发现其他网站同一内容的相同产品提供更低价格，您可在这一更低产品的基础上享受额外九折优惠。</div>
+					<div class="baozhang_jsh">我不知道这里价格怎么样，反正都是虚假数据</div>
 					<div class="blank"></div>
 					<div class="blank"></div>
 				
-</div>			<div class="blank"></div>
+</div>		
+            <div class="blank"></div>
 			<div class="xfzbaozhang">
 			<div class="dianhua">
-					<div class="dianhua_xq">400-021-3158</div>
+					<div class="dianhua_xq">QQ：2637304079</div>
 					<div class="hgh_4"></div>
 					<div class="fuwushijian">周一到周日：9:00-18:00</div>
 					<div class="blank"></div>
@@ -253,7 +118,7 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 						$("#QQkf a:eq(3)").html('<img alt="QQ客服商家入驻" src="http://sh.01nz.com.cn/app/Tpl/fanwe/images/sjrz.png">');
 					});
 				</script>
-				<div align="center" class="fengehuix"></div>
+				<div class="fengehuix"></div>
 				<div class="fankui">
 					<div class="yjfankui">意见反馈</div>
 					<div class="hgh_4"></div>
@@ -316,38 +181,15 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 			<div class="clear"></div>
 		</div>
 		<div class="xjtore_con f_r" id="ajax_rmcdc_store">
-						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/fish/1119.html" target="_blank"><img src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/5386a12edadec_180x137.jpg" alt="鲜橙农庄"></a>
-				<p class="store_name"><a href="http://sh.01nz.com.cn/fish/1119.html" class="f_l" target="_blank">鲜橙农庄</a><span class="people_dc f_r">收费钓场</span></p>
-			</div>
-						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/fish/1118.html" target="_blank"><img src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53868e3bcab42_180x137.jpg" alt="小唐桃园农庄"></a>
-				<p class="store_name"><a href="http://sh.01nz.com.cn/fish/1118.html" class="f_l" target="_blank">小唐桃园农庄</a><span class="people_dc f_r">收费钓场</span></p>
-			</div>
-						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/fish/1111.html" target="_blank"><img src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53843c975ad39_180x137.jpg" alt="神哈生态农庄"></a>
-				<p class="store_name"><a href="http://sh.01nz.com.cn/fish/1111.html" class="f_l" target="_blank">神哈生态农庄</a><span class="people_dc f_r">免费钓场</span></p>
-			</div>
-						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/fish/1110.html" target="_blank"><img src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/538435e12f69b_180x137.jpg" alt="水龙垂钓休闲农庄"></a>
-				<p class="store_name"><a href="http://sh.01nz.com.cn/fish/1110.html" class="f_l" target="_blank">水龙垂钓休闲农庄</a><span class="people_dc f_r">收费钓场</span></p>
-			</div>
-						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/fish/1112.html" target="_blank"><img src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/5384479d97192_180x137.jpg" alt="豪迈生态农庄"></a>
-				<p class="store_name"><a href="http://sh.01nz.com.cn/fish/1112.html" class="f_l" target="_blank">豪迈生态农庄</a><span class="people_dc f_r">收费钓场</span></p>
-			</div>
-						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/fish/1122.html" target="_blank"><img src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/5386c9359ba55_180x137.jpg" alt="紫荆农庄"></a>
-				<p class="store_name"><a href="http://sh.01nz.com.cn/fish/1122.html" class="f_l" target="_blank">紫荆农庄</a><span class="people_dc f_r">收费钓场</span></p>
-			</div>
-						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/fish/1123.html" target="_blank"><img src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/5386dc039d2cc_180x137.jpg" alt="崇明智宸农庄"></a>
-				<p class="store_name"><a href="http://sh.01nz.com.cn/fish/1123.html" class="f_l" target="_blank">崇明智宸农庄</a><span class="people_dc f_r">收费钓场</span></p>
-			</div>
-						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/fish/1124.html" target="_blank"><img src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/5386e55eb067d_180x137.jpg" alt="南江农庄度假村"></a>
-				<p class="store_name"><a href="http://sh.01nz.com.cn/fish/1124.html" class="f_l" target="_blank">南江农庄度假村</a><span class="people_dc f_r">收费钓场</span></p>
-			</div>
+						
+						<asp:Repeater runat="server" ID="RPHotfishing">
+                            <ItemTemplate>
+                                <div class="s_info">
+				                    <a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><img src="../Images/Home/<%#Eval("Image") %>" alt=""></a>
+				                    <p class="store_name"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" class="f_l" target="_blank"><%# Eval("ProductName") %></a><span class="people_dc f_r">收费钓场</span></p>
+			                    </div>
+                            </ItemTemplate>
+						</asp:Repeater>
 						<div class="clear"></div>
 		</div>
 	</div>
@@ -358,139 +200,138 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 		</div>
 		<div class="wqtore_vip f_l">
 						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/fish/1106.html" target="_blank"><img src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53757cf7d48c0_367x254.jpg" alt="辰山山庄"></a>
-				<p class="store_name"><a href="http://sh.01nz.com.cn/fish/1106.html" class="f_l" target="_blank">辰山山庄</a><span class="people_dc f_r">收费钓场</span></p>
+				<a href="#" target="_blank"><img src="../Images/Home/553e30da866a7.jpg" alt="辰山山庄"></a>
+				<p class="store_name"><a href="#" class="f_l" target="_blank">辰山山庄</a><span class="people_dc f_r">收费钓场</span></p>
 			</div>
 						<div class="clear"></div>
 		</div>
 		<div class="wqtore_con f_r">
-						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/fish/1102.html" target="_blank"><img src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/537450e23d8ff_180x110.jpg" alt="涵轩农庄"></a>
-				<p class="store_name"><a href="http://sh.01nz.com.cn/fish/1102.html" class="f_l" target="_blank">涵轩农庄</a><span class="people_dc f_r">收费钓场</span></p>
-			</div>
-						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/fish/1097.html" target="_blank"><img src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53733e39b0df8_180x110.jpg" alt="庄吕农庄"></a>
-				<p class="store_name"><a href="http://sh.01nz.com.cn/fish/1097.html" class="f_l" target="_blank">庄吕农庄</a><span class="people_dc f_r">收费钓场</span></p>
-			</div>
-						<div class="s_info">
-				<a href="http://sh.01nz.com.cn/fish/1100.html" target="_blank"><img src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/53742882ba3a6_180x110.jpg" alt="忠忠生态农庄"></a>
-				<p class="store_name"><a href="http://sh.01nz.com.cn/fish/1100.html" class="f_l" target="_blank">忠忠生态农庄</a><span class="people_dc f_r">收费钓场</span></p>
-			</div>
-						<div class="clear"></div>
-		</div>
-	</div>
+            <asp:Repeater runat="server" ID="RPdiaoChang">
+                <ItemTemplate>
+                    <div class="s_info">
+				        <a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><img src="../Images/Home/<%#Eval("Image") %>" alt="涵轩农庄"></a>
+				        <p class="store_name"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" class="f_l" target="_blank"><%# Eval("ProductName") %></a><span class="people_dc f_r">收费钓场</span></p>
+			        </div>
+                </ItemTemplate>
+            </asp:Repeater>
+				<div class="clear"></div>
+		
+            </div>
+
+    </div>
+	
 	<div class="hg_25 both"></div>
 	<div class="quanguo_dc">
 		<div class="qg_dc f_l">全国<br>钓场</div>
 		<div class="qg_xq f_r">
-			<div align="center" class="chengshi">
+			<div class="chengshi">
 						<span>
-			<a href="http://sh.01nz.com.cn/fish" target="_blank">上海(190)</a>
+			<a href="#" target="_blank">上海(190)</a>
 			</span>
 						<span>
-			<a href="http://bj.01nz.com.cn/fish" target="_blank">北京(839)</a>
+			<a href="#" target="_blank">北京(839)</a>
 			</span>
 						<span>
-			<a href="http://gz.01nz.com.cn/fish" target="_blank">广州(217)</a>
+			<a href="#" target="_blank">广州(217)</a>
 			</span>
 						<span>
-			<a href="http://sz.01nz.com.cn/fish" target="_blank">深圳(89)</a>
+			<a href="#" target="_blank">深圳(89)</a>
 			</span>
 						<span>
-			<a href="http://tj.01nz.com.cn/fish" target="_blank">天津(258)</a>
+			<a href="#" target="_blank">天津(258)</a>
 			</span>
 						<span>
-			<a href="http://nj.01nz.com.cn/fish" target="_blank">南京(183)</a>
+			<a href="#" target="_blank">南京(183)</a>
 			</span>
 						<span>
-			<a href="http://wh.01nz.com.cn/fish" target="_blank">武汉(116)</a>
+			<a href="#" target="_blank">武汉(116)</a>
 			</span>
 						<span>
-			<a href="http://sy.01nz.com.cn/fish" target="_blank">沈阳(45)</a>
+			<a href="#" target="_blank">沈阳(45)</a>
 			</span>
 						<span>
-			<a href="http://xa.01nz.com.cn/fish" target="_blank">西安(111)</a>
+			<a href="#" target="_blank">西安(111)</a>
 			</span>
 						<span>
-			<a href="http://cd.01nz.com.cn/fish" target="_blank">成都(335)</a>
+			<a href="#" target="_blank">成都(335)</a>
 			</span>
 						<span>
-			<a href="http://cq.01nz.com.cn/fish" target="_blank">重庆(603)</a>
+			<a href="#" target="_blank">重庆(603)</a>
 			</span>
 						<span>
-			<a href="http://hz.01nz.com.cn/fish" target="_blank">杭州(406)</a>
+			<a href="#" target="_blank">杭州(406)</a>
 			</span>
 						<span>
-			<a href="http://qingdao.01nz.com.cn/fish" target="_blank">青岛(137)</a>
+			<a href="#" target="_blank">青岛(137)</a>
 			</span>
 						<span>
-			<a href="http://dl.01nz.com.cn/fish" target="_blank">大连(119)</a>
+			<a href="#" target="_blank">大连(119)</a>
 			</span>
 						<span>
-			<a href="http://nb.01nz.com.cn/fish" target="_blank">宁波(123)</a>
+			<a href="#" target="_blank">宁波(123)</a>
 			</span>
 						<span>
-			<a href="http://jn.01nz.com.cn/fish" target="_blank">济南(43)</a>
+			<a href="#" target="_blank">济南(43)</a>
 			</span>
 						<span>
-			<a href="http://cs.01nz.com.cn/fish" target="_blank">长沙(143)</a>
+			<a href="#" target="_blank">长沙(143)</a>
 			</span>
 						<span>
-			<a href="http://km.01nz.com.cn/fish" target="_blank">昆明(74)</a>
+			<a href="#" target="_blank">昆明(74)</a>
 			</span>
 						<span>
-			<a href="http://suzhou.01nz.com.cn/fish" target="_blank">苏州(216)</a>
+			<a href="#" target="_blank">苏州(216)</a>
 			</span>
 						<span>
-			<a href="http://wx.01nz.com.cn/fish" target="_blank">无锡(123)</a>
+			<a href="#" target="_blank">无锡(123)</a>
 			</span>
 						<span>
-			<a href="http://nn.01nz.com.cn/fish" target="_blank">南宁(15)</a>
+			<a href="#" target="_blank">南宁(15)</a>
 			</span>
 						<span>
-			<a href="http://hf.01nz.com.cn/fish" target="_blank">合肥(71)</a>
+			<a href="#" target="_blank">合肥(71)</a>
 			</span>
 						<span>
-			<a href="http://wf.01nz.com.cn/fish" target="_blank">潍坊(1)</a>
+			<a href="#" target="_blank">潍坊(1)</a>
 			</span>
 						<span>
-			<a href="http://shaoxing.01nz.com.cn/fish" target="_blank">绍兴(65)</a>
+			<a href="#" target="_blank">绍兴(65)</a>
 			</span>
 						<span>
-			<a href="http://huzhou.01nz.com.cn/fish" target="_blank">湖州(236)</a>
+			<a href="#" target="_blank">湖州(236)</a>
 			</span>
 						<span>
-			<a href="http://jx.01nz.com.cn/fish" target="_blank">嘉兴(79)</a>
+			<a href="#" target="_blank">嘉兴(79)</a>
 			</span>
 						<span>
-			<a href="http://jh.01nz.com.cn/fish" target="_blank">金华(128)</a>
+			<a href="#" target="_blank">金华(128)</a>
 			</span>
 						<span>
-			<a href="http://zhenjiang.01nz.com.cn/fish" target="_blank">镇江(45)</a>
+			<a href="#" target="_blank">镇江(45)</a>
 			</span>
 						<span>
-			<a href="http://yangzhou.01nz.com.cn/fish" target="_blank">扬州(2)</a>
+			<a href="#" target="_blank">扬州(2)</a>
 			</span>
 						<span>
-			<a href="http://rz.01nz.com.cn/fish" target="_blank">日照(439)</a>
+			<a href="#" target="_blank">日照(439)</a>
 			</span>
 						<span>
-			<a href="http://lishui.01nz.com.cn/fish" target="_blank">丽水(150)</a>
+			<a href="#" target="_blank">丽水(150)</a>
 			</span>
 						<span>
-			<a href="http://quzhou.01nz.com.cn/fish" target="_blank">衢州(55)</a>
+			<a href="#" target="_blank">衢州(55)</a>
 			</span>
 						<span>
-			<a href="http://zy.01nz.com.cn/fish" target="_blank">遵义(23)</a>
+			<a href="#" target="_blank">遵义(23)</a>
 			</span>
 						<span>
-			<a href="http://xuancheng.01nz.com.cn/fish" target="_blank">宣城(48)</a>
+			<a href="#" target="_blank">宣城(48)</a>
 			</span>
 						<span>
-			<a href="http://hs.01nz.com.cn/fish" target="_blank">黄山(43)</a>
+			<a href="#" target="_blank">黄山(43)</a>
 			</span>
 						<span>
-			<a href="http://sanya.01nz.com.cn/fish" target="_blank">三亚(19)</a>
+			<a href="#" target="_blank">三亚(19)</a>
 			</span>
 						</div>
 		</div>
@@ -503,17 +344,12 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 		</div>
 		<div class="shoufei_con f_l">
 			<div class="tab_txt clear">
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://hs.01nz.com.cn/fish/1047.html" target="_blank">黄山歙县深渡毛豆腐农家乐</a></span><span class="sp2 f_l">农家</span><span class="sp3 f_r">黄山</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://cs.01nz.com.cn/fish/587.html" target="_blank">长沙滴翠山庄</a></span><span class="sp2 f_l">农家</span><span class="sp3 f_r">长沙</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://sr.01nz.com.cn/fish/611.html" target="_blank">婺源官厅人家</a></span><span class="sp2 f_l">农家</span><span class="sp3 f_r">上饶</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://suzhou.01nz.com.cn/fish/1109.html" target="_blank">西山庭山农庄</a></span><span class="sp2 f_l">池塘</span><span class="sp3 f_r">苏州</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://xuancheng.01nz.com.cn/fish/609.html" target="_blank">宁国窑山农家乐</a></span><span class="sp2 f_l">农家</span><span class="sp3 f_r">宣城</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://hs.01nz.com.cn/fish/389.html" target="_blank">山旮旯农庄</a></span><span class="sp2 f_l">农家</span><span class="sp3 f_r">黄山</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://rz.01nz.com.cn/fish/987.html" target="_blank">日照祥和渔家</a></span><span class="sp2 f_l">野生</span><span class="sp3 f_r">日照</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://sanya.01nz.com.cn/fish/503.html" target="_blank">三亚新村农家乐生态餐饮山庄</a></span><span class="sp2 f_l">农家</span><span class="sp3 f_r">三亚</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://wx.01nz.com.cn/fish/598.html" target="_blank">阳山火山温泉度假区</a></span><span class="sp2 f_l">农家</span><span class="sp3 f_r">无锡</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://xuancheng.01nz.com.cn/fish/621.html" target="_blank">月亮湾爱民农家乐</a></span><span class="sp2 f_l"></span><span class="sp3 f_r">宣城</span></div>
-							</div>
+                <asp:Repeater runat="server" ID="RPCharge">
+                    <ItemTemplate>
+                        <div class="dc_liebiao"><span class="sp f_l"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><%# Eval("ProductName") %></a></span><span class="sp2 f_l"><%# Eval("TypeName") %></span><span class="sp3 f_r"><%# Eval("AreaName") %></span></div>									
+                    </ItemTemplate>
+                </asp:Repeater>
+			</div>
 			<div class="clear"></div>
 		</div>
 	</div>
@@ -523,22 +359,20 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 		</div>
 		<div class="shoufei_con f_l">
 			<div class="tab_txt clear">
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://hz.01nz.com.cn/fish/851.html" target="_blank">富阳艾康园</a></span><span class="sp2 f_l">湖库</span><span class="sp3 f_r">杭州</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://hz.01nz.com.cn/fish/853.html" target="_blank">望溪农家乐</a></span><span class="sp2 f_l">湖库</span><span class="sp3 f_r">杭州</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://hf.01nz.com.cn/fish/1208.html" target="_blank">大房郢水库</a></span><span class="sp2 f_l">湖库</span><span class="sp3 f_r">合肥</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://sr.01nz.com.cn/fish/1300.html" target="_blank">周田水库</a></span><span class="sp2 f_l">湖库</span><span class="sp3 f_r">上饶</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://sr.01nz.com.cn/fish/1301.html" target="_blank">黄源水库</a></span><span class="sp2 f_l">湖库</span><span class="sp3 f_r">上饶</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://wh.01nz.com.cn/fish/1314.html" target="_blank">藏龙岛</a></span><span class="sp2 f_l">池塘</span><span class="sp3 f_r">武汉</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://sanya.01nz.com.cn/fish/1333.html" target="_blank"> 五指山漂流水库</a></span><span class="sp2 f_l">湖库</span><span class="sp3 f_r">三亚</span></div>
-									<div class="dc_liebiao"><span class="sp f_l"><a href="http://cq.01nz.com.cn/fish/1349.html" target="_blank">渝北区梅子沟水库</a></span><span class="sp2 f_l">湖库</span><span class="sp3 f_r">重庆</span></div>
-							</div>
+                 <asp:Repeater runat="server" ID="RPFree">
+                    <ItemTemplate>
+                        <div class="dc_liebiao"><span class="sp f_l"><a href="../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>" target="_blank"><%# Eval("ProductName") %></a></span><span class="sp2 f_l"><%# Eval("TypeName") %></span><span class="sp3 f_r"><%# Eval("AreaName") %></span></div>									
+                    </ItemTemplate>
+                </asp:Repeater>
+		</div>
 			<div class="clear"></div>
 		</div>
 	</div>
 	</div>
-</div>
-	</div>
-</div>
+            </div>
+ </div>
+ </div>
+
 <!-- 改版 -->
 
 
@@ -548,10 +382,9 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 
 
 
-<script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/z_stat.php" language="JavaScript"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core.php" charset="utf-8" type="text/javascript"></script><a href="https://www.cnzz.com/stat/website.php?web_id=1254939469" target="_blank" title="站长统计">站长统计</a>
+<script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/z_stat.php" language="JavaScript"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core.php" charset="utf-8" type="text/javascript"></script>
 
-<script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/c.js" language="JavaScript"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/tongji_360.php" language="JavaScript" charset="gb2312"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core(1).php" charset="utf-8" type="text/javascript"></script><a href="https://quanjing.cnzz.com/" target="_blank" title="全景统计"><img border="0" hspace="0" vspace="0" src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/2.gif"></a>
-
+<script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/c.js" language="JavaScript"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/tongji_360.php" language="JavaScript" charset="gb2312"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core(1).php" charset="utf-8" type="text/javascript"></script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
 </asp:Content>

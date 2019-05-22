@@ -5,14 +5,16 @@
     <script src="../Scripts/Home/main_store.js"></script>
     <style>
         #kefu {
-         position:fixed;
-         top:200px;
+            position: fixed;
+            top: 200px;
+            z-index: 99999;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-    <a id="kefu" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2637304079&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:2637304079:53" alt="点击这里查询客服" title="点击这里查询客服"/></a>
-    
+    <a id="kefu" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2637304079&site=qq&menu=yes">
+        <img border="0" src="http://wpa.qq.com/pa?p=2:2637304079:53" alt="点击这里查询客服" title="点击这里查询客服" /></a>
+
     <asp:ScriptManagerProxy runat="server" ID="spHome">
     </asp:ScriptManagerProxy>
     <script type="text/javascript">
@@ -67,7 +69,7 @@
                     <div class="gdonetop">
                         <div class="gdonel">
                             <div class="odbg"></div>
-                            <label class="f_l">发需求获推荐 </label>
+                            <label style="color: black;">选择需求</label>
                         </div>
                         <div class="gdoner">
                             <div class="gdbgimg gda"></div>
@@ -77,6 +79,7 @@
                         <div class="gdonebotl">
                             <ul>
                                 <li>
+
                                     <div class="gbotltop">
                                         <div class="gbotllibg gbga"></div>
                                         <label>专业客服</label>
@@ -621,7 +624,7 @@
                     <div class="mtext_b_l f_l">
                         <div class="mtext_b_l_title blue">
                             <div class="f_l kuais">主题分类</div>
-                            <a href="http://www.01nz.com.cn/#" title="" class="myy_yd f_r">更多 &gt;&gt;</a>
+                            <a href="#" title="" class="myy_yd f_r">更多 &gt;&gt;</a>
                         </div>
                         <div class="mzt_left">
                             <div class="theme">
@@ -633,7 +636,7 @@
                                         target="_blank">度假村</a> </li>
                                     <li><a href="#"
                                         target="_blank">温泉农庄</a> </li>
-                                    <li><a href="http://sh.01nz.#" target="_blank">科普基地</a>
+                                    <li><a href="#" target="_blank">科普基地</a>
                                     </li>
                                     <li><a href="#"
                                         target="_blank">拓展培训</a> </li>
@@ -697,7 +700,7 @@
                                                 <li>
                                                     <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>' onmouseout="shadowout(<%# Eval("ProductID") %>)"
                                                         onmouseover="shadow(<%# Eval("ProductID") %>)" target="_blank" />
-                                                    <img src='../Images/Home/<%# Eval("Image.ImageName")%>'
+                                                    <img src='../Images/Tailorism/<%# Eval("Image.ImageName")%>'
                                                         alt='<%# Eval("ProductName") %>' class="f_l"
                                                         style="display: block; width: 100%; height: 100%;" />
 
@@ -984,7 +987,7 @@
                                                 <li>
                                                     <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>' target="_blank">
                                                         <img style="width: 100%; height: 132px;" alt="<%# Eval("Image.ImageName") %>"
-                                                            src='../Images/Home/<%# Eval("Image.ImageName") %>' />
+                                                            src='../Images/Tailorism/<%# Eval("Image.ImageName") %>' />
                                                         <div class="m_title_s"><%# Eval("ProductName") %></div>
                                                         <div class="m_title_c"><%# Eval("UserInfo_Role.Address") %></div>
                                                     </a>

@@ -4,13 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using FTZ.PlayAndAte.Models;
 using Newtonsoft.Json;
 
 namespace Play_And_Ate.Order
 {
     public partial class Order_3 : System.Web.UI.Page
     {
-        protected static List<User> list;
+        protected static List<Customers> list = new List<Customers>();
         protected string result;
         protected string Crrs;
         protected string Etrs;
@@ -32,28 +33,19 @@ namespace Play_And_Ate.Order
             //成人信息数组
             dynamic datt = JsonConvert.DeserializeObject(Request["datt"]);
             //获取数组成员
-            list = new List<User>();
+            //初始化list
+            list.Clear();
             foreach (var item in datt)
             {
-                User user = new User();
-                user.name = item["a"];
-                user.select = item["b"];
-                user.CardId = item["c"];
-                user.phone = item["d"];
-                list.Add(user);
+                Customers customers = new Customers();
+                customers.Name = item["cName"];
+                customers.CardTypeId = item["cardTypeId"];
+                customers.Id_Number = item["carId"];
+                customers.Phone = item["phone"];
+                list.Add(customers);
             }
             result = JsonConvert.SerializeObject(list); //将list集合转化为JSON格式
         }
-    }
 
-    /// <summary>
-    /// 成人信息
-    /// </summary>
-    public class User
-    {
-        public string name { get; set; }
-        public string select { get; set; }
-        public string CardId { get; set; }
-        public string phone { get; set; }
     }
 }

@@ -2,710 +2,710 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
     <link href="../Content/Show/FarmDetails/style.css" rel="stylesheet" />
     	<style type="text/css">
-    	    .BMap_mask {
-    	        background: transparent url(about:blank);
-    	    }
-
-    	    .BMap_noscreen {
-    	        display: none;
-    	    }
-
-    	    .BMap_button {
-    	        cursor: pointer;
-    	    }
-
-    	    .BMap_zoomer {
-    	        background-image: url(http://api.map.baidu.com/images/mapctrls1d3.gif);
-    	        background-repeat: no-repeat;
-    	        overflow: hidden;
-    	        font-size: 1px;
-    	        position: absolute;
-    	        width: 7px;
-    	        height: 7px;
-    	    }
-
-    	    .BMap_stdMpCtrl div {
-    	        position: absolute;
-    	    }
-
-    	    .BMap_stdMpPan {
-    	        width: 44px;
-    	        height: 44px;
-    	        overflow: hidden;
-    	        background: url(http://api.map.baidu.com/images/mapctrls2d0.png) no-repeat;
-    	    }
-
-    	    .BMap_ie6 .BMap_stdMpPan {
-    	        background: none;
-    	    }
-
-    	    .BMap_ie6 .BMap_smcbg {
-    	        left: 0;
-    	        width: 44px;
-    	        height: 464px;
-    	        filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://api.map.baidu.com/images/mapctrls2d0.png');
-    	    }
-
-    	    .BMap_ie6 .BMap_stdMpPanBg {
-    	        z-index: -1;
-    	    }
-
-    	    .BMap_stdMpPan .BMap_button {
-    	        height: 15px;
-    	        width: 15px;
-    	    }
-
-    	    .BMap_panN,
-    	    .BMap_panW,
-    	    .BMap_panE,
-    	    .BMap_panS {
-    	        overflow: hidden;
-    	    }
-
-    	    .BMap_panN {
-    	        left: 14px;
-    	        top: 0;
-    	    }
-
-    	    .BMap_panW {
-    	        left: 1px;
-    	        top: 12px;
-    	    }
-
-    	    .BMap_panE {
-    	        left: 27px;
-    	        top: 12px;
-    	    }
-
-    	    .BMap_panS {
-    	        left: 14px;
-    	        top: 25px;
-    	    }
-
-    	    .BMap_stdMpZoom {
-    	        top: 45px;
-    	        overflow: hidden;
-    	    }
-
-    	        .BMap_stdMpZoom .BMap_button {
-    	            width: 22px;
-    	            height: 21px;
-    	            left: 12px;
-    	            overflow: hidden;
-    	            background-image: url(http://api.map.baidu.com/images/mapctrls2d0.png);
-    	            background-repeat: no-repeat;
-    	            z-index: 10;
-    	        }
-
-    	    .BMap_ie6 .BMap_stdMpZoom .BMap_button {
-    	        background: none;
-    	    }
-
-    	    .BMap_stdMpZoomIn {
-    	        background-position: 0 -221px;
-    	    }
-
-    	    .BMap_stdMpZoomOut {
-    	        background-position: 0 -265px;
-    	    }
-
-    	    .BMap_ie6 .BMap_stdMpZoomIn div {
-    	        left: 0;
-    	        top: -221px;
-    	    }
-
-    	    .BMap_ie6 .BMap_stdMpZoomOut div {
-    	        left: 0;
-    	        top: -265px;
-    	    }
-
-    	    .BMap_stdMpType4 .BMap_stdMpZoom .BMap_button {
-    	        left: 0;
-    	        overflow: hidden;
-    	        background: -webkit-gradient(linear, 50% 0, 50% 100%, from(rgba(255, 255, 255, 0.85)), to(rgba(217, 217, 217, 0.85)));
-    	        z-index: 10;
-    	        -webkit-border-radius: 22px;
-    	        width: 34px;
-    	        height: 34px;
-    	        border: 1px solid rgba(255, 255, 255, 0.5);
-    	        -webkit-box-shadow: 0 2px 3.6px #CCC;
-    	        display: -webkit-box;
-    	        -webkit-box-align: center;
-    	        -webkit-box-pack: center;
-    	        -webkit-box-sizing: border-box;
-    	    }
-
-    	    .BMap_stdMpType4 .BMap_smcbg {
-    	        position: static;
-    	        background: url(http://api.map.baidu.com/images/mapctrls2d0_mb.png) 0 0 no-repeat;
-    	        -webkit-background-size: 24px 32px;
-    	    }
-
-    	    .BMap_stdMpType4 .BMap_stdMpZoomIn {
-    	        background-position: 0 0;
-    	    }
-
-    	        .BMap_stdMpType4 .BMap_stdMpZoomIn .BMap_smcbg {
-    	            width: 24px;
-    	            height: 24px;
-    	            background-position: 0 0;
-    	        }
-
-    	    .BMap_stdMpType4 .BMap_stdMpZoomOut {
-    	        background-position: 0 0;
-    	    }
-
-    	        .BMap_stdMpType4 .BMap_stdMpZoomOut .BMap_smcbg {
-    	            width: 24px;
-    	            height: 6px;
-    	            background-position: 0 -25px;
-    	        }
-
-    	    .BMap_stdMpSlider {
-    	        width: 37px;
-    	        top: 18px;
-    	    }
-
-    	    .BMap_stdMpSliderBgTop {
-    	        left: 18px;
-    	        width: 10px;
-    	        overflow: hidden;
-    	        background: url(http://api.map.baidu.com/images/mapctrls2d0.png) no-repeat -23px -226px;
-    	    }
-
-    	    .BMap_stdMpSliderBgBot {
-    	        left: 19px;
-    	        height: 8px;
-    	        width: 10px;
-    	        top: 124px;
-    	        overflow: hidden;
-    	        background: url(http://api.map.baidu.com/images/mapctrls2d0.png) no-repeat -33px bottom;
-    	    }
-
-    	    .BMap_ie6 .BMap_stdMpSliderBgTop,
-    	    .BMap_ie6 .BMap_stdMpSliderBgBot {
-    	        background: none;
-    	    }
-
-    	        .BMap_ie6 .BMap_stdMpSliderBgTop div {
-    	            left: -23px;
-    	            top: -226px;
-    	        }
-
-    	        .BMap_ie6 .BMap_stdMpSliderBgBot div {
-    	            left: -33px;
-    	            bottom: 0;
-    	        }
-
-    	    .BMap_stdMpSliderMask {
-    	        height: 100%;
-    	        width: 24px;
-    	        left: 10px;
-    	        cursor: pointer;
-    	    }
-
-    	    .BMap_stdMpSliderBar {
-    	        height: 11px;
-    	        width: 19px;
-    	        left: 13px;
-    	        top: 80px;
-    	        overflow: hidden;
-    	        background: url(http://api.map.baidu.com/images/mapctrls2d0.png) no-repeat 0 -309px;
-    	    }
-
-    	        .BMap_stdMpSliderBar.h {
-    	            background: url(http://api.map.baidu.com/images/mapctrls2d0.png) no-repeat 0 -320px;
-    	        }
-
-    	    .BMap_ie6 .BMap_stdMpSliderBar,
-    	    .BMap_ie6 .BMap_stdMpSliderBar.h {
-    	        background: none;
-    	    }
-
-    	        .BMap_ie6 .BMap_stdMpSliderBar div {
-    	            top: -309px;
-    	        }
-
-    	        .BMap_ie6 .BMap_stdMpSliderBar.h div {
-    	            top: -320px;
-    	        }
-
-    	    .BMap_zlSt,
-    	    .BMap_zlCity,
-    	    .BMap_zlProv,
-    	    .BMap_zlCountry {
-    	        position: absolute;
-    	        left: 34px;
-    	        height: 21px;
-    	        width: 28px;
-    	        background-image: url(http://api.map.baidu.com/images/mapctrls2d0.png);
-    	        background-repeat: no-repeat;
-    	        font-size: 0;
-    	        cursor: pointer;
-    	    }
-
-    	    .BMap_ie6 .BMap_zlSt,
-    	    .BMap_ie6 .BMap_zlCity,
-    	    .BMap_ie6 .BMap_zlProv,
-    	    .BMap_ie6 .BMap_zlCountry {
-    	        background: none;
-    	        overflow: hidden;
-    	    }
-
-    	    .BMap_zlHolder {
-    	        display: none;
-    	        position: absolute;
-    	        top: 0;
-    	    }
-
-    	        .BMap_zlHolder.hvr {
-    	            display: block;
-    	        }
-
-    	    .BMap_zlSt {
-    	        background-position: 0 -380px;
-    	        top: 21px;
-    	    }
-
-    	    .BMap_zlCity {
-    	        background-position: 0 -401px;
-    	        top: 57px;
-    	    }
-
-    	    .BMap_zlProv {
-    	        background-position: 0 -422px;
-    	        top: 81px;
-    	    }
-
-    	    .BMap_zlCountry {
-    	        background-position: 0 -443px;
-    	        top: 105px;
-    	    }
-
-    	    .BMap_ie6 .BMap_zlSt div {
-    	        top: -380px;
-    	    }
-
-    	    .BMap_ie6 .BMap_zlCity div {
-    	        top: -401px;
-    	    }
-
-    	    .BMap_ie6 .BMap_zlProv div {
-    	        top: -422px;
-    	    }
-
-    	    .BMap_ie6 .BMap_zlCountry div {
-    	        top: -443px;
-    	    }
-
-    	    .BMap_stdMpType1 .BMap_stdMpSlider,
-    	    .BMap_stdMpType2 .BMap_stdMpSlider,
-    	    .BMap_stdMpType3 .BMap_stdMpSlider,
-    	    .BMap_stdMpType4 .BMap_stdMpSlider,
-    	    .BMap_stdMpType2 .BMap_stdMpZoom,
-    	    .BMap_stdMpType3 .BMap_stdMpPan,
-    	    .BMap_stdMpType4 .BMap_stdMpPan {
-    	        display: none;
-    	    }
-
-    	    .BMap_stdMpType3 .BMap_stdMpZoom {
-    	        top: 0;
-    	    }
-
-    	    .BMap_stdMpType4 .BMap_stdMpZoom {
-    	        top: 0;
-    	    }
-
-    	    .BMap_cpyCtrl a {
-    	        font-size: 11px;
-    	        color: #7979CC;
-    	    }
-
-    	    .BMap_scaleCtrl {
-    	        height: 23px;
-    	        overflow: hidden;
-    	    }
-
-    	        .BMap_scaleCtrl div.BMap_scaleTxt {
-    	            font-size: 11px;
-    	            font-family: Arial, sans-serif;
-    	        }
-
-    	        .BMap_scaleCtrl div {
-    	            position: absolute;
-    	            overflow: hidden;
-    	        }
-
-    	    .BMap_scaleHBar img,
-    	    .BMap_scaleLBar img,
-    	    .BMap_scaleRBar img {
-    	        position: absolute;
-    	        width: 37px;
-    	        height: 442px;
-    	        left: 0;
-    	    }
-
-    	    .BMap_scaleHBar {
-    	        width: 100%;
-    	        height: 5px;
-    	        font-size: 0;
-    	        bottom: 0;
-    	    }
-
-    	        .BMap_scaleHBar img {
-    	            top: -437px;
-    	            width: 100%;
-    	        }
-
-    	    .BMap_scaleLBar,
-    	    .BMap_scaleRBar {
-    	        width: 3px;
-    	        height: 9px;
-    	        bottom: 0;
-    	        font-size: 0;
-    	        z-index: 1;
-    	    }
-
-    	        .BMap_scaleLBar img {
-    	            top: -427px;
-    	            left: 0;
-    	        }
-
-    	        .BMap_scaleRBar img {
-    	            top: -427px;
-    	            left: -5px;
-    	        }
-
-    	    .BMap_scaleLBar {
-    	        left: 0;
-    	    }
-
-    	    .BMap_scaleRBar {
-    	        right: 0;
-    	    }
-
-    	    .BMap_scaleTxt {
-    	        text-align: center;
-    	        width: 100%;
-    	        cursor: default;
-    	        line-height: 18px;
-    	    }
-
-    	    .BMap_omCtrl {
-    	        background-color: #fff;
-    	        overflow: hidden;
-    	    }
-
-    	    .BMap_omOutFrame {
-    	        position: absolute;
-    	        width: 100%;
-    	        height: 100%;
-    	        left: 0;
-    	        top: 0;
-    	    }
-
-    	    .BMap_omInnFrame {
-    	        position: absolute;
-    	        border: 1px solid #999;
-    	        background-color: #ccc;
-    	        overflow: hidden;
-    	    }
-
-    	    .BMap_omMapContainer {
-    	        position: absolute;
-    	        overflow: hidden;
-    	        width: 100%;
-    	        height: 100%;
-    	        left: 0;
-    	        top: 0;
-    	    }
-
-    	    .BMap_omViewMv {
-    	        border-width: 1px;
-    	        border-style: solid;
-    	        border-left-color: #84b0df;
-    	        border-top-color: #adcff4;
-    	        border-right-color: #274b8b;
-    	        border-bottom-color: #274b8b;
-    	        position: absolute;
-    	        z-index: 600;
-    	    }
-
-    	    .BMap_omViewInnFrame {
-    	        border: 1px solid #3e6bb8;
-    	    }
-
-    	    .BMap_omViewMask {
-    	        width: 1000px;
-    	        height: 1000px;
-    	        position: absolute;
-    	        left: 0;
-    	        top: 0;
-    	        background-color: #68c;
-    	        opacity: .2;
-    	        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
-    	    }
-
-    	    .BMap_omBtn {
-    	        height: 13px;
-    	        width: 13px;
-    	        position: absolute;
-    	        cursor: pointer;
-    	        overflow: hidden;
-    	        background: url(http://api.map.baidu.com/images/mapctrls1d3.gif) no-repeat;
-    	        z-index: 1210;
-    	    }
-
-    	    .anchorBR .BMap_omOutFrame {
-    	        border-top: 1px solid #999;
-    	        border-left: 1px solid #999;
-    	    }
-
-    	    .quad4 .BMap_omBtn {
-    	        background-position: -26px -27px;
-    	    }
-
-    	        .quad4 .BMap_omBtn.hover {
-    	            background-position: 0 -27px;
-    	        }
-
-    	        .quad4 .BMap_omBtn.BMap_omBtnClosed {
-    	            background-position: -39px -27px;
-    	        }
-
-    	            .quad4 .BMap_omBtn.BMap_omBtnClosed.hover {
-    	                background-position: -13px -27px;
-    	            }
-
-    	    .anchorTR .BMap_omOutFrame {
-    	        border-bottom: 1px solid #999;
-    	        border-left: 1px solid #999;
-    	    }
-
-    	    .quad1 .BMap_omBtn {
-    	        background-position: -39px -41px;
-    	    }
-
-    	        .quad1 .BMap_omBtn.hover {
-    	            background-position: -13px -41px;
-    	        }
-
-    	        .quad1 .BMap_omBtn.BMap_omBtnClosed {
-    	            background-position: -26px -41px;
-    	        }
-
-    	            .quad1 .BMap_omBtn.BMap_omBtnClosed.hover {
-    	                background-position: 0 -41px;
-    	            }
-
-    	    .anchorBL .BMap_omOutFrame {
-    	        border-top: 1px solid #999;
-    	        border-right: 1px solid #999;
-    	    }
-
-    	    .quad3 .BMap_omBtn {
-    	        background-position: -27px -40px;
-    	    }
-
-    	        .quad3 .BMap_omBtn.hover {
-    	            background-position: -1px -40px;
-    	        }
-
-    	        .quad3 .BMap_omBtn.BMap_omBtnClosed {
-    	            background-position: -40px -40px;
-    	        }
-
-    	            .quad3 .BMap_omBtn.BMap_omBtnClosed.hover {
-    	                background-position: -14px -40px;
-    	            }
-
-    	    .anchorTL .BMap_omOutFrame {
-    	        border-bottom: 1px solid #999;
-    	        border-right: 1px solid #999;
-    	    }
-
-    	    .quad2 .BMap_omBtn {
-    	        background-position: -40px -28px;
-    	    }
-
-    	        .quad2 .BMap_omBtn.hover {
-    	            background-position: -14px -28px;
-    	        }
-
-    	        .quad2 .BMap_omBtn.BMap_omBtnClosed {
-    	            background-position: -27px -28px;
-    	        }
-
-    	            .quad2 .BMap_omBtn.BMap_omBtnClosed.hover {
-    	                background-position: -1px -28px;
-    	            }
-
-    	    .anchorR .BMap_omOutFrame {
-    	        border-bottom: 1px solid #999;
-    	        border-left: 1px solid #999;
-    	        border-top: 1px solid #999;
-    	    }
-
-    	    .anchorL .BMap_omOutFrame {
-    	        border-bottom: 1px solid #999;
-    	        border-right: 1px solid #999;
-    	        border-top: 1px solid #999;
-    	    }
-
-    	    .anchorB .BMap_omOutFrame {
-    	        border-top: 1px solid #999;
-    	        border-left: 1px solid #999;
-    	        border-right: 1px solid #999;
-    	    }
-
-    	    .anchorT .BMap_omOutFrame {
-    	        border-bottom: 1px solid #999;
-    	        border-right: 1px solid #999;
-    	        border-left: 1px solid #999;
-    	    }
-
-    	    .anchorNon .BMap_omOutFrame,
-    	    .withOffset .BMap_omOutFrame {
-    	        border: 1px solid #999;
-    	    }
-
-    	    .BMap_zoomMask0,
-    	    .BMap_zoomMask1 {
-    	        position: absolute;
-    	        left: 0;
-    	        top: 0;
-    	        width: 100%;
-    	        height: 100%;
-    	        background: transparent url(http://api.map.baidu.com/images/blank.gif);
-    	        z-index: 1000;
-    	    }
-
-    	    .BMap_contextMenu {
-    	        position: absolute;
-    	        border-top: 1px solid #adbfe4;
-    	        border-left: 1px solid #adbfe4;
-    	        border-right: 1px solid #8ba4d8;
-    	        border-bottom: 1px solid #8ba4d8;
-    	        padding: 0;
-    	        margin: 0;
-    	        width: auto;
-    	        visibility: hidden;
-    	        background: #fff;
-    	        z-index: 10000000;
-    	    }
-
-    	    .BMap_cmShadow {
-    	        position: absolute;
-    	        background: #000;
-    	        opacity: .3;
-    	        filter: alpha(opacity=30);
-    	        visibility: hidden;
-    	        z-index: 9000000;
-    	    }
-
-    	    div.BMap_cmDivider {
-    	        border-bottom: 1px solid #adbfe4;
-    	        font-size: 0;
-    	        padding: 1px;
-    	        margin: 0 6px;
-    	    }
-
-    	    div.BMap_cmFstItem {
-    	        margin-top: 2px;
-    	    }
-
-    	    div.BMap_cmLstItem {
-    	        margin-bottom: 2px;
-    	    }
-
-    	    .BMap_shadow img {
-    	        border: 0 none;
-    	        margin: 0;
-    	        padding: 0;
-    	        position: absolute;
-    	        height: 370px;
-    	        width: 1144px;
-    	    }
-
-    	    .BMap_pop .BMap_top {
-    	        border-top: 1px solid #ababab;
-    	        background-color: #fff;
-    	    }
-
-    	    .BMap_pop .BMap_center {
-    	        border-left: 1px solid #ababab;
-    	        border-right: 1px solid #ababab;
-    	        background-color: #fff;
-    	    }
-
-    	    .BMap_pop .BMap_bottom {
-    	        border-bottom: 1px solid #ababab;
-    	        background-color: #fff;
-    	    }
-
-    	    .BMap_shadow,
-    	    .BMap_shadow img,
-    	    .BMap_shadow div {
-    	        -moz-user-select: none;
-    	        -webkit-user-select: none;
-    	    }
-
-    	    .BMap_checkbox {
-    	        background: url(http://api.map.baidu.com/images/mapctrls1d3.gif);
-    	        vertical-align: middle;
-    	        display: inline-block;
-    	        width: 11px;
-    	        height: 11px;
-    	        margin-right: 4px;
-    	        background-position: -14px 90px;
-    	    }
-
-    	        .BMap_checkbox.checked {
-    	            background-position: -2px 90px;
-    	        }
-
-    	    .BMap_pop .BMap_top img,
-    	    .BMap_pop .BMap_center img,
-    	    .BMap_pop .BMap_bottom img {
-    	        display: none;
-    	    }
-
-    	    @media print {
-    	        .BMap_noprint {
-    	            display: none;
-    	        }
-
-    	        .BMap_noscreen {
-    	            display: block;
-    	        }
-
-    	        .BMap_mask {
-    	            background: none;
-    	        }
-
-    	        .BMap_pop .BMap_top img,
-    	        .BMap_pop .BMap_center img,
-    	        .BMap_pop .BMap_bottom img {
-    	            display: block;
-    	        }
-    	    }
-
-    	    .BMap_vectex {
-    	        cursor: pointer;
-    	        width: 11px;
-    	        height: 11px;
-    	        position: absolute;
-    	        background-repeat: no-repeat;
-    	        background-position: 0 0;
-    	    }
-
-    	    .BMap_vectex_nodeT {
-    	        background-image: url(http://api.map.baidu.com/images/nodeT.gif);
-    	    }
-
-    	    .BMap_vectex_node {
-    	        background-image: url(http://api.map.baidu.com/images/node.gif);
-    	    }
+.BMap_mask {
+background: transparent url(about:blank);
+}
+
+.BMap_noscreen {
+display: none;
+}
+
+.BMap_button {
+cursor: pointer;
+}
+
+.BMap_zoomer {
+background-image: url(http://api.map.baidu.com/images/mapctrls1d3.gif);
+background-repeat: no-repeat;
+overflow: hidden;
+font-size: 1px;
+position: absolute;
+width: 7px;
+height: 7px;
+}
+
+.BMap_stdMpCtrl div {
+position: absolute;
+}
+
+.BMap_stdMpPan {
+width: 44px;
+height: 44px;
+overflow: hidden;
+background: url(http://api.map.baidu.com/images/mapctrls2d0.png) no-repeat;
+}
+
+.BMap_ie6 .BMap_stdMpPan {
+background: none;
+}
+
+.BMap_ie6 .BMap_smcbg {
+left: 0;
+width: 44px;
+height: 464px;
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://api.map.baidu.com/images/mapctrls2d0.png');
+}
+
+.BMap_ie6 .BMap_stdMpPanBg {
+z-index: -1;
+}
+
+.BMap_stdMpPan .BMap_button {
+height: 15px;
+width: 15px;
+}
+
+.BMap_panN,
+.BMap_panW,
+.BMap_panE,
+.BMap_panS {
+overflow: hidden;
+}
+
+.BMap_panN {
+left: 14px;
+top: 0;
+}
+
+.BMap_panW {
+left: 1px;
+top: 12px;
+}
+
+.BMap_panE {
+left: 27px;
+top: 12px;
+}
+
+.BMap_panS {
+left: 14px;
+top: 25px;
+}
+
+.BMap_stdMpZoom {
+top: 45px;
+overflow: hidden;
+}
+
+.BMap_stdMpZoom .BMap_button {
+width: 22px;
+height: 21px;
+left: 12px;
+overflow: hidden;
+background-image: url(http://api.map.baidu.com/images/mapctrls2d0.png);
+background-repeat: no-repeat;
+z-index: 10;
+}
+
+.BMap_ie6 .BMap_stdMpZoom .BMap_button {
+background: none;
+}
+
+.BMap_stdMpZoomIn {
+background-position: 0 -221px;
+}
+
+.BMap_stdMpZoomOut {
+background-position: 0 -265px;
+}
+
+.BMap_ie6 .BMap_stdMpZoomIn div {
+left: 0;
+top: -221px;
+}
+
+.BMap_ie6 .BMap_stdMpZoomOut div {
+left: 0;
+top: -265px;
+}
+
+.BMap_stdMpType4 .BMap_stdMpZoom .BMap_button {
+left: 0;
+overflow: hidden;
+background: -webkit-gradient(linear, 50% 0, 50% 100%, from(rgba(255, 255, 255, 0.85)), to(rgba(217, 217, 217, 0.85)));
+z-index: 10;
+-webkit-border-radius: 22px;
+width: 34px;
+height: 34px;
+border: 1px solid rgba(255, 255, 255, 0.5);
+-webkit-box-shadow: 0 2px 3.6px #CCC;
+display: -webkit-box;
+-webkit-box-align: center;
+-webkit-box-pack: center;
+-webkit-box-sizing: border-box;
+}
+
+.BMap_stdMpType4 .BMap_smcbg {
+position: static;
+background: url(http://api.map.baidu.com/images/mapctrls2d0_mb.png) 0 0 no-repeat;
+-webkit-background-size: 24px 32px;
+}
+
+.BMap_stdMpType4 .BMap_stdMpZoomIn {
+background-position: 0 0;
+}
+
+.BMap_stdMpType4 .BMap_stdMpZoomIn .BMap_smcbg {
+width: 24px;
+height: 24px;
+background-position: 0 0;
+}
+
+.BMap_stdMpType4 .BMap_stdMpZoomOut {
+background-position: 0 0;
+}
+
+.BMap_stdMpType4 .BMap_stdMpZoomOut .BMap_smcbg {
+width: 24px;
+height: 6px;
+background-position: 0 -25px;
+}
+
+.BMap_stdMpSlider {
+width: 37px;
+top: 18px;
+}
+
+.BMap_stdMpSliderBgTop {
+left: 18px;
+width: 10px;
+overflow: hidden;
+background: url(http://api.map.baidu.com/images/mapctrls2d0.png) no-repeat -23px -226px;
+}
+
+.BMap_stdMpSliderBgBot {
+left: 19px;
+height: 8px;
+width: 10px;
+top: 124px;
+overflow: hidden;
+background: url(http://api.map.baidu.com/images/mapctrls2d0.png) no-repeat -33px bottom;
+}
+
+.BMap_ie6 .BMap_stdMpSliderBgTop,
+.BMap_ie6 .BMap_stdMpSliderBgBot {
+background: none;
+}
+
+.BMap_ie6 .BMap_stdMpSliderBgTop div {
+left: -23px;
+top: -226px;
+}
+
+.BMap_ie6 .BMap_stdMpSliderBgBot div {
+left: -33px;
+bottom: 0;
+}
+
+.BMap_stdMpSliderMask {
+height: 100%;
+width: 24px;
+left: 10px;
+cursor: pointer;
+}
+
+.BMap_stdMpSliderBar {
+height: 11px;
+width: 19px;
+left: 13px;
+top: 80px;
+overflow: hidden;
+background: url(http://api.map.baidu.com/images/mapctrls2d0.png) no-repeat 0 -309px;
+}
+
+.BMap_stdMpSliderBar.h {
+background: url(http://api.map.baidu.com/images/mapctrls2d0.png) no-repeat 0 -320px;
+}
+
+.BMap_ie6 .BMap_stdMpSliderBar,
+.BMap_ie6 .BMap_stdMpSliderBar.h {
+background: none;
+}
+
+.BMap_ie6 .BMap_stdMpSliderBar div {
+top: -309px;
+}
+
+.BMap_ie6 .BMap_stdMpSliderBar.h div {
+top: -320px;
+}
+
+.BMap_zlSt,
+.BMap_zlCity,
+.BMap_zlProv,
+.BMap_zlCountry {
+position: absolute;
+left: 34px;
+height: 21px;
+width: 28px;
+background-image: url(http://api.map.baidu.com/images/mapctrls2d0.png);
+background-repeat: no-repeat;
+font-size: 0;
+cursor: pointer;
+}
+
+.BMap_ie6 .BMap_zlSt,
+.BMap_ie6 .BMap_zlCity,
+.BMap_ie6 .BMap_zlProv,
+.BMap_ie6 .BMap_zlCountry {
+background: none;
+overflow: hidden;
+}
+
+.BMap_zlHolder {
+display: none;
+position: absolute;
+top: 0;
+}
+
+.BMap_zlHolder.hvr {
+display: block;
+}
+
+.BMap_zlSt {
+background-position: 0 -380px;
+top: 21px;
+}
+
+.BMap_zlCity {
+background-position: 0 -401px;
+top: 57px;
+}
+
+.BMap_zlProv {
+background-position: 0 -422px;
+top: 81px;
+}
+
+.BMap_zlCountry {
+background-position: 0 -443px;
+top: 105px;
+}
+
+.BMap_ie6 .BMap_zlSt div {
+top: -380px;
+}
+
+.BMap_ie6 .BMap_zlCity div {
+top: -401px;
+}
+
+.BMap_ie6 .BMap_zlProv div {
+top: -422px;
+}
+
+.BMap_ie6 .BMap_zlCountry div {
+top: -443px;
+}
+
+.BMap_stdMpType1 .BMap_stdMpSlider,
+.BMap_stdMpType2 .BMap_stdMpSlider,
+.BMap_stdMpType3 .BMap_stdMpSlider,
+.BMap_stdMpType4 .BMap_stdMpSlider,
+.BMap_stdMpType2 .BMap_stdMpZoom,
+.BMap_stdMpType3 .BMap_stdMpPan,
+.BMap_stdMpType4 .BMap_stdMpPan {
+display: none;
+}
+
+.BMap_stdMpType3 .BMap_stdMpZoom {
+top: 0;
+}
+
+.BMap_stdMpType4 .BMap_stdMpZoom {
+top: 0;
+}
+
+.BMap_cpyCtrl a {
+font-size: 11px;
+color: #7979CC;
+}
+
+.BMap_scaleCtrl {
+height: 23px;
+overflow: hidden;
+}
+
+.BMap_scaleCtrl div.BMap_scaleTxt {
+font-size: 11px;
+font-family: Arial, sans-serif;
+}
+
+.BMap_scaleCtrl div {
+position: absolute;
+overflow: hidden;
+}
+
+.BMap_scaleHBar img,
+.BMap_scaleLBar img,
+.BMap_scaleRBar img {
+position: absolute;
+width: 37px;
+height: 442px;
+left: 0;
+}
+
+.BMap_scaleHBar {
+width: 100%;
+height: 5px;
+font-size: 0;
+bottom: 0;
+}
+
+.BMap_scaleHBar img {
+top: -437px;
+width: 100%;
+}
+
+.BMap_scaleLBar,
+.BMap_scaleRBar {
+width: 3px;
+height: 9px;
+bottom: 0;
+font-size: 0;
+z-index: 1;
+}
+
+.BMap_scaleLBar img {
+top: -427px;
+left: 0;
+}
+
+.BMap_scaleRBar img {
+top: -427px;
+left: -5px;
+}
+
+.BMap_scaleLBar {
+left: 0;
+}
+
+.BMap_scaleRBar {
+right: 0;
+}
+
+.BMap_scaleTxt {
+text-align: center;
+width: 100%;
+cursor: default;
+line-height: 18px;
+}
+
+.BMap_omCtrl {
+background-color: #fff;
+overflow: hidden;
+}
+
+.BMap_omOutFrame {
+position: absolute;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+
+.BMap_omInnFrame {
+position: absolute;
+border: 1px solid #999;
+background-color: #ccc;
+overflow: hidden;
+}
+
+.BMap_omMapContainer {
+position: absolute;
+overflow: hidden;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+}
+
+.BMap_omViewMv {
+border-width: 1px;
+border-style: solid;
+border-left-color: #84b0df;
+border-top-color: #adcff4;
+border-right-color: #274b8b;
+border-bottom-color: #274b8b;
+position: absolute;
+z-index: 600;
+}
+
+.BMap_omViewInnFrame {
+border: 1px solid #3e6bb8;
+}
+
+.BMap_omViewMask {
+width: 1000px;
+height: 1000px;
+position: absolute;
+left: 0;
+top: 0;
+background-color: #68c;
+opacity: .2;
+filter: progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+}
+
+.BMap_omBtn {
+height: 13px;
+width: 13px;
+position: absolute;
+cursor: pointer;
+overflow: hidden;
+background: url(http://api.map.baidu.com/images/mapctrls1d3.gif) no-repeat;
+z-index: 1210;
+}
+
+.anchorBR .BMap_omOutFrame {
+border-top: 1px solid #999;
+border-left: 1px solid #999;
+}
+
+.quad4 .BMap_omBtn {
+background-position: -26px -27px;
+}
+
+.quad4 .BMap_omBtn.hover {
+background-position: 0 -27px;
+}
+
+.quad4 .BMap_omBtn.BMap_omBtnClosed {
+background-position: -39px -27px;
+}
+
+.quad4 .BMap_omBtn.BMap_omBtnClosed.hover {
+background-position: -13px -27px;
+}
+
+.anchorTR .BMap_omOutFrame {
+border-bottom: 1px solid #999;
+border-left: 1px solid #999;
+}
+
+.quad1 .BMap_omBtn {
+background-position: -39px -41px;
+}
+
+.quad1 .BMap_omBtn.hover {
+background-position: -13px -41px;
+}
+
+.quad1 .BMap_omBtn.BMap_omBtnClosed {
+background-position: -26px -41px;
+}
+
+.quad1 .BMap_omBtn.BMap_omBtnClosed.hover {
+background-position: 0 -41px;
+}
+
+.anchorBL .BMap_omOutFrame {
+border-top: 1px solid #999;
+border-right: 1px solid #999;
+}
+
+.quad3 .BMap_omBtn {
+background-position: -27px -40px;
+}
+
+.quad3 .BMap_omBtn.hover {
+background-position: -1px -40px;
+}
+
+.quad3 .BMap_omBtn.BMap_omBtnClosed {
+background-position: -40px -40px;
+}
+
+.quad3 .BMap_omBtn.BMap_omBtnClosed.hover {
+background-position: -14px -40px;
+}
+
+.anchorTL .BMap_omOutFrame {
+border-bottom: 1px solid #999;
+border-right: 1px solid #999;
+}
+
+.quad2 .BMap_omBtn {
+background-position: -40px -28px;
+}
+
+.quad2 .BMap_omBtn.hover {
+background-position: -14px -28px;
+}
+
+.quad2 .BMap_omBtn.BMap_omBtnClosed {
+background-position: -27px -28px;
+}
+
+.quad2 .BMap_omBtn.BMap_omBtnClosed.hover {
+background-position: -1px -28px;
+}
+
+.anchorR .BMap_omOutFrame {
+border-bottom: 1px solid #999;
+border-left: 1px solid #999;
+border-top: 1px solid #999;
+}
+
+.anchorL .BMap_omOutFrame {
+border-bottom: 1px solid #999;
+border-right: 1px solid #999;
+border-top: 1px solid #999;
+}
+
+.anchorB .BMap_omOutFrame {
+border-top: 1px solid #999;
+border-left: 1px solid #999;
+border-right: 1px solid #999;
+}
+
+.anchorT .BMap_omOutFrame {
+border-bottom: 1px solid #999;
+border-right: 1px solid #999;
+border-left: 1px solid #999;
+}
+
+.anchorNon .BMap_omOutFrame,
+.withOffset .BMap_omOutFrame {
+border: 1px solid #999;
+}
+
+.BMap_zoomMask0,
+.BMap_zoomMask1 {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: transparent url(http://api.map.baidu.com/images/blank.gif);
+z-index: 1000;
+}
+
+.BMap_contextMenu {
+position: absolute;
+border-top: 1px solid #adbfe4;
+border-left: 1px solid #adbfe4;
+border-right: 1px solid #8ba4d8;
+border-bottom: 1px solid #8ba4d8;
+padding: 0;
+margin: 0;
+width: auto;
+visibility: hidden;
+background: #fff;
+z-index: 10000000;
+}
+
+.BMap_cmShadow {
+position: absolute;
+background: #000;
+opacity: .3;
+filter: alpha(opacity=30);
+visibility: hidden;
+z-index: 9000000;
+}
+
+div.BMap_cmDivider {
+border-bottom: 1px solid #adbfe4;
+font-size: 0;
+padding: 1px;
+margin: 0 6px;
+}
+
+div.BMap_cmFstItem {
+margin-top: 2px;
+}
+
+div.BMap_cmLstItem {
+margin-bottom: 2px;
+}
+
+.BMap_shadow img {
+border: 0 none;
+margin: 0;
+padding: 0;
+position: absolute;
+height: 370px;
+width: 1144px;
+}
+
+.BMap_pop .BMap_top {
+border-top: 1px solid #ababab;
+background-color: #fff;
+}
+
+.BMap_pop .BMap_center {
+border-left: 1px solid #ababab;
+border-right: 1px solid #ababab;
+background-color: #fff;
+}
+
+.BMap_pop .BMap_bottom {
+border-bottom: 1px solid #ababab;
+background-color: #fff;
+}
+
+.BMap_shadow,
+.BMap_shadow img,
+.BMap_shadow div {
+-moz-user-select: none;
+-webkit-user-select: none;
+}
+
+.BMap_checkbox {
+background: url(http://api.map.baidu.com/images/mapctrls1d3.gif);
+vertical-align: middle;
+display: inline-block;
+width: 11px;
+height: 11px;
+margin-right: 4px;
+background-position: -14px 90px;
+}
+
+.BMap_checkbox.checked {
+background-position: -2px 90px;
+}
+
+.BMap_pop .BMap_top img,
+.BMap_pop .BMap_center img,
+.BMap_pop .BMap_bottom img {
+display: none;
+}
+
+@media print {
+.BMap_noprint {
+display: none;
+}
+
+.BMap_noscreen {
+display: block;
+}
+
+.BMap_mask {
+background: none;
+}
+
+.BMap_pop .BMap_top img,
+.BMap_pop .BMap_center img,
+.BMap_pop .BMap_bottom img {
+display: block;
+}
+}
+
+.BMap_vectex {
+cursor: pointer;
+width: 11px;
+height: 11px;
+position: absolute;
+background-repeat: no-repeat;
+background-position: 0 0;
+}
+
+.BMap_vectex_nodeT {
+background-image: url(http://api.map.baidu.com/images/nodeT.gif);
+}
+
+.BMap_vectex_node {
+background-image: url(http://api.map.baidu.com/images/node.gif);
+}
     	</style>
     <link href="../Content/Show/FarmDetails/baidu_map.css" rel="stylesheet" />
             <link href="../Content/Show/FarmDetails/list.css" rel="stylesheet" />
@@ -722,10 +722,10 @@
 			<div class="site_nav clearfix">
 				<div class="f_l">
 					您所在的位置：
-					<a href="http://sh.01nz.com.cn/">首页</a>
-					- <a href="http://sh.01nz.com.cn/farm">农庄</a>
-					- <a href="http://sh.01nz.com.cn/farmlist"><%=product.Area.AreaName %></a>
-					- <a href="http://sh.01nz.com.cn/farm/40.html"><%= product.ProductName %></a>
+					<a href="#">首页</a>
+					- <a href="#">农庄</a>
+					- <a href="#"><%=product.Area.AreaName %></a>
+					- <a href="#"><%= product.ProductName %></a>
 				</div>
 				<div class="f_r r_range">
 					&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" class="fav-store FW-FAV-STORE" dataid="40">关注</a>
@@ -735,8 +735,8 @@
                 var APP_ROOT = '';
                 var CART_URL = '/cart';
                 var CART_CHECK_URL = '/cart-check';
-                var LOADER_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/lazy_loading.gif';
-                var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
+                var LOADER_IMG = '#';
+                var ERROR_IMG = '#';
 			</script>
 
             
@@ -750,13 +750,13 @@
 							<li class="liSelected">
 								<span class="sPic">
 									<i class="iBigPic"><a
-											href="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>""
+											href="../Images/Tailorism/<%=product.Image.ToList()[0].ImageName %>""
 											target="_blank" title=""><img alt="" height="420"
-											src="../Images/Show/FarmDetails/<%=product.Image.ToList().FirstOrDefault().ImageName %>"></a></i>
+											src="../Images/Tailorism/<%=product.Image.ToList().FirstOrDefault().ImageName %>"></a></i>
 								</span>
 								<span class="sSideBox">
 									<span class="sTitle"><a
-											href="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>""
+											href="../Images/Tailorism/<%=product.Image.ToList()[0].ImageName %>""
 											target="_blank" title=""></a></span>
 								</span>
 							</li>
@@ -815,20 +815,20 @@
 							<li class="">
 								<span class="sPic">
 									<i class="iBigPic"><a
-											href="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f197edc141.jpg"
+											href="#"
 											target="_blank" title=""><img alt="" height="420"
 												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f197edc141_860x420.jpg"></a></i>
 								</span>
 								<span class="sSideBox">
 									<span class="sTitle"><a
-											href="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f197edc141.jpg"
+											href="#"
 											target="_blank" title=""></a></span>
 								</span>
 							</li>
 							<li class="">
 								<span class="sPic">
 									<i class="iBigPic"><a
-											href="http://sh.01nz.com.cn/public/attachment/201310/29/10/526f197875732.jpg"
+											href="#"
 											target="_blank" title=""><img alt="" height="420"
 												src="./香豪小镇农家乐_地址_电话_怎么样_上海附近_周边企业农庄采摘推荐-第一农庄网_files/526f197875732_860x420.jpg"></a></i>
 								</span>
@@ -910,36 +910,36 @@
                             class="ditu_biao"></span>查看地图</a>
                     <div class="f_r sd_rl"></div>
                 </div>
-				<div class="sd_hp f_l"><a href="http://sh.01nz.com.cn/farm/40.html#ul-store-tj">已推荐<label
-							class="blue">258</label>人</a><a href="http://sh.01nz.com.cn/farm/40.html#ul-store-dp"
+				<div class="sd_hp f_l"><a href="#">已推荐<label
+							class="blue">258</label>人</a><a href="#"
 						class="blue">2个点评</a>&nbsp;&nbsp; <a>好评度<span class="spa_pa">100%</span></a> </div>
 				<div class="sd_img">
 					<div class="sd_imgl zxx_test_list">
 						<div class="mt_77">
 							<a class="sd_imgone preview" title=""
-								href="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>">
-								<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[0].ImageName %>"
+								href="../Images/Tailorism/<%=product.Image.ToList()[0].ImageName %>">
+								<img alt="" src="../Images/Tailorism/<%=product.Image.ToList()[0].ImageName %>"
 									class="f_l" width="100%" height="100%">
 							</a>
 							<a class="sd_gd " id="idBoxOpen">查看更多图片（7）</a>
 						</div>
 						<a class="sd_imgl_img preview" title=""
-							href="../Images/Show/FarmDetails/<%=product.Image.ToList()[1].ImageName%>">
+							href="../Images/Tailorism/<%=product.Image.ToList()[1].ImageName%>">
 							<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[1].ImageName %>"
 								width="100%" height="100%">
 						</a>
 						<a class="sd_imgl_img preview" title=""
-							href="../Images/Show/FarmDetails/<%=product.Image.ToList()[2].ImageName%>">
+							href="../Images/Tailorism/<%=product.Image.ToList()[2].ImageName%>">
 							<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[2].ImageName%>"
 								width="100%" height="100%">
 						</a>
 						<a class="sd_imgl_img preview" title=""
-							href="../Images/Show/FarmDetails/<%=product.Image.ToList()[3].ImageName%>">
+							href="../Images/Tailorism/<%=product.Image.ToList()[3].ImageName%>">
 							<img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[3].ImageName%>"
 								width="100%" height="100%">
 						</a>
                         <a class="sd_imgl_img preview" title=""
-                            href="../Images/Show/FarmDetails/<%=product.Image.ToList()[4].ImageName%>">
+                            href="../Images/Tailorism/<%=product.Image.ToList()[4].ImageName%>">
                             <img alt="" src="../Images/Show/FarmDetails/<%=product.Image.ToList()[4].ImageName%>"
                                 width="100%" height="100%">
                         </a>
@@ -1039,10 +1039,10 @@
 					<div class="sd_cxx f_l">出行人数：<input type="text" name="number">人</div>
 					<div class="sd_cxx f_l">联系人：<input type="text" name="contacts"></div>
 					<div class="sd_cxx f_l">联系方式：<input type="text" name="contact"></div>
-					<a href="http://sh.01nz.com.cn/farm/40.html#">
+					<a href="#">
 						<div class="sd_tj f_l">加入推荐</div>
 					</a>
-					<a href="http://sh.01nz.com.cn/farm/40.html#">
+					<a href="#">
 						<div class="sd_tj f_l">立即预定</div>
 					</a>
 				</div>
@@ -1053,10 +1053,10 @@
 							<ul>
 								<li class="sd_xql_bb">预定须知</li>
 								<li class="sd_xql_cc"><a
-										href="http://sh.01nz.com.cn/farm/40.html#ul-store-info">预定项目</a></li>
+										href="#">预定项目</a></li>
 								<li class="sd_xql_cc"><a
-										href="http://sh.01nz.com.cn/farm/40.html#ul-store-review">商户详情</a></li>
-								<li class="sd_xql_cc"><a href="http://sh.01nz.com.cn/farm/40.html#ul-store-dp">客户点评</a>
+										href="#">商户详情</a></li>
+								<li class="sd_xql_cc"><a href="#">客户点评</a>
 								</li>
 							</ul>
 						</div>
@@ -1108,7 +1108,7 @@
 										<li class="th_c">含</li>
 										<li class="th_d">¥288&nbsp;/&nbsp;间 </li>
 										<li class="th_e">¥<span class="vip_price">200</span>&nbsp;/&nbsp;间</li>
-										<li class="th_f"><a href="http://sh.01nz.com.cn/store/order/id-40-lid-660"
+										<li class="th_f"><a href="#"
 												target="_blank">
 												<div class="sd_messin">预订</div>
 											</a></li>
@@ -1134,8 +1134,8 @@
 											style="font-size:12px;">号，（海湾旅游区和奉贤大学城金海公路东侧，奉柘公里北侧），占地面积</span></font>
 									<font face="Times New Roman"><span style="font-size:12px;">120</span></font>
 									<font face="宋体"><span style="font-size:12px;">亩。香豪小镇农家乐集餐饮、住宿、垂钓、<a
-												href="http://sh.01nz.com.cn/" target="_blank">果蔬采摘</a>、会务、<a
-												href="http://sh.01nz.com.cn/" target="_blank">棋牌</a>、</span></font>
+												href="#" target="_blank">果蔬采摘</a>、会务、<a
+												href="#" target="_blank">棋牌</a>、</span></font>
 									<font face="Times New Roman"><span style="font-size:12px;">KTV</span></font>
 									<font face="宋体"><span
 											style="font-size:12px;">、白领拓展、农产品超市于一体的农家乐式休闲度假农庄，香豪小镇是上海市市级三星级农家乐，也是最有特色、设施设备齐全、最受市民喜爱的农家乐。</span>
@@ -1284,7 +1284,7 @@
 									<div class="review_item" style="margin-left:15px;margin-right:15px;">
 										<div class="hd">
 											<img alt="亲子游玩" src="../Images/Show/FarmDetails/55b09aae67069.png"	width="100%" height="100px"/>
-											<div class="sd_cname f_l"><a href="http://sh.01nz.com.cn/space/id-341"
+											<div class="sd_cname f_l"><a href="#"
 													class="user_name" onmouseover="userCard.load(this,341);">liule…</a>
 											</div>
 											<div class="sd_cname f_l">2015-09-02</div>
@@ -1299,11 +1299,11 @@
 											</div>
 
 											<div class="review_title">
-												<a href="http://sh.01nz.com.cn/store/review-detail/id-124"
+												<a href="#"
 													title="钓鱼还不错">钓鱼还不错</a>
 											</div>
 											哈哈哈 一天钓了好多鱼，开心啦啦啦啦啦啊 <a class="viewall"
-												href="http://sh.01nz.com.cn/store/review-detail/id-124"
+												href="#"
 												title="查看全文">[查看全文 ]</a>
 											<div class="blank"></div>
 											<div class="store_tag_info">
@@ -1325,9 +1325,9 @@
 														href="javascript:void(0);">没用</a><b>(0)</b></p>
 
 												<div class="funcbox">
-													<a href="http://sh.01nz.com.cn/store/review-detail/id-124">详情</a> |
+													<a href="#">详情</a> |
 													<a
-														href="http://sh.01nz.com.cn/store/review-detail/id-124#reply">回应</a>
+														href="#">回应</a>
 													<!--<a href="javascript:void(0);" onclick="$.User_Report('dp',124);">举报</a>-->
 												</div>
 											</div>
@@ -1341,7 +1341,7 @@
 										<div class="hd">
 											
 											<img alt="朋友圈活动" src="../Images/Show/FarmDetails/55b09a924aac5.png"" width="100%" height="100px"/>
-											<div class="sd_cname f_l"><a href="http://sh.01nz.com.cn/space/id-766"
+											<div class="sd_cname f_l"><a href="#"
 													class="user_name" onmouseover="userCard.load(this,);"></a> </div>
 											<div class="sd_cname f_l">2015-07-23</div>
 										</div>
@@ -1355,13 +1355,13 @@
 											</div>
 
 											<div class="review_title">
-												<a href="http://sh.01nz.com.cn/store/review-detail/id-112"
+												<a href="#"
 													title="和朋友去的">和朋友去的</a>
 											</div>
 
 
 											农庄不错，和朋友一起去过的，环境 卫生都很好。很开心 <a class="viewall"
-												href="http://sh.01nz.com.cn/store/review-detail/id-112"
+												href="#SS"
 												title="查看全文">[查看全文 ]</a>
 											<div class="blank"></div>
 											<div class="store_tag_info">
@@ -1383,9 +1383,9 @@
 														href="javascript:void(0);">没用</a><b>(0)</b></p>
 
 												<div class="funcbox">
-													<a href="http://sh.01nz.com.cn/store/review-detail/id-112">详情</a> |
+													<a href="#">详情</a> |
 													<a
-														href="http://sh.01nz.com.cn/store/review-detail/id-112#reply">回应</a>
+														href="#">回应</a>
 													<!--<a href="javascript:void(0);" onclick="$.User_Report('dp',112);">举报</a>-->
 												</div>
 											</div>
@@ -3616,7 +3616,6 @@
 									<div class="sd_yh f-14"> 2015-07-23 该信息来自PC端 </div>
 								</li>
 							</ul>
-							<!-- <div class="sd_yhgd f_l"><a href="#" class="f_r f-16">更多>></a></div> -->
 						</div>
 					</div>
 					<div class="sd_lx">
@@ -3624,7 +3623,6 @@
 							<div class="f_l f-24">线路推荐</div>
 							<div class="f_r"></div>
 						</div>
-						<!-- <img alt="" src="http://sh.01nz.com.cn/app/Tpl/fanwe/images/main/01.jpg" width="345px" height="235px"> -->
 						<div class="sd_lx_text"></div>
 					</div>
 				</div>
