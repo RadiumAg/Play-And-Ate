@@ -89,43 +89,21 @@
   <ItemGroup>
     <Content Include="Admin\Backstage.aspx" />
     <Content Include="Admin\PartialView\ShowBussinessData.html" />
+    <Content Include="bin\aliyun-net-sdk-core.dll" />
+    <Content Include="bin\aliyun-net-sdk-dysmsapi.dll" />
+    <Content Include="bin\AspNetPager.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\FTZ.PlayAndAte.Models.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll" />
+    <Content Include="bin\Microsoft.Practices.ServiceLocation.xml" />
+    <Content Include="bin\Microsoft.QualityTools.Testing.Fakes.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
     <Content Include="Cart\Cart.aspx" />
     <Content Include="Cart\Cart.html" />
-    <Content Include="Content\Admin\global_pop.css" />
-    <Content Include="Content\Admin\header-air.css" />
-    <Content Include="Content\Admin\index%281%29.php" />
-    <Content Include="Content\Admin\index%2810%29.php" />
-    <Content Include="Content\Admin\index%2811%29.php" />
-    <Content Include="Content\Admin\index%2812%29.php" />
-    <Content Include="Content\Admin\index%2813%29.php" />
-    <Content Include="Content\Admin\index%2814%29.php" />
-    <Content Include="Content\Admin\index%282%29.php" />
-    <Content Include="Content\Admin\index%283%29.php" />
-    <Content Include="Content\Admin\index%284%29.php" />
-    <Content Include="Content\Admin\index%285%29.php" />
-    <Content Include="Content\Admin\index%286%29.php" />
-    <Content Include="Content\Admin\index%287%29.php" />
-    <Content Include="Content\Admin\index%288%29.php" />
-    <Content Include="Content\Admin\index%289%29.php" />
     <Content Include="Content\Admin\Index.css" />
-    <Content Include="Content\Admin\index.php" />
-    <Content Include="Content\Admin\integral.css" />
-    <Content Include="Content\Admin\invoice.css" />
-    <Content Include="Content\Admin\jquery.common.css" />
-    <Content Include="Content\Admin\lv-bought.css" />
-    <Content Include="Content\Admin\lv-user-mytrip.css" />
-    <Content Include="Content\Admin\newcommon.css" />
-    <Content Include="Content\Admin\newmember.css" />
-    <Content Include="Content\Admin\popup.css" />
-    <Content Include="Content\Admin\ui-components%281%29.css" />
-    <Content Include="Content\Admin\ui-components.css" />
-    <Content Include="Content\Admin\ui-lvmama.css" />
-    <Content Include="Content\Cart\base.v606141511.css" />
-    <Content Include="Content\Cart\cf62177493ce4db40c22962f60d846f8.css" />
-    <Content Include="Content\Cart\core%281%29.php" />
-    <Content Include="Content\Cart\core.php" />
-    <Content Include="Content\Cart\tongji_360.php" />
-    <Content Include="Content\Cart\z_stat.php" />
     <Content Include="Content\Line\index.css" />
     <Content Include="Content\Line\LineDetial\a_rili.css" />
     <Content Include="Content\Line\LineDetial\index.css" />
@@ -146,19 +124,30 @@
     <Content Include="Content\Personage\global_pop.css" />
     <Content Include="Content\Personage\header-air.css" />
     <Content Include="Content\Personage\index%281%29.php" />
+    <Content Include="Content\Personage\index%2810%29.php" />
+    <Content Include="Content\Personage\index%2811%29.php" />
+    <Content Include="Content\Personage\index%2812%29.php" />
+    <Content Include="Content\Personage\index%2813%29.php" />
+    <Content Include="Content\Personage\index%2814%29.php" />
     <Content Include="Content\Personage\index%282%29.php" />
     <Content Include="Content\Personage\index%283%29.php" />
     <Content Include="Content\Personage\index%284%29.php" />
     <Content Include="Content\Personage\index%285%29.php" />
+    <Content Include="Content\Personage\index%286%29.php" />
+    <Content Include="Content\Personage\index%287%29.php" />
+    <Content Include="Content\Personage\index%288%29.php" />
+    <Content Include="Content\Personage\index%289%29.php" />
     <Content Include="Content\Personage\index.php" />
     <Content Include="Content\Personage\integral.css" />
+    <Content Include="Content\Personage\invoice.css" />
     <Content Include="Content\Personage\jquery.common.css" />
     <Content Include="Content\Personage\lv-bought.css" />
+    <Content Include="Content\Personage\lv-user-mytrip.css" />
     <Content Include="Content\Personage\newcommon.css" />
     <Content Include="Content\Personage\newmember.css" />
+    <Content Include="Content\Personage\popup.css" />
     <Content Include="Content\Personage\ui-components%281%29.css" />
     <Content Include="Content\Personage\ui-components.css" />
-    <Content Include="Content\Personage\ui-lvmama.css" />
     <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
     <Content Include="Content\Products\b61e5d222cddc2d58eececba5f1f9e27.css" />
     <Content Include="Content\Products\base.v606141511.css" />
@@ -780,11 +769,11 @@
     <Content Include="Order\Order_4.html" />
     <Content Include="Personage\Order.aspx" />
     <Content Include="Personage\Personage.aspx" />
+    <Content Include="Personage\ShowOrder.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
     <Content Include="Content\Search\new_default.css.bak" />
     <Content Include="Content\Personage\newmember.css&amp;v=051610" />
     <Content Include="Content\Personage\ztRecommendInfoJson.do" />
-    <Content Include="Content\Admin\ztRecommendInfoJson.do" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
     <Content Include="Plugin\jquery-3.3.1.js" />
     <Content Include="Plugin\jquery-3.3.1.min.js" />
@@ -1265,6 +1254,10 @@
     <Compile Include="Admin\Backstage.aspx.designer.cs">
       <DependentUpon>Backstage.aspx</DependentUpon>
     </Compile>
+    <Content Include="App_Code\XddpayConfig.cs" />
+    <Content Include="App_Code\XddpayFunction.cs" />
+    <Content Include="App_Code\XddpayResponse.cs" />
+    <Content Include="App_Code\XddpayService.cs" />
     <Compile Include="Cart\Cart.aspx.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1360,6 +1353,13 @@
     </Compile>
     <Compile Include="Personage\Personage.aspx.designer.cs">
       <DependentUpon>Personage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personage\ShowOrder.aspx.cs">
+      <DependentUpon>ShowOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personage\ShowOrder.aspx.designer.cs">
+      <DependentUpon>ShowOrder.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products\Ecological.aspx.cs">
       <DependentUpon>Ecological.aspx</DependentUpon>
@@ -1497,10 +1497,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\en\" />
+    <Folder Include="bin\zh-CHT\" />
+    <Folder Include="bin\zh-Hans\" />
+    <Folder Include="Content\Cart\" />
     <Folder Include="Content\Home\" />
     <Folder Include="Content\NewFolder1\" />
-    <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Commond\" />
+    <Folder Include="Scripts\Propaganda\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FTZ.PlayAndAte.BLL\FTZ.PlayAndAte.BLL.csproj">

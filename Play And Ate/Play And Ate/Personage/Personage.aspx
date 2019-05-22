@@ -46,7 +46,7 @@
                         <div class="logo_donkey4"></div>
                         <div class="logo_donkey5"></div>
                     </div>
-                    <div class="logo_b"></div>
+                    <%--<div class="logo_b"></div>--%>
                 </div>
             </a>
         </div>
@@ -73,7 +73,7 @@
     <div class="newmember_leftside">
         <dl>
 		<dt><i class="per_icon"></i>个人资料<i class="downarr"></i></dt>
-		<dd><a href="#" id="lvnav_perinfo">个人信息</a></dd>
+		<dd><a href="~/Personage/Personage.aspx" id="lvnav_perinfo">个人信息</a></dd>
 	</dl>
 	<dl>
 		<dt><i class="safe_icon"></i>账户安全<i class="downarr"></i></dt>
@@ -85,7 +85,7 @@
 	</dl>
 	<dl>
 		<dt><i class="info_icon"></i>个人订单<i class="downarr"></i></dt>
-		<dd><a href="#" id="lvnav_tourinfo">个人订单</a></dd>
+		<dd><a href="~/Personage/Order.aspx" id="lvnav_tourinfo">个人订单</a></dd>
 	</dl>
 	
 </div><!-- 会员中心左边菜单部分 -->

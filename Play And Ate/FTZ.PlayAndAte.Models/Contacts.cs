@@ -12,27 +12,21 @@ namespace FTZ.PlayAndAte.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Order
+    public partial class Contacts
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Order()
+        public Contacts()
         {
-            this.OrderItem = new HashSet<OrderItem>();
+            this.Order = new HashSet<Order>();
         }
     
-        public int OrderId { get; set; }
-        public string OrderName { get; set; }
-        public int CustomerNum { get; set; }
-        public decimal OrderPrice { get; set; }
-        public int ProductId { get; set; }
-        public int UserId { get; set; }
-        public bool Success { get; set; }
-        public Nullable<int> ContactsId { get; set; }
+        public int ContactsId { get; set; }
+        public string ContactsName { get; set; }
+        public string ContactsEmail { get; set; }
+        public string FixedTelephone { get; set; }
+        public string ContactsMobilePhone { get; set; }
     
-        public virtual Contacts Contacts { get; set; }
-        public virtual Product Product { get; set; }
-        public virtual UserInfo_Role UserInfo_Role { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<OrderItem> OrderItem { get; set; }
+        public virtual ICollection<Order> Order { get; set; }
     }
 }

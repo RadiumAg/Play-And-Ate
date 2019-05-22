@@ -18,6 +18,7 @@ namespace FTZ.PlayAndAte.Models
         public Product()
         {
             this.Image = new HashSet<Image>();
+            this.Order = new HashSet<Order>();
             this.Point = new HashSet<Point>();
         }
     
@@ -34,9 +35,11 @@ namespace FTZ.PlayAndAte.Models
         public virtual Area Area { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Image> Image { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Order> Order { get; set; }
         public virtual PPointsType PPointsType { get; set; }
-        public virtual UserInfo_Role UserInfo_Role { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Point> Point { get; set; }
+        public virtual UserInfo_Role UserInfo_Role { get; set; }
     }
 }

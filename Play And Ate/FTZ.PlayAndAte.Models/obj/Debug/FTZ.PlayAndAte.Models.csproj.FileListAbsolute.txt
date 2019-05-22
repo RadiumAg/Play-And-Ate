@@ -35,7 +35,6 @@ C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.Play
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.pdb
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.dll
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csprojAssemblyReference.cache
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CoreCompileInputs.cache
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CopyComplete
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.dll
