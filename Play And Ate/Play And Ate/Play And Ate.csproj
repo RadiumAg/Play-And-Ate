@@ -802,6 +802,9 @@
     <Content Include="Order\Order_4.aspx" />
     <Content Include="Order\Order_5.aspx" />
     <Content Include="Order\PayTo.aspx" />
+    <Content Include="Personage\Order.aspx" />
+    <Content Include="Personage\Personage.aspx" />
+    <Content Include="Personage\ShowOrder.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
     <Content Include="Content\Search\new_default.css.bak" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
@@ -1369,6 +1372,27 @@
     </Compile>
     <Compile Include="Order\PayTo.aspx.designer.cs">
       <DependentUpon>PayTo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personage\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personage\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personage\Personage.aspx.cs">
+      <DependentUpon>Personage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personage\Personage.aspx.designer.cs">
+      <DependentUpon>Personage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personage\ShowOrder.aspx.cs">
+      <DependentUpon>ShowOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personage\ShowOrder.aspx.designer.cs">
+      <DependentUpon>ShowOrder.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products\Ecological.aspx.cs">
       <DependentUpon>Ecological.aspx</DependentUpon>
