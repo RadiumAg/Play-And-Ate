@@ -18,14 +18,7 @@
     <div class="wraps">
 
         <script type="text/javascript" src="../Scripts/Products/lang.js"></script>
-        <script type="text/javascript">
-            var APP_ROOT = '';
-            var CART_URL = '/cart';
-            var CART_CHECK_URL = '/cart-check';
-            var LOADER_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/lazy_loading.gif';
-            var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
-            
-        </script>
+      
         </div>
 
 
@@ -38,11 +31,8 @@
         <div class="wrap">
             <ul class="main_nav">
                 <li class="all_class nz_jsfudong ">
-                    <div class="class_con" style="height: 45px; width: 219px;">
-                        <dl class="index_fenlei nz_city">
-                            <dt class="csqh" id="sc_1" style="background-color:#db7d3b"></dt>
-                            
-                        </dl>
+                    <div class="class_con" style="height: 45px; width: 219px;background-color:#db7d3b;">
+                      
                     </div>
                 </li>
             </ul>
@@ -105,22 +95,21 @@
                 <div class="store_xiangmu">
                     <div class="title_nz"><span class="bz f_l"></span>游玩项目</div>
                     <div class="neirong">
-                        <a href="#" target="_blank">骑马</a>
-                        <a href="#" target="_blank">漂流</a>
-                        <a href="#" target="_blank">真人CS</a>
-                        <a href="#" target="_blank">游泳</a>
-                        <a href="#" target="_blank">健身房</a>
-                        <a href="#" target="_blank">篝火</a>
-                        <a href="#" target="_blank">卡拉OK</a>
-                        <a href="#" target="_blank">棋牌</a>
-                        <a href="#" target="_blank">DIY</a>
-                        <a href="#" target="_blank">烧烤</a>
-                        <a href="#" target="_blank">垂钓</a>
+                        <a href="#" >骑马</a>
+                        <a href="#">漂流</a>
+                        <a href="#">真人CS</a>
+                        <a href="#" >游泳</a>
+                        <a href="#" >健身房</a>
+                        <a href="#">篝火</a>
+                        <a href="#" >卡拉OK</a>
+                        <a href="#" >棋牌</a>
+                        <a href="#" >DIY</a>
+                        <a href="#" >烧烤</a>
+                        <a href="#" >垂钓</a>
                     </div>
                 </div>
                 <div class="blank"></div>
                 <a href="#" target="_blank">
-                    <img src="../Images/Home/5375bb6c9f36e.jpg" title="上海都市菜园" alt="上海都市菜园" border="0"></a>
                 <div class="blank"></div>
                 <div class="store_xiangmu">
                     <div class="title_nz"><span class="zx f_l"></span>优惠：</div>
@@ -132,7 +121,7 @@
                 </div>
                 <div class="blank"></div>
                 <a href="#" target="_blank">
-                    <img src="../Images/Home/375bc10b7da9.jpg" title="上海强丰生态农庄" alt="上海强丰生态农庄" border="0"></a>
+                    <img src="../Images/Home/4.jpg" title="上海强丰生态农庄" alt="上海强丰生态农庄" border="0" height="20"></a>
                 <div class="blank"></div>
                 <%--今日推荐--%>
                 <div class="store_xiangmu">
@@ -166,26 +155,26 @@
                                 <div class="flexslider">
                                     <ul class="slides" id="stodes">
                                         <li style="width: 100%; float: left; margin-right: -100%; display: none;">
-                                            <a href="http://sh.01nz.com.cn/farm/68.html" target="_blank">
+                                            <a href="#" target="_blank">
                                                 <img src="../Images/Products/5374600616246.jpg" title="上海多利农庄" alt="上海多利农庄" border="0" height="306" width="758"></a>
                                         </li>
                                         <li style="width: 100%; float: left; margin-right: -100%; display: none;">
-                                            <a href="http://sh.01nz.com.cn/farm/54.html" target="_blank">
+                                            <a href="#" target="_blank">
                                                 <img src="../Images/Products/53745d6d50625.jpg" title="上海番茄农庄" alt="上海番茄农庄" border="0" height="306" width="758"></a>
                                         </li>
                                         <li style="width: 100%; float: left; margin-right: -100%; display: list-item;">
-                                            <a href="http://sh.01nz.com.cn/farm/1040.html" target="_blank">
+                                            <a href="#" target="_blank">
                                                 <img src="../Images/Products/5374641e5dcc5.jpg" title="富岛垂钓休闲农庄" alt="富岛垂钓休闲农庄" border="0" height="306" width="758"></a>
                                         </li>
                                         <li style="width: 100%; float: left; margin-right: -100%;">
-                                            <a href="http://sh.01nz.com.cn/farm/58.html" target="_blank">
+                                            <a href="#" target="_blank">
                                                 <img src="../Images/Products/5374661217295.jpg" title="上海四季百果园" alt="上海四季百果园" border="0" height="306" width="758"></a>
                                         </li>
                                     </ul>
                                     <ol class="flex-control-nav">
                                         <li class="p9">多利农庄</li>
                                         <li class="p9">上海番茄农庄</li>
-                                        <li class="p9 active">富岛垂钓休闲农庄</li>
+                                        <li class="p9">富岛垂钓休闲农庄</li>
                                         <li class="p9">上海四季百果园</li>
                                     </ol>
                                 </div>
@@ -224,15 +213,15 @@
                     <div class="xjtore_top">
                         <div class="title">推荐</div>
                         <ul class="down_store" id="index_purpose">
-                            <li ><a class="p_1 mr_tj"   Onclick="return load_farm_stor(1)">上海</a></li>
-                            <li ><a class="p_4"   Onclick="return load_farm_stor(4)">北京</a></li>
+                            <li ><a class="p_1 "   Onclick="return load_farm_stor(1)">上海</a></li>
+                            <li ><a class="p_4 mr_tj"   Onclick="return load_farm_stor(4)">北京</a></li>
                             <li ><a class="p_7"   Onclick="return load_farm_stor(7)">天津</a></li>
                             <li ><a class="p_2"   Onclick="return load_farm_stor(2)">南京</a></li>
                             <li ><a class="p_3"   Onclick="return load_farm_stor(3)">杭州</a></li>
                             <li ><a class="p_6"   Onclick="return load_farm_stor(6)">济南</a></li>
                             <li ><a class="p_8"   Onclick="return load_farm_stor(8)">苏州</a></li>
                         </ul>
-                        <div class="gengduo f_r" id="chengshi_gengduo"><a href="#" target="_blank">更多&gt;&gt;</a></div>
+                        <div class="gengduo f_r" id="chengshi_gengduo"><a href="#" >更多&gt;&gt;</a></div>
                         <div class="clear"></div>
                     </div>
                     <div class="xjtore_con" id="ajax_farm_store">
@@ -264,7 +253,7 @@
                             <li class="zht_21 f_l"><a href="javascript:void(0);" onclick="load_farm_zhuti(21)">度假村</a></li>
                             <li class="zht_17 f_l"><a href="javascript:void(0);" onclick="load_farm_zhuti(17)">科普基地</a></li>
                         </ul>
-                        <div class="gengduo f_r" id="zhuti_gengduo"><a href="#" target="_blank">更多&gt;&gt;</a></div>
+                        <div class="gengduo f_r" id="zhuti_gengduo"><a href="#">更多&gt;&gt;</a></div>
                         <div class="clear"></div>
                     </div>
                     <div id="ajax_farm_zhuti">
@@ -310,7 +299,7 @@
                             <li class="czfl_31 f_l"><a href="javascript:void(0);" onclick="load_farm_caizhai(31)">桑葚采摘</a></li>
                             <li class="czfl_30 f_l"><a href="javascript:void(0);" onclick="load_farm_caizhai(30)">樱桃采摘</a></li>
                         </ul>
-                        <div class="gengduo f_r"><a href="#" target="_blank">更多&gt;&gt;</a></div>
+                        <div class="gengduo f_r"><a href="#" >更多&gt;&gt;</a></div>
                     </div>
                     <div id="ajax_farm_caizhai">
                         <div class="mztore_con">
@@ -336,18 +325,8 @@
     </div>
     <div class="blank"></div>
     <div id="gotop"></div>
-    <a href="http://sh.01nz.com.cn/cart" target="_blank">
-        <div id="gowu"></div>
-    </a>
-    <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/z_stat.php" language="JavaScript"></script>
-    <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core.php" charset="utf-8" type="text/javascript"></script>
-
-
-    <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/c.js.下载" language="JavaScript"></script>
-    <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/tongji_360.php" language="JavaScript" charset="gb2312"></script>
-    <script src="./上海农庄_上海农家乐_上海生态园_上海垂钓场_农家度假哪里好，全国最大的农庄_农家乐_垂钓场_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core(1).php" charset="utf-8" type="text/javascript"></script>
    
-        
+   
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
 </asp:Content>

@@ -8,7 +8,8 @@ using Newtonsoft.Json;
 using System.Web.Security;
 using Play_And_Ate.Helper;
 using Newtonsoft.Json.Linq;
-using Play_And_Ate.Order.App_Code;
+using XddPay;
+
 
 namespace Play_And_Ate.Services
 {

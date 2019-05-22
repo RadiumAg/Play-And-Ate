@@ -27,9 +27,7 @@
             <ul class="main_nav">
                 <li class="all_class nz_jsfudong ">
                     <div class="class_con" style="height: 45px; width: 219px; background-color:#f18e47;">
-                        <dl class="index_fenlei nz_city" style="">
-                           显示图片
-                        </dl>
+                        
                     </div>
                 </li>
             </ul>
@@ -138,7 +136,7 @@
                                     </ul>
                                     <ol class="flex-control-nav">
                                         <li class="p9">申隆生态园</li>
-                                        <li class="p9 active">高家庄生态园</li>
+                                        <li class="p9 ">高家庄生态园</li>
                                         <li class="p9">申隆生态园</li>
                                         <li class="p9">高家庄生态园</li>
                                     </ol>
@@ -202,6 +200,7 @@
             <div class="hg_25 clear"></div>
         </div>
         <div class="blank"></div>
+          <div id="gotop"></div>
         <script src="../Scripts/Products/z_stat.php" ></script>
         <script src="../Scripts/Products/core.php" charset="utf-8" type="text/javascript"></script> 
         <script src="../Scripts/Products/c.js"></script>

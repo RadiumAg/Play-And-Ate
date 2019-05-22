@@ -18,7 +18,8 @@ namespace Play_And_Ate.Products
                 this.RPcity.DataSource = ProductManager.GetAreasByTotal(5).Select(s => new { AreaName = s.AreaName }).Distinct();
                 this.RPcity.DataBind();
                 //热门钓场
-
+                this.RPHotfishing.DataSource = this.RPdiaoChang.DataSource = ProductManager.GetProductsBytotal(5).Take(8).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductID = s.ProductId, AreaName = s.Area.AreaName });
+                this.RPHotfishing.DataBind();
                 //农家钓场
                 this.RPdiaoChang.DataSource = ProductManager.GetProductsBytotal(5).Where(s => s.PPointsType.PPointsType1 == "农家").Take(3).Select(s => new { Image = s.Image.FirstOrDefault().ImageName, ProductName = s.ProductName, ProductID = s.ProductId, AreaName = s.Area.AreaName });
                 this.RPdiaoChang.DataBind();

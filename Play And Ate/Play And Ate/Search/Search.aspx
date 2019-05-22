@@ -26,32 +26,32 @@
                 <ul class="stuan-list">
                     <li class="stuan-item">
                         <p class="img">
-                            <a target="_blank" href="#">
-                                <img src="images/9O0MF.jpg" width="178" height="89" /></a>
+                            <a target="_blank" href="../Products/Ecological/1.html"></a>
+                                <a target="_blank" href="../Products/Ecological/1.html"><img src="../Images/Tailorism/n37.jpg" width="178" height="89"/></a>
                         </p>
-                        <p class="tuan-title"><a rel="nofollow" target="_blank" href="#">【5.25出发】马尔代夫7日游*【出境游团购】享Kihaad吉哈德度假酒店+回程赠送香港酒店一晚+国泰航空+蜜月特别赠送套餐+酒店餐饮一价全包……度假天堂，怎容错过？</a></p>
+                        <p class="tuan-title"><a rel="nofollow" target="_blank" href="../Products/Ecological/1.html">【生态园】高家庄生态园</a></p>
                         <p>
-                            <a rel="nofollow" target="_blank" href="#" class="abtn abtn-block">立即抢购</a>
-                            <span>¥<i>14600</i></span>
-                            <dfn>¥<i>13179</i></dfn>
+                            <a rel="nofollow" target="_blank" href="../Products/Ecological/1.html" class="abtn abtn-block">立即预定</a>
+                            <span>¥<i>21</i></span>
+                            <dfn>¥<i>1</i></dfn>
                         </p>
                     </li>
                 </ul>
-                <p><a rel="nofollow" class="link-more" target="_blank" href="#">更多团购产品&gt;&gt;</a></p>
+                <p><a rel="nofollow" class="link-more" target="_blank" href="#">更多景点&gt;&gt;</a></p>
             </div>
             <!-- //本期团购 -->
             <!-- 旅游推荐\\ -->
             <div class="aside-box lv-bd travel-index">
 
                 <h3 class="side-title">
-                    <a target="_blank" href="#">马尔代夫旅游首页</a>
+                    <a target="_blank" href="#">生态园</a>
                 </h3>
 
                 <a target="_blank" href="#">
-                    <img src="images/1288335977153_small.jpg" width="178" height="89">
+                    <img src="../Images/Tailorism/n37.jpg" width="178" height="89">
                 </a>
                 <p>
-                    这些珊瑚岛中只有约200座有人居住，其中不少隶属于世界知名的酒店集团。一个小岛就是一座度假酒店，设计师们在方寸土地上发挥无尽想象，设计出美轮美奂的花园和梦幻般的水上屋。几乎与世隔绝的环境和舒适的酒店设施、众多的娱乐项目、无微不至的服务。
+                    上海高家庄生态园（乡村俱乐部）地处崇明岛著名的景观道路—港西镇港东公路999号，占地面积1000亩，是一家集旅游、休闲、度假、餐饮、住宿、会务、娱乐、农业观光为一体的综合性生态休闲农庄。2009年被命名为3A级国家旅游景区，并先后荣获上海市旅游推荐单位、世博农业观光园等荣誉称号。 高家庄生态园（乡村俱乐部）极有品位的创意设计和最有情趣的特色景观，已被誉为高雅的景区、温馨的家园、美丽的田庄。
         <a rel="nofollow" class="link-more" target="_blank" href="#">更多&gt;&gt;</a>
                 </p>
             </div>
@@ -59,12 +59,12 @@
             <!-- 攻略\\ -->
             <div id="guide_data_div" class="aside-box lv-bd side-guide" placeid="3546">
                 <h3 class="side-title">
-                    <a id="guide_title_a" target="_blank" href="#">马尔代夫旅游攻略</a>
+                    <a id="guide_title_a" target="_blank" href="#">生态园攻略</a>
                 </h3>
                 <div class="imgtext clearfix">
                     <p class="img">
                         <a target="_blank" href="#">
-                            <img src="images/20140327044937977.jpg" width="89" height="124"></a>
+                            <img src="../Images/Tailorism/n4.jpg" width="89" height="124"></a>
                     </p>
                     <p>
                         攻略版本：<br>
@@ -77,16 +77,16 @@
                 </div>
                 <ul class="guide-list">
                     <li class="guide-item">
-                        <a target="_blank" href="#">马尔代夫海龟岛浪漫之旅</a>
-                        <span class="guide-item-info">2014-06-01&nbsp;&nbsp;&nbsp;&nbsp;浏览39次</span>
+                        <a href="#">一家人出行必备行李</a>
+                        <span class="guide-item-info">2018-06-01&nbsp;&nbsp;&nbsp;&nbsp;浏览39次</span>
                     </li>
                     <li class="guide-item">
-                        <a target="_blank" href="#">归来 我的马尔代夫香格里拉岛之圆梦之旅</a>
-                        <span class="guide-item-info">2014-05-23&nbsp;&nbsp;&nbsp;&nbsp;浏览57次</span>
+                        <a  href="#">归来 我的大自然圆梦之旅</a>
+                        <span class="guide-item-info">2017-05-23&nbsp;&nbsp;&nbsp;&nbsp;浏览57次</span>
                     </li>
                     <li class="guide-item">
-                        <a target="_blank" href="#">肥肥安游遍全世界——Maldives</a>
-                        <span class="guide-item-info">2014-02-06&nbsp;&nbsp;&nbsp;&nbsp;浏览2365次</span>
+                        <a  href="#">肥肥安游遍全世界——Maldives</a>
+                        <span class="guide-item-info">2019-02-06&nbsp;&nbsp;&nbsp;&nbsp;浏览2365次</span>
                     </li>
                 </ul>
             </div>
@@ -164,26 +164,7 @@
                             <a rel="nofollow" class="s-tag " href="#">放养(1)</a>
                         </p>
                     </li>
-                    <li>
-                        <a href="javascript:void(0);" class="view-more">更多<i class="arrow"></i></a>
-                        <span>往返交通：</span>
-                        <p>
-                            <a rel="nofollow" class="s-tag selected" href="#">全部</a>
-                            <a rel="nofollow" class="s-tag " href="#">直飞(16)</a>
-                            <a rel="nofollow" class="s-tag " href="#">飞机(10)</a>
-                            <a rel="nofollow" class="s-tag " href="#">直飞往返(5)</a>
-                            <a rel="nofollow" class="s-tag " href="#">美佳航空(3)</a>
-                        </p>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);" class="view-more">更多<i class="arrow"></i></a>
-                        <span>特色品牌：</span>
-                        <p>
-                            <a class="s-tag selected" href="#">全部</a>
-                            <a class="s-tag " href="#">超级自由行(31)</a>
-                            <a class="s-tag " href="#">自由行套餐(2)</a>
-                        </p>
-                    </li>
+                   
                 </ul>
                 <ul class="filter-tags u-qb" style="display: none;">
                     <li>
@@ -225,7 +206,7 @@
                 <!-- 筛选排序\\  .filter-order filter-commont filter-commont-desc -->
 
                 <div class="filter-order">
-                    <span class="lv-order current-order">PAA推荐</span>
+                    <span class="lv-order current-order">庄源推荐</span>
                     <a rel="nofollow" href="#" class="price-order">价格↑<i class="ico-order"></i></a>
                     <a rel="nofollow" href="#" class="price-order order-asc">价格↓<i class="ico-order"></i></a>
 
@@ -238,40 +219,37 @@
 
                 <!-- //列表开始 -->
                 <div class="slist-item">
-                    <asp:UpdatePanel runat="server" ID="UpProduct">
-                        <ContentTemplate>
-                            <asp:Repeater ID="Repeater1" runat="server">
-                                <ItemTemplate>
-                                    <dl class="search-result-item line-info">
-                                        <dt class="img">
-                                            <a rel="nofollow" target="_blank" href="#">
-                                                <img src="../Images/Home/52c4c840630af_70x50.jpg" width="168" height="86">
-                                            </a>
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="s-type">特色景点
-                                            </span>
-                                        </dt>
-                                        <dd class="info">
-                                            <dfn class="s-price">¥<i><%# Eval("ProductPrice").ToString().Split('.')[0] %></i>起</dfn>
-                                            <a rel="nofollow" href="#/comment" target="_blank" class="comment-num comment-num01">156人付款</a>
-                                            <a rel="nofollow" href="#/comment" target="_blank" class="comment-num">361条点评</a>
-                                        </dd>
-                                        <dd class="intro">
-                                            <h5>
-                                                <a rel="nofollow" target="_blank" href="#" onclick="#"><%# Eval("ProductName") %></a>
-                                            </h5>
-                                            <p class="promotions"><%# Eval("ProductName") %></p>
-                                            <p class="route">
-                                                <span></span><span></span><span></span><span></span>
-                                                <br>
-                                                <%# Eval("DetailIntroduction") %>
-                                                <a rel="nofollow" class="link-more" target="_blank" href="#">更多</a>
-                                            </p>
-                                        </dd>
-                                    </dl>
-                                </ItemTemplate>
-                            </asp:Repeater>
-                        </ContentTemplate>
-                    </asp:UpdatePanel>
+                    <asp:Repeater ID="Repeater1" runat="server">
+                        <ItemTemplate>
+                            <dl class="search-result-item line-info">
+                                <dt class="img">
+                                    <a rel="nofollow" target="_blank" href="#">
+                                        <img src="../Images/Tailorism/n44.jpg" width="168" height="86">
+                                    </a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="s-type">特色景点
+                                    </span>
+                                </dt>
+                                <dd class="info">
+                                    <dfn class="s-price">¥<i><%# Eval("ProductPrice").ToString().Split('.')[0] %></i>起</dfn>
+                                    <a rel="nofollow" href="#/comment" target="_blank" class="comment-num comment-num01">156人付款</a>
+                                    <a rel="nofollow" href="#/comment" target="_blank" class="comment-num">361条点评</a>
+                                </dd>
+
+                                <dd class="intro">
+                                    <h5>
+                                        <a rel="nofollow" target="_blank" href="#" onclick="#"><%# Eval("ProductName") %></a>
+                                    </h5>
+                                    <p class="promotions"><%# Eval("ProductName") %></p>
+                                    <p class="route">
+                                        <span></span><span></span><span></span><span></span>
+                                        <br>
+                                        <%# Eval("DetailIntroduction") %>
+                                        <a rel="nofollow" class="link-more" target="_blank" href="#">更多</a>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </ItemTemplate>
+                    </asp:Repeater>
                     <webdiyer:AspNetPager ID="Pager" AlwaysShow="true"
                         runat="server" CssClass="paginator"
                         CurrentPageButtonClass="cpb" FirstPageText="首页"
@@ -286,14 +264,7 @@
                 <!-- //列表结束 -->
 
                 <!-- //分页开始 -->
-                <div class="mb10">
-                    <div class="pages rosestyle">
-                        <span class="PageSel">1</span>
-                        <a href="#" class="PageLink" title="第 2 页" rel="nofollow">2</a>
-                        <a href="#" title="下一页" class="NextPage PageLink PageLink_page" rel="nofollow">下一页</a>
-                    </div>
-                    <!-- //分页结束 -->
-                </div>
+               
             </div>
             <!-- //线路搜索列表 -->
 

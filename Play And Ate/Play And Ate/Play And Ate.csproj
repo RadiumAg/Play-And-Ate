@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -48,8 +49,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\aliyun-net-sdk-dysmsapi.dll</HintPath>
     </Reference>
-    <Reference Include="AspNetPager, Version=7.5.1.0, Culture=neutral, PublicKeyToken=fb0a0fe055d40fd4, processorArchitecture=MSIL">
-      <HintPath>..\packages\AspNetPager_CN.7.5.1\lib\AspNetPager.dll</HintPath>
+    <Reference Include="AspNetPager">
+      <HintPath>D:\ChromeDownLoad\AspNetPagerCN-7.5.1\Demo\Bin\AspNetPager.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -58,11 +59,9 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Caching.Database, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Microsoft Enterprise Library 5.0\Bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -86,21 +85,29 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="XddPay, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\XddPay.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Backstage.aspx" />
     <Content Include="Admin\PartialView\ShowBussinessData.html" />
-    <Content Include="Admin\PartialView\ShowCustomerOrder.html" />
-    <Content Include="Admin\PartialView\ShowProductsData.html" />
+    <Content Include="bin\aliyun-net-sdk-core.dll" />
+    <Content Include="bin\aliyun-net-sdk-dysmsapi.dll" />
+    <Content Include="bin\AspNetPager.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\FTZ.PlayAndAte.Models.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Caching.Database.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll" />
+    <Content Include="bin\Microsoft.Practices.ServiceLocation.xml" />
+    <Content Include="bin\Microsoft.QualityTools.Testing.Fakes.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
     <Content Include="Cart\Cart.aspx" />
     <Content Include="Cart\Cart.html" />
     <Content Include="Content\Admin\Index.css" />
-    <Content Include="Content\Cart\base.v606141511.css" />
-    <Content Include="Content\Cart\cf62177493ce4db40c22962f60d846f8.css" />
-    <Content Include="Content\Cart\core%281%29.php" />
-    <Content Include="Content\Cart\core.php" />
-    <Content Include="Content\Cart\tongji_360.php" />
-    <Content Include="Content\Cart\z_stat.php" />
     <Content Include="Content\Line\index.css" />
     <Content Include="Content\Line\LineDetial\a_rili.css" />
     <Content Include="Content\Line\LineDetial\index.css" />
@@ -118,12 +125,48 @@
     <Content Include="Content\Order\common_wm.html" />
     <Content Include="Content\Order\order.css" />
     <Content Include="Content\Order\style.css" />
+    <Content Include="Content\Personage\global_pop.css" />
+    <Content Include="Content\Personage\header-air.css" />
+    <Content Include="Content\Personage\index%281%29.php" />
+    <Content Include="Content\Personage\index%2810%29.php" />
+    <Content Include="Content\Personage\index%2811%29.php" />
+    <Content Include="Content\Personage\index%2812%29.php" />
+    <Content Include="Content\Personage\index%2813%29.php" />
+    <Content Include="Content\Personage\index%2814%29.php" />
+    <Content Include="Content\Personage\index%282%29.php" />
+    <Content Include="Content\Personage\index%283%29.php" />
+    <Content Include="Content\Personage\index%284%29.php" />
+    <Content Include="Content\Personage\index%285%29.php" />
+    <Content Include="Content\Personage\index%286%29.php" />
+    <Content Include="Content\Personage\index%287%29.php" />
+    <Content Include="Content\Personage\index%288%29.php" />
+    <Content Include="Content\Personage\index%289%29.php" />
+    <Content Include="Content\Personage\index.php" />
+    <Content Include="Content\Personage\integral.css" />
+    <Content Include="Content\Personage\invoice.css" />
+    <Content Include="Content\Personage\jquery.common.css" />
+    <Content Include="Content\Personage\lv-bought.css" />
+    <Content Include="Content\Personage\lv-user-mytrip.css" />
+    <Content Include="Content\Personage\newcommon.css" />
+    <Content Include="Content\Personage\newmember.css" />
+    <Content Include="Content\Personage\popup.css" />
+    <Content Include="Content\Personage\ui-components%281%29.css" />
+    <Content Include="Content\Personage\ui-components.css" />
     <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
     <Content Include="Content\Products\b61e5d222cddc2d58eececba5f1f9e27.css" />
     <Content Include="Content\Products\base.v606141511.css" />
     <Content Include="Content\Products\bmap.css" />
     <Content Include="Content\Products\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Products\hdcss.css" />
+    <Content Include="Content\Promotion\cityquery.css" />
+    <Content Include="Content\Promotion\datepicker%281%29.css" />
+    <Content Include="Content\Promotion\datepicker.css" />
+    <Content Include="Content\Promotion\font-awesome.min.css" />
+    <Content Include="Content\Promotion\main_huandeng.css" />
+    <Content Include="Content\Promotion\new_main.css" />
+    <Content Include="Content\Promotion\style.css" />
+    <Content Include="Content\Promotion\WdatePicker.css" />
+    <Content Include="Content\Promotion\weebox.css" />
     <Content Include="Content\Search\buttons.css" />
     <Content Include="Content\Search\chanel.css" />
     <Content Include="Content\Search\css.css" />
@@ -430,17 +473,6 @@
     <Content Include="Home\PartialView\Company.html" />
     <Content Include="Home\PartialView\Hot.html" />
     <Content Include="Images\Admin\Admin.jpg" />
-    <Content Include="Images\Cart\2.gif" />
-    <Content Include="Images\Cart\35.gif" />
-    <Content Include="Images\Cart\cs_dw.png" />
-    <Content Include="Images\Cart\end_2.gif" />
-    <Content Include="Images\Cart\end_3.gif" />
-    <Content Include="Images\Cart\icon.gif" />
-    <Content Include="Images\Cart\image_err.gif" />
-    <Content Include="Images\Cart\jubao.gif" />
-    <Content Include="Images\Cart\loge.gif" />
-    <Content Include="Images\Cart\wg.png" />
-    <Content Include="Images\Cart\xian.jpg" />
     <Content Include="Images\error\捏脸.gif" />
     <Content Include="Images\Home\5270b12bd8b1d.jpg" />
     <Content Include="Images\Home\52807b105cb1b.jpg" />
@@ -555,21 +587,6 @@
     <Content Include="Images\LoginAndRegister\wechat.png" />
     <Content Include="Images\LoginAndRegister\wg.png" />
     <Content Include="Images\LoginAndRegister\xian.jpg" />
-    <Content Include="Images\Order\order12.gif" />
-    <Content Include="Images\Order\order6.gif" />
-    <Content Include="Images\Order\paypal_logo.gif" />
-    <Content Include="Images\Order\qyfk43_03.jpg" />
-    <Content Include="Images\Order\step1.gif" />
-    <Content Include="Images\Order\step2.gif" />
-    <Content Include="Images\Order\step3.gif" />
-    <Content Include="Images\Order\step4.gif" />
-    <Content Include="Images\Order\tenpay_buy.gif" />
-    <Content Include="Images\Order\微信支付.jpg" />
-    <Content Include="Images\Tailorism\53abb59815ac6_170x130.jpg" />
-    <Content Include="Images\Tailorism\n1%281%29.jpg" />
-    <Content Include="Images\Tailorism\n1%282%29.jpg" />
-    <Content Include="Images\Tailorism\n1%283%29.jpg" />
-    <Content Include="Images\Tailorism\n1%284%29.jpg" />
     <Content Include="Images\Tailorism\n1.jpg" />
     <Content Include="Images\Tailorism\n2.jpg" />
     <Content Include="Images\Tailorism\n3.jpg" />
@@ -796,41 +813,502 @@
     <Content Include="LoginAndRegister\Login.aspx" />
     <Content Include="LoginAndRegister\Register.aspx" />
     <Content Include="Map\Map.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Admin\Backstage.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\aliyun-net-sdk-core.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\aliyun-net-sdk-dysmsapi.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\EntityFramework.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\EntityFramework.SqlServer.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\FTZ.PlayAndAte.BLL.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\FTZ.PlayAndAte.BLL.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\FTZ.PlayAndAte.DAL.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\FTZ.PlayAndAte.DAL.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\FTZ.PlayAndAte.Models.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\FTZ.PlayAndAte.Models.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.QualityTools.Testing.Fakes.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Newtonsoft.Json.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Play And Ate.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\Play And Ate.pdb" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\zh-Hans\EntityFramework.resources.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\zh-Hans\EntityFramework.SqlServer.resources.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll" />
+    <Content Include="obj\Release\Package\PackageTmp\Cart\Cart.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Cart\Cart.html" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Cart\base.v606141511.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Cart\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Cart\core%281%29.php" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Cart\core.php" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Cart\tongji_360.php" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Cart\z_stat.php" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Commond\new_main.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Line\index.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Line\LineDetial\a_rili.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Line\LineDetial\index.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Line\LineDetial\list_line.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Line\LineDetial\search.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Line\LineDetial\style.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Line\search.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Line\style%281%29.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Line\style.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\LoginAndRegister\Login\base.v606141511.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\LoginAndRegister\Login\Login.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\LoginAndRegister\Register\base.v606141511.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\LoginAndRegister\Register\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Order\common_wm.html" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Order\order.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Order\style.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Products\b61e5d222cddc2d58eececba5f1f9e27.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Products\base.v606141511.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Products\bmap.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Products\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Products\hdcss.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Shared\cityquery.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Shared\font-awesome.min.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Shared\main_huandeng.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Shared\style.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Shared\WdatePicker.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Shared\weebox.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Show\FarmDetails\baidu_map.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Show\FarmDetails\cityquery.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Show\FarmDetails\list.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Show\FarmDetails\main_huandeng.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Show\FarmDetails\review.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Show\FarmDetails\review_form.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Show\FarmDetails\weebox.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Show\FarmRow\a_line.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Show\FarmRow\a_rili.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Show\FarmRow\bdsstyle.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Show\FarmRow\dianping.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Show\FarmRow\style.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Special topic\7da3944f35f4e8b851f1c5f9da53174f.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Special topic\base.v606141511.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Content\Special topic\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="obj\Release\Package\PackageTmp\Home\Home.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Home\PartialView\Company.html" />
+    <Content Include="obj\Release\Package\PackageTmp\Home\PartialView\Hot.html" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Admin\Admin.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\1.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\2.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\3.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\4.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\5.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\5270b12bd8b1d.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\52807b105cb1b.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\5282e9733ca7c_70x50.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\5285962e0dcb7.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\528acb6ab3d41_70x50.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\52c4c840630af_70x50.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\530ef673b2355_70x50.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\531d696e4abfe.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\53200a00bd60b.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\5326a2c7a1113.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\536b1ae130bc6.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\5374721fb9390_70x50.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\546ed47f516e5_70x50.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\553e30da866a7.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\5549b5a4cabbf.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\555954e529637.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\555954ef1316e.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\5565534cdda31.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\56ab04ed628d5.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\56b45111dc613.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\57bd13bc56362.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\57e103de2ce7e.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\57e105a3d7f31.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\57e1080ee0356.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\5ad7060c01cf0_70x50.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\grey.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\image_err.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\label.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\lazy_loading.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Home\nongjiafb.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\2.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\35.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\52a1881254edd.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\52d0f08581839.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\cs_dw.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\end_2.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\end_3.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\icon.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\image_err.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\jubao.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\loge.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\user_rl.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\wechat.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\wg.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\LoginAndRegister\xian.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\2.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\527868f808230_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5279e04b1fb2b_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\527a049a434ac_154x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\527a049a434ac_367x254.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\527aea9ed4140_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\527b5e69d7a65_154x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\527b5e69d7a65_367x254.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\527c79aaa9acf_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\527c79aaa9acf_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\52807b105cb1b_154x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\52807b105cb1b_367x254.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\528081565ab4c_154x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\52808f7530691_154x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\52808f7530691_367x254.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5282e9733ca7c_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5283442de3c46_154x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5283442de3c46_367x254.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\528479d9a2d1e_367x254.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5285962e0dcb7_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\52c4cac186016_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\52d3793a2d538_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\52d3793a2d538_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\52de3a723f8cf_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\532f8c883ccb9_154x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\532f8c883ccb9_367x254.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53339727b2398_154x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\535dbd02541db_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5360a3a69bfd1_154x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5360a3a69bfd1_367x254.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53698c918d245_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5369c48d309a7_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5369c48d309a7_367x254.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5369ca29c8f4a_154x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5373031b06d21.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5373040ac02d7.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\537304a8395ef.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\537305412576c.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53730553ce7f6.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53733e39b0df8_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53742882ba3a6_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\537450e23d8ff_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53745d6d50625.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53745ee60b87c.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5374600616246.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5374641e5dcc5.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5374661217295.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53757cf7d48c0_367x254.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5375bb6c9f36e.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5375bc10b7da9.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\538435e12f69b_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53843c975ad39_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5384479d97192_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53868e3bcab42_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5386a12edadec_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5386c9359ba55_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5386dc039d2cc_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5386e55eb067d_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\538801c210753_154x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53882e60e81a8.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\538830f9e3dfd.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\538836ab70c0f.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5388375bd90ed.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53883ab38a6d7_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53883d1073fd3_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5388418a5541c_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53884425cea9a_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53a78a1a3bb97.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53a78b0d7abed.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53a78c2c08c46.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53a78c76ce2de.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ad39116cd3d_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ad3bc35e206_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53b21abd4c7e4_270x165.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53b21abd4c7e4_494x280.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53b223dfb1dee_270x165.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53b223dfb1dee_494x280.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53b256b569be5_270x165.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53b2627c351dc.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53b26301f41be.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53b2646fc3b99.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53b264f2be468.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53b39ef17aab8_180x137.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ba3cf26ea68_270x165.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ba42aca04ee_270x165.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ba635c4860c.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ba63662bb80.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ba636be54fc.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ba63728080d.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ba67426fb5e.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ba674c6da8d.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ba675c5b4ac.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ba676dae711.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53ba677b06bec.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53e98d9722393_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53eb2c9cea0ab_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53eb2dd6bbb71_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\53fff603557ba_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\543771c0bcc17_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\5440d06e740cf_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\547fbcfd562ca_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\551a779b45e14_180x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\553e30da866a7_154x110.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\cs_dw.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\end_2.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\end_3.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\icon.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\image_err.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\jubao.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\loge.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\stycaizhai.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\styguanguang.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\styyangzhi.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\wg.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Products\xian.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Shared\35.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Shared\cs_dw.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Shared\loge.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Shared\LOGO1.PNG" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Shared\main_icon.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Shared\shadow.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\1.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\2.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\3.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\35.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\4.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\5.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f197875732_135x100.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f197875732_860x420.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f197edc141_135x100.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f197edc141_860x420.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f1986dee04.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f1986dee04_135x100.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f1986dee04_860x420.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f198cf183f.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f198cf183f_135x100.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f198cf183f_860x420.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f1992d9ea9.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f1992d9ea9_135x100.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f1992d9ea9_860x420.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f19997eb34.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f19997eb34_135x100.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f19997eb34_860x420.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f19a08f280.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f19a08f280_135x100.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\526f19a08f280_860x420.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\53abb59815ac6_170x130.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\55b09a924aac5.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\55b09aae67069.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\copyright_logo.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\cs_dw.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\end_2.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\end_3.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\fav_ico.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\icon.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\jubao.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\last_map.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\loge.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\map-location.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\markers.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\marker_red_hd.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\marker_red_sprite.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\sd_icon.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\sd_news.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmDetails\xian.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\1411040G321.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\1411040G322.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\1411040G325.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\1411040G326.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\150120034141.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\1501200G626.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\150122095S8.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\150212091136.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\busy_yh.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\dlct.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\end_2.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\end_3.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\end_4.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\jubao.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\lc.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\lcd.png" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\logo.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\nopic.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\p32.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\p38.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\p39.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\p5.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\p54.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\pbtnReview.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\share.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\tejia.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\word.gif" />
+    <Content Include="obj\Release\Package\PackageTmp\Images\Show\FarmRow\xian.jpg" />
+    <Content Include="obj\Release\Package\PackageTmp\Index.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Line\Line1.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Line\LineDetail1.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\LoginAndRegister\Login.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\LoginAndRegister\Register.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Map\Map.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Order\Order.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Order\Order.html" />
+    <Content Include="obj\Release\Package\PackageTmp\Order\Order_2.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Order\Order_2.html" />
+    <Content Include="obj\Release\Package\PackageTmp\Plugin\jquery-1.8.3.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Plugin\jquery-3.3.1.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Plugin\jquery-3.3.1.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Plugin\jquery-3.3.1.slim.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Plugin\jquery-3.3.1.slim.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Plugin\jquery.bgiframe.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Plugin\jquery.dotdotdot.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Plugin\jquery.imagePreview.1.0.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Plugin\jquery.lazyload.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Products\Ecological.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Products\Ecological.html" />
+    <Content Include="obj\Release\Package\PackageTmp\Products\Ecological\1.html" />
+    <Content Include="obj\Release\Package\PackageTmp\Products\Ecological\2.html" />
+    <Content Include="obj\Release\Package\PackageTmp\Products\Farm.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Products\Fishing.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Products\Fishing.html" />
+    <Content Include="obj\Release\Package\PackageTmp\Products\Generated.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Products\Generated.html" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Cart\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Cart\baidumap.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Cart\c.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Cart\fgcomm.v620152248.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Cart\header.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Cart\index_header.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Cart\mt3.v1014201036.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Cart\sousuo.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Home\main_store.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\ajax188.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\global.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\index.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\LineDetail\188date.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\LineDetail\a_list.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\LineDetail\city_dcdr.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\LineDetail\GetCNDate-12.15.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\LineDetail\index_header.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\LineDetail\jquery-1.7.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\LineDetail\script.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\sousuo.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\TN_city_pos.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\TN_city_suggest2-min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\TN_date-min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Line\TN_hotel-min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\baidumap.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\c.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\core%281%29.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\core.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\fgcomm.v620152248.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\header.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\index_header.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\lang.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\mt3.v1014201036.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\sousuo.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\tongji_360.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Login\z_stat.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Register\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Register\baidumap.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Register\c.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Register\fgcomm.v620152248.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Register\header.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Register\index_header.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Register\lang.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Register\mt3.v1014201036.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\LoginAndRegister\Register\sousuo.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Order\ajax188.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Order\global.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Order\jquery.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Order\jquery.scrollfollow.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Order\one_order.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Order\order.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Order\sousuo.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Order\tooltip.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Order\two_order.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\baidumap.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\c.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\ca3e4166f3f1cd8619807edc574f075c.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\core%281%29.php" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\core.php" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\fgcomm.v620152248.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\header.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\index_header.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\jia.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\lang.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\mt3.v1014201036.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\sousuo.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\store.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\storeview.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\tongji_360.php" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\z_stat.php" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Shared\citylist.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Shared\lang.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Shared\lanrenzhijia.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Shared\querycity.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Shared\script.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Shared\scripts.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Shared\WdatePicker.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmDetails\api.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmDetails\getscript.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmDetails\list.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmDetails\seller.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\188date.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\ajax188.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\a_hd.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\a_hotel.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\a_line.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\a_rili.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\a_select.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\bds_s_v2.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\GetCNDate-12.15.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\global.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\index_header.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\logger.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\order20121228.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Show\FarmRow\sousuo.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Special topic\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Special topic\baidumap.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Special topic\bd6e300324d7f46f29a99dadbb826379.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Special topic\c.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Special topic\fgcomm.v620152248.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Special topic\header.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Special topic\index_header.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Special topic\jquery-1.7.2.min.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Special topic\lang.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Special topic\mt3.v1014201036.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Special topic\sousuo.js" />
+    <Content Include="obj\Release\Package\PackageTmp\Show\FarmDetails.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Show\FarmRow.aspx" />
+    <Content Include="obj\Release\Package\PackageTmp\Special topic\Special topic.aspx" />
+    <Content Include="obj\Release\Play And Ate.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\Play And Ate.dll" />
+    <Content Include="obj\Release\Play And Ate.pdb" />
+    <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
     <Content Include="Order\Order.aspx" />
+    <Content Include="Order\Order.html" />
     <Content Include="Order\Order_2.aspx" />
+    <Content Include="Order\Order_2.html" />
     <Content Include="Order\Order_3.aspx" />
-    <Content Include="Order\Order_4.aspx" />
+    <Content Include="Order\Order_3.html" />
+    <Content Include="Order\Order_4.html" />
     <Content Include="Order\Order_5.aspx" />
-    <Content Include="Order\PayTo.aspx" />
+    <Content Include="Personage\Order.aspx" />
+    <Content Include="Personage\Personage.aspx" />
+    <Content Include="Personage\ShowOrder.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
     <Content Include="Content\Search\new_default.css.bak" />
+    <Content Include="Content\Personage\newmember.css&amp;v=051610" />
+    <Content Include="Content\Personage\ztRecommendInfoJson.do" />
+    <Content Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\FTZ.PlayAndAte.DAL.dll.config" />
+    <Content Include="obj\Release\Package\PackageTmp\bin\FTZ.PlayAndAte.Models.dll.config" />
+    <Content Include="obj\Release\Package\PackageTmp\Plugin\jquery-3.3.1.min.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Plugin\jquery-3.3.1.slim.min.map" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\api" />
+    <Content Include="obj\Release\Package\PackageTmp\Scripts\Products\getscript" />
+    <Content Include="obj\Release\Package\PackageTmp\Services\Main.ashx" />
+    <Content Include="obj\Release\Package\PackageTmp\Shared\Main.Master" />
+    <Content Include="obj\Release\Package\PackageTmp\Web.config" />
+    <Content Include="obj\Release\Play And Ate.csproj.CopyComplete" />
+    <Content Include="obj\Release\Play And Ate.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Release\Play And Ate.csprojAssemblyReference.cache" />
+    <Content Include="obj\Release\TransformWebConfig\assist\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\original\Web.config" />
+    <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
     <Content Include="Plugin\jquery-3.3.1.js" />
     <Content Include="Plugin\jquery-3.3.1.min.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.min.js" />
-    <Content Include="Plugin\jqzoom\BSD-LICENSE.txt" />
-    <Content Include="Plugin\jqzoom\css\jquery.jqzoom.css" />
-    <Content Include="Plugin\jqzoom\demos\demo_alwayson.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_drag.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_innerzoom.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_resizeposition.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_reverse.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_standard.html" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\thumbs\triumph_thumb1.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\thumbs\triumph_thumb2.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\thumbs\triumph_thumb3.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_big1.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_big2.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_big3.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_small1.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_small2.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_small3.jpg" />
-    <Content Include="Plugin\jqzoom\images\advertise.jpg" />
-    <Content Include="Plugin\jqzoom\images\zoomloader.gif" />
-    <Content Include="Plugin\jqzoom\js\jquery-1.5.js" />
-    <Content Include="Plugin\jqzoom\js\jquery.jqzoom-core.js" />
-    <Content Include="Plugin\jqzoom\js\jquery.jqzoom-core.pack.js" />
     <Content Include="Plugin\public\media\css\bootstrap-modal.css" />
     <Content Include="Plugin\public\media\css\bootstrap-responsive.min.css" />
     <Content Include="Plugin\public\media\css\bootstrap.min.css" />
@@ -1105,22 +1583,13 @@
     <Content Include="Plugin\public\swiper\src\js\wrap-start.js" />
     <Content Include="Plugin\public\swiper\src\js\zoom.js" />
     <Content Include="Products\Ecological.aspx" />
-    <Content Include="Products\Ecological.html" />
     <Content Include="Products\Ecological\1.html" />
     <Content Include="Products\Ecological\2.html" />
     <Content Include="Products\Farm.aspx" />
     <Content Include="Products\Fishing.aspx" />
-    <Content Include="Products\Fishing.html" />
     <Content Include="Products\Generated.aspx" />
-    <Content Include="Products\Generated.html" />
-    <Content Include="Scripts\Cart\908ca0ab9e4d27144b60bc878b237327.js" />
-    <Content Include="Scripts\Cart\baidumap.js" />
-    <Content Include="Scripts\Cart\c.js" />
-    <Content Include="Scripts\Cart\fgcomm.v620152248.js" />
-    <Content Include="Scripts\Cart\header.js" />
-    <Content Include="Scripts\Cart\index_header.js" />
-    <Content Include="Scripts\Cart\mt3.v1014201036.js" />
-    <Content Include="Scripts\Cart\sousuo.js" />
+    <Content Include="Promotion\Promotion.aspx" />
+    <Content Include="Scripts\Admin\Index.js" />
     <Content Include="Scripts\datagrid-detailview.js" />
     <Content Include="Scripts\easyloader.js" />
     <Content Include="Scripts\ECharts\chart\bar.js" />
@@ -1215,6 +1684,38 @@
     <Content Include="Scripts\Order\three_order.js" />
     <Content Include="Scripts\Order\tooltip.js" />
     <Content Include="Scripts\Order\two_order.js" />
+    <Content Include="Scripts\Personage\52710000.js" />
+    <Content Include="Scripts\Personage\analytics.js" />
+    <Content Include="Scripts\Personage\appendcomdom.js" />
+    <Content Include="Scripts\Personage\bdctrace-pc.js" />
+    <Content Include="Scripts\Personage\city.js" />
+    <Content Include="Scripts\Personage\coremetrics-initalize.js" />
+    <Content Include="Scripts\Personage\eluminate.js" />
+    <Content Include="Scripts\Personage\footer.js" />
+    <Content Include="Scripts\Personage\fp2.js" />
+    <Content Include="Scripts\Personage\fp2.min.js" />
+    <Content Include="Scripts\Personage\fx.js" />
+    <Content Include="Scripts\Personage\hm.js" />
+    <Content Include="Scripts\Personage\iflight_popup.js" />
+    <Content Include="Scripts\Personage\jquery-ui-1.8.21.custom.min.js" />
+    <Content Include="Scripts\Personage\jquery.tools.min.js" />
+    <Content Include="Scripts\Personage\jQuerySuperScript.js" />
+    <Content Include="Scripts\Personage\js.cookie.js" />
+    <Content Include="Scripts\Personage\losc.js" />
+    <Content Include="Scripts\Personage\lvmama-custom.js" />
+    <Content Include="Scripts\Personage\lvmember.js" />
+    <Content Include="Scripts\Personage\mba.js" />
+    <Content Include="Scripts\Personage\Method.js" />
+    <Content Include="Scripts\Personage\mv.js" />
+    <Content Include="Scripts\Personage\mvl.js" />
+    <Content Include="Scripts\Personage\orderlistCommon.js" />
+    <Content Include="Scripts\Personage\orderPolicy.js" />
+    <Content Include="Scripts\Personage\plpupload.js" />
+    <Content Include="Scripts\Personage\plupload.full.min.js" />
+    <Content Include="Scripts\Personage\push.js" />
+    <Content Include="Scripts\Personage\reschedule.js" />
+    <Content Include="Scripts\Personage\selectOrder.js" />
+    <Content Include="Scripts\Personage\v.js" />
     <Content Include="Scripts\Products\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\Products\baidumap.js" />
     <Content Include="Scripts\Products\c.js" />
@@ -1232,6 +1733,17 @@
     <Content Include="Scripts\Products\storeview.js" />
     <Content Include="Scripts\Products\tongji_360.php" />
     <Content Include="Scripts\Products\z_stat.php" />
+    <Content Include="Scripts\Promotion\config.js" />
+    <Content Include="Scripts\Promotion\jquery-1.8.3.min.js" />
+    <Content Include="Scripts\Promotion\jquery.dotdotdot.js" />
+    <Content Include="Scripts\Promotion\lanrenzhijia.js" />
+    <Content Include="Scripts\Promotion\main_store.js" />
+    <Content Include="Scripts\Promotion\querycity.js" />
+    <Content Include="Scripts\Promotion\script.js" />
+    <Content Include="Scripts\Promotion\WdatePicker.js" />
+    <Content Include="Scripts\Promotion\zh-cn.js" />
+    <Content Include="Scripts\Search\chengtourUI.js" />
+    <Content Include="Scripts\Search\pindao1.js" />
     <Content Include="Scripts\Show\FarmDetails\getscript.js" />
     <Content Include="Scripts\Show\FarmDetails\list.js" />
     <Content Include="Scripts\Show\FarmDetails\seller.js" />
@@ -1262,6 +1774,10 @@
     <Compile Include="Admin\Backstage.aspx.designer.cs">
       <DependentUpon>Backstage.aspx</DependentUpon>
     </Compile>
+    <Content Include="App_Code\XddpayConfig.cs" />
+    <Content Include="App_Code\XddpayFunction.cs" />
+    <Content Include="App_Code\XddpayResponse.cs" />
+    <Content Include="App_Code\XddpayService.cs" />
     <Compile Include="Cart\Cart.aspx.cs">
       <DependentUpon>Cart.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1324,10 +1840,12 @@
     <Compile Include="Map\Map.aspx.designer.cs">
       <DependentUpon>Map.aspx</DependentUpon>
     </Compile>
-    <Compile Include="App_Code\XddpayConfig.cs" />
-    <Compile Include="App_Code\XddpayFunction.cs" />
-    <Compile Include="App_Code\XddpayResponse.cs" />
-    <Compile Include="App_Code\XddpayService.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Order\Order.aspx.cs">
       <DependentUpon>Order.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1349,13 +1867,6 @@
     <Compile Include="Order\Order_3.aspx.designer.cs">
       <DependentUpon>Order_3.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Order\Order_4.aspx.cs">
-      <DependentUpon>Order_4.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Order\Order_4.aspx.designer.cs">
-      <DependentUpon>Order_4.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Order\Order_5.aspx.cs">
       <DependentUpon>Order_5.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1363,12 +1874,26 @@
     <Compile Include="Order\Order_5.aspx.designer.cs">
       <DependentUpon>Order_5.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Order\PayTo.aspx.cs">
-      <DependentUpon>PayTo.aspx</DependentUpon>
+    <Compile Include="Personage\Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Order\PayTo.aspx.designer.cs">
-      <DependentUpon>PayTo.aspx</DependentUpon>
+    <Compile Include="Personage\Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personage\Personage.aspx.cs">
+      <DependentUpon>Personage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personage\Personage.aspx.designer.cs">
+      <DependentUpon>Personage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Personage\ShowOrder.aspx.cs">
+      <DependentUpon>ShowOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Personage\ShowOrder.aspx.designer.cs">
+      <DependentUpon>ShowOrder.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products\Ecological.aspx.cs">
       <DependentUpon>Ecological.aspx</DependentUpon>
@@ -1398,6 +1923,13 @@
     <Compile Include="Products\Generated.aspx.designer.cs">
       <DependentUpon>Generated.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Promotion\Promotion.aspx.cs">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Promotion\Promotion.aspx.designer.cs">
+      <DependentUpon>Promotion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search\Search.aspx.cs">
       <DependentUpon>Search.aspx</DependentUpon>
@@ -1408,9 +1940,6 @@
     </Compile>
     <Compile Include="Services\Main.ashx.cs">
       <DependentUpon>Main.ashx</DependentUpon>
-    </Compile>
-    <Compile Include="Services\OrderService.ashx.cs">
-      <DependentUpon>OrderService.ashx</DependentUpon>
     </Compile>
     <Compile Include="Shared\Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
@@ -1494,88 +2023,6 @@
     <Content Include="Plugin\public\swiper\src\less\scrollbar.less" />
     <Content Include="Plugin\public\swiper\src\less\swiper.less" />
     <Content Include="Plugin\public\swiper\src\less\zoom.less" />
-    <Content Include="Plugin\jqzoom\.git\config" />
-    <Content Include="Plugin\jqzoom\.git\description" />
-    <Content Include="Plugin\jqzoom\.git\HEAD" />
-    <Content Include="Plugin\jqzoom\.git\hooks\applypatch-msg.sample" />
-    <Content Include="Plugin\jqzoom\.git\hooks\commit-msg.sample" />
-    <Content Include="Plugin\jqzoom\.git\hooks\fsmonitor-watchman.sample" />
-    <Content Include="Plugin\jqzoom\.git\hooks\post-update.sample" />
-    <Content Include="Plugin\jqzoom\.git\hooks\pre-applypatch.sample" />
-    <Content Include="Plugin\jqzoom\.git\hooks\pre-commit.sample" />
-    <Content Include="Plugin\jqzoom\.git\hooks\pre-push.sample" />
-    <Content Include="Plugin\jqzoom\.git\hooks\pre-rebase.sample" />
-    <Content Include="Plugin\jqzoom\.git\hooks\pre-receive.sample" />
-    <Content Include="Plugin\jqzoom\.git\hooks\prepare-commit-msg.sample" />
-    <Content Include="Plugin\jqzoom\.git\hooks\update.sample" />
-    <Content Include="Plugin\jqzoom\.git\index" />
-    <Content Include="Plugin\jqzoom\.git\info\exclude" />
-    <Content Include="Plugin\jqzoom\.git\logs\HEAD" />
-    <Content Include="Plugin\jqzoom\.git\logs\refs\heads\master" />
-    <Content Include="Plugin\jqzoom\.git\logs\refs\remotes\origin\HEAD" />
-    <Content Include="Plugin\jqzoom\.git\objects\05\4567214d9248bbdee29b0853c9b51d5ebddeb4" />
-    <Content Include="Plugin\jqzoom\.git\objects\05\6b0e0f5d0a0c2a1b5f4f9e394db3e925e91177" />
-    <Content Include="Plugin\jqzoom\.git\objects\08\4d9b07c82e26c60a178291afeccd3d5292cd5a" />
-    <Content Include="Plugin\jqzoom\.git\objects\10\64ea3d60bafa5486322f0b379643aa7af1c766" />
-    <Content Include="Plugin\jqzoom\.git\objects\15\ac13c896a894031a978b5da6969ff77d350273" />
-    <Content Include="Plugin\jqzoom\.git\objects\26\ad4e74ab3ee1a5d27fc0c04da65ed9e17cea17" />
-    <Content Include="Plugin\jqzoom\.git\objects\2b\a16e7e0588bf10484e45ab0c9ed5a1e7b6fffe" />
-    <Content Include="Plugin\jqzoom\.git\objects\2c\540c8c8c05b7c545470a7e6c92982380ff3bfe" />
-    <Content Include="Plugin\jqzoom\.git\objects\31\17659b5afdad82067367fe7a47198425321da7" />
-    <Content Include="Plugin\jqzoom\.git\objects\3b\c2ec404e5fead41eea9680d8748dae3d44aaf5" />
-    <Content Include="Plugin\jqzoom\.git\objects\3e\0f115e462572632cc51022c2d0fbbf4b65958f" />
-    <Content Include="Plugin\jqzoom\.git\objects\43\334895692879c81d9898c89e95d54ca6c41c0f" />
-    <Content Include="Plugin\jqzoom\.git\objects\43\b3c0d7ab8464774f88780862ee5de483a30f63" />
-    <Content Include="Plugin\jqzoom\.git\objects\46\5c2b3e03a79c7887f5ee76e7c711a3866cb2bd" />
-    <Content Include="Plugin\jqzoom\.git\objects\48\1e428d4adf992ba04190eb3630a9e34df47a07" />
-    <Content Include="Plugin\jqzoom\.git\objects\55\aa3a3a4cf084ec770a78cee8fcd65d75ff2d14" />
-    <Content Include="Plugin\jqzoom\.git\objects\5b\33f7e54f4e55b6b8774d86d96895db9af044b4" />
-    <Content Include="Plugin\jqzoom\.git\objects\5c\99a8d4a8889f15947dc465a69c6fa286dfddee" />
-    <Content Include="Plugin\jqzoom\.git\objects\5c\b034aabf7a77754983b18068dcf05238ad525e" />
-    <Content Include="Plugin\jqzoom\.git\objects\5c\c7990eb11bf1bbf033139251d5388f2a8bb39f" />
-    <Content Include="Plugin\jqzoom\.git\objects\5f\244feee76533f3e1bcdd77c4b851a56e8183f9" />
-    <Content Include="Plugin\jqzoom\.git\objects\68\e7a28ef61703de9aac397591988785d90648d9" />
-    <Content Include="Plugin\jqzoom\.git\objects\6b\ce94612c315c70f386d283e4b57df6e981cd4b" />
-    <Content Include="Plugin\jqzoom\.git\objects\70\876ad38af63b9a9761a2ef1004ad9f8ba39a1f" />
-    <Content Include="Plugin\jqzoom\.git\objects\70\d3203d3aad6025c49c2213712dd48fb0c781d3" />
-    <Content Include="Plugin\jqzoom\.git\objects\75\18225f146f86c97012aa2e901f5c25834f5456" />
-    <Content Include="Plugin\jqzoom\.git\objects\76\e6f8964e81c7f31b61d77d494bee028f6b9846" />
-    <Content Include="Plugin\jqzoom\.git\objects\77\27d4e46e3e3b31e63c34740e0f5cc82a9164cd" />
-    <Content Include="Plugin\jqzoom\.git\objects\79\5032ac89f218d98d63503cd8353802a2615e51" />
-    <Content Include="Plugin\jqzoom\.git\objects\7a\29fa64da824018618567f54500e8462865c9ea" />
-    <Content Include="Plugin\jqzoom\.git\objects\7c\e4eccbeadaeaa91efef832d837b2a1e1376b1a" />
-    <Content Include="Plugin\jqzoom\.git\objects\81\d381b670cd1401a7b39a3b763f0242fed250f9" />
-    <Content Include="Plugin\jqzoom\.git\objects\82\0827b15f28e1bfd75dd7c64891c8d12e2d1493" />
-    <Content Include="Plugin\jqzoom\.git\objects\84\5f77f562f319609636837d9dedc4f7d56e6ffb" />
-    <Content Include="Plugin\jqzoom\.git\objects\88\7a53954b6e5010445c911938d7b5e5e7f81e86" />
-    <Content Include="Plugin\jqzoom\.git\objects\9d\56083a03caafbf1e076c19ffc0c3316b5b3fa2" />
-    <Content Include="Plugin\jqzoom\.git\objects\a9\1d9a4358106cbbce128f533f723bc06869c61b" />
-    <Content Include="Plugin\jqzoom\.git\objects\ac\d2e7c48a11518e2dc2e21eae3063590db8d17d" />
-    <Content Include="Plugin\jqzoom\.git\objects\b0\9ce209c53b2e385dbf5a71d689b7338171e548" />
-    <Content Include="Plugin\jqzoom\.git\objects\b1\8e97d287a6a65eb2bb83b1d7600b13477be974" />
-    <Content Include="Plugin\jqzoom\.git\objects\b2\4d426674965eb0964f6f525e03786ed5f58c67" />
-    <Content Include="Plugin\jqzoom\.git\objects\b3\74495a3942121e00a58f0e647743e97c564b54" />
-    <Content Include="Plugin\jqzoom\.git\objects\b5\794b4f79682f54bb4bf3dbe70f371599293235" />
-    <Content Include="Plugin\jqzoom\.git\objects\b8\cb6edc771a71e5f871e4614f2fc0b7366f77e6" />
-    <Content Include="Plugin\jqzoom\.git\objects\bd\9517a5bfb6f536288a42184e451e457c2353c9" />
-    <Content Include="Plugin\jqzoom\.git\objects\c0\f5a79dcbd96af3ae57f6a9432044732fc46c50" />
-    <Content Include="Plugin\jqzoom\.git\objects\c3\7b5b38a4ded9c2846b8a6ad498abf9b41d86dd" />
-    <Content Include="Plugin\jqzoom\.git\objects\c6\1367db5d9c4e12c138783374851d504e10c028" />
-    <Content Include="Plugin\jqzoom\.git\objects\e3\e617b33f03f8c0e2cf6ff33329ed5085d2f0de" />
-    <Content Include="Plugin\jqzoom\.git\objects\e4\8ea458d1a5ea94e269b5ab09554527796411ef" />
-    <Content Include="Plugin\jqzoom\.git\objects\e9\be91bc4f04282da649da3edd41e28456862d74" />
-    <Content Include="Plugin\jqzoom\.git\objects\f2\0ad6d823faf301ad4db1b8ea7e2a3892f98956" />
-    <Content Include="Plugin\jqzoom\.git\objects\f5\eb172089a1640c636af5c168a1257a203f7caa" />
-    <Content Include="Plugin\jqzoom\.git\objects\f8\d12af06b6234d5044493fb296ab362bb59f5be" />
-    <Content Include="Plugin\jqzoom\.git\objects\f8\dde86e6cd7a32bacbc7a4e1ab420117acb944a" />
-    <Content Include="Plugin\jqzoom\.git\objects\ff\034ff42190dc0c19d3915290447c71eefc0dbe" />
-    <Content Include="Plugin\jqzoom\.git\packed-refs" />
-    <Content Include="Plugin\jqzoom\.git\refs\heads\master" />
-    <Content Include="Plugin\jqzoom\.git\refs\remotes\origin\HEAD" />
-    <Content Include="Plugin\jqzoom\images\Thumbs.db" />
-    <Content Include="Plugin\jqzoom\README.md" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <Content Include="Services\OrderService.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1584,12 +2031,16 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\en\" />
+    <Folder Include="bin\zh-CHT\" />
+    <Folder Include="bin\zh-Hans\" />
+    <Folder Include="Connected Services\" />
+    <Folder Include="Content\Cart\" />
     <Folder Include="Content\Home\" />
-    <Folder Include="Plugin\jqzoom\.git\objects\info\" />
-    <Folder Include="Plugin\jqzoom\.git\objects\pack\" />
-    <Folder Include="Plugin\jqzoom\.git\refs\tags\" />
+    <Folder Include="Content\NewFolder1\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Commond\" />
+    <Folder Include="Scripts\Propaganda\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FTZ.PlayAndAte.BLL\FTZ.PlayAndAte.BLL.csproj">
@@ -1600,9 +2051,6 @@
       <Project>{7384c779-1c2a-4d18-88b0-52911e368678}</Project>
       <Name>FTZ.PlayAndAte.Models</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

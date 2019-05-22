@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 /* 公共样式 */
 html,body{-webkit-text-size-adjust:none;}
 body{background:#fff;    word-break:break-all;
@@ -50,11 +50,12 @@ a {
     padding: 0;
     width: 410px;
 	}
-.search_input_main{ 
+.search_input_main {
     height: 38px;
-	border:1px rgb(218, 61, 78) solid;
-	border-radius:5px;
-    width: 400px;}
+    border: 1px #fda300 solid;
+    border-radius: 5px;
+    width: 400px;
+}
 .search_txt_main{
 	border: 0 none;
     color: #bbb;
@@ -72,8 +73,8 @@ a {
 	background-position:-6px -49px;
 	 }
 .search_btn_ss:hover{ color:#fff}
-.search_btn_ss{
-	background: rgb(218, 61, 78) none repeat scroll 0 0;
+.search_btn_ss {
+    background: #fda300 none repeat scroll 0 0;
     border: 0 none;
     color: #fff;
     cursor: pointer;
@@ -85,7 +86,7 @@ a {
     line-height: 38px;
     text-align: center;
     width: 75px;
-	}
+}
 #city *{ margin:0;padding:0;  left:-20px; float:left;}
 #warpper {left: 10px; margin-top: 0; position: relative; top: 25px;}
 .hrdl { line-height:50px;}

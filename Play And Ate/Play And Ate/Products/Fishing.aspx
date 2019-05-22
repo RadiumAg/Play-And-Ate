@@ -17,16 +17,6 @@
    
 	<div class="wraps">
 <script type="text/javascript" src="../Scripts/Products/lang.js"></script>
-	<script type="text/javascript">
-var APP_ROOT = '';
-var CART_URL = '/cart';
-var CART_CHECK_URL = '/cart-check';
-var LOADER_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/lazy_loading.gif';
-var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
-</script>
-
-
- 
 <script type="text/javascript">
 	var is_order_show = false;
 </script>
@@ -35,9 +25,7 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 <div class="wrap">
 	  <ul class="main_nav">
 		 <li class="all_class nz_jsfudong ">
-		   <div class="class_con" style="height:45px; width:219px;">
-			 <dl class="index_fenlei nz_city" style="border: none; background-color:#0ebac6">
-		       </dl>
+		   <div class="class_con" style="height:45px; width:219px; background-color:#0bcaca">
 				</div>
 			</li>
 		</ul>	
@@ -142,21 +130,21 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 						<div class="flexslider">
 			    			<ul class="slides" id="stodes">
 							   							   	<li style="width: 100%; float: left; margin-right: -100%; display: none;">
-							   		<a href="http://www.01nz.com.cn/notice/70.html" target="_blank"><img src="../Images/Products/53a78a1a3bb97.jpg" alt="" border="0" height="306" width="758"></a>
+							   		<a href="#" target="_blank"><img src="../Images/Products/53a78a1a3bb97.jpg" alt="" border="0" height="306" width="758"></a>
 							   	</li>
 							   							   	<li style="width: 100%; float: left; margin-right: -100%; display: list-item;">
-							   		<a href="http://www.01nz.com.cn/notice/66.html" target="_blank"><img src="../Images/Products/53a78b0d7abed.jpg" alt="" border="0" height="306" width="758"></a>
+							   		<a href="#" target="_blank"><img src="../Images/Products/53a78b0d7abed.jpg" alt="" border="0" height="306" width="758"></a>
 							   	</li>
 							   							   	<li style="width: 100%; float: left; margin-right: -100%;">
-							   		<a href="http://www.01nz.com.cn/notice/74.html" target="_blank"><img src="../Images/Products/53a78c2c08c46.jpg" alt="" border="0" height="306" width="758"></a>
+							   		<a href="#" target="_blank"><img src="../Images/Products/53a78c2c08c46.jpg" alt="" border="0" height="306" width="758"></a>
 							   	</li>
 							   							   	<li style="width: 100%; float: left; margin-right: -100%;">
-							   		<a href="http://www.01nz.com.cn/notice/71.html" target="_blank"><img src="../Images/Products/53a78c76ce2de.jpg" alt="" border="0" height="306" width="758"></a>
+							   		<a href="#" target="_blank"><img src="../Images/Products/53a78c76ce2de.jpg" alt="" border="0" height="306" width="758"></a>
 							   	</li>
 							   							</ul>
 		        			<ol class="flex-control-nav">
 		        					        			<li class="p9">怎样看待台钓与传统钓</li>
-		        					        			<li class="p9 active">说起钓鱼常有三大错误说法敝病</li>
+		        					        			<li class="p9 ">说起钓鱼常有三大错误说法敝病</li>
 		        					        			<li class="p9">小钓豫北陈桥湿地</li>
 		        					        			<li class="p9">气温初变好垂钓</li>
 		        										</ol>
@@ -377,14 +365,10 @@ var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
 
 
 <div class="blank"></div>
-	<div id="gotop" style="display: none;"></div>
-	<a href="http://sh.01nz.com.cn/cart" target="_blank"><div id="gowu"></div></a>
+<div id="gotop" style="display: none;"></div>
+<script src="../Scripts/z_stat.php" ></script><script src="../Scripts/core.php" charset="utf-8" type="text/javascript"></script>
 
-
-
-<script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/z_stat.php" language="JavaScript"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core.php" charset="utf-8" type="text/javascript"></script>
-
-<script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/c.js" language="JavaScript"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/tongji_360.php" language="JavaScript" charset="gb2312"></script><script src="./上海垂钓场_上海农庄_上海生态园_上海农家乐_农家度假哪里好，全国最大的垂钓场_农庄_农家乐_生态园_农家乐旅游在线预订平台-上海第一农庄网_files/core(1).php" charset="utf-8" type="text/javascript"></script>
+<script src="../Scripts/c.js" ></script><script src="../Scripts/tongji_360.php"charset="gb2312"></script><script src="../Scripts/core(1).php" charset="utf-8" type="text/javascript"></script>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
 </asp:Content>

@@ -63,6 +63,27 @@
                         <span class="f_l">你好<%=userName %>，欢迎光临Play And Ate</span>
                         <span><a href="javascript:void(0)" id="singOut" >退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>
                         <%} %>
+                        <a href="../Personage/Order.aspx">❤个人信息❤</a>
+
+                        <script>
+                            $(function () {
+                                $("#singOut").click(function () {
+                                    $.ajax({
+                                        url: '../Services/Main.ashx?id=5',
+                                        type: 'POST',
+                                        dataType: 'json',
+                                        success: function (data) {
+                                            console.log(data);
+                                            if (data) {
+                                                location.reload();
+                                            } else {
+                                                alert("发生错误，退出失败！");
+                                            }
+                                        }
+                                    });
+                                });
+                            });
+                        </script>
                     </div>
                     </div>
                 </div>
@@ -71,7 +92,7 @@
                 <div class="headerss">
                     <div class="LOGE">
                         <a href="#">
-                            <img alt="第一农庄" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width:185px;height:150px;margin-top:-35px;"/>
+                            <img alt="" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width:185px;height:150px;margin-top:-35px;"/>
                         </a>
                     </div>
                     <div id="city">
@@ -201,7 +222,7 @@
                             <a id="sousuo_btn" class="search_btn_ss">搜索</a>
                             <script>
                                 $("#sousuo_btn").click(function () {
-                                    window.open("/Search/Search.aspx?content=" + $("#header_kw").val(),"_Self");
+                                    window.open("/Search/Search.aspx?Keyword=" + $("#header_kw").val());
                                 });
                             </script>
                         </div>
@@ -217,15 +238,15 @@
                 <div class="menu" id="menus">
                     <div class="menu white"  style="height: 36px; background-color: #fda300; margin: 0 auto; position: relative; width: 1180px;">
                         <ul>
-                            <li><span class="LOGE_text">去农庄,就来我们</span></li>
+                            <li><span class="LOGE_text">想玩想吃,就来我们</span></li>
                             <li onclick="nav(0)" id="n0" class="soso ">
                                 <a href="../Home/Home.aspx" target="">首页</a>
                             </li>
                             <li onclick="nav(1)" id="n1" class="soso ">
-                                <a href="#" target="">农家推荐</a>
+                                <a href="../Promotion/Promotion.aspx" target="">农家推荐</a>
                             </li>
                             <li onclick="nav(2)" id="n2" class="soso ">
-                                <a href="../Line/Line1.html" target="">农家行</a>
+                                <a href="../Line/Line1.aspx" target="">农家行</a>
                             </li>
                             <li onclick="nav(3)" id="n3" class="soso ">
                                 <a href="../Products/Farm.aspx" target="">农庄</a>
@@ -265,7 +286,7 @@
 				</div>
 				<div class="blank"></div>
 				<div class="beian" align="center">版权所有：Play-And-Ate <a href="#"
-						target="_blank">沪ICP备 13043989号</a> 电话：400-021-3158 邮箱：527505931@qq.com </div>
+						target="_blank">浙ICP备 19020300号-1</a> 电话：400-021-3158 邮箱：527505931@qq.com </div>
 				<div align="center" class="beian_eng">
 					Copyright 2019 PlayAndAte.club All Rights Reserved.</div>
                </div>

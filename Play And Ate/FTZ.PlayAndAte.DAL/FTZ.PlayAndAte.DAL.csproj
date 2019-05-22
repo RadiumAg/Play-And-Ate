@@ -77,6 +77,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomersServices.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="OrderServices.cs" />
     <Compile Include="ProductServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,10 +90,77 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
+    <None Include="bin\Debug\FTZ.PlayAndAte.DAL.dll.config" />
+    <None Include="bin\Debug\FTZ.PlayAndAte.Models.dll.config" />
+    <None Include="bin\Release\FTZ.PlayAndAte.DAL.dll.config" />
+    <None Include="bin\Release\FTZ.PlayAndAte.Models.dll.config" />
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\edmxResourcesToEmbed\Models.csdl" />
+    <None Include="obj\Debug\edmxResourcesToEmbed\Models.msl" />
+    <None Include="obj\Debug\edmxResourcesToEmbed\Models.ssdl" />
+    <None Include="obj\Debug\FTZ.PlayAndAte.DAL.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\FTZ.PlayAndAte.DAL.csprojAssemblyReference.cache" />
+    <None Include="obj\Release\FTZ.PlayAndAte.DAL.csproj.CopyComplete" />
+    <None Include="obj\Release\FTZ.PlayAndAte.DAL.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\FTZ.PlayAndAte.DAL.csprojAssemblyReference.cache" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\FTZ.PlayAndAte.DAL.dll" />
+    <Content Include="bin\Debug\FTZ.PlayAndAte.DAL.pdb" />
+    <Content Include="bin\Debug\FTZ.PlayAndAte.Models.dll" />
+    <Content Include="bin\Debug\FTZ.PlayAndAte.Models.pdb" />
+    <Content Include="bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll" />
+    <Content Include="bin\Debug\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll" />
+    <Content Include="bin\Debug\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="bin\Debug\Microsoft.Practices.ServiceLocation.xml" />
+    <Content Include="bin\Debug\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="bin\Debug\Microsoft.Practices.Unity.Configuration.xml" />
+    <Content Include="bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.dll" />
+    <Content Include="bin\Debug\Microsoft.Practices.Unity.Interception.Configuration.xml" />
+    <Content Include="bin\Debug\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="bin\Debug\Microsoft.Practices.Unity.Interception.xml" />
+    <Content Include="bin\Release\EntityFramework.dll" />
+    <Content Include="bin\Release\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Release\FTZ.PlayAndAte.DAL.dll" />
+    <Content Include="bin\Release\FTZ.PlayAndAte.DAL.pdb" />
+    <Content Include="bin\Release\FTZ.PlayAndAte.Models.dll" />
+    <Content Include="bin\Release\FTZ.PlayAndAte.Models.pdb" />
+    <Content Include="bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.pdb" />
+    <Content Include="bin\Release\Microsoft.Practices.EnterpriseLibrary.Common.xml" />
+    <Content Include="bin\Release\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll" />
+    <Content Include="bin\Release\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll" />
+    <Content Include="bin\Release\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="bin\Release\Microsoft.Practices.Unity.Configuration.dll" />
+    <Content Include="bin\Release\Microsoft.Practices.Unity.dll" />
+    <Content Include="bin\Release\Microsoft.Practices.Unity.Interception.Configuration.dll" />
+    <Content Include="bin\Release\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="bin\Release\Microsoft.Practices.Unity.pdb" />
+    <Content Include="obj\Debug\FTZ.PlayAndAte.DAL.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\TempPE\Models.Context.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Models.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Models.Designer.cs.dll" />
+    <Content Include="obj\Release\FTZ.PlayAndAte.DAL.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Release\FTZ.PlayAndAte.DAL.dll" />
+    <Content Include="obj\Release\FTZ.PlayAndAte.DAL.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\de\" />
+    <Folder Include="bin\Debug\es\" />
+    <Folder Include="bin\Debug\fr\" />
+    <Folder Include="bin\Debug\it\" />
+    <Folder Include="bin\Debug\ja\" />
+    <Folder Include="bin\Debug\ko\" />
+    <Folder Include="bin\Debug\ru\" />
+    <Folder Include="bin\Debug\zh-Hans\" />
+    <Folder Include="bin\Debug\zh-Hant\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FTZ.PlayAndAte.Models\FTZ.PlayAndAte.Models.csproj">
@@ -95,6 +168,5 @@
       <Name>FTZ.PlayAndAte.Models</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
