@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FTZ.PlayAndAte.Models.PlayAndAteEntities" Collapsed="true">
+    <Position X="6.75" Y="1.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>BAECAAAgAAAIgAQIAAAAAAAAEAgAABAAAAAAEQgAAAA=</HashCode>
+      <FileName>Models.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.Area">
+    <Position X="0.5" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAEAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Area.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.CardType" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAABAgAAAAAAAAAAA=</HashCode>
+      <FileName>CardType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.Contacts" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAEAEAQAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Contacts.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.Customers" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAQAAAAIAAAAAAQAIAgAABAAAAAAIAAAAAA=</HashCode>
+      <FileName>Customers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.Image" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAAAAAAAAAAAAAAAAAAAABAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Image.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.Order" Collapsed="true">
+    <Position X="3.75" Y="1.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>FAACAAAAAAAAABQIAABAAAwAAgAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.OrderItem" Collapsed="true">
+    <Position X="5.25" Y="2" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>EAEAAAAAAAAAAAAAAAAAAAAAAAQAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>OrderItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.Point" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAAEAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Point.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.PPointsType" Collapsed="true">
+    <Position X="2.25" Y="2.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>PPointsType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.Product" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>EAECAAAAAAAAgAQAAAAAgAgAAAAAABAAIAAACQgIAgA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.PTotalType" Collapsed="true">
+    <Position X="5.75" Y="2.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>PTotalType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.Role_UserInfo" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Role_UserInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.Sincerity" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAgAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sincerity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.sysdiagrams" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAIAAAAAAAAAAAAAAAQAAAFAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>sysdiagrams.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FTZ.PlayAndAte.Models.UserInfo_Role" Collapsed="true">
+    <Position X="5.75" Y="3.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAECAAIgACAIAAAAAAAAAAgAAAAAAAACAYEAIAAAAAA=</HashCode>
+      <FileName>UserInfo_Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
