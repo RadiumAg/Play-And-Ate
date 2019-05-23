@@ -67,7 +67,7 @@
                             else
                             { %>
                         <span class="f_l">你好<%=userName %>，欢迎光临Play And Ate</span>
-                        <span><a href="javascript:void(0)" id="singOut" >退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>|
+                        <span><a href="javascript:void(0)" id="singOut" >退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>
                         <span class="person-imformation"><a href="../Personage/Personage.aspx">个人信息</a></span>
                         <%} %>
                     </div>
@@ -101,6 +101,27 @@
                                         }
                                         sousuo_btn.href = "../Search/Search.aspx?content=" + input.value;
                                     }
+                                });
+                            </script>
+                            <script>
+                                $(function () {
+                                    $("#singOut").click(function () {
+                                        $.ajax({
+                                            url: '../Services/Main.ashx?id=5',
+                                            type: 'POST',
+                                            dataType: 'json',
+                                            success: function (data) {
+                                                console.log(data);
+                                                if (data) {
+                                                    location.reload();
+                                                } else {
+                                                    alert("发生错误，退出失败！");
+                                                }
+                                            }
+
+                                        });
+
+                                    });
                                 });
                             </script>
                             <script>
@@ -208,7 +229,7 @@
                             <a id="sousuo_btn" class="search_btn_ss">搜索</a>
                             <script>
                                 $("#sousuo_btn").click(function () {
-                                    window.open("/Search/Search.aspx?content=" + $("#header_kw").val(),"_Self");
+                                    window.open("/Search/Search.aspx?content=" + $("#header_kw").val(), "_Self");
                                 });
                             </script>
                         </div>
