@@ -10,6 +10,11 @@ namespace FTZ.PlayAndAte.DAL
     public class OrderServices
     {
 
+        /// <summary>
+        /// 删除指定订单
+        /// </summary>
+        /// <param name="order">订单实体</param>
+        /// <returns>是否删除成功</returns>
         public static bool DeleteOrderData(Order order)
         {
             try
@@ -73,6 +78,25 @@ namespace FTZ.PlayAndAte.DAL
         }
 
         /// <summary>
+        /// 显示用户的订单
+        /// </summary>
+        /// <typeparam name="T">泛型标识</typeparam>
+        /// <param name="t">泛型参数</param>
+        /// <returns>订单表</returns>
+        public static List<Order> ShowOrderData<T>(T t)
+        {
+            using (PlayAndAteEntities entities = new PlayAndAteEntities())
+            {
+                entities.Configuration.LazyLoadingEnabled = false;
+                List<Order> result = entities.Order
+                                    .Include("Contacts")
+                                    .Where(x => x.UserInfo_Role.UserName == t.ToString())
+                                    .ToList();
+                return result;
+            }
+        }
+
+        /// <summary>
         /// 根据商户名查询商户的订单
         /// </summary>
         /// <param name="UserName">商户名</param>
@@ -86,9 +110,10 @@ namespace FTZ.PlayAndAte.DAL
                     entities.Configuration.LazyLoadingEnabled = false;//关闭延迟加载
                     List<Order> result = new List<Order>();
                     var productIdList = entities.Product
-                                                    .Include("UserInfo_Role")
-                                                    .Where(x => x.UserInfo_Role.UserName == UserName)
-                                                    .Select(x => x.ProductId);
+                                                .Include("UserInfo_Role")
+                                                .Where(x => x.UserInfo_Role.UserName == UserName)
+                                                .Select(x => x.ProductId)
+                                                .ToList();
                     foreach (int id in productIdList)
                     {
                         var data = entities.Order
