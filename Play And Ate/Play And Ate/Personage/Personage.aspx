@@ -7,23 +7,17 @@
     <script src="../Scripts/Personage/hm.js"></script>
     <script src="../Scripts/Personage/analytics.js"></script>
     <script src="../Scripts/Personage/bdctrace-pc.js"></script>
-    <link rel="stylesheet" href="../Content/Personage/index.php">
     <link rel="stylesheet" href="../Content/Personage/newmember.css&amp;v=051610">
-<link rel="stylesheet" href="../Content/Personage/index(1).php">
-<link href="../Content/Personage/header-air.css" rel="stylesheet">
-<link href="../Content/Personage/ui-lvmama.css" rel="stylesheet">
-<link href="../Content/Personage/ui-components.css" rel="stylesheet">
-<link href="../Content/Personage/lv-bought.css" rel="stylesheet">
-<link rel="stylesheet" href="../Content/Personage/global_pop.css">
-<link href="../Content/Personage/ui-components(1).css" rel="stylesheet">
-<link rel="stylesheet" href="../Content/Personage/index(2).php">
-<link rel="stylesheet" href="../Content/Personage/newmember.css">
-<link rel="stylesheet" href="../Content/Personage/index(3).php">
-<link rel="stylesheet" href="../Content/Personage/newcommon.css">
-<link rel="stylesheet" href="../Content/Personage/integral.css">
-<script src="../Content/Personage/index(4).php"></script>
-<script src="../Content/Personage/index(5).php"></script>
-<script src="../Content/Personage/lvmember.js"></script>
+    <link href="../Content/Personage/header-air.css" rel="stylesheet">
+    <link href="../Content/Personage/ui-lvmama.css" rel="stylesheet">
+    <link href="../Content/Personage/ui-components.css" rel="stylesheet">
+    <link href="../Content/Personage/lv-bought.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Content/Personage/global_pop.css">
+    <link href="../Content/Personage/ui-components(1).css" rel="stylesheet">
+    <link rel="stylesheet" href="../Content/Personage/newmember.css">
+    <link rel="stylesheet" href="../Content/Personage/newcommon.css">
+    <link rel="stylesheet" href="../Content/Personage/integral.css">
+    <script src="../Content/Personage/lvmember.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <!---会员中心导航--->
@@ -67,33 +61,34 @@
 <script type="text/javascript" src="../Scripts/Personage/jQuerySuperScript.js"></script>
 <!-- 无搜索版，公共头部结束 --><!---会员中心导航开始--->
 
-<!---会员中心导航结束--->
-<!---账户安全主体部分--->
-<div class="newmember_main">
-    <div class="newmember_leftside">
-        <dl>
-		<dt><i class="per_icon"></i>个人资料<i class="downarr"></i></dt>
-		<dd><a href="../Personage/Personage.aspx" id="lvnav_perinfo">个人信息</a></dd>
-	</dl>
-	<dl>
-		<dt><i class="safe_icon"></i>账户安全<i class="downarr"></i></dt>
-		<dd>
-			<a href="#" id="lvnav_safeset">安全设置</a>
-			<a href="#" id="lvnav_passwd">修改登录密码</a>
-            <a href="#" id="lvnav_logout">注销用户</a>
-		</dd>
-	</dl>
-	<dl>
-		<dt><i class="info_icon"></i>个人订单<i class="downarr"></i></dt>
-		<dd><a href="../Personage/Order.aspx" id="lvnav_tourinfo">个人订单</a></dd>
-	</dl>
-	
-</div><!-- 会员中心左边菜单部分 -->
-    <div class="newmember_rightside">
-        <div class="mod_box">
-            <div class="mod_content p20_4">
-                <div class="password_edit_title">
-                    <span class="password-bar-box"><i class="vip-tip-icon"></i>这里是你的个人信息(*^▽^*)！</span>
+    <!---会员中心导航结束--->
+    <!---账户安全主体部分--->
+    <div class="newmember_main">
+        <div class="newmember_leftside">
+            <dl>
+                <dt><i class="per_icon"></i>个人资料<i class="downarr"></i></dt>
+                <dd><a href="#" id="lvnav_perinfo">个人信息</a></dd>
+            </dl>
+            <dl>
+                <dt><i class="safe_icon"></i>账户安全<i class="downarr"></i></dt>
+                <dd>
+                    <a href="#" id="lvnav_safeset">安全设置</a>
+                    <a href="#" id="lvnav_passwd">修改登录密码</a>
+                    <a href="#" id="lvnav_logout">注销用户</a>
+                </dd>
+            </dl>
+            <dl>
+                <dt><i class="info_icon"></i>个人订单<i class="downarr"></i></dt>
+                <dd><a href="Order.aspx" id="lvnav_tourinfo">个人订单</a></dd>
+            </dl>
+
+        </div>
+        <!-- 会员中心左边菜单部分 -->
+        <div class="newmember_rightside">
+            <div class="mod_box">
+                <div class="mod_content p20_4">
+                    <div class="password_edit_title">
+                        <span class="password-bar-box"><i class="vip-tip-icon"></i>这里是你的个人信息(*^▽^*)！</span>
 
                 </div>
                 <div class="per_info_content clearfix">

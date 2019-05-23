@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Promotion.aspx.cs" Inherits="Play_And_Ate.Promotion.Promotion" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
     <link href="../Content/Promotion/cityquery.css" rel="stylesheet" />
     <link href="../Content/Promotion/datepicker(1).css" rel="stylesheet" />
