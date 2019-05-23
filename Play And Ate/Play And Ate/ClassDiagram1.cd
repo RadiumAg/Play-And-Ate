@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Play_And_Ate.Admin.Backstage" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAIAAAA=</HashCode>
+      <FileName>Admin\Backstage.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Order.App_Code.XddpayConfig" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAACAAAEAAAABAAAAAQAAAAEAAAABAAAAAAA=</HashCode>
+      <FileName>App_Code\XddpayConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Order.App_Code.XddpayFunction" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>App_Code\XddpayFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Order.App_Code.XddpayResponse" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAIAAAAAAAAAQAAAAAAEABQAAAAAAAAAAAACAEAA=</HashCode>
+      <FileName>App_Code\XddpayResponse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Order.App_Code.XddpayService" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAIAAAAAAAAAAQABAAA=</HashCode>
+      <FileName>App_Code\XddpayService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Cart.Cart" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Cart\Cart.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Helper.Authentication" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAgAAQAAAAAAAAAAEAAAAAAAAAAgAIAAAAAAA=</HashCode>
+      <FileName>Helper\Authentication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Helper.OrderMessage" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper\OrderMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Helper.PreventLink" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Helper\PreventLink.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Play_And_Ate.Helper.SMSinterface" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAKAAAAAIAAAAAAA=</HashCode>
+      <FileName>Helper\SMSinterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Helper.UrlRewriteModule" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAIAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Helper\UrlRewriteModule.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Play_And_Ate.Helper.UrlWrite" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAIAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Helper\UrlWrite.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Play_And_Ate.Home.Home" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAIAAAAQGAAAAAAABACQEAAAAAAACCAAAHIAAgA=</HashCode>
+      <FileName>Home\Home.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Index" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Index.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Line.Line1" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAABAAIAACAAAAEQBAAAAAAACQAAADAAMAAAIAgAA=</HashCode>
+      <FileName>Line\Line1.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Line.LineDetail1" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAABAAAAAAAAAAAgEABAAAAAAgAAAAAAAIAAAA=</HashCode>
+      <FileName>Line\LineDetail1.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.LoginAndRegister.Login" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>LoginAndRegister\Login.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.LoginAndRegister.Register" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>LoginAndRegister\Register.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Map.Map" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Map\Map.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Order.Order" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Order\Order.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Order.Order_2" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAQAAAAAABAQAAAAAAAAAABAAAAgAABIEABA=</HashCode>
+      <FileName>Order\Order_2.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Order.Order_3" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAgAIEAAAAAAABBAAAAAAAAAABQABAAAAAAIAAEE=</HashCode>
+      <FileName>Order\Order_3.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Order.Order_4" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAICAAAAAAAAABAAAAAAAAQAAAAAAgAAIAAAA=</HashCode>
+      <FileName>Order\Order_4.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Order.Order_5" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAQ=</HashCode>
+      <FileName>Order\Order_5.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Order.PayTo" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEBAAAAAAAAAAAAAAAAAAIAIAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Order\PayTo.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Personage.Order" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Personage\Order.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Personage.Personage" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Personage\Personage.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Products.Ecological" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAIAAAAAAAAAAAAAACAAIAAAA=</HashCode>
+      <FileName>Products\Ecological.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Products.Farm" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAABAEAAAAAAAIAAAAAAEAAAAAAAACAIAAAA=</HashCode>
+      <FileName>Products\Farm.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Products.Fishing" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAACAAAAAAIAAAABAAIAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Products\Fishing.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Products.Generated" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAICAAAAAABAECAAAAIAIAAAA=</HashCode>
+      <FileName>Products\Generated.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Promotion.Promotion">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Promotion\Promotion.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Search.Search" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEEAAAAAAAAAAAAAAgAAAAAIAQAQAAAIAAAA=</HashCode>
+      <FileName>Search\Search.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Services.Main" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAABgARAAkAAFAAAAAAAAADAAAAAAAEAABAAAA=</HashCode>
+      <FileName>Services\Main.ashx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Play_And_Ate.Services.OrderService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAABAAAAAAAABAAAAAAAAEAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\OrderService.ashx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Play_And_Ate.Shared.Header" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAgAAAAAAAAAAAAAAIAAAAAAABAAAAAMEAAA=</HashCode>
+      <FileName>Shared\Main.Master.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Show.FarmDetails" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Show\FarmDetails.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Show.FarmRow" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Show\FarmRow.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play_And_Ate.Special_topic.Special_topic" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Special topic\Special topic.aspx.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
