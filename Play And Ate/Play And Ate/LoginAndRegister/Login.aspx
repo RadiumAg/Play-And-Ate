@@ -143,8 +143,12 @@
                                 <img src="../Images/LoginAndRegister/52a1881254edd.png" alt="用微博登陆" /></a>&nbsp;</span><div class="blank10"></div>
                             <span id="api_Qqv2_1">
                                 <a href="#" title="用QQ账号登陆"  onclick="toLogin" id="QQLogin">
-                                <img src="../Images/LoginAndRegister/52d0f08581839.png" alt="用QQ账号登陆" /></a>&nbsp;</span><div class="blank10" />
-                        </div>
+                                <img src="../Images/LoginAndRegister/52d0f08581839.png" alt="用QQ账号登陆" /></a>&nbsp;</span><div class="blank10" /></div>
+                        <script>
+                            QC.Login({//按默认样式插入QQ登录按钮
+                                btnId: "QQLogin"	//插入按钮的节点id
+                            });
+                        </script>
                         <span id="api_Wechat_0"><a title="用微信登陆" href="#">
                             <img alt="用微信登陆" src="../Images/LoginAndRegister/wechat.png" /></a>&nbsp;</span>
                     </div>

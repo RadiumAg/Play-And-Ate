@@ -1,31 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Play_And_Ate.Home.Home" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
+<asp:Content ID="Header" ContentPlaceHolderID="Style" runat="server">
     <script type="text/javascript" charset="utf-8"
         src="http://connect.qq.com/qc_jssdk.js"
         data-appid="101574283"
         data-redirecturi="http://www.playandate.club/LoginAndRegister/ordinary.html">
-    </script>
-    <script>
-        //从页面收集OpenAPI必要的参数。get_user_info不需要输入参数，因此paras中没有参数
-        var paras = {};
-        //用JS SDK调用OpenAPI
-        QC.api("get_user_info")
-            //指定接口访问成功的接受函数，s为成功返回Response对象
-            .success(function (s) {
-                //成功回调，通过s.data获取OpenAPI的返回数
-                console.log(s.data.nickname);
-            })
-            //指定接口访问失败的接收函数，f为失败返回的Response对象
-            .error(function (f) {
-                //调用失败
-                alert("调用用户信息失败")
-            })
-            //指定接口完成请求后的接收函数，c为完成请求返回Response对象
-            .complete(function (c) {
-                //完成请求回调
-                alet("获取用户信息完成！")
-            })
     </script>
     <link href="../Content/Shared/style.css" rel="stylesheet" />
     <script src="../Scripts/Home/main_store.js"></script>
@@ -48,6 +27,27 @@
         var CART_CHECK_URL = '/cart-check';
         var LOADER_IMG = '../Images/Home/lazy_loading.gif';
         var ERROR_IMG = '../Images/Home/image_err.gif';
+    </script>
+    <script>
+        //从页面收集OpenAPI必要的参数。get_user_info不需要输入参数，因此paras中没有参数
+        var paras = {};
+        //用JS SDK调用OpenAPI
+        QC.api("get_user_info", paras)
+            //指定接口访问成功的接受函数，s为成功返回Response对象
+            .success(function (s) {
+                //成功回调，通过s.data获取OpenAPI的返回数
+                alert(s.data.nickname + "");
+            })
+            //指定接口访问失败的接收函数，f为失败返回的Response对象
+            .error(function (f) {
+                //调用失败
+                alert("调用用户信息失败")
+            })
+            //指定接口完成请求后的接收函数，c为完成请求返回Response对象
+            .complete(function (c) {
+                //完成请求回调
+                alet("获取用户信息完成！")
+            })
     </script>
     <script type="text/javascript">
         //首先用JQ判断浏览器类型及版本，如果是IE8以下的浏览器就用effect=show，否则就用effect=fadeIn，判断浏览器版本函数如下
