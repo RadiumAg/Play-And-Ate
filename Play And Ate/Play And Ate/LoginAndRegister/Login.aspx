@@ -11,17 +11,22 @@
     <script src="../Scripts/LoginAndRegister/Login/lang.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/mt3.v1014201036.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/sousuo.js"></script>
+    <script type="text/javascript" charset="utf-8"
+        src="http://connect.qq.com/qc_jssdk.js"
+        data-appid="101574283"
+        data-redirecturi="http://www.playandate.club/LoginAndRegister/ordinary.html">
+    </script>
     <style>
         #discode {
             padding: 0px;
             margin: 0px;
-            text-align:center;
+            text-align: center;
             border: 1px solid gray;
             display: inline-block;
             height: 35px;
             line-height: 35px;
-            cursor:pointer;
-            margin-left:10px;
+            cursor: pointer;
+            margin-left: 10px;
         }
     </style>
 </asp:Content>
@@ -45,11 +50,11 @@
 
                         <div class="field email">
                             <label for="login-email-address">Email/手机</label>
-                            <input type="text" value="" class="f-input ipttxt" id="login-email-address" name="email" size="30" tabindex="1"/>
+                            <input type="text" value="" class="f-input ipttxt" id="login-email-address" name="email" size="30" tabindex="1" />
                         </div>
                         <div class="field password">
                             <label for="login-password">密码</label>
-                            <input type="password" value="" class="f-input ipttxt" id="login-password" name="user_pwd" size="30" tabindex="2"/>
+                            <input type="password" value="" class="f-input ipttxt" id="login-password" name="user_pwd" size="30" tabindex="2" />
                             <span class="lostpassword">&nbsp;&nbsp;<a href="#">忘记密码?</a></span>
                         </div>
                         <div class="field autologin">
@@ -59,13 +64,13 @@
                             </div>
                         </div>
                         <div class="field autologin">
-                            <input type="checkbox" id="autologin" name="auto_login"/>下次自动登录？									
+                            <input type="checkbox" id="autologin" name="auto_login" />下次自动登录？									
                         </div>
                         <div class="clear"></div>
 
                         <div class="act">
-                            <input type="hidden" name="ajax" value="1"/>
-                            <input type="submit" class="login-submit-btn" id="user-login-submit" name="commit" value="登录"/>
+                            <input type="hidden" name="ajax" value="1" />
+                            <input type="submit" class="login-submit-btn" id="user-login-submit" name="commit" value="登录" />
                             <script>
                                 createCode();
                                 var code; //在全局 定义验证码
@@ -133,12 +138,15 @@
                         <h3>合作网站账号登录</h3>
                         <div class="blank10"></div>
                         <div class="blank10"></div>
-                        <span id="api_Sina_1"><a href="#" title="用微博登陆">
-                            <img src="../Images/LoginAndRegister/52a1881254edd.png" alt="用微博登陆"></a>&nbsp;</span><div class="blank10"></div>
-                        <span id="api_Qqv2_1"><a href="#" title="用QQ账号登陆">
-                            <img src="../Images/LoginAndRegister/52d0f08581839.png" alt="用QQ账号登陆"></a>&nbsp;</span><div class="blank10"></div>
+                        <div>
+                            <span id="api_Sina_1"><a href="#" title="用微博登陆">
+                                <img src="../Images/LoginAndRegister/52a1881254edd.png" alt="用微博登陆" /></a>&nbsp;</span><div class="blank10"></div>
+                            <span id="api_Qqv2_1">
+                                <a href="#" title="用QQ账号登陆"  onclick="toLogin" id="QQLogin">
+                                <img src="../Images/LoginAndRegister/52d0f08581839.png" alt="用QQ账号登陆" /></a>&nbsp;</span><div class="blank10" />
+                        </div>
                         <span id="api_Wechat_0"><a title="用微信登陆" href="#">
-                            <img alt="用微信登陆" src="../Images/LoginAndRegister/wechat.png"></a>&nbsp;</span>
+                            <img alt="用微信登陆" src="../Images/LoginAndRegister/wechat.png" /></a>&nbsp;</span>
                     </div>
                 </div>
                 <div id="gotop" style="display: none;"></div>

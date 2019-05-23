@@ -125,7 +125,6 @@
     <Content Include="Content\Personage\lv-bought.css" />
     <Content Include="Content\Personage\newcommon.css" />
     <Content Include="Content\Personage\newmember.css" />
-    <Content Include="Content\Personage\ui-components%281%29.css" />
     <Content Include="Content\Personage\ui-components.css" />
     <Content Include="Content\Personage\ui-lvmama.css" />
     <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
@@ -1129,6 +1128,15 @@
     <Content Include="Plugin\public\swiper\src\js\wrap-start-umd.js" />
     <Content Include="Plugin\public\swiper\src\js\wrap-start.js" />
     <Content Include="Plugin\public\swiper\src\js\zoom.js" />
+    <Content Include="Plugin\qq_connenct_demo\.gitignore" />
+    <Content Include="Plugin\qq_connenct_demo\index.js" />
+    <Content Include="Plugin\qq_connenct_demo\routes\authorize.js" />
+    <Content Include="Plugin\qq_connenct_demo\static\images\Connect_logo_5.png" />
+    <Content Include="Plugin\qq_connenct_demo\static\js\common.js" />
+    <Content Include="Plugin\qq_connenct_demo\static\js\home.js" />
+    <Content Include="Plugin\qq_connenct_demo\static\js\jquery.min.js" />
+    <Content Include="Plugin\qq_connenct_demo\static\js\login.js" />
+    <Content Include="Plugin\qq_connenct_demo\static\js\proxy.js" />
     <Content Include="Products\Ecological.aspx" />
     <Content Include="Products\Ecological\1.html" />
     <Content Include="Products\Ecological\2.html" />
@@ -1533,6 +1541,13 @@
     <Content Include="Plugin\public\swiper\src\less\zoom.less" />
     <Content Include="Plugin\jqzoom\images\Thumbs.db" />
     <Content Include="Plugin\jqzoom\README.md" />
+    <Content Include="Plugin\qq_connenct_demo\package-lock.json" />
+    <Content Include="Plugin\qq_connenct_demo\package.json" />
+    <Content Include="Plugin\qq_connenct_demo\README.md" />
+    <Content Include="Plugin\qq_connenct_demo\views\home.pug" />
+    <Content Include="Plugin\qq_connenct_demo\views\layout.pug" />
+    <Content Include="Plugin\qq_connenct_demo\views\login.pug" />
+    <Content Include="Plugin\qq_connenct_demo\views\proxy.pug" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Services\OrderService.ashx" />
     <None Include="Web.Debug.config">
