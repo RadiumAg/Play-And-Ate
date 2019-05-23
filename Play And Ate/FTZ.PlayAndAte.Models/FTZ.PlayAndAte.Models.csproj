@@ -118,6 +118,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Models.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Models.edmx.diagram">
       <DependentUpon>Models.edmx</DependentUpon>
     </None>
