@@ -67,11 +67,9 @@
                             else
                             { %>
                         <span class="f_l">你好<%=userName %>，欢迎光临Play And Ate</span>
-                        <span><a href="javascript:void(0)" id="singOut" >退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>
-                        <span class="person-imformation"><a href="../Personage/Personage.aspx">个人信息</a></span>
-                        <%} %>
+                        <span><a href="javascript:void(0)" id="singOut">退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>
                         <a href="../Personage/Order.aspx">❤个人信息❤</a>
-
+                        <%} %>
                         <script>
                             $(function () {
                                 $("#singOut").click(function () {
@@ -313,10 +311,10 @@
 					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">商家登录</a>
 				</div>
 				<div class="blank"></div>
-				<div class="beian" align="center">版权所有：Play-And-Ate <a href="#"
-						target="_blank">浙ICP备 19020300号-1</a> 电话：400-021-3158 邮箱：527505931@qq.com </div>
+				<div class="beian" align="center">版权所有：Play-And-Ate <a href="http://www.beian.miit.gov.cn/" target="_blank">浙ICP备 19020300号-1</a> 电话：400-021-3158 邮箱：527505931@qq.com </div>
 				<div align="center" class="beian_eng">
-					Copyright 2019 PlayAndAte.club All Rights Reserved.</div>
+					Copyright 2019 PlayAndAte.club All Rights Reserved.
+				</div>
                </div>
             <asp:ContentPlaceHolder ID="Footer" runat="server" />
         </div>

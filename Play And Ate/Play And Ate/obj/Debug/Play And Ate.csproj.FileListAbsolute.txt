@@ -110,3 +110,11 @@ C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.dll.
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\XddPay.pdb
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\Microsoft.Practices.ServiceLocation.xml
 C:\Users\fanji\Desktop\新\Play And Ate\Play And Ate\bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\AspNetPager.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Data.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\AspNetPager.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.Practices.EnterpriseLibrary.Data.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\en\AspNetPager.resources.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\zh-CHT\AspNetPager.resources.dll
