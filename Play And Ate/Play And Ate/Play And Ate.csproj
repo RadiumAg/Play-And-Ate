@@ -125,7 +125,6 @@
     <Content Include="Content\Personage\lv-bought.css" />
     <Content Include="Content\Personage\newcommon.css" />
     <Content Include="Content\Personage\newmember.css" />
-    <Content Include="Content\Personage\ui-components%281%29.css" />
     <Content Include="Content\Personage\ui-components.css" />
     <Content Include="Content\Personage\ui-lvmama.css" />
     <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
