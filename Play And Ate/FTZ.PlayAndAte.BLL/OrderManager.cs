@@ -12,11 +12,23 @@ namespace FTZ.PlayAndAte.BLL
     {
 
         /// <summary>
+        /// 返回指定用户的订单
+        /// </summary>
+        /// <typeparam name="T">泛型标志</typeparam>
+        /// <param name="t">参数</param>
+        /// <returns>订单实体</returns>
+        public static List<Order> ShowOrder<T>(T t)
+        {
+            return OrderServices.ShowOrderData<T>(t);
+        }
+
+        /// <summary>
         /// 删除
         /// </summary>
         /// <param name="order"></param>
         /// <returns></returns>
-        public static bool DeleteOrder(Order order) {
+        public static bool DeleteOrder(Order order)
+        {
             return OrderServices.DeleteOrderData(order);
         }
 

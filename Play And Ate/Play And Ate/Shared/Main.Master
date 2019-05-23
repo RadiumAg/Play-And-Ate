@@ -1,7 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="Play_And_Ate.Shared.Header" %>
 
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -41,6 +40,13 @@
         .none {
             display: none;
         }
+
+        .person-imformation {
+            float: left;
+            margin-left: 10px;
+            color: red;
+            font-weight: bolder;
+        }
     </style>
     <asp:ContentPlaceHolder ID="Style" runat="server" />
 </head>
@@ -61,10 +67,9 @@
                             else
                             { %>
                         <span class="f_l">你好<%=userName %>，欢迎光临Play And Ate</span>
-                        <span><a href="javascript:void(0)" id="singOut" >退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>
-                        <%} %>
+                        <span><a href="javascript:void(0)" id="singOut">退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>
                         <a href="../Personage/Order.aspx">❤个人信息❤</a>
-
+                        <%} %>
                         <script>
                             $(function () {
                                 $("#singOut").click(function () {
@@ -115,6 +120,27 @@
                                         }
                                         sousuo_btn.href = "../Search/Search.aspx?content=" + input.value;
                                     }
+                                });
+                            </script>
+                            <script>
+                                $(function () {
+                                    $("#singOut").click(function () {
+                                        $.ajax({
+                                            url: '../Services/Main.ashx?id=5',
+                                            type: 'POST',
+                                            dataType: 'json',
+                                            success: function (data) {
+                                                console.log(data);
+                                                if (data) {
+                                                    location.reload();
+                                                } else {
+                                                    alert("发生错误，退出失败！");
+                                                }
+                                            }
+
+                                        });
+
+                                    });
                                 });
                             </script>
                             <script>
@@ -222,7 +248,7 @@
                             <a id="sousuo_btn" class="search_btn_ss">搜索</a>
                             <script>
                                 $("#sousuo_btn").click(function () {
-                                    window.open("/Search/Search.aspx?Keyword=" + $("#header_kw").val());
+                                    window.open("/Search/Search.aspx?content=" + $("#header_kw").val(), "_Self");
                                 });
                             </script>
                         </div>
@@ -285,10 +311,10 @@
 					&nbsp;&nbsp;-&nbsp;&nbsp;<a href="#" target="_blank">商家登录</a>
 				</div>
 				<div class="blank"></div>
-				<div class="beian" align="center">版权所有：Play-And-Ate <a href="#"
-						target="_blank">浙ICP备 19020300号-1</a> 电话：400-021-3158 邮箱：527505931@qq.com </div>
+				<div class="beian" align="center">版权所有：Play-And-Ate <a href="http://www.beian.miit.gov.cn/" target="_blank">浙ICP备 19020300号-1</a> 电话：400-021-3158 邮箱：527505931@qq.com </div>
 				<div align="center" class="beian_eng">
-					Copyright 2019 PlayAndAte.club All Rights Reserved.</div>
+					Copyright 2019 PlayAndAte.club All Rights Reserved.
+				</div>
                </div>
             <asp:ContentPlaceHolder ID="Footer" runat="server" />
         </div>

@@ -25,7 +25,19 @@ namespace Play_And_Ate.Services
                 case "1":
                     Delete();
                     break;
+                case "2":
+                    ShowOrderData();
+                    break;
             }
+        }
+
+        /// <summary>
+        /// 显示指定用户的订单
+        /// </summary>
+        public void ShowOrderData()
+        {
+            string userName = this.context.Request["UserName"].ToString();
+            this.context.Response.Write(JsonConvert.SerializeObject(OrderManager.ShowOrder<string>(userName).Select(x=> new {x.OrderId, x.Contacts.ContactsName,x.OrderName,x.Success,x.OrderPrice })));
         }
 
         /// <summary>
