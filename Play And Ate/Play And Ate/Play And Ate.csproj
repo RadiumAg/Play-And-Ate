@@ -1108,23 +1108,12 @@
     <Content Include="Plugin\public\swiper\src\js\wrap-start.js" />
     <Content Include="Plugin\public\swiper\src\js\zoom.js" />
     <Content Include="Products\Ecological.aspx" />
-    <Content Include="Products\Ecological.html" />
     <Content Include="Products\Ecological\1.html" />
     <Content Include="Products\Ecological\2.html" />
     <Content Include="Products\Farm.aspx" />
     <Content Include="Products\Fishing.aspx" />
-    <Content Include="Products\Fishing.html" />
     <Content Include="Products\Generated.aspx" />
-    <Content Include="Products\Generated.html" />
     <Content Include="Promotion\Promotion.aspx" />
-    <Content Include="Scripts\Cart\908ca0ab9e4d27144b60bc878b237327.js" />
-    <Content Include="Scripts\Cart\baidumap.js" />
-    <Content Include="Scripts\Cart\c.js" />
-    <Content Include="Scripts\Cart\fgcomm.v620152248.js" />
-    <Content Include="Scripts\Cart\header.js" />
-    <Content Include="Scripts\Cart\index_header.js" />
-    <Content Include="Scripts\Cart\mt3.v1014201036.js" />
-    <Content Include="Scripts\Cart\sousuo.js" />
     <Content Include="Scripts\datagrid-detailview.js" />
     <Content Include="Scripts\easyloader.js" />
     <Content Include="Scripts\ECharts\chart\bar.js" />
@@ -1534,6 +1523,7 @@
   <ItemGroup>
     <Folder Include="Content\Home\" />
     <Folder Include="Propaganda\" />
+    <Folder Include="Scripts\Cart\" />
     <Folder Include="Scripts\Commond\" />
   </ItemGroup>
   <ItemGroup>
