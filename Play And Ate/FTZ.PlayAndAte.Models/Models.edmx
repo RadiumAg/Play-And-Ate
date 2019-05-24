@@ -146,6 +146,7 @@
           <Property Name="Phone" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="RoleId" Type="int" Nullable="false" />
           <Property Name="Pwd" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="OpenId" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <Association Name="FK_Customers_CardType">
           <End Role="CardType" Type="Self.CardType" Multiplicity="1" />
@@ -554,6 +555,7 @@
           <NavigationProperty Name="Product" Relationship="Self.FK_Product_UserInfo_Role" FromRole="UserInfo_Role" ToRole="Product" />
           <NavigationProperty Name="Role_UserInfo" Relationship="Self.FK_UserInfo_Role_Role_UserInfo" FromRole="UserInfo_Role" ToRole="Role_UserInfo" />
           <NavigationProperty Name="Sincerity" Relationship="Self.FK_Sincerity_UserInfo_Role" FromRole="UserInfo_Role" ToRole="Sincerity" />
+          <Property Name="OpenId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityType Name="Point">
           <Key>
@@ -946,6 +948,7 @@
           <EntitySetMapping Name="UserInfo_Role">
             <EntityTypeMapping TypeName="PlayAndAteModel.UserInfo_Role">
               <MappingFragment StoreEntitySet="UserInfo_Role">
+                <ScalarProperty Name="OpenId" ColumnName="OpenId" />
                 <ScalarProperty Name="UserId" ColumnName="UserId" />
                 <ScalarProperty Name="UserName" ColumnName="UserName" />
                 <ScalarProperty Name="Address" ColumnName="Address" />

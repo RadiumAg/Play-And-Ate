@@ -29,6 +29,7 @@ namespace FTZ.PlayAndAte.Models
         public string Phone { get; set; }
         public int RoleId { get; set; }
         public string Pwd { get; set; }
+        public string OpenId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Order { get; set; }

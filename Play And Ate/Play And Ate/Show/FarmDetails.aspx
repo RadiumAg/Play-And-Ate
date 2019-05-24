@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="农庄详情" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="FarmDetails.aspx.cs" Inherits="Play_And_Ate.Show.FarmDetails" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
     <link href="../Content/Show/FarmDetails/style.css" rel="stylesheet" />
     <link href="../Plugin/jqzoom/css/jquery.jqzoom.css" rel="stylesheet" />
@@ -6,9 +7,11 @@
         .zoomPad {
             z-index: unset;
         }
+
         .warps * {
             font-family: 微软雅黑;
         }
+
         .sd_img img {
             border: 1px solid gray;
             border-radius: 5px;
@@ -16,10 +19,10 @@
         }
     </style>
     <link href="../Content/Show/FarmDetails/baidu_map.css" rel="stylesheet" />
-            <link href="../Content/Show/FarmDetails/list.css" rel="stylesheet" />
-            <link href="../Content/Show/FarmDetails/review.css" rel="stylesheet" />
-            <script src="../Scripts/Show/FarmDetails/getscript.js"></script>
-          <link href="../Content/Show/FarmDetails/cityquery.css" rel="stylesheet" />
+    <link href="../Content/Show/FarmDetails/list.css" rel="stylesheet" />
+    <link href="../Content/Show/FarmDetails/review.css" rel="stylesheet" />
+    <script src="../Scripts/Show/FarmDetails/getscript.js"></script>
+    <link href="../Content/Show/FarmDetails/cityquery.css" rel="stylesheet" />
     <link href="../Content/Show/FarmDetails/main_huandeng.css" rel="stylesheet" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
@@ -188,8 +191,8 @@
             <script>
                 $(function () {
                     var jqname ="<%= this.product.ProductName %>";
-                        sessionStorage.setItem("jqname", jqname);
-                    })
+                    sessionStorage.setItem("jqname", jqname);
+                })
             </script>
         </div>
     </div>
