@@ -48,6 +48,9 @@
                             data: {
                                 OpenId: openId,
                                 AccessToken: accessToken,
+                                NickName: s.data.nickname,
+                                City: s.data.city,
+                                Province:s.data.province
                             },
                             success: function (data) {
                                 if (data) {
