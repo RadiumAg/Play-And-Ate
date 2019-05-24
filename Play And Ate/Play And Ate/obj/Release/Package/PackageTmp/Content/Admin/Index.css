@@ -1,0 +1,16 @@
+﻿#dialogForm{
+    padding: 10px;
+}
+
+
+#dialog p span {
+float:left;
+width:80px;
+}
+
+#dialog input {
+height:20px;
+width:150px;
+}
+
+

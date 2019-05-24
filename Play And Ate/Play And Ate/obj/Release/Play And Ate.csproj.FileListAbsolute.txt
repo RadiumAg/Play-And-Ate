@@ -1,0 +1,26 @@
+D:\项目\项目\Play And Ate\Play And Ate\bin\Play And Ate.dll.config
+D:\项目\项目\Play And Ate\Play And Ate\bin\Play And Ate.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\Play And Ate.pdb
+D:\项目\项目\Play And Ate\Play And Ate\bin\EntityFramework.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\EntityFramework.SqlServer.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.BLL.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.Models.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\Microsoft.QualityTools.Testing.Fakes.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\Newtonsoft.Json.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.BLL.pdb
+D:\项目\项目\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.Models.pdb
+D:\项目\项目\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.Models.dll.config
+D:\项目\项目\Play And Ate\Play And Ate\bin\EntityFramework.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\EntityFramework.SqlServer.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\Newtonsoft.Json.xml
+D:\项目\项目\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.pdb
+D:\项目\项目\Play And Ate\Play And Ate\bin\FTZ.PlayAndAte.DAL.dll.config
+D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\EntityFramework.resources.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\项目\项目\Play And Ate\Play And Ate\bin\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+D:\项目\项目\Play And Ate\Play And Ate\obj\Release\Play And Ate.csprojAssemblyReference.cache
+D:\项目\项目\Play And Ate\Play And Ate\obj\Release\Play And Ate.csproj.CoreCompileInputs.cache
+D:\项目\项目\Play And Ate\Play And Ate\obj\Release\Play And Ate.csproj.CopyComplete
+D:\项目\项目\Play And Ate\Play And Ate\obj\Release\Play And Ate.dll
+D:\项目\项目\Play And Ate\Play And Ate\obj\Release\Play And Ate.pdb

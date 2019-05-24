@@ -1,0 +1,31 @@
+﻿
+<div id="showData"></div>
+<script>
+    console.log("加载数据成功！");
+    $("#showData").datagrid({
+        url: '/Services/Main.ashx?id=2',
+        fit: true,
+        fitColumns: true,
+        type: "GET",
+        columns:
+            [[
+                { field: 'UserName', width: 20, title: '商户所有人', align: "center" },
+                { field: 'Address', width: 20, title: '所在区', align: "center" },
+                { field: 'Email', width: 20, title: '邮箱', align: "center" },
+                { field: 'QQ', width: 20, title: 'QQ', align: "center" },
+                { field: 'Phone', width: 20, title: '联系方式', align: "center" },
+                { field: 'Pwd', width: 30, title: '密码', align: "left" },
+                { field: 'Product', title: '产品', hidden: true }
+            ]],
+        view: detailview,
+        detailFormatter: function (rowIndex, rowData) {
+            let table = `<table style="width:100%;"><tr><td style="text-align:'center'">产品名称</td><td style="text-align:'center'">产品价格</td></tr>`;
+            $.each(rowData.Product, function (index, item) {
+                table = table + `<tr><td style="text-align:'center'">` + item.ProductName + `</td><td style="text-align:'center'">` + item.ProductPrice + `￥</td></tr>`;
+                console.log(table);
+            });
+            table = table + `</table>`;
+            return table;
+        },
+    });
+</script>
