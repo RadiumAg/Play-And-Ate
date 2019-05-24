@@ -11,11 +11,7 @@
     <script src="../Scripts/LoginAndRegister/Login/lang.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/mt3.v1014201036.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/sousuo.js"></script>
-    <script type="text/javascript" charset="utf-8"
-        src="http://connect.qq.com/qc_jssdk.js"
-        data-appid="101574283"
-        data-redirecturi="http://www.playandate.club/LoginAndRegister/ordinary.html">
-    </script>
+   
     <style>
         #discode {
             padding: 0px;
@@ -139,8 +135,6 @@
                         <div class="blank10"></div>
                         <div class="blank10"></div>
                         <div>
-                            <span id="api_Sina_1"><a href="#" title="用微博登陆">
-                                <img src="../Images/LoginAndRegister/52a1881254edd.png" alt="用微博登陆" /></a>&nbsp;</span><div class="blank10"></div>
                             <span id="api_Qqv2_1">
                                 <a href="#" title="用QQ账号登陆"  onclick="toLogin" id="QQLogin">
                                 <img src="../Images/LoginAndRegister/52d0f08581839.png" alt="用QQ账号登陆" /></a>&nbsp;</span><div class="blank10" /></div>
@@ -149,8 +143,6 @@
                                 btnId: "QQLogin"	//插入按钮的节点id
                             });
                         </script>
-                        <span id="api_Wechat_0"><a title="用微信登陆" href="#">
-                            <img alt="用微信登陆" src="../Images/LoginAndRegister/wechat.png" /></a>&nbsp;</span>
                     </div>
                 </div>
                 <div id="gotop" style="display: none;"></div>
@@ -159,6 +151,7 @@
                 </a>
             </div>
         </div>
+    </div>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">

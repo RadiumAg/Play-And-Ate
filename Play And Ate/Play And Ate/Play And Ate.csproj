@@ -563,6 +563,7 @@
     <Content Include="Images\LoginAndRegister\52a1881254edd.png" />
     <Content Include="Images\LoginAndRegister\52d0f08581839.png" />
     <Content Include="Images\LoginAndRegister\cs_dw.png" />
+    <Content Include="Images\LoginAndRegister\denglu.png" />
     <Content Include="Images\LoginAndRegister\end_2.gif" />
     <Content Include="Images\LoginAndRegister\end_3.gif" />
     <Content Include="Images\LoginAndRegister\icon.gif" />
@@ -834,21 +835,6 @@
     <Content Include="Plugin\jquery-3.3.1.slim.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.min.js" />
     <Content Include="Plugin\jqzoom\css\jquery.jqzoom.css" />
-    <Content Include="Plugin\jqzoom\demos\demo_alwayson.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_drag.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_innerzoom.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_resizeposition.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_reverse.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_standard.html" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\thumbs\triumph_thumb1.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\thumbs\triumph_thumb2.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\thumbs\triumph_thumb3.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_big1.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_big2.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_big3.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_small1.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_small2.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_small3.jpg" />
     <Content Include="Plugin\jqzoom\images\advertise.jpg" />
     <Content Include="Plugin\jqzoom\images\zoomloader.gif" />
     <Content Include="Plugin\jqzoom\js\jquery-1.5.js" />
@@ -1447,6 +1433,9 @@
     <Compile Include="Services\OrderService.ashx.cs">
       <DependentUpon>OrderService.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Services\QQLogin.ashx.cs">
+      <DependentUpon>QQLogin.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Shared\Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1532,6 +1521,7 @@
     <Content Include="Plugin\jqzoom\images\Thumbs.db" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Services\OrderService.ashx" />
+    <Content Include="Services\QQLogin.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

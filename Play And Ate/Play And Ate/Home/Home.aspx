@@ -36,17 +36,41 @@
             //指定接口访问成功的接受函数，s为成功返回Response对象
             .success(function (s) {
                 //成功回调，通过s.data获取OpenAPI的返回数
-                alert(s.data.nickname + "");
+                console.log(s);
+                if (QC.Login.check()) {
+                    QC.Login.getMe(function (openId, accessToken) {
+                        console.log(openId, accessToken);
+                        //向服务端发送信息
+                        $.ajax({
+                            url: '/Services/QQLogin.ashx?id=1',
+                            type: "GET",
+                            dataType: "JSON",
+                            data: {
+                                OpenId: openId,
+                                AccessToken: accessToken,
+                            },
+                            success: function (data) {
+                                if (data) {
+                                    console.log("通过QQ获取信息成功");
+                                    location.reload();
+                                }
+                            },
+                            error: function (data) {
+                                console.log(data);
+                            }
+                        });
+                    });
+                }
             })
             //指定接口访问失败的接收函数，f为失败返回的Response对象
             .error(function (f) {
                 //调用失败
-                alert("调用用户信息失败")
+                alert("调用用户信息失败");
             })
             //指定接口完成请求后的接收函数，c为完成请求返回Response对象
             .complete(function (c) {
                 //完成请求回调
-                alet("获取用户信息完成！")
+                console.log("获取用户信息完成！");
             })
     </script>
     <script type="text/javascript">
