@@ -88,18 +88,18 @@
                                         success: function (data) {
                                             console.log(data);
                                             if (data) {
-                                                location.reload();
+                                                window.open("http://47.101.216.14/Home/Home.aspx","_Self");
                                             } else {
                                                 alert("发生错误，退出失败！");
                                             }
                                         }
                                     });
-                                });
+                                })
                             });
                         </script>
                     </div>
-                    </div>
                 </div>
+           </div>
             <!--end top_nav-->
             <div class="header_box">
                 <div class="headerss">
@@ -131,28 +131,6 @@
                                 });
                             </script>
                             <script>
-                                $(function () {
-                                    $("#singOut").click(function () {
-                                        $.ajax({
-                                            url: '../Services/Main.ashx?id=5',
-                                            type: 'POST',
-                                            dataType: 'json',
-                                            success: function (data) {
-                                                console.log(data);
-                                                if (data) {
-                                                    location.reload();
-                                                } else {
-                                                    alert("发生错误，退出失败！");
-                                                }
-                                            }
-
-                                        });
-
-                                    });
-                                });
-                            </script>
-                            <script>
-
                                 function s(str) { return document.getElementById(str); }
                                 function ss(str) { return document.getElementsByTagName(str); }
                                 var timer;

@@ -11,7 +11,7 @@ namespace Play_And_Ate
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.Response.Redirect("LoginAndRegister/ordinary.html");
+            this.Response.Redirect("/Home/Home.aspx");
         }
     }
 }

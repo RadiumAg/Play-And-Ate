@@ -35,9 +35,9 @@ namespace FTZ.PlayAndAte.DAL
                 var result = from u in entities
                              .UserInfo_Role
                              .Include("Role_UserInfo")
-                             where (u.Phone == user.Phone && u.Pwd == user.Pwd) || (u.Email == user.Email && u.Pwd == user.Pwd)||(u.OpenId==user.OpenId)
+                             where (u.Phone == user.Phone && u.Pwd == user.Pwd) || (u.Email == user.Email && u.Pwd == user.Pwd) || (u.OpenId == user.OpenId && u.OpenId != null)
                              select u;
-                return result.SingleOrDefault();
+                return result.ToList().SingleOrDefault();
             }
         }
 
@@ -75,11 +75,13 @@ namespace FTZ.PlayAndAte.DAL
         /// </summary>
         /// <param name="user">用户实体</param>
         /// <returns>是否更新成功</returns>
-        public static bool UpdateUser(UserInfo_Role user) {
-            using (PlayAndAteEntities entities = new PlayAndAteEntities()) {
-                var data = entities.UserInfo_Role.Where(x=>x.Pwd == user.Pwd).FirstOrDefault();
+        public static bool UpdateUser(UserInfo_Role user)
+        {
+            using (PlayAndAteEntities entities = new PlayAndAteEntities())
+            {
+                var data = entities.UserInfo_Role.Where(x => x.Pwd == user.Pwd).FirstOrDefault();
                 data.Pwd = user.Pwd;
-                return entities.SaveChanges()>0;
+                return entities.SaveChanges() > 0;
             }
         }
 

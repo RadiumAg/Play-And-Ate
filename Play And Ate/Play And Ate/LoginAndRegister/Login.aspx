@@ -10,7 +10,6 @@
     <script src="../Scripts/LoginAndRegister/Login/index_header.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/lang.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/mt3.v1014201036.js"></script>
-    <script src="../Scripts/LoginAndRegister/Login/sousuo.js"></script>
    
     <style>
         #discode {
@@ -136,12 +135,18 @@
                         <div class="blank10"></div>
                         <div>
                             <span id="api_Qqv2_1">
-                                <a href="#" title="用QQ账号登陆"  onclick="toLogin" id="QQLogin">
-                                <img src="../Images/LoginAndRegister/52d0f08581839.png" alt="用QQ账号登陆" /></a>&nbsp;</span><div class="blank10" /></div>
+                                <a href="#" title="用QQ账号登陆" id="QQLogin">
+                                    <img src="../Images/LoginAndRegister/52d0f08581839.png" alt="用QQ账号登陆" onclick="QQLogin()" /></a>&nbsp;</span><div class="blank10" />
+                        </div>
                         <script>
-                            QC.Login({//按默认样式插入QQ登录按钮
-                                btnId: "QQLogin"	//插入按钮的节点id
-                            });
+                            function QQLogin() {
+                                QC.Login.showPopup({
+                                    appId: "101574283",
+                                    redirectURI: "http://www.playandate.club/LoginAndRegister/ordinary.html"
+                                });
+                                //关闭本窗口关闭本窗口
+                                open("", '_self').close();
+                            }
                         </script>
                     </div>
                 </div>

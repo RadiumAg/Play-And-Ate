@@ -1,11 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Play_And_Ate.Home.Home" %>
 
 <asp:Content ID="Header" ContentPlaceHolderID="Style" runat="server">
-    <script type="text/javascript" charset="utf-8"
-        src="http://connect.qq.com/qc_jssdk.js"
-        data-appid="101574283"
-        data-redirecturi="http://www.playandate.club/LoginAndRegister/ordinary.html">
-    </script>
     <link href="../Content/Shared/style.css" rel="stylesheet" />
     <script src="../Scripts/Home/main_store.js"></script>
     <style>
@@ -37,6 +32,7 @@
             .success(function (s) {
                 //成功回调，通过s.data获取OpenAPI的返回数
                 console.log(s);
+                console.log("登录状态:" + QC.Login.check());
                 if (QC.Login.check()) {
                     QC.Login.getMe(function (openId, accessToken) {
                         console.log(openId, accessToken);
@@ -50,7 +46,7 @@
                                 AccessToken: accessToken,
                                 NickName: s.data.nickname,
                                 City: s.data.city,
-                                Province:s.data.province
+                                Province: s.data.province
                             },
                             success: function (data) {
                                 if (data) {
@@ -108,14 +104,14 @@
         </div>
         <div class="warps">
             <!-- END 热搜 -->
-            <input type="hidden" value="0" id="jl_city">
-            <input type="hidden" value="0" id="jl_quxian">
-            <input type="hidden" value="0" id="jl_jingdian">
-            <input type="hidden" value="" id="jl_youwanxiangmu">
-            <input type="hidden" value="" id="depart_time">
-            <input type="hidden" value="" id="leave_time">
-            <input type="hidden" value="0" id="trip_number">
-            <input type="hidden" value="" id="remark">
+            <input type="hidden" value="0" id="jl_city" />
+            <input type="hidden" value="0" id="jl_quxian" />
+            <input type="hidden" value="0" id="jl_jingdian" />
+            <input type="hidden" value="" id="jl_youwanxiangmu" />
+            <input type="hidden" value="" id="depart_time" />
+            <input type="hidden" value="" id="leave_time" />
+            <input type="hidden" value="0" id="trip_number" />
+            <input type="hidden" value="" id="remark" />
             <div class="gds">
                 <div class="gdone" id="ajax_tow">
                     <div class="gdonetop">
@@ -131,7 +127,6 @@
                         <div class="gdonebotl">
                             <ul>
                                 <li>
-
                                     <div class="gbotltop">
                                         <div class="gbotllibg gbga"></div>
                                         <label>专业客服</label>
@@ -1182,8 +1177,7 @@
                     </div>
                     <div class="nongjiafabu">
                         <a href="#" target="_blank">
-                            <img alt="农家发布" class="f_l"
-                                src="../Images/Home/nongjiafb.png">
+                            <img alt="农家发布" class="f_l" src="../Images/Home/nongjiafb.png" />
                         </a>
                     </div>
                 </div>

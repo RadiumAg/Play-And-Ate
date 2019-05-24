@@ -163,8 +163,10 @@ namespace Play_And_Ate.Services
             try
             {
                 Authentication.logOut();
-                context.Response.Cookies["UserName"].Value = null;
-                context.Response.Write(JsonConvert.SerializeObject(true));
+                this.context.Response.Cookies["UserName"].Value = null;
+                this.context.Response.Cookies["UserId"].Value = null;
+                this.context.Response.Cookies["AccessToken"].Value = null;
+                this.context.Response.Write(JsonConvert.SerializeObject(true));
             }
             catch (Exception ex)
             {

@@ -35,7 +35,12 @@ namespace Play_And_Ate.Services
             try
             {
                 //如果QQ已经登录
-                if (this.context.Request.Cookies["AccessToken"] != null) return;
+                string AccessToken = this.context.Request.Cookies["AccessToken"] == null ? "" : this.context.Request.Cookies["AccessToken"].Value;
+                /*
+                1.如果是打开第一次使用QQ登录，则AccessToken=""
+                2.如果是登录过后退出，则AccessToken=null
+                 */
+                if (!string.IsNullOrEmpty(AccessToken)) return;
                 string openid = this.context.Request["OpenId"].ToString();
                 string accessToken = this.context.Request["AccessToken"].ToString();
                 //读取用户数据
@@ -45,6 +50,7 @@ namespace Play_And_Ate.Services
                     Helper.Authentication.SetCookie(userData.UserName, userData.Pwd, userData.Role_UserInfo.RoleName);
                     this.context.Response.Cookies["UserName"].Value = userData.UserName;
                     this.context.Response.Cookies["UserId"].Value = userData.UserId.ToString();
+                    Helper.Authentication.SetCookie(userData.UserName, userData.Pwd, userData.Role_UserInfo.RoleName);
                     //写入QQ登录标识
                     this.context.Response.Cookies["AccessToken"].Value = accessToken;
                     this.context.Response.Write(JsonConvert.SerializeObject(true));
@@ -60,6 +66,7 @@ namespace Play_And_Ate.Services
                     this.context.Response.Cookies["UserId"].Value = UserInfo_RoleManager.CheckUserInfo(new UserInfo_Role { OpenId = openid }).UserId.ToString();
                     //写入QQ登录标识
                     this.context.Response.Cookies["AccessToken"].Value = accessToken;
+                    Helper.Authentication.SetCookie(userData.UserName, userData.Pwd, userData.Role_UserInfo.RoleName);
                     this.context.Response.Write(JsonConvert.SerializeObject(true));
                 }
             }
