@@ -35,7 +35,7 @@ namespace FTZ.PlayAndAte.DAL
                 var result = from u in entities
                              .UserInfo_Role
                              .Include("Role_UserInfo")
-                             where (u.Phone == user.Phone && u.Pwd == user.Pwd) || (u.Email == user.Email && u.Pwd == user.Pwd)
+                             where (u.Phone == user.Phone && u.Pwd == user.Pwd) || (u.Email == user.Email && u.Pwd == user.Pwd)||(u.OpenId==user.OpenId)
                              select u;
                 return result.SingleOrDefault();
             }

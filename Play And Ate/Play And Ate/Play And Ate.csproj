@@ -583,6 +583,7 @@
     <Content Include="Images\LoginAndRegister\52a1881254edd.png" />
     <Content Include="Images\LoginAndRegister\52d0f08581839.png" />
     <Content Include="Images\LoginAndRegister\cs_dw.png" />
+    <Content Include="Images\LoginAndRegister\denglu.png" />
     <Content Include="Images\LoginAndRegister\end_2.gif" />
     <Content Include="Images\LoginAndRegister\end_3.gif" />
     <Content Include="Images\LoginAndRegister\icon.gif" />
@@ -853,23 +854,7 @@
     <Content Include="Plugin\jquery-3.3.1.min.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.js" />
     <Content Include="Plugin\jquery-3.3.1.slim.min.js" />
-    <Content Include="Plugin\jqzoom\BSD-LICENSE.txt" />
     <Content Include="Plugin\jqzoom\css\jquery.jqzoom.css" />
-    <Content Include="Plugin\jqzoom\demos\demo_alwayson.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_drag.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_innerzoom.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_resizeposition.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_reverse.html" />
-    <Content Include="Plugin\jqzoom\demos\demo_standard.html" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\thumbs\triumph_thumb1.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\thumbs\triumph_thumb2.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\thumbs\triumph_thumb3.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_big1.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_big2.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_big3.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_small1.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_small2.jpg" />
-    <Content Include="Plugin\jqzoom\demos\imgProd\triumph_small3.jpg" />
     <Content Include="Plugin\jqzoom\images\advertise.jpg" />
     <Content Include="Plugin\jqzoom\images\zoomloader.gif" />
     <Content Include="Plugin\jqzoom\js\jquery-1.5.js" />
@@ -1148,15 +1133,6 @@
     <Content Include="Plugin\public\swiper\src\js\wrap-start-umd.js" />
     <Content Include="Plugin\public\swiper\src\js\wrap-start.js" />
     <Content Include="Plugin\public\swiper\src\js\zoom.js" />
-    <Content Include="Plugin\qq_connenct_demo\.gitignore" />
-    <Content Include="Plugin\qq_connenct_demo\index.js" />
-    <Content Include="Plugin\qq_connenct_demo\routes\authorize.js" />
-    <Content Include="Plugin\qq_connenct_demo\static\images\Connect_logo_5.png" />
-    <Content Include="Plugin\qq_connenct_demo\static\js\common.js" />
-    <Content Include="Plugin\qq_connenct_demo\static\js\home.js" />
-    <Content Include="Plugin\qq_connenct_demo\static\js\jquery.min.js" />
-    <Content Include="Plugin\qq_connenct_demo\static\js\login.js" />
-    <Content Include="Plugin\qq_connenct_demo\static\js\proxy.js" />
     <Content Include="Products\Ecological.aspx" />
     <Content Include="Products\Ecological\1.html" />
     <Content Include="Products\Ecological\2.html" />
@@ -1477,6 +1453,9 @@
     <Compile Include="Services\OrderService.ashx.cs">
       <DependentUpon>OrderService.ashx</DependentUpon>
     </Compile>
+    <Compile Include="Services\QQLogin.ashx.cs">
+      <DependentUpon>QQLogin.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Shared\Main.Master.cs">
       <DependentUpon>Main.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1560,16 +1539,9 @@
     <Content Include="Plugin\public\swiper\src\less\swiper.less" />
     <Content Include="Plugin\public\swiper\src\less\zoom.less" />
     <Content Include="Plugin\jqzoom\images\Thumbs.db" />
-    <Content Include="Plugin\jqzoom\README.md" />
-    <Content Include="Plugin\qq_connenct_demo\package-lock.json" />
-    <Content Include="Plugin\qq_connenct_demo\package.json" />
-    <Content Include="Plugin\qq_connenct_demo\README.md" />
-    <Content Include="Plugin\qq_connenct_demo\views\home.pug" />
-    <Content Include="Plugin\qq_connenct_demo\views\layout.pug" />
-    <Content Include="Plugin\qq_connenct_demo\views\login.pug" />
-    <Content Include="Plugin\qq_connenct_demo\views\proxy.pug" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Services\OrderService.ashx" />
+    <Content Include="Services\QQLogin.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -36,6 +36,11 @@
     <link href="../Content/Shared/WdatePicker.css" rel="stylesheet" />
     <script src="../Scripts/Shared/WdatePicker.js"></script>
     <script src="../Scripts/Shared/lang.js"></script>
+    <script type="text/javascript" charset="utf-8"
+        src="http://connect.qq.com/qc_jssdk.js"
+        data-appid="101574283"
+        data-redirecturi="http://www.playandate.club/LoginAndRegister/ordinary.html">
+    </script>
     <style type="text/css">
         .none {
             display: none;
@@ -73,6 +78,9 @@
                         <script>
                             $(function () {
                                 $("#singOut").click(function () {
+                                    //1.退出QQ登录状态
+                                    QC.Login.signOut();
+                                    //2.退出本地登录状态
                                     $.ajax({
                                         url: '../Services/Main.ashx?id=5',
                                         type: 'POST',
@@ -286,7 +294,7 @@
                             <li onclick="nav(6)" id="n6" class="soso ">
                                 <a href="../Products/Fishing.aspx" target="">垂钓场</a>
                             </li>
-                            <li class="soso""><a href="../Special topic/Special topic.aspx" target="_blank">专题</a></li>
+                            <li class="soso""><a href="/Special topic/Special topic.aspx" target="_blank">专题</a></li>
                         </ul>
                     </div>
                 </div>
