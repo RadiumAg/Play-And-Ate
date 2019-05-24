@@ -79,7 +79,7 @@
 						<div class="tr_mrtopright" onclick="destine();">我要成为商家</div>
 					</div>
 				</div>
-				<div class="tar_mr">
+			<div class="tar_mr">
 				<ul>
 													<li>
 						<img alt="" class="f_l" src="./第一农庄网：农家推荐_files/562dca1267d5b.jpg" width="108px" height="120px">
