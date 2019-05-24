@@ -44,7 +44,6 @@ D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.xm
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.xml
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
-C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csprojAssemblyReference.cache
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.ServiceLocation.dll
@@ -57,3 +56,7 @@ C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsof
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.Unity.pdb
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csprojAssemblyReference.cache
