@@ -848,7 +848,6 @@
     <Content Include="Content\Search\new_default.css.bak" />
     <Content Include="Content\Personage\newmember.css&amp;v=051610" />
     <Content Include="Content\Personage\ztRecommendInfoJson.do" />
-    <Content Include="ClassDiagram1.cd" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
     <Content Include="Plugin\jquery-3.3.1.js" />
     <Content Include="Plugin\jquery-3.3.1.min.js" />
