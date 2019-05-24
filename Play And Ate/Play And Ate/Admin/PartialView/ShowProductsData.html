@@ -1,0 +1,19 @@
+﻿
+<body>
+    <div id="productData"></div>
+    <script>
+        $("#productData").datagrid({
+            url:"/Services/Main.ashx?id=9",
+            fit: true,
+            fitColumns: true,
+            columns: [[
+                { field: 'ProductId', width: 50, title: '产品编号' },
+                { field: 'ProductName', width: 50, title: '产品名称' },
+                { field: 'ProductPrice', width: 50, title: '产品价格', formatter: function (value, rowData, rowIndex) {
+                        return `<span>` + value + `￥</span>`;
+                    }
+                },
+            ]]
+        });
+    </script>
+</body>

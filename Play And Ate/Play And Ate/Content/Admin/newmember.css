@@ -1,0 +1,599 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{ background:#f5f5f5}
+.wrap{width: 1200px !important;}
+.lv_header,.lv_nav_bg{ display:none;}
+.p20{ padding:20px 0;}
+.newmember_bg{width:100%; background:#d37; z-index:6; position:relative;}
+.newmember_nav{ width:1200px; margin:0 auto;height:60px;}
+.newmember_logo,.newmember_list i,.user_icon,.downarr,.uparr,.order_icon,.cash_icon,.safe_icon,.info_icon,.per_icon,.finance_icon,.server_icon,.write_yj,.newmembe_level,.modtel_icon,.icon-privilege1 a,.icon_pay,.icon_commit1,.mod_box h3 i,.operate .time_icon,.balance_icon,.bonus_icon,.arrears_icon,.end_icon,.top_icon,.bottom_icon,.grade_bg .close,.help_box .title,.more_box .kf_icon,.weix_box .close,.newmember_list .arrow_top,.a_icon,.b_icon,.s_telbox .c_icon,.tips_error_icon,.tips_right_icon,.right_icon,.caution_icon,.user_tips_icon,.wrong_icon{display:inline-block; background-image:url(http://pic.lvmama.com/img/v6/myspace/user_bg.png);}
+.newmember_logo{background-position:0 -372px; width:160px; height:38px; margin:12px 0 0; padding:0;}
+.newmember_nav .nav_box{ float:left; margin:0 0 0 24px;}
+.newmember_list{ float:left;position:relative;width:120px; height:60px;}
+.newmember_list .a_list{ display:block;  line-height:60px;text-align:center; color:#fff; font-size:18px;}
+.newmember_list .a_list:hover{ background:#C12061; text-decoration:none;}
+.newmember_act,.lv_newhome #lv_newhome,.lv_newaccount #lv_newaccount{background:#a71c53;}
+.newmember_list .arrow_up{ background-position:-349px -5px; width:11px; height:6px; margin:0 0 0 10px;vertical-align:middle }
+.newmember_list .arrow_top{background-position: -69px -21px;width: 12px;height: 6px;position: absolute;left: 50%;margin-left: -6px;top: -5px; z-index:10}
+.newmember_list .sub_box{ position:relative; display:none;}
+.newmember_sub{background:#fff; width:340px; padding:30px 0; position:absolute; left:-130px; z-index:9; border:1px solid #ccc;webkit-box-shadow: 0 2px 8px #ccc;box-shadow: 0 2px 8px #ccc;}
+.newmember_sub li{ float:left; margin-left:40px;}
+.newmember_sub h5{ font-size:14px; color:#333; font-weight:normal; margin-bottom:10px;}
+.newmember_sub a{ color:#666; display:block;}
+.newmember_sub a:hover{ color:#e38}
+.newmember_home{ width:110px; height:26px; line-height:26px; color:#fff; border:1px solid #fff; border-radius:16px; text-align:center;margin:16px 0 0;}
+.newmember_home:hover{ background:#C12061; text-decoration:none; color:#fff;}
+.newmember_act .sub_box{ display:block}
+/* 主体部分 */
+.newmember_main{ width:1200px; margin:20px auto 0; z-index:5}
+/*.newmember_leftside{ position:absolute; left:0;width:160px;} */
+.newmember_leftside{float:left;width:160px;}
+.newmember_rightside{ margin-left:180px;}
+.newmember_leftside dl{ margin:0 0 16px 0;}
+.newmember_leftside dt{ font-size:16px; color:#333; margin-bottom:4px;}
+
+.user_icon,.order_icon,.cash_icon,.finance_icon,.server_icon,.safe_icon,.info_icon,.per_icon{vertical-align:middle;margin-right:8px; }
+.user_icon{background-position:-1px -4px; width:15px; height:15px; }
+.order_icon{background-position:-23px -4px; width:15px; height:15px; }
+.cash_icon{background-position:-46px -3px; width:15px; height:15px;}
+.finance_icon{background-position:-68px -4px; width:15px; height:15px;}
+.server_icon{background-position:-96px -4px; width:15px; height:12px;}
+.safe_icon{background-position:-95px -24px; width:15px; height:17px;}
+.info_icon{background-position:-119px -24px; width:15px; height:15px;}
+.per_icon{background-position:-140px -24px; width:15px; height:15px;}
+
+.write_yj{background-position:0 -43px; width:63px; height:16px; vertical-align:middle; margin-left:2px;}
+.downarr,.uparr{width:10px; height:6px; margin-left:8px; vertical-align:middle}
+.downarr{background-position:-136px -4px; }
+.uparr{background-position:-152px -4px; }
+
+
+.newmember_leftside dt{ cursor:pointer;}
+.newmember_leftside dd a{ color:#666;display:inline-block; height:30px; line-height:30px; padding-left:24px; width:134px;font-size:14px;}
+.newmember_leftside dd a:hover{ color:#EC3386; text-decoration:none;}
+.newmember_leftside dd .active:hover{ color:#fff;}
+
+.newmember_box_bg{ position:relative; border-radius:120px 0 0 120px; height:212px;padding:0 0 0 26px; background:#fff; border:1px solid #ebebeb; margin:0 0 30px 0; z-index:1}
+.user_head{  position:relative;}
+.mart40{ margin-top:40px;}
+.user_head img{border-radius:50%}
+.user_head .mod_photo{ position:absolute; left:0; top:0;color:#fff; width:130px; height:130px; text-align:center; line-height:130px;border-radius:50%; z-index: 9;background: rgba(0, 0, 0, 0.6);filter: progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000', endColorstr='#99000000'); display:none}
+.user_head:hover .mod_photo{ display:block;}
+.a_default{ cursor:default;}
+.user_cotent{ margin:18px 0 0 16px; width:360px;}
+.user_cotent li{ margin-bottom:4px;}
+.user_cotent h4{ font-weight:normal; margin: 0 0 4px 0; }
+.user_cotent .newnickname{font-size:14px; color:#333; display:inline-block;overflow: hidden;text-overflow: ellipsis;white-space: nowrap; max-width:100px; vertical-align: middle;}
+.user_cotent .newnickname:hover{ text-decoration:none;}
+.user_cotent .mod_tel{color:#666}
+.user_cotent .mod_tel a{ color:#29e; margin-left:4px;}
+.user_cotent .pc-sur-user{ display: block; width: 313px; height: 25px;background:url(http://pic.lvmama.com/img/v6/myspace/pc-sur-user.png) no-repeat; }
+.user_head-icon{ position: absolute; top: -26px; left: -6px; display: block; width: 56px; height: 43px;background:url(http://pic.lvmama.com/img/v6/myspace/pc-sur-head.png) no-repeat; }
+.user_cotent .mytq{color:#666;line-height:40px; display:block;}
+.modtel_icon{ background-position:-119px -3px;width:10px; height:21px; margin-right:6px; vertical-align:middle}
+.progress-bar-bg {position: relative;width: 270px;height: 14px;background: #d9d9d9;border-radius: 12px;display: inline-block;margin: 3px 10px 0;text-align: center;}
+.progress-bar-bg .bar-box {position: absolute;left: 0;top: 0;border-radius: 12px;background: #ff6600;background: -webkit-gradient(linear, 100% 0, 0 100%, from(#ff6600), to(#FF9F0F));width: 60%;font-size: 12px;height: 14px;line-height: 14px; text-align: center; color: #fff;}
+
+
+.pay_box{ margin:24px 0 0;}
+.icon_pay{ background-position:-172px -3px; width:19px; height:16px; vertical-align:middle; margin-right:7px;}
+.icon_commit1{ background-position:-200px -3px; width:18px; height:17px; vertical-align:middle;margin-right:7px;}
+.pay_box em{ color:#f60; font-size:16px;}
+.pay_box a{ color:#666; margin-right:30px;}
+.pay_box a:hover{ color:#f60; text-decoration:none;}
+
+.daylogin{ margin:16px 0 0 22px}
+.account_box{ position:relative; height:180px; border-left:1px dashed #EBEBEB; margin-left:16px; padding:18px 0 12px 18px;}
+
+.mod_box{ margin: 0 0 30px 0;}
+.mod_box .h3_title{ font-size:18px;  color:#333; font-weight:normal;}
+.mod_box .h3_title i{ background-position:-323px -5px; vertical-align:middle; width:14px; height:16px; margin:0 5px 0 0}
+.mod_title{ margin-bottom:10px;}
+.mod_more{ float:right; color:#666;margin-top: 7px;}
+.mod_tips{ margin:0 0 0 10px; color:#999; font-size:12px;}
+.mod_content{background:#fff; border:1px solid #EBEBEB; overflow:hidden;}
+.mod_tcontent{border:1px solid #EBEBEB; border-bottom:none; border-right:none;}
+
+.mod_addressee_title {
+    display: inline-block;
+    vertical-align: top;
+}
+.mod_addressee_tip_warning {
+    display: inline-block;
+    vertical-align: top;
+    color: #999;
+    margin-left: 20px;
+}
+
+.newmember-invoice-box .tips.mod_addressee_tip_form_red {
+}
+
+.address_table_with_realname {
+    width: 100%;
+}
+
+.address_table_realname_error {
+    color: #ff3300;
+    font-size: 12px;
+    margin-bottom: -21px;
+}
+
+.mod_list li{ float:left; width:180px; margin-left:20px; display:inline}
+.mod_list p{ margin-top:6px; }
+
+.mod_price{ float:right; color:#f60;}
+.mod_price em{ color:#999}
+
+.order_table{ width:100%;}
+.col-name{ background:#fafafa; height:35px; line-height:36px;border-bottom:1px solid #EBEBEB;border-right:1px solid #EBEBEB;}
+.col-name th{ padding-left:18px; color:#999; font-weight:normal;}
+.sep-row{ }
+.sep-row td{border-bottom:1px solid #EBEBEB;border-right:1px solid #EBEBEB;background:#fff; padding:20px 14px; vertical-align:top;}
+.order_img{ float:left;}
+/***.sep-row .desc{ margin-left:90px;}**/
+.sep-row .desc{ margin-left:0;}
+.sep-row .desc p{ line-height:18px;}
+.sep-row .desc p a{ color:#333;}
+
+.sep-row .desc span{ color:#999;}
+.sep-row .desc em{ margin-left:20px;}
+.sep-row .price{ font-size:14px; color:#f60;}
+.sep-row .date{ color:#666; width:70px}
+.sep-row .status{ color:#999; display:block;}
+.sep-row .wait{ color:#f30;}
+.sep-row .detail-link{ color:#09c;}
+.sep-row .contract,.sep-row .done{ color:#999}
+.operate em{ font-weight:700; color:#f30; margin:0 1px;}
+.operate a{display: block;color: #666;}
+.operate .pay_btn{ display:block; border-radius:2px;width:67px; height:22px; line-height:22px; color:#fff; text-align:center; background:#f80; margin:6px 0;}
+.operate .cancel_order{ display:block;color:#666}
+.operate .last_time em{ color:#f30; font-weight:700;}
+.operate .time_icon{ background-position:-299px -4px; width:14px; height:14px; vertical-align:middle; margin-right:5px;}
+.sep-row .product-name{ padding-left:20px;}
+
+
+.account_box p{ margin-bottom:12px;}
+.mod_list .p_like{overflow: hidden;text-overflow: ellipsis; height:40px; line-height:20px;width: 124px;display: block;float: left;}
+.mod_list .p_test{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 180px;display: block;}
+
+.account_box .f18{ font-size:18px;}
+.account_box .f14{ font-size:14px;}
+.account_box em{ margin-left:10px; color:#f60;}
+.account_box .write{ color:#09c; margin-left:10px;}
+
+.account_box .quota{ color:#666; margin-left:10px;}
+.account_box .active_btn{ display:inline-block;width:66px; height:22px; border:1px solid #f60; text-align:center; line-height:22px; border-radius:2px; color:#f60;margin-left:10px;}
+
+.account_box .quota_box{ display:none}
+.account_box .balance_icon{ background-position:-226px -3px; width:14px; height:13px; vertical-align:middle; margin-right:8px;}
+.account_box .bonus_icon{ background-position:-247px -4px; width:15px; height:15px; vertical-align:middle; margin-right:8px;}
+.account_box .arrears_icon{ background-position:-273px -4px; width:15px; height:15px; vertical-align:middle; margin-right:8px;}
+.info_list{ overflow:hidden}
+.info_list li{ float:left; border:1px solid #ddd; border-left:none; border-bottom:none; padding:12px 6px 0 6px; color:#999; text-align:center; height:66px;}
+
+.info_list .num{ color:#f60; font-size:16px; display:block;}
+.info_list .num em{ color:#999; font-size:12px; margin-left:4px;}
+.info_list .change{ color:#08c}
+.info_list .end{ border-right:none;padding-right:0;}
+.end_icon{ background-position:-382px -117px; display:block; width:8px; height:192px; position:absolute; right:-1px; top:10px;}
+.top_icon{ width:18px; height:18px; background-position:-373px -314px;position:absolute; top:-12px; right:298px; }
+.bottom_icon{ width:18px; height:18px;background-position:-373px -338px;position:absolute; top:204px; right:298px; border-radius:50%;}
+/* 没有订单样式 */
+.no_order{ padding:90px 0 90px 356px; overflow:hidden}
+.no_order .noimg{ float:left;}
+.no_order .content{ margin:20px 0 0 122px;}
+.no_order p{ font-size:18px; color:#999; margin-bottom:15px;}
+.no_order .gohome{ border-radius:2px;display:inline-block;background:#f80; color:#fff; text-align:center; width:100px; height:26px; line-height:26px;}
+/* 新增权益*/
+.grade_bg{ background:url(http://pic.lvmama.com/img/v6/myspace/grade_bg.gif) no-repeat; width:680px; height:340px;position:absolute; left:50%; margin-left:-320px;z-index:9; display:none}
+.pop_body_bg{ display:block; position:absolute; top:0; left:0; width:100%; background:#000; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5; opacity:0.5; z-index:8;}
+.grade_bg .close{ background-position:-1px -21px; width:19px; height:20px; position:absolute; right:10px; top:10px; }
+.grade_bg .close:hover{background-position:-25px -21px;}
+.grade_box{ padding:114px 0 0 315px}
+.grade_box .upgrade{color:#333; font-size:16px; padding:0 0 20px 60px;}
+.grade_box .upgrade em{ color:#f60}
+.grade_box .icon-privilege1 a{ margin:0;}
+.grade_box span{ display:block;margin:4px 0 0; color:#666}
+.grade_box li{ float:left; margin-right:20px; text-align:center}
+.grade_box .upg_btn{ margin:30px 0 0; text-align:center}
+.grade_box .know_btn{ display:inline-block;width:113px; height:36px; text-align:center; line-height:36px; color:#fff; background:#f80; border-radius:2px; font-size:16px;}
+.grade_box .konw_wz{ color:#09c; margin-left:10px;}
+
+/* 右侧帮助中心*/
+.help_box{ width:38px; position:fixed; right:50%; margin-right:-658px;  top:120px; z-index:999;}
+.help_box_content{ width:0; overflow:hidden; position:absolute; top:0;right:38px;z-index:2}
+.help_box .title{ background-position:-327px -65px;width:38px; height:160px; display:block; position:relative; z-index:3}
+.help_box .content{background:#fff; border:1px solid #efefef;width:120px; }
+.help_box .list{padding:0 10px;}
+.help_box .list li{height:28px; line-height:28px; text-align:center;border-bottom:1px dotted #ebebeb}
+.more_box{border-bottom:1px solid #F0F0F0; text-align:center; color:#999; padding:1px 0}
+.more_box a{ color:#999}
+.more_box .tle_box{ display:block; font-size:14px; color:#6C6C6C;}
+.more_box .kf_icon{ background-position:-366px -4px; width:17px; height:14px; vertical-align:middle; margin-right:4px;}
+.weix_box{ padding:6px 15px 15px; position:relative;}
+.weix_box p{ color:#666; margin-bottom:4px;}
+.weix_box .close{ background-position:-50px -21px; width:10px; height:10px; position:absolute; top:11px; right:9px;}
+
+/* 取消订单
+.cancel_box{ padding:22px 50px; display:none}
+.cancel_title{ color:#666}
+.cancel_list{ margin-top:15px;}
+.cancel_list .cancel_radio{ vertical-align:middle; margin-right:6px;}
+.cancel_list li{ color:#333; margin-bottom:16px;}
+.cancel_area{ width:400px; height:60px; margin-left:10px;}
+.cancel_btn_box{ margin:20px 0 0;text-align:center}
+.cancel_btn_box a{ display:inline-table; width:53px; height:26px; text-align:center; line-height:26px; border-radius:2px}
+.cancel_btn_box .sure_btn{ background:#f80; color:#fff; }
+.cancel_btn_box .cancel_btn1{ border:1px solid #e3e3e3; background:#fff; margin-left:10px; color:#555}
+.cancel_btn_box .cancel_btn1:hover{ background:#f5f5f5; text-decoration:none}
+*/
+
+/* 账户设置*/
+.s_safebox{ border-bottom:2px solid #F5F5F5; margin:40px 20px 0; padding:0 0 40px 90px;}
+.a_icon{ width:51px; height:60px; background-position:0 -306px; }
+.b_icon{width:32px; height:32px; background-position:-69px -307px; vertical-align:middle;}
+.s_safebox .s_title{ font-size:22px;  color:#43B643;}
+.s_safebox .s_content{ margin-left:72px}
+.s_safebox .s_note{ color:#666; margin:16px 0 0; font-size:12px;}
+.s_safebox .s_note .s_modtip{ color:#999}
+.s_safebox .s_note .s_modline{ color:#EBEBEB; margin:0 10px;}
+.s_telbox{ width:900px; padding:0 60px 80px;}
+.s_telbox li{ margin:30px 0 0; padding:0 60px 28px; border-bottom:1px dotted #F0F0F0}
+.s_telbox .end{ border:none}
+
+.s_telbox .c_icon{width:32px; height:32px; background-position:-112px -307px; vertical-align:middle;}
+.s_telbox .mod_a{ float:right; color:#09c; margin-top:4px;}
+.s_telbox .s_title{ color:#666; font-size:16px; margin-left:12px;}
+.s_telbox .s_note{color:#999; font-size:14px;  margin-left:30px;}
+.s_telbox .s_note em{ color:#f60}
+.s_telbox .s_note span{ color:#666}
+
+/* 修改登录密码*/
+.p20_4{padding:20px}
+.password_edit_title{border-bottom:2px solid #F5F5F5; padding-bottom:16px;}
+.password_edit_title h4{font-weight:normal;color:#666; font-size:18px;}
+.password_edit_title a{ color:#29e; font-size:12px; }
+.password_edit_title .add_btn,.address_box .add_btn{ display:inline-block;width:105px; height:26px; line-height:26px; text-align:center; color:#fff; background:#f80;border-radius:3px; margin-right:10px}
+.password_edit_title .add_btn em,.address_box .add_btn em{ font-size:20px; font-weight:700; vertical-align:-2px; margin-right:4px}
+.password_edit_title .bind_tips{ color:#999; font-size:12px; margin-left:15px;}
+.password_edit_content{ margin:80px 0 180px 250px;}
+.password_edit_content p{ padding-left:100px; margin-bottom:15px;}
+.password_edit_content p label{margin-left: -72px;}
+.password_edit_content .input_text { width:240px;border: 1px solid #ccc;color: #333;padding: 0 5px;height: 28px;line-height: 28px;margin-right: 10px;}
+.password_edit_content .input_button{ display:inline-block; width:175px; height:42px; background:#e38; border-radius:2px; color:#fff; font-size:18px; text-align:center; line-height:42px;}
+.password_edit_content .input_button:hover{ background:#d37; text-decoration:none}
+.password_forget{color:#08c; margin-left:20px;}
+.tips_warn{color:#333; line-height: 32px;}
+.tips_warn .tips_right_icon{ background-position:-157px -24px; width:14px; height:14px; margin-right:6px; vertical-align:-3px;}
+.tips_warn .tips_error_icon{ background-position:-176px -24px; width:14px; height:14px; margin-right:6px; vertical-align:-3px;}
+.yzpop_box{padding:80px 120px 50px; display:none}
+.yzpop_box h5{ font-size:18px; color:#666;font-weight:normal;}
+.right_icon{ background-position:-153px -307px; width:32px; height:32px; margin-right:12px; vertical-align:middle}/***正确的图标**/
+.caution_icon{ background-position:-194px -307px; width:33px; height:32px; margin-right:12px; vertical-align:middle}/***警示的图标**/
+.wrong_icon{ background-position:-231px -307px; width:33px; height:32px; margin-right:12px; vertical-align:middle}/***错误的图标**/
+.yzpop_box p{ margin:50px 0 0 ;}
+.yzpop_box .loin_btn{ display:inline-block;width:114px; height:36px; text-align:center; line-height:36px; background:#f80; border-radius:2px; color:#fff; font-size:16px;}
+.yzpop_box .go_safe{ margin-left:15px; color:#08c;}
+.phone_edit_content{ padding:50px 180px 120px;}
+
+/* 修改登录密码*/
+.setphone_box{position:relative; margin-bottom:90px;}
+.setphone_box .s_step{position:absolute;top:-10px;}
+.setphone_box .s_stepbox{position: relative;border-bottom: 3px solid #ddd;float: left;width:292px;}
+.setphone_box .s_active{border-bottom: 3px solid #fa0;}
+.setphone_box .s_stepbox_end{ border-bottom:none}
+.setphone_box .s_step1{ left:-40px;}
+.setphone_box .s_step2{ left:-40px;}
+.setphone_box .s_step3{ right:0;}
+.setphone_box .s_num{ display:block; position:absolute; left:50%; margin-left:-8px; border:2px solid #ccc; background:#fff; border-radius:50%; width:16px; height:16px; line-height:16px; text-align:center; color:#ccc; font-size:14px;}
+.setphone_box .s_step em{display:block;padding-top:30px;color:#999; font-size:14px;}
+.setphone_box .s_active .s_num{border:2px solid #fa0;background:#fa0; color:#fff;}
+
+.phone_box p{ padding-left:100px; margin-bottom:15px;}
+.phone_box p label{margin-left: -60px;}
+.phone_box p .ml72{margin-left: -72px;}
+.phone_box .phone_num{ font-size:16px; color:#333;}
+.phone_box .phone_tips{ color:#09c; margin-left:60px;}
+.phone_box .mail_tips{color:#09c; margin-left:12px;}
+.phone_box .input_text{width:165px;border: 1px solid #ccc;color: #333;padding: 0 5px;height: 28px;line-height: 28px;margin-right: 10px;}
+.phone_box .wd_250{ width:250px}
+.phone_box .code,.WithoutPredefineCountdown{display:inline-block;border-radius: 2px;border: 1px solid #ccc; color: #666; text-align: center;width: 105px;height: 28px;line-height: 28px;}
+.phone_box .code_img{display:inline-block; vertical-align:middle;}
+.phone_box .code:hover,.WithoutPredefineCountdown:hover{ background:#f5f5f5; text-decoration:none}
+.phone_box .time{display: none;border-radius: 2px;border: 1px solid #ccc;color: #999;text-align: center; width: 105px;height: 28px;line-height: 28px;}
+.phone_box .time:hover{ text-decoration:none}
+.phone_box .time em{ color:#f60}
+.phone_box .input_button{ display:inline-block;width:175px; height:42px; line-height:42px; background:#e38; border-radius:2px; color:#fff; font-size:18px; text-align:center}
+.phone_box .input_button:hover{ background:#d37; text-decoration:none}
+.phone_box .no_mesage{ margin-top:30px;color:#999}
+.phone_box .ok_phone{ color:#666; font-size:18px;margin-left:10px;}
+.phone_box .sev_tip{ color:#999; padding-left:44px; display:block}
+
+.bind_box{ margin:20px 0 0;}
+.bind_box .input_text{ width:140px;}
+.bind_box .binput_text{ width:257px}
+.bind_box p label{margin-left: -48px;}
+.bind_box .pd{ margin:90px 0 180px 0 }
+
+
+/* 手机丢失弹框*/
+.lostphone_box{ display:none;color:#666;}
+.lostphone_box h5{ font-size:18px; font-weight:normal; padding-bottom:14px; text-align:center; border-bottom:1px dotted #ccc; margin-bottom:20px}
+.lostphone_content{ font-size:14px; margin:20px 0 0; line-height:20px;}
+.lostphone_content em{ font-weight:700; display:block; margin-bottom:10px;}
+.lostbtn_box{ text-align:center}
+.lostbtn_box a{ display:inline-block; width:114px; height:36px; line-height:36px; color:#fff; background:#f80; border-radius:2px; text-align:center; font-size:16px;}
+
+/* 手机丢失弹框*/
+.mail_box{margin:0 0 0 65px}
+.mail_box .mail_num{ color:#666; font-size:18px; margin-bottom:15px;}
+.mail_box .mail_num em{ color:#333}
+.mail_box .mail_time{ color:#999; margin-bottom:20px;}
+.mail_box .view_btn{ display:inline-block;width:175px; height:42px; text-align:center; line-height:42px; color:#fff; font-size:18px; background:#e38; border-radius:2px;}
+.mail_box .view_btn:hover{ background:#d37;text-decoration:none;}
+.mail_box .no_mail{ color:#999; margin-left:20px;}
+.mail_box .no_mail a{ color:#08c}
+.mail_box .act_mail{ margin:30px 0 0;}
+.mail_box .act_mail a{color:#999}
+
+/* 新增常用地址**/
+.address_box{ padding:110px 0 190px 270px}
+.address_box .address_title{ font-size:18px; color:#999; margin-bottom:6px;}
+.address_box .address_gift{ color:#ccc;margin-bottom:6px;}
+.address_box img{ float:left;}
+.address_box .address_content{ margin-left:156px;}
+.address_box .address_wd{ margin-left:116px;}
+.address_m25{ margin-bottom:25px;}
+.address_table th{padding-left:30px;background:#fafafa; height:36px; font-weight:normal; color:#999; }
+.address_table td{padding:20px 0 20px 30px; color:#666;  border-bottom:1px dotted #F0F0F0}
+.address_mod a{ display:block; color:#09c}
+
+/* 新增收货地址**/
+.address_pop_box{ display:none;padding:5px 20px;}
+.address_pop_box p{ margin-bottom:15px;}
+.address_pop_box label{ height: 32px; line-height: 32px; margin-right:10px; display:inline-block; width:150px; text-align:right; float:left}
+.address_pop_box em{ color:#f30}
+.mr_rit{ margin-right:5px}
+.address_pop_box .ipt_txt{ height:30px; line-height:30px; padding:0 10px; border:1px solid #ccc; color:#999;float:left}
+.address_pop_box .user_tips{ display:block; margin-top:5px;padding-left: 160px;clear: both;}
+.user_tips_icon{ width:14px; height:14px;background-position:-195px -24px; vertical-align:middle; margin-right:6px;}
+.address_pop_box select{height:32px; line-height:32px;padding:0 10px;border:1px solid #ccc;float:left}
+.address_pop_box textarea{ width:380px; height:40px;padding:10px;color:#999;border:1px solid #ccc;}
+.address_pop_box .wd170{ width:170px;}
+.address_pop_box .wd370{ width:370px;}
+.address_pop_box .wd250{ width:250px;}
+.address_pop_box .wd127{ width:127px;margin-right:5px;}
+.address_pop_box .wd105{ width:105px; margin-right:5px;}
+.address_pop_box .ipt_rad{ display:inline-block; width:60px; height: 32px; line-height: 32px;}
+.address_pop_box .ipt_rad input{ margin-right:6px; vertical-align:middle}
+.address_pop_box .address_btn_box{ margin-top:30px; text-align:center}
+.btn_yel,.btn_sure{ display:inline-block;width:114px; height:34px; text-align:center; color:#fff;line-height:36px; border-radius:2px; font-size:16px; background:#f80}
+.btn_cal,.btn_cal{display:inline-block;border:1px solid #ddd;height:34px;  line-height:34px; width:80px; color:#666; font-size:16px; text-align:center;border-radius:2px; margin-left:10px; background:#fff;}
+.address_btn_box .btn_cal:hover,.address_caution_box .btn_cal:hover{ background:#f5f5f5; text-decoration:none;}
+.address_ok_box,.address_wrong_box{ display:none;text-align:center; color:#666; font-size:18px; padding:60px 0;}
+.address_caution_box{ display:none; text-align:center; color:#666; font-size:18px; padding:60px 0;}
+.address_caution_box p{ margin-top:42px;}
+
+/* 个人信息**/
+.per_info_content{ padding:30px 0 0 50px;}
+.per_right_box{ float:left; margin-left:50px;}
+.per_right_box p{ margin-bottom:20px;}
+.per_right_box label{ margin-right:10px; display:inline-block; width:70px; text-align:right; float:left; color:#666;}
+.per_right_box em{ color:#f30}
+.per_right_box .ipt_txt{ width:160px; height:30px; line-height:30px; padding:0 10px; border:1px solid #ccc; color:#999;float:left; vertical-align:middle}
+.per_mod{color:#08c}
+.mar_left10{margin-left:10px;}
+.mar_right10{margin-right:10px;}
+.per_right_box .mod_tel{ color:#333}
+.col9{ color:#999}
+.per_right_box .ipt_rad{ display:inline-block; width:60px;}
+.per_right_box select{height:28px; line-height:28px;padding:4px 0;border:1px solid #ccc;float:left}
+.per_right_box .ipt_rad input{ margin-right:6px; vertical-align:middle}
+.per_right_box .wd105{ width:105px}
+.per_right_box .per_tips{ display:block; margin-top:10px; color:#999; clear:both;padding-left: 80px;}
+.per_right_box .per_btn_box{ margin-top:40px; padding-left:80px;}
+.per_right_box .per_btn{ display:inline-block;width:175px; height:42px; line-height:42px; color:#fff; background:#e38; font-size:18px; text-align:center; border-radius:2px}
+.per_right_box .per_btn:hover{ background:#d37; text-decoration:none;}
+
+/*新增头像上传*/
+.photo_main{ padding:40px 20px; overflow:hidden; zoom:1;}
+.photo_main .photo_tips{ padding:0 0 10px 0; font-size:12px; color:#999; clear:both;}
+.photo_box{ float:left; width:254px; height:254px; overflow:hidden; border:#F7F7F7 solid 8px; background:#FCFCFC; position:relative;}
+.photo_icon{ display:block; margin:70px auto 0; width:94px; height:67px; background:url(http://pic.lvmama.com/img/mylvmama/combo.gif) no-repeat 0 -350px; position:relative;}
+.btn_upload{ margin:15px auto 0; width:128px; height:28px; line-height:28px; background:#f8f8f8; border:#ddd solid 1px; color:#666; text-align:center; font-size:14px; border-radius:3px; cursor:pointer; position:relative; overflow:hidden;}
+.btn_upload:hover{ background:#f5f5f5;}
+.btn_upload input{ width:300px; height:30px; padding:5px; position:absolute; right:0; top:-5px; font-size:40px; line-height:30px; filter:alpha(opacity=0); -moz-opacity:0; -khtml-opacity:0; opacity:0; cursor:pointer; outline:none; hide-focus:expression(this.hideFocus=true);}
+.photo_box img{ position:absolute; left:0; top:0; z-index:3; display:none;}
+.move_box{ border:#FEFE00 solid 1px; position:absolute; z-index:4; overflow:hidden; display:none;}
+.move_box span{ cursor: nw-resize; display:block; width:13px; height:13px; background:url(http://pic.lvmama.com/img/mylvmama/combo.gif) no-repeat 0 -420px; position:absolute; right:0; bottom:0; z-index:4;}
+
+.photo_ok{ float:left;}
+.photo_ok li{ float:left; margin-left:35px; vertical-align:bottom;}
+.photo_img1{ margin-top:140px;}
+.photo_img2{ margin-top:180px;}
+.photo_img3{ margin-top:242px;}
+.photo_ok li p{ padding:0; margin-top:5px; color:#999; text-align:center; line-height:16px;}
+.btn_photo_box{ clear:both;}
+
+.btn_photo_box span{ display:inline-block; height:42px; line-height:42px; margin-right:5px; width:174px; text-align:center; font-size:18px;border-radius:3px; color:#fff; cursor:pointer; background:#F194BE;}
+.btn_photo_add{ width:74px; background:#e38; color:#fff;}
+.btn_photo_add:hover{ background:#de7;}
+.btn_photo_add_stop,.btn_photo_add_stop:hover{background:#F194BE;color:#fff; cursor:default;}
+.btn_photo_box .btn_photo_remove{ width:83px; background:#f8f8f8; color:#666; height:40px; border:1px solid #ddd;}
+.btn_photo_box .btn_photo_remove:hover{ background:#f5f5f5;}
+.img_bg{ background:#000; filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity:0.5; opacity:0.5; position:absolute; left:0; top:0; width:100%; height:100%; z-index:3; display:none;}
+.up_loading{ width:100%; height:100%; position:absolute; left:0; top:0; background:url(http://pic.lvmama.com/img/new_v/ui_scrollLoading/loadingGIF46px.gif) no-repeat center center #FCFCFC; display:none; z-index:9;}
+
+.photo_tips_box{ padding:10px 0 0 38%; position:relative; overflow:hidden; display:none;}
+.photo_tips_box .tip-icon-big{ float:left; margin-left:-45px; position:relative;}
+.photo_tips_box h5{ font-weight:normal; font-size:14px; color:#333;}
+.dialog-body .photo_tips_box p{ font-size:12px; color:#999; margin:0;}
+.dialog .dialog-footer{ text-align:center;}
+
+.input_error{ border:1px #d37 solid; background:#FEF2F9;}/**表单报错**/
+#lvnav_information span,#lvnav_comment span{color:#f60; margin-left: 5px;}
+.lvnav_information #lvnav_information span,.lvnav_comment #lvnav_comment span{ color:#fff;}
+
+.app_right,.hr_b{ display:none !important;}/**掩藏广告**/
+
+/*修改用户名弹框**/
+.mod_user_pop{ padding:10px 0 0 60px; display:none;}
+.mod_user_pop p{ margin-bottom:20px;}
+.mod_user_pop label{ margin-right:10px; display:inline-block; width:90px; text-align:right; float:left; color:#666;}
+.mod_user_pop .ipt_txt{ width:230px; height:30px; line-height:30px; padding:0 10px; border:1px solid #ccc; color:#999;float:left; vertical-align:middle}
+.mod_user_pop .per_tips{ display:block; margin-top:10px; color:#333; clear:both;padding-left: 100px;}
+.per_btn_box{ padding-left:100px}
+/* 公用部分*/
+.mod_list p a,.user_cotent .fcolor,.info_list .title,.account_box .alist,.other,.operate .last_time,.operate,.help_box .list a{ color:#666; }
+.no_order .gohome:hover,.operate .pay_btn:hover,.account_box .active_btn:hover,.grade_box .know_btn:hover,.cancel_btn_box .sure_btn:hover,.lostbtn_box a:hover,.password_edit_title .add_btn:hover,.address_box .add_btn:hover,.yzpop_box .loin_btn:hover,
+.btn_yel:hover,.btn_sure:hover{ background:#f60; text-decoration:none; color:#fff}/* 按钮hover效果 */
+.mod_list p a:hover,.user_cotent .fcolor:hover,.other:hover,.operate .last_time:hover,.operate:hover,.help_box .list a:hover,.info_list .change:hover,.account_box .write:hover,.user_cotent .mod_tel a:hover,.phone_box .phone_tips:hover,.password_edit_title a:hover,.mod_a:hover,.more_box a:hover,.mail_box .no_mail a:hover,.mail_box .act_mail a:hover,.phone_box .mail_tips:hover,.sep-row .detail-link:hover,.operate .cancel_order:hover,.sep-row .desc p a:hover,.address_mod a:hover,.password_edit_title a:hover{ color:#f60}/* 文字hover效果 */
+.mod_list li,.daylogin,.order_img{transition:all 0.3s linear 0s;-moz-transition:all 0.3s linear 0s;-webkit-transition:all 0.3s linear 0s;-o-transition:all 0.3s linear 0s}
+.mod_list li:hover,.daylogin:hover,.order_img:hover{transform:translate(0,-5px);-moz-transform:translate(0,-5px);-webkit-transform:translate(0,-5px);-o-transform:translate(0,-5px)}
+
+/* 默认导航*/
+.lvnav_invoice #lvnav_invoice,.lvnav_grow #lvnav_grow,.lvnav_growUp #lvnav_growUp,.lvnav_collection #lvnav_collection,.lvnav_comment #lvnav_comment,.lvnav_ft #lvnav_flight,.lvnav_travel #lvnav_travel,.lvnav_raiders #lvnav_raiders,.lvnav_information #lvnav_information,.lvnav_order #lvnav_order,.lvnav_intent #lvnav_intent,.lvnav_balance #lvnav_balance,.lvnav_bonus #lvnav_bonus,.lvnav_coupons #lvnav_coupons,.lvnav_integral #lvnav_integral,.lvnav_gift #lvnav_gift,.lvnav_ious #lvnav_ious,.lvnav_staging #lvnav_staging,.lvnav_exchange #lvnav_exchange,.lvnav_guarantee #lvnav_guarantee,.lvnav_feedback #lvnav_feedback,.lvnav_mial #lvnav_mial,.lvnav_help #lvnav_help,.lvnav_safeset #lvnav_safeset,.lvnav_passwd #lvnav_passwd,.lvnav_tourinfo #lvnav_tourinfo,.lvnav_receinfo #lvnav_receinfo,.lvnav_perinfo #lvnav_perinfo,.lvnav_driveinfo #lvnav_driveinfo,.lvnav_photoinfo #lvnav_photoinfo,.lvnav_funds #lvnav_funds{background:#e38; color:#fff;border-radius: 0 16px 16px 0;}
+
+/****多返***/
+.floatTips{background: #f80;color: #fff;position: absolute;top: -19px;left: 64px;white-space: nowrap;font-size: 12px;padding: 0 5px;height: 18px;line-height: 18px;display: inline-block;border-radius: 4px;}
+.triangle{position: absolute;width: 0;height: 0;display: inline-block;line-height: 0;font-size: 0;overflow: hidden;border-style: dashed dashed dashed solid;border-color: transparent transparent transparent #f80;bottom: -5px;left: 10px;border-width: 0 0 6px 6px;}
+.bcomwrite span{ position:relative; border-radius:2px; margin-bottom:6px;}
+
+/****问卷调查***/
+.lv_newhome #sideInve {
+    left: 50%;
+    margin-left: 620px;
+    top: 285px;
+    width: 38px;
+    height: 80px;
+    background: url(http://pic.lvmama.com/img/v6/myspace/user_bg.png) no-repeat -327px -235px;
+}
+.lv_newhome #sideInve:hover {
+    background: url(http://pic.lvmama.com/img/v6/myspace/user_bg.png) no-repeat -327px -325px;
+}
+
+
+
+/* 近期订单 编辑补充游玩人 */
+.btn_cancel_baoxian{ cursor: pointer; }
+.btn_cancel_baoxian:hover,.btn_edit_visitor:hover{ color: #f60; }
+.btn_edit_visitor{ color: #09c; cursor: pointer; }
+.countdown_info{ color: #797979; }
+.countdown_tip{ position: relative; top: 3px; margin-left:3px; }
+.js_countdown i{ color: #f30; }
+
+/* 取消保险弹窗 */
+.cancel_insurance_dialog_tip{ position: absolute; left: 30px; bottom:0; color: #333;}
+.cancel_insurance_dialog_tip .tip-icon{ position: relative; top: 3px; margin-right: 5px;}
+.cancel_insurance_dialog .dialog-footer{ padding-bottom: 60px; text-align: left; }
+.cancel_insurance_dialog .btn-orange{ margin: 0 5px 0 10px; }
+.cancel_insurance_box{ display: none; padding: 0 10px;}
+.cancel_insurance_box h4{ font-size: 18px; color: #333; font-weight: normal; margin-top: 30px; }
+.tip-center{ position: relative; top: 3px; margin-right: 4px; }
+
+
+/* 国籍 */
+.oem-nationality-dropdown { -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15); box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15); display: none; z-index: 2; position: absolute; border: 1px solid #ccc; background-color: #fff; width: 250px; font-size: 14px; }
+.oem-nationality-dropdown li { border-bottom: 1px dotted #dddddd; padding: 4px 10px;font-size: 12px;}
+.oem-nationality-dropdown li b { font-weight: normal; float: right; color: #999; }
+.oem-nationality-dropdown li:hover { background-color: #fef2f9; color: #ee3388; }
+.oem-nationality-dropdown li.active { color: #ee3388; }
+.oem-contacts-dropdown { -webkit-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15); box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15); display: none; z-index: 2; position: absolute; border: 1px solid #ccc; background-color: #fff; width: 388px; font-size: 12px; }
+.oem-nd-tip { line-height: 27px;color: #999; padding: 0 10px;font-size: 12px; }
+.oem-nd-footer { padding: 8px 0; text-align: center; font-size: 0; line-height: 19px; }
+.oem-nd-footer .page { font-size: 12px; display: inline-block; margin-right: 10px; vertical-align: top; line-height: 19px; }
+.oem-nd-footer em { color: #ed3387; }
+.oem-nd-footer b { font-weight: normal; }
+.oem-nd-footer .next, .oem-nd-footer .prev { cursor: pointer; vertical-align: top; margin-right: 5px; font-size: 12px; display: inline-block; width: 17px; height: 17px; border: 1px solid #dddddd; text-align: left; }
+.oem-nd-footer .next i, .oem-nd-footer .prev i { display: inline-block; background-image: url(http://pic.lvmama.com/img/flight/international/order.png); vertical-align: top; width: 4px; height: 7px; margin: 5px 0 0 6px; }
+.oem-nd-footer .prev i { background-position: -160px -60px; }
+.oem-nd-footer .prev:hover i { background-position: -160px -70px; }
+.oem-nd-footer .next i { margin-left: 7px; background-position: -170px -60px; }
+.oem-nd-footer .next:hover i { background-position: -170px -70px; }
+
+/* 企业权益 */
+.enterprise-common-icon{background-image: url(../../../img/v6/myspace/enterprise_icon.gif); display: inline-block;}
+
+.enterprise-member-icon{ background-position: 0 -19px; width: 67px; height: 15px;vertical-align: -2px;}
+
+.enterprise-company-icon{ background-position: 0 -2px; width: 67px; height: 15px;vertical-align: -2px;}
+
+.enterprise-box{ display: none; background: #fff; }
+.enterprise-tab-box{background: #fff;margin: 0 0 10px 0;}
+.enterprise-tab li{float: left;height: 46px; line-height: 46px;padding: 0 20px; color: #666; font-size: 16px; cursor: pointer;}
+.enterprise-tab .active{background: #e38; color: #fff;}
+
+.enterprise-box{padding: 40px 60px;}
+.enterprise-content{ margin: 50px 0 0;}
+.enterprise-title .icon-crown{ display: block; background-position:-74px -1px ; width: 40px; height: 37px; margin: 0 auto 20px;}
+.enterprise-title{ font-size: 22px; color: #333; text-align: center; font-weight: 400; }
+.enterprise-text{ margin: 22px 0 0; font-size: 14px; color: #666; line-height: 24px; }
+.enterprise-interests-box{margin: 48px 0 0;background:#fafafa; padding: 46px 0 ;}
+.enterprise-interests-list{ margin: 28px 0 0; }
+.enterprise-interests-list li{float: left; margin: 0 23px; width: 170px; text-align: center; }
+.enterprise-interests-list i{ display: block; width: 74px; height: 74px; margin: 0 auto 16px; }
+.enterprise-interests-list-a{background-position: -1px -51px}
+.enterprise-interests-list-b{background-position: -75px -51px}
+.enterprise-interests-list-c{background-position: -149px -51px}
+.enterprise-interests-list-d{background-position: -223px -51px}
+.enterprise-interests-list-e{background-position: -296px -51px}
+.enterprise-interests-list h4{color: #666; margin-bottom: 2px; font-size: 16px; font-weight: 400;}
+.enterprise-interests-list p{color: #999; font-size: 12px; line-height: 18px;}
+.enterprise-contant-list{ margin: 27px 0 0; }
+.enterprise-contant-list dt{background:#fafafa;height:36px; line-height: 36px; font-size: 14px; color: #999;}
+.enterprise-contant-list span{ display: inline-block; padding-left: 30px; width: 200px;overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.enterprise-contant-list dd {color: #666;height:36px; line-height: 36px; font-size: 14px; border-bottom:#ddd dashed 1px;  }
+
+.my-enterprise-list li{border:1px solid #ddd; margin-bottom: 40px;}
+.my-enterprise-head{border-bottom:1px solid #ddd; height: 80px; padding: 0 20px; }
+.my-enterprise-unbind-btn{ margin: 10px 0 0; border-radius: 2px; display: block; padding: 0 20px; height: 30px; line-height: 30px; color: #fff; font-size: 14px; background: #f90; }
+.my-enterprise-unbind-btn:hover{background: #f60; text-decoration: none;color: #fff;}
+.my-enterprise-head .company{ vertical-align: middle; background-position:-123px -7px;; width: 56px; height: 30px;}
+.my-enterprise-head .title{font-size: 16px; font-weight: 700;color: #333; margin: 16px 0 0;}
+.my-enterprise-head .date{color: #666; margin: 10px 0 0; font-size: 14px;}
+.my-enterprise-head .date span{margin-right: 10px;}
+
+.my-enterprise-unbind-box,.js-enterprise-unbind-box,.js-enterprise-sure-box{font-size:18px;color:#333333; text-align: center;}
+.js-enterprise-unbind-box,.js-enterprise-sure-box{display: none;}
+.my-enterprise-unbind-box img,.js-enterprise-unbind-box img,.js-enterprise-sure-box img{margin-bottom: 15px;}
+.js-enterprise-sure-box span{display: block;color: #666; font-size: 12px; margin-top: 2px;}
+.lv-enterprise .btn { margin-right: 10px;}
+
+.del-wrap-box .btn{margin: 0 10px;}
+
+.del-wrap-box .del-wrap-center {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.del-wrap-box .del-wrap-price {
+    font-size: 20px;
+    color: #f60;
+}
+/*首页优惠券弹框*/
+/* .home-enterprise-pop{text-align: center; background: #fff;display: none;}
+.home-enterprise-pop .title{font-size: 20px; color: #000; margin-top: 12px;}
+.home-enterprise-pop .view-enterprise{ display: block; color: #29e; font-size: 16px;margin: 10px 0 38px;}
+.home-coupon-box{border-top:#ddd dashed 1px; padding-top: 15px;}
+.home-coupon-box p{ font-size: 14px; }
+.home-coupon-box p em{color: #f60; font-size: 18px; font-weight: 700; margin: 0 2px;}
+.home-coupon-box .view-coupon{color: #29e; margin: 0 0 0 5px}
+.home-coupon-box .view-coupon:hover,.home-enterprise-pop .view-enterprise:hover{color: #f60; text-decoration: none;}
+.home-coupon-list{margin: 12px 0 20px -10px;}
+.home-coupon-list li{float: left; width: 220px; height: 100px; background:url(../../../img/v6/myspace/registBg.png) 0 -402px; margin: 0 0 0 10px;
+    overflow: hidden;text-align: center;}
+.home-coupon-price{color: #fff;font-family: "Arial";font-size: 24px; margin: 14px 0 0;line-height: 40px; height: 40px;}
+.home-coupon-price em {font-size: 44px; margin: 0 0 0 4px; vertical-align: middle;}
+.home-conpon-tip{ display: block; color: #fff4e6;font-size: 12px; margin: 10px 16px 0; text-align: left; line-height: 14px; max-height: 28px; overflow: hidden;} */
+
+.databox .progress-bar-bg{ margin-left: 0; width: 150px; }
+.databox .a-link{color: #29e;margin-left: 4px;}
+.databox .a-link:hover{text-decoration: none;color: #f60}
+.databox .pay_box{ margin-top: 0 }
+
+.password-bar-box{ display: inline-block;margin-left: 10px;vertical-align: middle; border-radius: 100px;background: #f60;background: -webkit-gradient(linear, 100% 0, 0 100%,from(#FF8802),to(#FFBD05));font-size: 12px;height: 28px;line-height: 28px;padding:0 10px;color: #fff;}
+/*.vip-bar-box{display: inline-block; padding: 0 8px; margin-right: 12px; float: left; margin-top: 4px;  border-radius: 100px;background: #f60;background: -webkit-gradient(linear, 100% 0, 0 100%,from(#FF8802),to(#FFBD05));  font-size: 12px;height: 20px;line-height: 20px;text-align: center;color: #fff;}*/
+.vip-jf-icon{ display: inline-block;vertical-align: middle; width: 15px; height: 15px; background-image: url(/img/v6/myspace/user_bg.png); background-position: -120px -350px; margin-right: 4px; }
+.vip-bar-box a{ color: #fff; padding: 0; height: auto; line-height: 20px; }
+.vip-bar-box a:hover{color: #fff;}
+.vip-tip-icon{ display: inline-block;vertical-align: middle; width: 12px; height: 12px; background-image: url(/img/v6/myspace/user_bg.png); background-position: -145px -350px; margin-right: 4px; }
