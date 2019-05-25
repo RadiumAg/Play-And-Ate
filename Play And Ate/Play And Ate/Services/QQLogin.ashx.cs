@@ -43,14 +43,13 @@ namespace Play_And_Ate.Services
                 if (!string.IsNullOrEmpty(AccessToken)) return;
                 string openid = this.context.Request["OpenId"].ToString();
                 string accessToken = this.context.Request["AccessToken"].ToString();
-                //读取用户数据
+                //读取用户数据 
                 UserInfo_Role userData = UserInfo_RoleManager.CheckUserInfo(new UserInfo_Role { OpenId = openid });
                 if (userData != null)
                 {
                     Helper.Authentication.SetCookie(userData.UserName, userData.Pwd, userData.Role_UserInfo.RoleName);
-                    this.context.Response.Cookies["UserName"].Value = userData.UserName;
-                    this.context.Response.Cookies["UserId"].Value = userData.UserId.ToString();
-                    Helper.Authentication.SetCookie(userData.UserName, userData.Pwd, userData.Role_UserInfo.RoleName);
+                    this.context.Response.Cookies["UserName"].Value = HttpUtility.UrlEncode(userData.UserName.ToString());
+                    this.context.Response.Cookies["UserId"].Value = HttpUtility.UrlEncode(userData.UserId.ToString());
                     //写入QQ登录标识
                     this.context.Response.Cookies["AccessToken"].Value = accessToken;
                     this.context.Response.Write(JsonConvert.SerializeObject(true));
@@ -62,8 +61,8 @@ namespace Play_And_Ate.Services
                     string NickName = this.context.Request["NickName"].ToString();
                     UserInfo_Role user = new UserInfo_Role() { OpenId = openid, UserName = NickName, RoleId = 3, Pwd = "", Address = Address, Phone = "" };
                     UserInfo_RoleManager.Register(user);
-                    this.context.Response.Cookies["UserName"].Value = NickName;
-                    this.context.Response.Cookies["UserId"].Value = UserInfo_RoleManager.CheckUserInfo(new UserInfo_Role { OpenId = openid }).UserId.ToString();
+                    this.context.Response.Cookies["UserName"].Value = HttpUtility.UrlEncode(UserInfo_RoleManager.CheckUserInfo(new UserInfo_Role { OpenId = openid }).UserName.ToString());
+                    this.context.Response.Cookies["UserId"].Value = HttpUtility.UrlEncode(UserInfo_RoleManager.CheckUserInfo(new UserInfo_Role { OpenId = openid }).UserId.ToString());
                     //写入QQ登录标识
                     this.context.Response.Cookies["AccessToken"].Value = accessToken;
                     Helper.Authentication.SetCookie(userData.UserName, userData.Pwd, userData.Role_UserInfo.RoleName);

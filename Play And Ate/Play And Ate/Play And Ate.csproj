@@ -1289,6 +1289,7 @@
       <DependentUpon>Cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Helper\Authentication.cs" />
+    <Compile Include="Helper\CodeChange.cs" />
     <Compile Include="Helper\OrderMessage.cs" />
     <Compile Include="Helper\PreventLink.cs" />
     <Compile Include="Helper\SMSinterface.cs" />
