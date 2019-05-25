@@ -285,8 +285,8 @@ namespace Play_And_Ate.Services
                     isLogin = true
                 };
                 Helper.Authentication.SetCookie(userData.UserName, userData.Pwd, userData.Role_UserInfo.RoleName);
-                this.context.Response.Cookies["UserName"].Value = userData.UserName;
-                this.context.Response.Cookies["UserId"].Value = userData.UserId.ToString();
+                this.context.Response.Cookies["UserName"].Value = HttpUtility.HtmlEncode(userData.UserName);
+                this.context.Response.Cookies["UserId"].Value = HttpUtility.HtmlEncode(userData.UserId.ToString());
                 context.Response.Write(JsonConvert.SerializeObject(msg));
             }
         }

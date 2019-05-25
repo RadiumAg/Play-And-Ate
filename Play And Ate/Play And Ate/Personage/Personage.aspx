@@ -1,32 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Personage.aspx.cs" Inherits="Play_And_Ate.Personage.Personage" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
-    <script src="../Scripts/Personage/v.js" type="text/javascript"></script>
-    <script src="../Scripts/Personage/mba.js"></script>
-    <script src="../Scripts/Personage/mv.js"></script>
-    <script src="../Scripts/Personage/fx.js"></script>
-    <script src="../Scripts/Personage/hm.js"></script>
-    <script src="../Scripts/Personage/analytics.js"></script>
-    <script src="../Scripts/Personage/bdctrace-pc.js"></script>
-    <link rel="stylesheet" href="../Content/Personage/newmember.css&amp;v=051610">
-    <link href="../Content/Personage/header-air.css" rel="stylesheet">
-    <link href="../Content/Personage/ui-lvmama.css" rel="stylesheet">
-    <link href="../Content/Personage/ui-components.css" rel="stylesheet">
-    <link href="../Content/Personage/lv-bought.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Content/Personage/global_pop.css">
-    <link href="../Content/Personage/ui-components(1).css" rel="stylesheet">
-    <link rel="stylesheet" href="../Content/Personage/newmember.css">
-    <link rel="stylesheet" href="../Content/Personage/newcommon.css">
-    <link rel="stylesheet" href="../Content/Personage/integral.css">
-    <script src="../Content/Personage/lvmember.js"></script>
+    <link rel="stylesheet" href="../Content/Personage/newmember.css"/>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <!---会员中心导航--->
-
-
 <div class="lv_header">
     <div class="header_inner clearfix">
         <div class="lv_logo">
-        	<a href="http://www.lvmama.com/">驴妈妈旅游网
+        	<a href="#">驴妈妈旅游网
                 <div class="home_logo">
                     <div class="logo_run1"></div>
                     <div class="logo_run2"></div>
@@ -40,7 +21,6 @@
                         <div class="logo_donkey4"></div>
                         <div class="logo_donkey5"></div>
                     </div>
-                    <%--<div class="logo_b"></div>--%>
                 </div>
             </a>
         </div>
@@ -95,13 +75,13 @@
                   
                     <div class="per_right_box">
                         <p class="clearfix">
-                            <label><em>*</em>用户名：</label>lv6236095020777777
+                            <label><em>*</em>用户名:</label><%= this.Request.Cookies["UserName"].Value.ToString() %>
                                 <a class="pop link-edit" id="bindMobileAndEmailTip">修改</a>
                         </p>
 
                        
                         <p class="clearfix">
-                            <label><em>*</em>手机号：</label>18815168007<a href="#" class="per_mod mar_left10">修改</a>
+                            <label><em>*</em>手机号：</label><%= user.Phone %><a href="#" class="per_mod mar_left10">修改</a>
                             
                         </p>
 
@@ -111,10 +91,10 @@
 
                         <p class="clearfix"><label>性别：</label>
                             <span class="ipt_rad">
-                                <input type="radio" name="gender" value="M">男
+                                <input type="radio" name="gender" value="M"/>男
                             </span>
                             <span class="ipt_rad">
-                                <input type="radio" name="gender" value="F">女
+                                <input type="radio" name="gender" value="F"/>女
                             </span>
                         </p>
                         <p class="clearfix"><label>出生日期：</label>
@@ -302,7 +282,7 @@
                                 <option value="31">31</option>
                             </select>
                             <span class="tips_warn" id="birthDayTip"></span>
-                            <span class="per_tips">完善生日信息可获得会员"生日礼包"特权的，<a href="http://my.lvmama.com/memberClub/index" class="per_mod mar_left10" target="_blank">点此了解</a></span>
+                            <span class="per_tips">完善生日信息可获得会员"生日礼包"特权的，<a href="#" class="per_mod mar_left10" target="_blank">点此了解</a></span>
                         </p>
                         <p class="clearfix"><label>所在地：</label>
                             <select id="prov" class="mr_rit wd105" onchange="showCity(this)">
@@ -312,7 +292,7 @@
                                 <option value="">-市-</option></select>
                             
                         </p>
-                        <p class="clearfix"><label>QQ：</label>1183164683
+                        <p class="clearfix"><label>QQ：</label><%= user.QQ %>
                         </p>
 
                         <p class="per_btn_box">

@@ -135,18 +135,8 @@
     <Content Include="Content\LoginAndRegister\Register\base.v606141511.css" />
     <Content Include="Content\LoginAndRegister\Register\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Order\common_wm.css" />
-    <Content Include="Content\Order\common_wm.html" />
-    <Content Include="Content\Order\order.css" />
-    <Content Include="Content\Order\style.css" />
-    <Content Include="Content\Personage\global_pop.css" />
-    <Content Include="Content\Personage\header-air.css" />
-    <Content Include="Content\Personage\integral.css" />
-    <Content Include="Content\Personage\jquery.common.css" />
-    <Content Include="Content\Personage\lv-bought.css" />
-    <Content Include="Content\Personage\newcommon.css" />
+    <Content Include="Content\Order\Index.css" />
     <Content Include="Content\Personage\newmember.css" />
-    <Content Include="Content\Personage\ui-components.css" />
-    <Content Include="Content\Personage\ui-lvmama.css" />
     <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
     <Content Include="Content\Products\b61e5d222cddc2d58eececba5f1f9e27.css" />
     <Content Include="Content\Products\base.v606141511.css" />
@@ -842,12 +832,9 @@
     <Content Include="Order\Order_5.aspx" />
     <Content Include="Order\PayTo.aspx" />
     <Content Include="Personage\Order.aspx" />
-    <Content Include="Personage\PartialView\ShowOrder.html" />
     <Content Include="Personage\Personage.aspx" />
     <Content Include="Plugin\jquery.imagePreview.1.0.js" />
     <Content Include="Content\Search\new_default.css.bak" />
-    <Content Include="Content\Personage\newmember.css&amp;v=051610" />
-    <Content Include="Content\Personage\ztRecommendInfoJson.do" />
     <None Include="Plugin\jquery-3.3.1.intellisense.js" />
     <Content Include="Plugin\jquery-3.3.1.js" />
     <Content Include="Plugin\jquery-3.3.1.min.js" />
@@ -859,6 +846,8 @@
     <Content Include="Plugin\jqzoom\js\jquery-1.5.js" />
     <Content Include="Plugin\jqzoom\js\jquery.jqzoom-core.js" />
     <Content Include="Plugin\jqzoom\js\jquery.jqzoom-core.pack.js" />
+    <Content Include="Plugin\Pager\js\jquery.min.js" />
+    <Content Include="Plugin\Pager\js\pageMe.js" />
     <Content Include="Plugin\public\media\css\bootstrap-modal.css" />
     <Content Include="Plugin\public\media\css\bootstrap-responsive.min.css" />
     <Content Include="Plugin\public\media\css\bootstrap.min.css" />
@@ -1551,6 +1540,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Home\" />
+    <Folder Include="Personage\PartialView\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Cart\" />
     <Folder Include="Scripts\Commond\" />

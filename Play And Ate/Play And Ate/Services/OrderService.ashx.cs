@@ -36,8 +36,16 @@ namespace Play_And_Ate.Services
         /// </summary>
         public void ShowOrderData()
         {
+            //接收单个页面的数量
+            int pageNumber = Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["pageNumber"].ToString());
+            //当前页
+            int page = this.context.Request["page"] == null ? 0 : Convert.ToInt32(this.context.Request["page"]);
             string userName = this.context.Request["UserName"].ToString();
-            this.context.Response.Write(JsonConvert.SerializeObject(OrderManager.ShowOrder<string>(userName).Select(x=> new {x.OrderId, x.Contacts.ContactsName,x.OrderName,x.Success,x.OrderPrice })));
+            this.context.Response.Write(JsonConvert.SerializeObject(OrderManager.ShowOrder<string>(userName)
+                                        .Select(x => new { x.OrderId, x.Contacts.ContactsName, x.OrderName, x.Success, x.OrderPrice })
+                                        .OrderBy(x => x.OrderId)
+                                        .Skip((page - 1) * pageNumber)
+                                        .Take(pageNumber)));
         }
 
         /// <summary>

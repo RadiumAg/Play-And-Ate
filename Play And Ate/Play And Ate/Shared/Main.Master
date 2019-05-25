@@ -71,7 +71,7 @@
                         <%}
                             else
                             { %>
-                        <span class="f_l">你好<%=userName %>，欢迎光临Play And Ate</span>
+                        <span class="f_l">你好<%= userName %>，欢迎光临Play And Ate</span>
                         <span><a href="javascript:void(0)" id="singOut">退出登录</a><span class="v_line">&nbsp;|&nbsp;</span></span>
                         <a href="../Personage/Order.aspx">❤个人信息❤</a>
                         <%} %>
