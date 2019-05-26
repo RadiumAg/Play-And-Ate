@@ -7,7 +7,7 @@
         #kefu {
             position: fixed;
             top: 200px;
-            right:5px;
+            right: 5px;
             z-index: 99999;
         }
     </style>
@@ -100,8 +100,7 @@
         <!-- 热搜直通车 -->
         <div class="train">
             <div class="train_tit">搜索直通车</div>
-            <a href="#"
-                title="安吉农家乐">安吉农家乐</a>
+            <a href="#" title="安吉农家乐">安吉农家乐</a>
         </div>
         <div class="warps">
             <!-- END 热搜 -->
@@ -282,63 +281,62 @@
                                     <span>我的需求</span>
                                     <div id="xuqiutx">请选择您的需求</div>
                                     <span id="xuqiuxz" class="none">
-                                        <label
-                                            class="f_l">
+                                        <label class="f_l">
                                             您选择了:</label><label id="youwan_xm"></label></span>
                                 </div>
                                 <ul id="mudi_xz">
                                     <li>
                                         <label onclick="mudi_xuanze(1)" id="goout_purpose_1">住宿</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_1">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_1" />
                                     <li>
                                         <label onclick="mudi_xuanze(2)" id="goout_purpose_2">农家饭</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_2">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_2" />
                                     <li>
                                         <label onclick="mudi_xuanze(3)" id="goout_purpose_3">垂钓</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_3">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_3" />
                                     <li>
                                         <label onclick="mudi_xuanze(4)" id="goout_purpose_4">烧烤</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_4">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_4" />
                                     <li>
                                         <label onclick="mudi_xuanze(5)" id="goout_purpose_5">采摘</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_5">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_5" />
                                     <li>
                                         <label onclick="mudi_xuanze(6)" id="goout_purpose_6">会议</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_6">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_6" />
                                     <li>
                                         <label onclick="mudi_xuanze(7)" id="goout_purpose_7">拓展</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_7">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_7" />
                                     <li>
                                         <label onclick="mudi_xuanze(8)" id="goout_purpose_8">真人cs</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_8">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_8" />
                                     <li>
                                         <label onclick="mudi_xuanze(9)" id="goout_purpose_9">休闲</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_9">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_9" />
                                     <li>
                                         <label onclick="mudi_xuanze(10)" id="goout_purpose_10">棋牌</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_10">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_10" />
                                     <li>
                                         <label onclick="mudi_xuanze(11)" id="goout_purpose_11">卡拉ok</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_11">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_11" />
                                     <li>
                                         <label onclick="mudi_xuanze(12)" id="goout_purpose_12">土特产</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_12">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_12" />
                                     <li>
                                         <label onclick="mudi_xuanze(13)" id="goout_purpose_13">骑马</label>
                                     </li>
-                                    <input type="hidden" value="0" id="mudi_xuanze_hid_13">
+                                    <input type="hidden" value="0" id="mudi_xuanze_hid_13" />
                                 </ul>
                             </div>
                             <div class="gbxyb">
@@ -356,26 +354,21 @@
                     <li data-index="0" style="display: none;">
                         <a href="#" target="_blank">
                             <p>
-                                <img alt=""
-                                    src="../Images/Home/57bd13bc56362.jpg"
-                                    border="0" />
+                                <img alt="" src="../Images/Home/57bd13bc56362.jpg" border="0" />
                             </p>
                         </a>
                     </li>
                     <li data-index="1" style="display: none;">
                         <a href="#" target="_blank">
                             <div>
-                                <img alt=""
-                                    src="../Images/Home/57e103de2ce7e.jpg"
-                                    border="0" />
+                                <img alt="" src="../Images/Home/57e103de2ce7e.jpg" border="0" />
                             </div>
                         </a>
                     </li>
                     <li data-index="2" style="">
                         <a href="#" target="_blank">
                             <p>
-                                <img border="0" alt=""
-                                    src="../Images/Home/56ab04ed628d5.jpg" />
+                                <img border="0" alt="" src="../Images/Home/56ab04ed628d5.jpg" />
                             </p>
                         </a>
                     </li>
@@ -394,8 +387,8 @@
                 <div class="mtext_b_l_title hong">
                     <div class="f_l">快速找农家</div>
                     <div class="m_city f_r" id="hot_city_cs">
-                        <a href="javascript:;" class="titleass rm hot_city_hover" onclick="hot_citys(2);"
-                            title="上海">上海 </a>
+                        <a href="javascript:;" class="titleass rm hot_city_hover" onclick="hot_citys(2);" title="上海">上海
+                        </a>
                         <a href="javascript:;" class="titleass rm " onclick="hot_citys(3);" title="北京">北京 </a>
                         <a href="javascript:;" class="titleass rm " onclick="hot_citys(22);" title="天津">天津 </a>
                         <a href="javascript:;" class="titleass rm " onclick="hot_citys(23);" title="南京">南京 </a>
@@ -500,148 +493,112 @@
                     <div class="mtext_z_b_t" id="hot_citys_html">
                         <ul>
                             <li>
-                                <a href="#"
-                                    target="_blank">佘山</a>
+                                <a href="#" target="_blank">佘山</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">淀山湖</a>
+                                <a href="#" target="_blank">淀山湖</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">野生动物园</a>
+                                <a href="#" target="_blank">野生动物园</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">西佘山园</a>
+                                <a href="#" target="_blank">西佘山园</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">欢乐谷</a>
+                                <a href="#" target="_blank">欢乐谷</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">前卫生态村</a>
+                                <a href="#" target="_blank">前卫生态村</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">朱家角</a>
+                                <a href="#" target="_blank">朱家角</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">大观园</a>
+                                <a href="#" target="_blank">大观园</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">滴水湖</a>
+                                <a href="#" target="_blank">滴水湖</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">东方绿舟</a>
+                                <a href="#" target="_blank">东方绿舟</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">滨江森林公园</a>
+                                <a href="#" target="_blank">滨江森林公园</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">长兴岛</a>
+                                <a href="#" target="_blank">长兴岛</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">顾村公园</a>
+                                <a href="#" target="_blank">顾村公园</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">美兰湖</a>
+                                <a href="#" target="_blank">美兰湖</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">东平国家森林公园</a>
+                                <a href="#" target="_blank">东平国家森林公园</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">城市沙滩</a>
+                                <a href="#" target="_blank">城市沙滩</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">枫泾</a>
+                                <a href="#" target="_blank">枫泾</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">三甲港海滨乐园</a>
+                                <a href="#" target="_blank">三甲港海滨乐园</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">新场古镇</a>
+                                <a href="#" target="_blank">新场古镇</a>
                             </li>
                             <li>
-                                <a href="h#"
-                                    target="_blank">洋山深水港</a>
+                                <a href="h#" target="_blank">洋山深水港</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">鲜花港</a>
+                                <a href="#" target="_blank">鲜花港</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">芦潮港</a>
+                                <a href="#" target="_blank">芦潮港</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">横沙岛</a>
+                                <a href="#" target="_blank">横沙岛</a>
                             </li>
                             <li>
-                                <a href="h#"
-                                    target="_blank">古猗园</a>
+                                <a href="h#" target="_blank">古猗园</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">碧海金沙</a>
+                                <a href="#" target="_blank">碧海金沙</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">海湾国家森林公园</a>
+                                <a href="#" target="_blank">海湾国家森林公园</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">西沙湿地</a>
+                                <a href="#" target="_blank">西沙湿地</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">地质科普馆</a>
+                                <a href="#" target="_blank">地质科普馆</a>
                             </li>
                             <li>
-                                <a href="h#"
-                                    target="_blank">练塘</a>
+                                <a href="h#" target="_blank">练塘</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">东滩湿地公园</a>
+                                <a href="#" target="_blank">东滩湿地公园</a>
                             </li>
                             <li>
-                                <a href="h#"
-                                    target="_blank">安亭老街</a>
+                                <a href="h#" target="_blank">安亭老街</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">东滩</a>
+                                <a href="#" target="_blank">东滩</a>
                             </li>
                             <li>
-                                <a href="h#"
-                                    target="_blank">车墩影视乐园</a>
+                                <a href="h#" target="_blank">车墩影视乐园</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">三甲港海滨</a>
+                                <a href="#" target="_blank">三甲港海滨</a>
                             </li>
                             <li>
-                                <a href="h#"
-                                    target="_blank">瀛东村</a>
+                                <a href="h#" target="_blank">瀛东村</a>
                             </li>
                             <li>
-                                <a href="#"
-                                    target="_blank">奉新海滩</a>
+                                <a href="#" target="_blank">奉新海滩</a>
                             </li>
                         </ul>
                     </div>
@@ -649,22 +606,14 @@
                 <div id="s4" class="mtext_z_b h">
                     <div class="mtext_z_b_t" id="purpose_html">
                         <ul>
-                            <li><a href="#"
-                                target="_blank" title="3A">3A农庄</a> </li>
-                            <li><a href="#"
-                                target="_blank" title="4A">4A农庄</a> </li>
-                            <li><a href="#"
-                                target="_blank" title="5A">5A农庄</a> </li>
-                            <li><a href="#"
-                                target="_blank" title="二星">二星农家乐</a> </li>
-                            <li><a href="#"
-                                target="_blank" title="三星">三星农家乐</a> </li>
-                            <li><a href="#"
-                                target="_blank" title="四星">四星农家乐</a> </li>
-                            <li><a href="#"
-                                target="_blank" title="五星">五星农家乐</a> </li>
-                            <li><a href="#"
-                                target="_blank" title="无">无</a> </li>
+                            <li><a href="#" target="_blank" title="3A">3A农庄</a> </li>
+                            <li><a href="#" target="_blank" title="4A">4A农庄</a> </li>
+                            <li><a href="#" target="_blank" title="5A">5A农庄</a> </li>
+                            <li><a href="#" target="_blank" title="二星">二星农家乐</a> </li>
+                            <li><a href="#" target="_blank" title="三星">三星农家乐</a> </li>
+                            <li><a href="#" target="_blank" title="四星">四星农家乐</a> </li>
+                            <li><a href="#" target="_blank" title="五星">五星农家乐</a> </li>
+                            <li><a href="#" target="_blank" title="无">无</a> </li>
                         </ul>
                     </div>
                 </div>
@@ -678,18 +627,13 @@
                             <div class="theme">
                                 <div class="mzt_left_title"><span class="main_iocn zt_nz"></span>主题农庄</div>
                                 <ul>
-                                    <li><a href="#"
-                                        target="_blank">休闲观光</a> </li>
-                                    <li><a href="#"
-                                        target="_blank">度假村</a> </li>
-                                    <li><a href="#"
-                                        target="_blank">温泉农庄</a> </li>
+                                    <li><a href="#" target="_blank">休闲观光</a> </li>
+                                    <li><a href="#" target="_blank">度假村</a> </li>
+                                    <li><a href="#" target="_blank">温泉农庄</a> </li>
                                     <li><a href="#" target="_blank">科普基地</a>
                                     </li>
-                                    <li><a href="#"
-                                        target="_blank">拓展培训</a> </li>
-                                    <li><a href="#"
-                                        target="_blank">生态农庄</a> </li>
+                                    <li><a href="#" target="_blank">拓展培训</a> </li>
+                                    <li><a href="#" target="_blank">生态农庄</a> </li>
                                 </ul>
                             </div>
                             <div class="theme">
@@ -703,12 +647,9 @@
                             <div class="theme">
                                 <div class="mzt_left_title"><span class="sty main_iocn"></span>生态园</div>
                                 <ul>
-                                    <li><a href="#"
-                                        target="_blank">养殖园</a> </li>
-                                    <li><a href="#"
-                                        target="_blank">采摘园</a> </li>
-                                    <li><a href="#"
-                                        target="_blank">观光园</a> </li>
+                                    <li><a href="#" target="_blank">养殖园</a> </li>
+                                    <li><a href="#" target="_blank">采摘园</a> </li>
+                                    <li><a href="#" target="_blank">观光园</a> </li>
                                 </ul>
                             </div>
                             <div class="theme">
@@ -730,11 +671,16 @@
                             <ContentTemplate>
                                 <div class="mzt_title">
                                     <span class="biaoti_tit">热门农家目的地：</span>
-                                    <asp:LinkButton runat="server" Text="上海周边农家乐" CssClass="beiji" OnClick="ChangeFarm" CommandArgument="1" ID="ter_6"></asp:LinkButton>
-                                    <asp:LinkButton runat="server" Text="仙华山农家乐" OnClick="ChangeFarm" CommandArgument="2" ID="ter_7"></asp:LinkButton>
-                                    <asp:LinkButton runat="server" Text="三山岛农家乐" OnClick="ChangeFarm" CommandArgument="3" ID="ter_8"></asp:LinkButton>
-                                    <asp:LinkButton runat="server" Text="千岛湖农家乐" OnClick="ChangeFarm" CommandArgument="4" ID="ter_9"></asp:LinkButton>
-                                    <asp:LinkButton runat="server" Text="临安农家乐" OnClick="ChangeFarm" CommandArgument="5" ID="ter_10"></asp:LinkButton>
+                                    <asp:LinkButton runat="server" Text="上海周边农家乐" CssClass="beiji" OnClick="ChangeFarm"
+                                        CommandArgument="1" ID="ter_6"></asp:LinkButton>
+                                    <asp:LinkButton runat="server" Text="仙华山农家乐" OnClick="ChangeFarm"
+                                        CommandArgument="2" ID="ter_7"></asp:LinkButton>
+                                    <asp:LinkButton runat="server" Text="三山岛农家乐" OnClick="ChangeFarm"
+                                        CommandArgument="3" ID="ter_8"></asp:LinkButton>
+                                    <asp:LinkButton runat="server" Text="千岛湖农家乐" OnClick="ChangeFarm"
+                                        CommandArgument="4" ID="ter_9"></asp:LinkButton>
+                                    <asp:LinkButton runat="server" Text="临安农家乐" OnClick="ChangeFarm" CommandArgument="5"
+                                        ID="ter_10"></asp:LinkButton>
                                 </div>
                             </ContentTemplate>
                         </asp:UpdatePanel>
@@ -746,15 +692,19 @@
                                         <asp:Repeater runat="server" ID="ReProduct">
                                             <ItemTemplate>
                                                 <li>
-                                                    <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>' onmouseout="shadowout(<%# Eval("ProductID") %>)"
-                                                        onmouseover="shadow(<%# Eval("ProductID") %>)" target="_blank" />
-                                                    <img src='../Images/Tailorism/<%# Eval("Image.ImageName")%>'
+                                                    <a href='/Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>'
+                                                        onmouseout="shadowout(<%# Eval("ProductID") %>)"
+                                                        onmouseover="shadow(<%# Eval("ProductID") %>)"
+                                                        target="_blank" />
+                                                    <img src='/Images/Tailorism/<%# Eval("Image.ImageName")%>'
                                                         alt='<%# Eval("ProductName") %>' class="f_l"
                                                         style="display: block; width: 100%; height: 100%;" />
 
                                                     <div class="shadow none" id='shadow_<%# Eval("ProductID") %>'>
                                                         <span class="shadow_name"><%# Eval("ProductName") %></span>
-                                                        <span class="shadow_price"><span class="qi">￥</span><%# string.Format("{0:F2}",Eval("ProductPrice")) %><span class="qi">起</span></span>
+                                                        <span class="shadow_price"><span
+                                                                class="qi">￥</span><%# string.Format("{0:F2}",Eval("ProductPrice")) %><span
+                                                                class="qi">起</span></span>
 
                                                     </div>
                                                     </a>
@@ -813,10 +763,13 @@
                     <div class="mtext_b_l f_l">
                         <div class="mtext_b_l_title yellow">
                             <div class="mtext_title_l f_l">优选农家</div>
-                            <asp:UpdatePanel runat="server" ID="UpBetterSelect" UpdateMode="Conditional" ChildrenAsTriggers="False">
+                            <asp:UpdatePanel runat="server" ID="UpBetterSelect" UpdateMode="Conditional"
+                                ChildrenAsTriggers="False">
                                 <ContentTemplate>
-                                    <asp:LinkButton OnClick="ChangeFarm" CssClass="stitlear stitlear_hover" Text="诚信商家" runat="server" ID="farmhouse1"></asp:LinkButton>
-                                    <asp:LinkButton OnClick="ChangeFarm" CssClass="stitlear" Text="精品线路" runat="server" ID="farmhouse2"></asp:LinkButton>
+                                    <asp:LinkButton OnClick="ChangeFarm" CssClass="stitlear stitlear_hover" Text="诚信商家"
+                                        runat="server" ID="farmhouse1"></asp:LinkButton>
+                                    <asp:LinkButton OnClick="ChangeFarm" CssClass="stitlear" Text="精品线路" runat="server"
+                                        ID="farmhouse2"></asp:LinkButton>
                                 </ContentTemplate>
                             </asp:UpdatePanel>
                         </div>
@@ -827,11 +780,14 @@
                                         <asp:Repeater runat="server" ID="ReSincerityPro">
                                             <ItemTemplate>
                                                 <li>
-                                                    <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>' target="_blank">
-                                                        <img style="width: 100%; height: 132px;" alt="<%# Eval("Image.ImageName") %>"
+                                                    <a href='../Show/FarmDetails.aspx?productId=<%# Eval("ProductID") %>'
+                                                        target="_blank">
+                                                        <img style="width: 100%; height: 132px;"
+                                                            alt="<%# Eval("Image.ImageName") %>"
                                                             src='../Images/Tailorism/<%# Eval("Image.ImageName") %>' />
                                                         <div class="m_title_s"><%# Eval("ProductName") %></div>
-                                                        <div class="m_title_c"><%# Eval("UserInfo_Role.Address") %></div>
+                                                        <div class="m_title_c"><%# Eval("UserInfo_Role.Address") %>
+                                                        </div>
                                                     </a>
                                                 </li>
                                             </ItemTemplate>
@@ -881,15 +837,15 @@
                 <div class="mtext_gg_img f_l">
                     <a href="#" class="guanggaotonglan" target="_blank">
                         <div>
-                            <font style="background-color: #ffffff;"><img alt="" border="0" src="../Images/Home/57e105a3d7f31.jpg"></font>
+                            <font style="background-color: #ffffff;"><img alt="" border="0"
+                                    src="../Images/Home/57e105a3d7f31.jpg"></font>
                         </div>
                     </a>
                 </div>
                 <div class="mtext_b_r f_l">
                     <a href="#" target="_blank">
                         <div>
-                            <img alt="" border="0"
-                                src="../Images/Home/57e1080ee0356.png" />
+                            <img alt="" border="0" src="../Images/Home/57e1080ee0356.png" />
                         </div>
                     </a>
                 </div>
@@ -929,36 +885,28 @@
                     </div>
                     <div class="mtext_jx_ul" id="season_html">
                         <div class="mtext_jx_z">
-                            <img alt="" src="../Images/Home/5565534cdda31.jpg">
+                            <img alt="" src="../Images/Home/5565534cdda31.jpg" />
                             <ul>
                                 <li>
                                     <label class="f_l">
-                                        <a href="#"
-                                            target="_blank">[上海半日闲采摘园]奶油草莓</a></label>
+                                        <a href="#" target="_blank">[上海半日闲采摘园]奶油草莓</a></label>
                                     <label class="f_r">
-                                        ￥<b
-                                            class="red f-16">25</b>元/斤</label></li>
+                                        ￥<b class="red f-16">25</b>元/斤</label></li>
                                 <li>
                                     <label class="f_l">
-                                        <a href="#"
-                                            target="_blank">[金沈泽农家乐]草莓采摘</a></label>
+                                        <a href="#" target="_blank">[金沈泽农家乐]草莓采摘</a></label>
                                     <label class="f_r">
-                                        ￥<b
-                                            class="red f-16">25</b>元/斤</label></li>
+                                        ￥<b class="red f-16">25</b>元/斤</label></li>
                                 <li>
                                     <label class="f_l">
-                                        <a href="#"
-                                            target="_blank">[赵屯草莓基地NO37]草莓采摘</a></label>
+                                        <a href="#" target="_blank">[赵屯草莓基地NO37]草莓采摘</a></label>
                                     <label class="f_r">
-                                        ￥<b
-                                            class="red f-16">28</b>元/斤</label></li>
+                                        ￥<b class="red f-16">28</b>元/斤</label></li>
                                 <li>
                                     <label class="f_l">
-                                        <a href="#"
-                                            target="_blank">[宋先生草莓园]当季草莓采摘</a></label>
+                                        <a href="#" target="_blank">[宋先生草莓园]当季草莓采摘</a></label>
                                     <label class="f_r">
-                                        ￥<b
-                                            class="red f-16">25</b>元/斤</label></li>
+                                        ￥<b class="red f-16">25</b>元/斤</label></li>
                             </ul>
                         </div>
                         <div class="mtext_jx_z">
@@ -966,32 +914,24 @@
                             <ul>
                                 <li>
                                     <label class="f_l">
-                                        <a href="#"
-                                            target="_blank">[孙桥卉绿有机农场]有机蔬菜</a></label>
+                                        <a href="#" target="_blank">[孙桥卉绿有机农场]有机蔬菜</a></label>
                                     <label class="f_r">
-                                        ￥<b
-                                            class="red f-16">15</b>元/斤</label></li>
+                                        ￥<b class="red f-16">15</b>元/斤</label></li>
                                 <li>
                                     <label class="f_l">
-                                        <a href="#"
-                                            target="_blank">[多利农庄]有机蔬菜尝鲜</a></label>
+                                        <a href="#" target="_blank">[多利农庄]有机蔬菜尝鲜</a></label>
                                     <label class="f_r">
-                                        ￥<b
-                                            class="red f-16">10</b>元/斤</label></li>
+                                        ￥<b class="red f-16">10</b>元/斤</label></li>
                                 <li>
                                     <label class="f_l">
-                                        <a href="#"
-                                            target="_blank">[归园田居有机农庄]有机蔬菜</a></label>
+                                        <a href="#" target="_blank">[归园田居有机农庄]有机蔬菜</a></label>
                                     <label class="f_r">
-                                        ￥<b
-                                            class="red f-16">15</b>元/斤</label></li>
+                                        ￥<b class="red f-16">15</b>元/斤</label></li>
                                 <li>
                                     <label class="f_l">
-                                        <a href="#"
-                                            target="_blank">[上海都市菜园]有机蔬菜特惠</a></label>
+                                        <a href="#" target="_blank">[上海都市菜园]有机蔬菜特惠</a></label>
                                     <label class="f_r">
-                                        ￥<b
-                                            class="red f-16">10</b>元/斤</label></li>
+                                        ￥<b class="red f-16">10</b>元/斤</label></li>
                             </ul>
                         </div>
                     </div>
@@ -1003,13 +943,13 @@
                         <div class="mtext_title_l f_l">主题攻略</div>
                         <ul class="down_store_jp" id="index_pudp">
                             <li class="s_28 " id="jp_jp"><a href="javascript:void(0);"
-                                onclick="special_store(28)">最美乡村</a></li>
+                                    onclick="special_store(28)">最美乡村</a></li>
                             <li class="s_29"><a href="javascript:void(0);" class="lvses"
-                                onclick="special_store(29)">农家攻略</a></li>
+                                    onclick="special_store(29)">农家攻略</a></li>
                             <li class="s_30"><a href="javascript:void(0);" class="lvses"
-                                onclick="special_store(30)">生态民宿</a></li>
+                                    onclick="special_store(30)">生态民宿</a></li>
                             <li class="s_36"><a href="javascript:void(0);" class="lvses"
-                                onclick="special_store(36)">农家故事</a></li>
+                                    onclick="special_store(36)">农家故事</a></li>
                         </ul>
                     </div>
                     <div class="jptore_l f_l">
@@ -1026,19 +966,15 @@
                                 </span>
                             </div>
                             <div class="homeimg">
-                                <img alt="" border="0"
-                                    src="../Images/Home/555954e529637.jpg">
+                                <img alt="" border="0" src="../Images/Home/555954e529637.jpg" />
                             </div>
                             <div class="mzt_les f_l">
                                 <div class="mzt_l_top">
                                     <div class="mzt_l_title lvse">垂钓专题</div>
                                     <span class="zhuanti_nr">
-                                        <a href="#"
-                                            target="_blank">饵料配方</a>
-                                        <a href="#"
-                                            target="_blank">技巧学习</a>
-                                        <a href="#"
-                                            target="_blank">钓场渔获</a>
+                                        <a href="#" target="_blank">饵料配方</a>
+                                        <a href="#" target="_blank">技巧学习</a>
+                                        <a href="#" target="_blank">钓场渔获</a>
                                     </span>
                                 </div>
                             </div>

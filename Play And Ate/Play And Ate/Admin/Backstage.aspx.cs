@@ -21,7 +21,8 @@ namespace Play_And_Ate.Admin
         protected void Page_Load(object sender, EventArgs e)
         {
             this.UserName = this.Request["UserName"].ToString();
-            this.RoleId = this.Request["id"] ?? "";
+            this.Response.Cookies["RoleId"].Value = this.Request["id"] ?? "";
+            this.RoleId = this.Request.Cookies["RoleId"].Value;
         }
 
     }

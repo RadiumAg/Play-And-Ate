@@ -151,8 +151,15 @@ namespace Play_And_Ate.Services
         public void ShowCustomerOrder()
         {
             string userName = context.Request["UserName"].ToString();//获取登录的管理员名
+            int page = Convert.ToInt32(this.context.Request["page"].ToString());
+            int rows = Convert.ToInt32(this.context.Request["rows"].ToString());
             var result = OrderManager.ShowOrder(userName);
-            context.Response.Write(JsonConvert.SerializeObject(result));
+            var msg = new
+            {
+                rows = result.OrderBy(x => x.OrderId).Skip((page - 1) * rows).Take(rows),
+                total = result.Count(),
+            };
+            context.Response.Write(JsonConvert.SerializeObject(msg));
         }
 
         /// <summary>
