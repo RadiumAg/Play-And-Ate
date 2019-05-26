@@ -2,7 +2,6 @@
 
 <asp:Content ID="Header" ContentPlaceHolderID="Style" runat="server">
     <link rel="stylesheet" href="../Content/Personage/newcommon.css" />
-    <link href="/Content/Personage/lv-bought.css" rel="stylesheet" />
     <script src="/Scripts/Personage/Index.js"></script>
     <link href="/Content/Order/Index.css" rel="stylesheet" />
 </asp:Content>
@@ -65,7 +64,4 @@
 </asp:Content>
 <asp:Content ID="Footer" ContentPlaceHolderID="Footer" runat="server">
     <script src="../Plugin/Pager/js/pageMe.js"></script>
-    <script>
-     
-    </script>
 </asp:Content>

@@ -136,6 +136,7 @@
     <Content Include="Content\LoginAndRegister\Register\cf62177493ce4db40c22962f60d846f8.css" />
     <Content Include="Content\Order\common_wm.css" />
     <Content Include="Content\Order\Index.css" />
+    <Content Include="Content\Personage\newcommon.css" />
     <Content Include="Content\Personage\newmember.css" />
     <Content Include="Content\Products\6405f1b57f28bc36716e3be90105a5cb.css" />
     <Content Include="Content\Products\b61e5d222cddc2d58eececba5f1f9e27.css" />
@@ -594,6 +595,7 @@
     <Content Include="Images\Order\step4.gif" />
     <Content Include="Images\Order\tenpay_buy.gif" />
     <Content Include="Images\Order\微信支付.jpg" />
+    <Content Include="Images\Personage\user_bg.png" />
     <Content Include="Images\Tailorism\53abb59815ac6_170x130.jpg" />
     <Content Include="Images\Tailorism\n1%281%29.jpg" />
     <Content Include="Images\Tailorism\n1%282%29.jpg" />
