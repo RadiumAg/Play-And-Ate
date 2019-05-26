@@ -10,7 +10,7 @@
     <script src="../Scripts/LoginAndRegister/Login/index_header.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/lang.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/mt3.v1014201036.js"></script>
-   
+
     <style>
         #discode {
             padding: 0px;
@@ -72,8 +72,8 @@
                                 function createCode() { //创建验证码函数
                                     code = "";
                                     var codeLength = 4;//验证码的长度
-                                    var selectChar = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
-                                        'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z');//所有候选组成验证码的字符，当然也可以用中文的
+                                    var selectChar = new Array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
+                                        'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z');//所有候选组成验证码的字符，当然也可以用中文的
                                     for (var i = 0; i < codeLength; i++) {
                                         var charIndex = Math.floor(Math.random() * 36);
                                         code += selectChar[charIndex];
@@ -87,7 +87,7 @@
                                 function but() {//验证验证码输入是否正确
                                     var val1 = document.getElementById("t1").value;
                                     var val2 = code;
-                                    if (val1 != val2) {
+                                    if (val1.toLowerCase() != val2.toLowerCase()) {
                                         alert("验证码错误!");
                                         document.getElementById('t1').value = "";
                                         return false;
