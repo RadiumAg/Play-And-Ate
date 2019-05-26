@@ -1224,7 +1224,8 @@
     <Content Include="Scripts\Order\three_order.js" />
     <Content Include="Scripts\Order\tooltip.js" />
     <Content Include="Scripts\Order\two_order.js" />
-    <Content Include="Scripts\Personage\Index.js" />
+    <Content Include="Scripts\Personage\Order\Index.js" />
+    <Content Include="Scripts\Personage\Personage\Index.js" />
     <Content Include="Scripts\Products\908ca0ab9e4d27144b60bc878b237327.js" />
     <Content Include="Scripts\Products\baidumap.js" />
     <Content Include="Scripts\Products\c.js" />

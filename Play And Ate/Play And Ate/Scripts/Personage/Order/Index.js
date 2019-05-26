@@ -1,6 +1,6 @@
 ﻿
+/*订单操作JS*/
 $(function () {
-
     //设置页显示的行数
     var pageSum = 2;
 
@@ -120,3 +120,15 @@ $(function () {
         });
     }
 })
+/*订单操作JS*/
+$(".newmember_leftside dl").children("dd").slideUp();
+
+/*侧边栏收放JS*/
+$(function () {
+    $(".newmember_leftside dl")
+        .children("dt")
+        .click(function () {
+            $(this).siblings("dd").slideToggle();
+        })
+});
+/*侧边栏收放JS*/

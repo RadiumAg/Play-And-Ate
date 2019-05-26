@@ -70,4 +70,5 @@
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
+    <script src="/Scripts/Personage/Personage/Index.js"></script>
 </asp:Content>
