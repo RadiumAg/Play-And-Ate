@@ -45,22 +45,22 @@
 
 
                             <p class="clearfix">
-                                <label><em>*</em>手机号：</label><%= user.Phone %>
+                                <label><em>*</em>手机号：</label><%= user.Phone==null||string.IsNullOrWhiteSpace(user.Phone)? "请绑定你的手机号码":user.Phone %>
                             </p>
 
                             <p class="col9 clearfix">
                                 <label><em>*</em>电子邮箱：</label>
-                                <a href="#" class="per_mod mar_right10"><%= user.Email %></a>
+                                <a href="#" class="per_mod mar_right10"><%= user.Email==null? "请绑定你的邮箱":user.Email %></a>
                             </p>
                             <p class="clearfix">
                                 <label>所在地：</label>
                                 <%= user.Address %>
                             </p>
                             <p class="clearfix">
-                                <label>QQ：</label><%= user.QQ %>
+                                <label>QQ：</label><%= user.QQ==null? "请绑定你的QQ":user.QQ %>
                             </p>
                             <p class="per_btn_box">
-                                <a href="javascript:;" class="per_btn" id="savaPersonalInformation">修改</a>
+                                <a href="javascript:;" class="per_btn" id="savaPersonalInformation">修改和绑定个人信息</a>
                             </p>
                         </div>
                     </div>

@@ -35,7 +35,7 @@
                 <!-- 新下单页 -->
                 <div class="order-v1-box">
                     <ul class="order-head-tab js-order-tab" id="tabId">
-                        <li class="active" data="ALL">全部订单</li>
+                        <li class="active">全部订单</li>
 
                     </ul>
                     <div class="order-body-tab ">

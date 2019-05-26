@@ -7,6 +7,7 @@
         #kefu {
             position: fixed;
             top: 200px;
+            right:5px;
             z-index: 99999;
         }
     </style>
