@@ -40,7 +40,7 @@
 
                         <div class="per_right_box">
                             <p class="clearfix">
-                                <label><em>*</em>用户名:</label><%= this.Request.Cookies["UserName"].Value.ToString() %>
+                                <label><em>*</em>用户名:</label><%= HttpUtility.UrlDecode(this.Request.Cookies["UserName"].Value.ToString()) %>
                             </p>
 
 

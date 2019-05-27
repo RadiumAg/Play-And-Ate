@@ -50,9 +50,13 @@
                                 Province: s.data.province
                             },
                             success: function (data) {
+                                console.log(data);
                                 if (data) {
-                                    console.log("通过QQ获取信息成功");
+                                    console.log("服务器回传数据成功");
                                     location.reload();
+                                }
+                                else {
+                                    console.log("服务器回传数据失败");
                                 }
                             },
                             error: function (data) {
@@ -66,6 +70,7 @@
             .error(function (f) {
                 //调用失败
                 alert("调用用户信息失败");
+
             })
             //指定接口完成请求后的接收函数，c为完成请求返回Response对象
             .complete(function (c) {
@@ -703,7 +708,7 @@
                                                     <div class="shadow none" id='shadow_<%# Eval("ProductID") %>'>
                                                         <span class="shadow_name"><%# Eval("ProductName") %></span>
                                                         <span class="shadow_price"><span
-                                                                class="qi">￥</span><%# string.Format("{0:F2}",Eval("ProductPrice")) %><span
+                                                            class="qi">￥</span><%# string.Format("{0:F2}",Eval("ProductPrice")) %><span
                                                                 class="qi">起</span></span>
 
                                                     </div>
@@ -786,7 +791,8 @@
                                                             alt="<%# Eval("Image.ImageName") %>"
                                                             src='../Images/Tailorism/<%# Eval("Image.ImageName") %>' />
                                                         <div class="m_title_s"><%# Eval("ProductName") %></div>
-                                                        <div class="m_title_c"><%# Eval("UserInfo_Role.Address") %>
+                                                        <div class="m_title_c">
+                                                            <%# Eval("UserInfo_Role.Address") %>
                                                         </div>
                                                     </a>
                                                 </li>
@@ -943,13 +949,13 @@
                         <div class="mtext_title_l f_l">主题攻略</div>
                         <ul class="down_store_jp" id="index_pudp">
                             <li class="s_28 " id="jp_jp"><a href="javascript:void(0);"
-                                    onclick="special_store(28)">最美乡村</a></li>
+                                onclick="special_store(28)">最美乡村</a></li>
                             <li class="s_29"><a href="javascript:void(0);" class="lvses"
-                                    onclick="special_store(29)">农家攻略</a></li>
+                                onclick="special_store(29)">农家攻略</a></li>
                             <li class="s_30"><a href="javascript:void(0);" class="lvses"
-                                    onclick="special_store(30)">生态民宿</a></li>
+                                onclick="special_store(30)">生态民宿</a></li>
                             <li class="s_36"><a href="javascript:void(0);" class="lvses"
-                                    onclick="special_store(36)">农家故事</a></li>
+                                onclick="special_store(36)">农家故事</a></li>
                         </ul>
                     </div>
                     <div class="jptore_l f_l">

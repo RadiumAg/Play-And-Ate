@@ -310,8 +310,8 @@
                             sessionStorage.setItem("Lxemail", Lxemail);
                             sessionStorage.setItem("Lxphone", Lxphone);
                             sessionStorage.setItem("crsl", name);
-                            //window.location.href = "Order_3.aspx?datt=" + datt + "&Lxname=" + Lxname + "&Lxmobile=" + Lxmobile + "&Lxemail=" + Lxemail +
-                            //    "&Lxphone=" + Lxphone + "&Crrs=" + Crrs + "&Etrs=" + Etrs + "&Zjg=" + Zjg; //url传递参数
+                            window.location.href = "Order_3.aspx?datt=" + datt + "&Lxname=" + Lxname + "&Lxmobile=" + Lxmobile + "&Lxemail=" + Lxemail +
+                                "&Lxphone=" + Lxphone + "&Crrs=" + Crrs + "&Etrs=" + Etrs + "&Zjg=" + Zjg; //url传递参数
                             $.ajax({
                                 url: '/Services/Main.ashx?id=10',
                                 dataType: 'JSON',
