@@ -40,7 +40,7 @@ namespace Play_And_Ate.Services
             int pageSum = Convert.ToInt32(this.context.Request["rows"] == null ? "5" : this.context.Request["rows"].ToString());
             //当前页
             int page = this.context.Request["page"] == null ? 1 : Convert.ToInt32(this.context.Request["page"]);
-            string userName = this.context.Request["UserName"].ToString();
+            string userName = HttpUtility.UrlDecode(this.context.Request["UserName"].ToString());
 
             //定义消息类
             var msg = new
