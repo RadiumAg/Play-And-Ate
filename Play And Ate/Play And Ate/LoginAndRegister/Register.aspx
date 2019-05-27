@@ -20,7 +20,7 @@
         </style>
         <div class="inc wb">
             <div class="inc_main pd10 clearfix">
-                <div class="user_inc_top" style="width: 300px; margin: 0px 117px; color: #ff5c0f">第一农庄网会员注册</div>
+                <div class="user_inc_top" style="width: 300px; margin: 0px 117px; color: #ff5c0f">庄源网会员注册</div>
                 <div class="user-lr-box-left f_l" style="width: 650px">
                     <!--注册 start-->
                     <div class=" p20 f14">
@@ -110,6 +110,7 @@
                                                 dataType: "JSON",
                                                 data: $("#form1").serialize(),
                                                 success: function (data) {
+                                                  
                                                     if (data) {
                                                         window.alert("注册成功！");
                                                         dtime(60);
