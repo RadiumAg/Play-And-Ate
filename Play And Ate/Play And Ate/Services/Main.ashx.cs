@@ -150,9 +150,16 @@ namespace Play_And_Ate.Services
         /// </summary>
         public void ShowCustomerOrder()
         {
-            string userName = context.Request["UserName"].ToString();//获取登录的管理员名
+            string userName =HttpUtility.UrlDecode(context.Request["UserName"].ToString());//获取登录的管理员名
+            int page = Convert.ToInt32(this.context.Request["page"].ToString());
+            int rows = Convert.ToInt32(this.context.Request["rows"].ToString());
             var result = OrderManager.ShowOrder(userName);
-            context.Response.Write(JsonConvert.SerializeObject(result));
+            var msg = new
+            {
+                rows = result.OrderBy(x => x.OrderId).Skip((page - 1) * rows).Take(rows),
+                total = result.Count(),
+            };
+            context.Response.Write(JsonConvert.SerializeObject(msg));
         }
 
         /// <summary>
@@ -163,8 +170,10 @@ namespace Play_And_Ate.Services
             try
             {
                 Authentication.logOut();
-                context.Response.Cookies["UserName"].Value = null;
-                context.Response.Write(JsonConvert.SerializeObject(true));
+                this.context.Response.Cookies["UserName"].Value = null;
+                this.context.Response.Cookies["UserId"].Value = null;
+                this.context.Response.Cookies["AccessToken"].Value = null;
+                this.context.Response.Write(JsonConvert.SerializeObject(true));
             }
             catch (Exception ex)
             {
@@ -283,7 +292,7 @@ namespace Play_And_Ate.Services
                     isLogin = true
                 };
                 Helper.Authentication.SetCookie(userData.UserName, userData.Pwd, userData.Role_UserInfo.RoleName);
-                this.context.Response.Cookies["UserName"].Value = userData.UserName;
+                this.context.Response.Cookies["UserName"].Value = HttpUtility.UrlEncode(userData.UserName);
                 this.context.Response.Cookies["UserId"].Value = userData.UserId.ToString();
                 context.Response.Write(JsonConvert.SerializeObject(msg));
             }

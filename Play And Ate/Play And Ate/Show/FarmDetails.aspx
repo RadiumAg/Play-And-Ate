@@ -17,6 +17,10 @@
             border-radius: 5px;
             padding: 3px;
         }
+
+        .yd {
+            float: right;
+        }
     </style>
     <link href="../Content/Show/FarmDetails/baidu_map.css" rel="stylesheet" />
     <link href="../Content/Show/FarmDetails/list.css" rel="stylesheet" />
@@ -185,7 +189,7 @@
             </div>
             <div class="sd_cx">
                 <a href="/Order/Order.aspx?ProductId=<%= this.product.ProductId %>">
-                    <div class="sd_tj f_l">立即预定</div>
+                    <div class="sd_tj f_l yd">立即预定</div>
                 </a>
             </div>
             <script>

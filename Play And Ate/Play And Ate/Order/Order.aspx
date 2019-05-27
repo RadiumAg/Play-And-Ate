@@ -23,9 +23,10 @@
                 <!--订单步骤 END-->
                 <div class="orderWrap">
                     <div class="userInfo">
-                        <h2>在线预订：<a class="a1" href='../Line/' target="_blank"></a> <a href="">
-                            <asp:label id="Label1" runat="server" text='<%#Eval("路线") %>'></asp:label>
-                        </a>&lt;上海出发&gt;
+                        <h2>在线预订：<a class="a1" href='../Line/' target="_blank"></a>
+                            <a href="#">
+                                <asp:Label ID="Label1" runat="server" Text='<%#Eval("路线") %>'></asp:Label>
+                            </a>&lt;上海出发&gt;
                         </h2>
                         <div class="checkOrderInfo">
                             <div class="hd">
@@ -140,14 +141,10 @@
                                     console.info(s);
                                 })
                             </script>
-                            <%--<script>
-                                    var crjg = "<b>￥<s>" + $("#getjiage").val() + "</s></b>" + $("#getcr").val() + "成人×￥" + $("#gethidChenRen").val();
-                                    var etjg = "<b>￥<s>" + $("#getrtjiage").val() + "</s></b>" + $("#getrt").val() + "成人×￥" + $("#gethidErTong").val();
-                                </script>--%>
                             <div class="li4">
                                 <p>
                                     <strong>应付总额：</strong><label>￥<i id="offerPrice">398</i></label>
-                                    <input type="hidden" id="allp" name="allp" value="398">
+                                    <input type="hidden" id="allp" name="allp" value="398"/>
                                 </p>
                             </div>
                         </div>
@@ -156,8 +153,8 @@
                     </div>
                     <!--页面-->
                     <div class="userInfoBtn" id="gl_return" style="display: block;">
-                        <input type="button" id="btn_pre" <%--onclick="window.location.href='http://xianlu.01nz.com.cn/archives/1147.html'"--%> style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/order15.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;" />
-                        <input type="button" id="btn_next" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default/images/order19.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;" />
+                        <input type="button" id="btn_pre"  style="background: url('/Images/Order/order15.gif'); border-width: 0px; cursor: pointer; width: 139px; height: 44px;" />
+                        <input type="button" id="btn_next" style="background: url('/Images/Order/order19.gif'); border-width: 0px; cursor: pointer; width: 139px; height: 44px;" />
                         <script>
                             //点击上一页返回页面
                             $("#btn_pre").click(function () {
@@ -214,83 +211,11 @@
                 <input type="hidden" id="txtHiddenDes" name="txtHiddenDes" value="" />
                 <input type="hidden" id="txtHiddenUseScore" name="txtHiddenUseScore" value="0" />
                 <input type="hidden" id="txtHiddenAllScore" name="txtHiddenAllScore" value="8" />
-                </form>
             </div>
             <script src="../Scripts/Order/one_order.js"></script>
             <script src="../Scripts/Order/jquery.js"></script>
             <script src="../Scripts/Order/tooltip.js"></script>
             <script src="../Scripts/Order/order.js"></script>
-            <script type="text/javascript">
-                $.ajax({
-                    type: "Get",
-                    url: "http://xianlu.01nz.com.cn/add/ajax_select.php?aid=1147&time=" + Math.random(),
-                    data: "json",
-                    success: function (msg) {
-                        var jason = eval("(" + msg + ")");
-                        var sonprice = "";
-                        var txtHiddenGoDate = $("#txtHiddenGoDate").val();
-                        for (var i = 0; i < jason.length; i++) {
-                            sonprice = "" + jason[i].ChildPrice + "元/儿童";
-                            if (txtHiddenGoDate == jason[i].Month) {
-                                $("#pTime").val("" + jason[i].Month + "" + jason[i].Week + "出发," + jason[i].PersonPrice + "元/成人, " + sonprice + "");
-                            }
-                            $(".p10 ul").append("<li id='" + jason[i].Month + "' v='" + jason[i].Date + "' son='" + jason[i].ChildPrice + "' title='" + jason[i].PersonPrice + "' onclick='changeGoDate(this)' > " + jason[i].Month + "" + jason[i].Week + "出发,<b>" + jason[i].PersonPrice + "</b>元/成人, " + sonprice + "</li>");
-                        }
-                        $("#_hidChenRen").val(ul.find("li").eq(0).attr("title"));
-                        $("#_hidErTong").val(ul.find("li").eq(0).attr("son"));
-                        $("#_hidDate").val(ul.find("li").eq(0).attr("v"));
-                    }
-
-                });
-                $(function () {
-                    do71org88ShowCalender("fastCalender2");
-                });   //$(function()
-                function do71org88ShowCalender(obj) {
-                    var tg = $('#' + obj).find('div.p10').find('.calenderPart');
-                    var arrow = tg.next('.cArrow');
-                    tg.next(".cArrow").click(function () {
-                        tg.show();
-                        arrow.attr("class", "cArrow cup");
-
-                    });
-                    tg.parents('div.p10').find('span.pTimeSpan').click(function () {
-                        tg.show();
-                        arrow.attr("class", "cArrow cup");
-                    });
-                    tg.parents('div.p10').find('span.pTimeSpan').click(function () {
-                        tg.show();
-                        arrow.attr("class", "cArrow cup");
-                    });
-
-
-                    //点击Li日期下拉选项
-                    tg.find('li').live("click", function () {
-                        var o = $(this);
-                        tg.parents('div.p10').find('input.pTime').val(o.text());
-                        tg.hide();
-                        arrow.attr("class", "cArrow cdown");
-                        $("#txtHiddenUzaiPrice").val(o.attr("title")); //成人价
-                        $("#gethidChenRen").text(o.attr("title")); //预定清单成人价
-                        var getjiage = $("#txtHiddenUzaiPrice").val() * $("#txtHiddenPersonNum").val(); //计算价格
-                        $("#getjiage").text(getjiage);
-                        $("#txtHiddenChildPrice").val(o.attr("son")); //儿童价
-                        $("#gethidErTong").text(o.attr("son")); //预定清单儿童价
-                        var getrtjiage = $("#txtHiddenChildPrice").val() * $("#txtHiddenChildNum").val();
-                        $("#getrtjiage").text(getrtjiage);
-                        $("#txtHiddenGoDate").val(o.attr("v")); // 日期
-                        sumAll();
-
-                    });
-                    $(document).click(function (e) {
-                        var t = $(e.target);
-                        var v1 = "#" + obj + " .pTime" + ",#" + obj + " .pDropCalender" + ",#" + obj + " .pDropCalender *,#submit_a,#btnFastCalender,#submit_a";
-                        if (!t.is(v1)) {
-                            tg.hide();
-                            arrow.attr("class", "cArrow cdown");
-                        }
-                    });
-                }
-            </script>
             <script>
                 //返回页面后自动点击按钮,恢复原有数据
                 $(function () {

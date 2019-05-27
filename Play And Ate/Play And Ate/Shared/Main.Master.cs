@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web;
 
 namespace Play_And_Ate.Shared
 {
@@ -11,7 +12,7 @@ namespace Play_And_Ate.Shared
         {
             if (this.Request.Cookies["UserName"]!=null)
             {
-                userName = this.Request.Cookies["UserName"].Value;
+                userName = HttpUtility.UrlDecode(this.Request.Cookies["UserName"].Value);
             }
         }
 

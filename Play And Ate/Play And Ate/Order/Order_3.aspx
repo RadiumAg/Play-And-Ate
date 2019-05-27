@@ -26,10 +26,9 @@
         <div id="page">
             <div class="page top10">
                 <div id="xs2" class="xs" style="text-align: center; display: none;">
-                    <img src="./在线预订-第一农庄网3_files/loading.gif">
-                    <br>
+                    <img src="./在线预订-第一农庄网3_files/loading.gif"/>
+                    <br/>
                     正在提交，请稍后。。。
-       
                 </div>
                 <div class="order">
                     <!--订单步骤 START-->
@@ -334,13 +333,12 @@
                                         </p>
                                     </div>
                                     <div class="P2_dh">
-                                        <input name="btnGoOn" id="btnGoOn" type="button" value="确认继续预订">
-                                        <input name="btnCancel" id="btnCancel" onclick="javascript: window.location =&#39; http://xianlu.01nz.com.cn/archives/1147.html#relatepros&#39;" type="button" value="取  消">
+                                        <input name="btnGoOn" id="btnGoOn" type="button" value="确认继续预订"/>
+                                        <input name="btnCancel" id="btnCancel" onclick="javascript: window.location =&#39; http://xianlu.01nz.com.cn/archives/1147.html#relatepros&#39;" type="button" value="取  消"/>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
                         <input type="hidden" name="title" value="上海出发 【临安】东天目山、青山湖2日农家行"/>
                         <input type="hidden" id="txtHiddenPId" name="txtHiddenPId" value="1147"/>
                         <input type="hidden" id="allp" name="allp" value="378"/>

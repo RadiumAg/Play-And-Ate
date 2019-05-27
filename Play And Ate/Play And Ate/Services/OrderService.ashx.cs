@@ -36,8 +36,24 @@ namespace Play_And_Ate.Services
         /// </summary>
         public void ShowOrderData()
         {
-            string userName = this.context.Request["UserName"].ToString();
-            this.context.Response.Write(JsonConvert.SerializeObject(OrderManager.ShowOrder<string>(userName).Select(x=> new {x.OrderId, x.Contacts.ContactsName,x.OrderName,x.Success,x.OrderPrice })));
+            //接收单个页面的数量
+            int pageSum = Convert.ToInt32(this.context.Request["rows"] == null ? "5" : this.context.Request["rows"].ToString());
+            //当前页
+            int page = this.context.Request["page"] == null ? 1 : Convert.ToInt32(this.context.Request["page"]);
+            string userName = HttpUtility.UrlDecode(this.context.Request["UserName"].ToString());
+
+            //定义消息类
+            var msg = new
+            {
+                total = OrderManager.ShowOrder<string>(userName)
+                                        .Select(x => new { x.OrderId, x.Contacts.ContactsName, x.OrderName, x.Success, x.OrderPrice }).Count(),
+                rows = OrderManager.ShowOrder<string>(userName)
+                                        .Select(x => new { x.OrderId, x.Contacts.ContactsName, x.OrderName, x.Success, x.OrderPrice })
+                                        .OrderBy(x => x.OrderId)
+                                        .Skip((page - 1) * pageSum)
+                                        .Take(pageSum)
+            };
+            this.context.Response.Write(JsonConvert.SerializeObject(msg));
         }
 
         /// <summary>
