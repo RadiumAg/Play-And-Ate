@@ -10,7 +10,6 @@
     <script src="../Scripts/LoginAndRegister/Login/index_header.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/lang.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/mt3.v1014201036.js"></script>
-
     <style>
         #discode {
             padding: 0px;
@@ -157,12 +156,6 @@
             </div>
         </div>
     </div>
-    </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
-    <script src="../Scripts/LoginAndRegister/Login/z_stat.js"></script>
-    <script src="../Scripts/LoginAndRegister/Login/core.js"></script>
-    <script src="../Scripts/LoginAndRegister/Login/c.js"></script>
-    <script src="../Scripts/LoginAndRegister/Login/tongji_360.js"></script>
-    <script src="../Scripts/LoginAndRegister/Login/core(1).js"></script>
 </asp:Content>

@@ -53,3 +53,5 @@ D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practice
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.Unity.pdb
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll

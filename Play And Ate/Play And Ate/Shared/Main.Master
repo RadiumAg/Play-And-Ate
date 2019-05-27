@@ -85,7 +85,7 @@
                                         success: function (data) {
                                             console.log(data);
                                             if (data) {
-                                                window.open("http://47.101.216.14/Home/Home.aspx","_Self");
+                                                window.open("http://47.101.216.14/Home/Home.aspx", "_Self");
                                             } else {
                                                 alert("发生错误，退出失败！");
                                             }
