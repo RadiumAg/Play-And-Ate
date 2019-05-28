@@ -50,7 +50,7 @@ $(function () {
         debug: true,
         rules: {
             name: {
-                minlength: 10,
+                maxlength: 5,
                 required: true,
             },
             phone: {
@@ -77,15 +77,16 @@ $(function () {
         },
         messages: {
             name: {
-                required:"必填!"
-                },
+                maxlength: "格式不对！",
+                required: "必填!"
+            },
             phone: {
                 required: "必填!",
-                isMobile:"格式不对！"
+                isMobile: "格式不对！"
             },
             CardId: {
                 required: "必填!",
-                isIdNumber:"格式不对！"
+                isIdNumber: "格式不对！"
             },
             txt_name: {
                 required: "必填!"
@@ -96,10 +97,10 @@ $(function () {
             },
             txt_email: {
                 required: "必填!",
-                isEmail:"格式不对",
+                isEmail: "格式不对",
             },
             txt_end_phone: {
-                isTel:"格式不对",
+                isTel: "格式不对",
             }
         }
     });
