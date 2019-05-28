@@ -3,7 +3,6 @@
     <link href="../Content/Line/style.css" rel="stylesheet" />
     <link href="../Content/Line/search.css" rel="stylesheet" />
     <link href="../Content/Line/index.css" rel="stylesheet" />
-   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
      <div class="head1">
