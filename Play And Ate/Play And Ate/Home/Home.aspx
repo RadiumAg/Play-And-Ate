@@ -6,15 +6,15 @@
     <style>
         #kefu {
             position: fixed;
-            top: 200px;
-            right: 5px;
+            top: 550px;
+            right: 20px;
             z-index: 99999;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <a id="kefu" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2637304079&site=qq&menu=yes">
-        <img border="0" src="http://wpa.qq.com/pa?p=2:2637304079:53" alt="点击这里查询客服" title="点击这里查询客服" /></a>
+        <img border="0" src="http://wpa.qq.com/pa?p=2:2637304079:51" alt="点击这里查询客服" title="点击这里查询客服" /></a>
     <a id="ibangkf" href="http://www.ibangkf.com">在线客服系统 </a>
 <script type="text/javascript" src="http://c.ibangkf.com/i/c-fancy-0224.js"></script>
     <asp:ScriptManagerProxy runat="server" ID="spHome">
