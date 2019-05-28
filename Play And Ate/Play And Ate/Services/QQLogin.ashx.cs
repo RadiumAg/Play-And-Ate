@@ -51,7 +51,7 @@ namespace Play_And_Ate.Services
                 UserInfo_Role userData = UserInfo_RoleManager.CheckUserInfo(new UserInfo_Role { OpenId = openid });
                 if (userData != null)
                 {
-                    Helper.Authentication.SetCookie(userData.UserName, userData.Pwd, userData.Role_UserInfo.RoleName);
+                    Helper.Authentication.SetCookie(HttpUtility.UrlEncode(userData.UserName), userData.Pwd, HttpUtility.UrlEncode(userData.Role_UserInfo.RoleName));
                     this.context.Response.Cookies["UserName"].Value = HttpUtility.UrlEncode(userData.UserName.ToString());
                     this.context.Response.Cookies["UserId"].Value = userData.UserId.ToString();
                     //写入QQ登录标识
@@ -70,7 +70,7 @@ namespace Play_And_Ate.Services
                     this.context.Response.Cookies["UserId"].Value = UserInfo_RoleManager.CheckUserInfo(new UserInfo_Role { OpenId = openid }).UserId.ToString();
                     //写入QQ登录标识
                     this.context.Response.Cookies["AccessToken"].Value = accessToken;
-                    Helper.Authentication.SetCookie(userinfo.UserName, userinfo.Pwd, userinfo.Role_UserInfo.RoleName);
+                    Helper.Authentication.SetCookie(HttpUtility.UrlEncode(userData.UserName), userData.Pwd, HttpUtility.UrlEncode(userData.Role_UserInfo.RoleName));
                     this.context.Response.Write(JsonConvert.SerializeObject(true));
                 }
             }
