@@ -1,11 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Line1.aspx.cs" Inherits="Play_And_Ate.Line.Line1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
     <link href="../Content/Line/style.css" rel="stylesheet" />
-    <link href="../Content/Line/style(1).css" rel="stylesheet" />
     <link href="../Content/Line/search.css" rel="stylesheet" />
     <link href="../Content/Line/index.css" rel="stylesheet" />
-    <script src="../Scripts/Line/global.js"></script>
-    <script src="../Scripts/Line/index.js"></script>
+   
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
      <div class="head1">
@@ -436,5 +434,7 @@
 
         </script>
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
+<asp:Content ID="Footer" ContentPlaceHolderID="Footer" runat="server">
+    <script src="../Scripts/Line/global.js"></script>
+    <script src="../Scripts/Line/index.js"></script>
 </asp:Content>

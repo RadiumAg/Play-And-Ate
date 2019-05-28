@@ -27,7 +27,7 @@
                         <p class="p1">
                             <em><%= this.isSuccess %></em>
                         </p>
-                        <br />
+                        <br/>
                     </div>
                 </div>
             </div>
