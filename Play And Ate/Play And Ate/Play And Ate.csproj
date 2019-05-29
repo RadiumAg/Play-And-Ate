@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin\Backstage.aspx" />
+    <Content Include="Admin\PartialView\CreaterProduct.html" />
     <Content Include="Admin\PartialView\ShowBussinessData.html" />
     <Content Include="Admin\PartialView\ShowCustomerOrder.html" />
     <Content Include="Admin\PartialView\ShowProductsData.html" />
@@ -455,6 +456,7 @@
     <Content Include="Home\Home.aspx" />
     <Content Include="Home\PartialView\Company.html" />
     <Content Include="Home\PartialView\Hot.html" />
+    <Content Include="Images\Admin\Down.svg" />
     <Content Include="Images\Admin\Admin.jpg" />
     <Content Include="Images\Cart\2.gif" />
     <Content Include="Images\Cart\35.gif" />

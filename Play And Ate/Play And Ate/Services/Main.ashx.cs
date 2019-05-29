@@ -150,7 +150,7 @@ namespace Play_And_Ate.Services
         /// </summary>
         public void ShowCustomerOrder()
         {
-            string userName =HttpUtility.UrlDecode(context.Request["UserName"].ToString());//获取登录的管理员名
+            string userName = HttpUtility.UrlDecode(context.Request["UserName"].ToString());//获取登录的管理员名
             int page = Convert.ToInt32(this.context.Request["page"].ToString());
             int rows = Convert.ToInt32(this.context.Request["rows"].ToString());
             var result = OrderManager.ShowOrder(userName);
@@ -291,7 +291,7 @@ namespace Play_And_Ate.Services
                     Role = userData.Role_UserInfo.RoleName,
                     isLogin = true
                 };
-                Helper.Authentication.SetCookie(userData.UserName, userData.Pwd, userData.Role_UserInfo.RoleName);
+                Helper.Authentication.SetCookie(HttpUtility.UrlEncode(userData.UserName), userData.Pwd, HttpUtility.UrlEncode(userData.Role_UserInfo.RoleName));
                 this.context.Response.Cookies["UserName"].Value = HttpUtility.UrlEncode(userData.UserName);
                 this.context.Response.Cookies["UserId"].Value = userData.UserId.ToString();
                 context.Response.Write(JsonConvert.SerializeObject(msg));

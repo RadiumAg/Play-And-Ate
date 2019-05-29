@@ -20,8 +20,11 @@ namespace Play_And_Ate.Admin
         public string UserName { get; set; }//用户姓名
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.UserName = this.Request["UserName"].ToString();
-            this.Response.Cookies["RoleId"].Value = this.Request["id"] ?? "";
+            this.UserName = HttpUtility.UrlDecode(this.Request["UserName"].ToString());
+            if (this.Request.Cookies["RoleId"] == null)
+            {
+                this.Response.Cookies["RoleId"].Value = this.Request["id"].ToString();
+            }
             this.RoleId = this.Request.Cookies["RoleId"].Value;
         }
 
