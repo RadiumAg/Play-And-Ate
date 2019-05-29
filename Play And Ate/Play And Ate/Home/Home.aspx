@@ -16,7 +16,7 @@
    <%-- QQ客服--%>
     <a id="kefu" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2637304079&site=qq&menu=yes">
         <img border="0" src="http://wpa.qq.com/pa?p=2:2637304079:51" alt="点击这里查询客服" title="点击这里查询客服" /></a>
-    <%--在线聊天客服--%>
+   <%--在线聊天客服--%>
     <a id="ibangkf" href="http://www.ibangkf.com">在线客服系统 </a>
 <script>
 (function() {
@@ -117,7 +117,6 @@
         <!-- 热搜直通车 -->
         <div class="train">
             <div class="train_tit">搜索直通车</div>
-            <a href="#" title="安吉农家乐">安吉农家乐</a>
         </div>
         <div class="warps">
             <!-- END 热搜 -->
@@ -155,19 +154,19 @@
                                 <li>
                                     <div class="gbotltop">
                                         <div class="gbotllibg gbgb"></div>
-                                        <label>安全保障</label>
+                                        <label>海量农家</label>
                                     </div>
                                     <div class="gbotlbot">
-                                        预定就送安全出行保险
+                                       农家随意挑选
                                     </div>
                                 </li>
                                 <li>
                                     <div class="gbotltop">
                                         <div class="gbotllibg gbgc"></div>
-                                        <label>先行赔付</label>
+                                        <label>在线支付</label>
                                     </div>
                                     <div class="gbotlbot">
-                                        出行受损失我们先行赔付
+                                        全网最低，安全到账
                                     </div>
                                 </li>
 
@@ -385,7 +384,7 @@
                     <li data-index="2" style="">
                         <a href="#" target="_blank">
                             <p>
-                                <img border="0" alt="" src="../Images/Home/56ab04ed628d5.jpg" />
+                                <img border="0" alt="" src="../Images/Home/56b45111dc613.jpg" style="width:605px;height:295px;"/>
                             </p>
                         </a>
                     </li>
