@@ -4,7 +4,6 @@
     <link href="../Content/Order/order.css" rel="stylesheet" />
     <link href="../Content/Order/style.css" rel="stylesheet" />
     <title>在线预订-第一农庄网</title>
-    <script src="../Scripts/Order/global.js" type="text/javascript"></script>
     <script src="../Plugin/jquery-3.3.1.min.js"></script>
     <style>
         #Literal1{
@@ -42,7 +41,7 @@
                         </ul>
                     </div>
                     <!--订单步骤 END-->
-                    <form id="three_form" method="post" action="http://xianlu.01nz.com.cn/order/188_order_3.php">
+                    <form id="three_form" method="post" action="#">
                         <div class="orderWrap">
                             <div class="checkOrder">
                                 <h2>订单信息确认</h2>
@@ -207,9 +206,9 @@
                                 <div id="orderProtocol" class="orderProtocol" style="margin-top:100px;">
                                     <div class="hd">
                                         <ul>
-                                            <li class=""><a href="http://xianlu.01nz.com.cn/order/188_order_3.php#">费用包含 </a></li>
-                                            <li class="on"><a href="http://xianlu.01nz.com.cn/order/188_order_3.php#">费用不包含 </a></li>
-                                            <li class=""><a href="http://xianlu.01nz.com.cn/order/188_order_3.php#">温馨提示 </a></li>
+                                            <li class=""><a href="#">费用包含 </a></li>
+                                            <li class="on"><a href="#">费用不包含 </a></li>
+                                            <li class=""><a href="#">温馨提示 </a></li>
                                         </ul>
                                     </div>
                                     <div class="bd">
@@ -285,7 +284,7 @@
                                         </p>
                                     </div>
                                     <div class="checkOrderBtn" id="gl_return" style="display: block;">
-                                        <input type="button" id="btn_pre" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default//images/order15.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;"/>
+                                        <input type="button" id="btn_pre" style="background: url('/Images/Order/order15.gif'); border-width: 0px; cursor: pointer; width: 139px; height: 44px;"/>
                                         <%--提交订单按钮--%>
                                         <input type="button" id="btn_next" style="background: url(http://xianlu.01nz.com.cn/ORG7188_templets/default//images/order16.gif); border-width: 0px; cursor: pointer; width: 139px; height: 44px;"/>
                                     </div>
@@ -302,7 +301,7 @@
                                 $("#btn_pre").click(function () {
                                     window.location.href = sessionStorage.getItem("Order_2");
                                 })
-                            })
+                            });
                         </script>
                         <script>
                             //最后的总金额
@@ -311,11 +310,29 @@
                                 $("#cpzong").html("￥" + je);
                                 $("#yfzong").html("￥" + je);
                                 sessionStorage.setItem("zje", je);
-                            })
+                            });
                         </script>
                         <script>
+                            console.log(sessionStorage.getItem("sj"));
                             $(function () {
                                 $("#btn_next").click(function () {
+                                    $.ajax({
+                                        url: '/Services/Main.ashx?id=10',
+                                        dataType: 'JSON',
+                                        type: "GET",
+                                        data: {
+                                            Customers: JSON.stringify(<%= datt %>),
+                                            sumMoney: <%= Zjg %>+"",
+                                            lxname: <% = Lxname %>+"",
+                                            lxmobile: <%= Lxmobile %>+"",
+                                            lxphone: <%= Lxphone %>+"",
+                                            lxemail: <%= Lxemail %>+"",
+                                            DepartureDate: sessionStorage.getItem("sj").toString(),
+                                        },
+                                        success: function (data) {
+                                            console.log("提交订单成功！");
+                                        }
+                                    });
                                     window.location.href = "Order_4.aspx";
                                 });
                             })
@@ -352,7 +369,7 @@
                         <input type="hidden" id="txtHiddenChildNum" name="txtHiddenChildNum" value="0"/>
                         <input type="hidden" id="txtHiddenProcessType" name="txtHiddenProcessType" value="1"/>
                         <input type="hidden" id="txtHiddenMType" name="txtHiddenMType" value="3"/>
-                        <input type="hidden" id="phpurl" name="phpurl" value="http://xianlu.01nz.com.cn"/>
+                        <input type="hidden" id="phpurl" name="phpurl" value="#"/>
                         <input type="hidden" id="txtSubmitHiddenAdd" name="txtSubmitHiddenAdd" value="77935^1147^0^5^2.0000^1900-01-01^0^5^3^人^^^^太平洋意外险$77936^1147^0^40^2.0000^1900-01-01^1^40^3^人^^^^单房差$0"/>
                         <input type="hidden" id="userName" name="userName" value="苏乞儿"/>
                         <input type="hidden" id="txt_mobile0" name="txt_mobile0" value="18815168007"/>
@@ -365,7 +382,6 @@
                         <input type="hidden" id="txtSubmitHiddenUb" name="txtSubmitHiddenUb" value="1,0,score"/>
                     </form>
                 </div>
-                <script src="../Scripts/Order/order.js" type="text/javascript"></script>
                 <div class="commitment">
                     <div class="commitment_head">阳光服务承诺</div>
                     <ul>

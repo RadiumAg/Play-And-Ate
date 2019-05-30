@@ -28,6 +28,7 @@ namespace FTZ.PlayAndAte.Models
         public int UserId { get; set; }
         public bool Success { get; set; }
         public Nullable<int> ContactsId { get; set; }
+        public Nullable<System.DateTime> DepartureDate { get; set; }
     
         public virtual Contacts Contacts { get; set; }
         public virtual UserInfo_Role UserInfo_Role { get; set; }
