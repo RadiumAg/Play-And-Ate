@@ -26,13 +26,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="wraps">
-        <script type="text/javascript">
-            var APP_ROOT = '';
-            var CART_URL = '/cart';
-            var CART_CHECK_URL = '/cart-check';
-            var LOADER_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/lazy_loading.gif';
-            var ERROR_IMG = 'http://www.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
-        </script>
+       
 
         <div class="blank"></div>
         <div class="inc wb">
@@ -110,6 +104,7 @@
                                                 let msg = data;
                                                 if (msg.isLogin) {
                                                     alert("登陆成功！");
+                                                    $("#form1")[0].reset();
                                                     window.open(data.Role + ".html", "_self");
                                                 }
                                                 else {

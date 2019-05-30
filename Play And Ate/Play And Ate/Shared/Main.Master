@@ -38,6 +38,14 @@
         data-appid="101574283"
         data-redirecturi="http://www.playandate.club/LoginAndRegister/ordinary.html">
     </script>
+
+ <script type="text/javascript">
+     var APP_ROOT = '';
+     var CART_URL = '/cart';
+     var CART_CHECK_URL = '/cart-check';
+     var LOADER_IMG = '/Images/error/捏脸.gif';
+     var ERROR_IMG = '/Images/error/捏脸.gif';
+        </script>
     <style type="text/css">
         .none {
             display: none;
@@ -269,7 +277,7 @@
                             <li onclick="nav(6)" id="n6" class="soso ">
                                 <a href="../Products/Fishing.aspx" target="">垂钓场</a>
                             </li>
-                            <li class="soso""><a href="/Special topic/Special topic.aspx" target="_blank">专题</a></li>
+                            <li class="soso""><a href="/Special topic/Special topic.aspx" target="_self">专题</a></li>
                         </ul>
                     </div>
                 </div>
