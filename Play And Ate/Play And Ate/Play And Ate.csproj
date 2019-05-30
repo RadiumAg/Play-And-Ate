@@ -1523,7 +1523,6 @@
     <Content Include="Search\Search.aspx" />
     <Content Include="Show\FarmDetails.aspx" />
     <Content Include="Show\FarmRow.aspx" />
-    <Content Include="Special topic\Special topic.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1731,13 +1730,6 @@
     </Compile>
     <Compile Include="Show\FarmRow.aspx.designer.cs">
       <DependentUpon>FarmRow.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Special topic\Special topic.aspx.cs">
-      <DependentUpon>Special topic.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Special topic\Special topic.aspx.designer.cs">
-      <DependentUpon>Special topic.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

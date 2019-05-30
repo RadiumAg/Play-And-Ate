@@ -269,7 +269,6 @@
                             <li onclick="nav(6)" id="n6" class="soso ">
                                 <a href="../Products/Fishing.aspx" target="">垂钓场</a>
                             </li>
-                            <li class="soso""><a href="/Special topic/Special topic.aspx" target="_blank">专题</a></li>
                         </ul>
                     </div>
                 </div>
