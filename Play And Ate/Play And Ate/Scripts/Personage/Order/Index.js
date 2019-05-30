@@ -59,7 +59,7 @@ $(function () {
                                                         <td>联系人姓名：<span>`+ value.ContactsName + `</span>
                                                             <br />
                                                             <br />
-                                                            出发日期:<span>`+ (value.DepartureDate + "").substring(0,10) + `</span>
+                                                            出发日期:<span>`+ (value.DepartureDate + "").substring(0, 10) + `</span>
                                                             <br />
                                                             <br />
                                                             订单金额:<span>￥<strong>`+ value.OrderPrice + `</strong></span>
@@ -72,11 +72,20 @@ $(function () {
                                                         <td>
                                                             <br />
                                                             <a href="#" onClick='return false' name="delete" data-value="`+ value.OrderId + `">删除订单</a>
+                                                            <a href="#" name="pay" data-ordername="`+ value.OrderName + `">重新支付</a>
                                                         </td>
                                                     </tr>
                                                 </tbody>
                                             </table>`;
                         $("#tableContent").append(html);
+                    });
+
+                    //给重新支付标签绑定事件
+                    $("a[name='pay']").click(function () {
+                        let flag = window.confirm("确认重新支付吗?");
+                        if (flag) {
+                            window.open("/Order/PayTo.aspx?subject=商品&money=0.01&pay_type=44&extra=商品&OrderName=" + $(this).data("ordername"), "_self");
+                        }
                     });
 
                     //给删除标签绑定事件
