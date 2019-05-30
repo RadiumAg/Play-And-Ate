@@ -21,6 +21,17 @@
     <script src="../Scripts/Promotion/zh-cn.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+     <%--在线聊天客服--%>
+    <a id="ibangkf" href="http://www.ibangkf.com">在线客服系统 </a>
+<script>
+(function() {
+    var st = document.createElement("script");
+    st.src = "http://c.ibangkf.com/i/c-fancy-0224.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(st, s);
+})();
+</script>
+
     <img width="100%" height="400px" src="../Images/Home/2.jpg" alt="">
     <div class="warps">
 	<div class="mtext"> 

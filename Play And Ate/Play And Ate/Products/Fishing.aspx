@@ -14,7 +14,17 @@
 </asp:Content>
    
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-   
+    <%--在线聊天客服--%>
+    <a id="ibangkf" href="http://www.ibangkf.com">在线客服系统 </a>
+<script>
+(function() {
+    var st = document.createElement("script");
+    st.src = "http://c.ibangkf.com/i/c-fancy-0224.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(st, s);
+})();
+</script>
+
 	<div class="wraps">
 <script type="text/javascript" src="../Scripts/Products/lang.js"></script>
 <script type="text/javascript">
