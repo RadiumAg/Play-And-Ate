@@ -862,6 +862,7 @@
     <Content Include="Order\Order_5.aspx" />
     <Content Include="Order\PayTo.aspx" />
     <Content Include="Personage\Order.aspx" />
+    <Content Include="Personage\PartialView\ShowOrder.html" />
     <Content Include="Personage\Personage.aspx" />
     <Content Include="Plugin\jquery-validation-1.14.0\dist\additional-methods.js" />
     <Content Include="Plugin\jquery-validation-1.14.0\dist\additional-methods.min.js" />
@@ -1808,7 +1809,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Home\" />
-    <Folder Include="Personage\PartialView\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Cart\" />
     <Folder Include="Scripts\Commond\" />

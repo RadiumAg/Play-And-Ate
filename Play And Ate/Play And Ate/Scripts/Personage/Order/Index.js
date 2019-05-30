@@ -59,7 +59,7 @@ $(function () {
                                                         <td>联系人姓名：<span>`+ value.ContactsName + `</span>
                                                             <br />
                                                             <br />
-                                                            出发日期:<span>2019-02-25</span>
+                                                            出发日期:<span>`+ (value.DepartureDate + "").substring(0,10) + `</span>
                                                             <br />
                                                             <br />
                                                             订单金额:<span>￥<strong>`+ value.OrderPrice + `</strong></span>

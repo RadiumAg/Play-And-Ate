@@ -60,6 +60,7 @@
           <Property Name="UserId" Type="int" Nullable="false" />
           <Property Name="Success" Type="bit" Nullable="false" />
           <Property Name="ContactsId" Type="int" />
+          <Property Name="DepartureDate" Type="datetime" />
         </EntityType>
         <EntityType Name="OrderItem">
           <Key>
@@ -143,7 +144,7 @@
           <Property Name="Address" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="Email" Type="nvarchar" MaxLength="100" />
           <Property Name="QQ" Type="nvarchar" MaxLength="100" />
-          <Property Name="Phone" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="100" />
           <Property Name="RoleId" Type="int" Nullable="false" />
           <Property Name="Pwd" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="OpenId" Type="nvarchar" MaxLength="50" />
@@ -464,6 +465,7 @@
           <NavigationProperty Name="UserInfo_Role" Relationship="Self.FK_Order_UserInfo_Role" FromRole="Order" ToRole="UserInfo_Role" />
           <NavigationProperty Name="OrderItem" Relationship="Self.FK_OrderItem_Order" FromRole="Order" ToRole="OrderItem" />
           <NavigationProperty Name="Product" Relationship="PlayAndAteModel.FK_Order_Product" FromRole="Order" ToRole="Product" />
+          <Property Name="DepartureDate" Type="DateTime" Precision="3" />
         </EntityType>
         <EntityType Name="OrderItem">
           <Key>
@@ -548,7 +550,7 @@
           <Property Name="Address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="QQ" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="Phone" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="RoleId" Type="Int32" Nullable="false" />
           <Property Name="Pwd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Order" Relationship="Self.FK_Order_UserInfo_Role" FromRole="UserInfo_Role" ToRole="Order" />
@@ -866,6 +868,7 @@
           <EntitySetMapping Name="Order">
             <EntityTypeMapping TypeName="PlayAndAteModel.Order">
               <MappingFragment StoreEntitySet="Order">
+                <ScalarProperty Name="DepartureDate" ColumnName="DepartureDate" />
                 <ScalarProperty Name="OrderId" ColumnName="OrderId" />
                 <ScalarProperty Name="OrderName" ColumnName="OrderName" />
                 <ScalarProperty Name="CustomerNum" ColumnName="CustomerNum" />

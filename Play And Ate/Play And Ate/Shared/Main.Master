@@ -23,7 +23,7 @@
     <script src="../Scripts/Shared/citylist.js"></script>
     <script src="../Scripts/Shared/lanrenzhijia.js"></script>
     <script src="../Scripts/Shared/scripts.js"></script>
-    <script src="../Scripts/Shared/script.js"></script>
+   <%-- <script src="../Scripts/Shared/script.js"></script>--%>
     <link href="../Content/Shared/font-awesome.min.css" rel="stylesheet" />
     <link href="../Content/Shared/main_huandeng.css" rel="stylesheet" />
     <link href="../Content/Commond/new_main.css" rel="stylesheet" />

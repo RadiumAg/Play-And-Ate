@@ -153,12 +153,12 @@ $(function () {
                             </td>
                             <td>
                                 <div class="floatDiv guestInputList">
-                                    <input  name="name" id="txt_ch_person_RealName_`+ i + `" />
+                                    <input class="input1"  name="name" id="txt_ch_person_RealName_`+ i + `" />
                                     <ul id="ul_ch_person" style="display: none;">
                                         <li style="border-bottom: solid 1px #98bc86; color: #ccc;">常用游客信息</li>
                                         <li>
                                             <a des="asd,0,132356132165414,0,1900-01-01,13246516815,0,1,0asd,0,132356132165414,0,1900-01-01,13246516815,0,1,0asd,0,132356132165414,0,1900-01-01,13246516815,asdD,1,0asdD,0,132356132165415,0,1900-01-01,13246516815,0,1,0eeee,0,112321232222222221,0,1900-01-01,1323">asd
-                                                            </a>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -294,22 +294,6 @@ $(function () {
         /*验证表单是否通过*/
         console.log($("#form1").valid());
         if ($("#form1").valid()) {
-            $.ajax({
-                url: '/Services/Main.ashx?id=10',
-                dataType: 'JSON',
-                type: "GET",
-                data: {
-                    Customers: datt,
-                    sumMoney: Zjg,
-                    lxname: Lxname,
-                    lxmobile: Lxmobile,
-                    lxphone: Lxphone,
-                    lxemail: Lxemail
-                },
-                success: function (data) {
-                    console.log("提交订单成功！");
-                }
-            });
             window.location.href = "Order_3.aspx?datt=" + datt + "&Lxname=" + Lxname + "&Lxmobile=" + Lxmobile + "&Lxemail=" + Lxemail +
                 "&Lxphone=" + Lxphone + "&Crrs=" + Crrs + "&Etrs=" + Etrs + "&Zjg=" + Zjg; //url传递参数
         } else {

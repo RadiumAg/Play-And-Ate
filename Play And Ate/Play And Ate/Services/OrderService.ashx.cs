@@ -46,9 +46,9 @@ namespace Play_And_Ate.Services
             var msg = new
             {
                 total = OrderManager.ShowOrder<string>(userName)
-                                        .Select(x => new { x.OrderId, x.Contacts.ContactsName, x.OrderName, x.Success, x.OrderPrice }).Count(),
+                                        .Select(x => new { x.OrderId, x.Contacts.ContactsName, x.OrderName, x.Success, x.OrderPrice,x.DepartureDate }).Count(),
                 rows = OrderManager.ShowOrder<string>(userName)
-                                        .Select(x => new { x.OrderId, x.Contacts.ContactsName, x.OrderName, x.Success, x.OrderPrice })
+                                        .Select(x => new { x.OrderId, x.Contacts.ContactsName, x.OrderName, x.Success, x.OrderPrice,x.DepartureDate })
                                         .OrderBy(x => x.OrderId)
                                         .Skip((page - 1) * pageSum)
                                         .Take(pageSum)
