@@ -1401,6 +1401,7 @@
     <Content Include="Products\Fishing.aspx" />
     <Content Include="Products\Generated.aspx" />
     <Content Include="Promotion\Promotion.aspx" />
+    <Content Include="Rediret.aspx" />
     <Content Include="Scripts\datagrid-detailview.js" />
     <Content Include="Scripts\easyloader.js" />
     <Content Include="Scripts\ECharts\chart\bar.js" />
@@ -1696,6 +1697,13 @@
       <DependentUpon>Promotion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rediret.aspx.cs">
+      <DependentUpon>Rediret.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rediret.aspx.designer.cs">
+      <DependentUpon>Rediret.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Search\Search.aspx.cs">
       <DependentUpon>Search.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -15,7 +15,14 @@ namespace Play_And_Ate.Map
         protected void Page_Load(object sender, EventArgs e)
         {
             string productId = this.Request["productId"].ToString();
-            point = ProductManager.ShowProducts(productId).Point.FirstOrDefault(); 
+            point = ProductManager.ShowProducts(productId).Point.FirstOrDefault();
+            if (point == null)
+            {
+                point = new Point();
+                point.Longitude = "116.404";
+                point.Latitude = "39.915";
+                this.Response.Write("<script>alert('抱歉，商家还未上传坐标！去看看别的吧')</script>");
+            }
         }
 
     }

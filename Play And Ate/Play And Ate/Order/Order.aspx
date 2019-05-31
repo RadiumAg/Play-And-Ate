@@ -299,6 +299,30 @@
         $(function () {
             var s = $("#getjiage").html();
             console.info(s);
+        });
+        //返回页面后自动点击按钮,恢复原有数据
+        $(function () {
+            if (sessionStorage.getItem("crrs") != null) {
+                if (sessionStorage.getItem("crrs") > 2) {
+                    var inti = sessionStorage.getItem("crrs") - 2;
+                    for (var i = 0; i < inti; i++) {
+                        document.getElementById("bbb").click();
+                    }
+                } else if (sessionStorage.getItem("crrs") < 2) {
+                    var inti = 2 - sessionStorage.getItem("crrs");
+                    for (var i = 0; i < inti; i++) {
+                        document.getElementById("ccc").click();
+                    }
+                }
+            }
+            if (sessionStorage.getItem("etrs") != null) {
+                if (sessionStorage.getItem("etrs") > 0) {
+                    var inti = sessionStorage.getItem("etrs");
+                    for (var i = 0; i < inti; i++) {
+                        document.getElementById("ddd").click();
+                    }
+                }
+            }
         })
     </script>
 </asp:Content>

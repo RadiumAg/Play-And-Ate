@@ -104,8 +104,9 @@
                                                 let msg = data;
                                                 if (msg.isLogin) {
                                                     alert("登陆成功！");
-                                                    $("#form1")[0].reset();
-                                                    window.open(data.Role + ".html", "_self");
+                                                    var search = location.href.toString().lastIndexOf("?");
+                                                    var returnUrl = location.href.toString().substring(search + 1);
+                                                    window.open(data.Role + ".html?" + returnUrl, "_self");
                                                 }
                                                 else {
                                                     alert("登陆失败！");

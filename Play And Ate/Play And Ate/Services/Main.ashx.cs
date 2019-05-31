@@ -174,6 +174,7 @@ namespace Play_And_Ate.Services
                 this.context.Response.Cookies["UserName"].Value = null;
                 this.context.Response.Cookies["UserId"].Value = null;
                 this.context.Response.Cookies["AccessToken"].Value = null;
+                this.context.Response.Cookies["RoleId"].Value = null;
                 this.context.Response.Write(JsonConvert.SerializeObject(true));
             }
             catch (Exception ex)
