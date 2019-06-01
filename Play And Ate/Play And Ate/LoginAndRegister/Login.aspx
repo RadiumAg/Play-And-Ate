@@ -26,7 +26,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="wraps">
-       
+
 
         <div class="blank"></div>
         <div class="inc wb">
@@ -99,7 +99,7 @@
                                             type: 'POST',
                                             dataType: "JSON",
                                             data: $("#form1").serialize(),
-                                            url: "../Services/Main.ashx?id=1",
+                                            url: "/Services/Main.ashx?id=1",
                                             success: function (data) {
                                                 let msg = data;
                                                 if (msg.isLogin) {
@@ -137,11 +137,71 @@
                             function QQLogin() {
                                 QC.Login.showPopup({
                                     appId: "101574283",
-                                    redirectURI: "http://www.playandate.club/LoginAndRegister/ordinary.html"
+                                    redirectURI: "http://www.playandate.club/LoginAndRegister/Login.aspx"
                                 });
                                 //关闭本窗口关闭本窗口
                                 open("", '_self').close();
                             }
+                        </script>
+                        <script>
+                            //从页面收集OpenAPI必要的参数。get_user_info不需要输入参数，因此paras中没有参数
+                            var paras = {};
+                            //用JS SDK调用OpenAPI
+                            QC.api("get_user_info", paras)
+                                //指定接口访问成功的接受函数，s为成功返回Response对象
+                                .success(function (s) {
+                                    //成功回调，通过s.data获取OpenAPI的返回数
+                                    console.log(s);
+                                    console.log("登录状态:" + QC.Login.check());
+                                    if (QC.Login.check()) {
+                                        QC.Login.getMe(function (openId, accessToken) {
+                                            console.log(openId, accessToken);
+                                            //向服务端发送信息
+                                            $.ajax({
+                                                url: '/Services/QQLogin.ashx?id=1',
+                                                type: "GET",
+                                                dataType: "JSON",
+                                                data: {
+                                                    OpenId: openId,
+                                                    AccessToken: accessToken,
+                                                    NickName: s.data.nickname,
+                                                    City: s.data.city,
+                                                    Province: s.data.province
+                                                },
+                                                success: function (data) {
+                                                    console.log(data);
+                                                    if (data) {
+                                                        console.log("服务器回传数据成功");
+                                                        var returnUrl = "<%=returnUrl%>";
+                                                        if (returnUrl != "") {
+                                                            window.open("<%=returnUrl%>", "_self");
+                                                        }
+                                                        else {
+                                                            window.open("/Home/Home.aspx", "_self");
+                                                        }
+                                                    }
+                                                    else {
+                                                        console.log("服务器回传数据失败");
+                                                    }
+                                                },
+                                                error: function (data) {
+                                                    console.log(data);
+                                                }
+                                            });
+                                        });
+                                    }
+                                })
+                                //指定接口访问失败的接收函数，f为失败返回的Response对象
+                                .error(function (f) {
+                                    //调用失败
+                                    alert("调用用户信息失败");
+
+                                })
+                                //指定接口完成请求后的接收函数，c为完成请求返回Response对象
+                                .complete(function (c) {
+                                    //完成请求回调
+                                    console.log("获取用户信息完成！");
+                                })
                         </script>
                     </div>
                 </div>

@@ -1,11 +1,3 @@
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.dll
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.pdb
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CoreCompileInputs.cache
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.dll
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.pdb
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.dll.config
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.dll
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CopyComplete
 D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.dll.config
 D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.dll
 D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.pdb
@@ -39,8 +31,10 @@ C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.Play
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.dll
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.pdb
 D:\项目\Play And Ate\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csprojAssemblyReference.cache
-D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csprojAssemblyReference.cache
 C:\Users\fanji\Desktop\新\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csprojAssemblyReference.cache
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.dll.config
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.dll
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\FTZ.PlayAndAte.Models.pdb
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.ServiceLocation.dll
@@ -53,5 +47,11 @@ D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practice
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.Unity.pdb
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\Microsoft.Practices.Unity.Interception.pdb
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CoreCompileInputs.cache
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csproj.CopyComplete
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.dll
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.pdb
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.dll
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\EntityFramework.SqlServer.xml
 D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\项目\项目\Play And Ate\FTZ.PlayAndAte.Models\obj\Debug\FTZ.PlayAndAte.Models.csprojAssemblyReference.cache
