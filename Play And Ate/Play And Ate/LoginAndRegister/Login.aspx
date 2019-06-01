@@ -26,8 +26,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="wraps">
-
-
         <div class="blank"></div>
         <div class="inc wb">
             <div class="user_inc_top">第一农庄网会员登陆 <span>&nbsp;或者 <a href="Register.aspx">注册</a></span>	</div>
