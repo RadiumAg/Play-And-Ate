@@ -38,7 +38,7 @@ namespace Play_And_Ate.Helper
             }
             else if (role.Contains("ordinary"))//假如是普通用户，则跳转到之前点击的页面
             {
-                string returnUrl = context.Request["ReturnUrl"];
+                string returnUrl = String.IsNullOrWhiteSpace(context.Request["ReturnUrl"]) ? "/Home/Home.aspx" : context.Request["ReturnUrl"];
                 context.Response.Redirect(returnUrl);
             }
         }

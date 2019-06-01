@@ -36,16 +36,16 @@
     <script type="text/javascript" charset="utf-8"
         src="http://connect.qq.com/qc_jssdk.js"
         data-appid="101574283"
-        data-redirecturi="http://www.playandate.club/LoginAndRegister/ordinary.html">
+        data-redirecturi="http://www.playandate.club/LoginAndRegister/Login.aspx">
     </script>
 
- <script type="text/javascript">
-     var APP_ROOT = '';
-     var CART_URL = '/cart';
-     var CART_CHECK_URL = '/cart-check';
-     var LOADER_IMG = '/Images/error/捏脸.gif';
-     var ERROR_IMG = '/Images/error/捏脸.gif';
-        </script>
+    <script type="text/javascript">
+        var APP_ROOT = '';
+        var CART_URL = '/cart';
+        var CART_CHECK_URL = '/cart-check';
+        var LOADER_IMG = '/Images/error/捏脸.gif';
+        var ERROR_IMG = '/Images/error/捏脸.gif';
+    </script>
     <style type="text/css">
         .none {
             display: none;
@@ -93,7 +93,7 @@
                                         success: function (data) {
                                             console.log(data);
                                             if (data) {
-                                                window.open("http://47.101.216.14/Home/Home.aspx", "_Self");
+                                                window.open("/Home/Home.aspx", "_Self");
                                             } else {
                                                 alert("发生错误，退出失败！");
                                             }
