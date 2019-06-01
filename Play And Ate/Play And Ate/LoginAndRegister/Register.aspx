@@ -4,14 +4,6 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="wraps">
-        <script type="text/javascript">
-            var APP_ROOT = '';
-            var CART_URL = '/cart';
-            var CART_CHECK_URL = '/cart-check';
-            var LOADER_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/lazy_loading.gif';
-            var ERROR_IMG = 'http://sh.01nz.com.cn/app/Tpl/fanwe/images/image_err.gif';
-        </script>
-
         <div class="blank"></div>
         <style type="text/css">
             .p9 {
@@ -110,7 +102,7 @@
                                                 dataType: "JSON",
                                                 data: $("#form1").serialize(),
                                                 success: function (data) {
-                                                  
+
                                                     if (data) {
                                                         window.alert("注册成功！");
                                                         dtime(60);
@@ -205,7 +197,7 @@
                             function QQLogin() {
                                 QC.Login.showPopup({
                                     appId: "101574283",
-                                    redirectURI: "http://www.playandate.club/LoginAndRegister/ordinary.html"
+                                    redirectURI: "http://www.playandate.club/LoginAndRegister/Login.aspx"
                                 });
                                 //关闭本窗口关闭本窗口
                                 open("", '_self').close();
