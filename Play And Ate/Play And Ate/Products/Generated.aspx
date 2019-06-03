@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Generated.aspx.cs" Inherits="Play_And_Ate.Products.Generated" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">  <link rel="Shortcut Icon" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" /><!--地址栏和标签上显示图标-->
-    <link rel="Bookmark" href="http://sh.01nz.com.cn/app/Tpl/fanwe/images/logo.ico" /><!--收藏夹显示图标-->
+    <link rel="Bookmark" href="" /><!--收藏夹显示图标-->
     <link rel="stylesheet" type="text/css" href="../Content/Products/cf62177493ce4db40c22962f60d846f8.css" />
     <script type="text/javascript" src="../Scripts/Products/908ca0ab9e4d27144b60bc878b237327.js" charset="utf-8"></script>
     <script type="text/javascript" src="../Scripts/Products/baidumap.js"></script>

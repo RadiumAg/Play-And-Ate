@@ -6,26 +6,26 @@
     <style>
         #kefu {
             position: fixed;
-            top: 550px;
+            top: 800px;
             right: 20px;
             z-index: 99999;
         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
-    <%-- QQ客服--%>
+   <%-- QQ客服--%>
     <a id="kefu" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=2637304079&site=qq&menu=yes">
         <img border="0" src="http://wpa.qq.com/pa?p=2:2637304079:51" alt="点击这里查询客服" title="点击这里查询客服" /></a>
-    <%--在线聊天客服--%>
+   <%--在线聊天客服--%>
     <a id="ibangkf" href="http://www.ibangkf.com">在线客服系统 </a>
-    <script>
-        (function () {
-            var st = document.createElement("script");
-            st.src = "http://c.ibangkf.com/i/c-fancy-0224.js";
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(st, s);
-        })();
-    </script>
+<script>
+(function() {
+    var st = document.createElement("script");
+    st.src = "http://c.ibangkf.com/i/c-zhangshiqing.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(st, s);
+})();
+</script>
 
     <asp:ScriptManagerProxy runat="server" ID="spHome">
     </asp:ScriptManagerProxy>
@@ -35,6 +35,60 @@
         var CART_CHECK_URL = '/cart-check';
         var LOADER_IMG = '../Images/Home/lazy_loading.gif';
         var ERROR_IMG = '../Images/Home/image_err.gif';
+    </script>
+    <script>
+        //从页面收集OpenAPI必要的参数。get_user_info不需要输入参数，因此paras中没有参数
+        var paras = {};
+        //用JS SDK调用OpenAPI
+        QC.api("get_user_info", paras)
+            //指定接口访问成功的接受函数，s为成功返回Response对象
+            .success(function (s) {
+                //成功回调，通过s.data获取OpenAPI的返回数
+                console.log(s);
+                console.log("登录状态:" + QC.Login.check());
+                if (QC.Login.check()) {
+                    QC.Login.getMe(function (openId, accessToken) {
+                        console.log(openId, accessToken);
+                        //向服务端发送信息
+                        $.ajax({
+                            url: '/Services/QQLogin.ashx?id=1',
+                            type: "GET",
+                            dataType: "JSON",
+                            data: {
+                                OpenId: openId,
+                                AccessToken: accessToken,
+                                NickName: s.data.nickname,
+                                City: s.data.city,
+                                Province: s.data.province
+                            },
+                            success: function (data) {
+                                console.log(data);
+                                if (data) {
+                                    console.log("服务器回传数据成功");
+                                    location.reload();
+                                }
+                                else {
+                                    console.log("服务器回传数据失败");
+                                }
+                            },
+                            error: function (data) {
+                                console.log(data);
+                            }
+                        });
+                    });
+                }
+            })
+            //指定接口访问失败的接收函数，f为失败返回的Response对象
+            .error(function (f) {
+                //调用失败
+                alert("调用用户信息失败");
+
+            })
+            //指定接口完成请求后的接收函数，c为完成请求返回Response对象
+            .complete(function (c) {
+                //完成请求回调
+                console.log("获取用户信息完成！");
+            })
     </script>
     <script type="text/javascript">
         //首先用JQ判断浏览器类型及版本，如果是IE8以下的浏览器就用effect=show，否则就用effect=fadeIn，判断浏览器版本函数如下
@@ -103,7 +157,7 @@
                                         <label>海量农家</label>
                                     </div>
                                     <div class="gbotlbot">
-                                        农家随意挑选
+                                       农家随意挑选
                                     </div>
                                 </li>
                                 <li>
@@ -330,7 +384,7 @@
                     <li data-index="2" style="">
                         <a href="#" target="_blank">
                             <p>
-                                <img border="0" alt="" src="../Images/Home/56b45111dc613.jpg" style="width: 605px; height: 295px;" />
+                                <img border="0" alt="" src="../Images/Home/56b45111dc613.jpg" style="width:605px;height:295px;"/>
                             </p>
                         </a>
                     </li>

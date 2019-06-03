@@ -20,10 +20,11 @@
 <script>
 (function() {
     var st = document.createElement("script");
-    st.src = "http://c.ibangkf.com/i/c-fancy-0224.js";
+    st.src = "http://c.ibangkf.com/i/c-zhangshiqing.js";
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(st, s);
-})();
+    })();
+
 </script>
 
     <div class="wraps">
