@@ -323,6 +323,7 @@
                     }
                 }
             }
-        })
+        });
+        window.$sid = 'ASP.NET_SessionId=<%= System.Web.HttpContext.Current.Session.SessionID %>';
     </script>
 </asp:Content>

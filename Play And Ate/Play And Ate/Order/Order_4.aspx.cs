@@ -20,7 +20,7 @@ namespace Play_And_Ate.Order
             if (this.third_party_radio_WX.Checked)
             {
                 //微信支付
-                Response.Redirect(string.Format("PayTo.aspx?subject={0}&money={1}&pay_type={2}&extra={3}", HttpUtility.UrlEncode("产品名称"), 0.01, 44, HttpUtility.UrlEncode("")));//extra为用户自定义数据
+                Response.Redirect(string.Format("PayTo.aspx?subject={0}&money={1}&pay_type={2}&extra={3}", HttpUtility.UrlEncode("产品名称"), 0.01, 44, HttpUtility.UrlEncode("产品名称")));//extra为用户自定义数据
             }
         }
     }
