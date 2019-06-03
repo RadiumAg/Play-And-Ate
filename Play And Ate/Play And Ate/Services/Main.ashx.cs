@@ -9,14 +9,15 @@ using System.Web.Security;
 using Play_And_Ate.Helper;
 using Newtonsoft.Json.Linq;
 using Play_And_Ate.Order.App_Code;
-
+using static Play_And_Ate.Services.Main;
+using System.Web.SessionState;
 
 namespace Play_And_Ate.Services
 {
     /// <summary>
     /// Main 的摘要说明
     /// </summary>
-    public class Main : IHttpHandler
+    public class Main : IHttpHandler, IRequiresSessionState
     {
         HttpContext context = HttpContext.Current;
         public void ProcessRequest(HttpContext context)
@@ -123,13 +124,14 @@ namespace Play_And_Ate.Services
             为用户开辟一块新内存地址
             */
             //为订单添加信息
-            Helper.OrderMessage.OrderName = DateTime.Now.ToString("yyyyMMddHHmmssfff");
-            order.OrderName = Helper.OrderMessage.OrderName;
+            //Helper.OrderMessage.OrderName = DateTime.Now.ToString("yyyyMMddHHmmssfff");
+            this.context.Session["OrderName"] = DateTime.Now.ToString("yyyyMMddHHmmssfff");
+            order.OrderName = this.context.Session["OrderName"].ToString();
             order.OrderPrice = Convert.ToDecimal(this.context.Request["sumMoney"].ToString());
             order.Success = false;
             order.CustomerNum = order.OrderItem.Count();
             order.UserId = Convert.ToInt32(this.context.Request.Cookies["UserId"].Value);
-            order.ProductId = Helper.OrderMessage.ProductID;
+            order.ProductId = Convert.ToInt32(this.context.Session["ProductId"].ToString());
             order.DepartureDate = DateTime.Parse(this.context.Request["DepartureDate"].ToString());
             /*
              创建联系人

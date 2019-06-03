@@ -13,7 +13,7 @@ namespace Play_And_Ate.Order
         protected void Page_Load(object sender, EventArgs e)
         {
             //获取商品编号
-           Helper.OrderMessage.ProductID = Convert.ToInt32(this.Request["productId"].First().ToString());
+            this.Session["ProductId"] = Convert.ToInt32(this.Request["productId"].First().ToString());
         }
 
     }
