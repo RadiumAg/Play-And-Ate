@@ -10,6 +10,16 @@
     <script src="../Scripts/Search/pindao1.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
+      <%--在线聊天客服--%>
+    <a id="ibangkf" href="http://www.ibangkf.com">在线客服系统 </a>
+<script>
+(function() {
+    var st = document.createElement("script");
+    st.src = "http://c.ibangkf.com/i/c-zhangshiqing.js";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(st, s);
+})();
+</script>
     <!-- //div.pnav -->
     <!-- 公共头部结束  -->
     <!--主要内容开始-->

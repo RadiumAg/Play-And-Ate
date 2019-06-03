@@ -21,7 +21,7 @@
 <script>
 (function() {
     var st = document.createElement("script");
-    st.src = "http://c.ibangkf.com/i/c-fancy-0224.js";
+    st.src = "http://c.ibangkf.com/i/c-zhangshiqingjs";
     var s = document.getElementsByTagName("script")[0];
     s.parentNode.insertBefore(st, s);
 })();
