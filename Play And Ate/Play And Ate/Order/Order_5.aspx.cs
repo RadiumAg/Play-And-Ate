@@ -35,7 +35,7 @@ namespace Play_And_Ate.Order
                         {
                             FTZ.PlayAndAte.Models.Order order = new FTZ.PlayAndAte.Models.Order()
                             {
-                                OrderName = Helper.OrderMessage.OrderName,
+                                OrderName = order_no,
                             };
                             OrderManager.UPdateOrder(order);
                         }

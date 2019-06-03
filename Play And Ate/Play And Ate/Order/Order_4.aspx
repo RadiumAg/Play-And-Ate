@@ -26,8 +26,6 @@
                             <p class="p1">
                                 <em>恭喜，您的订单已经提交，请在本页提交付款!</em>
                             </p>
-                            <center>
-                                     </center>
                             <br />
                             <div class="orderPayInfo">
                                 <div class="hd">
@@ -108,21 +106,22 @@
                                                             <img width="162" height="45" border="0" alt="支付宝" src="../Images/Order/qyfk43_03.jpg" class="on">
                                                         </td>
                                                         <td width="2%" class="padleft5_sll">
-                                                            <input type="radio" value="CFT" name="pay_bank" id="third_party_radio_WX" onclick="tenpay();" runat="server">
+                                                            <input type="radio" value="CFT" name="pay_bank" id="third_party_radio_WX" onclick="tenpay();" runat="server" />
                                                         </td>
                                                         <td width="24%">
-                                                            <img width="162" height="45" border="0" alt="微信" src="../Images/Order/微信支付.jpg">
+                                                            <img width="162" height="45" border="0" alt="微信" src="../Images/Order/微信支付.jpg" />
                                                         </td>
                                                         <td width="2%" class="padleft5_sll">
-                                                            <input type="radio" value="KuaiQian" name="pay_bank" id="third_party_radio_CFT" onclick="alipay1();" runat="server">
+                                                            <input type="radio" value="KuaiQian" name="pay_bank" id="third_party_radio_CFT" onclick="alipay1();" runat="server" />
                                                         </td>
                                                         <td width="28%">
-                                                            <img width="162" height="45" border="0" alt="财付通" src="../Images/Order/tenpay_buy.gif">
+                                                            <img width="162" height="45" border="0" alt="财付通" src="../Images/Order/tenpay_buy.gif" />
                                                         </td>
                                                         <td width="2%" class="padleft5_sll">
-                                                            <input type="radio" value="KuaiQian" name="pay_bank" id="radio" onclick="paypal();" runat="server"></td>
+                                                            <input type="radio" value="KuaiQian" name="pay_bank" id="radio" onclick="paypal();" runat="server" />
+                                                        </td>
                                                         <td width="18%">
-                                                            <img width="162" height="45" border="0" alt="银行卡" src="../Images/Order/paypal_logo.gif">
+                                                            <img width="162" height="45" border="0" alt="银行卡" src="../Images/Order/paypal_logo.gif" />
                                                         </td>
                                                     </tr>
                                                     <tr style="height: 10px;">

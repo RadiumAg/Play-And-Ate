@@ -93,11 +93,8 @@
 
                                                     </div>
                                                 </div>
-
                                             </td>
                                             <td>
-
-
                                                 <input type="button" value="-" name="ccc" id="ccc" class="put" title="减少成人数" />
                                                 <input type="text" id="txtHiddenPersonNum" name="txtHiddenPersonNum" value="2" class="txtHiddenPersonNum" />
                                                 <input type="button" value="+" onclick="javascript: this.form.txtHiddenPersonNum.value++;" name="bbb" id="bbb" class="put" title="增加成人数" />
@@ -144,7 +141,7 @@
                             <div class="li4">
                                 <p>
                                     <strong>应付总额：</strong><label>￥<i id="offerPrice">398</i></label>
-                                    <input type="hidden" id="allp" name="allp" value="398"/>
+                                    <input type="hidden" id="allp" name="allp" value="398" />
                                 </p>
                             </div>
                         </div>
@@ -153,7 +150,7 @@
                     </div>
                     <!--页面-->
                     <div class="userInfoBtn" id="gl_return" style="display: block;">
-                        <input type="button" id="btn_pre"  style="background: url('/Images/Order/order15.gif'); border-width: 0px; cursor: pointer; width: 139px; height: 44px;" />
+                        <input type="button" id="btn_pre" style="background: url('/Images/Order/order15.gif'); border-width: 0px; cursor: pointer; width: 139px; height: 44px;" />
                         <input type="button" id="btn_next" style="background: url('/Images/Order/order19.gif'); border-width: 0px; cursor: pointer; width: 139px; height: 44px;" />
                         <script>
                             //点击上一页返回页面
@@ -183,13 +180,14 @@
                                     sessionStorage.setItem("etrs", et); //保存儿童人数
                                     console.log(sessionStorage.getItem("crrs"));
                                     var sj = $("#pTime").val();
-                                    sessionStorage.setItem("sj", sj.substring(0, 11));    
+                                    sessionStorage.setItem("sj", sj.substring(0, 11));
                                     window.location.href = "Order_2.aspx?Length=" + $("#txtHiddenPersonNum").val() + "&crzjg=" + $("#getjiage").html() +
                                         "&crjg=" + $("#gethidChenRen").html() + "&etzjg=" + $("#getrtjiage").html() + "&etrs=" + $("#txtHiddenChildNum").val()
                                         + "&etjg=" + $("#gethidErTong").html() + "&zjg=" + $("#offerPrice").html(); //url传递参数
                                 });
                             })
                         </script>
+
                     </div>
                     <div class="clearfix">
                     </div>
@@ -212,10 +210,6 @@
                 <input type="hidden" id="txtHiddenUseScore" name="txtHiddenUseScore" value="0" />
                 <input type="hidden" id="txtHiddenAllScore" name="txtHiddenAllScore" value="8" />
             </div>
-            <script src="../Scripts/Order/one_order.js"></script>
-            <script src="../Scripts/Order/jquery.js"></script>
-            <script src="../Scripts/Order/tooltip.js"></script>
-            <script src="../Scripts/Order/order.js"></script>
             <script>
                 //返回页面后自动点击按钮,恢复原有数据
                 $(function () {
@@ -236,7 +230,7 @@
                         if (sessionStorage.getItem("etrs") > 0) {
                             var inti = sessionStorage.getItem("etrs");
                             for (var i = 0; i < inti; i++) {
-                               document.getElementById("ddd").click();
+                                document.getElementById("ddd").click();
                             }
                         }
                     }
@@ -245,4 +239,90 @@
         </div>
     </div>
 </asp:Content>
-<asp:Content runat="server" ID="Footer" ContentPlaceHolderID="Footer"></asp:Content>
+<asp:Content runat="server" ID="Footer" ContentPlaceHolderID="Footer">
+    <script src="../Scripts/Order/one_order.js"></script>
+    <script src="../Scripts/Order/jquery.js"></script>
+    <script src="../Scripts/Order/tooltip.js"></script>
+    <script src="../Scripts/Order/order.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            do71org88ShowCalender("fastCalender2");
+        });   //$(function()
+        function do71org88ShowCalender(obj) {
+            var tg = $('#' + obj).find('div.p10').find('.calenderPart');
+            var arrow = tg.next('.cArrow');
+            tg.next(".cArrow").click(function () {
+                tg.show();
+                arrow.attr("class", "cArrow cup");
+
+            });
+            tg.parents('div.p10').find('span.pTimeSpan').click(function () {
+                tg.show();
+                arrow.attr("class", "cArrow cup");
+            });
+            tg.parents('div.p10').find('span.pTimeSpan').click(function () {
+                tg.show();
+                arrow.attr("class", "cArrow cup");
+            });
+
+
+            //点击Li日期下拉选项
+            tg.find('li').live("click", function () {
+                var o = $(this);
+                tg.parents('div.p10').find('input.pTime').val(o.text());
+                tg.hide();
+                arrow.attr("class", "cArrow cdown");
+                $("#txtHiddenUzaiPrice").val(o.attr("title")); //成人价
+                $("#gethidChenRen").text(o.attr("title")); //预定清单成人价
+                var getjiage = $("#txtHiddenUzaiPrice").val() * $("#txtHiddenPersonNum").val(); //计算价格
+                $("#getjiage").text(getjiage);
+                $("#txtHiddenChildPrice").val(o.attr("son")); //儿童价
+                $("#gethidErTong").text(o.attr("son")); //预定清单儿童价
+                var getrtjiage = $("#txtHiddenChildPrice").val() * $("#txtHiddenChildNum").val();
+                $("#getrtjiage").text(getrtjiage);
+                $("#txtHiddenGoDate").val(o.attr("v")); // 日期
+                sumAll();
+
+            });
+            $(document).click(function (e) {
+                var t = $(e.target);
+                var v1 = "#" + obj + " .pTime" + ",#" + obj + " .pDropCalender" + ",#" + obj + " .pDropCalender *,#submit_a,#btnFastCalender,#submit_a";
+                if (!t.is(v1)) {
+                    tg.hide();
+                    arrow.attr("class", "cArrow cdown");
+                }
+            });
+        }
+    </script>
+    <script>
+        //获取价格
+        $(function () {
+            var s = $("#getjiage").html();
+            console.info(s);
+        });
+        //返回页面后自动点击按钮,恢复原有数据
+        $(function () {
+            if (sessionStorage.getItem("crrs") != null) {
+                if (sessionStorage.getItem("crrs") > 2) {
+                    var inti = sessionStorage.getItem("crrs") - 2;
+                    for (var i = 0; i < inti; i++) {
+                        document.getElementById("bbb").click();
+                    }
+                } else if (sessionStorage.getItem("crrs") < 2) {
+                    var inti = 2 - sessionStorage.getItem("crrs");
+                    for (var i = 0; i < inti; i++) {
+                        document.getElementById("ccc").click();
+                    }
+                }
+            }
+            if (sessionStorage.getItem("etrs") != null) {
+                if (sessionStorage.getItem("etrs") > 0) {
+                    var inti = sessionStorage.getItem("etrs");
+                    for (var i = 0; i < inti; i++) {
+                        document.getElementById("ddd").click();
+                    }
+                }
+            }
+        })
+    </script>
+</asp:Content>

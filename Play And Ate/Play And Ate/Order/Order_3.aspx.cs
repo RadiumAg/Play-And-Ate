@@ -20,6 +20,7 @@ namespace Play_And_Ate.Order
         protected string Lxmobile;
         protected string Lxemail;
         protected string Lxphone;
+        protected dynamic datt;
         protected void Page_Load(object sender, EventArgs e)
         {
             //用json格式保存上个页面传递的参数
@@ -31,7 +32,7 @@ namespace Play_And_Ate.Order
             Etrs = JsonConvert.SerializeObject(Request["Etrs"]);
             Zjg = JsonConvert.SerializeObject(Request["Zjg"]);
             //成人信息数组
-            dynamic datt = JsonConvert.DeserializeObject(Request["datt"]);
+            datt = JsonConvert.DeserializeObject(Request["datt"]);
             //获取数组成员
             //初始化list
             list.Clear();

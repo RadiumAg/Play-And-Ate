@@ -125,11 +125,12 @@ namespace Play_And_Ate.Services
             //为订单添加信息
             Helper.OrderMessage.OrderName = DateTime.Now.ToString("yyyyMMddHHmmssfff");
             order.OrderName = Helper.OrderMessage.OrderName;
-            order.OrderPrice = Convert.ToDecimal(context.Request["sumMoney"].ToString());
+            order.OrderPrice = Convert.ToDecimal(this.context.Request["sumMoney"].ToString());
             order.Success = false;
             order.CustomerNum = order.OrderItem.Count();
-            order.UserId = Convert.ToInt32(context.Request.Cookies["UserId"].Value);
+            order.UserId = Convert.ToInt32(this.context.Request.Cookies["UserId"].Value);
             order.ProductId = Helper.OrderMessage.ProductID;
+            order.DepartureDate = DateTime.Parse(this.context.Request["DepartureDate"].ToString());
             /*
              创建联系人
              为联系人开辟一块新内存地址
@@ -173,6 +174,7 @@ namespace Play_And_Ate.Services
                 this.context.Response.Cookies["UserName"].Value = null;
                 this.context.Response.Cookies["UserId"].Value = null;
                 this.context.Response.Cookies["AccessToken"].Value = null;
+                this.context.Response.Cookies["RoleId"].Value = null;
                 this.context.Response.Write(JsonConvert.SerializeObject(true));
             }
             catch (Exception ex)

@@ -36,9 +36,10 @@ namespace Play_And_Ate.Helper
             {
                 context.Server.Transfer("~/Admin/Backstage.aspx?id=2");
             }
-            else if (role.Contains("ordinary"))
+            else if (role.Contains("ordinary"))//假如是普通用户，则跳转到之前点击的页面
             {
-                context.Server.Transfer("~/Home/Home.aspx");
+                string returnUrl = String.IsNullOrWhiteSpace(context.Request["ReturnUrl"]) ? "/Home/Home.aspx" : context.Request["ReturnUrl"];
+                context.Response.Redirect(returnUrl);
             }
         }
 

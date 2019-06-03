@@ -64,14 +64,6 @@
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\项目\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=5.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\项目\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\项目\新\Play And Ate\FTZ.PlayAndAte.DAL\bin\Debug\Microsoft.Practices.ServiceLocation.dll</HintPath>
@@ -862,6 +854,7 @@
     <Content Include="Order\Order_5.aspx" />
     <Content Include="Order\PayTo.aspx" />
     <Content Include="Personage\Order.aspx" />
+    <Content Include="Personage\PartialView\ShowOrder.html" />
     <Content Include="Personage\Personage.aspx" />
     <Content Include="Plugin\jquery-validation-1.14.0\dist\additional-methods.js" />
     <Content Include="Plugin\jquery-validation-1.14.0\dist\additional-methods.min.js" />
@@ -1796,9 +1789,9 @@
     <Content Include="Plugin\jqzoom\images\Thumbs.db" />
     <Content Include="Plugin\jquery-validation-1.14.0\package.json" />
     <Content Include="Plugin\jquery-validation-1.14.0\README.md" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Services\OrderService.ashx" />
     <Content Include="Services\QQLogin.ashx" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -1808,7 +1801,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Home\" />
-    <Folder Include="Personage\PartialView\" />
     <Folder Include="Propaganda\" />
     <Folder Include="Scripts\Cart\" />
     <Folder Include="Scripts\Commond\" />
