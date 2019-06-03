@@ -110,6 +110,7 @@
     <Content Include="Content\Admin\Index.css" />
     <Content Include="Content\Cart\base.v606141511.css" />
     <Content Include="Content\Cart\cf62177493ce4db40c22962f60d846f8.css" />
+    <Content Include="Content\Error\bootstrap.css" />
     <Content Include="Content\Line\index.css" />
     <Content Include="Content\Line\LineDetial\a_rili.css" />
     <Content Include="Content\Line\LineDetial\index.css" />
@@ -462,6 +463,9 @@
     <Content Include="Images\Cart\loge.gif" />
     <Content Include="Images\Cart\wg.png" />
     <Content Include="Images\Cart\xian.jpg" />
+    <Content Include="Images\error\bug1.jpg" />
+    <Content Include="Images\error\bug2.jpg" />
+    <Content Include="Images\error\bug3.jpg" />
     <Content Include="Images\error\捏脸.gif" />
     <Content Include="Images\Home\5270b12bd8b1d.jpg" />
     <Content Include="Images\Home\52807b105cb1b.jpg" />

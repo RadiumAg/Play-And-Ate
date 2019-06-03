@@ -6,7 +6,7 @@
     <style>
         #kefu {
             position: fixed;
-            top: 800px;
+            top: 600px;
             right: 20px;
             z-index: 99999;
         }
@@ -1000,7 +1000,7 @@
                     <div id="ajax_special_store">
                         <div class="mzt_r f_l">
                             <div class="jpzt_nr">
-                                <a href="#" target="_blank">武汉藏着26个古色古香的名村，周末自驾游…</a>
+                                <a href="12.aspx" target="_blank">武汉藏着26个古色古香的名村，周末自驾游…</a>
                                 <p>秋天是个非常适合远足的季节，少了夏日的酷暑，凉风习习。寻一个古镇或者村落，遍地都是初秋最美的颜色~这样的天气这样的季节，…</p>
                                 <div class="llxh f_r">
                                     <label class="qlan">浏览(53373)</label>
