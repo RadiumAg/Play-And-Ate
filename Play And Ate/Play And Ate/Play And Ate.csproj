@@ -595,7 +595,7 @@
     <Content Include="Images\Order\tenpay_buy.gif" />
     <Content Include="Images\Order\微信支付.jpg" />
     <Content Include="Images\Personage\user_bg.png" />
-    <Content Include="Images\Shared\HEAD .ico" />
+    <Content Include="Images\Shared\HEAD.ico" />
     <Content Include="Images\Shared\HEAD.png" />
     <Content Include="Images\Tailorism\5270b12bd8b1d.jpg" />
     <Content Include="Images\Tailorism\52807b105cb1b.jpg" />
