@@ -576,6 +576,7 @@
     <Content Include="Images\LoginAndRegister\icon.gif" />
     <Content Include="Images\LoginAndRegister\image_err.gif" />
     <Content Include="Images\LoginAndRegister\jubao.gif" />
+    <Content Include="Images\LoginAndRegister\light_box_close_btn.png" />
     <Content Include="Images\LoginAndRegister\loge.gif" />
     <Content Include="Images\LoginAndRegister\user_rl.gif" />
     <Content Include="Images\LoginAndRegister\wechat.png" />
@@ -594,6 +595,8 @@
     <Content Include="Images\Order\tenpay_buy.gif" />
     <Content Include="Images\Order\微信支付.jpg" />
     <Content Include="Images\Personage\user_bg.png" />
+    <Content Include="Images\Shared\HEAD .ico" />
+    <Content Include="Images\Shared\HEAD.png" />
     <Content Include="Images\Tailorism\5270b12bd8b1d.jpg" />
     <Content Include="Images\Tailorism\52807b105cb1b.jpg" />
     <Content Include="Images\Tailorism\5282e9733ca7c_70x50.jpg" />
@@ -760,7 +763,6 @@
     <Content Include="Images\Products\styyangzhi.png" />
     <Content Include="Images\Products\wg.png" />
     <Content Include="Images\Products\xian.jpg" />
-    <Content Include="Images\Shared\LOGO1.PNG" />
     <Content Include="Images\Shared\main_icon.png" />
     <Content Include="Images\Home\nongjiafb.png" />
     <Content Include="Images\Shared\shadow.png" />
@@ -772,7 +774,6 @@
     <Content Include="Images\Tailorism\5.jpg" />
     <Content Include="Images\Home\grey.gif" />
     <Content Include="Images\Shared\cs_dw.png" />
-    <Content Include="Images\Shared\loge.gif" />
     <Content Include="Images\Show\FarmDetails\1.jpg" />
     <Content Include="Images\Show\FarmDetails\2.jpg" />
     <Content Include="Images\Show\FarmDetails\3.jpg" />
@@ -1470,7 +1471,7 @@
     <Content Include="Scripts\LoginAndRegister\Login\sousuo.js" />
     <Content Include="Scripts\LoginAndRegister\Login\tongji_360.js" />
     <Content Include="Scripts\LoginAndRegister\Login\z_stat.js" />
-    <Content Include="Scripts\LoginAndRegister\Register\908ca0ab9e4d27144b60bc878b237327.js" />
+    <Content Include="Scripts\LoginAndRegister\Register\validate.js" />
     <Content Include="Scripts\LoginAndRegister\Register\baidumap.js" />
     <Content Include="Scripts\LoginAndRegister\Register\c.js" />
     <Content Include="Scripts\LoginAndRegister\Register\fgcomm.v620152248.js" />

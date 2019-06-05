@@ -5,11 +5,8 @@
     <link href="../Content/LoginAndRegister/Login/Login.css" rel="stylesheet" />
     <script src="../Scripts/LoginAndRegister/Login/baidumap.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/c.js"></script>
-    <script src="../Scripts/LoginAndRegister/Login/fgcomm.v620152248.js"></script>
-    <script src="../Scripts/LoginAndRegister/Login/header.js"></script>
-    <script src="../Scripts/LoginAndRegister/Login/index_header.js"></script>
     <script src="../Scripts/LoginAndRegister/Login/lang.js"></script>
-    <script src="../Scripts/LoginAndRegister/Login/mt3.v1014201036.js"></script>
+    <script src="../Plugin/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
     <style>
         #discode {
             padding: 0px;
@@ -22,6 +19,11 @@
             cursor: pointer;
             margin-left: 10px;
         }
+
+        label.error {
+            font-size: 8px !important;
+            color: red;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
@@ -33,15 +35,14 @@
                 <div class="user-lr-box-left f_l">
                     <div style="margin: 10px;">
                         <!--登录表单-->
-
                         <div class="field email">
-                            <label for="login-email-address">Email/手机</label>
+                            <label for="login-email-address">手机</label>
                             <input type="text" value="" class="f-input ipttxt" id="login-email-address" name="email" size="30" tabindex="1" />
                         </div>
                         <div class="field password">
                             <label for="login-password">密码</label>
                             <input type="password" value="" class="f-input ipttxt" id="login-password" name="user_pwd" size="30" tabindex="2" />
-                            <span class="lostpassword">&nbsp;&nbsp;<a href="#">忘记密码?</a></span>
+                            <%--<span class="lostpassword">&nbsp;&nbsp;<a href="#">忘记密码?</a></span>--%>
                         </div>
                         <div class="field autologin">
                             <div class="input">
@@ -50,14 +51,56 @@
                             </div>
                         </div>
                         <div class="field autologin">
-                            <input type="checkbox" id="autologin" name="auto_login" />下次自动登录？									
+                            <input type="checkbox" id="autologin" name="auto_login" value="false" />下次自动登录？
                         </div>
+                        <script>
+                            $("#autologin").click(function () {
+                                if ($(this).val() == "false") {
+                                    $(this).val("true");
+                                } else {
+                                    $(this).val("false");
+                                }
+                            });
+                        </script>
                         <div class="clear"></div>
-
                         <div class="act">
                             <input type="hidden" name="ajax" value="1" />
                             <input type="submit" class="login-submit-btn" id="user-login-submit" name="commit" value="登录" />
                             <script>
+                                /*验证*/
+                                $(function () {
+                                    jQuery.validator.addMethod("phone", function (value, element) {
+                                        var phone = /^((\(\d{3}\))|(\d{3}\-))?((13|14)[0-9]|15[0-9]|18[0-9])\d{8}$/;
+                                        return this.optional(element) || (phone.test(value));
+                                    }, "格式不正确");
+
+                                    //取消表单提交
+                                    $("#form1").submit(function () {
+                                        return false;
+                                    });
+                                    $("#form1").validate({
+                                        rules: {
+                                            email: {
+                                                required: true,
+                                                phone: true,
+                                            },
+                                            user_pwd: {
+                                                required: true,
+                                            }
+                                        },
+                                        messages: {
+                                            email: {
+                                                required: '手机号必填！',
+                                                phone: '格式不正确！'
+                                            },
+                                            user_pwd: {
+                                                required: '密码必填！'
+                                            },
+                                        }
+                                    });
+                                });
+                                /*验证*/
+
                                 createCode();
                                 var code; //在全局 定义验证码
                                 function createCode() { //创建验证码函数
@@ -87,36 +130,34 @@
                                 }
 
                                 $("#user-login-submit").click(function () {
-                                    //取消自动提交表单
-                                    $("#form1").submit(function () {
-                                        return false;
-                                    });
-                                    let isSubmit = but();
-                                    if (isSubmit) {
-                                        $.ajax({
-                                            type: 'POST',
-                                            dataType: "JSON",
-                                            data: $("#form1").serialize(),
-                                            url: "/Services/Main.ashx?id=1",
-                                            success: function (data) {
-                                                let msg = data;
-                                                if (msg.isLogin) {
-                                                    alert("登陆成功！");
-                                                    var search = location.href.toString().lastIndexOf("?");
-                                                    var returnUrl = location.href.toString().substring(search + 1);
-                                                    window.open(data.Role + ".html?" + returnUrl, "_self");
+                                    if ($("#form1").valid()) {
+                                        let isSubmit = but();
+                                        if (isSubmit) {
+                                            $.ajax({
+                                                type: 'POST',
+                                                dataType: "JSON",
+                                                data: $("#form1").serialize(),
+                                                url: "/Services/Main.ashx?id=1",
+                                                success: function (data) {
+                                                    let msg = data;
+                                                    if (msg.isLogin) {
+                                                        alert("登陆成功！");
+                                                        var search = location.href.toString().lastIndexOf("?");
+                                                        var returnUrl = location.href.toString().substring(search + 1);
+                                                        window.open(data.Role + ".html?" + returnUrl, "_self");
+                                                    }
+                                                    else {
+                                                        alert("登陆失败！");
+                                                    }
                                                 }
-                                                else {
-                                                    alert("登陆失败！");
-                                                }
-                                            }
-                                        });
+                                            });
+                                        }
                                     }
                                 });
+
                             </script>
                             <span class="to_regsiter">还没有账户？<a href="Register.aspx">立即注册</a></span>
                         </div>
-
                         <!--登录表单-->
                     </div>
                 </div>

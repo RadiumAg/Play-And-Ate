@@ -6164,7 +6164,8 @@ a.switch_city, a.switch_city:hover {
 
         .user-lr-box-left .field label {
             height: 40px;
-            line-height: 40px
+            line-height: 40px;
+            width:100px;
         }
 
         .user-lr-box-left .field .hint {

@@ -271,13 +271,13 @@ namespace Play_And_Ate.Services
         /// <returns>是否登陆成功</returns>
         public void ChekLogin()
         {
+            string autoLogin = this.context.Request["auto_login"];//是否自动登录
             UserInfo_Role user = new UserInfo_Role
             {
                 Email = context.Request["email"].ToString(),
                 Phone = context.Request["email"].ToString(),
                 Pwd = context.Request["user_pwd"].ToString(),
             };
-
             UserInfo_Role userData = UserInfo_RoleManager.CheckUserInfo(user);
             if (userData == null)
             {
@@ -296,8 +296,16 @@ namespace Play_And_Ate.Services
                     isLogin = true
                 };
                 Helper.Authentication.SetCookie(HttpUtility.UrlEncode(userData.UserName), userData.Pwd, HttpUtility.UrlEncode(userData.Role_UserInfo.RoleName));
-                this.context.Response.Cookies["UserName"].Value = HttpUtility.UrlEncode(userData.UserName);
-                this.context.Response.Cookies["UserId"].Value = userData.UserId.ToString();
+                //设置userName的cookie
+                HttpCookie userName = new HttpCookie("UserName");
+                userName.Expires = autoLogin == "true" ? DateTime.MaxValue : DateTime.MinValue;
+                userName.Value = HttpUtility.UrlEncode(userData.UserName); 
+                this.context.Response.Cookies.Add(userName);
+                //设置userId的cookie
+                HttpCookie userId = new HttpCookie("userId");
+                userId.Expires = autoLogin == "true" ? DateTime.MaxValue : DateTime.MinValue;
+                userId.Value = userData.UserId.ToString();
+                this.context.Response.Cookies.Add(userId);
                 context.Response.Write(JsonConvert.SerializeObject(msg));
             }
         }

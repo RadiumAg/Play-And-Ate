@@ -52,6 +52,7 @@ $(function () {
                     $("#tableContent").children().remove();
                     $.each(result, function (index, value) {
                         let success = value.Success == true ? "已支付" : "未支付";
+                        let payAgain = success == "已支付" ? `` : `<a href="#" name="pay" data-ordername="` + value.OrderName + `">重新支付</a>`;
                         let html = `<table class="order_table">
                                                 <tbody>
                                                     <tr class="sep-row">
@@ -71,8 +72,8 @@ $(function () {
                                                         </td>
                                                         <td>
                                                             <br />
-                                                            <a href="#" onClick='return false' name="delete" data-value="`+ value.OrderId + `">删除订单</a>
-                                                            <a href="#" name="pay" data-ordername="`+ value.OrderName + `">重新支付</a>
+                                                             <a href="#" onClick='return false' name="delete" data-value="`+ value.OrderId + `">删除订单</a><br/>`
+                                                              + payAgain + `
                                                         </td>
                                                     </tr>
                                                 </tbody>
