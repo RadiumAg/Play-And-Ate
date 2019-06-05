@@ -58,9 +58,6 @@
                                                             <div class="calenderPart" id="calenderPart">
                                                                 <div class="calenderPartM">
                                                                     <ul>
-                                                                        <li id="2019-05-29" v="2019-05-29" son="160" title="189" onclick="changeGoDate(this)">2019-05-29 (星期三) 出发,<b>189</b>元/成人, 160元/儿童</li>
-                                                                        <li id="2019-06-01" v="2019-06-01" son="160" title="199" onclick="changeGoDate(this)">2019-06-01 (星期六) 出发,<b>199</b>元/成人, 160元/儿童</li>
-                                                                        <li id="2019-06-05" v="2019-06-05" son="160" title="189" onclick="changeGoDate(this)">2019-06-05 (星期三) 出发,<b>189</b>元/成人, 160元/儿童</li>
                                                                         <li id="2019-06-08" v="2019-06-08" son="160" title="199" onclick="changeGoDate(this)">2019-06-08 (星期六) 出发,<b>199</b>元/成人, 160元/儿童</li>
                                                                         <li id="2019-06-12" v="2019-06-12" son="160" title="189" onclick="changeGoDate(this)">2019-06-12 (星期三) 出发,<b>189</b>元/成人, 160元/儿童</li>
                                                                         <li id="2019-06-15" v="2019-06-15" son="160" title="199" onclick="changeGoDate(this)">2019-06-15 (星期六) 出发,<b>199</b>元/成人, 160元/儿童</li>

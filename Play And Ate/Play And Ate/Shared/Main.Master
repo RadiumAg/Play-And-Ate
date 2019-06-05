@@ -10,7 +10,7 @@
     <meta name="Generator" />
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
     <meta name="baidu-site-verification" content="rW5VmpPj0J" />
-
+    <link  rel="icon" href="../Images/Shared/HEAD.ico"/>
     <title>Play And Ate 生态农庄，采摘园，垂钓场，农家乐旅游</title>
     <meta name="keywords" content="Play And Ate 生态农庄，采摘园，垂钓场，农家乐旅游" />
     <meta name="description" content="庄源为热爱运动/休闲/养生和自驾游群体提供农庄/农家乐/垂钓场/农家乐旅游即时服务,可以快速找到身边的农庄/农家乐/垂钓场的信息,为更多商家寻找客源,扩大影响,并利用专业平台的优势,科学地帮助商家进行推广,提升品牌形象" />
@@ -23,7 +23,6 @@
     <script src="../Scripts/Shared/citylist.js"></script>
     <script src="../Scripts/Shared/lanrenzhijia.js"></script>
     <script src="../Scripts/Shared/scripts.js"></script>
-    <%-- <script src="../Scripts/Shared/script.js"></script>--%>
     <link href="../Content/Shared/font-awesome.min.css" rel="stylesheet" />
     <link href="../Content/Shared/main_huandeng.css" rel="stylesheet" />
     <link href="../Content/Commond/new_main.css" rel="stylesheet" />
@@ -109,7 +108,7 @@
                 <div class="headerss">
                     <div class="LOGE">
                         <a href="#">
-                            <img alt="" class="f_1" src="../Images/Shared/LOGO1.PNG" style="width: 185px; height: 150px; margin-top: -35px;" />
+                            <img alt="" class="f_1" src="../Images/Shared/HEAD.png" style="margin-top:-10px;margin-left:50px;" />
                         </a>
                     </div>
                     <div id="city">

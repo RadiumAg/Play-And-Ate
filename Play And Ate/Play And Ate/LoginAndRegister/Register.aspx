@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Shared/Main.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Play_And_Ate.LoginAndRegister.Register" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Style" runat="server">
+    <script src="../Plugin/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Content" runat="server">
     <div class="wraps">
@@ -8,6 +9,12 @@
         <style type="text/css">
             .p9 {
                 cursor: pointer;
+            }
+
+            label.error {
+                font-size: 8px !important;
+                color: red;
+                width: 100px;
             }
         </style>
         <div class="inc wb">
@@ -19,10 +26,10 @@
 
                         <div class="field mobile" id="mobile-div">
                             <label for="signup-mobile-address">手机</label>
-                            <input type="text" value="" class="f-input ipttxt" id="signup-mobile-address" name="phoneNumber" size="30">
+                            <input type="text" value="" class="f-input ipttxt" id="signup-mobile-address" name="phoneNumber" size="30" />
                             <span class="f-input-tip"></span>
                             <span class="hint">登录及找回密码用，不会公开</span>
-                            <input type="hidden" value="0" id="mobile_hid">
+                            <input type="hidden" value="0" id="mobile_hid" />
                         </div>
 
                         <div class="field email" id="email-div">
@@ -35,7 +42,7 @@
                         <div class="blank1"></div>
                         <div class="field username">
                             <label for="signup-username">昵称</label>
-                            <input type="text" value="" class="f-input ipttxt" id="signup-username" name="user_name" size="30">
+                            <input type="text" value="" class="f-input ipttxt" id="signup-username" name="user_name" size="30" />
                             <span class="f-input-tip"></span>
                             <span class="hint">3-15个字符，一个汉字为两个字符</span>
                             <input type="hidden" value="0" id="user_name_hid" />
@@ -83,17 +90,86 @@
                                 <input id="get-code" type="button" style="height: 30px;" value="获取验证码" />
                             </div>
                             <script>
+                                /*验证*/
+                                $(function () {
+                                    jQuery.validator.addMethod("phone", function (value, element) {
+                                        var phone = /^((\(\d{3}\))|(\d{3}\-))?((13|14)[0-9]|15[0-9]|18[0-9])\d{8}$/;
+                                        return this.optional(element) || (phone.test(value));
+                                    }, "格式不正确");
+                                    jQuery.validator.addMethod("qq", function (value, element) {
+                                        var qq = /^[1-9][0-9]{4,11}$/;
+                                        return this.optional(element) || (qq.test(value));
+                                    }, "格式不正确");
+                                    $("#form1").validate({
+                                        rules: {
+                                            phoneNumber: {
+                                                required: true,
+                                                phone: true,
+                                            },
+                                            email: {
+                                                email: true,
+                                            },
+                                            user_name: {
+                                                required: true,
+                                                minlength: 3,
+                                                maxlength: 15,
+                                            },
+                                            user_pwd: {
+                                                required: true,
+                                                minlength: 4,
+                                            },
+                                            user_pwd_confirm: {
+                                                equalTo: '#signup-password',
+                                            },
+                                            user_qq: {
+                                                required: true,
+                                                qq: true,
+                                            }
+
+                                        },
+                                        messages: {
+                                            phoneNumber: {
+                                                required: '手机号码必填',
+                                                phone: '手机格式不正确',
+                                            },
+                                            email: {
+                                                email: 'E-mail格式不正确'
+                                            },
+                                            user_name: {
+                                                required: '必填',
+                                                maxlength: '最长长度为15',
+                                                minlength: '最长长度为10'
+                                            },
+                                            user_pwd: {
+                                                required: '必填',
+                                                minlength: '最少长度为4'
+                                            },
+                                            user_pwd_confirm: {
+                                                equalTo: '两次输入密码不一致'
+                                            },
+                                            user_qq: {
+                                                required: '必填',
+                                                qq: '请输入正确的qq',
+                                            }
+                                        }
+                                    });
+                                })
+                            </script>
+                            <script>
                                 $(function () {
                                     $("#form1").submit(function () {
                                         return false;
                                     });
                                     $("#signup-submit").click(function () {
+                                        //1.验证表单是否通过，如果没有通过，则不能注册
+                                        if (!$("#form1").valid()) return;
+                                        //2.验证验证码
                                         console.log($("#Code").val())
                                         if ($("#Code").val() == "") {
-                                            window.alert("请输入验证码")
+                                            window.alert("请输入验证码");
                                         }
                                         else if ($("#Code").val() != code) {
-                                            window.alert("验证码错误")
+                                            window.alert("验证码错误");
                                         }
                                         else {
                                             $.ajax({
@@ -102,16 +178,14 @@
                                                 dataType: "JSON",
                                                 data: $("#form1").serialize(),
                                                 success: function (data) {
-
                                                     if (data) {
                                                         window.alert("注册成功！");
+                                                        window.open("/Home/Home.aspx", "_self");
                                                         dtime(60);
-
                                                     }
                                                     else {
                                                         window.alert("注册失败！");
                                                         dtime(60);
-
                                                     }
                                                 }
                                             })
@@ -161,7 +235,6 @@
                                                 else {
                                                     alert("发送失败！");
                                                     dtime(60);
-
                                                 }
                                             }
                                         });
@@ -211,299 +284,6 @@
             </div>
             <div class="inc_foot"></div>
         </div>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $("#signup-submit").click(function () {
-                    //使用邮箱注册
-                    if ($.trim($("#signup-mobile-address").val()).length == 0) {
-                        $("#signup-mobile-address").focus();
-                        $.showErr("手机不能为空");
-                        return false;
-                    }
-
-                    if (!$.checkEmail($("#signup-mobile-address").val()) && !$.checkMobilePhone($("#signup-mobile-address").val())) {
-                        $("#signup-mobile-address").focus();
-                        $.showErr("手机格式错误，请重新输入");
-                        return false;
-                    }
-
-                    if (!$.minLength($("#signup-username").val(), 3, true)) {
-                        $("#signup-username").focus();
-                        $.showErr("昵称格式错误，请重新输入");
-                        return false;
-                    }
-
-                    if (!$.maxLength($("#signup-username").val(), 16, true)) {
-                        $("#signup-username").focus();
-                        $.showErr("昵称格式错误，请重新输入");
-                        return false;
-                    }
-
-                    if (!$.minLength($("#signup-password").val(), 4, false)) {
-                        $("#signup-password").focus();
-                        $.showErr("密码格式错误，请重新输入");
-                        return false;
-                    }
-
-                    if ($("#signup-password-confirm").val() != $("#signup-password").val()) {
-                        $("#signup-password-confirm").focus();
-                        $.showErr("密码确认失败");
-                        return false;
-                    }
-                    if ($.trim($("#emailCode").val()).length == 0) {
-                        $.showErr("手机验证码不能为空");
-                        return false;
-                    }
-                    if ($.trim($("#verify").val()).length == 0) {
-                        $.showErr("验证码不能为空");
-                        return false;
-                    }
-                    if ($("#email_hid").val() == 1) {
-                        $.showErr("邮箱不正确！");
-                        return false;
-                    }
-                    if ($("#user_pwd_hid").val() == 1) {
-                        $.showErr("密码不正确！");
-                        return false;
-                    }
-                    if ($("#user_pwd_confirm_hid").val() == 1) {
-                        $.showErr("两次密码不一致！");
-                        return false;
-                    }
-                    var ajaxurl = APP_ROOT + "/shop.php?ctl=user&act=mobile_yz&mobile=" + $("#signup-mobile-address").val() + "&vcode=" + $("#emailCode").val();
-                    $.ajax({
-                        url: ajaxurl,
-                        data: null,
-                        type: "POST",
-                        success: function (data) {
-                            if (data == 2) {
-                                $.showErr("手机验证码不正确");
-                                return false;
-                            }
-                            else if (data == 0) {
-
-                                $.showErr("手机验证码不能为空");
-                                return false;
-                            }
-                            else if (data == 1) {
-                                $("#signup-user-form").submit();
-                            }
-                        }
-                    });
-                });
-                //邮箱验证
-                $("#signup-email-address").bind("blur", function () {
-                    if (!$.checkEmail($("#signup-email-address").val()) && $.trim($("#signup-email-address").val()).length != 0) {
-                        formError($("#signup-email-address"), "邮箱格式错误，请重新输入");
-                        $("#email_hid").val('1');
-                        return false;
-                    }
-                    var query = new Object();
-                    var ajaxurl = APP_ROOT + "/shop.php?ctl=ajax&act=check_field";
-                    query.field_name = "email";
-                    query.field_data = $.trim($(this).val());
-                    //alert($.trim($(this).val()));
-                    $.ajax({
-                        url: ajaxurl,
-                        data: query,
-                        type: "POST",
-                        dataType: "json",
-                        success: function (data) {
-                            //alert(data.status);
-                            if (data.status == 1) {
-                                formSuccess($("#signup-email-address"), "可以使用");
-                                $("#email_hid").val('1');
-                                return false;
-                            }
-                            else {
-                                if ($.trim($("#signup-email-address").val()).length != 0) {
-                                    formError($("#signup-email-address"), data.info);
-                                    $("#email_hid").val('1');
-                                    return false;
-                                }
-                            }
-                        }
-                    });
-                    $("#email_hid").val('0');
-                });//手机验证
-                $("#signup-mobile-address").bind("blur", function () {
-                    if ($.trim($("#signup-mobile-address").val()).length == 0) {
-                        formError($("#signup-mobile-address"), "手机不能为空");
-                        $("#mobile_hid").val('1');
-                        return false;
-                    }
-
-                    if (!$.checkMobilePhone($("#signup-mobile-address").val())) {
-                        formError($("#signup-mobile-address"), "手机格式错误，请重新输入");
-                        $("#mobile_hid").val('1');
-                        return false;
-                    }
-                    var query = new Object();
-                    var ajaxurl = APP_ROOT + "/shop.php?ctl=ajax&act=check_field";
-                    query.field_name = "mobile";
-                    query.field_data = $.trim($(this).val());
-                    $.ajax({
-                        url: ajaxurl,
-                        data: query,
-                        type: "POST",
-                        dataType: "json",
-                        success: function (data) {
-                            if (data.status == 1) {
-                                formSuccess($("#signup-mobile-address"), "可以使用");
-                                $("#mobile_hid").val('1');
-                                return false;
-                            }
-                            else {
-                                formError($("#signup-mobile-address"), data.info);
-                                $("#mobile_hid").val('1');
-                                return false;
-                            }
-                        }
-                    });
-                    $("#mobile_hid").val('0');
-                });
-                $("#signup-username").bind("blur", function () {
-                    if (!$.minLength($("#signup-username").val(), 3, true)) {
-                        formError($("#signup-username"), "昵称格式错误，请重新输入");
-                        $("#user_name_hid").val('1');
-                        return false;
-                    }
-
-                    if (!$.maxLength($("#signup-username").val(), 16, true)) {
-                        formError($("#signup-username"), "昵称格式错误，请重新输入");
-                        $("#user_name_hid").val('1');
-                        return false;
-                    }
-
-                    var ajaxurl = APP_ROOT + "/shop.php?ctl=ajax&act=check_field";
-                    var query = new Object();
-                    query.field_name = "user_name";
-                    query.field_data = $.trim($(this).val());
-                    $.ajax({
-                        url: ajaxurl,
-                        data: query,
-                        type: "POST",
-                        dataType: "json",
-                        success: function (data) {
-                            if (data.status == 1) {
-                                formSuccess($("#signup-username"), "可以使用");
-                                $("#user_name_hid").val('1');
-                                return false;
-                            }
-                            else {
-                                formError($("#signup-username"), data.info);
-                                $("#user_name_hid").val('1');
-                                return false;
-                            }
-                        }
-                    });
-                    $("#user_name_hid").val('0');
-                });//用户名验证
-
-
-                $("#signup-password").bind("blur", function () {
-                    if (!$.minLength($("#signup-password").val(), 4, false)) {
-                        formError($("#signup-password"), "密码格式错误，请重新输入");
-                        $("#user_pwd").val('1');
-                        return false;
-                    }
-                    formSuccess($("#signup-password"), "可以使用");
-                    $("#user_pwd").val('0');
-                }); //密码验证
-
-                $("#signup-password-confirm").bind("blur", function () {
-                    if ($("#signup-password-confirm").val() != $("#signup-password").val()) {
-                        formError($("#signup-password-confirm"), "密码确认失败");
-                        $("#user_pwd_confirm").val('1');
-                        return false;
-                    }
-                    formSuccess($("#signup-password-confirm"), "验证正确");
-                    $("#user_pwd_confirm").val('0');
-                }); //确认密码验证
-
-
-                //获取激活码
-                $("#get-code").bind("click", function () {
-                    if ($.trim($("#signup-mobile-address").val()).length == 0) {
-                        $("#signup-mobile-address").focus();
-                        $.showErr("手机不能为空");
-                        return false;
-                    }
-
-                    if (!$.checkMobilePhone($("#signup-mobile-address").val())) {
-                        $("#signup-mobile-address").focus();
-                        $.showErr("手机格式错误，请重新输入");
-                        return false;
-                    }
-                    var query = new Object();
-                    var ajaxurl = APP_ROOT + "/shop.php?ctl=ajax&act=check_field";
-                    query.field_name = "mobile";
-                    query.field_data = $.trim($("#signup-mobile-address").val());
-                    $.ajax({
-                        url: ajaxurl,
-                        data: query,
-                        type: "POST",
-                        dataType: "json",
-                        success: function (data) {
-                            if (data.status == 1) {
-                                //手机激活码
-                                var ajaxurl = APP_ROOT + "/shop.php?ctl=user&act=verify_ajax&verify=" + $("#verify").val();
-                                $.ajax({
-                                    url: ajaxurl,
-                                    data: null,
-                                    type: "POST",
-                                    //dataType: "json",
-                                    success: function (data) {
-                                        if (data == 0) {
-                                            $.showErr("验证码不正确");
-                                            return false;
-                                        }
-                                        else if (data == 1) {
-                                            //手机激活码
-                                            $.ajax({
-                                                url: APP_ROOT + "/msg_send_fs.php?act=register-mobile&mobile=" + $("#signup-mobile-address").val() + "&verify=" + $("#verify").val(),
-                                                data: null,
-                                                type: "POST",
-                                                dataType: "json",
-                                                success: function (data) {
-                                                    if (data == 2) {
-                                                        $.showErr("安全码不正确");
-                                                        return false;
-                                                    }
-                                                    //alert('激活码发送成功');
-                                                }
-                                            });
-                                            dtime(60);
-                                        }
-                                    }
-                                });
-                            }
-                            else {
-                                $.showErr("手机号已存在");
-                                return false;
-                            }
-                        }
-                    });
-
-                    //倒计数
-                    function dtime(i) {
-                        var i = i;
-                        timer = setInterval(updateNum, 1000);
-                        updateNum();
-                        $("#get-code").attr("disabled", "true");
-                        function updateNum() {
-                            if (i <= 0) {
-                                $("#get-code").removeAttr("disabled");
-                                $("#get-code").val("获取验证码");
-                                window.clearInterval(timer);
-                            } else {
-                                $("#get-code").val(i-- + "秒后才可重发..");
-                            }
-                        }
-                    }
-                });
-            });
-        </script>
     </div>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server"></asp:Content>

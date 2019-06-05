@@ -17,7 +17,7 @@ namespace Play_And_Ate.LoginAndRegister
         {
             string url = this.Request.RawUrl;
             int questionIndex = url.IndexOf("?");
-            //假如请求地址中没有包含ReturnUrl或者没有请求，那么就复制为"",否则为ReturnUrl
+            //假如请求地址中没有包含ReturnUrl或者没有请求，那么就赋值为"",否则为ReturnUrl
             this.Response.Cookies["ReturnUrl"].Value = !url.Contains("ReturnUrl") ? "" : HttpUtility.UrlDecode(url.Substring(questionIndex + 11));
             returnUrl = this.Request.Cookies["ReturnUrl"].Value;
         }
